@@ -143,22 +143,27 @@ fonts = [
 	("Roboto-MediumItalic", _("mediumitalic")),
 	("Roboto-BoldItalic", _("bolditalic"))]
 
-if fileExists("/usr/lib/enigma2/python/Plugins/Extensions/TMBD/plugin.pyo"):
+if fileExists("/usr/lib/enigma2/python/Plugins/Extensions/TMBD/plugin.pyo")\
+	and fileExists("/usr/lib/enigma2/python/Components/Renderer/RatingTmbd.py")\
+	and fileExists("/usr/lib/enigma2/python/Components/Renderer/CoverTmbd.py"):
 	coverinfopanel = [
 	("TemplatesInfoBarInfoMovie-Cover-1", _("no")),
 	("TemplatesInfoBarInfoMovie-Cover-2", _("poster")),
 	("TemplatesInfoBarInfoMovie-Cover-3", _("poster, description"))]
 	infomovieselection =[
 	("TemplatesMovieSelectionInfoMovie-1", _("no")),
-	("TemplatesMovieSelectionInfoMovie-2", _("standard")),
-	("TemplatesMovieSelectionInfoMovie-3", _("TMDB plugin"))]
+	("TemplatesMovieSelectionInfoMovie-3", _("standard")),
+	("TemplatesMovieSelectionInfoMovie-4", _("TMDB plugin"))]
 else:
 	coverinfopanel = [
 	("TemplatesInfoBarInfoMovie-Cover-1", _("no"))]
 	infomovieselection =[
 	("TemplatesMovieSelectionInfoMovie-1", _("no")),
 	("TemplatesMovieSelectionInfoMovie-2", _("standard"))]
-if fileExists("/usr/lib/enigma2/python/Plugins/Extensions/Calendar/plugin.pyo") and fileExists("/usr/lib/enigma2/python/Plugins/Extensions/WeatherMSN/plugin.pyo"):
+if fileExists("/usr/lib/enigma2/python/Plugins/Extensions/Calendar/plugin.pyo")\
+	and fileExists("/usr/lib/enigma2/python/Components/Converter/CalendarToText.py")\
+	and fileExists("/usr/lib/enigma2/python/Plugins/Extensions/WeatherMSN/plugin.pyo")\
+	and fileExists("/usr/lib/enigma2/python/Components/Converter/MSNWeather2.py"):
 	otherinfobar = [
 	("TemplatesInfoBarOther-1", _("no")),
 	("TemplatesInfoBarOther-2", _("rambler weather")),
@@ -168,13 +173,15 @@ if fileExists("/usr/lib/enigma2/python/Plugins/Extensions/Calendar/plugin.pyo") 
 	("TemplatesInfoBarOther-6", _("rambler weather, calendar")),
 	("TemplatesInfoBarOther-7", _("msn weather, calendar")),
 	("TemplatesInfoBarOther-8", _("msn weather full, calendar"))]
-elif fileExists("/usr/lib/enigma2/python/Plugins/Extensions/Calendar/plugin.pyo"):
+elif fileExists("/usr/lib/enigma2/python/Plugins/Extensions/Calendar/plugin.pyo")\
+	and fileExists("/usr/lib/enigma2/python/Components/Converter/CalendarToText.py"):
 	otherinfobar = [
 	("TemplatesInfoBarOther-1", _("no")),
 	("TemplatesInfoBarOther-2", _("rambler weather")),
 	("TemplatesInfoBarOther-5", _("calendar")),
 	("TemplatesInfoBarOther-6", _("rambler weather, calendar"))]
-elif fileExists("/usr/lib/enigma2/python/Plugins/Extensions/WeatherMSN/plugin.pyo"):
+elif fileExists("/usr/lib/enigma2/python/Plugins/Extensions/WeatherMSN/plugin.pyo")\
+	and fileExists("/usr/lib/enigma2/python/Components/Converter/MSNWeather2.py"):
 	otherinfobar = [
 	("TemplatesInfoBarOther-1", _("no")),
 	("TemplatesInfoBarOther-2", _("rambler weather")),
@@ -188,15 +195,15 @@ else:
 config.skin.neutron = ConfigSubsection()
 config.skin.neutron.style = ConfigSelection(default="grey", choices = style)
 config.skin.neutron.numberchannel = ConfigSelection(default="TemplatesInfoBarNumber-1", choices = numberchannel)
-config.skin.neutron.styleinfobar = ConfigSelection(default="TemplatesInfoBarTvPicon", choices = styleinfobar)
+config.skin.neutron.styleinfobar = ConfigSelection(default="TemplatesInfoBarTvPiconTuner", choices = styleinfobar)
 config.skin.neutron.technicalinfobar = ConfigSelection(default="TemplatesInfoBarTechnical-1", choices = technicalinfobar)
-config.skin.neutron.stylesecondinfobar = ConfigSelection(default="TemplatesInfoBarTvPicon", choices = styleinfobar)
+config.skin.neutron.stylesecondinfobar = ConfigSelection(default="TTemplatesInfoBarTvPiconTuner", choices = styleinfobar)
 config.skin.neutron.technicalsecondinfobar = ConfigSelection(default="TemplatesInfoBarTechnical-1", choices = technicalinfobar)
 config.skin.neutron.ecmepgpanel = ConfigSelection(default="TemplatesInfoBarECM-EPG-5", choices = ecmepgpanel)
-config.skin.neutron.epgchannelselection = ConfigSelection(default="TemplatesChannelSelectionInfoEPG-1", choices = epgchannelselection)
+config.skin.neutron.epgchannelselection = ConfigSelection(default="TemplatesChannelSelectionInfoEPG-2", choices = epgchannelselection)
 config.skin.neutron.infochannelselection = ConfigSelection(default="TemplatesChannelSelectionInfoChannel-1", choices = infochannelselection)
 config.skin.neutron.coverinfopanel = ConfigSelection(default="TemplatesInfoBarInfoMovie-Cover-1", choices = coverinfopanel)
-config.skin.neutron.infomovieselection = ConfigSelection(default="TemplatesMovieSelectionInfoMovie-1", choices = infomovieselection)
+config.skin.neutron.infomovieselection = ConfigSelection(default="TemplatesMovieSelectionInfoMovie-2", choices = infomovieselection)
 config.skin.neutron.clockpanel = ConfigSelection(default="TemplatesClock-1", choices = clockpanel)
 config.skin.neutron.otherinfobar = ConfigSelection(default="TemplatesInfoBarOther-1", choices = otherinfobar)
 config.skin.neutron.dish = ConfigSelection(default="Dish-2", choices = dish)
@@ -212,14 +219,15 @@ class SetupNeutronHD(ConfigListScreen, Screen):
 	skin = """
 	<!-- Setup NeutronHD -->
 	<screen name="SetupNeutronHD" position="0,0" size="1280,720" title=" " flags="wfNoBorder" backgroundColor="transparent">
+		<ePixmap position="30,25" size="700,600" pixmap="Neutron_hd/style/greymenu_1.png" alphatest="on" zPosition="-1" />
 		<eLabel position="0,610" size="1280,110" backgroundColor="#50000000" zPosition="-2" />
 		<ePixmap position="0,575" size="1280,35" pixmap="Neutron_hd/style/greymenubar.png" alphatest="off" zPosition="-2" />
-		<ePixmap position="center,575" size="1280,150" pixmap="Neutron_hd/style/menubar_1.png" alphatest="off" zPosition="-2" />
 		<ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/setting.png" alphatest="blend" />
 		<widget source="Title" render="Label" position="30,25" size="700,36" font="Regular; 30" foregroundColor="#00ffcc33" backgroundColor="background" halign="center" transparent="1" borderWidth="2" />
 		<widget name="config" position="45,70" size="670,540" scrollbarMode="showOnDemand" selectionPixmap="Neutron_hd/style/greysel.png" transparent="1" />
+		<widget source="info_com" render="Label" position="110,640" size="750,44" font="Regular; 18" foregroundColor="#008f8f8f" backgroundColor="background" halign="left" valign="center" transparent="1" />
 		<widget source="version_sk" render="Label" position="110,690" size="150,22" font="Regular; 18" foregroundColor="#008f8f8f" backgroundColor="background" halign="left" valign="center" transparent="1" />
-		<widget source="vinfo_sk" render="Label" position="260,690" size="80,22" font="Regular; 18" foregroundColor="#008f8f8f" backgroundColor="background" halign="left" valign="center" transparent="1" />
+		<widget source="info_sk" render="Label" position="260,690" size="80,22" font="Regular; 18" foregroundColor="#008f8f8f" backgroundColor="background" halign="left" valign="center" transparent="1" />
 		<widget source="key_red" render="Label" position="750,615" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="#00f4f4f4" backgroundColor="background" transparent="1" />
 		<widget source="key_green" render="Label" position="750,640" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="#00f4f4f4" backgroundColor="background" transparent="1" />
 		<widget source="key_blue" render="Label" position="750,690" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="#00f4f4f4" backgroundColor="background" transparent="1" />
@@ -265,8 +273,11 @@ class SetupNeutronHD(ConfigListScreen, Screen):
 		self["key_blue"] = StaticText(_("Install components"))
 		self["Title"] = StaticText(_("Setup NeutronHD"))
 		self["version_sk"] = StaticText(_("Version skin:"))
-		self["vinfo_sk"] = StaticText()
+		self["info_sk"] = StaticText()
+		self["info_com"] = StaticText()
+
 		self.infosk()
+		self.infocom()
 
 	def infosk(self):
 		package = 0
@@ -283,10 +294,39 @@ class SetupNeutronHD(ConfigListScreen, Screen):
 			if line.find("Version:") > -1 and package == 1:
 				package = 0
 				try:
-					self["vinfo_sk"].text = line.split()[1]
+					self["info_sk"].text = line.split()[1]
 				except:
-					self["vinfo_sk"].text = " "
+					self["info_sk"].text = " "
 				break
+
+	def infocom(self):
+		if fileExists("/usr/lib/enigma2/python/Plugins/Extensions/TMBD/plugin.pyo")\
+			and not fileExists("/usr/lib/enigma2/python/Components/Renderer/RatingTmbd.py")\
+			and not fileExists("/usr/lib/enigma2/python/Components/Renderer/CoverTmbd.py"):
+			self["info_com"] = StaticText(_("No install components TMBD !!!"))
+		elif fileExists("/usr/lib/enigma2/python/Plugins/Extensions/Calendar/plugin.pyo")\
+			and not fileExists("/usr/lib/enigma2/python/Components/Converter/CalendarToText.py"):
+			self["info_com"] = StaticText(_("No install components Calendar !!! \nPress blue button to install !!!"))
+		elif fileExists("/usr/lib/enigma2/python/Plugins/Extensions/WeatherMSN/plugin.pyo")\
+			and not fileExists("/usr/lib/enigma2/python/Components/Converter/MSNWeather2.py"):
+			self["info_com"] = StaticText(_("No install components WeatherMSN !!! \nPress blue button to install !!!"))
+		elif fileExists("/usr/lib/enigma2/python/Components/Converter/AlwaysTrue.py")\
+			and fileExists("/usr/lib/enigma2/python/Components/Converter/CaidInfo2.py")\
+			and fileExists("/usr/lib/enigma2/python/Components/Converter/CamdInfo3.py")\
+			and fileExists("/usr/lib/enigma2/python/Components/Converter/ConverterRotator.py")\
+			and fileExists("/usr/lib/enigma2/python/Components/Converter/EventName2.py")\
+			and fileExists("/usr/lib/enigma2/python/Components/Converter/FrontendInfo2.py")\
+			and fileExists("/usr/lib/enigma2/python/Components/Converter/ProgressDiskSpaceInfo.py")\
+			and fileExists("/usr/lib/enigma2/python/Components/Converter/RouteInfo.py")\
+			and fileExists("/usr/lib/enigma2/python/Components/Converter/RWeather.py")\
+			and fileExists("/usr/lib/enigma2/python/Components/Converter/ServiceInfoEX.py")\
+			and fileExists("/usr/lib/enigma2/python/Components/Converter/ServiceName2.py")\
+			and fileExists("/usr/lib/enigma2/python/Components/Renderer/PiconUni.py")\
+			and fileExists("/usr/lib/enigma2/python/Components/Renderer/RendVolumeText.py")\
+			and fileExists("/usr/lib/enigma2/python/Components/Renderer/Watches.py"):
+			self["info_com"] = StaticText(_(" "))
+		else:
+			self["info_com"] = StaticText(_("No install components !!! \nPress blue button to install !!!"))
 
 	def save(self):
 		skinpath = "/usr/share/enigma2/Neutron_hd/"
@@ -350,7 +390,7 @@ class SetupNeutronHD(ConfigListScreen, Screen):
 			os.system("cp %sSetupNeutronHD/components/AlwaysTrue.py %sConverter/AlwaysTrue.py" % (pluginpath, componentspath))
 			os.system("cp %sSetupNeutronHD/components/CaidInfo2.py %sConverter/CaidInfo2.py" % (pluginpath, componentspath))
 			os.system("cp %sSetupNeutronHD/components/CamdInfo3.py %sConverter/CamdInfo3.py" % (pluginpath, componentspath))
-			os.system("cp %sCalendar/components/CalendarToText.py %sCalendarToText.py" % (pluginpath, componentspath))
+			os.system("cp %sCalendar/components/CalendarToText.py %sConverter/CalendarToText.py" % (pluginpath, componentspath))
 			os.system("cp %sSetupNeutronHD/components/ConverterRotator.py %sConverter/ConverterRotator.py" % (pluginpath, componentspath))
 			os.system("cp %sSetupNeutronHD/components/EventName2.py %sConverter/EventName2.py" % (pluginpath, componentspath))
 			os.system("cp %sSetupNeutronHD/components/FrontendInfo2.py %sConverter/FrontendInfo2.py" % (pluginpath, componentspath))

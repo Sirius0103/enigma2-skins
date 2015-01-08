@@ -79,7 +79,7 @@
   <screen name="TemplatesInfoBarName">
     <!-- Templates InfoBarName-->
     <widget source="session.CurrentService" render="Label" position="225,573" size="615,32" font="Regular; 28" foregroundColor="color1" backgroundColor="background" halign="left" transparent="1" borderWidth="2">
-      <convert type="ServiceName2">%N</convert>
+      <convert type="ServiceName2">Name</convert>
     </widget>
   </screen>
   <screen name="TemplatesInfoBarPicon">
@@ -148,13 +148,13 @@
       <convert type="FrontendInfo">AGC</convert>
     </widget>
     <widget source="session.FrontendStatus" render="Progress" position="1046,644" size="145,12" pixmap="Neutron_hd/progress_snr.png" transparent="1" zPosition="3">
-      <convert type="FrontendInfo2">AGC</convert>
+      <convert type="FrontendInfo">AGC</convert>
     </widget>
     <widget source="session.FrontendStatus" render="Label" position="1195,665" size="65,22" font="Display; 16" foregroundColor="grey" backgroundColor="background" halign="left" transparent="1">
       <convert type="FrontendInfo">BER</convert>
     </widget>
     <widget source="session.FrontendStatus" render="Progress" position="1046,668" size="145,12" pixmap="Neutron_hd/progress_snr.png" transparent="1" zPosition="3">
-      <convert type="FrontendInfo2">BER</convert>
+      <convert type="FrontendInfo">BER</convert>
     </widget>
   </screen>
   <screen name="TemplatesInfoBarAnalogTunerSat">
@@ -1413,10 +1413,10 @@
     <ePixmap position="750,360" size="500,250" pixmap="Neutron_hd/style/greymenu_6.png" alphatest="on" zPosition="-1" />
     <eLabel text="&gt;" position="765,403" size="20,20" font="Display; 18" foregroundColor="green" backgroundColor="background" halign="center" transparent="1" />
     <widget source="ServiceEvent" render="Label" position="785,403" size="450,20" font="Regular; 18" foregroundColor="color4" backgroundColor="background" halign="left" transparent="1">
-      <convert type="EventName2">Name</convert>
+      <convert type="EventName">Name</convert>
     </widget>
     <widget source="ServiceEvent" render="Label" position="765,423" size="470,170" font="Regular; 18" foregroundColor="color3" backgroundColor="background" halign="left" valign="top" transparent="1">
-      <convert type="EventName2">ExtendedDescription</convert>
+      <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <widget source="ServiceEvent" render="Label" position="758,368" size="75,24" font="Display; 18" foregroundColor="white" backgroundColor="background" halign="right" transparent="1">
       <convert type="EventTime">StartTime</convert>
@@ -1585,10 +1585,17 @@
     <!-- Templates MovieSelectionInfoMovie-->
     <ePixmap position="750,360" size="500,250" pixmap="Neutron_hd/style/greymenu_6.png" alphatest="on" zPosition="-1" />
     <widget source="Service" render="Label" position="765,405" size="470,190" font="Regular; 18" foregroundColor="color3" backgroundColor="background" halign="left" valign="top" transparent="1" zPosition="2">
-      <convert type="EventName2">ExtendedDescription</convert>
+      <convert type="MovieInfo">ShortDescription</convert>
     </widget>
   </screen>
   <screen name="TemplatesMovieSelectionInfoMovie-3">
+    <!-- Templates MovieSelectionInfoMovie-->
+    <ePixmap position="750,360" size="500,250" pixmap="Neutron_hd/style/greymenu_6.png" alphatest="on" zPosition="-1" />
+    <widget source="Service" render="Label" position="765,405" size="470,190" font="Regular; 18" foregroundColor="color3" backgroundColor="background" halign="left" valign="top" transparent="1" zPosition="2">
+      <convert type="MovieInfo">FullDescription</convert>
+    </widget>
+  </screen>
+  <screen name="TemplatesMovieSelectionInfoMovie-4">
     <!-- Templates MovieSelectionInfoMovie-->
     <ePixmap position="750,60" size="500,550" pixmap="Neutron_hd/style/greymenu_4.png" alphatest="on" zPosition="-1" />
     <widget source="Service" render="CoverTmbd" position="770,105" size="195,285" zPosition="2" alphatest="on">
@@ -1625,29 +1632,37 @@
     <!-- Templates Menu-->
     <ePixmap position="30,25" size="500,600" pixmap="Neutron_hd/style/greymenu_2.png" alphatest="on" zPosition="-1" />
   </screen>
+  <screen name="TemplatesTitle1">
+    <!-- Templates Title-->
+    <widget source="Title" render="Label" position="30,25" size="500,36" font="Regular; 30" foregroundColor="color1" backgroundColor="background" halign="center" transparent="1" borderWidth="2" />
+  </screen>
+  <screen name="TemplatesTitle2">
+    <!-- Templates Title-->
+    <widget source="title" render="Label" position="30,25" size="500,36" font="Regular; 30" foregroundColor="color1" backgroundColor="background" halign="center" transparent="1" borderWidth="2" />
+  </screen>
   <screen name="TemplatesMenu700">
     <!-- Templates Menu-->
     <ePixmap position="30,25" size="700,600" pixmap="Neutron_hd/style/greymenu_1.png" alphatest="on" zPosition="-1" />
+  </screen>
+  <screen name="TemplatesTitle3">
+    <!-- Templates Title-->
+    <widget source="Title" render="Label" position="30,25" size="700,36" font="Regular; 30" foregroundColor="color1" backgroundColor="background" halign="center" transparent="1" borderWidth="2" />
+  </screen>
+  <screen name="TemplatesTitle4">
+    <!-- Templates Title-->
+    <widget source="title" render="Label" position="30,25" size="700,36" font="Regular; 30" foregroundColor="color1" backgroundColor="background" halign="center" transparent="1" borderWidth="2" />
   </screen>
   <screen name="TemplatesMenu1200">
     <!-- Templates Menu-->
     <ePixmap position="30,25" size="1220,600" pixmap="Neutron_hd/style/greymenu_3.png" alphatest="on" zPosition="-1" />
   </screen>
-  <screen name="TemplatesTitle1">
+  <screen name="TemplatesTitle5">
     <!-- Templates Title-->
-    <widget source="Title" render="Label" position="30,25" size="700,36" font="Regular; 30" foregroundColor="color1" backgroundColor="background" halign="center" transparent="1" borderWidth="2" />
+    <widget source="Title" render="Label" position="30,25" size="1220,36" font="Regular; 30" foregroundColor="color1" backgroundColor="background" halign="center" transparent="1" borderWidth="2" />
   </screen>
-  <screen name="TemplatesTitle2">
+  <screen name="TemplatesTitle6">
     <!-- Templates Title-->
-    <widget source="title" render="Label" position="30,25" size="700,36" font="Regular; 30" foregroundColor="color1" backgroundColor="background" halign="center" transparent="1" borderWidth="2" />
-  </screen>
-  <screen name="TemplatesTitle3">
-    <!-- Templates Title-->
-    <widget source="Title" render="Label" position="30,25" size="500,36" font="Regular; 30" foregroundColor="color1" backgroundColor="background" halign="center" transparent="1" borderWidth="2" />
-  </screen>
-  <screen name="TemplatesTitle4">
-    <!-- Templates Title-->
-    <widget source="title" render="Label" position="30,25" size="500,36" font="Regular; 30" foregroundColor="color1" backgroundColor="background" halign="center" transparent="1" borderWidth="2" />
+    <widget source="title" render="Label" position="30,25" size="1220,36" font="Regular; 30" foregroundColor="color1" backgroundColor="background" halign="center" transparent="1" borderWidth="2" />
   </screen>
   <screen name="TemplatesButtons">
     <!-- Templates Buttons-->
@@ -1687,7 +1702,7 @@
     <eLabel text="&gt;" position="110,650" size="25,25" font="Display; 22" halign="center" foregroundColor="green" backgroundColor="background" transparent="1" valign="top" />
     <eLabel text="&gt;" position="110,683" size="25,25" font="Display; 22" halign="center" foregroundColor="red" backgroundColor="background" transparent="1" valign="top" />
     <widget source="session.CurrentService" render="Label" position="80,577" size="420,32" font="Regular; 26" foregroundColor="color1" backgroundColor="background" halign="left" noWrap="1" transparent="1" borderWidth="2">
-      <convert type="ServiceName2">%N</convert>
+      <convert type="ServiceName2">Name</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="80,548" size="420,24" font="Regular; 20" foregroundColor="color2" backgroundColor="background" halign="left" transparent="1" borderWidth="1">
       <convert type="ServiceName">Provider</convert>
@@ -2073,7 +2088,7 @@
     <panel name="TemplatesMenu500" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/setting.png" alphatest="blend" />
-    <panel name="TemplatesTitle4" />
+    <panel name="TemplatesTitle2" />
     <widget source="menu" render="Listbox" position="45,70" size="470,530" scrollbarMode="showNever" itemHeight="38" font="Regular; 26" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1">
       <convert type="StringList" />
     </widget>
@@ -2084,7 +2099,7 @@
     <panel name="TemplatesMenu500" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/home.png" alphatest="blend" />
-    <panel name="TemplatesTitle4" />
+    <panel name="TemplatesTitle2" />
     <widget source="menu" render="Listbox" position="45,70" size="470,533" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" enableWrapAround="1" transparent="1">
       <convert type="TemplatedMultiContent">
 			{"template": [ MultiContentEntryText(pos = (15, 2), size = (650, 38), flags = RT_HALIGN_LEFT, text = 0) ],
@@ -2100,7 +2115,7 @@
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/info.png" alphatest="blend" />
-    <panel name="TemplatesTitle2" />
+    <panel name="TemplatesTitle4" />
     <widget source="menu" render="Listbox" position="45,70" size="670,220" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" enableWrapAround="1" transparent="1">
       <convert type="TemplatedMultiContent">
 			{"template": [ MultiContentEntryText(pos = (15, 2), size = (650, 38), flags = RT_HALIGN_LEFT, text = 0) ],
@@ -2156,7 +2171,7 @@
     <panel name="TemplatesMenu500" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/setup.png" alphatest="blend" />
-    <panel name="TemplatesTitle4" />
+    <panel name="TemplatesTitle2" />
     <widget source="menu" render="Listbox" position="45,70" size="470,533" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" enableWrapAround="1" transparent="1">
       <convert type="TemplatedMultiContent">
 			{"template": [ MultiContentEntryText(pos = (15,2), size = (650, 38), flags = RT_HALIGN_LEFT, text = 0) ],
@@ -2172,7 +2187,7 @@
     <panel name="TemplatesMenu500" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/scan.png" alphatest="blend" />
-    <panel name="TemplatesTitle4" />
+    <panel name="TemplatesTitle2" />
     <widget source="menu" render="Listbox" position="45,70" size="470,533" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" enableWrapAround="1" transparent="1">
       <convert type="TemplatedMultiContent">
 			{"template": [ MultiContentEntryText(pos = (15, 2), size = (650, 38), flags = RT_HALIGN_LEFT, text = 0) ],
@@ -2188,7 +2203,7 @@
     <panel name="TemplatesMenu500" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/setting.png" alphatest="blend" />
-    <panel name="TemplatesTitle4" />
+    <panel name="TemplatesTitle2" />
     <widget source="menu" render="Listbox" position="45,70" size="470,533" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" enableWrapAround="1" transparent="1">
       <convert type="TemplatedMultiContent">
 			{"template": [ MultiContentEntryText(pos = (15, 2), size = (650, 38), flags = RT_HALIGN_LEFT, text = 0) ],
@@ -2204,7 +2219,7 @@
     <panel name="TemplatesMenu500" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/hdd.png" alphatest="blend" />
-    <panel name="TemplatesTitle4" />
+    <panel name="TemplatesTitle2" />
     <widget source="menu" render="Listbox" position="45,70" size="470,533" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" enableWrapAround="1" transparent="1">
       <convert type="TemplatedMultiContent">
 			{"template": [ MultiContentEntryText(pos = (15, 2), size = (650, 38), flags = RT_HALIGN_LEFT, text = 0) ],
@@ -2220,7 +2235,7 @@
     <panel name="TemplatesMenu500" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/shutdown.png" alphatest="blend" />
-    <panel name="TemplatesTitle4" />
+    <panel name="TemplatesTitle2" />
     <widget source="menu" render="Listbox" position="45,70" size="470,533" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" enableWrapAround="1" transparent="1">
       <convert type="TemplatedMultiContent">
 			{"template": [ MultiContentEntryText(pos = (15, 2), size = (650, 38), flags = RT_HALIGN_LEFT, text = 0) ],
@@ -2236,7 +2251,7 @@
     <panel name="TemplatesMenu500" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/setting.png" alphatest="blend" />
-    <panel name="TemplatesTitle3" />
+    <panel name="TemplatesTitle1" />
     <widget source="languages" render="Listbox" position="45,70" size="470,500" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1">
       <convert type="TemplatedMultiContent">
 				{"template": [
@@ -2291,7 +2306,7 @@
     <panel name="TemplatesMenu1200" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/console.png" alphatest="blend" />
-    <widget source="Title" render="Label" position="30,25" size="1220,36" font="Regular; 30" foregroundColor="color1" backgroundColor="background" halign="center" transparent="1" borderWidth="2" />
+    <panel name="TemplatesTitle5" />
     <widget name="AboutLatestCommits" position="45,70" size="1190,535" font="Console;20" backgroundColor="black" transparent="1" />
   </screen>
   <!-- Translation Info -->
@@ -2998,7 +3013,7 @@
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/setting.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget name="config" position="45,70" size="670,496" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1" />
     <widget source="introduction" render="Label" position="110,690" size="650,22" font="Display; 18" foregroundColor="color3" backgroundColor="background" halign="left" valign="center" transparent="1" />
     <widget source="key_red" render="Label" position="750,615" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
@@ -3013,7 +3028,7 @@
     <panel name="TemplatesMenu500" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/soft.png" alphatest="blend" />
-    <panel name="TemplatesTitle3" />
+    <panel name="TemplatesTitle1" />
     <widget source="menu" render="Listbox" position="45,70" size="470,360" zPosition="3" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1">
       <convert type="TemplatedMultiContent">
 				{"template": [
@@ -3056,7 +3071,7 @@
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/plugin.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget name="text" position="110,690" size="650,22" font="Display; 18" foregroundColor="color3" backgroundColor="background" halign="left" valign="center" transparent="1" />
     <widget name="list" position="45,70" size="670,500" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1" />
     <panel name="TemplatesClock" />
@@ -3066,7 +3081,7 @@
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/soft.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget source="list" render="Listbox" position="45,70" size="670,500" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1">
       <convert type="TemplatedMultiContent">
 			{"templates":
@@ -3100,7 +3115,7 @@
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/soft.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget source="list" render="Listbox" position="45,70" size="670,498" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" selectionDisabled="1" transparent="1">
       <convert type="TemplatedMultiContent">
 					{"template": [
@@ -3125,7 +3140,7 @@
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/soft.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget source="author" render="Label" position="50,80" size="600,25" zPosition="10" font="Regular;21" transparent="1" foregroundColor="color4" backgroundColor="background" />
     <widget name="statuspic" position="660,70" size="48,48" alphatest="on" />
     <widget name="divpic" position="50,70" size="600,2" alphatest="on" />
@@ -3159,7 +3174,7 @@
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/soft.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget name="filelist" position="45,70" size="670,530" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1" />
     <widget source="key_red" render="Label" position="750,615" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
     <widget source="key_green" render="Label" position="750,640" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
@@ -3171,7 +3186,7 @@
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/soft.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget name="text" position="45,70" size="670,530" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1" />
     <widget source="key_red" render="Label" position="750,615" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
     <widget source="key_green" render="Label" position="750,640" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
@@ -3183,7 +3198,7 @@
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/soft.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget source="list" render="Listbox" position="45,70" size="670,523" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1">
       <convert type="TemplatedMultiContent">
 					{"template": [
@@ -3207,7 +3222,7 @@
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/soft.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget name="list" position="45,70" size="670,498" transparent="1" />
     <widget source="introduction" render="Label" position="110,690" size="650,22" font="Display; 18" foregroundColor="color3" backgroundColor="background" halign="left" valign="center" transparent="1" />
     <widget source="key_red" render="Label" position="750,615" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
@@ -3220,7 +3235,7 @@
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/soft.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget name="checkList" position="45,70" size="670,528" transparent="1" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" />
     <widget source="key_red" render="Label" position="750,615" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
     <widget source="key_green" render="Label" position="750,640" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
@@ -3233,7 +3248,7 @@
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/soft.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget name="config" position="45,70" size="670,530" transparent="1" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" />
     <panel name="TemplatesClock" />
   </screen>
@@ -3242,7 +3257,7 @@
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/soft.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget name="filelist" position="45,70" size="670,530" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1" />
     <widget source="key_red" render="Label" position="750,615" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
     <widget source="key_green" render="Label" position="750,640" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
@@ -3255,7 +3270,7 @@
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/soft.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget name="config" position="45,70" size="670,530" transparent="1" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" />
     <panel name="TemplatesClock" />
   </screen>
@@ -3530,7 +3545,7 @@
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/info.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget name="pname" position="110,646" size="650,22" font="Display; 18" foregroundColor="color3" backgroundColor="background" halign="left" valign="center" transparent="1" />
     <widget name="pinfo" position="110,668" size="650,22" font="Display; 18" foregroundColor="color3" backgroundColor="background" halign="left" valign="center" transparent="1" />
     <widget name="head" position="110,690" size="650,22" font="Display; 18" foregroundColor="color3" backgroundColor="background" halign="left" valign="center" transparent="1" />
@@ -3547,7 +3562,7 @@
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/setting.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget name="config" position="45,70" size="670,500" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1" />
     <widget source="key_red" render="Label" position="750,615" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
     <widget source="key_green" render="Label" position="750,640" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
@@ -3864,7 +3879,7 @@
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/scan.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget name="config" position="45,70" size="670,500" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1" />
     <widget name="introduction" render="Label" position="110,690" size="650,22" font="Display; 18" foregroundColor="color3" backgroundColor="background" halign="left" valign="center" transparent="1" />
     <eLabel text="Cancel" position="750,615" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
@@ -4460,7 +4475,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/setting.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget name="list" position="45,70" size="340,525" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1" />
     <widget name="choosen" position="375,70" size="340,525" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1" />
     <widget source="key_red" render="Label" position="750,615" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
@@ -4474,7 +4489,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/keys.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <eLabel position="50,390" size="660,2" backgroundColor="grey" />
     <widget name="config" position="45,70" size="670,300" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1" />
     <widget name="info" position="45,400" size="670,205" font="Console; 20" backgroundColor="background" halign="center" transparent="1" noWrap="1" />
@@ -4489,7 +4504,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/ppanel.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget name="nodelist" position="45,70" size="670,498" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1" />
     <widget name="helptext" position="110,690" size="650,22" font="Display; 18" foregroundColor="color3" backgroundColor="background" halign="left" valign="center" transparent="1" />
     <panel name="TemplatesClock" />
@@ -4499,7 +4514,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/ppanel.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget name="nodelist" position="45,70" size="670,498" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1" />
     <widget name="helptext" position="110,690" size="650,22" font="Display; 18" foregroundColor="color3" backgroundColor="background" halign="left" valign="center" transparent="1" />
     <panel name="TemplatesClock" />
@@ -4509,7 +4524,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/ppanel.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget name="linelist" position="45,70" size="670,530" font="Fixed;18" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1" />
     <widget name="key_yellow" position="750,665" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
     <widget name="key_blue" position="750,690" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
@@ -4521,7 +4536,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/epanel.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget source="menu" render="Listbox" position="45,70" size="670,360" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1">
       <convert type="TemplatedMultiContent">
 	{"template": [
@@ -4547,7 +4562,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/setting.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget name="config" position="45,70" size="670,500" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1" />
     <widget source="key_red" render="Label" position="750,615" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
     <widget source="key_green" render="Label" position="750,640" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
@@ -4559,7 +4574,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/info.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <ePixmap position="110,635" size="180,47" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/epanel/images/2boom.png" alphatest="blend" />
     <eLabel position="50,223" size="660,3" backgroundColor="grey" />
     <eLabel position="50,445" size="660,3" backgroundColor="grey" />
@@ -4601,7 +4616,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/keys.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget source="menu" render="Listbox" position="45,70" size="670,360" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1">
       <convert type="TemplatedMultiContent">
 	{"template": [
@@ -4623,7 +4638,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/keys.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <eLabel position="50,390" size="660,2" backgroundColor="grey" />
     <widget source="menu" render="Listbox" position="45,70" size="670,310" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1">
       <convert type="TemplatedMultiContent">
@@ -4651,7 +4666,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/keys.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget position="45,70" size="670,300" name="config" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1" />
     <widget source="key_red" render="Label" position="750,615" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
     <widget source="key_green" render="Label" position="750,640" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
@@ -4664,7 +4679,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/epanel.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget name="text" position="45,70" size="670,300" font="Console;20" transparent="1" />
     <widget source="key_red" render="Label" position="750,615" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
     <panel name="TemplatesClock" />
@@ -4675,7 +4690,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/download.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget source="menu" render="Listbox" position="45,70" size="670,500" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1">
       <convert type="TemplatedMultiContent">
 	{"template": [
@@ -4698,7 +4713,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/download.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget source="menu" render="Listbox" position="45,70" size="670,500" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1">
       <convert type="TemplatedMultiContent">
 		{"template": [
@@ -4723,7 +4738,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/download.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget source="menu" render="Listbox" position="45,70" size="670,500" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1">
       <convert type="TemplatedMultiContent">
 		{"template": [
@@ -4747,7 +4762,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/download.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget source="menu" render="Listbox" position="45,70" size="670,500" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1">
       <convert type="TemplatedMultiContent">
 		{"template": [
@@ -4770,7 +4785,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/download.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget source="menu" render="Listbox" position="45,70" size="670,500" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1">
       <convert type="TemplatedMultiContent">
 		{"template": [
@@ -4794,7 +4809,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/setup.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget source="menu" render="Listbox" position="45,70" size="670,360" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1">
       <convert type="TemplatedMultiContent">
 	{"template": [
@@ -4816,7 +4831,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/setup.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget source="menu" render="Listbox" position="45,70" size="670,360" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1">
       <convert type="TemplatedMultiContent">
 	{"template": [
@@ -4838,7 +4853,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/setup.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget source="menu" render="Listbox" position="45,70" size="670,360" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1">
       <convert type="TemplatedMultiContent">
 	{"template": [
@@ -4860,7 +4875,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/setup.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget source="menu" render="Listbox" position="45,70" size="670,500" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1">
       <convert type="TemplatedMultiContent">
 	{"template": [
@@ -4882,7 +4897,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/setup.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget source="menu" render="Listbox" position="45,70" size="670,500" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1">
       <convert type="TemplatedMultiContent">
 	{"template": [
@@ -4904,7 +4919,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/setup.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget name="config" position="45,70" size="670,253" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1" />
     <widget source="key_red" render="Label" position="750,615" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
     <widget source="key_green" render="Label" position="750,640" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
@@ -4916,7 +4931,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/setup.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget source="menu" render="Listbox" position="45,70" size="670,253" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1">
       <convert type="TemplatedMultiContent">
 	{"template": [
@@ -4938,7 +4953,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/setup.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget source="menu" render="Listbox" position="45,70" size="670,253" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1">
       <convert type="TemplatedMultiContent">
 	{"template": [
@@ -4984,7 +4999,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/setting.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget name="config" position="45,70" size="670,500" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1" />
     <widget source="key_red" render="Label" position="750,615" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
     <widget source="key_green" render="Label" position="750,640" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
@@ -4998,7 +5013,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/setting.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget name="config" position="45,70" size="670,500" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1" />
     <widget source="key_red" render="Label" position="750,615" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
     <widget source="key_green" render="Label" position="750,640" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
@@ -5010,7 +5025,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/setup.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget source="menu" render="Listbox" position="45,70" size="670,500" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1">
       <convert type="TemplatedMultiContent">
 	{"template": [
@@ -5057,7 +5072,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/setting.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget position="45,70" size="670,400" name="config" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1" />
     <widget source="key_red" render="Label" position="750,615" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
     <widget source="key_green" render="Label" position="750,640" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
@@ -5093,7 +5108,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/setup.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget position="45,70" size="670,400" name="config" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1" />
     <widget source="key_red" render="Label" position="750,615" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
     <widget source="key_green" render="Label" position="750,640" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
@@ -5109,7 +5124,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/setup.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget position="45,70" size="670,400" name="config" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1" />
     <widget source="key_red" render="Label" position="750,615" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
     <widget source="key_green" render="Label" position="750,640" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
@@ -5122,7 +5137,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/setup.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget position="45,70" size="670,400" name="config" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1" />
     <widget source="key_red" render="Label" position="750,615" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
     <widget source="key_green" render="Label" position="750,640" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
@@ -5134,7 +5149,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/setup.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget source="menu" render="Listbox" position="45,70" size="670,500" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1">
       <convert type="TemplatedMultiContent">
 	{"template": [
@@ -5159,7 +5174,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu1200" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/console.png" alphatest="blend" />
-    <widget source="Title" render="Label" position="30,25" size="1220,36" font="Regular; 30" foregroundColor="color1" backgroundColor="background" halign="center" transparent="1" borderWidth="2" />
+    <panel name="TemplatesTitle5" />
     <widget name="text" position="45,70" size="1190,535" font="Console;20" backgroundColor="black" transparent="1" />
     <widget source="key_red" render="Label" position="750,615" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
     <widget source="key_green" render="Label" position="750,640" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
@@ -5171,7 +5186,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu1200" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/console.png" alphatest="blend" />
-    <widget source="Title" render="Label" position="30,25" size="1220,36" font="Regular; 30" foregroundColor="color1" backgroundColor="background" halign="center" transparent="1" borderWidth="2" />
+    <panel name="TemplatesTitle5" />
     <widget name="text" position="45,70" size="1190,535" font="Console;20" backgroundColor="black" transparent="1" />
     <widget source="key_red" render="Label" position="750,615" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
     <panel name="TemplatesButtons" />
@@ -5181,7 +5196,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/script.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget name="list" position="45,70" size="670,540" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1" />
     <widget source="key_red" render="Label" position="750,615" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
     <panel name="TemplatesClock" />
@@ -5192,7 +5207,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu1200" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/console.png" alphatest="blend" />
-    <widget source="Title" render="Label" position="30,25" size="1220,36" font="Regular; 30" foregroundColor="color1" backgroundColor="background" halign="center" transparent="1" borderWidth="2" />
+    <panel name="TemplatesTitle5" />
     <widget name="text" position="45,70" size="1190,535" font="Console;20" backgroundColor="black" transparent="1" />
     <widget source="key_red" render="Label" position="750,615" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
     <panel name="TemplatesButtons" />
@@ -5202,7 +5217,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/script.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget name="config" position="45,70" size="670,500" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1" />
     <widget source="key_red" render="Label" position="750,615" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
     <widget source="key_green" render="Label" position="750,640" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
@@ -5214,7 +5229,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu1200" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/console.png" alphatest="blend" />
-    <widget source="Title" render="Label" position="30,25" size="1220,36" font="Regular; 30" foregroundColor="color1" backgroundColor="background" halign="center" transparent="1" borderWidth="2" />
+    <panel name="TemplatesTitle5" />
     <widget name="text" position="45,70" size="1190,535" font="Console;20" backgroundColor="black" transparent="1" noWrap="1" />
     <widget source="red_key" render="Label" position="750,615" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
     <widget source="green_key" render="Label" position="750,640" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
@@ -5269,7 +5284,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/keys.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget source="menu" render="Listbox" position="45,70" size="670,500" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1">
       <convert type="TemplatedMultiContent">
 	{"template": [
@@ -5291,7 +5306,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/keys.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget source="menu" render="Listbox" position="45,70" size="670,500" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1">
       <convert type="TemplatedMultiContent">
 	{"template": [
@@ -5315,7 +5330,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/setting.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget name="config" position="45,70" size="670,500" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1" />
     <widget source="key_red" render="Label" position="750,615" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
     <widget source="key_green" render="Label" position="750,640" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
@@ -5329,7 +5344,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/setting.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget name="config" position="45,70" size="670,500" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1" />
     <widget source="key_red" render="Label" position="750,615" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
     <widget source="key_green" render="Label" position="750,640" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
@@ -5341,7 +5356,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/keys.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <eLabel position="50,390" size="660,2" backgroundColor="grey" />
     <widget source="list" render="Listbox" position="45,70" size="670,310" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1">
       <convert type="TemplatedMultiContent">
@@ -5367,7 +5382,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/keys.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget source="menu" render="Listbox" position="45,70" size="670,350" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1">
       <convert type="TemplatedMultiContent">
 	{"template": [
@@ -5400,7 +5415,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/keys.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget name="config" position="45,70" size="670,500" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1" />
     <widget source="key_red" render="Label" position="750,615" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
     <widget source="key_green" render="Label" position="750,640" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
@@ -5413,7 +5428,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/keys.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget name="config" position="45,70" size="670,500" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1" />
     <widget source="key_red" render="Label" position="750,615" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
     <widget source="key_green" render="Label" position="750,640" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
@@ -5426,7 +5441,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/keys.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <eLabel position="50,390" size="660,2" backgroundColor="grey" />
     <widget source="list" render="Listbox" position="45,70" size="670,310" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1">
       <convert type="TemplatedMultiContent">
@@ -5452,7 +5467,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/setting.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget name="config" position="45,70" size="670,540" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" transparent="1" />
     <widget source="key_red" render="Label" position="750,615" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
     <widget source="key_green" render="Label" position="750,640" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
@@ -5480,7 +5495,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/info.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget name="AboutScrollLabel" font="Regular;22" position="45,70" size="670,530" halign="center" backgroundColor="background" transparent="1" />
     <widget name="key_red" position="750,615" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
     <panel name="TemplatesClock" />
@@ -5491,7 +5506,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/backup.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget name="filelist" position="45,70" size="670,500" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1" />
     <widget source="key_red" render="Label" position="750,615" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
     <widget source="key_green" render="Label" position="750,640" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
@@ -5979,7 +5994,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/kinopoisk.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget name="title" position="320,690" size="650,22" font="Display; 18" foregroundColor="color3" backgroundColor="background" halign="left" valign="center" transparent="1" />
     <widget name="starsbg" position="110,643" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TMBD/starsbar_empty.png" alphatest="blend" zPosition="2" />
     <widget name="stars" position="110,643" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TMBD/starsbar_filled.png" transparent="1" zPosition="3" />
@@ -6024,7 +6039,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/kinopoisk.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget name="title" position="320,690" size="650,22" font="Display; 18" foregroundColor="color3" backgroundColor="background" halign="left" valign="center" transparent="1" />
     <widget name="starsbg" position="110,643" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TMBD/starsbar_empty.png" alphatest="blend" zPosition="2" />
     <widget name="stars" position="110,643" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TMBD/starsbar_filled.png" transparent="1" zPosition="3" />
@@ -6068,7 +6083,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/setting.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget name="config" position="45,70" size="670,530" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1" />
     <widget name="key_red" position="750,615" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
     <widget name="key_green" position="750,640" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
@@ -6080,7 +6095,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/setting.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget name="menu" position="45,70" size="670,500" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1" />
     <panel name="TemplatesClock" />
   </screen>
@@ -6089,7 +6104,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu500" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/kinopoisk.png" alphatest="blend" />
-    <panel name="TemplatesTitle4" />
+    <panel name="TemplatesTitle2" />
     <widget name="list" position="45,70" size="470,500" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1" />
     <panel name="TemplatesClock" />
   </screen>
@@ -6098,7 +6113,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu500" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/kinopoisk.png" alphatest="blend" />
-    <panel name="TemplatesTitle4" />
+    <panel name="TemplatesTitle2" />
     <widget name="list" position="45,70" size="470,500" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1" />
     <panel name="TemplatesClock" />
   </screen>
@@ -6107,7 +6122,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu500" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/kinopoisk.png" alphatest="blend" />
-    <panel name="TemplatesTitle4" />
+    <panel name="TemplatesTitle2" />
     <widget name="config" position="45,70" size="470,500" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1" />
     <widget name="key_green" position="750,640" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
     <panel name="TemplatesClock" />
@@ -6118,7 +6133,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/setting.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TMBD/header.png" position="800,645" size="442,64" alphatest="on" transparent="1" />
     <widget name="list" position="45,70" size="670,500" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1" />
     <widget name="info" position="110,640" size="750,70" font="Display; 18" halign="left" valign="bottom" foregroundColor="color3" backgroundColor="background" transparent="1" />
@@ -6129,7 +6144,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/setting.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TMBD/logo.png" position="1010,660" zPosition="1" size="208, 46" transparent="1" alphatest="blend" />
     <widget name="menu" position="45,120" size="670,40" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1" />
     <widget name="poster" position="800,355" size="420,236" alphatest="on" />
@@ -6240,7 +6255,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/weather.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget name="MainList" position="45,70" size="670,530" enableWrapAround="1" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1" />
     <widget source="Titel" render="Label" position="110,668" size="650,22" font="Display; 18" foregroundColor="color3" backgroundColor="background" halign="left" valign="center" transparent="1" />
     <widget source="Titel2" render="Label" position="110,690" size="650,22" font="Display; 18" foregroundColor="color3" backgroundColor="background" halign="left" valign="center" transparent="1" />
@@ -6266,7 +6281,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/weather.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget name="Mlist" position="45,70" size="670,520" enableWrapAround="1" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1" />
     <eLabel text="OK = " position="750,580" size="100,25" font="Regular; 20" backgroundColor="background" transparent="1" />
     <widget source="key_ok" render="Label" position="805,580" size="100,25" font="Regular; 20" halign="left" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
@@ -6283,7 +6298,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/weather.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget name="Mlist" position="45,70" size="670,530" enableWrapAround="1" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1" />
     <widget source="key_red" render="Label" position="750,615" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
     <widget source="key_green" render="Label" position="750,640" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
@@ -6297,7 +6312,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/setting.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget name="Mlist" position="45,70" size="670,500" enableWrapAround="1" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1" />
     <widget source="key_red" render="Label" position="750,615" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
     <widget source="key_green" render="Label" position="750,640" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
@@ -6340,7 +6355,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/sleeptimer.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget position="45,70" size="670,300" name="config" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1" />
     <widget source="red_key" render="Label" position="750,615" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
     <widget source="green_key" render="Label" position="750,640" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
@@ -6352,7 +6367,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/download.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget name="menu" position="45,70" size="670,500" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1" />
     <panel name="TemplatesClock" />
   </screen>
@@ -6374,7 +6389,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu" />
     <ePixmap position="750,60" size="500,550" pixmap="Neutron_hd/style/greymenu_4.png" alphatest="on" zPosition="-1" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/calendar.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget name="w0" position="805,110" size="45,40" font="Regular;24" halign="center" valign="center" backgroundColor="background" />
     <widget name="w1" position="855,110" size="45,40" font="Regular;24" halign="center" valign="center" backgroundColor="color3" />
     <widget name="w2" position="905,110" size="45,40" font="Regular;24" halign="center" valign="center" backgroundColor="color3" />
@@ -6453,7 +6468,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu700" />
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/setting.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget source="key_red" render="Label" position="750,615" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
     <widget source="key_green" render="Label" position="750,640" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
     <widget name="config" position="45,70" size="670,500" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1" />
@@ -6466,13 +6481,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="TemplatesMenu" />
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/setting.png" alphatest="blend" />
     <ePixmap position="750,480" size="500,120" pixmap="Neutron_hd/logo.png" alphatest="blend" />
-    <panel name="TemplatesTitle1" />
+    <panel name="TemplatesTitle3" />
     <widget name="config" position="45,70" size="670,540" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" transparent="1" />
+    <widget source="info_com" render="Label" position="110,640" size="750,44" font="Display; 18" halign="left" valign="bottom" foregroundColor="color3" backgroundColor="background" transparent="1" />
     <widget source="key_red" render="Label" position="750,615" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
     <widget source="key_green" render="Label" position="750,640" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
     <widget source="key_blue" render="Label" position="750,690" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
     <widget source="version_sk" render="Label" position="110,690" size="150,22" font="Display; 18" foregroundColor="color3" backgroundColor="background" halign="left" valign="center" transparent="1" />
-    <widget source="vinfo_sk" render="Label" position="260,690" size="80,22" font="Display; 18" foregroundColor="color3" backgroundColor="background" halign="left" valign="center" transparent="1" />
+    <widget source="info_sk" render="Label" position="260,690" size="80,22" font="Display; 18" foregroundColor="color3" backgroundColor="background" halign="left" valign="center" transparent="1" />
     <ePixmap pixmap="Neutron_hd/buttons/key_epg.png" position="1210,668" size="40,20" alphatest="on" />
     <panel name="TemplatesClock" />
     <panel name="TemplatesButtons" />
