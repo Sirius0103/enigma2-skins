@@ -80,55 +80,6 @@ progresscolor = [
 	("darkblue", _("darkblue")),
 	("glaucous", _("glaucous")),
 	("purple", _("purple"))]
-numberchannel = [
-	("TemplatesInfoBarNumber-1", _("no")),
-	("TemplatesInfoBarNumber-2", _("yes"))]
-styleinfobar = [
-	("TemplatesInfoBarTvPicon", _("default")),
-	("TemplatesInfoBarTvPiconProv", _("picon provider")),
-	("TemplatesInfoBarTvPiconSat", _("picon sattelite")),
-	("TemplatesInfoBarTvPiconProvSat", _("picon provider, picon sattelite")),
-	("TemplatesInfoBarTvPiconTuner", _("tuner")),
-	("TemplatesInfoBarTvPiconProvTuner", _("picon provider, tuner")),
-	("TemplatesInfoBarTvPiconSatTuner", _("picon sattelite, tuner")),
-	("TemplatesInfoBarTvPiconProvSatTuner", _("picon provider, picon sattelite, tuner")),
-	("TemplatesInfoBarTvPiconAnalogTuner", _("analog tuner")),
-	("TemplatesInfoBarTvPiconProvAnalogTuner", _("picon provider, analog tuner")),
-	("TemplatesInfoBarTvPiconSatAnalogTuner", _("picon sattelite, analog tuner")),
-	("TemplatesInfoBarTvPiconProvSatAnalogTuner", _("picon provider, picon sattelite, analog tuner"))]
-technicalinfobar = [
-	("TemplatesInfoBarTechnical-1", _("no")),
-	("TemplatesInfoBarTechnical-2", _("pid")),
-	("TemplatesInfoBarTechnical-3", _("ecm, caids")),
-	("TemplatesInfoBarTechnical-4", _("crypt, ecm, camd"))]
-ecmepgpanel = [
-	("TemplatesInfoBarECM-EPG-1", _("no")),
-	("TemplatesInfoBarECM-EPG-2", _("ecm centre")),
-	("TemplatesInfoBarECM-EPG-3", _("ecm right")),
-	("TemplatesInfoBarECM-EPG-4", _("ecm left")),
-	("TemplatesInfoBarECM-EPG-5", _("epg centre")),
-	("TemplatesInfoBarECM-EPG-6", _("epg right")),
-	("TemplatesInfoBarECM-EPG-7", _("epg left")),
-	("TemplatesInfoBarECM-EPG-8", _("ecm centre, epg centre")),
-	("TemplatesInfoBarECM-EPG-9", _("ecm right, epg left")),
-	("TemplatesInfoBarECM-EPG-10", _("ecm left, epg right"))]
-epgchannelselection = [
-	("TemplatesChannelSelectionInfoEPG-1", _("no")),
-	("TemplatesChannelSelectionInfoEPG-2", _("now")),
-	("TemplatesChannelSelectionInfoEPG-3", _("now, next")),
-	("TemplatesChannelSelectionInfoEPG-4", _("9 programs"))]
-infochannelselection = [
-	("TemplatesChannelSelectionInfoChannel-1", _("no")),
-	("TemplatesChannelSelectionInfoChannel-2", _("picons")),
-	("TemplatesChannelSelectionInfoChannel-3", _("channel info")),
-	("TemplatesChannelSelectionInfoChannel-4", _("picon channel, channel info")),
-	("TemplatesChannelSelectionInfoChannel-5", _("picon channel, picon provider, channel info")),
-	("TemplatesChannelSelectionInfoChannel-6", _("picon channel, picon provider, picon sattelite, channel info"))]
-clockpanel = [
-	("TemplatesClock-1", _("no")),
-	("TemplatesClock-2", _("12:00")),
-	("TemplatesClock-3", _("saturday, 01 january 12:00")),
-	("TemplatesClock-4", _("saturday, 01.01.2010 12:00"))]
 dish = [
 	("Dish-1", _("on left")),
 	("Dish-2", _("on right"))]
@@ -143,6 +94,90 @@ fonts = [
 	("Roboto-MediumItalic", _("mediumitalic")),
 	("Roboto-BoldItalic", _("bolditalic"))]
 
+if fileExists("/usr/lib/enigma2/python/Components/Converter/AlwaysTrue.py")\
+	and fileExists("/usr/lib/enigma2/python/Components/Converter/CaidInfo2.py")\
+	and fileExists("/usr/lib/enigma2/python/Components/Converter/CamdInfo3.py")\
+	and fileExists("/usr/lib/enigma2/python/Components/Converter/ConverterRotator.py")\
+	and fileExists("/usr/lib/enigma2/python/Components/Converter/EventName2.py")\
+	and fileExists("/usr/lib/enigma2/python/Components/Converter/FrontendInfo2.py")\
+	and fileExists("/usr/lib/enigma2/python/Components/Converter/ProgressDiskSpaceInfo.py")\
+	and fileExists("/usr/lib/enigma2/python/Components/Converter/RouteInfo.py")\
+	and fileExists("/usr/lib/enigma2/python/Components/Converter/RWeather.py")\
+	and fileExists("/usr/lib/enigma2/python/Components/Converter/ServiceInfoEX.py")\
+	and fileExists("/usr/lib/enigma2/python/Components/Converter/ServiceName2.py")\
+	and fileExists("/usr/lib/enigma2/python/Components/Renderer/PiconUni.py")\
+	and fileExists("/usr/lib/enigma2/python/Components/Renderer/RendVolumeText.py")\
+	and fileExists("/usr/lib/enigma2/python/Components/Renderer/Watches.py"):
+	numberchannel = [
+		("TemplatesInfoBarNumber-1", _("no")),
+		("TemplatesInfoBarNumber-2", _("yes"))]
+	styleinfobar = [
+		("TemplatesInfoBarTvPicon", _("default")),
+		("TemplatesInfoBarTvPiconProv", _("picon provider")),
+		("TemplatesInfoBarTvPiconSat", _("picon sattelite")),
+		("TemplatesInfoBarTvPiconProvSat", _("picon provider, picon sattelite")),
+		("TemplatesInfoBarTvPiconTuner", _("tuner")),
+		("TemplatesInfoBarTvPiconProvTuner", _("picon provider, tuner")),
+		("TemplatesInfoBarTvPiconSatTuner", _("picon sattelite, tuner")),
+		("TemplatesInfoBarTvPiconProvSatTuner", _("picon provider, picon sattelite, tuner")),
+		("TemplatesInfoBarTvPiconAnalogTuner", _("analog tuner")),
+		("TemplatesInfoBarTvPiconProvAnalogTuner", _("picon provider, analog tuner")),
+		("TemplatesInfoBarTvPiconSatAnalogTuner", _("picon sattelite, analog tuner")),
+		("TemplatesInfoBarTvPiconProvSatAnalogTuner", _("picon provider, picon sattelite, analog tuner"))]
+	technicalinfobar = [
+		("TemplatesInfoBarTechnical-1", _("no")),
+		("TemplatesInfoBarTechnical-2", _("pid")),
+		("TemplatesInfoBarTechnical-3", _("ecm, caids")),
+		("TemplatesInfoBarTechnical-4", _("crypt, ecm, camd"))]
+	ecmepgpanel = [
+		("TemplatesInfoBarECM-EPG-1", _("no")),
+		("TemplatesInfoBarECM-EPG-2", _("ecm centre")),
+		("TemplatesInfoBarECM-EPG-3", _("ecm right")),
+		("TemplatesInfoBarECM-EPG-4", _("ecm left")),
+		("TemplatesInfoBarECM-EPG-5", _("epg centre")),
+		("TemplatesInfoBarECM-EPG-6", _("epg right")),
+		("TemplatesInfoBarECM-EPG-7", _("epg left")),
+		("TemplatesInfoBarECM-EPG-8", _("ecm centre, epg centre")),
+		("TemplatesInfoBarECM-EPG-9", _("ecm right, epg left")),
+		("TemplatesInfoBarECM-EPG-10", _("ecm left, epg right"))]
+	epgchannelselection = [
+		("TemplatesChannelSelectionInfoEPG-1", _("no")),
+		("TemplatesChannelSelectionInfoEPG-2", _("now")),
+		("TemplatesChannelSelectionInfoEPG-3", _("now, next")),
+		("TemplatesChannelSelectionInfoEPG-4", _("9 programs"))]
+	infochannelselection = [
+		("TemplatesChannelSelectionInfoChannel-1", _("no")),
+		("TemplatesChannelSelectionInfoChannel-2", _("picons")),
+		("TemplatesChannelSelectionInfoChannel-3", _("channel info")),
+		("TemplatesChannelSelectionInfoChannel-4", _("picon channel, channel info")),
+		("TemplatesChannelSelectionInfoChannel-5", _("picon channel, picon provider, channel info")),
+		("TemplatesChannelSelectionInfoChannel-6", _("picon channel, picon provider, picon sattelite, channel info"))]
+	clockpanel = [
+		("TemplatesClock-1", _("no")),
+		("TemplatesClock-2", _("12:00")),
+		("TemplatesClock-3", _("saturday, 01 january 12:00")),
+		("TemplatesClock-4", _("saturday, 01.01.2010 12:00"))]
+else:
+	numberchannel = [
+		("TemplatesInfoBarNumber-1", _("no"))]
+	styleinfobar = [
+		("TemplatesInfoBarTvPicon", _("default")),
+		("TemplatesInfoBarTvPiconTuner", _("tuner"))]
+	technicalinfobar = [
+		("TemplatesInfoBarTechnical-1", _("no"))]
+	ecmepgpanel = [
+		("TemplatesInfoBarECM-EPG-1", _("no")),
+		("TemplatesInfoBarECM-EPG-5", _("epg centre")),
+		("TemplatesInfoBarECM-EPG-6", _("epg right")),
+		("TemplatesInfoBarECM-EPG-7", _("epg left"))]
+	epgchannelselection = [
+		("TemplatesChannelSelectionInfoEPG-1", _("no")),
+		("TemplatesChannelSelectionInfoEPG-2", _("now"))]
+	infochannelselection = [
+		("TemplatesChannelSelectionInfoChannel-1", _("no")),
+		("TemplatesChannelSelectionInfoChannel-2", _("picons"))]
+	clockpanel = [
+		("TemplatesClock-1", _("no"))]
 if fileExists("/usr/lib/enigma2/python/Plugins/Extensions/TMBD/plugin.pyo")\
 	and fileExists("/usr/lib/enigma2/python/Components/Renderer/RatingTmbd.py")\
 	and fileExists("/usr/lib/enigma2/python/Components/Renderer/CoverTmbd.py"):
