@@ -3292,6 +3292,85 @@
     <widget name="config" position="45,70" size="670,530" transparent="1" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" />
     <panel name="TemplatesClock" />
   </screen>
+  <!-- ########## Common Interface ########## -->
+  <!-- CiSelection -->
+  <screen name="CiSelection" position="fill" title="Common Interface" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenu700" />
+    <panel name="TemplatesMenu" />
+    <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/card.png" alphatest="blend" />
+    <eLabel text="Common Interface" position="30,25" size="700,36" font="Regular; 30" foregroundColor="color1" backgroundColor="background" halign="center" transparent="1" borderWidth="2" />
+    <widget name="text" position="110,646" size="650,22" font="Display; 18" foregroundColor="color3" backgroundColor="background" halign="left" valign="center" transparent="1" />
+    <widget name="entries" position="45,70" size="670,500" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1" />
+    <panel name="TemplatesClock" />
+  </screen>
+  <!-- MMI Dialog -->
+  <screen name="MMIDialog" position="fill" title="Common Interface" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenu700" />
+    <panel name="TemplatesMenu" />
+    <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/card.png" alphatest="blend" />
+    <eLabel text="Common Interface" position="30,25" size="700,36" font="Regular; 30" foregroundColor="color1" backgroundColor="background" halign="center" transparent="1" borderWidth="2" />
+    <widget name="title" position="110,646" size="650,22" font="Display; 18" foregroundColor="color3" backgroundColor="background" halign="left" valign="center" transparent="1" />
+    <widget name="subtitle" position="110,668" size="650,22" font="Display; 18" foregroundColor="color3" backgroundColor="background" halign="left" valign="center" transparent="1" />
+    <widget name="bottom" position="110,690" size="650,22" font="Display; 18" foregroundColor="color3" backgroundColor="background" halign="left" valign="center" transparent="1" />
+    <widget name="entries" position="45,70" size="670,500" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1" />
+    <panel name="TemplatesClock" />
+  </screen>
+  <!-- CIselectMainMenu -->
+  <screen name="CIselectMainMenu" position="fill" title="CI Assignment" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenu700" />
+    <panel name="TemplatesMenu" />
+    <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/card.png" alphatest="blend" />
+    <eLabel text="CI Assignment" position="30,25" size="700,36" font="Regular; 30" foregroundColor="color1" backgroundColor="background" halign="center" transparent="1" borderWidth="2" />
+    <widget name="CiList" position="45,70" size="670,500" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1" />
+    <widget source="key_red" render="Label" position="750,615" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
+    <widget source="key_green" render="Label" position="750,640" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
+    <panel name="TemplatesClock" />
+    <panel name="TemplatesButtons" />
+  </screen>
+  <!-- CIconfigMenu -->
+  <screen name="CIconfigMenu" position="fill" title="CI Assignment" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenu700" />
+    <panel name="TemplatesMenu" />
+    <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/card.png" alphatest="blend" />
+    <eLabel text="CI Assignment" position="30,25" size="700,36" font="Regular; 30" foregroundColor="color1" backgroundColor="background" halign="center" transparent="1" borderWidth="2" />
+    <widget source="CAidList_desc" render="Label" position="45,70" size="670,30" font="Regular;24" backgroundColor="background" transparent="1" />
+    <widget source="CAidList" render="Label" position="45,120" size="670,75" font="Regular;22" backgroundColor="background" transparent="1" />
+    <widget source="ServiceList_desc" render="Label" position="45,200" size="670,30" font="Regular;22" backgroundColor="background" transparent="1" />
+    <widget name="ServiceList" position="50,240" size="660,250" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1" />
+    <widget source="ServiceList_info" render="Label" position="50,360" size="660,250" zPosition="2" font="Regular;22" backgroundColor="background" transparent="1" />
+    <widget source="key_red" render="Label" position="750,615" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
+    <widget source="key_green" render="Label" position="750,640" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
+    <widget source="key_yellow" render="Label" position="750,665" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
+    <widget source="key_blue" render="Label" position="750,690" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
+    <panel name="TemplatesClock" />
+    <panel name="TemplatesButtons" />
+  </screen>
+  <!-- CIconfigMenu -->
+  <screen name="easyCIconfigMenu" position="fill" title="CI Assignment" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenu700" />
+    <panel name="TemplatesMenu" />
+    <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/card.png" alphatest="blend" />
+    <eLabel text="CI Assignment" position="30,25" size="700,36" font="Regular; 30" foregroundColor="color1" backgroundColor="background" halign="center" transparent="1" borderWidth="2" />
+    <widget name="ServiceList_desc" position="45,70" size="670,32" font="Regular;24" backgroundColor="background" transparent="1" />
+    <widget name="ServiceList" position="45,105" size="670,500" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1" />
+    <widget source="key_red" render="Label" position="750,615" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
+    <widget source="key_green" render="Label" position="750,640" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
+    <widget source="key_yellow" render="Label" position="750,665" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
+    <panel name="TemplatesClock" />
+    <panel name="TemplatesButtons" />
+  </screen>
+  <!-- CAidSelect -->
+  <screen name="CAidSelect" position="fill" title="select CAId's" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenu700" />
+    <panel name="TemplatesMenu" />
+    <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/setting.png" alphatest="blend" />
+    <eLabel text="select CAId's" position="30,25" size="700,36" font="Regular; 30" foregroundColor="color1" backgroundColor="background" halign="center" transparent="1" borderWidth="2" />
+    <widget name="list" position="45,70" size="670,500" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1" />
+    <widget source="key_red" render="Label" position="750,615" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
+    <widget source="key_green" render="Label" position="750,640" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
+    <panel name="TemplatesClock" />
+    <panel name="TemplatesButtons" />
+  </screen>
   <!-- ########## Timer ########## -->
   <!--  TimerEdit -->
   <screen name="TimerEdit" position="fill" title="Timer Edit" flags="wfNoBorder" backgroundColor="transparent">
@@ -3596,7 +3675,12 @@
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/setting.png" alphatest="blend" />
     <eLabel text="Reception Settings" position="30,25" size="700,36" font="Regular; 30" foregroundColor="color1" backgroundColor="background" halign="center" transparent="1" borderWidth="2" />
     <widget name="config" position="45,70" size="670,528" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1" />
+    <widget name="key_red" position="750,615" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
+    <widget name="key_green" position="750,640" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
+    <widget name="key_yellow" position="750,665" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
+    <widget name="key_blue" position="750,690" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
     <panel name="TemplatesClock" />
+    <panel name="TemplatesButtons" />
   </screen>
   <!-- Nim Selection -->
   <screen name="NimSelection" position="fill" title="Choose Tuner" flags="wfNoBorder" backgroundColor="transparent">
@@ -3823,6 +3907,57 @@
     </widget>
     <panel name="TemplatesClock" />
   </screen>
+  <!-- Signal finder -->
+  <screen name="SignalFinder" position="0,0" size="1280,720" title="Signal finder" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenu700" />
+    <panel name="TemplatesMenu" />
+    <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/scan.png" alphatest="blend" />
+    <panel name="TemplatesTitle3" />
+    <eLabel name="pos" text="Current position:" position="110,668" size="170,22" font="Display; 18" foregroundColor="color2" backgroundColor="background" halign="left" transparent="1" />
+    <widget name="status" position="280,668" size="240,22" font="Regular; 18" foregroundColor="color3" backgroundColor="background" valign="center" transparent="1" />
+    <widget name="config" position="45,200" size="670,400" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1" />
+    <widget name="introduction" position="110,690" size="650,22" font="Display; 18" foregroundColor="color3" backgroundColor="background" halign="left" valign="center" transparent="1" />
+    <ePixmap position="130,77" size="500,24" pixmap="Neutron_hd/progress_bar_bg.png" zPosition="1" alphatest="blend" />
+    <widget source="Frontend" render="Label" position="225,646" zPosition="2" size="150,22" font="Regular; 18" foregroundColor="color3" backgroundColor="background" halign="left" valign="center" transparent="1">
+      <convert type="FrontendInfo">SNRdB</convert>
+    </widget>
+    <eLabel name="snr" text="SNR:" position="45,75" size="80,28" font="Regular; 24" foregroundColor="color2" backgroundColor="background" halign="right" transparent="1" />
+    <widget source="Frontend" render="Progress" position="130,77" size="500,24" pixmap="Neutron_hd/progress_bar_2.png" transparent="1" zPosition="2">
+      <convert type="FrontendInfo">SNR</convert>
+    </widget>
+    <widget source="Frontend" render="Label" position="635,75" size="80,28" font="Regular; 24" foregroundColor="color3" backgroundColor="background" transparent="1">
+      <convert type="FrontendInfo">SNR</convert>
+    </widget>
+    <ePixmap position="130,117" size="500,24" pixmap="Neutron_hd/progress_bar_bg.png" zPosition="1" alphatest="blend" />
+    <eLabel name="agc" text="AGC:" position="45,115" size="80,28" font="Regular; 24" foregroundColor="color2" backgroundColor="background" halign="right" transparent="1" />
+    <widget source="Frontend" render="Progress" position="130,117" size="500,24" pixmap="Neutron_hd/progress_bar_2.png" transparent="1" zPosition="2">
+      <convert type="FrontendInfo">AGC</convert>
+    </widget>
+    <widget source="Frontend" render="Label" position="635,115" size="80,28" font="Regular; 24" foregroundColor="color3" backgroundColor="background" transparent="1">
+      <convert type="FrontendInfo">AGC</convert>
+    </widget>
+    <ePixmap position="130,157" size="500,24" pixmap="Neutron_hd/progress_bar_bg.png" zPosition="1" alphatest="blend" />
+    <eLabel name="ber" text="BER:" position="45,155" size="80,28" font="Regular; 24" foregroundColor="color2" backgroundColor="background" halign="right" transparent="1" />
+    <widget source="Frontend" render="Progress" position="130,157" size="500,24" pixmap="Neutron_hd/progress_bar_1.png" transparent="1" zPosition="2">
+      <convert type="FrontendInfo">BER</convert>
+    </widget>
+    <widget source="Frontend" render="Label" position="635,155" size="80,28" font="Regular; 24" foregroundColor="color3" backgroundColor="background" transparent="1">
+      <convert type="FrontendInfo">BER</convert>
+    </widget>
+    <eLabel name="lock" text="Lock:" position="110,646" size="70,22" font="Display; 18" foregroundColor="color2" backgroundColor="background" halign="left" transparent="1" />
+    <widget source="Frontend" render="Pixmap" pixmap="Neutron_hd/icons/lock_on.png" position="185,640" zPosition="1" size="38,31" alphatest="on">
+      <convert type="FrontendInfo">LOCK</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="Frontend" render="Pixmap" pixmap="Neutron_hd/icons/lock_off.png" position="185,640" zPosition="1" size="38,31" alphatest="on">
+      <convert type="FrontendInfo">LOCK</convert>
+      <convert type="ConditionalShowHide">Invert</convert>
+    </widget>
+    <widget name="Cancel" position="750,615" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
+    <widget name="Scan" position="750,640" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
+    <panel name="TemplatesClock" />
+    <panel name="TemplatesButtons" />
+  </screen>
   <!-- Service Scan  -->
   <screen name="ServiceScan" position="fill" title="Service scan" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenu500" />
@@ -4009,72 +4144,6 @@
     <widget name="okbutton" position="20,20" size="300,40" />
     <widget name="theClock" position="20,70" size="300,50" />
     <widget name="title" position="20,130" size="300,50" />
-  </screen>
-  <!-- CiSelection -->
-  <screen name="CiSelection" position="fill" title="Common Interface" flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="TemplatesMenu700" />
-    <panel name="TemplatesMenu" />
-    <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/card.png" alphatest="blend" />
-    <eLabel text="Common Interface" position="30,25" size="700,36" font="Regular; 30" foregroundColor="color1" backgroundColor="background" halign="center" transparent="1" borderWidth="2" />
-    <widget name="text" position="110,690" size="650,22" font="Display; 18" foregroundColor="color3" backgroundColor="background" halign="left" valign="center" transparent="1" />
-    <widget name="entries" position="45,70" size="670,500" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1" />
-    <panel name="TemplatesClock" />
-  </screen>
-  <!-- CIselectMainMenu -->
-  <screen name="CIselectMainMenu" position="fill" title="CI Assignment" flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="TemplatesMenu700" />
-    <panel name="TemplatesMenu" />
-    <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/card.png" alphatest="blend" />
-    <eLabel text="CI Assignment" position="30,25" size="700,36" font="Regular; 30" foregroundColor="color1" backgroundColor="background" halign="center" transparent="1" borderWidth="2" />
-    <widget name="CiList" position="45,70" size="670,500" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1" />
-    <widget source="key_red" render="Label" position="750,615" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
-    <widget source="key_green" render="Label" position="750,640" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
-    <panel name="TemplatesClock" />
-    <panel name="TemplatesButtons" />
-  </screen>
-  <!-- CIconfigMenu -->
-  <screen name="CIconfigMenu" position="fill" title="CI Assignment" flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="TemplatesMenu700" />
-    <panel name="TemplatesMenu" />
-    <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/card.png" alphatest="blend" />
-    <eLabel text="CI Assignment" position="30,25" size="700,36" font="Regular; 30" foregroundColor="color1" backgroundColor="background" halign="center" transparent="1" borderWidth="2" />
-    <widget source="CAidList_desc" render="Label" position="45,70" size="670,30" font="Regular;24" backgroundColor="background" transparent="1" />
-    <widget source="CAidList" render="Label" position="45,120" size="670,75" font="Regular;22" backgroundColor="background" transparent="1" />
-    <widget source="ServiceList_desc" render="Label" position="45,200" size="670,30" font="Regular;22" backgroundColor="background" transparent="1" />
-    <widget name="ServiceList" position="50,240" size="660,250" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1" />
-    <widget source="ServiceList_info" render="Label" position="50,360" size="660,250" zPosition="2" font="Regular;22" backgroundColor="background" transparent="1" />
-    <widget source="key_red" render="Label" position="750,615" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
-    <widget source="key_green" render="Label" position="750,640" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
-    <widget source="key_yellow" render="Label" position="750,665" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
-    <widget source="key_blue" render="Label" position="750,690" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
-    <panel name="TemplatesClock" />
-    <panel name="TemplatesButtons" />
-  </screen>
-  <!-- CIconfigMenu -->
-  <screen name="easyCIconfigMenu" position="fill" title="CI Assignment" flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="TemplatesMenu700" />
-    <panel name="TemplatesMenu" />
-    <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/card.png" alphatest="blend" />
-    <eLabel text="CI Assignment" position="30,25" size="700,36" font="Regular; 30" foregroundColor="color1" backgroundColor="background" halign="center" transparent="1" borderWidth="2" />
-    <widget name="ServiceList_desc" position="45,70" size="670,32" font="Regular;24" backgroundColor="background" transparent="1" />
-    <widget name="ServiceList" position="45,105" size="670,500" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1" />
-    <widget source="key_red" render="Label" position="750,615" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
-    <widget source="key_green" render="Label" position="750,640" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
-    <widget source="key_yellow" render="Label" position="750,665" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
-    <panel name="TemplatesClock" />
-    <panel name="TemplatesButtons" />
-  </screen>
-  <!-- CAidSelect -->
-  <screen name="CAidSelect" position="fill" title="select CAId's" flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="TemplatesMenu700" />
-    <panel name="TemplatesMenu" />
-    <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/setting.png" alphatest="blend" />
-    <eLabel text="select CAId's" position="30,25" size="700,36" font="Regular; 30" foregroundColor="color1" backgroundColor="background" halign="center" transparent="1" borderWidth="2" />
-    <widget name="list" position="45,70" size="670,500" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1" />
-    <widget source="key_red" render="Label" position="750,615" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
-    <widget source="key_green" render="Label" position="750,640" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
-    <panel name="TemplatesClock" />
-    <panel name="TemplatesButtons" />
   </screen>
   <!-- ImageWizard -->
   <screen name="ImageWizard" position="fill" title="Welcome..." flags="wfNoBorder" backgroundColor="transparent">
@@ -4281,7 +4350,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <ePixmap position="20,635" size="80,80" pixmap="Neutron_hd/menu/crypted.png" alphatest="blend" />
     <eLabel text="Parental control setup" position="30,25" size="700,36" font="Regular; 30" foregroundColor="color1" backgroundColor="background" halign="center" transparent="1" borderWidth="2" />
     <widget name="config" position="45,70" size="670,310" scrollbarMode="showNever" selectionPixmap="Neutron_hd/style/greysel.png" backgroundColor="black" transparent="1" />
+    <widget source="key_red" render="Label" position="750,615" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
+    <widget source="key_green" render="Label" position="750,640" size="400,25" font="Regular; 22" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" />
     <panel name="TemplatesClock" />
+    <panel name="TemplatesButtons" />
   </screen>
   <!-- RecordPathsSettings -->
   <screen name="RecordPathsSettings" position="fill" title="Recording paths" flags="wfNoBorder" backgroundColor="transparent">
