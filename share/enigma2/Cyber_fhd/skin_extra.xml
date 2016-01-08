@@ -1,0 +1,63 @@
+<skin>
+  <!-- # # # # # # # # # # CyberFHD # # # # # # # # # # -->
+  <!--
+# Skin - CyberFHD
+# Developer - Sirius
+# Homepage - http://www.gisclub.Tv
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program. If not, see <http://www.gnu.org/licenses/>.
+  -->
+  <!-- Setup CyberFHD -->
+  <screen name="SetupCyberFHD" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesMenu1000Layer" />
+    <panel name="TemplatesMenuLeftLayer" />
+    <eLabel text="¤" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <panel name="TemplatesTitle1" />
+    <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+    <!-- Layer Preview -->
+    <eLabel position="1098,363" size="742,484" backgroundColor="background3" zPosition="-12" />
+    <eLabel position="1100,365" size="740,480" backgroundColor="background1" zPosition="-11" />
+    <eLabel position="1110,375" size="720,460" backgroundColor="transparent" zPosition="-10" />
+    <!-- Layer Menu Info Right -->
+    <eLabel position="1840,363" size="80,484" backgroundColor="background3" zPosition="-12" />
+    <eLabel position="1840,365" size="80,480" backgroundColor="background1" zPosition="-11" />
+    <eLabel position="1840,375" size="70,460" backgroundColor="background2" zPosition="-10" />
+    <widget name="bgcolor1a" position="1110,410" size="720,30" backgroundColor="background" zPosition="-3" />
+    <widget name="bgcolor1b" position="1110,750" size="720,50" backgroundColor="background" zPosition="-3" />
+    <widget name="bgcolor1c" position="1110,450" size="400,290" backgroundColor="background" zPosition="-3" />
+    <widget name="bgcolor2a" position="1520,590" size="310,150" backgroundColor="background" zPosition="-3" />
+    <widget name="bgcolor3a" position="1110,409" size="720,32" backgroundColor="background" zPosition="-5" />
+    <widget name="bgcolor3b" position="1110,749" size="720,52" backgroundColor="background" zPosition="-5" />
+    <widget name="bgcolor3c" position="1110,449" size="401,292" backgroundColor="background" zPosition="-5" />
+    <widget name="bgcolor3d" position="1519,589" size="311,152" backgroundColor="background" zPosition="-5" />
+    <widget name="bgcolor4a" position="1120,772" size="700,5" backgroundColor="background" zPosition="-2" />
+    <widget name="bgcolor5a" position="1110,490" size="400,20" backgroundColor="background" zPosition="-2" />
+    <widget name="fgcolor1a" position="1120,413" size="300,25" font="Titles; 25" halign="left" backgroundColor="background" transparent="1" />
+    <widget name="fgcolor1b" position="1120,490" size="380,20" font="Global; 15" halign="left" backgroundColor="background" transparent="1" />
+    <widget name="fgcolor2a" position="1120,460" size="380,20" font="Global; 15" halign="left" backgroundColor="background" transparent="1" />
+    <widget name="fgcolor2b" position="1120,520" size="380,20" font="Global; 15" halign="left" backgroundColor="background" transparent="1" />
+    <widget name="fgcolor2c" position="1120,751" size="700,20" font="Global; 15" halign="left" backgroundColor="background" transparent="1" />
+    <widget name="fgcolor3a" position="1120,779" size="700,20" font="Global; 15" halign="left" backgroundColor="background" transparent="1" />
+    <widget name="fgcolor3b" position="1525,595" size="300,140" font="Global; 15" halign="left" backgroundColor="background" transparent="1" />
+    <widget name="fgcolor4a" position="1520,413" size="300,25" font="Indication; 25" halign="right" backgroundColor="background" transparent="1" />
+    <widget name="fgcolor5a" position="1525,685" size="300,50" font="Titles; 30" halign="left" backgroundColor="background" transparent="1" />
+    <panel name="TemplatesButtonsRedSource" />
+    <panel name="TemplatesButtonsGreenSource" />
+    <panel name="TemplatesButtonsYellowSource" />
+    <panel name="TemplatesButtonsBlueSource" />
+    <panel name="TemplatesButtons" />
+    <panel name="TemplatesClock" />
+  </screen>
+</skin>
