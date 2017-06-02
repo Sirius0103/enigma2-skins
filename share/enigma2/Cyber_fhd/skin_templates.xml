@@ -4333,6 +4333,18 @@
     <!-- Templates Buttons Blue Source -->
     <widget source="key_blue" render="Label" position="1380,974" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
   </screen>
+  <screen name="TemplatesButtonsMenuName">
+    <!-- Templates Buttons Menu Name -->
+    <eLabel text="&gt;MENU&lt;" position="1485,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+  </screen>
+  <screen name="TemplatesButtonsInfoName">
+    <!-- Templates Buttons Info Name -->
+    <eLabel text="&gt;INFO&lt;" position="1365,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+  </screen>
+  <screen name="TemplatesButtonsOkName">
+    <!-- Templates Buttons Ok Name -->
+    <eLabel text="&gt;OK&lt;" position="1245,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+  </screen>
   <screen name="TemplatesSignalFinder">
     <!-- Templates Signal Finder -->
     <!-- Layer Satfinder Tuner Info -->

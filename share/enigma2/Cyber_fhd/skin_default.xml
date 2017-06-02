@@ -442,8 +442,8 @@
     <panel name="TemplatesButtonsGreenName" />
     <panel name="TemplatesButtonsYellowName" />
     <panel name="TemplatesButtonsBlueName" />
-    <eLabel text="&gt;INFO&lt;" position="1365,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-    <eLabel text="&gt;MENU&lt;" position="1485,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+    <panel name="TemplatesButtonsInfoName" />
+    <panel name="TemplatesButtonsMenuName" />
     <panel name="TemplatesButtons" />
     <panel name="TemplatesClock" />
   </screen>
@@ -458,8 +458,8 @@
     <panel name="TemplatesButtonsGreenName" />
     <panel name="TemplatesButtonsYellowName" />
     <panel name="TemplatesButtonsBlueName" />
-    <eLabel text="&gt;INFO&lt;" position="1365,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-    <eLabel text="&gt;MENU&lt;" position="1485,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+    <panel name="TemplatesButtonsInfoName" />
+    <panel name="TemplatesButtonsMenuName" />
     <panel name="TemplatesButtons" />
     <panel name="TemplatesClock" />
   </screen>
@@ -474,8 +474,8 @@
     <panel name="TemplatesButtonsGreenName" />
     <panel name="TemplatesButtonsYellowName" />
     <panel name="TemplatesButtonsBlueName" />
-    <eLabel text="&gt;INFO&lt;" position="1365,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-    <eLabel text="&gt;MENU&lt;" position="1485,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+    <panel name="TemplatesButtonsInfoName" />
+    <panel name="TemplatesButtonsMenuName" />
     <panel name="TemplatesButtons" />
     <panel name="TemplatesClock" />
   </screen>
@@ -586,8 +586,8 @@
     <panel name="TemplatesButtonsGreenName" />
     <panel name="TemplatesButtonsYellowName" />
     <panel name="TemplatesButtonsBlueName" />
-    <eLabel text="&gt;INFO&lt;" position="1365,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-    <eLabel text="&gt;MENU&lt;" position="1485,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+    <panel name="TemplatesButtonsInfoName" />
+    <panel name="TemplatesButtonsMenuName" />
     <panel name="TemplatesButtons" />
     <panel name="TemplatesClock" />
   </screen>
@@ -648,7 +648,7 @@
     <ePixmap position="100,805" size="225,200" pixmap="Cyber_fhd/case_jewel_2.png" alphatest="blend" zPosition="3" />
     <widget name="coverArt" pixmap="Cyber_fhd/no_cover.png" position="125,805" size="200,200" alphatest="on" zPosition="2" />
     <panel name="TemplatesInfoBarMediaProgress" />
-    <eLabel text="&gt;MENU&lt;" position="1485,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+    <panel name="TemplatesButtonsMenuName" />
     <panel name="TemplatesClock" />
   </screen>
   <!-- Cut List Editor -->
@@ -1422,7 +1422,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesButtonsGreenName" />
     <panel name="TemplatesButtonsYellowName" />
     <panel name="TemplatesButtonsBlueName" />
-    <eLabel text="&gt;MENU&lt;" position="1485,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+    <panel name="TemplatesButtonsMenuName" />
     <panel name="TemplatesButtons" />
     <panel name="TemplatesClock" />
   </screen>
@@ -1439,8 +1439,8 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesButtonsGreenName" />
     <panel name="TemplatesButtonsYellowName" />
     <panel name="TemplatesButtonsBlueName" />
-    <eLabel text="&gt;INFO&lt;" position="1365,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-    <eLabel text="&gt;MENU&lt;" position="1485,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+    <panel name="TemplatesButtonsInfoName" />
+    <panel name="TemplatesButtonsMenuName" />
     <panel name="TemplatesButtons" />
     <panel name="TemplatesClock" />
   </screen>
@@ -1461,7 +1461,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesButtonsGreenName" />
     <panel name="TemplatesButtonsYellowName" />
     <panel name="TemplatesButtonsBlueName" />
-    <eLabel text="&gt;MENU&lt;" position="1485,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+    <panel name="TemplatesButtonsMenuName" />
     <panel name="TemplatesButtons" />
     <panel name="TemplatesClock" />
   </screen>
@@ -1539,8 +1539,8 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesButtonsGreenName" />
     <panel name="TemplatesButtonsYellowName" />
     <panel name="TemplatesButtonsBlueName" />
-    <eLabel text="&gt;INFO&lt;" position="1365,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-    <eLabel text="&gt;MENU&lt;" position="1485,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+    <panel name="TemplatesButtonsInfoName" />
+    <panel name="TemplatesButtonsMenuName" />
     <panel name="TemplatesButtons" />
     <panel name="TemplatesClock" />
   </screen>
@@ -1558,8 +1558,8 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesButtonsGreenName" />
     <panel name="TemplatesButtonsYellowName" />
     <panel name="TemplatesButtonsBlueName" />
-    <eLabel text="&gt;INFO&lt;" position="1365,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-    <eLabel text="&gt;MENU&lt;" position="1485,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+    <panel name="TemplatesButtonsInfoName" />
+    <panel name="TemplatesButtonsMenuName" />
     <panel name="TemplatesButtons" />
     <panel name="TemplatesClock" />
   </screen>
@@ -1583,8 +1583,8 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesButtonsGreenName" />
     <panel name="TemplatesButtonsYellowName" />
     <panel name="TemplatesButtonsBlueName" />
-    <eLabel text="&gt;INFO&lt;" position="1365,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-    <eLabel text="&gt;MENU&lt;" position="1485,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+    <panel name="TemplatesButtonsInfoName" />
+    <panel name="TemplatesButtonsMenuName" />
     <panel name="TemplatesButtons" />
     <panel name="TemplatesClock" />
   </screen>
@@ -1615,8 +1615,8 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesButtonsGreenName" />
     <panel name="TemplatesButtonsYellowName" />
     <panel name="TemplatesButtonsBlueName" />
-    <eLabel text="&gt;INFO&lt;" position="1365,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-    <eLabel text="&gt;MENU&lt;" position="1485,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+    <panel name="TemplatesButtonsInfoName" />
+    <panel name="TemplatesButtonsMenuName" />
     <panel name="TemplatesButtons" />
     <panel name="TemplatesClock" />
   </screen>
@@ -1634,8 +1634,8 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesButtonsGreenName" />
     <panel name="TemplatesButtonsYellowName" />
     <panel name="TemplatesButtonsBlueName" />
-    <eLabel text="&gt;INFO&lt;" position="1365,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-    <eLabel text="&gt;MENU&lt;" position="1485,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+    <panel name="TemplatesButtonsInfoName" />
+    <panel name="TemplatesButtonsMenuName" />
     <panel name="TemplatesButtons" />
     <panel name="TemplatesClock" />
   </screen>
@@ -2427,7 +2427,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
       </convert>
     </widget>
     <panel name="TemplatesButtonsRedSource" />
-    <eLabel text="&gt;MENU&lt;" position="1485,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+    <panel name="TemplatesButtonsMenuName" />
     <panel name="TemplatesButtons" />
     <panel name="TemplatesClock" />
   </screen>
@@ -2441,7 +2441,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <widget name="list" position="90,200" size="980,600" scrollbarMode="showNever" itemHeight="60" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget name="red" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
     <widget name="green" position="1380,914" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-    <eLabel text="&gt;MENU&lt;" position="1485,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+    <panel name="TemplatesButtonsMenuName" />
     <panel name="TemplatesButtons" />
     <panel name="TemplatesClock" />
   </screen>
@@ -2919,7 +2919,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesButtonsGreenSource" />
     <panel name="TemplatesButtonsYellowSource" />
     <panel name="TemplatesButtonsBlueSource" />
-    <eLabel text="&gt;MENU&lt;" position="1485,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+    <panel name="TemplatesButtonsMenuName" />
     <panel name="TemplatesButtons" />
     <panel name="TemplatesClock" />
   </screen>
@@ -3391,8 +3391,8 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesButtonsYellowName" />
     <panel name="TemplatesButtonsBlueName" />
     <widget source="help" render="Label" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
-    <eLabel text="&gt;INFO&lt;" position="1365,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-    <eLabel text="&gt;MENU&lt;" position="1485,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+    <panel name="TemplatesButtonsInfoName" />
+    <panel name="TemplatesButtonsMenuName" />
     <panel name="TemplatesButtons" />
     <panel name="TemplatesClock" />
   </screen>
@@ -3420,8 +3420,8 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesButtonsGreenSource" />
     <panel name="TemplatesButtonsYellowSource" />
     <widget source="curdir" render="Label" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
-    <eLabel text="&gt;INFO&lt;" position="1365,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-    <eLabel text="&gt;MENU&lt;" position="1485,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+    <panel name="TemplatesButtonsInfoName" />
+    <panel name="TemplatesButtonsMenuName" />
     <panel name="TemplatesButtons" />
     <panel name="TemplatesClock" />
   </screen>
@@ -3534,8 +3534,8 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesButtonsGreenSource" />
     <panel name="TemplatesButtonsYellowSource" />
     <panel name="TemplatesButtonsBlueSource" />
-    <eLabel text="&gt;INFO&lt;" position="1365,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-    <eLabel text="&gt;MENU&lt;" position="1485,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+    <panel name="TemplatesButtonsInfoName" />
+    <panel name="TemplatesButtonsMenuName" />
     <panel name="TemplatesButtons" />
     <panel name="TemplatesClock" />
   </screen>
@@ -3577,8 +3577,8 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesButtonsRedSource" />
     <panel name="TemplatesButtonsGreenSource" />
     <panel name="TemplatesButtonsYellowSource" />
-    <eLabel text="&gt;INFO&lt;" position="1365,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-    <eLabel text="&gt;MENU&lt;" position="1485,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+    <panel name="TemplatesButtonsInfoName" />
+    <panel name="TemplatesButtonsMenuName" />
     <panel name="TemplatesButtons" />
     <panel name="TemplatesClock" />
   </screen>
@@ -3653,7 +3653,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesButtonsGreenSource" />
     <panel name="TemplatesButtonsYellowSource" />
     <panel name="TemplatesButtonsBlueSource" />
-    <eLabel text="&gt;MENU&lt;" position="1485,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+    <panel name="TemplatesButtonsMenuName" />
     <panel name="TemplatesButtons" />
     <panel name="TemplatesClock" />
   </screen>
@@ -3687,8 +3687,8 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <eLabel text="Rename" position="1380,914" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
     <eLabel text="Move/Copy" position="1380,944" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
     <eLabel text="Bookmarks" position="1380,974" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-    <eLabel text="&gt;INFO&lt;" position="1365,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-    <eLabel text="&gt;MENU&lt;" position="1485,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+    <panel name="TemplatesButtonsInfoName" />
+    <panel name="TemplatesButtonsMenuName" />
     <panel name="TemplatesButtons" />
     <panel name="TemplatesClock" />
   </screen>
@@ -3747,7 +3747,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <widget name="green" position="1380,914" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
     <widget name="yellow" position="1380,944" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
     <widget name="blue" position="1380,974" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-    <eLabel text="&gt;MENU&lt;" position="1485,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+    <panel name="TemplatesButtonsMenuName" />
     <panel name="TemplatesButtons" />
     <panel name="TemplatesClock" />
   </screen>
@@ -3950,8 +3950,8 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <widget source="green" render="Label" position="1380,914" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
     <widget source="yellow" render="Label" position="1380,944" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
     <widget source="blue" render="Label" position="1380,974" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-    <eLabel text="&gt;INFO&lt;" position="1365,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-    <eLabel text="&gt;MENU&lt;" position="1485,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+    <panel name="TemplatesButtonsInfoName" />
+    <panel name="TemplatesButtonsMenuName" />
     <panel name="TemplatesButtons" />
     <panel name="TemplatesClock" />
   </screen>
@@ -4033,9 +4033,9 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesButtonsGreenSource" />
     <panel name="TemplatesButtonsYellowSource" />
     <panel name="TemplatesButtonsBlueSource" />
-    <eLabel text="&gt;OK&lt;" position="1245,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-    <eLabel text="&gt;INFO&lt;" position="1365,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-    <eLabel text="&gt;MENU&lt;" position="1485,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+    <panel name="TemplatesButtonsOkName" />
+    <panel name="TemplatesButtonsInfoName" />
+    <panel name="TemplatesButtonsMenuName" />
     <panel name="TemplatesButtons" />
     <panel name="TemplatesClock" />
   </screen>
@@ -4347,8 +4347,8 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <widget name="repeat" pixmaps="/usr/share/enigma2/Cyber_fhd/icons/repeat_off.png,/usr/share/enigma2/Cyber_fhd/icons/repeat_on.png" position="1700,895" size="50,30" zPosition="2" alphatest="blend" />
     <widget name="shuffle" pixmaps="/usr/share/enigma2/Cyber_fhd/icons/shuffle_off.png,/usr/share/enigma2/Cyber_fhd/icons/shuffle_on.png" position="1755,895" size="50,30" zPosition="2" alphatest="blend" />
     <panel name="TemplatesInfoBarMediaProgress" />
-    <eLabel text="&gt;INFO&lt;" position="1365,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-    <eLabel text="&gt;MENU&lt;" position="1485,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+    <panel name="TemplatesButtonsInfoName" />
+    <panel name="TemplatesButtonsMenuName" />
     <panel name="TemplatesClock" />
   </screen>
   <!-- Merlin Music Player Lyrics -->
@@ -4513,7 +4513,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesButtonsGreenSource" />
     <panel name="TemplatesButtonsYellowSource" />
     <panel name="TemplatesButtonsBlueSource" />
-    <eLabel text="&gt;MENU&lt;" position="1485,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+    <panel name="TemplatesButtonsMenuName" />
     <panel name="TemplatesButtons" />
     <panel name="TemplatesClock" />
   </screen>
@@ -5676,7 +5676,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <widget source="green_key" render="Label" position="1380,914" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
     <widget source="yellow_key" render="Label" position="1380,944" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
     <widget source="blue_key" render="Label" position="1380,974" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-    <eLabel text="&gt;MENU&lt;" position="1485,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+    <panel name="TemplatesButtonsMenuName" />
     <panel name="TemplatesButtons" />
     <panel name="TemplatesClock" />
   </screen>
@@ -5955,8 +5955,8 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesButtonsGreenName" />
     <panel name="TemplatesButtonsYellowName" />
     <panel name="TemplatesButtonsBlueName" />
-    <eLabel text="&gt;INFO&lt;" position="1365,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-    <eLabel text="&gt;MENU&lt;" position="1485,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+    <panel name="TemplatesButtonsInfoName" />
+    <panel name="TemplatesButtonsMenuName" />
     <panel name="TemplatesButtons" />
     <panel name="TemplatesClock" />
   </screen>
@@ -5985,8 +5985,8 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesButtonsGreenName" />
     <panel name="TemplatesButtonsYellowName" />
     <panel name="TemplatesButtonsBlueName" />
-    <eLabel text="&gt;INFO&lt;" position="1365,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-    <eLabel text="&gt;MENU&lt;" position="1485,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+    <panel name="TemplatesButtonsInfoName" />
+    <panel name="TemplatesButtonsMenuName" />
     <panel name="TemplatesButtons" />
     <panel name="TemplatesClock" />
   </screen>
@@ -6200,8 +6200,8 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesButtonsGreenName" />
     <panel name="TemplatesButtonsYellowName" />
     <panel name="TemplatesButtonsBlueName" />
-    <eLabel text="&gt;INFO&lt;" position="1365,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-    <eLabel text="&gt;MENU&lt;" position="1485,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+    <panel name="TemplatesButtonsInfoName" />
+    <panel name="TemplatesButtonsMenuName" />
     <panel name="TemplatesButtons" />
     <panel name="TemplatesClock" />
   </screen>
@@ -6278,8 +6278,8 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <widget name="thumbnail" position="90,200" size="150,108" />
     <panel name="TemplatesButtonsRedSource" />
     <panel name="TemplatesButtonsGreenSource" />
-    <eLabel text="&gt;INFO&lt;" position="1365,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-    <eLabel text="&gt;MENU&lt;" position="1485,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+    <panel name="TemplatesButtonsInfoName" />
+    <panel name="TemplatesButtonsMenuName" />
     <panel name="TemplatesHelpWindow" />
     <panel name="TemplatesButtons" />
     <panel name="TemplatesClock" />
@@ -6306,7 +6306,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesButtonsRedSource" />
     <panel name="TemplatesButtonsGreenSource" />
     <panel name="TemplatesButtonsYellowSource" />
-    <eLabel text="&gt;MENU&lt;" position="1485,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+    <panel name="TemplatesButtonsMenuName" />
     <panel name="TemplatesHelpWindow" />
     <panel name="TemplatesButtons" />
     <panel name="TemplatesClock" />
@@ -6360,8 +6360,8 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesButtonsGreenName" />
     <panel name="TemplatesButtonsYellowName" />
     <panel name="TemplatesButtonsBlueName" />
-    <eLabel text="&gt;INFO&lt;" position="1365,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-    <eLabel text="&gt;MENU&lt;" position="1485,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+    <panel name="TemplatesButtonsInfoName" />
+    <panel name="TemplatesButtonsMenuName" />
     <panel name="TemplatesButtons" />
     <panel name="TemplatesClock" />
   </screen>
@@ -6445,9 +6445,9 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <widget name="ButtonGreenText" position="1380,914" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
     <widget name="Manage Cover" position="1380,944" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
     <widget name="deleteall" position="1380,974" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-    <eLabel text="&gt;OK&lt;" position="1245,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-    <eLabel text="&gt;INFO&lt;" position="1365,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-    <eLabel text="&gt;MENU&lt;" position="1485,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+    <panel name="TemplatesButtonsOkName" />
+    <panel name="TemplatesButtonsInfoName" />
+    <panel name="TemplatesButtonsMenuName" />
     <panel name="TemplatesButtons" />
     <panel name="TemplatesClock" />
   </screen>
@@ -6501,9 +6501,9 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <widget name="movielist" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget name="resulttext" position="340,925" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
     <widget name="movie_name" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
-    <eLabel text="&gt;OK&lt;" position="1245,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-    <eLabel text="&gt;INFO&lt;" position="1365,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-    <eLabel text="&gt;MENU&lt;" position="1485,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+    <panel name="TemplatesButtonsOkName" />
+    <panel name="TemplatesButtonsInfoName" />
+    <panel name="TemplatesButtonsMenuName" />
     <panel name="TemplatesClock" />
   </screen>
   <!-- EMC Movie Info Preview -->
@@ -6547,7 +6547,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <widget name="starsbg" position="100,560" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/EnhancedMovieCenter/img/starsbar_empty_10.png" zPosition="3" alphatest="blend" />
     <widget name="stars" position="100,560" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/EnhancedMovieCenter/img/starsbar_filled_10.png" zPosition="4" transparent="1" />
     <widget name="save" position="1380,914" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-    <eLabel text="&gt;MENU&lt;" position="1485,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+    <panel name="TemplatesButtonsMenuName" />
     <panel name="TemplatesButtons" />
     <panel name="TemplatesClock" />
   </screen>
@@ -6636,8 +6636,8 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <widget source="date4" render="Label" position="760,680" size="300,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="right" transparent="1" />
     <widget source="day4" render="Label" position="760,710" size="300,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="right" transparent="1" />
     <widget name="pic4" position="100,690" size="128,128" zPosition="2" alphatest="blend" />
-    <eLabel text="&gt;INFO&lt;" position="1365,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-    <eLabel text="&gt;MENU&lt;" position="1485,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+    <panel name="TemplatesButtonsInfoName" />
+    <panel name="TemplatesButtonsMenuName" />
     <panel name="TemplatesClock" />
   </screen>
   <!-- Config WeatherMSN -->
