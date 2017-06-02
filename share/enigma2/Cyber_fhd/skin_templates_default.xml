@@ -4301,6 +4301,22 @@
     <ePixmap pixmap="Cyber_fhd/buttons/button_key_yellow.png" position="1773,945" size="40,20" alphatest="on" />
     <ePixmap pixmap="Cyber_fhd/buttons/button_key_blue.png" position="1773,975" size="40,20" alphatest="on" />
   </screen>
+  <screen name="TemplatesButtonsMenu">
+    <!-- Templates Buttons Menu -->
+    <eLabel text="&gt;MENU&lt;" position="1485,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+  </screen>
+  <screen name="TemplatesButtonsInfo">
+    <!-- Templates Buttons Info -->
+    <eLabel text="&gt;INFO&lt;" position="1365,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+  </screen>
+  <screen name="TemplatesButtonsOk">
+    <!-- Templates Buttons Ok -->
+    <eLabel text="&gt;OK&lt;" position="1245,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+  </screen>
+  <screen name="TemplatesButtonsRed">
+    <!-- Templates Buttons Red -->
+    <widget name="red" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+  </screen>
   <screen name="TemplatesButtonsRedName">
     <!-- Templates Buttons Red Name -->
     <widget name="key_red" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
@@ -4308,6 +4324,10 @@
   <screen name="TemplatesButtonsRedSource">
     <!-- Templates Buttons Red Source -->
     <widget source="key_red" render="Label" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+  </screen>
+  <screen name="TemplatesButtonsGreen">
+    <!-- Templates Buttons Green -->
+    <widget name="green" position="1380,914" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
   </screen>
   <screen name="TemplatesButtonsGreenName">
     <!-- Templates Buttons Green Name -->
@@ -4317,6 +4337,10 @@
     <!-- Templates Buttons Green Source -->
     <widget source="key_green" render="Label" position="1380,914" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
   </screen>
+  <screen name="TemplatesButtonsYellow">
+    <!-- Templates Buttons Yellow -->
+    <widget name="yellow" position="1380,944" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+  </screen>
   <screen name="TemplatesButtonsYellowName">
     <!-- Templates Buttons Yellow Name -->
     <widget name="key_yellow" position="1380,944" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
@@ -4325,6 +4349,10 @@
     <!-- Templates Buttons Yellow Source -->
     <widget source="key_yellow" render="Label" position="1380,944" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
   </screen>
+  <screen name="TemplatesButtonsBlue">
+    <!-- Templates Buttons Blue -->
+    <widget name="blue" position="1380,974" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+  </screen>
   <screen name="TemplatesButtonsBlueName">
     <!-- Templates Buttons Blue Name -->
     <widget name="key_blue" position="1380,974" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
@@ -4332,18 +4360,6 @@
   <screen name="TemplatesButtonsBlueSource">
     <!-- Templates Buttons Blue Source -->
     <widget source="key_blue" render="Label" position="1380,974" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-  </screen>
-  <screen name="TemplatesButtonsMenuName">
-    <!-- Templates Buttons Menu Name -->
-    <eLabel text="&gt;MENU&lt;" position="1485,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-  </screen>
-  <screen name="TemplatesButtonsInfoName">
-    <!-- Templates Buttons Info Name -->
-    <eLabel text="&gt;INFO&lt;" position="1365,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-  </screen>
-  <screen name="TemplatesButtonsOkName">
-    <!-- Templates Buttons Ok Name -->
-    <eLabel text="&gt;OK&lt;" position="1245,100" size="120,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
   </screen>
   <screen name="TemplatesSignalFinder">
     <!-- Templates Signal Finder -->
