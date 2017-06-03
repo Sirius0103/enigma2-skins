@@ -3945,7 +3945,7 @@
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
   </screen>
-  <screen name="TemplatesInfoBarTvInfoEPGNext">
+  <screen name="TemplatesInfoBarTvInfoEPGNxt">
     <!-- Templates Info Bar Tv EPG -->
     <!-- Description Layer -->
     <eLabel position="0,513" size="1352,329" backgroundColor="background3" zPosition="-12" />
@@ -3996,14 +3996,13 @@
     <widget source="session.CurrentService" render="Label" position="1530,615" size="300,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
       <convert type="ModuleControl">Slot4</convert>
     </widget>
-    <!-- ECM -->
     <widget source="session.CurrentService" render="Label" position="1375,805" size="460,35" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="right" transparent="1">
       <convert type="CamdInfo3">Camd</convert>
     </widget>
   </screen>
   <screen name="TemplatesInfoBarTvInfoPanelNIM">
     <!-- Templates Info Bar Tv Tuner -->
-    <!-- ECM Layer -->
+    <!-- NIM Layer -->
     <eLabel position="1368,513" size="552,329" backgroundColor="background3" zPosition="-12" />
     <eLabel position="1370,515" size="550,325" backgroundColor="background1" zPosition="-11" />
     <eLabel position="1375,520" size="460,280" backgroundColor="background2" zPosition="-10" />
@@ -4045,9 +4044,8 @@
     <widget source="session.CurrentService" render="Label" position="1530,765" size="300,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
       <convert type="ServiceName2">%s</convert>
     </widget>
-    <!-- ECM -->
     <widget source="session.CurrentService" render="Label" position="1375,805" size="460,35" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="right" transparent="1">
-      <convert type="CamdInfo3">Camd</convert>
+      <convert type="ServiceName2">%t</convert>
     </widget>
   </screen>
   <screen name="TemplatesInfoBarTvInfoPanelECM">
@@ -4094,7 +4092,6 @@
     <widget source="session.CurrentService" render="Label" position="1530,765" size="300,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
       <convert type="CaidInfo2">%T</convert>
     </widget>
-    <!-- ECM -->
     <widget source="session.CurrentService" render="Label" position="1375,805" size="460,35" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="right" transparent="1">
       <convert type="CamdInfo3">Camd</convert>
     </widget>
@@ -4139,9 +4136,8 @@
     <widget source="session.CurrentService" render="Label" position="1530,735" size="300,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
       <convert type="ServiceInfoEX">%txtpid</convert>
     </widget>
-    <!-- ECM -->
     <widget source="session.CurrentService" render="Label" position="1375,805" size="460,35" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="right" transparent="1">
-      <convert type="CamdInfo3">Camd</convert>
+      <convert type="ServiceName2">%t</convert>
     </widget>
   </screen>
   <screen name="TemplatesInfoBarTvInfoWeatherNo">
@@ -4578,7 +4574,7 @@
       <convert type="EventName">FullDescription</convert>
     </widget>
   </screen>
-  <screen name="TemplatesChannelSelectionTvInfoEPGNext">
+  <screen name="TemplatesChannelSelectionTvInfoEPGNxt">
     <panel name="TemplatesMenuInfoLayer" />
     <panel name="TemplatesMenuInfoRightLayer" />
     <panel name="TemplatesChannelSelectionProgress" />
