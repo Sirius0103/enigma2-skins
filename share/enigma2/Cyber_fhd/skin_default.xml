@@ -1590,6 +1590,34 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesButtons" />
     <panel name="TemplatesClock" />
   </screen>
+  <!-- Event View Simple -->
+  <screen name="EventViewSimple" position="0,0" size="1920,1080" title="EventViewSimple" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesMenu1000Layer" />
+    <panel name="TemplatesMenuLeftLayer" />
+    <eLabel text="e" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <panel name="TemplatesTitle1" />
+    <eLabel position="90,200" size="980,40" backgroundColor="background2" zPosition="-1" />
+    <eLabel text="&gt;" position="95,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+    <widget source="Title" render="Label" position="125,205" size="940,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+    <widget name="datetime" position="90,245" size="250,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" />
+    <widget name="duration" position="820,245" size="250,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="right" transparent="1" />
+    <widget name="FullDescription" position="90,280" size="980,555" font="Global; 25" backgroundColor="background1" transparent="1" />
+    <panel name="TemplatesButtonsMenu" />
+    <panel name="TemplatesClock" />
+  </screen>
+  <!-- Event View Context Menu -->
+  <screen name="EventViewContextMenu" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesMenu500Layer" />
+    <panel name="TemplatesMenuLeftLayer" />
+    <eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <eLabel text="Eventview menu" position="80,96" size="1500,44" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <widget name="menu" position="90,200" size="480,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+    <panel name="TemplatesButtonsRedSource" />
+    <panel name="TemplatesButtonsGreenSource" />
+    <panel name="TemplatesClock" />
+  </screen>
   <!-- Bouquet selector  -->
   <screen name="BouquetSelector" position="0,0" size="1920,1080" title="Choose bouquet" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenuLayer" />
@@ -1600,7 +1628,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <widget name="menu" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <panel name="TemplatesClock" />
   </screen>
-  <!-- TimeDateInput -->
+  <!-- Time Date Input -->
   <screen name="TimeDateInput" position="0,0" size="1920,1080" title="Time/Date Input" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenuLayer" />
     <panel name="TemplatesMenu1000Layer" />
@@ -3595,6 +3623,48 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <widget name="acur" position="1650,895" size="160,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1" />
     <panel name="TemplatesClock" />
   </screen>
+  <!-- Bitrate Viewer Extra -->
+  <screen name="BitrateViewerExtra" position="0,0" size="1920,1080" title="Bitrate viewer" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <eLabel text="U" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <eLabel position="1203,848" size="619,184" backgroundColor="background3" zPosition="-12" />
+    <eLabel position="1205,850" size="615,180" backgroundColor="background1" zPosition="-11" />
+    <eLabel position="1210,890" size="300,135" backgroundColor="background2" zPosition="-10" />
+    <eLabel position="1515,890" size="300,135" backgroundColor="background2" zPosition="-10" />
+    <eLabel text="Bitrate viewer" position="80,96" size="1500,44" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <eLabel text="Video" position="1210,855" size="300,35" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="center" transparent="1" />
+    <eLabel text="Min:" position="1215,955" size="150,35" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+    <widget name="vmin" position="1345,955" size="160,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1" />
+    <eLabel text="Max:" position="1215,925" size="150,35" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+    <widget name="vmax" position="1345,925" size="160,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1" />
+    <eLabel text="Average:" position="1215,985" size="150,35" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+    <widget name="vavg" position="1345,985" size="160,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1" />
+    <eLabel text="Current:" position="1215,895" size="150,35" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+    <widget name="vcur" position="1345,895" size="160,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1" />
+    <eLabel text="Audio" position="1515,855" size="300,35" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="center" transparent="1" />
+    <eLabel text="Max:" position="1520,925" size="150,35" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+    <widget name="amax" position="1650,925" size="160,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1" />
+    <eLabel text="Min:" position="1520,955" size="150,35" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+    <widget name="amin" position="1650,955" size="160,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1" />
+    <eLabel text="Average:" position="1520,985" size="150,35" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+    <widget name="aavg" position="1650,985" size="160,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1" />
+    <eLabel text="Current:" position="1520,895" size="150,35" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+    <widget name="acur" position="1650,895" size="160,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1" />
+    <panel name="TemplatesClock" />
+  </screen>
+  <!-- Bitrate Viewer Setup -->
+  <screen name="BitrateViewerSetup" position="0,0" size="1920,1080" title="BitrateViewerSetup" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesMenu1000Layer" />
+    <panel name="TemplatesMenuLeftLayer" />
+    <eLabel text="s" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <panel name="TemplatesTitle1" />
+    <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+    <widget name="cancel" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+    <widget name="ok" position="1380,914" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+    <panel name="TemplatesButtons" />
+    <panel name="TemplatesClock" />
+  </screen>
   <!-- ########## Calendar ########## -->
   <!-- Calendar -->
   <screen name="Calendar" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
@@ -4324,6 +4394,35 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <widget name="description" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
     <panel name="TemplatesButtonsRedSource" />
     <panel name="TemplatesButtonsGreenSource" />
+    <panel name="TemplatesButtons" />
+    <panel name="TemplatesClock" />
+  </screen>
+  <!-- ########## IMDB ########## -->
+  <!-- IMDB -->
+  <screen name="IMDB" position="0,0" size="1920,1080" title="IMDB" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesMenu1800Layer" />
+    <panel name="TemplatesMenuLeftLayer" />
+    <panel name="TemplatesMenuRightLayer" />
+    <eLabel text="V" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <panel name="TemplatesTitle1" />
+    <eLabel position="90,200" size="1740,40" backgroundColor="background2" zPosition="-1" />
+    <eLabel text="&gt;" position="95,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+    <widget name="detailslabel" position="405,245" size="1700,200" font="Global; 25" halign="left" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+    <widget name="poster" position="100,255" size="285,398" transparent="1" alphatest="on" />
+    <widget name="menu" position="405,245" size="1425,590" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" zPosition="2" />
+    <widget name="castlabel" position="405,445" size="1425,390" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+    <widget name="extralabel" position="405,245" size="1425,590" font="Global; 25" halign="left" foregroundColor="color2" backgroundColor="background1" transparent="1" />
+    <widget name="statusbar" position="125,205" size="1700,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+    <eLabel position="90,670" size="310,165" backgroundColor="background2" zPosition="-10" />
+    <widget name="starsbg" position="95,680" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_empty.png" transparent="1" alphatest="on" zPosition="2" />
+    <widget name="stars" position="95,680" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_filled.png" transparent="1" alphatest="on" zPosition="3" />
+    <widget name="ratinglabel" position="95,710" size="300,30" font="Global; 25" halign="left" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+    <panel name="TemplatesButtonsRedName" />
+    <panel name="TemplatesButtonsGreenName" />
+    <panel name="TemplatesButtonsYellowName" />
+    <panel name="TemplatesButtonsBlueName" />
+    <panel name="TemplatesButtonsMenu" />
     <panel name="TemplatesButtons" />
     <panel name="TemplatesClock" />
   </screen>
