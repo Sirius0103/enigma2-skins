@@ -109,8 +109,8 @@ if fileExists("/usr/lib/enigma2/python/Components/Converter/AlwaysTrue.py")\
 	and fileExists("/usr/lib/enigma2/python/Components/Renderer/RendVolumeText.py")\
 	and fileExists("/usr/lib/enigma2/python/Components/Renderer/Watches.py"):
 	numberchannel = [
-		("TemplatesInfoBarNumber-1", _("no")),
-		("TemplatesInfoBarNumber-2", _("yes"))]
+		("TemplatesInfoBarNumber1", _("no")),
+		("TemplatesInfoBarNumber2", _("yes"))]
 	styleinfobar = [
 		("TemplatesInfoBarTvPicon", _("default")),
 		("TemplatesInfoBarTvPiconProv", _("picon provider")),
@@ -125,122 +125,122 @@ if fileExists("/usr/lib/enigma2/python/Components/Converter/AlwaysTrue.py")\
 		("TemplatesInfoBarTvPiconSatAnalogTuner", _("picon sattelite, analog tuner")),
 		("TemplatesInfoBarTvPiconProvSatAnalogTuner", _("picon provider, picon sattelite, analog tuner"))]
 	technicalinfobar = [
-		("TemplatesInfoBarTechnical-1", _("no")),
-		("TemplatesInfoBarTechnical-2", _("pid")),
-		("TemplatesInfoBarTechnical-3", _("ecm, caids")),
-		("TemplatesInfoBarTechnical-4", _("crypt, ecm, camd"))]
+		("TemplatesInfoBarTechnical1", _("no")),
+		("TemplatesInfoBarTechnical2", _("pid")),
+		("TemplatesInfoBarTechnical3", _("ecm, caids")),
+		("TemplatesInfoBarTechnical4", _("crypt, ecm, camd"))]
 	ecmepgpanel = [
-		("TemplatesInfoBarECM-EPG-1", _("no")),
-		("TemplatesInfoBarECM-EPG-2", _("ecm centre")),
-		("TemplatesInfoBarECM-EPG-3", _("ecm right")),
-		("TemplatesInfoBarECM-EPG-4", _("ecm left")),
-		("TemplatesInfoBarECM-EPG-5", _("epg centre")),
-		("TemplatesInfoBarECM-EPG-6", _("epg right")),
-		("TemplatesInfoBarECM-EPG-7", _("epg left")),
-		("TemplatesInfoBarECM-EPG-8", _("ecm centre, epg centre")),
-		("TemplatesInfoBarECM-EPG-9", _("ecm right, epg left")),
-		("TemplatesInfoBarECM-EPG-10", _("ecm left, epg right"))]
+		("TemplatesInfoBarECMEPG1", _("no")),
+		("TemplatesInfoBarECMEPG2", _("ecm centre")),
+		("TemplatesInfoBarECMEPG3", _("ecm right")),
+		("TemplatesInfoBarECMEPG4", _("ecm left")),
+		("TemplatesInfoBarECMEPG5", _("epg centre")),
+		("TemplatesInfoBarECMEPG6", _("epg right")),
+		("TemplatesInfoBarECMEPG7", _("epg left")),
+		("TemplatesInfoBarECMEPG8", _("ecm centre, epg centre")),
+		("TemplatesInfoBarECMEPG9", _("ecm right, epg left")),
+		("TemplatesInfoBarECMEPG10", _("ecm left, epg right"))]
 	epgchannelselection = [
-		("TemplatesChannelSelectionInfoEPG-1", _("no")),
-		("TemplatesChannelSelectionInfoEPG-2", _("now")),
-		("TemplatesChannelSelectionInfoEPG-3", _("now, next")),
-		("TemplatesChannelSelectionInfoEPG-4", _("9 programs"))]
+		("TemplatesChannelSelectionInfoEPG1", _("no")),
+		("TemplatesChannelSelectionInfoEPG2", _("now")),
+		("TemplatesChannelSelectionInfoEPG3", _("now, next")),
+		("TemplatesChannelSelectionInfoEPG4", _("9 programs"))]
 	infochannelselection = [
-		("TemplatesChannelSelectionInfoChannel-1", _("no")),
-		("TemplatesChannelSelectionInfoChannel-2", _("picons")),
-		("TemplatesChannelSelectionInfoChannel-3", _("channel info")),
-		("TemplatesChannelSelectionInfoChannel-4", _("picon channel, channel info")),
-		("TemplatesChannelSelectionInfoChannel-5", _("picon channel, picon provider, channel info")),
-		("TemplatesChannelSelectionInfoChannel-6", _("picon channel, picon provider, picon sattelite, channel info"))]
+		("TemplatesChannelSelectionInfoChannel1", _("no")),
+		("TemplatesChannelSelectionInfoChannel2", _("picons")),
+		("TemplatesChannelSelectionInfoChannel3", _("channel info")),
+		("TemplatesChannelSelectionInfoChannel4", _("picon channel, channel info")),
+		("TemplatesChannelSelectionInfoChannel5", _("picon channel, picon provider, channel info")),
+		("TemplatesChannelSelectionInfoChannel6", _("picon channel, picon provider, picon sattelite, channel info"))]
 	clockpanel = [
-		("TemplatesClock-1", _("no")),
-		("TemplatesClock-2", _("12:00")),
-		("TemplatesClock-3", _("saturday, 01 january 12:00")),
-		("TemplatesClock-4", _("saturday, 01.01.2010 12:00"))]
+		("TemplatesClock1", _("no")),
+		("TemplatesClock2", _("12:00")),
+		("TemplatesClock3", _("saturday, 01 january 12:00")),
+		("TemplatesClock4", _("saturday, 01.01.2010 12:00"))]
 else:
 	numberchannel = [
-		("TemplatesInfoBarNumber-1", _("no"))]
+		("TemplatesInfoBarNumber1", _("no"))]
 	styleinfobar = [
 		("TemplatesInfoBarTvPicon", _("default")),
 		("TemplatesInfoBarTvPiconTuner", _("tuner"))]
 	technicalinfobar = [
-		("TemplatesInfoBarTechnical-1", _("no"))]
+		("TemplatesInfoBarTechnical1", _("no"))]
 	ecmepgpanel = [
-		("TemplatesInfoBarECM-EPG-1", _("no")),
-		("TemplatesInfoBarECM-EPG-5", _("epg centre")),
-		("TemplatesInfoBarECM-EPG-6", _("epg right")),
-		("TemplatesInfoBarECM-EPG-7", _("epg left"))]
+		("TemplatesInfoBarECMEPG1", _("no")),
+		("TemplatesInfoBarECMEPG5", _("epg centre")),
+		("TemplatesInfoBarECMEPG6", _("epg right")),
+		("TemplatesInfoBarECMEPG7", _("epg left"))]
 	epgchannelselection = [
-		("TemplatesChannelSelectionInfoEPG-1", _("no")),
-		("TemplatesChannelSelectionInfoEPG-2", _("now"))]
+		("TemplatesChannelSelectionInfoEPG1", _("no")),
+		("TemplatesChannelSelectionInfoEPG2", _("now"))]
 	infochannelselection = [
-		("TemplatesChannelSelectionInfoChannel-1", _("no")),
-		("TemplatesChannelSelectionInfoChannel-2", _("picons"))]
+		("TemplatesChannelSelectionInfoChannel1", _("no")),
+		("TemplatesChannelSelectionInfoChannel2", _("picons"))]
 	clockpanel = [
-		("TemplatesClock-1", _("no"))]
+		("TemplatesClock1", _("no"))]
 if fileExists("/usr/lib/enigma2/python/Plugins/Extensions/TMBD/plugin.pyo")\
 	and fileExists("/usr/lib/enigma2/python/Components/Renderer/RatingTmbd.py")\
 	and fileExists("/usr/lib/enigma2/python/Components/Renderer/CoverTmbd.py"):
 	coverinfopanel = [
-	("TemplatesInfoBarInfoMovie-Cover-1", _("no")),
-	("TemplatesInfoBarInfoMovie-Cover-2", _("poster")),
-	("TemplatesInfoBarInfoMovie-Cover-3", _("poster, description"))]
+	("TemplatesInfoBarInfoMovieCover1", _("no")),
+	("TemplatesInfoBarInfoMovieCover2", _("poster")),
+	("TemplatesInfoBarInfoMovieCover3", _("poster, description"))]
 	infomovieselection =[
-	("TemplatesMovieSelectionInfoMovie-1", _("no")),
-	("TemplatesMovieSelectionInfoMovie-3", _("standard")),
-	("TemplatesMovieSelectionInfoMovie-4", _("TMDB plugin"))]
+	("TemplatesMovieSelectionInfoMovie1", _("no")),
+	("TemplatesMovieSelectionInfoMovie3", _("standard")),
+	("TemplatesMovieSelectionInfoMovie4", _("TMDB plugin"))]
 else:
 	coverinfopanel = [
-	("TemplatesInfoBarInfoMovie-Cover-1", _("no"))]
+	("TemplatesInfoBarInfoMovieCover1", _("no"))]
 	infomovieselection =[
-	("TemplatesMovieSelectionInfoMovie-1", _("no")),
-	("TemplatesMovieSelectionInfoMovie-2", _("standard"))]
+	("TemplatesMovieSelectionInfoMovie1", _("no")),
+	("TemplatesMovieSelectionInfoMovie2", _("standard"))]
 if fileExists("/usr/lib/enigma2/python/Plugins/Extensions/Calendar/plugin.pyo")\
 	and fileExists("/usr/lib/enigma2/python/Components/Converter/CalendarToText.py")\
 	and fileExists("/usr/lib/enigma2/python/Plugins/Extensions/WeatherMSN/plugin.pyo")\
 	and fileExists("/usr/lib/enigma2/python/Components/Converter/MSNWeather2.py"):
 	otherinfobar = [
-	("TemplatesInfoBarOther-1", _("no")),
-	("TemplatesInfoBarOther-2", _("rambler weather")),
-	("TemplatesInfoBarOther-3", _("msn weather")),
-	("TemplatesInfoBarOther-4", _("msn weather full")),
-	("TemplatesInfoBarOther-5", _("calendar")),
-	("TemplatesInfoBarOther-6", _("rambler weather, calendar")),
-	("TemplatesInfoBarOther-7", _("msn weather, calendar")),
-	("TemplatesInfoBarOther-8", _("msn weather full, calendar"))]
+	("TemplatesInfoBarOther1", _("no")),
+	("TemplatesInfoBarOther2", _("rambler weather")),
+	("TemplatesInfoBarOther3", _("msn weather")),
+	("TemplatesInfoBarOther4", _("msn weather full")),
+	("TemplatesInfoBarOther5", _("calendar")),
+	("TemplatesInfoBarOther6", _("rambler weather, calendar")),
+	("TemplatesInfoBarOther7", _("msn weather, calendar")),
+	("TemplatesInfoBarOther8", _("msn weather full, calendar"))]
 elif fileExists("/usr/lib/enigma2/python/Plugins/Extensions/Calendar/plugin.pyo")\
 	and fileExists("/usr/lib/enigma2/python/Components/Converter/CalendarToText.py"):
 	otherinfobar = [
-	("TemplatesInfoBarOther-1", _("no")),
-	("TemplatesInfoBarOther-2", _("rambler weather")),
-	("TemplatesInfoBarOther-5", _("calendar")),
-	("TemplatesInfoBarOther-6", _("rambler weather, calendar"))]
+	("TemplatesInfoBarOther1", _("no")),
+	("TemplatesInfoBarOther2", _("rambler weather")),
+	("TemplatesInfoBarOther5", _("calendar")),
+	("TemplatesInfoBarOther6", _("rambler weather, calendar"))]
 elif fileExists("/usr/lib/enigma2/python/Plugins/Extensions/WeatherMSN/plugin.pyo")\
 	and fileExists("/usr/lib/enigma2/python/Components/Converter/MSNWeather2.py"):
 	otherinfobar = [
-	("TemplatesInfoBarOther-1", _("no")),
-	("TemplatesInfoBarOther-2", _("rambler weather")),
-	("TemplatesInfoBarOther-3", _("msn weather")),
-	("TemplatesInfoBarOther-4", _("msn weather full"))]
+	("TemplatesInfoBarOther1", _("no")),
+	("TemplatesInfoBarOther2", _("rambler weather")),
+	("TemplatesInfoBarOther3", _("msn weather")),
+	("TemplatesInfoBarOther4", _("msn weather full"))]
 else:
 	otherinfobar = [
-	("TemplatesInfoBarOther-1", _("no")),
-	("TemplatesInfoBarOther-2", _("rambler weather"))]
+	("TemplatesInfoBarOther1", _("no")),
+	("TemplatesInfoBarOther2", _("rambler weather"))]
 
 config.skin.neutron = ConfigSubsection()
 config.skin.neutron.style = ConfigSelection(default="grey", choices = style)
-config.skin.neutron.numberchannel = ConfigSelection(default="TemplatesInfoBarNumber-1", choices = numberchannel)
+config.skin.neutron.numberchannel = ConfigSelection(default="TemplatesInfoBarNumber1", choices = numberchannel)
 config.skin.neutron.styleinfobar = ConfigSelection(default="TemplatesInfoBarTvPiconTuner", choices = styleinfobar)
-config.skin.neutron.technicalinfobar = ConfigSelection(default="TemplatesInfoBarTechnical-1", choices = technicalinfobar)
+config.skin.neutron.technicalinfobar = ConfigSelection(default="TemplatesInfoBarTechnical1", choices = technicalinfobar)
 config.skin.neutron.stylesecondinfobar = ConfigSelection(default="TTemplatesInfoBarTvPiconTuner", choices = styleinfobar)
-config.skin.neutron.technicalsecondinfobar = ConfigSelection(default="TemplatesInfoBarTechnical-1", choices = technicalinfobar)
-config.skin.neutron.ecmepgpanel = ConfigSelection(default="TemplatesInfoBarECM-EPG-5", choices = ecmepgpanel)
-config.skin.neutron.epgchannelselection = ConfigSelection(default="TemplatesChannelSelectionInfoEPG-2", choices = epgchannelselection)
-config.skin.neutron.infochannelselection = ConfigSelection(default="TemplatesChannelSelectionInfoChannel-1", choices = infochannelselection)
-config.skin.neutron.coverinfopanel = ConfigSelection(default="TemplatesInfoBarInfoMovie-Cover-1", choices = coverinfopanel)
-config.skin.neutron.infomovieselection = ConfigSelection(default="TemplatesMovieSelectionInfoMovie-2", choices = infomovieselection)
-config.skin.neutron.clockpanel = ConfigSelection(default="TemplatesClock-1", choices = clockpanel)
-config.skin.neutron.otherinfobar = ConfigSelection(default="TemplatesInfoBarOther-1", choices = otherinfobar)
+config.skin.neutron.technicalsecondinfobar = ConfigSelection(default="TemplatesInfoBarTechnical1", choices = technicalinfobar)
+config.skin.neutron.ecmepgpanel = ConfigSelection(default="TemplatesInfoBarECMEPG5", choices = ecmepgpanel)
+config.skin.neutron.epgchannelselection = ConfigSelection(default="TemplatesChannelSelectionInfoEPG2", choices = epgchannelselection)
+config.skin.neutron.infochannelselection = ConfigSelection(default="TemplatesChannelSelectionInfoChannel1", choices = infochannelselection)
+config.skin.neutron.coverinfopanel = ConfigSelection(default="TemplatesInfoBarInfoMovieCover1", choices = coverinfopanel)
+config.skin.neutron.infomovieselection = ConfigSelection(default="TemplatesMovieSelectionInfoMovie2", choices = infomovieselection)
+config.skin.neutron.clockpanel = ConfigSelection(default="TemplatesClock1", choices = clockpanel)
+config.skin.neutron.otherinfobar = ConfigSelection(default="TemplatesInfoBarOther1", choices = otherinfobar)
 config.skin.neutron.dish = ConfigSelection(default="Dish-2", choices = dish)
 config.skin.neutron.scrollbarmode = ConfigSelection(default="showNever", choices = scrollbarmode)
 config.skin.neutron.fonts = ConfigSelection(default="Roboto-Regular", choices = fonts)
@@ -395,7 +395,7 @@ class SetupNeutronHD(ConfigListScreen, Screen):
 	# info channel selection
 			os.system("sed -i 's/%s/TemplatesChannelSelectionInfoChannel/w' %sskin.xml" % (config.skin.neutron.infochannelselection.value, skinpath))
 	# cover info panel
-			os.system("sed -i 's/%s/TemplatesInfoBarInfoMovie-Cover/w' %sskin.xml" % (config.skin.neutron.coverinfopanel.value, skinpath))
+			os.system("sed -i 's/%s/TemplatesInfoBarInfoMovieCover/w' %sskin.xml" % (config.skin.neutron.coverinfopanel.value, skinpath))
 	# info movie selection
 			os.system("sed -i 's/%s/TemplatesMovieSelectionInfoMovie/w' %sskin.xml" % (config.skin.neutron.infomovieselection.value, skinpath))
 	# clock panel

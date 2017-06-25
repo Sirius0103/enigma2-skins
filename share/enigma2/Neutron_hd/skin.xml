@@ -618,22 +618,22 @@
   <screen name="TemplatesInfoBarNumber">
     <!-- Templates InfoBarNumber-->
   </screen>
-  <screen name="TemplatesInfoBarNumber-2">
+  <screen name="TemplatesInfoBarNumber2">
     <!-- Templates InfoBarNumber-->
     <widget source="session.CurrentService" render="Label" position="145,573" size="80,32" font="Regular; 28" foregroundColor="color1" backgroundColor="background" halign="left" transparent="1" borderWidth="2">
       <convert type="ServiceName">%n</convert>
     </widget>
   </screen>
-  <screen name="TemplatesInfoBarTechnical-1">
+  <screen name="TemplatesInfoBarTechnical1">
     <!-- Templates InfoBarTechnical-->
   </screen>
-  <screen name="TemplatesInfoBarTechnical-2">
+  <screen name="TemplatesInfoBarTechnical2">
     <!-- Templates InfoBarTechnical-->
     <widget source="session.CurrentService" render="Label" position="145,693" size="850,20" font="Display; 16" foregroundColor="grey" backgroundColor="background" halign="left" transparent="1">
       <convert type="ServiceInfoEX">APID: %apid VPID: %vpid SID: %sid ONID: %onid  TSID: %tsid PRCPID: %prcpid PMTPID: %pmtpid TXTPID: %txtpid</convert>
     </widget>
   </screen>
-  <screen name="TemplatesInfoBarTechnical-3">
+  <screen name="TemplatesInfoBarTechnical3">
     <!-- Templates InfoBarTechnical-->
     <widget source="session.CurrentService" render="Label" position="145,693" size="620,20" font="Display; 16" foregroundColor="grey" backgroundColor="background" halign="left" transparent="1">
       <convert type="CaidInfo2">Default</convert>
@@ -642,7 +642,7 @@
       <convert type="ServiceInfoEX">CAIDS: %caids</convert>
     </widget>
   </screen>
-  <screen name="TemplatesInfoBarTechnical-4">
+  <screen name="TemplatesInfoBarTechnical4">
     <!-- Templates InfoBarTechnical-->
     <widget source="session.CurrentService" render="Label" position="145,693" size="100,20" font="Display; 16" foregroundColor="color2" backgroundColor="background" halign="left" transparent="1">
       <convert type="CaidInfo2">CryptInfo2</convert>
@@ -752,25 +752,25 @@
       <convert type="MSNWeather2">Shortdate3</convert>
     </widget>
   </screen>
-  <screen name="TemplatesInfoBarOther-1">
+  <screen name="TemplatesInfoBarOther1">
     <!-- Templates Other-->
   </screen>
-  <screen name="TemplatesInfoBarOther-2">
+  <screen name="TemplatesInfoBarOther2">
     <!-- Templates Other-->
     <eLabel position="1040,60" size="210,66" backgroundColor="background" zPosition="-1" />
     <panel name="TemplatesInfoBarRWeather" />
   </screen>
-  <screen name="TemplatesInfoBarOther-3">
+  <screen name="TemplatesInfoBarOther3">
     <!-- Templates Other-->
     <eLabel position="1040,60" size="210,66" backgroundColor="background" zPosition="-1" />
     <panel name="TemplatesInfoBarMSNWeather" />
   </screen>
-  <screen name="TemplatesInfoBarOther-4">
+  <screen name="TemplatesInfoBarOther4">
     <!-- Templates Other-->
     <eLabel position="650,60" size="600,66" backgroundColor="background" zPosition="-1" />
     <panel name="TemplatesInfoBarMSNWeatherFull" />
   </screen>
-  <screen name="TemplatesInfoBarOther-5">
+  <screen name="TemplatesInfoBarOther5">
     <!-- Templates Other-->
     <eLabel position="650,60" size="600,66" backgroundColor="background" zPosition="-1" />
     <widget source="session.CurrentService" render="Label" position="715,62" size="532,62" font="Regular; 18" foregroundColor="color2" backgroundColor="background" halign="right" valign="top" transparent="1">
@@ -780,7 +780,7 @@
       <convert type="CalendarToText">Picon</convert>
     </widget>
   </screen>
-  <screen name="TemplatesInfoBarOther-6">
+  <screen name="TemplatesInfoBarOther6">
     <!-- Templates Other-->
     <eLabel position="1040,60" size="210,66" backgroundColor="background" zPosition="-1" />
     <eLabel position="650,60" size="387,66" backgroundColor="background" zPosition="-1" />
@@ -792,7 +792,7 @@
       <convert type="CalendarToText">Picon</convert>
     </widget>
   </screen>
-  <screen name="TemplatesInfoBarOther-7">
+  <screen name="TemplatesInfoBarOther7">
     <!-- Templates Other-->
     <eLabel position="1040,60" size="210,66" backgroundColor="background" zPosition="-1" />
     <eLabel position="650,60" size="387,66" backgroundColor="background" zPosition="-1" />
@@ -804,7 +804,7 @@
       <convert type="CalendarToText">Picon</convert>
     </widget>
   </screen>
-  <screen name="TemplatesInfoBarOther-8">
+  <screen name="TemplatesInfoBarOther8">
     <!-- Templates Other-->
     <eLabel position="30,60" size="600,66" backgroundColor="background" zPosition="-1" />
     <eLabel position="650,60" size="600,66" backgroundColor="background" zPosition="-1" />
@@ -1198,62 +1198,62 @@
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
   </screen>
-  <screen name="TemplatesInfoBarECM-EPG-1">
+  <screen name="TemplatesInfoBarECMEPG1">
     <!-- Templates ECM-EPG-->
-    <panel name="TemplatesInfoBarOther-1" />
+    <panel name="TemplatesInfoBarOther1" />
     <panel name="TemplatesClock" />
   </screen>
-  <screen name="TemplatesInfoBarECM-EPG-2">
+  <screen name="TemplatesInfoBarECMEPG2">
     <!-- Templates ECM-EPG-->
     <panel name="TemplatesInfoBarECMCentre" />
   </screen>
-  <screen name="TemplatesInfoBarECM-EPG-3">
+  <screen name="TemplatesInfoBarECMEPG3">
     <!-- Templates ECM-EPG-->
     <panel name="TemplatesInfoBarECMRight" />
-    <panel name="TemplatesInfoBarOther-1" />
+    <panel name="TemplatesInfoBarOther1" />
     <panel name="TemplatesClock" />
   </screen>
-  <screen name="TemplatesInfoBarECM-EPG-4">
+  <screen name="TemplatesInfoBarECMEPG4">
     <!-- Templates ECM-EPG-->
     <panel name="TemplatesInfoBarECMLeft" />
-    <panel name="TemplatesInfoBarOther-1" />
+    <panel name="TemplatesInfoBarOther1" />
     <panel name="TemplatesClock" />
   </screen>
   <screen name="TemplatesInfoBarECM-EPG">
     <!-- Templates ECM-EPG-->
     <panel name="TemplatesInfoBarEPGCentre" />
-    <panel name="TemplatesInfoBarOther-1" />
+    <panel name="TemplatesInfoBarOther1" />
     <panel name="TemplatesClock" />
   </screen>
-  <screen name="TemplatesInfoBarECM-EPG-6">
+  <screen name="TemplatesInfoBarECMEPG6">
     <!-- Templates ECM-EPG-->
     <panel name="TemplatesInfoBarEPGRight" />
-    <panel name="TemplatesInfoBarOther-1" />
+    <panel name="TemplatesInfoBarOther1" />
     <panel name="TemplatesClock" />
   </screen>
-  <screen name="TemplatesInfoBarECM-EPG-7">
+  <screen name="TemplatesInfoBarECMEPG7">
     <!-- Templates ECM-EPG-->
     <panel name="TemplatesInfoBarEPGLeft" />
-    <panel name="TemplatesInfoBarOther-1" />
+    <panel name="TemplatesInfoBarOther1" />
     <panel name="TemplatesClock" />
   </screen>
-  <screen name="TemplatesInfoBarECM-EPG-8">
+  <screen name="TemplatesInfoBarECMEPG8">
     <!-- Templates ECM-EPG-->
     <panel name="TemplatesInfoBarECMCentre" />
     <panel name="TemplatesInfoBarEPGCentre" />
   </screen>
-  <screen name="TemplatesInfoBarECM-EPG-9">
+  <screen name="TemplatesInfoBarECMEPG9">
     <!-- Templates ECM-EPG-->
     <panel name="TemplatesInfoBarECMRight" />
     <panel name="TemplatesInfoBarEPGLeft" />
-    <panel name="TemplatesInfoBarOther-1" />
+    <panel name="TemplatesInfoBarOther1" />
     <panel name="TemplatesClock" />
   </screen>
-  <screen name="TemplatesInfoBarECM-EPG-10">
+  <screen name="TemplatesInfoBarECMEPG10">
     <!-- Templates ECM-EPG-->
     <panel name="TemplatesInfoBarECMLeft" />
     <panel name="TemplatesInfoBarEPGRight" />
-    <panel name="TemplatesInfoBarOther-1" />
+    <panel name="TemplatesInfoBarOther1" />
     <panel name="TemplatesClock" />
   </screen>
   <screen name="TemplatesInfoBarMedia">
@@ -1327,15 +1327,15 @@
       <convert type="MovieInfo">Description</convert>
     </widget>
   </screen>
-  <screen name="TemplatesInfoBarInfoMovie-Cover">
+  <screen name="TemplatesInfoBarInfoMovieCover">
     <!-- Templates InfoMovie-Cover-->
     <panel name="TemplatesInfoBarCoverNo" />
   </screen>
-  <screen name="TemplatesInfoBarInfoMovie-Cover-2">
+  <screen name="TemplatesInfoBarInfoMovieCover2">
     <!-- Templates InfoMovie-Cover-->
     <panel name="TemplatesInfoBarCoverYes" />
   </screen>
-  <screen name="TemplatesInfoBarInfoMovie-Cover-3">
+  <screen name="TemplatesInfoBarInfoMovieCover3">
     <!-- Templates InfoMovie-Cover-->
     <panel name="TemplatesInfoBarCoverYes" />
     <panel name="TemplatesInfoBarInfoMovie" />
@@ -1343,7 +1343,7 @@
   <screen name="TemplatesClock">
     <!-- Templates Clock-->
   </screen>
-  <screen name="TemplatesClock-2">
+  <screen name="TemplatesClock2">
     <!-- Templates Clock-->
     <widget source="global.CurrentTime" render="Label" position="1122,20" size="52,36" font="Display; 35" foregroundColor="color1" backgroundColor="background" halign="right" transparent="1" borderWidth="2">
       <convert type="ClockToText">Format:%H</convert>
@@ -1358,7 +1358,7 @@
       <convert type="ClockToText">Format:%M</convert>
     </widget>
   </screen>
-  <screen name="TemplatesClock-3">
+  <screen name="TemplatesClock3">
     <!-- Templates Clock-->
     <widget source="global.CurrentTime" render="Label" position="1122,20" size="52,36" font="Display; 35" foregroundColor="color1" backgroundColor="background" halign="right" transparent="1" borderWidth="2">
       <convert type="ClockToText">Format:%H</convert>
@@ -1376,7 +1376,7 @@
       <convert type="ClockToText">Format:%A, %d %B</convert>
     </widget>
   </screen>
-  <screen name="TemplatesClock-4">
+  <screen name="TemplatesClock4">
     <!-- Templates Clock-->
     <widget source="global.CurrentTime" render="Label" position="1122,20" size="52,36" font="Display; 35" foregroundColor="color1" backgroundColor="background" halign="right" transparent="1" borderWidth="2">
       <convert type="ClockToText">Format:%H</convert>
@@ -1394,7 +1394,7 @@
       <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
     </widget>
   </screen>
-  <screen name="TemplatesChannelSelectionInfoEPG-1">
+  <screen name="TemplatesChannelSelectionInfoEPG1">
     <!-- Templates ChannelSelectionInfoEPG-->
   </screen>
   <screen name="TemplatesChannelSelectionInfoEPG">
@@ -1420,7 +1420,7 @@
       <convert type="EventTime">Progress</convert>
     </widget>
   </screen>
-  <screen name="TemplatesChannelSelectionInfoEPG-3">
+  <screen name="TemplatesChannelSelectionInfoEPG3">
     <!-- Templates ChannelSelectionInfoEPG-->
     <ePixmap position="750,260" size="500,350" pixmap="Neutron_hd/style/greymenu_5.png" alphatest="on" zPosition="-1" />
     <eLabel text="&gt;" position="765,303" size="20,20" font="Display; 18" foregroundColor="green" backgroundColor="background" halign="center" transparent="1" />
@@ -1450,7 +1450,7 @@
       <convert type="EventTime">Progress</convert>
     </widget>
   </screen>
-  <screen name="TemplatesChannelSelectionInfoEPG-4">
+  <screen name="TemplatesChannelSelectionInfoEPG4">
     <!-- Templates ChannelSelectionInfoEPG-->
     <ePixmap position="750,360" size="500,250" pixmap="Neutron_hd/style/greymenu_6.png" alphatest="on" zPosition="-1" />
     <eLabel text="&gt;" position="765,403" size="20,20" font="Display; 18" foregroundColor="green" backgroundColor="background" halign="center" transparent="1" />
@@ -1480,7 +1480,7 @@
   <screen name="TemplatesChannelSelectionInfoChannel">
     <!-- Templates ChannelSelectionInfoChannel-->
   </screen>
-  <screen name="TemplatesChannelSelectionInfoChannel-2">
+  <screen name="TemplatesChannelSelectionInfoChannel2">
     <!-- Templates ChannelSelectionInfoChannel-->
     <ePixmap position="105,635" size="120,80" pixmap="Neutron_hd/picon_bg.png" zPosition="1" alphatest="blend" />
     <widget source="ServiceEvent" render="Picon" position="115,645" size="100,60" zPosition="2" alphatest="blend">
@@ -1495,7 +1495,7 @@
       <convert type="ServiceName2">OrbitalPos</convert>
     </widget>
   </screen>
-  <screen name="TemplatesChannelSelectionInfoChannel-3">
+  <screen name="TemplatesChannelSelectionInfoChannel3">
     <!-- Templates ChannelSelectionInfoChannel-->
     <eLabel text="Satellite:" position="110,646" zPosition="1" size="150,22" font="Display; 18" foregroundColor="color3" backgroundColor="background" halign="left" transparent="1" />
     <widget source="ServiceEvent" render="Label" position="260,646" size="490,22" font="Display; 18" foregroundColor="color3" backgroundColor="background" halign="left" transparent="1">
@@ -1510,7 +1510,7 @@
       <convert type="ServiceName2">%A</convert>
     </widget>
   </screen>
-  <screen name="TemplatesChannelSelectionInfoChannel-4">
+  <screen name="TemplatesChannelSelectionInfoChannel4">
     <!-- Templates ChannelSelectionInfoChannel-->
     <ePixmap position="105,635" size="120,80" pixmap="Neutron_hd/picon_bg.png" zPosition="1" alphatest="blend" />
     <widget source="ServiceEvent" render="Picon" position="115,645" size="100,60" zPosition="2" alphatest="blend">
@@ -1529,7 +1529,7 @@
       <convert type="ServiceName2">%A</convert>
     </widget>
   </screen>
-  <screen name="TemplatesChannelSelectionInfoChannel-5">
+  <screen name="TemplatesChannelSelectionInfoChannel5">
     <!-- Templates ChannelSelectionInfoChannel-->
     <ePixmap position="105,635" size="120,80" pixmap="Neutron_hd/picon_bg.png" zPosition="1" alphatest="blend" />
     <widget source="ServiceEvent" render="Picon" position="115,645" size="100,60" zPosition="2" alphatest="blend">
@@ -1552,7 +1552,7 @@
       <convert type="ServiceName2">%A</convert>
     </widget>
   </screen>
-  <screen name="TemplatesChannelSelectionInfoChannel-6">
+  <screen name="TemplatesChannelSelectionInfoChannel6">
     <!-- Templates ChannelSelectionInfoChannel-->
     <ePixmap position="105,635" size="120,80" pixmap="Neutron_hd/picon_bg.png" zPosition="1" alphatest="blend" />
     <widget source="ServiceEvent" render="Picon" position="115,645" size="100,60" zPosition="2" alphatest="blend">
@@ -1579,7 +1579,7 @@
       <convert type="ServiceName2">%A</convert>
     </widget>
   </screen>
-  <screen name="TemplatesMovieSelectionInfoMovie-1">
+  <screen name="TemplatesMovieSelectionInfoMovie1">
     <!-- Templates MovieSelectionInfoMovie-->
   </screen>
   <screen name="TemplatesMovieSelectionInfoMovie">
@@ -1589,14 +1589,14 @@
       <convert type="MovieInfo">ShortDescription</convert>
     </widget>
   </screen>
-  <screen name="TemplatesMovieSelectionInfoMovie-3">
+  <screen name="TemplatesMovieSelectionInfoMovie3">
     <!-- Templates MovieSelectionInfoMovie-->
     <ePixmap position="750,360" size="500,250" pixmap="Neutron_hd/style/greymenu_6.png" alphatest="on" zPosition="-1" />
     <widget source="Service" render="Label" position="765,405" size="470,190" font="Regular; 18" foregroundColor="color3" backgroundColor="background" halign="left" valign="top" transparent="1" zPosition="2">
       <convert type="MovieInfo">FullDescription</convert>
     </widget>
   </screen>
-  <screen name="TemplatesMovieSelectionInfoMovie-4">
+  <screen name="TemplatesMovieSelectionInfoMovie4">
     <!-- Templates MovieSelectionInfoMovie-->
     <ePixmap position="750,60" size="500,550" pixmap="Neutron_hd/style/greymenu_4.png" alphatest="on" zPosition="-1" />
     <widget source="Service" render="CoverTmbd" position="770,105" size="195,285" zPosition="2" alphatest="on">
@@ -1680,8 +1680,8 @@
     <panel name="TemplatesInfoBarName" />
     <panel name="TemplatesInfoBarIndication" />
     <panel name="TemplatesInfoBarNumber" />
-    <panel name="TemplatesInfoBarTechnical-1" />
-    <panel name="TemplatesInfoBarOther-1" />
+    <panel name="TemplatesInfoBarTechnical1" />
+    <panel name="TemplatesInfoBarOther1" />
     <panel name="TemplatesInfoBarTvPiconTuner" />
     <panel name="TemplatesClock" />
   </screen>
@@ -1692,7 +1692,7 @@
     <panel name="TemplatesInfoBarName" />
     <panel name="TemplatesInfoBarIndication" />
     <panel name="TemplatesInfoBarNumber" />
-    <panel name="TemplatesInfoBarTechnical-1" />
+    <panel name="TemplatesInfoBarTechnical1" />
     <panel name="TemplatesInfoBarECM-EPG" />
     <panel name="TemplatesInfoBarTvPiconTuner" />
   </screen>
@@ -1762,8 +1762,8 @@
     </widget>
     <panel name="TemplatesInfoBarMedia" />
     <panel name="TemplatesInfoBarMediaIndication" />
-    <panel name="TemplatesInfoBarInfoMovie-Cover" />
-    <panel name="TemplatesInfoBarOther-1" />
+    <panel name="TemplatesInfoBarInfoMovieCover" />
+    <panel name="TemplatesInfoBarOther1" />
     <panel name="TemplatesClock" />
   </screen>
   <!-- DVD player  -->
@@ -1784,8 +1784,8 @@
     <widget name="subtitleLabel" position="1110,595" size="150,20" font="Display; 16" foregroundColor="grey" backgroundColor="background" halign="left" transparent="1" borderWidth="1" />
     <panel name="TemplatesInfoBarMedia" />
     <panel name="TemplatesInfoBarMediaIndication" />
-    <panel name="TemplatesInfoBarInfoMovie-Cover" />
-    <panel name="TemplatesInfoBarOther-1" />
+    <panel name="TemplatesInfoBarInfoMovieCover" />
+    <panel name="TemplatesInfoBarOther1" />
     <panel name="TemplatesClock" />
   </screen>
   <!-- MyTube player -->
@@ -1801,8 +1801,8 @@
     </widget>
     <panel name="TemplatesInfoBarMedia" />
     <panel name="TemplatesInfoBarMediaIndication" />
-    <panel name="TemplatesInfoBarInfoMovie-Cover" />
-    <panel name="TemplatesInfoBarOther-1" />
+    <panel name="TemplatesInfoBarInfoMovieCover" />
+    <panel name="TemplatesInfoBarOther1" />
     <panel name="TemplatesClock" />
   </screen>
   <!-- IPTV player -->
@@ -1823,7 +1823,7 @@
     <widget name="picon" position="30,645" size="100,60" zPosition="2" alphatest="blend" />
     <panel name="TemplatesInfoBarMedia" />
     <panel name="TemplatesInfoBarMediaIndication" />
-    <panel name="TemplatesInfoBarOther-1" />
+    <panel name="TemplatesInfoBarOther1" />
     <panel name="TemplatesClock" />
   </screen>
   <!-- VOD player -->
@@ -1845,7 +1845,7 @@
     <widget name="cover" position="30,560" size="200,150" alphatest="blend" transparent="1" zPosition="1" />
     <panel name="TemplatesInfoBarMedia" />
     <panel name="TemplatesInfoBarMediaIndication" />
-    <panel name="TemplatesInfoBarOther-1" />
+    <panel name="TemplatesInfoBarOther1" />
     <panel name="TemplatesClock" />
   </screen>
   <!-- ########## Volume ########## -->
