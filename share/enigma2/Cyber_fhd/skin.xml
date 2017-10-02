@@ -871,6 +871,29 @@
     <panel name="TemplatesButtons" />
     <panel name="TemplatesClock" />
   </screen>
+  <!-- Menu Sort -->
+  <screen name="MenuSort" position="0,0" size="1920,1080" title="Main menu" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesMenu500Layer" />
+    <panel name="TemplatesMenuLeftLayer" />
+    <eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <panel name="TemplatesTitle2" />
+    <widget source="menu" render="Listbox" position="90,200" size="480,600" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
+      <convert type="TemplatedMultiContent">
+			{"template": [
+				MultiContentEntryText(pos = (10, 2), size = (650, 40), flags = RT_HALIGN_LEFT, text = 0) ],
+			"fonts": [gFont("Global", 30)],
+			"itemHeight": 40
+			}
+      </convert>
+    </widget>
+    <panel name="TemplatesClock" />
+    <panel name="TemplatesButtonsRedSource" />
+    <panel name="TemplatesButtonsGreenSource" />
+    <panel name="TemplatesButtonsYellowSource" />
+    <panel name="TemplatesButtonsBlueSource" />
+    <panel name="TemplatesButtons" />
+  </screen>
   <!-- Language Selection -->
   <screen name="LanguageSelection" position="0,0" size="1920,1080" title="Language selection" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenuLayer" />
@@ -911,6 +934,30 @@
     <panel name="TemplatesButtons" />
     <panel name="TemplatesClock" />
   </screen>
+  <!-- Subtitles -->
+  <screen name="Subtitles" position="0,0" size="1920,1080" title="Subtitle selection" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesMenu1000Layer" />
+    <panel name="TemplatesMenuLeftLayer" />
+    <eLabel text="e" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <eLabel text="Subtitle selection" position="80,96" size="1500,44" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+    <panel name="TemplatesClock" />
+  </screen>
+  <!-- Skin Selector -->
+  <screen name="SkinSelector" position="0,0" size="1920,1080" title="Choose your Skin" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesMenu500Layer" />
+    <panel name="TemplatesMenuLeftLayer" />
+    <eLabel text="³" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <eLabel text="Choose your Skin" position="80,96" size="1500,44" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <widget name="SkinList" position="90,200" size="480,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+    <widget name="Preview" position="870,380" size="280,210" alphatest="on" />
+    <widget source="introduction" render="Label" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+    <panel name="TemplatesButtonsRedSource" />
+    <panel name="TemplatesButtons" />
+    <panel name="TemplatesClock" />
+  </screen>
   <!-- VideoSetup -->
   <screen name="VideoSetup" position="0,0" size="1920,1080" title="VideoSetup" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenuLayer" />
@@ -922,30 +969,6 @@
     <widget name="description" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
     <panel name="TemplatesButtonsRedSource" />
     <panel name="TemplatesButtonsGreenSource" />
-    <panel name="TemplatesButtons" />
-    <panel name="TemplatesClock" />
-  </screen>
-  <!-- Subtitles -->
-  <screen name="Subtitles" position="0,0" size="1920,1080" title="Subtitle selection" flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="TemplatesMenuLayer" />
-    <panel name="TemplatesMenu1000Layer" />
-    <panel name="TemplatesMenuLeftLayer" />
-    <eLabel text="e" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Subtitle selection" position="80,96" size="1500,44" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
-    <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-    <panel name="TemplatesClock" />
-  </screen>
-  <!--  Skin Selector  -->
-  <screen name="SkinSelector" position="0,0" size="1920,1080" title="Choose your Skin" flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="TemplatesMenuLayer" />
-    <panel name="TemplatesMenu500Layer" />
-    <panel name="TemplatesMenuLeftLayer" />
-    <eLabel text="³" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Choose your Skin" position="80,96" size="1500,44" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
-    <widget name="SkinList" position="90,200" size="480,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-    <widget name="Preview" position="870,380" size="280,210" alphatest="on" />
-    <widget source="introduction" render="Label" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
-    <panel name="TemplatesButtonsRedSource" />
     <panel name="TemplatesButtons" />
     <panel name="TemplatesClock" />
   </screen>
@@ -3256,6 +3279,32 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <widget name="key_blue" render="Label" position="1380,974" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
     <panel name="TemplatesButtons" />
   </screen>
+  <!-- Select Sats Entry -->
+  <screen name="SelectSatsEntryScreen" position="0,0" size="1920,1080" title="Select Sats Entry" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesMenu1000Layer" />
+    <panel name="TemplatesMenuLeftLayer" />
+    <eLabel text="±" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <panel name="TemplatesTitle1" />
+    <widget name="list" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+    <widget name="hint" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
+    <panel name="TemplatesButtonsRedName" />
+    <panel name="TemplatesButtonsGreenName" />
+    <panel name="TemplatesButtonsYellowName" />
+    <panel name="TemplatesButtonsBlueName" />
+    <panel name="TemplatesButtons" />
+    <panel name="TemplatesClock" />
+  </screen>
+  <!-- Sec Parameter Setup -->
+    <screen name="SecParameterSetup" position="0,0" size="1920,1080" title="Satellite equipment setup" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesMenu1000Layer" />
+    <panel name="TemplatesMenuLeftLayer" />
+    <eLabel text="s" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <eLabel text="Satellite equipment setup" position="80,96" size="1500,44" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+    <panel name="TemplatesClock" />
+  </screen>
   <!--  Satfinder -->
   <screen name="Satfinder" position="0,0" size="1920,1080" title="Satfinder" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenuLayer" />
@@ -3361,8 +3410,8 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <eLabel text="Tpansponder:" position="615,805" size="200,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
     <widget name="network" position="800,775" size="1030,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1" />
     <widget name="transponder" position="800,805" size="1030,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1" />
+    <widget name="pass" position="340,925" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
     <widget name="scan_state" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
-    <widget name="pass" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
     <panel name="TemplatesMenuUpProgressLayer" />
     <widget name="scan_progress" position="340,905" size="1500,15" foregroundColor="background4" backgroundColor="background4" transparent="1" zPosition="3" />
     <widget name="servicelist" position="90,200" size="480,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
@@ -3901,6 +3950,110 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <widget name="filedata" position="90,200" size="1740,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <panel name="TemplatesClock" />
   </screen>
+  <!-- ########## EPG Import ########## -->
+  <!-- EPG Import Configuration -->
+  <screen name="EPGImportConfig" position="0,0" size="1920,1080" title="EPG Import Configuration" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesMenu1000Layer" />
+    <panel name="TemplatesMenuLeftLayer" />
+    <eLabel text="e" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <panel name="TemplatesTitle1" />
+    <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+    <widget name="status" position="340,925" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+    <widget name="statusbar" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+    <panel name="TemplatesButtonsRedName" />
+    <panel name="TemplatesButtonsGreenName" />
+    <panel name="TemplatesButtonsYellowName" />
+    <panel name="TemplatesButtonsBlueName" />
+    <panel name="TemplatesButtonsInfo" />
+    <panel name="TemplatesButtonsMenu" />
+    <panel name="TemplatesButtons" />
+    <panel name="TemplatesClock" />
+  </screen>
+  <!-- Filters Services Setup -->
+  <screen name="filtersServicesSetup" position="0,0" size="1920,1080" title="Channel Selection" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesMenu1000Layer" />
+    <panel name="TemplatesMenuLeftLayer" />
+    <eLabel text="s" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <panel name="TemplatesTitle1" />
+    <widget source="list" render="Listbox" position="90,200" size="980,590" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
+      <convert type="TemplatedMultiContent">
+			{"template": [
+				MultiContentEntryText(pos = (10, 5), size = (420, 23), font = 0, flags = RT_HALIGN_LEFT, text = 0),
+				MultiContentEntryText(pos = (50, 25), size = (380, 20), font = 1, flags = RT_HALIGN_LEFT, text = 1),
+				MultiContentEntryText(pos = (100, 47), size = (400, 17), font = 2, flags = RT_HALIGN_LEFT, text = 2),
+				],
+				"fonts": [gFont("Global", 25), gFont("Global", 20), gFont("Console", 20)],
+				"itemHeight": 65
+			}
+    </convert>
+    </widget>
+    <panel name="TemplatesButtonsRedName" />
+    <panel name="TemplatesButtonsGreenName" />
+    <panel name="TemplatesButtonsYellowName" />
+    <panel name="TemplatesButtonsBlueName" />
+    <panel name="TemplatesButtons" />
+    <panel name="TemplatesClock" />
+  </screen>
+  <!-- EPG Import Sources -->
+  <screen name="EPGImportSources" position="0,0" size="1920,1080" title="EPG Import Sources" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesMenu1000Layer" />
+    <panel name="TemplatesMenuLeftLayer" />
+    <eLabel text="e" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <panel name="TemplatesTitle1" />
+    <widget name="list" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+    <panel name="TemplatesButtonsRedName" />
+    <panel name="TemplatesButtonsGreenName" />
+    <panel name="TemplatesButtonsYellowName" />
+    <panel name="TemplatesButtonsBlueName" />
+    <panel name="TemplatesButtons" />
+    <panel name="TemplatesClock" />
+  </screen>
+  <!-- EPG Import Profile -->
+  <screen name="EPGImportProfile" position="0,0" size="1920,1080" title="EPGImportProfile" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesMenu1000Layer" />
+    <panel name="TemplatesMenuLeftLayer" />
+    <eLabel text="e" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <panel name="TemplatesTitle1" />
+    <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+    <panel name="TemplatesButtonsRedName" />
+    <panel name="TemplatesButtonsGreenName" />
+    <panel name="TemplatesButtons" />
+    <panel name="TemplatesClock" />
+  </screen>
+  <!-- EPG Import Log -->
+  <screen name="EPGImportLog" position="0,0" size="1920,1080" title="EPG Import Log" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesMenu1000Layer" />
+    <panel name="TemplatesMenuLeftLayer" />
+    <eLabel text="e" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <panel name="TemplatesTitle1" />
+    <widget name="list" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+    <panel name="TemplatesButtonsRedName" />
+    <panel name="TemplatesButtonsGreenName" />
+    <panel name="TemplatesButtonsYellowName" />
+    <panel name="TemplatesButtonsBlueName" />
+    <panel name="TemplatesButtons" />
+    <panel name="TemplatesClock" />
+  </screen>
+  <!-- Filters Services Selection -->
+  <screen name="filtersServicesSelection" position="0,0" size="1920,1080" title="Channel Selection" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesMenu1000Layer" />
+    <panel name="TemplatesMenuLeftLayer" />
+    <eLabel text="e" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <panel name="TemplatesTitle1" />
+    <widget name="list" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+    <panel name="TemplatesButtonsRedName" />
+    <panel name="TemplatesButtonsGreenName" />
+    <panel name="TemplatesButtonsYellowName" />
+    <panel name="TemplatesButtonsBlueName" />
+    <panel name="TemplatesButtons" />
+    <panel name="TemplatesClock" />
+  </screen>
   <!-- ########## Filebrowser ########## -->
   <!-- Filebrowser -->
   <screen name="FilebrowserScreen" position="0,0" size="1920,1080" title="System Info" flags="wfNoBorder" backgroundColor="transparent">
@@ -4370,14 +4523,14 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <eLabel text="&gt;" position="95,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
     <widget name="detailslabel" position="405,245" size="1700,200" font="Global; 25" halign="left" foregroundColor="color2" backgroundColor="background2" transparent="1" />
     <widget name="poster" position="100,255" size="285,398" transparent="1" alphatest="on" />
-    <widget name="menu" position="405,245" size="1425,590" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" zPosition="2" />
-    <widget name="castlabel" position="405,445" size="1425,390" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+    <widget name="menu" position="405,280" size="1425,555" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" zPosition="2" />
+    <widget name="castlabel" position="405,445" size="1425,390" font="Global; 25" halign="left" foregroundColor="color2" backgroundColor="background1" transparent="1" />
     <widget name="extralabel" position="405,245" size="1425,590" font="Global; 25" halign="left" foregroundColor="color2" backgroundColor="background1" transparent="1" />
-    <widget name="statusbar" position="125,205" size="1700,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+    <widget name="statusbar" position="125,205" size="1700,30" font="Global; 25" halign="left" foregroundColor="color" backgroundColor="background1" transparent="1" />
     <eLabel position="90,670" size="310,165" backgroundColor="background2" zPosition="-10" />
     <widget name="starsbg" position="95,680" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_empty.png" transparent="1" alphatest="on" zPosition="2" />
     <widget name="stars" position="95,680" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_filled.png" transparent="1" alphatest="on" zPosition="3" />
-    <widget name="ratinglabel" position="95,710" size="300,30" font="Global; 25" halign="left" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+    <widget name="ratinglabel" position="95,710" size="300,70" font="Global; 25" halign="left" foregroundColor="color2" backgroundColor="background2" transparent="1" />
     <panel name="TemplatesButtonsRedName" />
     <panel name="TemplatesButtonsGreenName" />
     <panel name="TemplatesButtonsYellowName" />
@@ -5874,6 +6027,23 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     </widget>
     <widget source="red_key" render="Label" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
     <widget source="green_key" render="Label" position="1380,914" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+    <panel name="TemplatesButtons" />
+    <panel name="TemplatesClock" />
+  </screen>
+  <!-- ########## User Interface Positioner ########## -->
+  <screen name="UserInterfacePositioner2" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <eLabel text="s" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <eLabel text="Put a red area in the corner of the tv screen" position="80,96" size="1500,44" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <eLabel position="679,343" size="561,2" backgroundColor="background3" zPosition="2" />
+    <eLabel position="679,658" size="561,2" backgroundColor="background3" zPosition="2" />
+    <eLabel text="Set visibility options" position="680,278" size="561,65" font="Global; 32" halign="center" valign="center" backgroundColor="background2" />
+    <widget name="config" position="680,343" size="561,315" scrollbarMode="showNever" itemHeight="45" font="Global; 30" backgroundColor="background1" backgroundColorSelected="background5" zPosition="1" transparent="1" />
+    <widget source="status" render="Label" position="680,666" size="561,129" font="Global; 25" halign="center" valign="center" foregroundColor="color3" backgroundColor="background1" zPosition="1" transparent="1" />
+    <ePixmap pixmap="Cyber_fhd/test.png" position="0,-2" size="1920,1080" zPosition="-99" />
+    <panel name="TemplatesButtonsRedSource" />
+    <panel name="TemplatesButtonsGreenSource" />
+    <panel name="TemplatesButtonsYellowSource" />
     <panel name="TemplatesButtons" />
     <panel name="TemplatesClock" />
   </screen>
