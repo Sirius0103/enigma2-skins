@@ -4465,7 +4465,8 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesClock" />
   </screen>
   <!-- ########## Hotkey ########## -->
-  <!-- Hotkey -->
+  <!-- ********** OpenPLi ********** -->
+  <!-- Hotkey Setup -->
   <screen name="HotkeySetup" position="0,0" size="1920,1080" title="Input" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenuLayer" />
     <panel name="TemplatesMenu1000Layer" />
@@ -4475,8 +4476,23 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesTitle1" />
     <widget name="list" position="90,200" size="480,600" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget name="choosen" position="590,200" size="480,600" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-    <panel name="TemplatesButtonsRedSource" />
-    <panel name="TemplatesButtonsGreenSource" />
+    <panel name="TemplatesButtonsRedName" />
+    <panel name="TemplatesButtons" />
+    <panel name="TemplatesClock" />
+  </screen>
+  <!-- Hotkey Setup Select -->
+  <screen name="HotkeySetupSelect" position="0,0" size="1920,1080" title="Input" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesMenu1000Layer" />
+    <panel name="TemplatesMenuLeftLayer" />
+    <eLabel text="k" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <eLabel position="579,200" size="2,635" backgroundColor="background3" zPosition="1" />
+    <panel name="TemplatesTitle1" />
+    <widget name="list" position="90,200" size="480,600" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+    <widget name="choosen" position="590,200" size="480,600" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+    <panel name="TemplatesButtonsRedName" />
+    <panel name="TemplatesButtonsGreenName" />
+    <panel name="TemplatesButtonsYellowName" />
     <panel name="TemplatesButtons" />
     <panel name="TemplatesClock" />
   </screen>
