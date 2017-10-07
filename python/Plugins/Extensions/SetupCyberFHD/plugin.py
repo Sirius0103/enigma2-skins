@@ -41,9 +41,9 @@ gettext.bindtextdomain("enigma2", resolveFilename(SCOPE_LANGUAGE))
 gettext.textdomain("enigma2")
 gettext.bindtextdomain("SetupCyberFHD", "%s%s" % (resolveFilename(SCOPE_PLUGINS), "Extensions/SetupCyberFHD/locale"))
 
-addFont("/usr/share/enigma2/Cyber_fhd/fonts/Neuropol.ttf", "STitles", 100, 1)
-addFont("/usr/share/enigma2/Cyber_fhd/fonts/LedCounter.ttf", "SIndication", 100, 1)
-addFont("/usr/share/enigma2/Cyber_fhd/fonts/Roboto-Regular.ttf", "SGlobal", 100, 1)
+addFont("/usr/share/enigma2/Cyber_fhd/fonts/Neuropol.ttf", "SkinTitles", 100, 1)
+addFont("/usr/share/enigma2/Cyber_fhd/fonts/LedCounter.ttf", "SkinIndication", 100, 1)
+addFont("/usr/share/enigma2/Cyber_fhd/fonts/Roboto-Regular.ttf", "SkinGlobal", 100, 1)
 
 def _(txt):
 	t = gettext.dgettext("SetupCyberFHD", txt)
@@ -251,7 +251,7 @@ tunerpanelinfobar = [
 epgpanelinfobar = [
 	("TemplatesInfoBarTvInfoEPGNo", _("No")),
 	("TemplatesInfoBarTvInfoEPGNow", _("Now")),
-	("TemplatesInfoBarTvInfoEPGNext", _("Now, Next"))]
+	("TemplatesInfoBarTvInfoEPGNxt", _("Now, Next"))]
 cryptedpanelinfobar = [
 	("TemplatesInfoBarTvInfoCryptedNo", _("No")),
 	("TemplatesInfoBarTvInfoCryptedYes", _("Yes"))]
@@ -271,9 +271,9 @@ scrollbarmode = [
 	("showNever", _("No")),
 	("showOnDemand", _("Yes"))]
 
-buqetchannelselection = [
-	("TemplatesChannelSelectionTvBuqetNo", _("No")),
-	("TemplatesChannelSelectionTvBuqetYes", _("Yes"))]
+bouquetchannelselection = [
+	("TemplatesChannelSelectionTvBouquetNo", _("No")),
+	("TemplatesChannelSelectionTvBouquetYes", _("Yes"))]
 piconchannelselection = [
 	("TemplatesChannelSelectionTvPiconNo", _("No")),
 	("TemplatesChannelSelectionTvPiconYes", _("Yes"))]
@@ -283,16 +283,17 @@ tunerpanelchannelselection = [
 epgpanelchannelselection = [
 	("TemplatesChannelSelectionTvInfoEPGNo", _("No")),
 	("TemplatesChannelSelectionTvInfoEPGNow", _("Now")),
-	("TemplatesChannelSelectionTvInfoEPGNext", _("Now, Next")),
+	("TemplatesChannelSelectionTvInfoEPGNxt", _("Now, Next")),
 	("TemplatesChannelSelectionTvInfoEPGNowProgram", _("Now, 5 Programs")),
 	("TemplatesChannelSelectionTvInfoEPGProgram", _("10 Programs"))]
-buqetradiochannelselection = [
-	("TemplatesChannelSelectionRadioBuqetNo", _("No")),
-	("TemplatesChannelSelectionRadioBuqetYes", _("Yes"))]
+bouquetradiochannelselection = [
+	("TemplatesChannelSelectionRadioBouquetNo", _("No")),
+	("TemplatesChannelSelectionRadioBouquetYes", _("Yes"))]
 panelmovieselection = [
 	("TemplatesMovieSelectionDescriptionNo", _("No")),
 	("TemplatesMovieSelectionDescriptionShort", _("Short Description")),
-	("TemplatesMovieSelectionDescriptionFull", _("Full Description"))]
+	("TemplatesMovieSelectionDescriptionFull", _("Full Description")),
+	("TemplatesMovieSelectionDescriptionTMDB", _("TMDB Description"))]
 
 config.skin.cyber = ConfigSubsection()
 config.skin.cyber.fonts = ConfigSelection(default="Roboto-Regular", choices = fonts)
@@ -337,12 +338,12 @@ config.skin.cyber.weatherpanelinfobar = ConfigSelection(default="TemplatesInfoBa
 config.skin.cyber.progressmode = ConfigSelection(default="ProgressLayerStandard", choices = progressmode)
 config.skin.cyber.scrollbarmode = ConfigSelection(default="showNever", choices = scrollbarmode)
 
-config.skin.cyber.buqetchannelselection = ConfigSelection(default="TemplatesChannelSelectionTvBuqetNo", choices = buqetchannelselection)
+config.skin.cyber.bouquetchannelselection = ConfigSelection(default="TemplatesChannelSelectionTvBouquetNo", choices = bouquetchannelselection)
 config.skin.cyber.piconchannelselection = ConfigSelection(default="TemplatesChannelSelectionTvPiconNo", choices = piconchannelselection)
 config.skin.cyber.tunerpanelchannelselection = ConfigSelection(default="TemplatesChannelSelectionTvInfoTunerNo", choices = tunerpanelchannelselection)
 config.skin.cyber.epgpanelchannelselection = ConfigSelection(default="TemplatesChannelSelectionTvInfoEPGNow", choices = epgpanelchannelselection)
 
-config.skin.cyber.buqetradiochannelselection = ConfigSelection(default="TemplatesChannelSelectionRadioBuqetNo", choices = buqetradiochannelselection)
+config.skin.cyber.bouquetradiochannelselection = ConfigSelection(default="TemplatesChannelSelectionRadioBouquetNo", choices = bouquetradiochannelselection)
 
 config.skin.cyber.panelmovieselection = ConfigSelection(default="TemplatesMovieSelectionDescriptionShort", choices = panelmovieselection)
 
@@ -362,16 +363,16 @@ SKIN_CYBER = """
 		<eLabel position="0,188" size="80,659" backgroundColor="#50ffffff" zPosition="-12" />
 		<eLabel position="0,190" size="80,655" backgroundColor="#50000000" zPosition="-11" />
 		<eLabel position="10,200" size="70,635" backgroundColor="#50696969" zPosition="-10" />
-		<eLabel text="C" position="10,205" size="70,70" font="STitles; 70" foregroundColor="color5" backgroundColor="#50696969" halign="center" valign="center" transparent="1" zPosition="-9" />
-		<eLabel text="Y" position="10,275" size="70,70" font="STitles; 70" foregroundColor="color5" backgroundColor="#50696969" halign="center" valign="center" transparent="1" zPosition="-9" />
-		<eLabel text="B" position="10,345" size="70,70" font="STitles; 70" foregroundColor="color5" backgroundColor="#50696969" halign="center" valign="center" transparent="1" zPosition="-9" />
-		<eLabel text="E" position="10,415" size="70,70" font="STitles; 70" foregroundColor="color5" backgroundColor="#50696969" halign="center" valign="center" transparent="1" zPosition="-9" />
-		<eLabel text="R" position="10,485" size="70,70" font="STitles; 70" foregroundColor="color5" backgroundColor="#50696969" halign="center" valign="center" transparent="1" zPosition="-9" />
-		<eLabel text="F" position="10,625" size="70,70" font="STitles; 70" foregroundColor="color5" backgroundColor="#50696969" halign="center" valign="center" transparent="1" zPosition="-9" />
-		<eLabel text="H" position="10,695" size="70,70" font="STitles; 70" foregroundColor="color5" backgroundColor="#50696969" halign="center" valign="center" transparent="1" zPosition="-9" />
-		<eLabel text="D" position="10,765" size="70,70" font="STitles; 70" foregroundColor="color5" backgroundColor="#50696969" halign="center" valign="center" transparent="1" zPosition="-9" />
-		<widget source="Title" render="Label" position="80,96" size="1500,44" font="STitles; 40" foregroundColor="color1" backgroundColor="#50000000" halign="left" transparent="1" />
-		<widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="SGlobal; 25" backgroundColor="#50000000" backgroundColorSelected="#50696969" transparent="1" />
+		<eLabel text="C" position="10,205" size="70,70" font="SkinTitles; 70" foregroundColor="color5" backgroundColor="#50696969" halign="center" valign="center" transparent="1" zPosition="-9" />
+		<eLabel text="Y" position="10,275" size="70,70" font="SkinTitles; 70" foregroundColor="color5" backgroundColor="#50696969" halign="center" valign="center" transparent="1" zPosition="-9" />
+		<eLabel text="B" position="10,345" size="70,70" font="SkinTitles; 70" foregroundColor="color5" backgroundColor="#50696969" halign="center" valign="center" transparent="1" zPosition="-9" />
+		<eLabel text="E" position="10,415" size="70,70" font="SkinTitles; 70" foregroundColor="color5" backgroundColor="#50696969" halign="center" valign="center" transparent="1" zPosition="-9" />
+		<eLabel text="R" position="10,485" size="70,70" font="SkinTitles; 70" foregroundColor="color5" backgroundColor="#50696969" halign="center" valign="center" transparent="1" zPosition="-9" />
+		<eLabel text="F" position="10,625" size="70,70" font="SkinTitles; 70" foregroundColor="color5" backgroundColor="#50696969" halign="center" valign="center" transparent="1" zPosition="-9" />
+		<eLabel text="H" position="10,695" size="70,70" font="SkinTitles; 70" foregroundColor="color5" backgroundColor="#50696969" halign="center" valign="center" transparent="1" zPosition="-9" />
+		<eLabel text="D" position="10,765" size="70,70" font="SkinTitles; 70" foregroundColor="color5" backgroundColor="#50696969" halign="center" valign="center" transparent="1" zPosition="-9" />
+		<widget source="Title" render="Label" position="80,96" size="1500,44" font="SkinTitles; 40" foregroundColor="color1" backgroundColor="#50000000" halign="left" transparent="1" />
+		<widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="SkinGlobal; 25" backgroundColor="#50000000" backgroundColorSelected="#50696969" transparent="1" />
 
 	<!-- Preview Layer -->
 		<eLabel position="1098,363" size="742,484" backgroundColor="#50ffffff" zPosition="-12" />
@@ -392,15 +393,15 @@ SKIN_CYBER = """
 		<widget name="bgcolor4a" position="1120,772" size="700,5" backgroundColor="background" zPosition="-2" />
 		<widget name="bgcolor5a" position="1110,490" size="400,20" backgroundColor="background" zPosition="-2" />
 
-		<widget name="fgcolor1a" position="1120,413" size="300,25" font="STitles; 25" halign="left" backgroundColor="background" transparent="1" />
-		<widget name="fgcolor1b" position="1120,490" size="380,20" font="SGlobal; 15" halign="left" backgroundColor="background" transparent="1" />
-		<widget name="fgcolor2a" position="1120,460" size="380,20" font="SGlobal; 15" halign="left" backgroundColor="background" transparent="1" />
-		<widget name="fgcolor2b" position="1120,520" size="380,20" font="SGlobal; 15" halign="left" backgroundColor="background" transparent="1" />
-		<widget name="fgcolor2c" position="1120,751" size="700,20" font="SGlobal; 15" halign="left" backgroundColor="background" transparent="1" />
-		<widget name="fgcolor3a" position="1120,779" size="700,20" font="SGlobal; 15" halign="left" backgroundColor="background" transparent="1" />
-		<widget name="fgcolor3b" position="1525,595" size="300,140" font="SGlobal; 15" halign="left" backgroundColor="background" transparent="1" />
-		<widget name="fgcolor4a" position="1520,413" size="300,25" font="SIndication; 25" halign="right" backgroundColor="background" transparent="1" />
-		<widget name="fgcolor5a" position="1525,685" size="300,50" font="STitles; 40" halign="center" backgroundColor="background" transparent="1" />
+		<widget name="fgcolor1a" position="1120,413" size="300,25" font="SkinTitles; 25" halign="left" backgroundColor="background" transparent="1" />
+		<widget name="fgcolor1b" position="1120,490" size="380,20" font="SkinGlobal; 15" halign="left" backgroundColor="background" transparent="1" />
+		<widget name="fgcolor2a" position="1120,460" size="380,20" font="SkinGlobal; 15" halign="left" backgroundColor="background" transparent="1" />
+		<widget name="fgcolor2b" position="1120,520" size="380,20" font="SkinGlobal; 15" halign="left" backgroundColor="background" transparent="1" />
+		<widget name="fgcolor2c" position="1120,751" size="700,20" font="SkinGlobal; 15" halign="left" backgroundColor="background" transparent="1" />
+		<widget name="fgcolor3a" position="1120,779" size="700,20" font="SkinGlobal; 15" halign="left" backgroundColor="background" transparent="1" />
+		<widget name="fgcolor3b" position="1525,595" size="300,140" font="SkinGlobal; 15" halign="left" backgroundColor="background" transparent="1" />
+		<widget name="fgcolor4a" position="1520,413" size="300,25" font="SkinIndication; 25" halign="right" backgroundColor="background" transparent="1" />
+		<widget name="fgcolor5a" position="1525,685" size="300,50" font="SkinTitles; 40" halign="center" backgroundColor="background" transparent="1" />
 
 	<!-- Buttons Layer -->
 		<eLabel position="1368,867" size="454,146" backgroundColor="#50ffffff" zPosition="-12" />
@@ -410,28 +411,28 @@ SKIN_CYBER = """
 		<ePixmap pixmap="Cyber_fhd/buttons/button_key_green.png" position="1773,915" size="40,20" alphatest="on" />
 		<ePixmap pixmap="Cyber_fhd/buttons/button_key_yellow.png" position="1773,945" size="40,20" alphatest="on" />
 		<ePixmap pixmap="Cyber_fhd/buttons/button_key_blue.png" position="1773,975" size="40,20" alphatest="on" />
-		<widget source="key_red" render="Label" position="1380,884" size="380,22" font="STitles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="#50696969" transparent="1" />
-		<widget source="key_green" render="Label" position="1380,914" size="380,22" font="STitles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="#50696969" transparent="1" />
+		<widget source="key_red" render="Label" position="1380,884" size="380,22" font="SkinTitles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="#50696969" transparent="1" />
+		<widget source="key_green" render="Label" position="1380,914" size="380,22" font="SkinTitles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="#50696969" transparent="1" />
 
 	<!-- Clock Layer -->
 		<eLabel position="1618,63" size="204,104" backgroundColor="#50ffffff" zPosition="-12" />
 		<eLabel position="1620,65" size="200,100" backgroundColor="#50696969" zPosition="-11" />
-		<widget source="global.CurrentTime" render="Label" position="1615,95" size="90,50" font="SIndication; 50" foregroundColor="color1" backgroundColor="#50000000" halign="right" transparent="1">
+		<widget source="global.CurrentTime" render="Label" position="1615,95" size="90,50" font="SkinIndication; 50" foregroundColor="color1" backgroundColor="#50000000" halign="right" transparent="1">
 			<convert type="ClockToText">Format:%H</convert>
 		</widget>
-		<eLabel text=":" position="1710,95" size="20,50" font="SIndication; 50" foregroundColor="gray" backgroundColor="#50000000" halign="center" transparent="1" zPosition="-1" />
-		<widget source="global.CurrentTime" render="FixedLabel" text=":" position="1710,95" size="20,50" font="SIndication; 50" foregroundColor="color1" backgroundColor="#50000000" halign="center" transparent="1">
+		<eLabel text=":" position="1710,95" size="20,50" font="SkinIndication; 50" foregroundColor="gray" backgroundColor="#50000000" halign="center" transparent="1" zPosition="-1" />
+		<widget source="global.CurrentTime" render="FixedLabel" text=":" position="1710,95" size="20,50" font="SkinIndication; 50" foregroundColor="color1" backgroundColor="#50000000" halign="center" transparent="1">
 			<convert type="AlwaysTrue">
 			</convert>
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1735,95" size="90,50" font="SIndication; 50" foregroundColor="color1" backgroundColor="#50000000" halign="left" transparent="1">
+		<widget source="global.CurrentTime" render="Label" position="1735,95" size="90,50" font="SkinIndication; 50" foregroundColor="color1" backgroundColor="#50000000" halign="left" transparent="1">
 			<convert type="ClockToText">Format:%M</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1620,70" size="200,25" font="STitles; 20" foregroundColor="color2" backgroundColor="#50696969" halign="center" transparent="1">
+		<widget source="global.CurrentTime" render="Label" position="1620,70" size="200,25" font="SkinTitles; 20" foregroundColor="color2" backgroundColor="#50696969" halign="center" transparent="1">
 			<convert type="ClockToText">Format:%A</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1620,140" size="200,25" font="STitles; 22" foregroundColor="color2" backgroundColor="#50696969" halign="center" transparent="1">
+		<widget source="global.CurrentTime" render="Label" position="1620,140" size="200,25" font="SkinTitles; 22" foregroundColor="color2" backgroundColor="#50696969" halign="center" transparent="1">
 			<convert type="ClockToText">Format:%d.%m.%Y</convert>
 		</widget>
 	</screen>"""
@@ -536,14 +537,14 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 		list.append(getConfigListEntry(_("Scrollbar in menu:"), config.skin.cyber.scrollbarmode))
 		section = _("Channel Selection")
 		list.append(getConfigListEntry(sep*(char-(len(section))/2) + tab + section + tab + sep*(char-(len(section))/2)))
-		list.append(getConfigListEntry(_("Buqet name in channel selection:"), config.skin.cyber.buqetchannelselection))
+		list.append(getConfigListEntry(_("Userbouquet name in channel selection:"), config.skin.cyber.bouquetchannelselection))
 		list.append(getConfigListEntry(_("Picon in channel selection:"), config.skin.cyber.piconchannelselection))
 		list.append(getConfigListEntry(_("Tuner panel in channel selection:"), config.skin.cyber.tunerpanelchannelselection))
 		list.append(getConfigListEntry(_("EPG panel in channel selection:"), config.skin.cyber.epgpanelchannelselection))
 
 		section = _("Radio Selection")
 		list.append(getConfigListEntry(sep*(char-(len(section))/2) + tab + section + tab + sep*(char-(len(section))/2)))
-		list.append(getConfigListEntry(_("Buqet name in radio channel selection:"), config.skin.cyber.buqetradiochannelselection))
+		list.append(getConfigListEntry(_("Userbouquet name in radio channel selection:"), config.skin.cyber.bouquetradiochannelselection))
 		section = _("Movie Selection")
 		list.append(getConfigListEntry(sep*(char-(len(section))/2) + tab + section + tab + sep*(char-(len(section))/2)))
 		list.append(getConfigListEntry(_("Description panel in movie selection:"), config.skin.cyber.panelmovieselection))
@@ -699,17 +700,17 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 			os.system("sed -i 's/%s/TemplatesInfoBarTvInfoWeather/w' %sskin_templates.xml" % (config.skin.cyber.weatherpanelinfobar.value, skinpath))
 	# progress
 			os.system("sed -i 's/%s/ProgressLayer/w' %sskin_templates.xml" % (config.skin.cyber.progressmode.value, skinpath))
-	# buqet
-			os.system("sed -i 's/%s/TemplatesChannelSelectionTvBuqet/w' %sskin_templates.xml" % (config.skin.cyber.buqetchannelselection.value, skinpath))
-			os.system("sed -i 's/%sFull/TemplatesChannelSelectionTvBuqetFull/w' %sskin_templates.xml" % (config.skin.cyber.buqetchannelselection.value, skinpath))
+	# bouquet
+			os.system("sed -i 's/%s/TemplatesChannelSelectionTvBouquet/w' %sskin_templates.xml" % (config.skin.cyber.bouquetchannelselection.value, skinpath))
+			os.system("sed -i 's/%sFull/TemplatesChannelSelectionTvBouquetFull/w' %sskin_templates.xml" % (config.skin.cyber.bouquetchannelselection.value, skinpath))
 	# picon panel
 			os.system("sed -i 's/%s/TemplatesChannelSelectionTvPicon/w' %sskin_templates.xml" % (config.skin.cyber.piconchannelselection.value, skinpath))
 	# tuner panel
 			os.system("sed -i 's/%s/TemplatesChannelSelectionTvInfoEPG/w' %sskin_templates.xml" % (config.skin.cyber.tunerpanelchannelselection.value, skinpath))
 	# epg panel
 			os.system("sed -i 's/%s/TemplatesChannelSelectionTvInfoTuner/w' %sskin_templates.xml" % (config.skin.cyber.epgpanelchannelselection.value, skinpath))
-	# buqet
-			os.system("sed -i 's/%s/TemplatesChannelSelectionRadioBuqet/w' %sskin_templates.xml" % (config.skin.cyber.buqetradiochannelselection.value, skinpath))
+	# bouquet
+			os.system("sed -i 's/%s/TemplatesChannelSelectionRadioBouquet/w' %sskin_templates.xml" % (config.skin.cyber.bouquetradiochannelselection.value, skinpath))
 	# description panel
 			os.system("sed -i 's/%s/TemplatesMovieSelectionDescription/w' %sskin_templates.xml" % (config.skin.cyber.panelmovieselection.value, skinpath))
 	# end
