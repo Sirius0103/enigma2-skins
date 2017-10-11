@@ -578,9 +578,61 @@
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="Movie Selection" position="80,96" size="1500,44" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
     <eLabel text="V" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <widget name="list" position="90,200" size="980,635" scrollbarMode="showNever" itemHeights="100,75,35" fontSizesOriginal="25,20,20" fontSizesCompact="25,20" fontSizesMinimal="25,20" partIconeShiftMinimal="5" partIconeShiftCompact="3" partIconeShiftOriginal="3" pbarShift="15" pbarHeight="20" spaceRight="3" iconsWidth="35" spaceIconeText="5" trashShift="3" dirShift="3" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+    <widget name="list" position="90,200" size="980,635" 
+		scrollbarMode="showNever" 
+		itemHeights="100,75,35" 
+		fontSizesOriginal="25,20,20" 
+		fontSizesCompact="25,20" 
+		fontSizesMinimal="25,20" 
+		partIconeShiftMinimal="5" 
+		partIconeShiftCompact="3" 
+		partIconeShiftOriginal="3" 
+		pbarShift="15" 
+		pbarHeight="20" 
+		spaceRight="3" 
+		iconsWidth="35" 
+		spaceIconeText="5" 
+		trashShift="3" 
+		dirShift="3" 
+		backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <panel name="TemplatesMovieSelectionDescription" />
     <widget name="waitingtext" position="90,480" size="980,80" font="Global;25" foregroundColor="color1" backgroundColor="background1" halign="center" valign="center" transparent="1" zPosition="2" />
+    <widget name="freeDiskSpace" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+    <panel name="TemplatesButtonsRedName" />
+    <panel name="TemplatesButtonsGreenName" />
+    <panel name="TemplatesButtonsYellowName" />
+    <panel name="TemplatesButtonsBlueName" />
+    <panel name="TemplatesButtonsInfo" />
+    <panel name="TemplatesButtonsMenu" />
+    <panel name="TemplatesButtons" />
+    <panel name="TemplatesClock" />
+  </screen>
+  <!-- Movie Selection Slim -->
+  <screen name="MovieSelectionSlim" position="0,0" size="1920,1080" title="Select a movie" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesMenu1800Layer" />
+    <panel name="TemplatesMenuLeftLayer" />
+    <panel name="TemplatesMenuRightLayer" />
+    <eLabel text="Movie Selection" position="80,96" size="1500,44" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <eLabel text="V" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <widget name="list" position="90,200" size="1740,635" 
+		scrollbarMode="showNever" 
+		itemHeights="100,75,35" 
+		fontSizesOriginal="25,20,20" 
+		fontSizesCompact="25,20" 
+		fontSizesMinimal="25,20" 
+		partIconeShiftMinimal="5" 
+		partIconeShiftCompact="3" 
+		partIconeShiftOriginal="3" 
+		pbarShift="15" 
+		pbarHeight="20" 
+		spaceRight="3" 
+		iconsWidth="35" 
+		spaceIconeText="5" 
+		trashShift="3" 
+		dirShift="3" 
+		backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+    <widget name="waitingtext" position="90,480" size="1740,80" font="Global;25" foregroundColor="color1" backgroundColor="background1" halign="center" valign="center" transparent="1" zPosition="2" />
     <widget name="freeDiskSpace" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
     <panel name="TemplatesButtonsRedName" />
     <panel name="TemplatesButtonsGreenName" />
@@ -599,6 +651,17 @@
     <eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
     <eLabel text="Movielist menu" position="80,96" size="1500,44" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
     <widget name="menu" position="90,200" size="480,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+    <panel name="TemplatesClock" />
+  </screen>
+  <!-- Movie List Tags -->
+  <screen name="MovieListTags" pposition="0,0" size="1920,1080" title="Please select tag to filter..." flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesMenu1000Layer" />
+    <panel name="TemplatesMenuLeftLayer" />
+    <eLabel text="@" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <eLabel text="Please select tag to filter..." position="80,96" size="1500,44" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <widget name="list" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+    <widget name="text" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
     <panel name="TemplatesClock" />
   </screen>
   <!-- MediaPlayer -->
@@ -4431,6 +4494,18 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesButtonsRedSource" />
     <panel name="TemplatesButtonsGreenSource" />
     <panel name="TemplatesButtonsYellowSource" />
+    <panel name="TemplatesButtonsBlueSource" />
+    <panel name="TemplatesButtons" />
+    <panel name="TemplatesClock" />
+  </screen>
+  <!-- Sat Panelb -->
+  <screen name="SatPanelb" position="0,0" size="1920,1080" title="Satellite photos" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesMenu1000Layer" />
+    <panel name="TemplatesMenuLeftLayer" />
+    <eLabel text="W" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <panel name="TemplatesTitle1" />
+    <widget name="Mlist" position="90,200" size="980,635" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <panel name="TemplatesButtonsBlueSource" />
     <panel name="TemplatesButtons" />
     <panel name="TemplatesClock" />
