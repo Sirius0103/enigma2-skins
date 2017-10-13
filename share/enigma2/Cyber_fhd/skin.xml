@@ -2866,10 +2866,21 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="b" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
     <panel name="TemplatesTitle1" />
-    <widget name="info-hdd" position="90,200" size="980,200" font="Global; 25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
-    <widget name="info-usb" position="90,410" size="980,200" font="Global; 25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
+    <eLabel position="90,200" size="980,40" backgroundColor="background2" zPosition="-1" />
+    <eLabel text="&gt;" position="95,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+    <eLabel text="Option 1" position="125,205" size="940,30" font="Titles; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+    <widget name="info-hdd" position="90,240" size="980,225" font="Global; 25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
+    <eLabel position="90,370" size="980,40" backgroundColor="background2" zPosition="-1" />
+    <eLabel text="&gt;" position="95,375" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+    <eLabel text="Option 2" position="125,375" size="940,30" font="Titles; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+    <widget name="info-usb" position="90,410" size="980,225" font="Global; 25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
+    <eLabel position="90,540" size="980,40" backgroundColor="background2" zPosition="-1" />
+    <eLabel text="&gt;" position="95,545" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+    <eLabel text="MultiBoot" position="125,545" size="940,30" font="Titles; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+    <widget name="info-multi" position="90,580" size="980,225" font="Global; 25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
     <panel name="TemplatesButtonsRedSource" />
     <panel name="TemplatesButtonsGreenSource" />
+    <panel name="TemplatesButtonsYellowSource" />
     <panel name="TemplatesButtonsBlueSource" />
     <panel name="TemplatesButtons" />
     <panel name="TemplatesClock" />

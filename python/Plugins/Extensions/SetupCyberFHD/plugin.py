@@ -246,6 +246,7 @@ numberchannel = [
 	("TemplatesInfoBarTvNumberYes", _("Yes"))]
 tunerpanelinfobar = [
 	("TemplatesInfoBarTvTunerNo", _("No")),
+	("TemplatesInfoBarTvTunerYes", _("Yes")),
 	("TemplatesInfoBarTvTunerDigital", _("Digital")),
 	("TemplatesInfoBarTvTunerAnalog", _("Analog"))]
 epgpanelinfobar = [
@@ -329,7 +330,7 @@ config.skin.cyber.backgroundtransparent = ConfigSelection(default="5", choices =
 config.skin.cyber.foregroundtransparent = ConfigSelection(default="0", choices = styletransparent)
 
 config.skin.cyber.numberchannel = ConfigSelection(default="TemplatesInfoBarTvNumberNo", choices = numberchannel)
-config.skin.cyber.tunerpanelinfobar = ConfigSelection(default="TemplatesInfoBarTvTunerDigital", choices = tunerpanelinfobar)
+config.skin.cyber.tunerpanelinfobar = ConfigSelection(default="TemplatesInfoBarTvTunerYes", choices = tunerpanelinfobar)
 config.skin.cyber.epgpanelinfobar = ConfigSelection(default="TemplatesInfoBarTvInfoEPGNo", choices = epgpanelinfobar)
 config.skin.cyber.cryptedpanelinfobar = ConfigSelection(default="TemplatesInfoBarTvInfoCryptedNo", choices = cryptedpanelinfobar)
 config.skin.cyber.infopanelinfobar = ConfigSelection(default="TemplatesInfoBarTvInfoPanelNo", choices = infopanelinfobar)

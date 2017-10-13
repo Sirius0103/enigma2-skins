@@ -3613,6 +3613,31 @@
     </widget>
   </screen>
   <screen name="TemplatesInfoBarTvTuner">
+    <!-- Templates Info Bar Tv Tuner Info -->
+    <eLabel position="1368,867" size="454,146" backgroundColor="background3" zPosition="-12" />
+    <eLabel position="1370,869" size="450,142" backgroundColor="background1" zPosition="-11" />
+    <eLabel position="1375,875" size="440,130" backgroundColor="background2" zPosition="-10" />
+    <eLabel text="NIMS:" position="1385,880" size="100,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background1" halign="left" transparent="1" />
+    <widget source="session.FrontendInfo" render="Label" position="1480,880" size="330,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="left" transparent="1" zPosition="5">
+      <convert type="FrontendInfo">STRING</convert>
+    </widget>
+    <eLabel text="SNR:" position="1385,910" size="100,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background1" halign="left" transparent="1" />
+    <widget source="session.FrontendStatus" render="Label" position="1480,910" size="150,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="left" transparent="1" zPosition="5">
+      <convert type="FrontendInfo">SNR</convert>
+    </widget>
+    <widget source="session.FrontendStatus" render="Label" position="1625,910" size="150,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="left" transparent="1" zPosition="5">
+      <convert type="FrontendInfo">SNRdB</convert>
+    </widget>
+    <eLabel text="AGC:" position="1385,940" size="100,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background1" halign="left" transparent="1" />
+    <widget source="session.FrontendStatus" render="Label" position="1480,940" size="150,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="left" transparent="1" zPosition="5">
+      <convert type="FrontendInfo">AGC</convert>
+    </widget>
+    <eLabel text="BER:" position="1385,970" size="100,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background1" halign="left" transparent="1" />
+    <widget source="session.FrontendStatus" render="Label" position="1480,970" size="150,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="left" transparent="1" zPosition="5">
+      <convert type="FrontendInfo">BER</convert>
+    </widget>
+  </screen>
+  <screen name="TemplatesInfoBarTvTunerDigital">
     <!-- Templates Info Bar Tv Tuner Digital -->
     <eLabel position="1368,867" size="454,146" backgroundColor="background3" zPosition="-12" />
     <eLabel position="1370,869" size="450,142" backgroundColor="background1" zPosition="-11" />
