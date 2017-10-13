@@ -2778,8 +2778,8 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <widget name="slider" position="340,905" size="1500,15" foregroundColor="background4" backgroundColor="background4" transparent="1" zPosition="2" />
     <panel name="TemplatesMenuDownProgressLayer" />
     <widget name="activityslider" position="340,935" size="1500,15" foregroundColor="background4" backgroundColor="background4" transparent="1" zPosition="2" />
-    <widget source="package" render="Label" position="840,955" size="1000,30" font="Global; 25" halign="right" foregroundColor="color3" backgroundColor="background1" transparent="1" />
-    <widget source="status" render="Label" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+    <widget source="package" render="Label" position="340,955" size="1500,30" font="Global; 25" halign="right" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+    <widget source="status" render="Label" position="340,955" size="1500,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
     <panel name="TemplatesClock" />
   </screen>
   <!-- IPKG -->
@@ -2791,8 +2791,8 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <widget name="slider" position="340,905" size="1500,15" foregroundColor="background4" backgroundColor="background4" transparent="1" zPosition="2" />
     <panel name="TemplatesMenuDownProgressLayer" />
     <widget name="activityslider" position="340,935" size="1500,15" foregroundColor="background4" backgroundColor="background4" transparent="1" zPosition="2" />
-    <widget source="package" render="Label" position="840,955" size="1000,30" font="Global; 25" halign="right" foregroundColor="color3" backgroundColor="background1" transparent="1" />
-    <widget source="status" render="Label" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+    <widget name="package" render="Label" position="340,955" size="1500,30" font="Global; 25" halign="right" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+    <widget name="status" render="Label" position="340,955" size="1500,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
     <panel name="TemplatesClock" />
   </screen>
   <!-- IPKG Menu -->
