@@ -250,6 +250,7 @@ else:
 		("TemplatesInfoBarTvNumberNo", _("No")),
 		("TemplatesInfoBarTvNumberYes", _("Yes"))]
 if not fileExists("/usr/lib/enigma2/python/Components/Converter/FrontendInfo2.py")\
+	and fileExists("/usr/lib/enigma2/python/Components/Converter/ServiceName2.py")\
 	and fileExists("/usr/lib/enigma2/python/Components/Renderer/PiconUni.py")\
 	and fileExists("/usr/lib/enigma2/python/Components/Renderer/Watches.py"):
 	tunerpanelinfobar = [
@@ -422,8 +423,11 @@ SKIN_CYBER = """
 		<eLabel text="F" position="10,625" size="70,70" font="SkinTitles; 70" foregroundColor="color5" backgroundColor="#50696969" halign="center" valign="center" transparent="1" zPosition="-9" />
 		<eLabel text="H" position="10,695" size="70,70" font="SkinTitles; 70" foregroundColor="color5" backgroundColor="#50696969" halign="center" valign="center" transparent="1" zPosition="-9" />
 		<eLabel text="D" position="10,765" size="70,70" font="SkinTitles; 70" foregroundColor="color5" backgroundColor="#50696969" halign="center" valign="center" transparent="1" zPosition="-9" />
-		<widget source="Title" render="Label" position="80,96" size="1500,44" font="SkinTitles; 40" foregroundColor="color1" backgroundColor="#50000000" halign="left" transparent="1" />
+		<widget source="Title" render="Label" position="80,96" size="1500,44" font="SkinTitles; 40" foregroundColor="#10ffd700" backgroundColor="#50000000" halign="left" transparent="1" />
 		<widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="SkinGlobal; 25" backgroundColor="#50000000" backgroundColorSelected="#50696969" transparent="1" />
+		<widget source="info_com" render="Label" position="340,895" size="1000,60" font="SkinGlobal; 25" foregroundColor="#10a9a9a9" backgroundColor="#50000000" halign="left" valign="bottom" transparent="1" />
+		<widget source="version_sk" render="Label" position="340,960" size="250,30" font="SkinGlobal; 25" foregroundColor="#10a9a9a9" backgroundColor="#50000000" halign="left" valign="center" transparent="1" />
+		<widget source="info_sk" render="Label" position="590,960" size="100,30" font="SkinGlobal; 25" foregroundColor="#10a9a9a9" backgroundColor="#50000000" halign="left" valign="center" transparent="1" />
 
 	<!-- Preview Layer -->
 		<eLabel position="1098,363" size="742,484" backgroundColor="#50ffffff" zPosition="-12" />
@@ -544,6 +548,8 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 		self["info_com"] = StaticText()
 
 		self.infosk()
+		self.infocom()
+
 		self.onLayoutFinish.append(self.previewSkin)
 
 	def list(self):
@@ -715,6 +721,27 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 					self["info_sk"].text = " "
 				break
 
+	def infocom(self):
+		if fileExists("/usr/lib/enigma2/python/Plugins/Extensions/WeatherMSN/plugin.pyo")\
+			and not fileExists("/usr/lib/enigma2/python/Components/Converter/MSNWeather2.py"):
+			self["info_com"] = StaticText(_("No install components WeatherMSN !!! \nPress blue button to install !!!"))
+		elif fileExists("/usr/lib/enigma2/python/Components/Converter/AlwaysTrue.py")\
+			and fileExists("/usr/lib/enigma2/python/Components/Converter/AC3DownMixStatus.py")\
+			and fileExists("/usr/lib/enigma2/python/Components/Converter/CaidInfo2.py")\
+			and fileExists("/usr/lib/enigma2/python/Components/Converter/CamdInfo3.py")\
+			and fileExists("/usr/lib/enigma2/python/Components/Converter/EventName2.py")\
+			and fileExists("/usr/lib/enigma2/python/Components/Converter/FrontendInfo2.py")\
+			and fileExists("/usr/lib/enigma2/python/Components/Converter/ModuleControl.py")\
+			and fileExists("/usr/lib/enigma2/python/Components/Converter/ProgressDiskSpaceInfo.py")\
+			and fileExists("/usr/lib/enigma2/python/Components/Converter/ServiceInfoEX.py")\
+			and fileExists("/usr/lib/enigma2/python/Components/Converter/ServiceName2.py")\
+			and fileExists("/usr/lib/enigma2/python/Components/Renderer/PiconUni.py")\
+			and fileExists("/usr/lib/enigma2/python/Components/Renderer/RendVolumeText.py")\
+			and fileExists("/usr/lib/enigma2/python/Components/Renderer/Watches.py"):
+			self["info_com"] = StaticText(_(" "))
+		else:
+			self["info_com"] = StaticText(_("No install components skin!!! \nPress blue button to install !!!"))
+
 	def createSkin(self):
 		skinpath = "/usr/share/enigma2/Cyber_fhd/"
 
@@ -774,7 +801,26 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 	def install(self):
 		pluginpath = "/usr/lib/enigma2/python/Plugins/Extensions/"
 		componentspath = "/usr/lib/enigma2/python/Components/"
-
+		try:
+	# install converter
+			os.system("cp %sSetupCyberFHD/components/AlwaysTrue.py %sConverter/AlwaysTrue.py" % (pluginpath, componentspath))
+			os.system("cp %sSetupCyberFHD/components/AlwaysTrue.py %sConverter/AC3DownMixStatus.py" % (pluginpath, componentspath))
+			os.system("cp %sSetupCyberFHD/components/CaidInfo2.py %sConverter/CaidInfo2.py" % (pluginpath, componentspath))
+			os.system("cp %sSetupCyberFHD/components/CamdInfo3.py %sConverter/CamdInfo3.py" % (pluginpath, componentspath))
+			os.system("cp %sSetupCyberFHD/components/EventName2.py %sConverter/EventName2.py" % (pluginpath, componentspath))
+			os.system("cp %sSetupCyberFHD/components/FrontendInfo2.py %sConverter/FrontendInfo2.py" % (pluginpath, componentspath))
+			os.system("cp %sSetupCyberFHD/components/FrontendInfo2.py %sConverter/ModuleControl.py" % (pluginpath, componentspath))
+			os.system("cp %sSetupCyberFHD/components/ProgressDiskSpaceInfo.py %sConverter/ProgressDiskSpaceInfo.py" % (pluginpath, componentspath))
+			os.system("cp %sWeatherMSN/components/MSNWeather2.py %sConverter/MSNWeather2.py" % (pluginpath, componentspath))
+			os.system("cp %sSetupCyberFHD/components/ServiceInfoEX.py %sConverter/ServiceInfoEX.py" % (pluginpath, componentspath))
+			os.system("cp %sSetupCyberFHD/components/ServiceName2.py %sConverter/ServiceName2.py" % (pluginpath, componentspath))
+	# install renderer
+			os.system("cp %sSetupCyberFHD/components/PiconUni.py %sRenderer/PiconUni.py" % (pluginpath, componentspath))
+			os.system("cp %sSetupCyberFHD/components/RendVolumeText.py %sRenderer/RendVolumeText.py" % (pluginpath, componentspath))
+			os.system("cp %sSetupCyberFHD/components/Watches.py %sRenderer/Watches.py" % (pluginpath, componentspath))
+	# end
+		except:
+			self.session.open(MessageBox, _("Error by processing !!!"), MessageBox.TYPE_ERROR)
 		self.session.openWithCallback(self.restart, MessageBox,_("Do you want to restart the GUI now ?"), MessageBox.TYPE_YESNO)
 
 	def setDefault(self, configItem):
