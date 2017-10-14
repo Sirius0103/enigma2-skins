@@ -804,12 +804,12 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 		try:
 	# install converter
 			os.system("cp %sSetupCyberFHD/components/AlwaysTrue.py %sConverter/AlwaysTrue.py" % (pluginpath, componentspath))
-			os.system("cp %sSetupCyberFHD/components/AlwaysTrue.py %sConverter/AC3DownMixStatus.py" % (pluginpath, componentspath))
+			os.system("cp %sSetupCyberFHD/components/AC3DownMixStatus.py %sConverter/AC3DownMixStatus.py" % (pluginpath, componentspath))
 			os.system("cp %sSetupCyberFHD/components/CaidInfo2.py %sConverter/CaidInfo2.py" % (pluginpath, componentspath))
 			os.system("cp %sSetupCyberFHD/components/CamdInfo3.py %sConverter/CamdInfo3.py" % (pluginpath, componentspath))
 			os.system("cp %sSetupCyberFHD/components/EventName2.py %sConverter/EventName2.py" % (pluginpath, componentspath))
 			os.system("cp %sSetupCyberFHD/components/FrontendInfo2.py %sConverter/FrontendInfo2.py" % (pluginpath, componentspath))
-			os.system("cp %sSetupCyberFHD/components/FrontendInfo2.py %sConverter/ModuleControl.py" % (pluginpath, componentspath))
+			os.system("cp %sSetupCyberFHD/components/ModuleControl.py %sConverter/ModuleControl.py" % (pluginpath, componentspath))
 			os.system("cp %sSetupCyberFHD/components/ProgressDiskSpaceInfo.py %sConverter/ProgressDiskSpaceInfo.py" % (pluginpath, componentspath))
 			os.system("cp %sWeatherMSN/components/MSNWeather2.py %sConverter/MSNWeather2.py" % (pluginpath, componentspath))
 			os.system("cp %sSetupCyberFHD/components/ServiceInfoEX.py %sConverter/ServiceInfoEX.py" % (pluginpath, componentspath))
