@@ -4781,15 +4781,16 @@
       <convert type="MovieInfo">ShortDescription</convert>
     </widget>
   </screen>
-  <screen name="TemplatesMovieSelectionDescriptionFull">
+  <screen name="TemplatesMovieSelectionDescriptionMeta">
     <panel name="TemplatesMenuInfoLayer" />
+    <panel name="TemplatesMenuInfoRightLayer" />
     <!-- Templates Movie Selection Movie Info -->
     <eLabel text="File size:" position="1115,470" size="715,35" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
     <widget source="Service" render="Label" position="1530,470" size="300,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
       <convert type="MovieInfo">FileSize</convert>
     </widget>
     <widget source="Service" render="Label" position="1115,510" size="715,325" font="Global; 25" foregroundColor="color3" backgroundColor="background2" halign="left" valign="top" transparent="1">
-      <convert type="MovieInfo">FullDescription</convert>
+      <convert type="MovieInfo">MetaDescription</convert>
     </widget>
   </screen>
   <screen name="TemplatesMovieSelectionDescriptionTMDB">

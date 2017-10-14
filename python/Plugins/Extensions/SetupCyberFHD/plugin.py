@@ -293,7 +293,7 @@ bouquetradiochannelselection = [
 panelmovieselection = [
 	("TemplatesMovieSelectionDescriptionNo", _("No")),
 	("TemplatesMovieSelectionDescriptionShort", _("Short Description")),
-	("TemplatesMovieSelectionDescriptionFull", _("Full Description")),
+	("TemplatesMovieSelectionDescriptionMeta", _("Meta Description")),
 	("TemplatesMovieSelectionDescriptionTMDB", _("TMDB Description"))]
 
 config.skin.cyber = ConfigSubsection()
