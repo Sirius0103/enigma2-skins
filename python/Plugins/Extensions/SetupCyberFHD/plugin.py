@@ -241,60 +241,110 @@ fonts = [
 	("Roboto-Italic", _("Italic")),
 	("Roboto-MediumItalic", _("MediumItalic")),
 	("Roboto-BoldItalic", _("BoldItalic"))]
-numberchannel = [
-	("TemplatesInfoBarTvNumberNo", _("No")),
-	("TemplatesInfoBarTvNumberYes", _("Yes"))]
-tunerpanelinfobar = [
-	("TemplatesInfoBarTvTunerNo", _("No")),
-	("TemplatesInfoBarTvTunerYes", _("Yes")),
-	("TemplatesInfoBarTvTunerDigital", _("Digital")),
-	("TemplatesInfoBarTvTunerAnalog", _("Analog"))]
+
+if not fileExists("/usr/lib/enigma2/python/Components/Converter/ServiceName2.py"):
+	numberchannel = [
+		("TemplatesInfoBarTvNumberNo", _("No"))]
+else:
+	numberchannel = [
+		("TemplatesInfoBarTvNumberNo", _("No")),
+		("TemplatesInfoBarTvNumberYes", _("Yes"))]
+if not fileExists("/usr/lib/enigma2/python/Components/Converter/FrontendInfo2.py")\
+	and fileExists("/usr/lib/enigma2/python/Components/Renderer/PiconUni.py")\
+	and fileExists("/usr/lib/enigma2/python/Components/Renderer/Watches.py"):
+	tunerpanelinfobar = [
+		("TemplatesInfoBarTvTunerYes", _("Yes")),
+		("TemplatesInfoBarTvTunerDigital", _("Digital"))]
+else:
+	tunerpanelinfobar = [
+		("TemplatesInfoBarTvTunerNo", _("No")),
+		("TemplatesInfoBarTvTunerYes", _("Yes")),
+		("TemplatesInfoBarTvTunerDigital", _("Digital")),
+		("TemplatesInfoBarTvTunerAnalog", _("Analog"))]
 epgpanelinfobar = [
 	("TemplatesInfoBarTvInfoEPGNo", _("No")),
 	("TemplatesInfoBarTvInfoEPGNow", _("Now")),
 	("TemplatesInfoBarTvInfoEPGNxt", _("Now, Next"))]
-cryptedpanelinfobar = [
-	("TemplatesInfoBarTvInfoCryptedNo", _("No")),
-	("TemplatesInfoBarTvInfoCryptedYes", _("Yes"))]
-infopanelinfobar = [
-	("TemplatesInfoBarTvInfoPanelNo", _("No")),
-#	("TemplatesInfoBarTvInfoPanelCI", _("CI")),
-	("TemplatesInfoBarTvInfoPanelNIM", _("NIM")),
-	("TemplatesInfoBarTvInfoPanelECM", _("ECM")),
-	("TemplatesInfoBarTvInfoPanelPID", _("PID"))]
-weatherpanelinfobar = [
-	("TemplatesInfoBarTvInfoWeatherNo", _("No")),
-	("TemplatesInfoBarTvInfoWeatherMSN", _("MSN"))]
+if not fileExists("/usr/lib/enigma2/python/Components/Converter/CaidInfo2.py"):
+	cryptedpanelinfobar = [
+		("TemplatesInfoBarTvInfoCryptedNo", _("No"))]
+else:
+	cryptedpanelinfobar = [
+		("TemplatesInfoBarTvInfoCryptedNo", _("No")),
+		("TemplatesInfoBarTvInfoCryptedYes", _("Yes"))]
+if not fileExists("/usr/lib/enigma2/python/Components/Converter/CaidInfo2.py")\
+	and fileExists("/usr/lib/enigma2/python/Components/Converter/CamdInfo3.py")\
+	and fileExists("/usr/lib/enigma2/python/Components/Converter/ServiceName2.py")\
+	and fileExists("/usr/lib/enigma2/python/Components/Converter/ServiceInfoEX.py")\
+	and fileExists("/usr/lib/enigma2/python/Components/Converter/ModuleControl.py"):
+	infopanelinfobar = [
+		("TemplatesInfoBarTvInfoPanelNo", _("No"))]
+else:
+	infopanelinfobar = [
+		("TemplatesInfoBarTvInfoPanelNo", _("No")),
+		("TemplatesInfoBarTvInfoPanelCI", _("CI")),
+		("TemplatesInfoBarTvInfoPanelNIM", _("NIM")),
+		("TemplatesInfoBarTvInfoPanelECM", _("ECM")),
+		("TemplatesInfoBarTvInfoPanelPID", _("PID"))]
+if not fileExists("/usr/lib/enigma2/python/Components/Converter/MSNWeather2.py")\
+	and fileExists("/usr/lib/enigma2/python/Components/Renderer/PiconUni.py"):
+	weatherpanelinfobar = [
+		("TemplatesInfoBarTvInfoWeatherNo", _("No"))]
+else:
+	weatherpanelinfobar = [
+		("TemplatesInfoBarTvInfoWeatherNo", _("No")),
+		("TemplatesInfoBarTvInfoWeatherMSN", _("MSN"))]
 progressmode = [
 	("ProgressLayerStandard", _("Standard")),
 	("ProgressLayerImproved", _("Improved"))]
 scrollbarmode = [
 	("showNever", _("No")),
 	("showOnDemand", _("Yes"))]
-
 bouquetchannelselection = [
 	("TemplatesChannelSelectionTvBouquetNo", _("No")),
 	("TemplatesChannelSelectionTvBouquetYes", _("Yes"))]
-piconchannelselection = [
-	("TemplatesChannelSelectionTvPiconNo", _("No")),
-	("TemplatesChannelSelectionTvPiconYes", _("Yes"))]
-tunerpanelchannelselection = [
-	("TemplatesChannelSelectionTvInfoTunerNo", _("No")),
-	("TemplatesChannelSelectionTvInfoTunerYes", _("Yes"))]
-epgpanelchannelselection = [
-	("TemplatesChannelSelectionTvInfoEPGNo", _("No")),
-	("TemplatesChannelSelectionTvInfoEPGNow", _("Now")),
-	("TemplatesChannelSelectionTvInfoEPGNxt", _("Now, Next")),
-	("TemplatesChannelSelectionTvInfoEPGNowProgram", _("Now, 5 Programs")),
-	("TemplatesChannelSelectionTvInfoEPGProgram", _("10 Programs"))]
+if not fileExists("/usr/lib/enigma2/python/Components/Converter/ServiceName2.py")\
+	and fileExists("/usr/lib/enigma2/python/Components/Renderer/PiconUni.py"):
+	piconchannelselection = [
+		("TemplatesChannelSelectionTvPiconNo", _("No"))]
+else:
+	piconchannelselection = [
+		("TemplatesChannelSelectionTvPiconNo", _("No")),
+		("TemplatesChannelSelectionTvPiconYes", _("Yes"))]
+if not fileExists("/usr/lib/enigma2/python/Components/Converter/ServiceName2.py"):
+	tunerpanelchannelselection = [
+		("TemplatesChannelSelectionTvInfoTunerNo", _("No"))]
+else:
+	tunerpanelchannelselection = [
+		("TemplatesChannelSelectionTvInfoTunerNo", _("No")),
+		("TemplatesChannelSelectionTvInfoTunerYes", _("Yes"))]
+if not fileExists("/usr/lib/enigma2/python/Components/Converter/EventName2.py"):
+	epgpanelchannelselection = [
+		("TemplatesChannelSelectionTvInfoEPGNo", _("No")),
+		("TemplatesChannelSelectionTvInfoEPGNow", _("Now"))]
+else:
+	epgpanelchannelselection = [
+		("TemplatesChannelSelectionTvInfoEPGNo", _("No")),
+		("TemplatesChannelSelectionTvInfoEPGNow", _("Now")),
+		("TemplatesChannelSelectionTvInfoEPGNxt", _("Now, Next")),
+		("TemplatesChannelSelectionTvInfoEPGNowProgram", _("Now, 5 Programs")),
+		("TemplatesChannelSelectionTvInfoEPGProgram", _("10 Programs"))]
 bouquetradiochannelselection = [
 	("TemplatesChannelSelectionRadioBouquetNo", _("No")),
 	("TemplatesChannelSelectionRadioBouquetYes", _("Yes"))]
-panelmovieselection = [
-	("TemplatesMovieSelectionDescriptionNo", _("No")),
-	("TemplatesMovieSelectionDescriptionShort", _("Short Description")),
-	("TemplatesMovieSelectionDescriptionMeta", _("Meta Description")),
-	("TemplatesMovieSelectionDescriptionTMDB", _("TMDB Description"))]
+if not fileExists("/usr/lib/enigma2/python/Components/Converter/MovieInfo2.py")\
+	and fileExists("/usr/lib/enigma2/python/Components/Renderer/CoverTmbd.py")\
+	and fileExists("/usr/lib/enigma2/python/Components/Renderer/RatingTmbd.py"):
+	panelmovieselection = [
+		("TemplatesMovieSelectionDescriptionNo", _("No")),
+		("TemplatesMovieSelectionDescriptionShort", _("Short Description")),
+		("TemplatesMovieSelectionDescriptionMeta", _("Meta Description"))]
+else:
+	panelmovieselection = [
+		("TemplatesMovieSelectionDescriptionNo", _("No")),
+		("TemplatesMovieSelectionDescriptionShort", _("Short Description")),
+		("TemplatesMovieSelectionDescriptionMeta", _("Meta Description")),
+		("TemplatesMovieSelectionDescriptionTMDB", _("TMDB Description"))]
 
 config.skin.cyber = ConfigSubsection()
 config.skin.cyber.fonts = ConfigSelection(default="Roboto-Regular", choices = fonts)
