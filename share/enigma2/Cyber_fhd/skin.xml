@@ -221,29 +221,7 @@
     <widget source="session.Event_Now" render="Progress" position="355,935" size="600,15" foregroundColor="background4" backgroundColor="background4" transparent="1" zPosition="2">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <!-- Templates Radio Indication -->
-    <eLabel text="$" position="345,1002" size="35,35" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" zPosition="1" />
-    <widget source="session.CurrentService" render="FixedLabel" text="$" position="345,1002" size="35,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
-      <convert type="ServiceInfo">IsCrypted</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <eLabel text="REC" position="375,1002" size="70,35" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
-    <widget source="session.RecordState" render="FixedLabel" text="REC" position="375,1002" size="70,35" font="Indication; 30" foregroundColor="red" backgroundColor="background" transparent="1" zPosition="3">
-      <convert type="ConditionalShowHide">Blink</convert>
-    </widget>
-    <eLabel text="RDS" position="440,1002" size="70,35" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
-    <widget source="RdsDecoder" render="FixedLabel" text="RDS" position="440,1002" size="70,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
-      <convert type="RdsInfo">RasInteractiveAvailable</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <eLabel text="DMX" position="505,1002" size="70,35" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
-    <widget source="session.CurrentService" render="FixedLabel" text="DMX" position="505,1002" size="70,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
-      <convert type="AC3DownMixStatus" />
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="session.CurrentService" render="Label" text="AC-3" position="570,1002" size="150,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
-      <convert type="ServiceInfoEX">atype</convert>
-    </widget>
+    <panel name="TemplatesInfoBarRadioIndication" />
   </screen>
   <!-- ##########  Movie player ########## -->
   <screen name="MoviePlayer" position="0,0" size="1920,1080" title="Movie player" backgroundColor="transparent" flags="wfNoBorder">

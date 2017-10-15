@@ -250,9 +250,9 @@ else:
 		("TemplatesInfoBarTvNumberNo", _("No")),
 		("TemplatesInfoBarTvNumberYes", _("Yes"))]
 if not fileExists("/usr/lib/enigma2/python/Components/Converter/FrontendInfo2.py")\
-	and fileExists("/usr/lib/enigma2/python/Components/Converter/ServiceName2.py")\
-	and fileExists("/usr/lib/enigma2/python/Components/Renderer/PiconUni.py")\
-	and fileExists("/usr/lib/enigma2/python/Components/Renderer/Watches.py"):
+	or not fileExists("/usr/lib/enigma2/python/Components/Converter/ServiceName2.py")\
+	or not fileExists("/usr/lib/enigma2/python/Components/Renderer/PiconUni.py")\
+	or not fileExists("/usr/lib/enigma2/python/Components/Renderer/Watches.py"):
 	tunerpanelinfobar = [
 		("TemplatesInfoBarTvTunerYes", _("Yes")),
 		("TemplatesInfoBarTvTunerDigital", _("Digital"))]
@@ -274,10 +274,10 @@ else:
 		("TemplatesInfoBarTvInfoCryptedNo", _("No")),
 		("TemplatesInfoBarTvInfoCryptedYes", _("Yes"))]
 if not fileExists("/usr/lib/enigma2/python/Components/Converter/CaidInfo2.py")\
-	and fileExists("/usr/lib/enigma2/python/Components/Converter/CamdInfo3.py")\
-	and fileExists("/usr/lib/enigma2/python/Components/Converter/ServiceName2.py")\
-	and fileExists("/usr/lib/enigma2/python/Components/Converter/ServiceInfoEX.py")\
-	and fileExists("/usr/lib/enigma2/python/Components/Converter/ModuleControl.py"):
+	or not fileExists("/usr/lib/enigma2/python/Components/Converter/CamdInfo3.py")\
+	or not fileExists("/usr/lib/enigma2/python/Components/Converter/ServiceName2.py")\
+	or not fileExists("/usr/lib/enigma2/python/Components/Converter/ServiceInfoEX.py")\
+	or not fileExists("/usr/lib/enigma2/python/Components/Converter/ModuleControl.py"):
 	infopanelinfobar = [
 		("TemplatesInfoBarTvInfoPanelNo", _("No"))]
 else:
@@ -305,7 +305,7 @@ bouquetchannelselection = [
 	("TemplatesChannelSelectionTvBouquetNo", _("No")),
 	("TemplatesChannelSelectionTvBouquetYes", _("Yes"))]
 if not fileExists("/usr/lib/enigma2/python/Components/Converter/ServiceName2.py")\
-	and fileExists("/usr/lib/enigma2/python/Components/Renderer/PiconUni.py"):
+	or not fileExists("/usr/lib/enigma2/python/Components/Renderer/PiconUni.py"):
 	piconchannelselection = [
 		("TemplatesChannelSelectionTvPiconNo", _("No"))]
 else:
@@ -334,8 +334,8 @@ bouquetradiochannelselection = [
 	("TemplatesChannelSelectionRadioBouquetNo", _("No")),
 	("TemplatesChannelSelectionRadioBouquetYes", _("Yes"))]
 if not fileExists("/usr/lib/enigma2/python/Components/Converter/MovieInfo2.py")\
-	and fileExists("/usr/lib/enigma2/python/Components/Renderer/CoverTmbd.py")\
-	and fileExists("/usr/lib/enigma2/python/Components/Renderer/RatingTmbd.py"):
+	or not fileExists("/usr/lib/enigma2/python/Components/Renderer/CoverTmbd.py")\
+	or not fileExists("/usr/lib/enigma2/python/Components/Renderer/RatingTmbd.py"):
 	panelmovieselection = [
 		("TemplatesMovieSelectionDescriptionNo", _("No")),
 		("TemplatesMovieSelectionDescriptionShort", _("Short Description")),
@@ -466,28 +466,23 @@ SKIN_CYBER = """
 		<ePixmap pixmap="Cyber_fhd/buttons/button_key_green.png" position="1773,915" size="40,20" alphatest="on" />
 		<ePixmap pixmap="Cyber_fhd/buttons/button_key_yellow.png" position="1773,945" size="40,20" alphatest="on" />
 		<ePixmap pixmap="Cyber_fhd/buttons/button_key_blue.png" position="1773,975" size="40,20" alphatest="on" />
-		<widget source="key_red" render="Label" position="1380,884" size="380,22" font="SkinTitles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="#50696969" transparent="1" />
-		<widget source="key_green" render="Label" position="1380,914" size="380,22" font="SkinTitles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="#50696969" transparent="1" />
+		<widget source="key_red" render="Label" position="1380,884" size="380,22" font="SkinTitles; 22" halign="right" valign="center" foregroundColor="#10f5f5f5" backgroundColor="#50696969" transparent="1" />
+		<widget source="key_green" render="Label" position="1380,914" size="380,22" font="SkinTitles; 22" halign="right" valign="center" foregroundColor="#10f5f5f5" backgroundColor="#50696969" transparent="1" />
 
 	<!-- Clock Layer -->
 		<eLabel position="1618,63" size="204,104" backgroundColor="#50ffffff" zPosition="-12" />
 		<eLabel position="1620,65" size="200,100" backgroundColor="#50696969" zPosition="-11" />
-		<widget source="global.CurrentTime" render="Label" position="1615,95" size="90,50" font="SkinIndication; 50" foregroundColor="color1" backgroundColor="#50000000" halign="right" transparent="1">
+		<widget source="global.CurrentTime" render="Label" position="1615,95" size="90,50" font="SkinIndication; 50" foregroundColor="#10ffd700" backgroundColor="#50000000" halign="right" transparent="1">
 			<convert type="ClockToText">Format:%H</convert>
 		</widget>
-		<eLabel text=":" position="1710,95" size="20,50" font="SkinIndication; 50" foregroundColor="gray" backgroundColor="#50000000" halign="center" transparent="1" zPosition="-1" />
-		<widget source="global.CurrentTime" render="FixedLabel" text=":" position="1710,95" size="20,50" font="SkinIndication; 50" foregroundColor="color1" backgroundColor="#50000000" halign="center" transparent="1">
-			<convert type="AlwaysTrue">
-			</convert>
-			<convert type="ConditionalShowHide">Blink</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1735,95" size="90,50" font="SkinIndication; 50" foregroundColor="color1" backgroundColor="#50000000" halign="left" transparent="1">
+		<eLabel text=":" position="1710,95" size="20,50" font="SkinIndication; 50" foregroundColor="#10ffd700" backgroundColor="#50000000" halign="center" transparent="1" zPosition="-1" />
+		<widget source="global.CurrentTime" render="Label" position="1735,95" size="90,50" font="SkinIndication; 50" foregroundColor="#10ffd700" backgroundColor="#50000000" halign="left" transparent="1">
 			<convert type="ClockToText">Format:%M</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1620,70" size="200,25" font="SkinTitles; 20" foregroundColor="color2" backgroundColor="#50696969" halign="center" transparent="1">
+		<widget source="global.CurrentTime" render="Label" position="1620,70" size="200,25" font="SkinTitles; 20" foregroundColor="#10f5f5f5" backgroundColor="#50696969" halign="center" transparent="1">
 			<convert type="ClockToText">Format:%A</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1620,140" size="200,25" font="SkinTitles; 22" foregroundColor="color2" backgroundColor="#50696969" halign="center" transparent="1">
+		<widget source="global.CurrentTime" render="Label" position="1620,140" size="200,25" font="SkinTitles; 22" foregroundColor="#10f5f5f5" backgroundColor="#50696969" halign="center" transparent="1">
 			<convert type="ClockToText">Format:%d.%m.%Y</convert>
 		</widget>
 	</screen>"""
@@ -772,6 +767,21 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 			os.system("sed -i 's/#10a9a9a9/#%s%s/w' %sskin.xml" % (config.skin.cyber.foregroundtransparent.value, config.skin.cyber.colorforeground3.value, skinpath))
 			os.system("sed -i 's/#1000ffff/#%s%s/w' %sskin.xml" % (config.skin.cyber.foregroundtransparent.value, config.skin.cyber.colorforeground4.value, skinpath))
 			os.system("sed -i 's/#10ffffff/#%s%s/w' %sskin.xml" % (config.skin.cyber.backgroundtransparent.value, config.skin.cyber.colorforeground5.value, skinpath))
+	# clock	
+			if not fileExists("/usr/lib/enigma2/python/Components/Converter/AlwaysTrue.py"):
+				os.system("sed -i 's/TemplatesClockDefault/TemplatesClock/w' %sskin_templates.xml" % (skinpath))
+			else:
+				os.system("sed -i 's/TemplatesClockStyle/TemplatesClock/w' %sskin_templates.xml" % (skinpath))
+	# indication	
+			if not fileExists("/usr/lib/enigma2/python/Components/Converter/AC3DownMixStatus.py")\
+				or not fileExists("/usr/lib/enigma2/python/Components/Converter/ServiceInfoEX.py"):
+				os.system("sed -i 's/TemplatesInfoBarTvIndicationDefault/TemplatesInfoBarTvIndication/w' %sskin_templates.xml" % (skinpath))
+				os.system("sed -i 's/TemplatesInfoBarMediaIndicationDefault/TemplatesInfoBarMediaIndication/w' %sskin_templates.xml" % (skinpath))
+				os.system("sed -i 's/TemplatesInfoBarRadioIndicationDefault/TemplatesInfoBarRadioIndication/w' %sskin_templates.xml" % (skinpath))
+			else:
+				os.system("sed -i 's/TemplatesInfoBarTvIndicationStyle/TemplatesInfoBarTvIndication/w' %sskin_templates.xml" % (skinpath))
+				os.system("sed -i 's/TemplatesInfoBarMediaIndicationStyle/TemplatesInfoBarMediaIndication/w' %sskin_templates.xml" % (skinpath))
+				os.system("sed -i 's/TemplatesInfoBarRadioIndicationStyle/TemplatesInfoBarRadioIndication/w' %sskin_templates.xml" % (skinpath))
 	# fonts	
 			os.system("sed -i 's/Roboto-Regular/%s/w' %sskin.xml" % (config.skin.cyber.fonts.value, skinpath))
 	# scrollbar
@@ -803,11 +813,11 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 			os.system("sed -i 's/%s/TemplatesChannelSelectionRadioBouquet/w' %sskin_templates.xml" % (config.skin.cyber.bouquetradiochannelselection.value, skinpath))
 	# description panel
 			os.system("sed -i 's/%s/TemplatesMovieSelectionDescription/w' %sskin_templates.xml" % (config.skin.cyber.panelmovieselection.value, skinpath))
-	# end
 		except:
-			self.session.open(MessageBox, _("Error by processing !!!"), MessageBox.TYPE_ERROR)
 			os.system("cp %sskin_default.xml %sskin.xml" % (skinpath, skinpath))
 			os.system("cp %sskin_templates_default.xml %sskin_templates.xml" % (skinpath, skinpath))
+			self.session.open(MessageBox, _("Error by processing !!!"), MessageBox.TYPE_ERROR)
+	# end
 		self.session.openWithCallback(self.restart, MessageBox,_("Do you want to restart the GUI now ?"), MessageBox.TYPE_YESNO)
 
 	def install(self):
