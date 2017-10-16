@@ -719,33 +719,21 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 	def infocom(self):
 		if fileExists("/usr/lib/enigma2/python/Plugins/Extensions/WeatherMSN/plugin.pyo")\
 			and not fileExists("/usr/lib/enigma2/python/Components/Converter/MSNWeather2.py"):
-			self["info_com"] = StaticText(_("No install components WeatherMSN !!! \nPress blue button to install !!!"))
-		elif not fileExists("/usr/lib/enigma2/python/Components/Converter/AlwaysTrue.py"):
-			self["info_com"] = StaticText(_("No install components AlwaysTrue !!! \nPress blue button to install !!!"))
-		elif not fileExists("/usr/lib/enigma2/python/Components/Converter/AC3DownMixStatus.py"):
-			self["info_com"] = StaticText(_("No install components AC3DownMixStatus !!! \nPress blue button to install !!!"))
-		elif not fileExists("/usr/lib/enigma2/python/Components/Converter/CaidInfo2.py"):
-			self["info_com"] = StaticText(_("No install components CaidInfo2 !!! \nPress blue button to install !!!"))
-		elif not fileExists("/usr/lib/enigma2/python/Components/Converter/CamdInfo3.py"):
-			self["info_com"] = StaticText(_("No install components CamdInfo3 !!! \nPress blue button to install !!!"))
-		elif not fileExists("/usr/lib/enigma2/python/Components/Converter/EventName2.py"):
-			self["info_com"] = StaticText(_("No install components EventName2 !!! \nPress blue button to install !!!"))
-		elif not fileExists("/usr/lib/enigma2/python/Components/Converter/FrontendInfo2.py"):
-			self["info_com"] = StaticText(_("No install components FrontendInfo2 !!! \nPress blue button to install !!!"))
-		elif not fileExists("/usr/lib/enigma2/python/Components/Converter/ModuleControl.py"):
-			self["info_com"] = StaticText(_("No install components ModuleControl !!! \nPress blue button to install !!!"))
-		elif not fileExists("/usr/lib/enigma2/python/Components/Converter/ProgressDiskSpaceInfo.py"):
-			self["info_com"] = StaticText(_("No install components ProgressDiskSpaceInfo !!! \nPress blue button to install !!!"))
-		elif not fileExists("/usr/lib/enigma2/python/Components/Converter/ServiceInfoEX.py"):
-			self["info_com"] = StaticText(_("No install components ServiceInfoEX !!! \nPress blue button to install !!!"))
-		elif not fileExists("/usr/lib/enigma2/python/Components/Converter/ServiceName2.py"):
-			self["info_com"] = StaticText(_("No install components ServiceName2 !!! \nPress blue button to install !!!"))
-		elif not fileExists("/usr/lib/enigma2/python/Components/Renderer/PiconUni.py"):
-			self["info_com"] = StaticText(_("No install components PiconUni !!! \nPress blue button to install !!!"))
-		elif not fileExists("/usr/lib/enigma2/python/Components/Renderer/RendVolumeText.py"):
-			self["info_com"] = StaticText(_("No install components RendVolumeText !!! \nPress blue button to install !!!"))
-		elif not fileExists("/usr/lib/enigma2/python/Components/Renderer/Watches.py"):
-			self["info_com"] = StaticText(_("No install components Watches !!! \nPress blue button to install !!!"))
+			self["info_com"] = StaticText(_("No install components skin !!! \nPress blue button to install !!!"))
+		elif not fileExists("/usr/lib/enigma2/python/Components/Converter/AlwaysTrue.py")\
+			or not fileExists("/usr/lib/enigma2/python/Components/Converter/AC3DownMixStatus.py")\
+			or not fileExists("/usr/lib/enigma2/python/Components/Converter/CaidInfo2.py")\
+			or not fileExists("/usr/lib/enigma2/python/Components/Converter/CamdInfo3.py")\
+			or not fileExists("/usr/lib/enigma2/python/Components/Converter/EventName2.py")\
+			or not fileExists("/usr/lib/enigma2/python/Components/Converter/FrontendInfo2.py")\
+			or not fileExists("/usr/lib/enigma2/python/Components/Converter/ModuleControl.py")\
+			or not fileExists("/usr/lib/enigma2/python/Components/Converter/ProgressDiskSpaceInfo.py")\
+			or not fileExists("/usr/lib/enigma2/python/Components/Converter/ServiceInfoEX.py")\
+			or not fileExists("/usr/lib/enigma2/python/Components/Converter/ServiceName2.py")\
+			or not fileExists("/usr/lib/enigma2/python/Components/Renderer/PiconUni.py")\
+			or not fileExists("/usr/lib/enigma2/python/Components/Renderer/RendVolumeText.py")\
+			or not fileExists("/usr/lib/enigma2/python/Components/Renderer/Watches.py"):
+			self["info_com"] = StaticText(_("No install components skin !!! \nPress blue button to install !!!"))
 		else:
 			self["info_com"] = StaticText(_(" "))
 
