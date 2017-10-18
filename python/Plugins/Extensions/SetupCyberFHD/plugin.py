@@ -313,12 +313,12 @@ else:
 		("TemplatesChannelSelectionTvPiconDefault", _("No")),
 		("TemplatesChannelSelectionTvPiconStyle", _("Yes"))]
 if not fileExists("/usr/lib/enigma2/python/Components/Converter/ServiceName2.py"):
-	tunerpanelchannelselection = [
-		("TemplatesChannelSelectionTvInfoTunerDefault", _("No"))]
+	channelpanelchannelselection = [
+		("TemplatesChannelSelectionTvInfoChannelDefault", _("No"))]
 else:
-	tunerpanelchannelselection = [
-		("TemplatesChannelSelectionTvInfoTunerDefault", _("No")),
-		("TemplatesChannelSelectionTvInfoTunerStyle", _("Yes"))]
+	channelpanelchannelselection = [
+		("TemplatesChannelSelectionTvInfoChannelDefault", _("No")),
+		("TemplatesChannelSelectionTvInfoChannelStyle", _("Yes"))]
 if not fileExists("/usr/lib/enigma2/python/Components/Converter/EventName2.py"):
 	epgpanelchannelselection = [
 		("TemplatesChannelSelectionTvInfoEPGDefault", _("No")),
@@ -328,8 +328,8 @@ else:
 		("TemplatesChannelSelectionTvInfoEPGDefault", _("No")),
 		("TemplatesChannelSelectionTvInfoEPGNow", _("Now")),
 		("TemplatesChannelSelectionTvInfoEPGNxt", _("Now, Next")),
-		("TemplatesChannelSelectionTvInfoEPGNowProgram", _("Now, 5 Programs")),
-		("TemplatesChannelSelectionTvInfoEPGProgram", _("10 Programs"))]
+		("TemplatesChannelSelectionTvInfoEPGNowPrograms", _("Now, 5 Programs")),
+		("TemplatesChannelSelectionTvInfoEPGPrograms", _("10 Programs"))]
 bouquetradiochannelselection = [
 	("TemplatesChannelSelectionRadioBouquetDefault", _("No")),
 	("TemplatesChannelSelectionRadioBouquetStyle", _("Yes"))]
@@ -392,7 +392,7 @@ config.skin.cyber.scrollbarmode = ConfigSelection(default="showNever", choices =
 
 config.skin.cyber.bouquetchannelselection = ConfigSelection(default="TemplatesChannelSelectionTvBouquetDefault", choices = bouquetchannelselection)
 config.skin.cyber.piconchannelselection = ConfigSelection(default="TemplatesChannelSelectionTvPiconDefault", choices = piconchannelselection)
-config.skin.cyber.tunerpanelchannelselection = ConfigSelection(default="TemplatesChannelSelectionTvInfoTunerDefault", choices = tunerpanelchannelselection)
+config.skin.cyber.channelpanelchannelselection = ConfigSelection(default="TemplatesChannelSelectionTvInfoChannelDefault", choices = channelpanelchannelselection)
 config.skin.cyber.epgpanelchannelselection = ConfigSelection(default="TemplatesChannelSelectionTvInfoEPGNow", choices = epgpanelchannelselection)
 
 config.skin.cyber.bouquetradiochannelselection = ConfigSelection(default="TemplatesChannelSelectionRadioBouquetDefault", choices = bouquetradiochannelselection)
@@ -590,8 +590,8 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 		section = _("Channel Selection")
 		list.append(getConfigListEntry(sep*(char-(len(section))/2) + tab + section + tab + sep*(char-(len(section))/2)))
 		list.append(getConfigListEntry(_("Userbouquet name in channel selection:"), config.skin.cyber.bouquetchannelselection))
-		list.append(getConfigListEntry(_("Picon in channel selection:"), config.skin.cyber.piconchannelselection))
-		list.append(getConfigListEntry(_("Tuner panel in channel selection:"), config.skin.cyber.tunerpanelchannelselection))
+		list.append(getConfigListEntry(_("Picon panel in channel selection:"), config.skin.cyber.piconchannelselection))
+		list.append(getConfigListEntry(_("Channel info panel in channel selection:"), config.skin.cyber.channelpanelchannelselection))
 		list.append(getConfigListEntry(_("EPG panel in channel selection:"), config.skin.cyber.epgpanelchannelselection))
 
 		section = _("Radio Selection")
@@ -793,10 +793,10 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 			os.system("sed -i 's/%sFull/TemplatesChannelSelectionTvBouquetFull/w' %sskin_templates.xml" % (config.skin.cyber.bouquetchannelselection.value, skinpath))
 	# picon panel
 			os.system("sed -i 's/%s/TemplatesChannelSelectionTvPicon/w' %sskin_templates.xml" % (config.skin.cyber.piconchannelselection.value, skinpath))
-	# tuner panel
-			os.system("sed -i 's/%s/TemplatesChannelSelectionTvInfoEPG/w' %sskin_templates.xml" % (config.skin.cyber.tunerpanelchannelselection.value, skinpath))
 	# epg panel
-			os.system("sed -i 's/%s/TemplatesChannelSelectionTvInfoTuner/w' %sskin_templates.xml" % (config.skin.cyber.epgpanelchannelselection.value, skinpath))
+			os.system("sed -i 's/%s/TemplatesChannelSelectionTvInfoEPG/w' %sskin_templates.xml" % (config.skin.cyber.epgpanelchannelselection.value, skinpath))
+	# channel panel
+			os.system("sed -i 's/%s/TemplatesChannelSelectionTvInfoChannel/w' %sskin_templates.xml" % (config.skin.cyber.channelpanelchannelselection.value, skinpath))
 	# bouquet
 			os.system("sed -i 's/%s/TemplatesChannelSelectionRadioBouquet/w' %sskin_templates.xml" % (config.skin.cyber.bouquetradiochannelselection.value, skinpath))
 	# description panel
@@ -860,14 +860,14 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 			self.session.open(TryQuitMainloop, 3)
 
 	def about(self):
-		self.session.open(MessageBox, _("Skin CyberFHD\nDeveloper: Sirius0103 \nHomepage: www.gisclub.tv \n\nDonate:\nWMZ  Z395874509364\nWME  E284580190260\nWMR  R213063691482\nWMU  U658742613505"), MessageBox.TYPE_INFO)
+		self.session.open(MessageBox, _("Skin Cyber FHD\nDeveloper: Sirius0103 \nHomepage: www.gisclub.tv \n\nDonate:\nWMZ  Z395874509364\nWME  E284580190260\nWMR  R213063691482\nWMU  U658742613505"), MessageBox.TYPE_INFO)
 
 def main(session, **kwargs):
 	session.open(SetupCyberFHD)
 
 def Plugins(**kwargs):
-	return PluginDescriptor(name=_("Setup CyberFHD"),
-	description=_("Setup skin CyberFHD"),
+	return PluginDescriptor(name=_("Setup Cyber FHD"),
+	description=_("Setup skin Cyber FHD"),
 	where = [PluginDescriptor.WHERE_PLUGINMENU, PluginDescriptor.WHERE_EXTENSIONSMENU],
 	icon="plugin.png",
 	fnc=main)

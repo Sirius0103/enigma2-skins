@@ -4767,19 +4767,19 @@
       <convert type="ServiceName2">OrbitalPos</convert>
     </widget>
   </screen>
-  <screen name="TemplatesChannelSelectionTvInfoTunerDefault">
+  <screen name="TemplatesChannelSelectionTvInfoChannel">
     <!-- Layer Channel Selection Tv Info -->
   </screen>
-  <screen name="TemplatesChannelSelectionTvInfoTunerStyle">
-    <!-- Layer Channel Selection Tv Tuner Info -->
+  <screen name="TemplatesChannelSelectionTvInfoChannelStyle">
+    <!-- Layer Channel Selection Tv Channel Info -->
     <eLabel position="1103,188" size="739,149" backgroundColor="background3" zPosition="-12" />
     <eLabel position="1105,190" size="735,145" backgroundColor="background1" zPosition="-11" />
     <eLabel position="1110,230" size="725,100" backgroundColor="background2" zPosition="-10" />
-    <!-- Layer Channel Selection Tv Tuner Info Right -->
+    <!-- Layer Channel Selection Tv Channel Info Right -->
     <eLabel position="1840,188" size="80,149" backgroundColor="background3" zPosition="-12" />
     <eLabel position="1840,190" size="80,145" backgroundColor="background1" zPosition="-11" />
     <eLabel position="1840,230" size="70,100" backgroundColor="background2" zPosition="-10" />
-    <!-- Templates Channel Selection Tv Tuner Info -->
+    <!-- Templates Channel Selection Channel Info Info -->
     <eLabel text="Tuner Info" position="1110,195" size="725,35" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
     <eLabel text="Satellite:" position="1115,235" size="200,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
     <widget source="ServiceEvent" render="Label" position="1260,235" size="570,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
@@ -4830,7 +4830,7 @@
       <convert type="EventName2">NextDescription</convert>
     </widget>
   </screen>
-  <screen name="TemplatesChannelSelectionTvInfoEPGNowProgram">
+  <screen name="TemplatesChannelSelectionTvInfoEPGNowPrograms">
     <panel name="TemplatesMenuInfoLayer" />
     <panel name="TemplatesMenuInfoRightLayer" />
     <panel name="TemplatesChannelSelectionProgress" />
@@ -4851,7 +4851,7 @@
       <convert type="EventName2">NextEventListWithOutTime</convert>
     </widget>
   </screen>
-  <screen name="TemplatesChannelSelectionTvInfoEPGProgram">
+  <screen name="TemplatesChannelSelectionTvInfoEPGPrograms">
     <panel name="TemplatesMenuInfoLayer" />
     <panel name="TemplatesMenuInfoRightLayer" />
     <panel name="TemplatesChannelSelectionProgress" />

@@ -415,7 +415,7 @@
     <panel name="TemplatesChannelSelectionTvBouquet" />
     <panel name="TemplatesChannelSelectionTvPicon" />
     <panel name="TemplatesChannelSelectionTvInfoEPG" />
-    <panel name="TemplatesChannelSelectionTvInfoTuner" />
+    <panel name="TemplatesChannelSelectionTvInfoChannel" />
     <panel name="TemplatesButtonsRedName" />
     <panel name="TemplatesButtonsGreenName" />
     <panel name="TemplatesButtonsYellowName" />
