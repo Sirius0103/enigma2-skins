@@ -4780,7 +4780,7 @@
     <eLabel position="1840,190" size="80,145" backgroundColor="background1" zPosition="-11" />
     <eLabel position="1840,230" size="70,100" backgroundColor="background2" zPosition="-10" />
     <!-- Templates Channel Selection Channel Info Info -->
-    <eLabel text="Tuner Info" position="1110,195" size="725,35" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <eLabel text="Channel Info" position="1110,195" size="725,35" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
     <eLabel text="Satellite:" position="1115,235" size="200,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
     <widget source="ServiceEvent" render="Label" position="1260,235" size="570,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
       <convert type="ServiceName2">%S</convert>
