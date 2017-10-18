@@ -3573,7 +3573,7 @@
     <eLabel position="1570,100" size="3,30" backgroundColor="background1" zPosition="3" />
   </screen>
   <!--  ########## Templates InfoBar Tv ########## -->
-  <screen name="TemplatesInfoBarTvNumberNo">
+  <screen name="TemplatesInfoBarTvNumberDefault">
     <!-- Templates Info Bar Tv Name -->
     <widget source="session.CurrentService" render="Label" position="80,96" size="1360,44" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1">
       <convert type="ServiceName">Name</convert>
@@ -3582,7 +3582,7 @@
       <convert type="ServiceName">Provider</convert>
     </widget>
   </screen>
-  <screen name="TemplatesInfoBarTvNumberYes">
+  <screen name="TemplatesInfoBarTvNumberStyle">
     <!-- Templates Info Bar Tv Name -->
     <widget source="session.CurrentService" render="Label" position="0,96" size="220,46" font="Indication; 46" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
       <convert type="ServiceName2">%n</convert>
@@ -3601,7 +3601,7 @@
       <convert type="ServiceName">Reference</convert>
     </widget>
   </screen>
-  <screen name="TemplatesInfoBarTvTunerNo">
+  <screen name="TemplatesInfoBarTvTunerDefault">
     <!-- Templates Info Bar Tv Picon -->
     <eLabel position="1368,867" size="454,146" backgroundColor="background3" zPosition="-12" />
     <eLabel position="1370,869" size="450,142" backgroundColor="background2" zPosition="-11" />
@@ -3612,7 +3612,7 @@
       <convert type="ServiceName2">OrbitalPos</convert>
     </widget>
   </screen>
-  <screen name="TemplatesInfoBarTvTunerYes">
+  <screen name="TemplatesInfoBarTvTunerStyle">
     <!-- Templates Info Bar Tv Tuner Info -->
     <eLabel position="1368,867" size="454,146" backgroundColor="background3" zPosition="-12" />
     <eLabel position="1370,869" size="450,142" backgroundColor="background1" zPosition="-11" />
@@ -3887,10 +3887,10 @@
       <convert type="ClockToText">InMinutes</convert>
     </widget>
   </screen>
-  <screen name="TemplatesInfoBarTvInfoCryptedNo">
+  <screen name="TemplatesInfoBarTvInfoCryptedDefault">
     <!-- Templates Info Bar Tv Info -->
   </screen>
-  <screen name="TemplatesInfoBarTvInfoCryptedYes">
+  <screen name="TemplatesInfoBarTvInfoCryptedStyle">
     <!-- Templates Info Bar Tv Crypted -->
     <panel name="TemplatesUpLayer2" />
     <!-- Crypted -->
@@ -4005,7 +4005,7 @@
       <convert type="ConditionalShowHide" />
     </widget>
   </screen>
-  <screen name="TemplatesInfoBarTvInfoEPGNo">
+  <screen name="TemplatesInfoBarTvInfoEPGDefault">
     <!-- Templates Info Bar Tv Info -->
   </screen>
   <screen name="TemplatesInfoBarTvInfoEPGNow">
@@ -4047,7 +4047,7 @@
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
   </screen>
-  <screen name="TemplatesInfoBarTvInfoPanelNo">
+  <screen name="TemplatesInfoBarTvInfoPanelDefault">
     <!-- Templates Info Bar Tv Info -->
   </screen>
   <screen name="TemplatesInfoBarTvInfoPanelCI">
@@ -4218,7 +4218,7 @@
       <convert type="ServiceName2">%t</convert>
     </widget>
   </screen>
-  <screen name="TemplatesInfoBarTvInfoWeatherNo">
+  <screen name="TemplatesInfoBarTvInfoWeatherDefault">
     <!-- Templates Info Bar Tv Info -->
   </screen>
   <screen name="TemplatesInfoBarTvInfoWeatherMSN">
@@ -4649,7 +4649,7 @@
       <convert type="EventTime">Progress</convert>
     </widget>
   </screen>
-  <screen name="TemplatesChannelSelectionTvBouquetNo">
+  <screen name="TemplatesChannelSelectionTvBouquetDefault">
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <!-- Templates Channel Selection Tv Bouquet-->
@@ -4671,7 +4671,7 @@
 		backgroundColorSelected="background5" 
 		transparent="1" />
   </screen>
-  <screen name="TemplatesChannelSelectionTvBouquetYes">
+  <screen name="TemplatesChannelSelectionTvBouquetStyle">
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <!-- Templates Channel Selection Tv Bouquet-->
@@ -4696,7 +4696,7 @@
 		backgroundColorSelected="background5" 
 		transparent="1" />
   </screen>
-  <screen name="TemplatesChannelSelectionTvBouquetNoFull">
+  <screen name="TemplatesChannelSelectionTvBouquetDefaultFull">
     <panel name="TemplatesMenu1800Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <panel name="TemplatesMenuRightLayer" />
@@ -4719,7 +4719,7 @@
 		backgroundColorSelected="background5" 
 		transparent="1" />
   </screen>
-  <screen name="TemplatesChannelSelectionTvBouquetYesFull">
+  <screen name="TemplatesChannelSelectionTvBouquetStyleFull">
     <panel name="TemplatesMenu1800Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <panel name="TemplatesMenuRightLayer" />
@@ -4745,10 +4745,10 @@
 		backgroundColorSelected="background5" 
 		transparent="1" />
   </screen>
-  <screen name="TemplatesChannelSelectionTvPiconNo">
+  <screen name="TemplatesChannelSelectionTvPiconDefault">
     <!-- Layer Channel Selection Tv Info -->
   </screen>
-  <screen name="TemplatesChannelSelectionTvPiconYes">
+  <screen name="TemplatesChannelSelectionTvPiconStyle">
     <!-- Layer Channel Selection Tv Info -->
     <!-- Picon Layer -->
     <eLabel position="348,867" size="234,146" backgroundColor="background3" zPosition="-12" />
@@ -4767,10 +4767,10 @@
       <convert type="ServiceName2">OrbitalPos</convert>
     </widget>
   </screen>
-  <screen name="TemplatesChannelSelectionTvInfoTunerNo">
+  <screen name="TemplatesChannelSelectionTvInfoTunerDefault">
     <!-- Layer Channel Selection Tv Info -->
   </screen>
-  <screen name="TemplatesChannelSelectionTvInfoTunerYes">
+  <screen name="TemplatesChannelSelectionTvInfoTunerStyle">
     <!-- Layer Channel Selection Tv Tuner Info -->
     <eLabel position="1103,188" size="739,149" backgroundColor="background3" zPosition="-12" />
     <eLabel position="1105,190" size="735,145" backgroundColor="background1" zPosition="-11" />
@@ -4794,7 +4794,7 @@
       <convert type="ServiceName2">%A</convert>
     </widget>
   </screen>
-  <screen name="TemplatesChannelSelectionTvInfoEPGNo">
+  <screen name="TemplatesChannelSelectionTvInfoEPGDefault">
     <!-- Layer Channel Selection Tv Info-->
   </screen>
   <screen name="TemplatesChannelSelectionTvInfoEPGNow">
@@ -4869,7 +4869,7 @@
     </widget>
   </screen>
   <!--  ########## Templates Channel Selection Radio ########## -->
-  <screen name="TemplatesChannelSelectionRadioBouquet">
+  <screen name="TemplatesChannelSelectionRadioBouquetDefault">
     <!-- Templates Channel Selection Radio Bouquet-->
     <widget name="list" 
 		position="20,200" size="850,635" 
@@ -4889,7 +4889,7 @@
 		backgroundColorSelected="background5" 
 		transparent="1" />
   </screen>
-  <screen name="TemplatesChannelSelectionRadioBouquetYes">
+  <screen name="TemplatesChannelSelectionRadioBouquetStyle">
     <!-- Templates Channel Selection Radio Bouquet-->
     <eLabel position="20,200" size="850,40" backgroundColor="background2" zPosition="-1" />
     <eLabel text="&gt;" position="25,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
@@ -4913,7 +4913,7 @@
 		transparent="1" />
   </screen>
   <!--  ########## Templates Movie Selection ########## -->
-  <screen name="TemplatesMovieSelectionDescriptionNo">
+  <screen name="TemplatesMovieSelectionDescriptionDefault">
     <!-- Templates MovieSelectionInfoMovie-->
   </screen>
   <screen name="TemplatesMovieSelectionDescriptionShort">

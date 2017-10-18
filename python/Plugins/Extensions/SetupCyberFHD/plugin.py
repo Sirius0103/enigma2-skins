@@ -244,11 +244,11 @@ fonts = [
 
 if not fileExists("/usr/lib/enigma2/python/Components/Converter/ServiceName2.py"):
 	numberchannel = [
-		("TemplatesInfoBarTvNumberNo", _("No"))]
+		("TemplatesInfoBarTvNumberDefault", _("No"))]
 else:
 	numberchannel = [
-		("TemplatesInfoBarTvNumberNo", _("No")),
-		("TemplatesInfoBarTvNumberYes", _("Yes"))]
+		("TemplatesInfoBarTvNumberDefault", _("No")),
+		("TemplatesInfoBarTvNumberStyle", _("Yes"))]
 if not fileExists("/usr/lib/enigma2/python/Components/Converter/FrontendInfo2.py")\
 	or not fileExists("/usr/lib/enigma2/python/Components/Converter/ServiceName2.py")\
 	or not fileExists("/usr/lib/enigma2/python/Components/Renderer/PiconUni.py")\
@@ -258,31 +258,31 @@ if not fileExists("/usr/lib/enigma2/python/Components/Converter/FrontendInfo2.py
 		("TemplatesInfoBarTvTunerDigital", _("Digital"))]
 else:
 	tunerpanelinfobar = [
-		("TemplatesInfoBarTvTunerNo", _("No")),
-		("TemplatesInfoBarTvTunerYes", _("Yes")),
+		("TemplatesInfoBarTvTunerDefault", _("No")),
+		("TemplatesInfoBarTvTunerStyle", _("Yes")),
 		("TemplatesInfoBarTvTunerDigital", _("Digital")),
 		("TemplatesInfoBarTvTunerAnalog", _("Analog"))]
 epgpanelinfobar = [
-	("TemplatesInfoBarTvInfoEPGNo", _("No")),
+	("TemplatesInfoBarTvInfoEPGDefault", _("No")),
 	("TemplatesInfoBarTvInfoEPGNow", _("Now")),
 	("TemplatesInfoBarTvInfoEPGNxt", _("Now, Next"))]
 if not fileExists("/usr/lib/enigma2/python/Components/Converter/CaidInfo2.py"):
 	cryptedpanelinfobar = [
-		("TemplatesInfoBarTvInfoCryptedNo", _("No"))]
+		("TemplatesInfoBarTvInfoCryptedDefault", _("No"))]
 else:
 	cryptedpanelinfobar = [
-		("TemplatesInfoBarTvInfoCryptedNo", _("No")),
-		("TemplatesInfoBarTvInfoCryptedYes", _("Yes"))]
+		("TemplatesInfoBarTvInfoCryptedDefault", _("No")),
+		("TemplatesInfoBarTvInfoCryptedStyle", _("Yes"))]
 if not fileExists("/usr/lib/enigma2/python/Components/Converter/CaidInfo2.py")\
 	or not fileExists("/usr/lib/enigma2/python/Components/Converter/CamdInfo3.py")\
 	or not fileExists("/usr/lib/enigma2/python/Components/Converter/ServiceName2.py")\
 	or not fileExists("/usr/lib/enigma2/python/Components/Converter/ServiceInfoEX.py")\
 	or not fileExists("/usr/lib/enigma2/python/Components/Converter/ModuleControl.py"):
 	infopanelinfobar = [
-		("TemplatesInfoBarTvInfoPanelNo", _("No"))]
+		("TemplatesInfoBarTvInfoPanelDefault", _("No"))]
 else:
 	infopanelinfobar = [
-		("TemplatesInfoBarTvInfoPanelNo", _("No")),
+		("TemplatesInfoBarTvInfoPanelDefault", _("No")),
 		("TemplatesInfoBarTvInfoPanelCI", _("CI")),
 		("TemplatesInfoBarTvInfoPanelNIM", _("NIM")),
 		("TemplatesInfoBarTvInfoPanelECM", _("ECM")),
@@ -290,10 +290,10 @@ else:
 if not fileExists("/usr/lib/enigma2/python/Components/Converter/MSNWeather2.py")\
 	and fileExists("/usr/lib/enigma2/python/Components/Renderer/PiconUni.py"):
 	weatherpanelinfobar = [
-		("TemplatesInfoBarTvInfoWeatherNo", _("No"))]
+		("TemplatesInfoBarTvInfoWeatherDefault", _("No"))]
 else:
 	weatherpanelinfobar = [
-		("TemplatesInfoBarTvInfoWeatherNo", _("No")),
+		("TemplatesInfoBarTvInfoWeatherDefault", _("No")),
 		("TemplatesInfoBarTvInfoWeatherMSN", _("MSN"))]
 progressmode = [
 	("ProgressLayerStandard", _("Standard")),
@@ -302,47 +302,47 @@ scrollbarmode = [
 	("showNever", _("No")),
 	("showOnDemand", _("Yes"))]
 bouquetchannelselection = [
-	("TemplatesChannelSelectionTvBouquetNo", _("No")),
-	("TemplatesChannelSelectionTvBouquetYes", _("Yes"))]
+	("TemplatesChannelSelectionTvBouquetDefault", _("No")),
+	("TemplatesChannelSelectionTvBouquetStyle", _("Yes"))]
 if not fileExists("/usr/lib/enigma2/python/Components/Converter/ServiceName2.py")\
 	or not fileExists("/usr/lib/enigma2/python/Components/Renderer/PiconUni.py"):
 	piconchannelselection = [
-		("TemplatesChannelSelectionTvPiconNo", _("No"))]
+		("TemplatesChannelSelectionTvPiconDefault", _("No"))]
 else:
 	piconchannelselection = [
-		("TemplatesChannelSelectionTvPiconNo", _("No")),
-		("TemplatesChannelSelectionTvPiconYes", _("Yes"))]
+		("TemplatesChannelSelectionTvPiconDefault", _("No")),
+		("TemplatesChannelSelectionTvPiconStyle", _("Yes"))]
 if not fileExists("/usr/lib/enigma2/python/Components/Converter/ServiceName2.py"):
 	tunerpanelchannelselection = [
-		("TemplatesChannelSelectionTvInfoTunerNo", _("No"))]
+		("TemplatesChannelSelectionTvInfoTunerDefault", _("No"))]
 else:
 	tunerpanelchannelselection = [
-		("TemplatesChannelSelectionTvInfoTunerNo", _("No")),
-		("TemplatesChannelSelectionTvInfoTunerYes", _("Yes"))]
+		("TemplatesChannelSelectionTvInfoTunerDefault", _("No")),
+		("TemplatesChannelSelectionTvInfoTunerStyle", _("Yes"))]
 if not fileExists("/usr/lib/enigma2/python/Components/Converter/EventName2.py"):
 	epgpanelchannelselection = [
-		("TemplatesChannelSelectionTvInfoEPGNo", _("No")),
+		("TemplatesChannelSelectionTvInfoEPGDefault", _("No")),
 		("TemplatesChannelSelectionTvInfoEPGNow", _("Now"))]
 else:
 	epgpanelchannelselection = [
-		("TemplatesChannelSelectionTvInfoEPGNo", _("No")),
+		("TemplatesChannelSelectionTvInfoEPGDefault", _("No")),
 		("TemplatesChannelSelectionTvInfoEPGNow", _("Now")),
 		("TemplatesChannelSelectionTvInfoEPGNxt", _("Now, Next")),
 		("TemplatesChannelSelectionTvInfoEPGNowProgram", _("Now, 5 Programs")),
 		("TemplatesChannelSelectionTvInfoEPGProgram", _("10 Programs"))]
 bouquetradiochannelselection = [
-	("TemplatesChannelSelectionRadioBouquetNo", _("No")),
-	("TemplatesChannelSelectionRadioBouquetYes", _("Yes"))]
+	("TemplatesChannelSelectionRadioBouquetDefault", _("No")),
+	("TemplatesChannelSelectionRadioBouquetStyle", _("Yes"))]
 if not fileExists("/usr/lib/enigma2/python/Components/Converter/MovieInfo2.py")\
 	or not fileExists("/usr/lib/enigma2/python/Components/Renderer/CoverTmbd.py")\
 	or not fileExists("/usr/lib/enigma2/python/Components/Renderer/RatingTmbd.py"):
 	panelmovieselection = [
-		("TemplatesMovieSelectionDescriptionNo", _("No")),
+		("TemplatesMovieSelectionDescriptionDefault", _("No")),
 		("TemplatesMovieSelectionDescriptionShort", _("Short Description")),
 		("TemplatesMovieSelectionDescriptionMeta", _("Meta Description"))]
 else:
 	panelmovieselection = [
-		("TemplatesMovieSelectionDescriptionNo", _("No")),
+		("TemplatesMovieSelectionDescriptionDefault", _("No")),
 		("TemplatesMovieSelectionDescriptionShort", _("Short Description")),
 		("TemplatesMovieSelectionDescriptionMeta", _("Meta Description")),
 		("TemplatesMovieSelectionDescriptionTMDB", _("TMDB Description"))]
@@ -380,22 +380,22 @@ else:
 config.skin.cyber.backgroundtransparent = ConfigSelection(default="5", choices = styletransparent)
 config.skin.cyber.foregroundtransparent = ConfigSelection(default="0", choices = styletransparent)
 
-config.skin.cyber.numberchannel = ConfigSelection(default="TemplatesInfoBarTvNumberNo", choices = numberchannel)
-config.skin.cyber.tunerpanelinfobar = ConfigSelection(default="TemplatesInfoBarTvTunerYes", choices = tunerpanelinfobar)
-config.skin.cyber.epgpanelinfobar = ConfigSelection(default="TemplatesInfoBarTvInfoEPGNo", choices = epgpanelinfobar)
-config.skin.cyber.cryptedpanelinfobar = ConfigSelection(default="TemplatesInfoBarTvInfoCryptedNo", choices = cryptedpanelinfobar)
-config.skin.cyber.infopanelinfobar = ConfigSelection(default="TemplatesInfoBarTvInfoPanelNo", choices = infopanelinfobar)
-config.skin.cyber.weatherpanelinfobar = ConfigSelection(default="TemplatesInfoBarTvInfoWeatherNo", choices = weatherpanelinfobar)
+config.skin.cyber.numberchannel = ConfigSelection(default="TemplatesInfoBarTvNumberDefault", choices = numberchannel)
+config.skin.cyber.tunerpanelinfobar = ConfigSelection(default="TemplatesInfoBarTvTunerStyle", choices = tunerpanelinfobar)
+config.skin.cyber.epgpanelinfobar = ConfigSelection(default="TemplatesInfoBarTvInfoEPGDefault", choices = epgpanelinfobar)
+config.skin.cyber.cryptedpanelinfobar = ConfigSelection(default="TemplatesInfoBarTvInfoCryptedDefault", choices = cryptedpanelinfobar)
+config.skin.cyber.infopanelinfobar = ConfigSelection(default="TemplatesInfoBarTvInfoPanelDefault", choices = infopanelinfobar)
+config.skin.cyber.weatherpanelinfobar = ConfigSelection(default="TemplatesInfoBarTvInfoWeatherDefault", choices = weatherpanelinfobar)
 
 config.skin.cyber.progressmode = ConfigSelection(default="ProgressLayerStandard", choices = progressmode)
 config.skin.cyber.scrollbarmode = ConfigSelection(default="showNever", choices = scrollbarmode)
 
-config.skin.cyber.bouquetchannelselection = ConfigSelection(default="TemplatesChannelSelectionTvBouquetNo", choices = bouquetchannelselection)
-config.skin.cyber.piconchannelselection = ConfigSelection(default="TemplatesChannelSelectionTvPiconNo", choices = piconchannelselection)
-config.skin.cyber.tunerpanelchannelselection = ConfigSelection(default="TemplatesChannelSelectionTvInfoTunerNo", choices = tunerpanelchannelselection)
+config.skin.cyber.bouquetchannelselection = ConfigSelection(default="TemplatesChannelSelectionTvBouquetDefault", choices = bouquetchannelselection)
+config.skin.cyber.piconchannelselection = ConfigSelection(default="TemplatesChannelSelectionTvPiconDefault", choices = piconchannelselection)
+config.skin.cyber.tunerpanelchannelselection = ConfigSelection(default="TemplatesChannelSelectionTvInfoTunerDefault", choices = tunerpanelchannelselection)
 config.skin.cyber.epgpanelchannelselection = ConfigSelection(default="TemplatesChannelSelectionTvInfoEPGNow", choices = epgpanelchannelselection)
 
-config.skin.cyber.bouquetradiochannelselection = ConfigSelection(default="TemplatesChannelSelectionRadioBouquetNo", choices = bouquetradiochannelselection)
+config.skin.cyber.bouquetradiochannelselection = ConfigSelection(default="TemplatesChannelSelectionRadioBouquetDefault", choices = bouquetradiochannelselection)
 
 config.skin.cyber.panelmovieselection = ConfigSelection(default="TemplatesMovieSelectionDescriptionShort", choices = panelmovieselection)
 
