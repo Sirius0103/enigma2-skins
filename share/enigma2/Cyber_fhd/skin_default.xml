@@ -1064,6 +1064,7 @@
     <widget name="AboutScrollLabel" position="90,200" size="980,635" font="Global; 25" halign="center" foregroundColor="color2" backgroundColor="background1" transparent="1" />
     <panel name="TemplatesButtonsRedName" />
     <panel name="TemplatesButtonsGreenName" />
+    <panel name="TemplatesButtonsYellowName" />
     <panel name="TemplatesButtonsBlueName" />
     <panel name="TemplatesButtons" />
     <panel name="TemplatesClock" />
@@ -4246,6 +4247,54 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesButtons" />
     <panel name="TemplatesClock" />
   </screen>
+  <!-- ########## EPG Downloader ########## -->
+  <!-- EPG Downloader -->
+  <screen name="epgdd" position="0,0" size="1920,1080" title="EPG Download" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesMenu1000Layer" />
+    <panel name="TemplatesMenuLeftLayer" />
+    <eLabel text="s" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <panel name="TemplatesTitle1" />
+    <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+    <widget source="lastupdate" render="Label" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+    <panel name="TemplatesButtonsRedSource" />
+    <panel name="TemplatesButtonsGreenSource" />
+    <panel name="TemplatesButtonsYellowSource" />
+    <panel name="TemplatesButtonsBlueSource" />
+    <panel name="TemplatesButtons" />
+    <panel name="TemplatesClock" />
+  </screen>
+  <!-- EPG Downloader get_source -->
+  <screen name="get_source" position="0,0" size="1920,1080" title="/etc/hosts editor" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesMenu1000Layer" />
+    <panel name="TemplatesMenuLeftLayer" />
+    <eLabel text="s" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <panel name="TemplatesTitle1" />
+    <widget source="menu" render="Listbox" position="90,200" size="980,600" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
+      <convert type="TemplatedMultiContent">
+			{"template": [
+					MultiContentEntryText(pos = (10, 5), size = (900, 25), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 2 is the Menu Titel
+				],
+			"fonts": [gFont("Global", 25),gFont("Console", 20)],
+			"itemHeight": 35
+			}
+      </convert>
+    </widget>
+    <panel name="TemplatesButtonsRedSource" />
+    <panel name="TemplatesButtonsGreenSource" />
+    <panel name="TemplatesButtonsYellowSource" />
+    <panel name="TemplatesButtons" />
+    <panel name="TemplatesClock" />
+  </screen>
+  <!-- EPG Downloader get_epgdat -->
+  <screen name="get_epgdat" position="0,0" size="1920,1080"  flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesTitle1" />
+    <eLabel text="s" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <widget source="status" render="Label" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+    <panel name="TemplatesClock" />
+  </screen>
   <!-- ########## Filebrowser ########## -->
   <!-- Filebrowser -->
   <screen name="FilebrowserScreen" position="0,0" size="1920,1080" title="System Info" flags="wfNoBorder" backgroundColor="transparent">
@@ -6549,6 +6598,22 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesButtonsGreenName" />
     <panel name="TemplatesButtonsYellowName" />
     <panel name="TemplatesButtonsBlueName" />
+    <panel name="TemplatesButtons" />
+    <panel name="TemplatesClock" />
+  </screen>
+  <!-- ########## SystemTime ########## -->
+  <!-- SystemTime SetupScreen -->
+  <screen name="SystemTimeSetupScreen" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesMenu1000Layer" />
+    <panel name="TemplatesMenuLeftLayer" />
+    <eLabel text="t" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <panel name="TemplatesTitle1" />
+    <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+    <panel name="TemplatesButtonsRedSource" />
+    <panel name="TemplatesButtonsGreenSource" />
+    <panel name="TemplatesButtonsYellowSource" />
+    <panel name="TemplatesButtonsBlueSource" />
     <panel name="TemplatesButtons" />
     <panel name="TemplatesClock" />
   </screen>
