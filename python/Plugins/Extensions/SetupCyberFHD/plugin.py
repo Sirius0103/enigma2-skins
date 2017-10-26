@@ -1,6 +1,6 @@
 # -*- coding: UTF-8 -*-
 
-# Plugin - Setup Cyber FHD
+# Plugin - Setup CyberFHD
 # Developer - Sirius
 # Homepage - http://www.gisclub.Tv
 #
@@ -41,9 +41,9 @@ gettext.bindtextdomain("enigma2", resolveFilename(SCOPE_LANGUAGE))
 gettext.textdomain("enigma2")
 gettext.bindtextdomain("SetupCyberFHD", "%s%s" % (resolveFilename(SCOPE_PLUGINS), "Extensions/SetupCyberFHD/locale"))
 
-addFont("/usr/share/enigma2/Cyber_fhd/fonts/Neuropol.ttf", "SkinTitles", 100, 1)
-addFont("/usr/share/enigma2/Cyber_fhd/fonts/LedCounter.ttf", "SkinIndication", 100, 1)
-addFont("/usr/share/enigma2/Cyber_fhd/fonts/Roboto-Regular.ttf", "SkinGlobal", 100, 1)
+addFont("/usr/share/enigma2/CyberFHD/fonts/Neuropol.ttf", "SkinTitles", 100, 1)
+addFont("/usr/share/enigma2/CyberFHD/fonts/LedCounter.ttf", "SkinIndication", 100, 1)
+addFont("/usr/share/enigma2/CyberFHD/fonts/Roboto-Regular.ttf", "SkinGlobal", 100, 1)
 
 def _(txt):
 	t = gettext.dgettext("SetupCyberFHD", txt)
@@ -462,10 +462,10 @@ SKIN_CYBER = """
 		<eLabel position="1368,867" size="454,146" backgroundColor="#50ffffff" zPosition="-12" />
 		<eLabel position="1370,869" size="450,142" backgroundColor="#50000000" zPosition="-11" />
 		<eLabel position="1375,875" size="390,130" backgroundColor="#50696969" zPosition="-10" />
-		<ePixmap pixmap="Cyber_fhd/buttons/button_key_red.png" position="1773,885" size="40,20" alphatest="on" />
-		<ePixmap pixmap="Cyber_fhd/buttons/button_key_green.png" position="1773,915" size="40,20" alphatest="on" />
-		<ePixmap pixmap="Cyber_fhd/buttons/button_key_yellow.png" position="1773,945" size="40,20" alphatest="on" />
-		<ePixmap pixmap="Cyber_fhd/buttons/button_key_blue.png" position="1773,975" size="40,20" alphatest="on" />
+		<ePixmap pixmap="CyberFHD/buttons/button_key_red.png" position="1773,885" size="40,20" alphatest="on" />
+		<ePixmap pixmap="CyberFHD/buttons/button_key_green.png" position="1773,915" size="40,20" alphatest="on" />
+		<ePixmap pixmap="CyberFHD/buttons/button_key_yellow.png" position="1773,945" size="40,20" alphatest="on" />
+		<ePixmap pixmap="CyberFHD/buttons/button_key_blue.png" position="1773,975" size="40,20" alphatest="on" />
 		<widget source="key_red" render="Label" position="1380,884" size="380,22" font="SkinTitles; 22" halign="right" valign="center" foregroundColor="#10f5f5f5" backgroundColor="#50696969" transparent="1" />
 		<widget source="key_green" render="Label" position="1380,914" size="380,22" font="SkinTitles; 22" halign="right" valign="center" foregroundColor="#10f5f5f5" backgroundColor="#50696969" transparent="1" />
 
@@ -515,7 +515,7 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 		self["key_green"] = StaticText(_("Save"))
 		self["key_yellow"] = StaticText(_("Default"))
 		self["key_blue"] = StaticText(_("Install components"))
-		self["Title"] = StaticText(_("Setup Cyber FHD"))
+		self["Title"] = StaticText(_("Setup CyberFHD"))
 
 		self["bgcolor1a"] = Label(_(" "))
 		self["bgcolor1b"] = Label(_(" "))
@@ -738,7 +738,7 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 			self["info_com"] = StaticText(_(" "))
 
 	def createSkin(self):
-		skinpath = "/usr/share/enigma2/Cyber_fhd/"
+		skinpath = "/usr/share/enigma2/CyberFHD/"
 
 		try:
 	# default skin
@@ -821,9 +821,9 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 			os.system("cp %sSetupCyberFHD/components/FrontendInfo2.py %sConverter/FrontendInfo2.py" % (pluginpath, componentspath))
 			os.system("cp %sSetupCyberFHD/components/ModuleControl.py %sConverter/ModuleControl.py" % (pluginpath, componentspath))
 			os.system("cp %sSetupCyberFHD/components/ProgressDiskSpaceInfo.py %sConverter/ProgressDiskSpaceInfo.py" % (pluginpath, componentspath))
-			os.system("cp %sWeatherMSN/components/MSNWeather2.py %sConverter/MSNWeather2.py" % (pluginpath, componentspath))
 			os.system("cp %sSetupCyberFHD/components/ServiceInfoEX.py %sConverter/ServiceInfoEX.py" % (pluginpath, componentspath))
 			os.system("cp %sSetupCyberFHD/components/ServiceName2.py %sConverter/ServiceName2.py" % (pluginpath, componentspath))
+			os.system("cp %sWeatherMSN/components/MSNWeather2.py %sConverter/MSNWeather2.py" % (pluginpath, componentspath))
 	# install renderer
 			os.system("cp %sSetupCyberFHD/components/PiconUni.py %sRenderer/PiconUni.py" % (pluginpath, componentspath))
 			os.system("cp %sSetupCyberFHD/components/RendVolumeText.py %sRenderer/RendVolumeText.py" % (pluginpath, componentspath))
@@ -860,14 +860,14 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 			self.session.open(TryQuitMainloop, 3)
 
 	def about(self):
-		self.session.open(MessageBox, _("Skin Cyber FHD\nDeveloper: Sirius0103 \nHomepage: www.gisclub.tv \n\nDonate:\nWMZ  Z395874509364\nWME  E284580190260\nWMR  R213063691482\nWMU  U658742613505"), MessageBox.TYPE_INFO)
+		self.session.open(MessageBox, _("Skin CyberFHD\nDeveloper: Sirius0103 \nHomepage: www.gisclub.tv \n\nDonate:\nWMZ  Z395874509364\nWME  E284580190260\nWMR  R213063691482\nWMU  U658742613505"), MessageBox.TYPE_INFO)
 
 def main(session, **kwargs):
 	session.open(SetupCyberFHD)
 
 def Plugins(**kwargs):
-	return PluginDescriptor(name=_("Setup Cyber FHD"),
-	description=_("Setup skin Cyber FHD"),
+	return PluginDescriptor(name=_("Setup CyberFHD"),
+	description=_("Setup skin CyberFHD"),
 	where = [PluginDescriptor.WHERE_PLUGINMENU, PluginDescriptor.WHERE_EXTENSIONSMENU],
 	icon="plugin.png",
 	fnc=main)
