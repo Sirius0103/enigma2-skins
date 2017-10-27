@@ -347,59 +347,59 @@ else:
 		("TemplatesMovieSelectionDescriptionMeta", _("Meta Description")),
 		("TemplatesMovieSelectionDescriptionTMDB", _("TMDB Description"))]
 
-config.skin.cyber = ConfigSubsection()
-config.skin.cyber.fonts = ConfigSelection(default="Roboto-Regular", choices = fonts)
+config.skin.cyberfhd = ConfigSubsection()
+config.skin.cyberfhd.fonts = ConfigSelection(default="Roboto-Regular", choices = fonts)
 
-config.skin.cyber.colorsetting = ConfigSelection(default="0", choices = colorsetting)
+config.skin.cyberfhd.colorsetting = ConfigSelection(default="0", choices = colorsetting)
 
-if config.skin.cyber.colorsetting.value == "0":
-	config.skin.cyber.colorbackground1 = ConfigSelection(default="0000000", choices = stylecolor)
-	config.skin.cyber.colorbackground2 = ConfigSelection(default="0696969", choices = stylecolor)
-	config.skin.cyber.colorbackground3 = ConfigSelection(default="0ffffff", choices = stylecolor)
-	config.skin.cyber.colorbackground4 = ConfigSelection(default="000ffff", choices = stylecolor)
-	config.skin.cyber.colorbackground5 = ConfigSelection(default="0696969", choices = stylecolor)
+if config.skin.cyberfhd.colorsetting.value == "0":
+	config.skin.cyberfhd.colorbackground1 = ConfigSelection(default="0000000", choices = stylecolor)
+	config.skin.cyberfhd.colorbackground2 = ConfigSelection(default="0696969", choices = stylecolor)
+	config.skin.cyberfhd.colorbackground3 = ConfigSelection(default="0ffffff", choices = stylecolor)
+	config.skin.cyberfhd.colorbackground4 = ConfigSelection(default="000ffff", choices = stylecolor)
+	config.skin.cyberfhd.colorbackground5 = ConfigSelection(default="0696969", choices = stylecolor)
 
-	config.skin.cyber.colorforeground1 = ConfigSelection(default="0ffd700", choices = stylecolor)
-	config.skin.cyber.colorforeground2 = ConfigSelection(default="0f5f5f5", choices = stylecolor)
-	config.skin.cyber.colorforeground3 = ConfigSelection(default="0a9a9a9", choices = stylecolor)
-	config.skin.cyber.colorforeground4 = ConfigSelection(default="000ffff", choices = stylecolor)
-	config.skin.cyber.colorforeground5 = ConfigSelection(default="0ffffff", choices = stylecolor)
+	config.skin.cyberfhd.colorforeground1 = ConfigSelection(default="0ffd700", choices = stylecolor)
+	config.skin.cyberfhd.colorforeground2 = ConfigSelection(default="0f5f5f5", choices = stylecolor)
+	config.skin.cyberfhd.colorforeground3 = ConfigSelection(default="0a9a9a9", choices = stylecolor)
+	config.skin.cyberfhd.colorforeground4 = ConfigSelection(default="000ffff", choices = stylecolor)
+	config.skin.cyberfhd.colorforeground5 = ConfigSelection(default="0ffffff", choices = stylecolor)
 else:
-	config.skin.cyber.colorbackground1 = ConfigSelection(default="0000000", choices = stylefullcolor)
-	config.skin.cyber.colorbackground2 = ConfigSelection(default="0696969", choices = stylefullcolor)
-	config.skin.cyber.colorbackground3 = ConfigSelection(default="0ffffff", choices = stylefullcolor)
-	config.skin.cyber.colorbackground4 = ConfigSelection(default="000ffff", choices = stylefullcolor)
-	config.skin.cyber.colorbackground5 = ConfigSelection(default="0696969", choices = stylefullcolor)
+	config.skin.cyberfhd.colorbackground1 = ConfigSelection(default="0000000", choices = stylefullcolor)
+	config.skin.cyberfhd.colorbackground2 = ConfigSelection(default="0696969", choices = stylefullcolor)
+	config.skin.cyberfhd.colorbackground3 = ConfigSelection(default="0ffffff", choices = stylefullcolor)
+	config.skin.cyberfhd.colorbackground4 = ConfigSelection(default="000ffff", choices = stylefullcolor)
+	config.skin.cyberfhd.colorbackground5 = ConfigSelection(default="0696969", choices = stylefullcolor)
 
-	config.skin.cyber.colorforeground1 = ConfigSelection(default="0ffd700", choices = stylefullcolor)
-	config.skin.cyber.colorforeground2 = ConfigSelection(default="0f5f5f5", choices = stylefullcolor)
-	config.skin.cyber.colorforeground3 = ConfigSelection(default="0a9a9a9", choices = stylefullcolor)
-	config.skin.cyber.colorforeground4 = ConfigSelection(default="000ffff", choices = stylefullcolor)
-	config.skin.cyber.colorforeground5 = ConfigSelection(default="0ffffff", choices = stylefullcolor)
+	config.skin.cyberfhd.colorforeground1 = ConfigSelection(default="0ffd700", choices = stylefullcolor)
+	config.skin.cyberfhd.colorforeground2 = ConfigSelection(default="0f5f5f5", choices = stylefullcolor)
+	config.skin.cyberfhd.colorforeground3 = ConfigSelection(default="0a9a9a9", choices = stylefullcolor)
+	config.skin.cyberfhd.colorforeground4 = ConfigSelection(default="000ffff", choices = stylefullcolor)
+	config.skin.cyberfhd.colorforeground5 = ConfigSelection(default="0ffffff", choices = stylefullcolor)
 
-config.skin.cyber.backgroundtransparent = ConfigSelection(default="5", choices = styletransparent)
-config.skin.cyber.foregroundtransparent = ConfigSelection(default="0", choices = styletransparent)
+config.skin.cyberfhd.backgroundtransparent = ConfigSelection(default="5", choices = styletransparent)
+config.skin.cyberfhd.foregroundtransparent = ConfigSelection(default="0", choices = styletransparent)
 
-config.skin.cyber.numberchannel = ConfigSelection(default="TemplatesInfoBarTvNumberDefault", choices = numberchannel)
-config.skin.cyber.tunerpanelinfobar = ConfigSelection(default="TemplatesInfoBarTvTunerStyle", choices = tunerpanelinfobar)
-config.skin.cyber.epgpanelinfobar = ConfigSelection(default="TemplatesInfoBarTvInfoEPGDefault", choices = epgpanelinfobar)
-config.skin.cyber.cryptedpanelinfobar = ConfigSelection(default="TemplatesInfoBarTvInfoCryptedDefault", choices = cryptedpanelinfobar)
-config.skin.cyber.infopanelinfobar = ConfigSelection(default="TemplatesInfoBarTvInfoPanelDefault", choices = infopanelinfobar)
-config.skin.cyber.weatherpanelinfobar = ConfigSelection(default="TemplatesInfoBarTvInfoWeatherDefault", choices = weatherpanelinfobar)
+config.skin.cyberfhd.numberchannel = ConfigSelection(default="TemplatesInfoBarTvNumberDefault", choices = numberchannel)
+config.skin.cyberfhd.tunerpanelinfobar = ConfigSelection(default="TemplatesInfoBarTvTunerStyle", choices = tunerpanelinfobar)
+config.skin.cyberfhd.epgpanelinfobar = ConfigSelection(default="TemplatesInfoBarTvInfoEPGDefault", choices = epgpanelinfobar)
+config.skin.cyberfhd.cryptedpanelinfobar = ConfigSelection(default="TemplatesInfoBarTvInfoCryptedDefault", choices = cryptedpanelinfobar)
+config.skin.cyberfhd.infopanelinfobar = ConfigSelection(default="TemplatesInfoBarTvInfoPanelDefault", choices = infopanelinfobar)
+config.skin.cyberfhd.weatherpanelinfobar = ConfigSelection(default="TemplatesInfoBarTvInfoWeatherDefault", choices = weatherpanelinfobar)
 
-config.skin.cyber.progressmode = ConfigSelection(default="ProgressLayerStandard", choices = progressmode)
-config.skin.cyber.scrollbarmode = ConfigSelection(default="showNever", choices = scrollbarmode)
+config.skin.cyberfhd.progressmode = ConfigSelection(default="ProgressLayerStandard", choices = progressmode)
+config.skin.cyberfhd.scrollbarmode = ConfigSelection(default="showNever", choices = scrollbarmode)
 
-config.skin.cyber.bouquetchannelselection = ConfigSelection(default="TemplatesChannelSelectionTvBouquetDefault", choices = bouquetchannelselection)
-config.skin.cyber.piconchannelselection = ConfigSelection(default="TemplatesChannelSelectionTvPiconDefault", choices = piconchannelselection)
-config.skin.cyber.channelpanelchannelselection = ConfigSelection(default="TemplatesChannelSelectionTvInfoChannelDefault", choices = channelpanelchannelselection)
-config.skin.cyber.epgpanelchannelselection = ConfigSelection(default="TemplatesChannelSelectionTvInfoEPGNow", choices = epgpanelchannelselection)
+config.skin.cyberfhd.bouquetchannelselection = ConfigSelection(default="TemplatesChannelSelectionTvBouquetDefault", choices = bouquetchannelselection)
+config.skin.cyberfhd.piconchannelselection = ConfigSelection(default="TemplatesChannelSelectionTvPiconDefault", choices = piconchannelselection)
+config.skin.cyberfhd.channelpanelchannelselection = ConfigSelection(default="TemplatesChannelSelectionTvInfoChannelDefault", choices = channelpanelchannelselection)
+config.skin.cyberfhd.epgpanelchannelselection = ConfigSelection(default="TemplatesChannelSelectionTvInfoEPGNow", choices = epgpanelchannelselection)
 
-config.skin.cyber.bouquetradiochannelselection = ConfigSelection(default="TemplatesChannelSelectionRadioBouquetDefault", choices = bouquetradiochannelselection)
+config.skin.cyberfhd.bouquetradiochannelselection = ConfigSelection(default="TemplatesChannelSelectionRadioBouquetDefault", choices = bouquetradiochannelselection)
 
-config.skin.cyber.panelmovieselection = ConfigSelection(default="TemplatesMovieSelectionDescriptionShort", choices = panelmovieselection)
+config.skin.cyberfhd.panelmovieselection = ConfigSelection(default="TemplatesMovieSelectionDescriptionShort", choices = panelmovieselection)
 
-SKIN_CYBER = """
+SKIN_CYBERFHD = """
 	<!-- Setup CyberFHD -->
 		<screen name="SetupCyberFHD" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
 
@@ -492,7 +492,7 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 
 		Screen.__init__(self, session)
 		self.session = session
-		self.skin = SKIN_CYBER
+		self.skin = SKIN_CYBERFHD
 
 		ConfigListScreen.__init__(self, self.list(), session = session)
 
@@ -554,52 +554,52 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 		tab = " "*10
 		section = _("Fonts")
 		list.append(getConfigListEntry(sep*(char-(len(section))/2) + tab + section + tab + sep*(char-(len(section))/2)))
-		list.append(getConfigListEntry(_("Fonts:"), config.skin.cyber.fonts))
+		list.append(getConfigListEntry(_("Fonts:"), config.skin.cyberfhd.fonts))
 		section = _("Style")
 		list.append(getConfigListEntry(sep*(char-(len(section))/2) + tab + section + tab + sep*(char-(len(section))/2)))
-		list.append(getConfigListEntry(_("Color setting:"), config.skin.cyber.colorsetting))
+		list.append(getConfigListEntry(_("Color setting:"), config.skin.cyberfhd.colorsetting))
 
-		list.append(getConfigListEntry(_("Background 1 color:"), config.skin.cyber.colorbackground1))
-		list.append(getConfigListEntry(_("Background 2 color:"), config.skin.cyber.colorbackground2))
-		list.append(getConfigListEntry(_("Background 3 color:"), config.skin.cyber.colorbackground3))
-		list.append(getConfigListEntry(_("Progress color:"), config.skin.cyber.colorbackground4))
-		list.append(getConfigListEntry(_("Cursor color:"), config.skin.cyber.colorbackground5))
+		list.append(getConfigListEntry(_("Background 1 color:"), config.skin.cyberfhd.colorbackground1))
+		list.append(getConfigListEntry(_("Background 2 color:"), config.skin.cyberfhd.colorbackground2))
+		list.append(getConfigListEntry(_("Background 3 color:"), config.skin.cyberfhd.colorbackground3))
+		list.append(getConfigListEntry(_("Progress color:"), config.skin.cyberfhd.colorbackground4))
+		list.append(getConfigListEntry(_("Cursor color:"), config.skin.cyberfhd.colorbackground5))
 
-		list.append(getConfigListEntry(_("Title text color:"), config.skin.cyber.colorforeground1))
-		list.append(getConfigListEntry(_("Main text color:"), config.skin.cyber.colorforeground2))
-		list.append(getConfigListEntry(_("Additional text color:"), config.skin.cyber.colorforeground3))
-		list.append(getConfigListEntry(_("Indication text color:"), config.skin.cyber.colorforeground4))
-		list.append(getConfigListEntry(_("Icon`s color:"), config.skin.cyber.colorforeground5))
+		list.append(getConfigListEntry(_("Title text color:"), config.skin.cyberfhd.colorforeground1))
+		list.append(getConfigListEntry(_("Main text color:"), config.skin.cyberfhd.colorforeground2))
+		list.append(getConfigListEntry(_("Additional text color:"), config.skin.cyberfhd.colorforeground3))
+		list.append(getConfigListEntry(_("Indication text color:"), config.skin.cyberfhd.colorforeground4))
+		list.append(getConfigListEntry(_("Icon`s color:"), config.skin.cyberfhd.colorforeground5))
 
-		list.append(getConfigListEntry(_("Background transparent:"), config.skin.cyber.backgroundtransparent))
-		list.append(getConfigListEntry(_("Text transparent:"), config.skin.cyber.foregroundtransparent))
+		list.append(getConfigListEntry(_("Background transparent:"), config.skin.cyberfhd.backgroundtransparent))
+		list.append(getConfigListEntry(_("Text transparent:"), config.skin.cyberfhd.foregroundtransparent))
 		section = _("Infobar")
 		list.append(getConfigListEntry(sep*(char-(len(section))/2) + tab + section + tab + sep*(char-(len(section))/2)))
-		list.append(getConfigListEntry(_("Channel number in infobar:"), config.skin.cyber.numberchannel))
-		list.append(getConfigListEntry(_("Tuner panel in infobar:"), config.skin.cyber.tunerpanelinfobar))
-		list.append(getConfigListEntry(_("EPG panel in secondinfobar:"), config.skin.cyber.epgpanelinfobar))
-		list.append(getConfigListEntry(_("Crypted panel in secondinfobar:"), config.skin.cyber.cryptedpanelinfobar))
-		list.append(getConfigListEntry(_("Info panel in secondinfobar:"), config.skin.cyber.infopanelinfobar))
-		list.append(getConfigListEntry(_("Weather panel in secondinfobar:"), config.skin.cyber.weatherpanelinfobar))
+		list.append(getConfigListEntry(_("Channel number in infobar:"), config.skin.cyberfhd.numberchannel))
+		list.append(getConfigListEntry(_("Tuner panel in infobar:"), config.skin.cyberfhd.tunerpanelinfobar))
+		list.append(getConfigListEntry(_("EPG panel in secondinfobar:"), config.skin.cyberfhd.epgpanelinfobar))
+		list.append(getConfigListEntry(_("Crypted panel in secondinfobar:"), config.skin.cyberfhd.cryptedpanelinfobar))
+		list.append(getConfigListEntry(_("Info panel in secondinfobar:"), config.skin.cyberfhd.infopanelinfobar))
+		list.append(getConfigListEntry(_("Weather panel in secondinfobar:"), config.skin.cyberfhd.weatherpanelinfobar))
 		section = _("Movie Infobar")
 		list.append(getConfigListEntry(sep*(char-(len(section))/2) + tab + section + tab + sep*(char-(len(section))/2)))
 		section = _("Menu")
 		list.append(getConfigListEntry(sep*(char-(len(section))/2) + tab + section + tab + sep*(char-(len(section))/2)))
-		list.append(getConfigListEntry(_("Progress mode:"), config.skin.cyber.progressmode))
-		list.append(getConfigListEntry(_("Scrollbar in menu:"), config.skin.cyber.scrollbarmode))
+		list.append(getConfigListEntry(_("Progress mode:"), config.skin.cyberfhd.progressmode))
+		list.append(getConfigListEntry(_("Scrollbar in menu:"), config.skin.cyberfhd.scrollbarmode))
 		section = _("Channel Selection")
 		list.append(getConfigListEntry(sep*(char-(len(section))/2) + tab + section + tab + sep*(char-(len(section))/2)))
-		list.append(getConfigListEntry(_("Userbouquet name in channel selection:"), config.skin.cyber.bouquetchannelselection))
-		list.append(getConfigListEntry(_("Picon panel in channel selection:"), config.skin.cyber.piconchannelselection))
-		list.append(getConfigListEntry(_("Channel info panel in channel selection:"), config.skin.cyber.channelpanelchannelselection))
-		list.append(getConfigListEntry(_("EPG panel in channel selection:"), config.skin.cyber.epgpanelchannelselection))
+		list.append(getConfigListEntry(_("Userbouquet name in channel selection:"), config.skin.cyberfhd.bouquetchannelselection))
+		list.append(getConfigListEntry(_("Picon panel in channel selection:"), config.skin.cyberfhd.piconchannelselection))
+		list.append(getConfigListEntry(_("Channel info panel in channel selection:"), config.skin.cyberfhd.channelpanelchannelselection))
+		list.append(getConfigListEntry(_("EPG panel in channel selection:"), config.skin.cyberfhd.epgpanelchannelselection))
 
 		section = _("Radio Selection")
 		list.append(getConfigListEntry(sep*(char-(len(section))/2) + tab + section + tab + sep*(char-(len(section))/2)))
-		list.append(getConfigListEntry(_("Userbouquet name in radio channel selection:"), config.skin.cyber.bouquetradiochannelselection))
+		list.append(getConfigListEntry(_("Userbouquet name in radio channel selection:"), config.skin.cyberfhd.bouquetradiochannelselection))
 		section = _("Movie Selection")
 		list.append(getConfigListEntry(sep*(char-(len(section))/2) + tab + section + tab + sep*(char-(len(section))/2)))
-		list.append(getConfigListEntry(_("Description panel in movie selection:"), config.skin.cyber.panelmovieselection))
+		list.append(getConfigListEntry(_("Description panel in movie selection:"), config.skin.cyberfhd.panelmovieselection))
 		return list
 
 	def keyLeft(self):
@@ -620,19 +620,19 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 
 	def previewSkin(self):
 		self.bgtext = "..."
-		self.fgtext = "Skin Cyber FHD"
-		self.fglogo = "Cyber FHD"
-		self.bgColor1 = "#0%s" % config.skin.cyber.colorbackground1.value
-		self.bgColor2 = "#0%s" % config.skin.cyber.colorbackground2.value
-		self.bgColor3 = "#0%s" % config.skin.cyber.colorbackground3.value
-		self.bgColor4 = "#0%s" % config.skin.cyber.colorbackground4.value
-		self.bgColor5 = "#0%s" % config.skin.cyber.colorbackground5.value
+		self.fgtext = "Skin CyberFHD"
+		self.fglogo = "CyberFHD"
+		self.bgColor1 = "#0%s" % config.skin.cyberfhd.colorbackground1.value
+		self.bgColor2 = "#0%s" % config.skin.cyberfhd.colorbackground2.value
+		self.bgColor3 = "#0%s" % config.skin.cyberfhd.colorbackground3.value
+		self.bgColor4 = "#0%s" % config.skin.cyberfhd.colorbackground4.value
+		self.bgColor5 = "#0%s" % config.skin.cyberfhd.colorbackground5.value
 
-		self.fgColor1 = "#0%s" % config.skin.cyber.colorforeground1.value
-		self.fgColor2 = "#0%s" % config.skin.cyber.colorforeground2.value
-		self.fgColor3 = "#0%s" % config.skin.cyber.colorforeground3.value
-		self.fgColor4 = "#0%s" % config.skin.cyber.colorforeground4.value
-		self.fgColor5 = "#0%s" % config.skin.cyber.colorforeground5.value
+		self.fgColor1 = "#0%s" % config.skin.cyberfhd.colorforeground1.value
+		self.fgColor2 = "#0%s" % config.skin.cyberfhd.colorforeground2.value
+		self.fgColor3 = "#0%s" % config.skin.cyberfhd.colorforeground3.value
+		self.fgColor4 = "#0%s" % config.skin.cyberfhd.colorforeground4.value
+		self.fgColor5 = "#0%s" % config.skin.cyberfhd.colorforeground5.value
 
 		try:
 		# Background 1
@@ -706,7 +706,7 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 		elif fileExists("/var/opkg/status"):
 			status = "/var/opkg/status"
 		for line in open(status):
-			if line.find("cyber-hd") > -1:
+			if line.find("CyberFHD") > -1:
 				package = 1
 			if line.find("Version:") > -1 and package == 1:
 				package = 0
@@ -745,16 +745,16 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 			os.system("cp %sskin_default.xml %sskin.xml" % (skinpath, skinpath))
 			os.system("cp %sskin_templates_default.xml %sskin_templates.xml" % (skinpath, skinpath))
 	# color`s
-			os.system("sed -i 's/#50000000/#%s%s/w' %sskin.xml" % (config.skin.cyber.backgroundtransparent.value, config.skin.cyber.colorbackground1.value, skinpath))
-			os.system("sed -i 's/#50696969/#%s%s/w' %sskin.xml" % (config.skin.cyber.backgroundtransparent.value, config.skin.cyber.colorbackground2.value, skinpath))
-			os.system("sed -i 's/#50ffffff/#%s%s/w' %sskin.xml" % (config.skin.cyber.backgroundtransparent.value, config.skin.cyber.colorbackground3.value, skinpath))
-			os.system("sed -i 's/#5000ffff/#%s%s/w' %sskin.xml" % (config.skin.cyber.foregroundtransparent.value, config.skin.cyber.colorbackground4.value, skinpath))
-			os.system("sed -i 's/#60696969/#%s%s/w' %sskin.xml" % (config.skin.cyber.backgroundtransparent.value, config.skin.cyber.colorbackground5.value, skinpath))
-			os.system("sed -i 's/#10ffd700/#%s%s/w' %sskin.xml" % (config.skin.cyber.foregroundtransparent.value, config.skin.cyber.colorforeground1.value, skinpath))
-			os.system("sed -i 's/#10f5f5f5/#%s%s/w' %sskin.xml" % (config.skin.cyber.foregroundtransparent.value, config.skin.cyber.colorforeground2.value, skinpath))
-			os.system("sed -i 's/#10a9a9a9/#%s%s/w' %sskin.xml" % (config.skin.cyber.foregroundtransparent.value, config.skin.cyber.colorforeground3.value, skinpath))
-			os.system("sed -i 's/#1000ffff/#%s%s/w' %sskin.xml" % (config.skin.cyber.foregroundtransparent.value, config.skin.cyber.colorforeground4.value, skinpath))
-			os.system("sed -i 's/#10ffffff/#%s%s/w' %sskin.xml" % (config.skin.cyber.backgroundtransparent.value, config.skin.cyber.colorforeground5.value, skinpath))
+			os.system("sed -i 's/#50000000/#%s%s/w' %sskin.xml" % (config.skin.cyberfhd.backgroundtransparent.value, config.skin.cyberfhd.colorbackground1.value, skinpath))
+			os.system("sed -i 's/#50696969/#%s%s/w' %sskin.xml" % (config.skin.cyberfhd.backgroundtransparent.value, config.skin.cyberfhd.colorbackground2.value, skinpath))
+			os.system("sed -i 's/#50ffffff/#%s%s/w' %sskin.xml" % (config.skin.cyberfhd.backgroundtransparent.value, config.skin.cyberfhd.colorbackground3.value, skinpath))
+			os.system("sed -i 's/#5000ffff/#%s%s/w' %sskin.xml" % (config.skin.cyberfhd.foregroundtransparent.value, config.skin.cyberfhd.colorbackground4.value, skinpath))
+			os.system("sed -i 's/#60696969/#%s%s/w' %sskin.xml" % (config.skin.cyberfhd.backgroundtransparent.value, config.skin.cyberfhd.colorbackground5.value, skinpath))
+			os.system("sed -i 's/#10ffd700/#%s%s/w' %sskin.xml" % (config.skin.cyberfhd.foregroundtransparent.value, config.skin.cyberfhd.colorforeground1.value, skinpath))
+			os.system("sed -i 's/#10f5f5f5/#%s%s/w' %sskin.xml" % (config.skin.cyberfhd.foregroundtransparent.value, config.skin.cyberfhd.colorforeground2.value, skinpath))
+			os.system("sed -i 's/#10a9a9a9/#%s%s/w' %sskin.xml" % (config.skin.cyberfhd.foregroundtransparent.value, config.skin.cyberfhd.colorforeground3.value, skinpath))
+			os.system("sed -i 's/#1000ffff/#%s%s/w' %sskin.xml" % (config.skin.cyberfhd.foregroundtransparent.value, config.skin.cyberfhd.colorforeground4.value, skinpath))
+			os.system("sed -i 's/#10ffffff/#%s%s/w' %sskin.xml" % (config.skin.cyberfhd.backgroundtransparent.value, config.skin.cyberfhd.colorforeground5.value, skinpath))
 	# clock	
 			if not fileExists("/usr/lib/enigma2/python/Components/Converter/AlwaysTrue.py"):
 				os.system("sed -i 's/TemplatesClockDefault/TemplatesClock/w' %sskin_templates.xml" % (skinpath))
@@ -771,36 +771,36 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 				os.system("sed -i 's/TemplatesInfoBarMediaIndicationStyle/TemplatesInfoBarMediaIndication/w' %sskin_templates.xml" % (skinpath))
 				os.system("sed -i 's/TemplatesInfoBarRadioIndicationStyle/TemplatesInfoBarRadioIndication/w' %sskin_templates.xml" % (skinpath))
 	# fonts	
-			os.system("sed -i 's/Roboto-Regular/%s/w' %sskin.xml" % (config.skin.cyber.fonts.value, skinpath))
+			os.system("sed -i 's/Roboto-Regular/%s/w' %sskin.xml" % (config.skin.cyberfhd.fonts.value, skinpath))
 	# scrollbar
-			os.system("sed -i 's/showNever/%s/w' %sskin.xml" % (config.skin.cyber.scrollbarmode.value, skinpath))
+			os.system("sed -i 's/showNever/%s/w' %sskin.xml" % (config.skin.cyberfhd.scrollbarmode.value, skinpath))
 	# number channel
-			os.system("sed -i 's/%s/TemplatesInfoBarTvNumber/w' %sskin_templates.xml" % (config.skin.cyber.numberchannel.value, skinpath))
+			os.system("sed -i 's/%s/TemplatesInfoBarTvNumber/w' %sskin_templates.xml" % (config.skin.cyberfhd.numberchannel.value, skinpath))
 	# tuner panel
-			os.system("sed -i 's/%s/TemplatesInfoBarTvTuner/w' %sskin_templates.xml" % (config.skin.cyber.tunerpanelinfobar.value, skinpath))
+			os.system("sed -i 's/%s/TemplatesInfoBarTvTuner/w' %sskin_templates.xml" % (config.skin.cyberfhd.tunerpanelinfobar.value, skinpath))
 	# epg panel
-			os.system("sed -i 's/%s/TemplatesInfoBarTvInfoEPG/w' %sskin_templates.xml" % (config.skin.cyber.epgpanelinfobar.value, skinpath))
+			os.system("sed -i 's/%s/TemplatesInfoBarTvInfoEPG/w' %sskin_templates.xml" % (config.skin.cyberfhd.epgpanelinfobar.value, skinpath))
 	# crypted panel
-			os.system("sed -i 's/%s/TemplatesInfoBarTvInfoCrypted/w' %sskin_templates.xml" % (config.skin.cyber.cryptedpanelinfobar.value, skinpath))
+			os.system("sed -i 's/%s/TemplatesInfoBarTvInfoCrypted/w' %sskin_templates.xml" % (config.skin.cyberfhd.cryptedpanelinfobar.value, skinpath))
 	# info panel
-			os.system("sed -i 's/%s/TemplatesInfoBarTvInfoPanel/w' %sskin_templates.xml" % (config.skin.cyber.infopanelinfobar.value, skinpath))
+			os.system("sed -i 's/%s/TemplatesInfoBarTvInfoPanel/w' %sskin_templates.xml" % (config.skin.cyberfhd.infopanelinfobar.value, skinpath))
 	# weather panel
-			os.system("sed -i 's/%s/TemplatesInfoBarTvInfoWeather/w' %sskin_templates.xml" % (config.skin.cyber.weatherpanelinfobar.value, skinpath))
+			os.system("sed -i 's/%s/TemplatesInfoBarTvInfoWeather/w' %sskin_templates.xml" % (config.skin.cyberfhd.weatherpanelinfobar.value, skinpath))
 	# progress
-			os.system("sed -i 's/%s/ProgressLayer/w' %sskin_templates.xml" % (config.skin.cyber.progressmode.value, skinpath))
+			os.system("sed -i 's/%s/ProgressLayer/w' %sskin_templates.xml" % (config.skin.cyberfhd.progressmode.value, skinpath))
 	# bouquet
-			os.system("sed -i 's/%s/TemplatesChannelSelectionTvBouquet/w' %sskin_templates.xml" % (config.skin.cyber.bouquetchannelselection.value, skinpath))
-			os.system("sed -i 's/%sFull/TemplatesChannelSelectionTvBouquetFull/w' %sskin_templates.xml" % (config.skin.cyber.bouquetchannelselection.value, skinpath))
+			os.system("sed -i 's/%s/TemplatesChannelSelectionTvBouquet/w' %sskin_templates.xml" % (config.skin.cyberfhd.bouquetchannelselection.value, skinpath))
+			os.system("sed -i 's/%sFull/TemplatesChannelSelectionTvBouquetFull/w' %sskin_templates.xml" % (config.skin.cyberfhd.bouquetchannelselection.value, skinpath))
 	# picon panel
-			os.system("sed -i 's/%s/TemplatesChannelSelectionTvPicon/w' %sskin_templates.xml" % (config.skin.cyber.piconchannelselection.value, skinpath))
+			os.system("sed -i 's/%s/TemplatesChannelSelectionTvPicon/w' %sskin_templates.xml" % (config.skin.cyberfhd.piconchannelselection.value, skinpath))
 	# epg panel
-			os.system("sed -i 's/%s/TemplatesChannelSelectionTvInfoEPG/w' %sskin_templates.xml" % (config.skin.cyber.epgpanelchannelselection.value, skinpath))
+			os.system("sed -i 's/%s/TemplatesChannelSelectionTvInfoEPG/w' %sskin_templates.xml" % (config.skin.cyberfhd.epgpanelchannelselection.value, skinpath))
 	# channel panel
-			os.system("sed -i 's/%s/TemplatesChannelSelectionTvInfoChannel/w' %sskin_templates.xml" % (config.skin.cyber.channelpanelchannelselection.value, skinpath))
+			os.system("sed -i 's/%s/TemplatesChannelSelectionTvInfoChannel/w' %sskin_templates.xml" % (config.skin.cyberfhd.channelpanelchannelselection.value, skinpath))
 	# bouquet
-			os.system("sed -i 's/%s/TemplatesChannelSelectionRadioBouquet/w' %sskin_templates.xml" % (config.skin.cyber.bouquetradiochannelselection.value, skinpath))
+			os.system("sed -i 's/%s/TemplatesChannelSelectionRadioBouquet/w' %sskin_templates.xml" % (config.skin.cyberfhd.bouquetradiochannelselection.value, skinpath))
 	# description panel
-			os.system("sed -i 's/%s/TemplatesMovieSelectionDescription/w' %sskin_templates.xml" % (config.skin.cyber.panelmovieselection.value, skinpath))
+			os.system("sed -i 's/%s/TemplatesMovieSelectionDescription/w' %sskin_templates.xml" % (config.skin.cyberfhd.panelmovieselection.value, skinpath))
 		except:
 			os.system("cp %sskin_default.xml %sskin.xml" % (skinpath, skinpath))
 			os.system("cp %sskin_templates_default.xml %sskin_templates.xml" % (skinpath, skinpath))
