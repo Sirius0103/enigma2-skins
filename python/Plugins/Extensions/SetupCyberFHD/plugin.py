@@ -468,6 +468,8 @@ SKIN_CYBERFHD = """
 		<ePixmap pixmap="CyberFHD/buttons/button_key_blue.png" position="1773,975" size="40,20" alphatest="on" />
 		<widget source="key_red" render="Label" position="1380,884" size="380,22" font="SkinTitles; 22" halign="right" valign="center" foregroundColor="#10f5f5f5" backgroundColor="#50696969" transparent="1" />
 		<widget source="key_green" render="Label" position="1380,914" size="380,22" font="SkinTitles; 22" halign="right" valign="center" foregroundColor="#10f5f5f5" backgroundColor="#50696969" transparent="1" />
+		<widget source="key_yellow" render="Label" position="1380,944" size="380,22" font="SkinTitles; 22" halign="right" valign="center" foregroundColor="#10f5f5f5" backgroundColor="#50696969" transparent="1" />
+		<widget source="key_blue" render="Label" position="1380,974" size="380,22" font="SkinTitles; 22" halign="right" valign="center" foregroundColor="#10f5f5f5" backgroundColor="#50696969" transparent="1" />
 
 	<!-- Clock Layer -->
 		<eLabel position="1618,63" size="204,104" backgroundColor="#50ffffff" zPosition="-12" />
