@@ -305,19 +305,13 @@ SKIN_CYBERLCD = """
 		<eLabel position="1840,365" size="80,480" backgroundColor="#50000000" zPosition="-11" />
 		<eLabel position="1840,375" size="70,460" backgroundColor="#50696969" zPosition="-10" />
 
-		<widget name="bgcolor1a" position="1110,410" size="720,30" backgroundColor="background" zPosition="-3" />
-		<widget name="bgcolor1b" position="1110,750" size="720,50" backgroundColor="background" zPosition="-3" />
-		<widget name="bgcolor1c" position="1110,450" size="400,290" backgroundColor="background" zPosition="-3" />
-		<widget name="bgcolor4a" position="1120,772" size="700,5" backgroundColor="background" zPosition="-2" />
+		<widget name="bgcolor1a" position="1120,385" size="700,440" backgroundColor="background" zPosition="-3" />
+		<widget name="bgcolor4a" position="1120,750" size="700,20" backgroundColor="background" zPosition="-2" />
 
-		<widget name="fgcolor1a" position="1120,413" size="300,25" font="SkinTitles; 25" halign="left" backgroundColor="background" transparent="1" />
-		<widget name="fgcolor1b" position="1120,490" size="380,20" font="SkinGlobal; 15" halign="left" backgroundColor="background" transparent="1" />
-		<widget name="fgcolor2a" position="1120,460" size="380,20" font="SkinGlobal; 15" halign="left" backgroundColor="background" transparent="1" />
-		<widget name="fgcolor2b" position="1120,520" size="380,20" font="SkinGlobal; 15" halign="left" backgroundColor="background" transparent="1" />
-		<widget name="fgcolor2c" position="1120,751" size="700,20" font="SkinGlobal; 15" halign="left" backgroundColor="background" transparent="1" />
-		<widget name="fgcolor3a" position="1120,779" size="700,20" font="SkinGlobal; 15" halign="left" backgroundColor="background" transparent="1" />
-		<widget name="fgcolor3b" position="1525,595" size="300,140" font="SkinGlobal; 15" halign="left" backgroundColor="background" transparent="1" />
-		<widget name="fgcolor4a" position="1520,413" size="300,25" font="SkinIndication; 25" halign="right" backgroundColor="background" transparent="1" />
+		<widget name="fgcolor1a" position="1120,400" size="700,35" font="SkinTitles; 35" halign="center" backgroundColor="background" transparent="1" />
+		<widget name="fgcolor2a" position="1120,670" size="700,25" font="SkinGlobal; 25" halign="center" backgroundColor="background" transparent="1" />
+		<widget name="fgcolor3a" position="1120,710" size="700,25" font="SkinGlobal; 25" halign="center" backgroundColor="background" transparent="1" />
+		<widget name="fgcolor4a" position="1120,775" size="700,35" font="SkinIndication; 35" halign="center" backgroundColor="background" transparent="1" />
 
 	<!-- Buttons Layer -->
 		<eLabel position="1368,867" size="454,146" backgroundColor="#50ffffff" zPosition="-12" />
@@ -381,17 +375,11 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 		self["Title"] = StaticText(_("Setup CyberLCD"))
 
 		self["bgcolor1a"] = Label(_(" "))
-		self["bgcolor1b"] = Label(_(" "))
-		self["bgcolor1c"] = Label(_(" "))
 		self["bgcolor4a"] = Label(_(" "))
 
 		self["fgcolor1a"] = Label(_(" "))
-		self["fgcolor1b"] = Label(_(" "))
 		self["fgcolor2a"] = Label(_(" "))
-		self["fgcolor2b"] = Label(_(" "))
-		self["fgcolor2c"] = Label(_(" "))
 		self["fgcolor3a"] = Label(_(" "))
-		self["fgcolor3b"] = Label(_(" "))
 		self["fgcolor4a"] = Label(_(" "))
 
 		self["version_sk"] = StaticText(_("Version skin:"))
@@ -460,12 +448,6 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 			self["bgcolor1a"].setText(_(self.bgtext))
 			self["bgcolor1a"].instance.setBackgroundColor(parseColor(self.bgColor1))
 			self["bgcolor1a"].instance.setForegroundColor(parseColor(self.bgColor1))
-			self["bgcolor1b"].setText(_(self.bgtext))
-			self["bgcolor1b"].instance.setBackgroundColor(parseColor(self.bgColor1))
-			self["bgcolor1b"].instance.setForegroundColor(parseColor(self.bgColor1))
-			self["bgcolor1c"].setText(_(self.bgtext))
-			self["bgcolor1c"].instance.setBackgroundColor(parseColor(self.bgColor1))
-			self["bgcolor1c"].instance.setForegroundColor(parseColor(self.bgColor1))
 		# Progress
 			self["bgcolor4a"].setText(_(self.bgtext))
 			self["bgcolor4a"].instance.setBackgroundColor(parseColor(self.bgColor4))
@@ -473,20 +455,12 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 		# Title
 			self["fgcolor1a"].setText(_(self.fgtext))
 			self["fgcolor1a"].instance.setForegroundColor(parseColor(self.fgColor1))
-			self["fgcolor1b"].setText(_(self.fgtext))
-			self["fgcolor1b"].instance.setForegroundColor(parseColor(self.fgColor1))
 		# Font 1
 			self["fgcolor2a"].setText(_(self.fgtext))
 			self["fgcolor2a"].instance.setForegroundColor(parseColor(self.fgColor2))
-			self["fgcolor2b"].setText(_(self.fgtext))
-			self["fgcolor2b"].instance.setForegroundColor(parseColor(self.fgColor2))
-			self["fgcolor2c"].setText(_(self.fgtext))
-			self["fgcolor2c"].instance.setForegroundColor(parseColor(self.fgColor2))
 		# Font 2
 			self["fgcolor3a"].setText(_(self.fgtext))
 			self["fgcolor3a"].instance.setForegroundColor(parseColor(self.fgColor3))
-			self["fgcolor3b"].setText(_(self.fgtext))
-			self["fgcolor3b"].instance.setForegroundColor(parseColor(self.fgColor3))
 		# Indication
 			self["fgcolor4a"].setText(_(self.fgtext))
 			self["fgcolor4a"].instance.setForegroundColor(parseColor(self.fgColor4))
@@ -517,19 +491,7 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 		if fileExists("/usr/lib/enigma2/python/Plugins/Extensions/WeatherMSN/plugin.pyo")\
 			and not fileExists("/usr/lib/enigma2/python/Components/Converter/MSNWeather2.py"):
 			self["info_com"] = StaticText(_("No install components skin !!! \nPress blue button to install !!!"))
-		elif not fileExists("/usr/lib/enigma2/python/Components/Converter/AlwaysTrue.py")\
-			or not fileExists("/usr/lib/enigma2/python/Components/Converter/AC3DownMixStatus.py")\
-			or not fileExists("/usr/lib/enigma2/python/Components/Converter/CaidInfo2.py")\
-			or not fileExists("/usr/lib/enigma2/python/Components/Converter/CamdInfo3.py")\
-			or not fileExists("/usr/lib/enigma2/python/Components/Converter/EventName2.py")\
-			or not fileExists("/usr/lib/enigma2/python/Components/Converter/FrontendInfo2.py")\
-			or not fileExists("/usr/lib/enigma2/python/Components/Converter/ModuleControl.py")\
-			or not fileExists("/usr/lib/enigma2/python/Components/Converter/ProgressDiskSpaceInfo.py")\
-			or not fileExists("/usr/lib/enigma2/python/Components/Converter/ServiceInfoEX.py")\
-			or not fileExists("/usr/lib/enigma2/python/Components/Converter/ServiceName2.py")\
-			or not fileExists("/usr/lib/enigma2/python/Components/Renderer/PiconUni.py")\
-			or not fileExists("/usr/lib/enigma2/python/Components/Renderer/RendVolumeText.py")\
-			or not fileExists("/usr/lib/enigma2/python/Components/Renderer/Watches.py"):
+		elif not fileExists("/usr/lib/enigma2/python/Components/Converter/AlwaysTrue.py"):
 			self["info_com"] = StaticText(_("No install components skin !!! \nPress blue button to install !!!"))
 		else:
 			self["info_com"] = StaticText(_(" "))
@@ -563,20 +525,8 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 		try:
 	# install converter
 			os.system("cp %sSetupCyberLCD/components/AlwaysTrue.py %sConverter/AlwaysTrue.py" % (pluginpath, componentspath))
-			os.system("cp %sSetupCyberLCD/components/AC3DownMixStatus.py %sConverter/AC3DownMixStatus.py" % (pluginpath, componentspath))
-			os.system("cp %sSetupCyberLCD/components/CaidInfo2.py %sConverter/CaidInfo2.py" % (pluginpath, componentspath))
-			os.system("cp %sSetupCyberLCD/components/CamdInfo3.py %sConverter/CamdInfo3.py" % (pluginpath, componentspath))
-			os.system("cp %sSetupCyberLCD/components/EventName2.py %sConverter/EventName2.py" % (pluginpath, componentspath))
-			os.system("cp %sSetupCyberLCD/components/FrontendInfo2.py %sConverter/FrontendInfo2.py" % (pluginpath, componentspath))
-			os.system("cp %sSetupCyberLCD/components/ModuleControl.py %sConverter/ModuleControl.py" % (pluginpath, componentspath))
-			os.system("cp %sSetupCyberLCD/components/ProgressDiskSpaceInfo.py %sConverter/ProgressDiskSpaceInfo.py" % (pluginpath, componentspath))
-			os.system("cp %sSetupCyberLCD/components/ServiceInfoEX.py %sConverter/ServiceInfoEX.py" % (pluginpath, componentspath))
-			os.system("cp %sSetupCyberLCD/components/ServiceName2.py %sConverter/ServiceName2.py" % (pluginpath, componentspath))
+
 			os.system("cp %sWeatherMSN/components/MSNWeather2.py %sConverter/MSNWeather2.py" % (pluginpath, componentspath))
-	# install renderer
-			os.system("cp %sSetupCyberLCD/components/PiconUni.py %sRenderer/PiconUni.py" % (pluginpath, componentspath))
-			os.system("cp %sSetupCyberLCD/components/RendVolumeText.py %sRenderer/RendVolumeText.py" % (pluginpath, componentspath))
-			os.system("cp %sSetupCyberLCD/components/Watches.py %sRenderer/Watches.py" % (pluginpath, componentspath))
 	# end
 		except:
 			self.session.open(MessageBox, _("Error by processing !!!"), MessageBox.TYPE_ERROR)
