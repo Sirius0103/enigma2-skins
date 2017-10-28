@@ -108,39 +108,11 @@
     <widget name="fgcolor2a" position="1120,670" size="700,25" font="Global; 25" halign="center" backgroundColor="background" transparent="1" />
     <widget name="fgcolor3a" position="1120,710" size="700,25" font="Global; 25" halign="center" backgroundColor="background" transparent="1" />
     <widget name="fgcolor4a" position="1120,775" size="700,35" font="Indication; 35" halign="center" backgroundColor="background" transparent="1" />
-    <!-- Layer Preview -->
-    <widget source="key_red" render="Label" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-    <widget source="key_green" render="Label" position="1380,914" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-    <!-- Buttons Layer -->
-    <eLabel position="1368,867" size="454,146" backgroundColor="background3" zPosition="-12" />
-    <eLabel position="1370,869" size="450,142" backgroundColor="background1" zPosition="-11" />
-    <eLabel position="1375,875" size="390,130" backgroundColor="background2" zPosition="-10" />
-    <!-- Templates Buttons -->
-    <ePixmap pixmap="CyberFHD/buttons/button_key_red.png" position="1773,885" size="40,20" alphatest="on" />
-    <ePixmap pixmap="CyberFHD/buttons/button_key_green.png" position="1773,915" size="40,20" alphatest="on" />
-    <ePixmap pixmap="CyberFHD/buttons/button_key_yellow.png" position="1773,945" size="40,20" alphatest="on" />
-    <ePixmap pixmap="CyberFHD/buttons/button_key_blue.png" position="1773,975" size="40,20" alphatest="on" />
-    <!-- Clock Layer -->
-    <eLabel position="1618,63" size="204,104" backgroundColor="background3" zPosition="-12" />
-    <eLabel position="1620,65" size="200,100" backgroundColor="background2" zPosition="-11" />
-    <!-- Templates Clock -->
-    <widget source="global.CurrentTime" render="Label" position="1615,95" size="90,50" font="Indication; 50" foregroundColor="color1" backgroundColor="background" halign="right" transparent="1">
-      <convert type="ClockToText">Format:%H</convert>
-    </widget>
-    <eLabel text=":" position="1710,95" size="20,50" font="Indication; 50" foregroundColor="gray" backgroundColor="background" halign="center" transparent="1" zPosition="-1" />
-    <widget source="global.CurrentTime" render="FixedLabel" text=":" position="1710,95" size="20,50" font="Indication; 50" foregroundColor="color1" backgroundColor="background" halign="center" transparent="1">
-      <convert type="AlwaysTrue">
-      </convert>
-      <convert type="ConditionalShowHide">Blink</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="1735,95" size="90,50" font="Indication; 50" foregroundColor="color1" backgroundColor="background" halign="left" transparent="1">
-      <convert type="ClockToText">Format:%M</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="1620,70" size="200,25" font="Titles; 20" foregroundColor="color2" backgroundColor="background2" halign="center" transparent="1">
-      <convert type="ClockToText">Format:%A</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="1620,140" size="200,25" font="Titles; 22" foregroundColor="color2" backgroundColor="background2" halign="center" transparent="1">
-      <convert type="ClockToText">Format:%d.%m.%Y</convert>
-    </widget>
+    <panel name="TemplatesButtonsRedSource" />
+    <panel name="TemplatesButtonsGreenSource" />
+    <panel name="TemplatesButtonsYellowSource" />
+    <panel name="TemplatesButtonsBlueSource" />
+    <panel name="TemplatesButtons" />
+    <panel name="TemplatesClock" />
   </screen>
 </skin>
