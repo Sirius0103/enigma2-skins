@@ -49,18 +49,15 @@
     <font filename="CyberLCD/fonts/LedCounter.ttf" name="LCDIndication" scale="100" />
   </fonts>
   <!-- # # # # # # # # # # Display Templates # # # # # # # # # #-->
+  <screen name="TemplatesDisplay">
+    <!-- Templates Display -->
+    <eLabel position="10,240" size="460,20" backgroundColor="LCDgray" zPosition="1" />
+  </screen>
   <screen name="TemplatesDisplayLayer">
-    <!-- Templates Progress -->
+    <!-- Templates Display -->
     <eLabel position="0,0" size="480,320" backgroundColor="LCDbackground1" zPosition="-10" />
   </screen>
-  <screen name="TemplatesDisplay">
-    <!-- Templates Progress -->
-    <eLabel position="10,240" size="460,20" backgroundColor="LCDgray" zPosition="1" />
-  </screen>
-  <screen name="TemplatesDisplay">
-    <!-- Templates Progress -->
-    <eLabel position="10,240" size="460,20" backgroundColor="LCDgray" zPosition="1" />
-  </screen>
+  <!--  ########## Templates Progress Layer ########## -->
   <screen name="TemplatesDisplayProgressLayerDefault">
     <!-- Templates Progress -->
     <eLabel position="5,240" size="470,20" backgroundColor="LCDgray" zPosition="1" />
@@ -126,18 +123,63 @@
     <eLabel position="460,240" size="5,20" backgroundColor="LCDbackground1" zPosition="3" />
     <eLabel position="470,240" size="5,20" backgroundColor="LCDbackground1" zPosition="3" />
   </screen>
-  <!-- # # # # # # # # # # Display Skins # # # # # # # # # #-->
-  <!-- ########## InfoBar TV ########## -->
-  <screen name="InfoBarSummary" position="0,0" size="480,320">
-    <panel name="TemplatesDisplayLayer" />
-    <!--
-  <widget source="session.CurrentService" render="Label" position="10,10" size="460,95" font="LCDTitles; 50" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1">
-    <convert type="ServiceName">Name</convert>
-  </widget>
- -->
-    <widget source="session.Event_Now" render="Label" position="10,130" size="460,100" font="LCDGlobal; 40" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1">
-      <convert type="EventName">Name</convert>
+  <!--  ########## Templates InfoBar Display ########## -->
+  <screen name="TemplatesInfoBarDisplayName">
+    <!-- Name Layer -->
+    <widget source="session.CurrentService" render="Label" position="10,10" size="460,95" font="LCDTitles; 50" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1">
+      <convert type="ServiceName">Name</convert>
     </widget>
+  </screen>
+  <screen name="TemplatesInfoBarDisplayPicon">
+    <panel name="TemplatesInfoBarDisplayIndication" />
+    <!-- Picon Layer -->
+    <widget source="session.CurrentService" render="Picon" position="130,0" size="220,132" zPosition="2" alphatest="blend">
+      <convert type="ServiceName">Reference</convert>
+    </widget>
+  </screen>
+  <screen name="TemplatesInfoBarDisplayClock">
+    <panel name="TemplatesInfoBarDisplayIndication" />
+    <!-- Clock Layer -->
+    <widget source="global.CurrentTime" render="Label" position="120,30" size="100,60" font="LCDIndication; 60" foregroundColor="LCDcolor1" halign="right" transparent="1">
+      <convert type="ClockToText">Format:%H</convert>
+    </widget>
+    <eLabel text=":" position="230,30" size="20,60" font="LCDIndication; 60" foregroundColor="LCDgray" halign="center" transparent="1" zPosition="-1" />
+    <widget source="global.CurrentTime" render="FixedLabel" text=":" position="230,30" size="20,60" font="LCDIndication; 60" foregroundColor="LCDcolor1" halign="center" transparent="1">
+      <convert type="AlwaysTrue">
+      </convert>
+      <convert type="ConditionalShowHide">Blink</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="260,30" size="100,60" font="LCDIndication; 60" foregroundColor="LCDcolor1" halign="left" transparent="1">
+      <convert type="ClockToText">Format:%M</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="120,10" size="240,20" font="LCDTitles; 15" halign="center" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="120,90" size="240,20" font="LCDTitles; 15" halign="center" transparent="1">
+      <convert type="ClockToText">Format:%d.%m.%Y</convert>
+    </widget>
+  </screen>
+  <screen name="TemplatesInfoBarDisplayProgress">
+    <!-- Progress Layer -->
+    <panel name="TemplatesDisplayProgressLayer" />
+    <widget source="session.Event_Now" render="Progress" position="5,240" size="470,20" foregroundColor="LCDbackground4" transparent="1" zPosition="2">
+      <convert type="EventTime">Progress</convert>
+    </widget>
+    <eLabel text="-" position="160,270" size="20,50" font="LCDIndication; 50" foregroundColor="LCDcolor4" halign="center" transparent="1" />
+    <widget source="session.Event_Now" render="Label" position="0,270" size="150,50" font="LCDIndication; 50" foregroundColor="LCDcolor4" halign="right" transparent="1">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" position="320,270" size="150,50" font="LCDIndication; 50" foregroundColor="LCDcolor4" halign="right" transparent="1">
+      <convert type="EventTime">Remaining</convert>
+      <convert type="RemainingToText">InMinutes</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" position="190,270" size="150,50" font="LCDIndication; 50" foregroundColor="LCDcolor4" halign="left" transparent="1">
+      <convert type="EventTime">EndTime</convert>
+      <convert type="ClockToText">Default</convert>
+    </widget>
+  </screen>
+  <screen name="TemplatesInfoBarDisplayIndication">
     <!-- Indication Layer -->
     <eLabel text="TXT" position="10,60" size="110,50" font="LCDIndication; 50" foregroundColor="LCDgray" backgroundColor="LCDbackground" transparent="1" halign="left" />
     <widget source="session.CurrentService" render="FixedLabel" text="TXT" position="10,60" size="110,50" font="LCDIndication; 50" foregroundColor="LCDcolor4" backgroundColor="LCDbackground" transparent="1" zPosition="3" halign="left">
@@ -165,28 +207,16 @@
       <convert type="ValueRange">1981,3840</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <!-- Picon Layer -->
-    <widget source="session.CurrentService" render="Picon" position="130,0" size="220,132" zPosition="2" alphatest="blend">
-      <convert type="ServiceName">Reference</convert>
+  </screen>
+  <!-- # # # # # # # # # # Display Skins # # # # # # # # # #-->
+  <!-- ########## InfoBar Display ########## -->
+  <screen name="InfoBarSummary" position="0,0" size="480,320">
+    <panel name="TemplatesDisplayLayer" />
+    <panel name="TemplatesInfoBarDisplay" />
+    <widget source="session.Event_Now" render="Label" position="10,130" size="460,100" font="LCDGlobal; 40" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1">
+      <convert type="EventName">Name</convert>
     </widget>
-    <!-- Progress Layer -->
-    <panel name="TemplatesDisplayProgressLayerImproved" />
-    <widget source="session.Event_Now" render="Progress" position="5,240" size="470,20" foregroundColor="LCDbackground4" transparent="1" zPosition="2">
-      <convert type="EventTime">Progress</convert>
-    </widget>
-    <eLabel text="-" position="160,270" size="20,50" font="LCDIndication; 50" foregroundColor="LCDcolor4" halign="center" transparent="1" />
-    <widget source="session.Event_Now" render="Label" position="0,270" size="150,50" font="LCDIndication; 50" foregroundColor="LCDcolor4" halign="right" transparent="1">
-      <convert type="EventTime">StartTime</convert>
-      <convert type="ClockToText">Default</convert>
-    </widget>
-    <widget source="session.Event_Now" render="Label" position="320,270" size="150,50" font="LCDIndication; 50" foregroundColor="LCDcolor4" halign="right" transparent="1">
-      <convert type="EventTime">Remaining</convert>
-      <convert type="RemainingToText">InMinutes</convert>
-    </widget>
-    <widget source="session.Event_Now" render="Label" position="190,270" size="150,50" font="LCDIndication; 50" foregroundColor="LCDcolor4" halign="left" transparent="1">
-      <convert type="EventTime">EndTime</convert>
-      <convert type="ClockToText">Default</convert>
-    </widget>
+    <panel name="TemplatesInfoBarDisplayProgress" />
   </screen>
   <!-- ########## Channel Selection ########## -->
   <screen name="ChannelSelection_summary" position="0,0" size="480,320">

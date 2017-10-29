@@ -242,6 +242,20 @@ fonts = [
 	("Roboto-MediumItalic", _("MediumItalic")),
 	("Roboto-BoldItalic", _("BoldItalic"))]
 
+progressmode = [
+	("TemplatesDisplayProgressLayerStandard", _("Standard")),
+	("TemplatesDisplayProgressLayerImproved", _("Improved"))]
+
+if not fileExists("/usr/lib/enigma2/python/Components/Converter/AlwaysTrue.py"):
+	widgetinfobar = [
+		("TemplatesInfoBarDisplayName", _("Name")),
+		("TemplatesInfoBarDisplayPicon", _("Picon"))]
+else:
+	widgetinfobar = [
+		("TemplatesInfoBarDisplayName", _("Name")),
+		("TemplatesInfoBarDisplayPicon", _("Picon")),
+		("TemplatesInfoBarDisplayClock", _("Clock"))]
+
 config.skin.cyberlcd = ConfigSubsection()
 config.skin.cyberlcd.fonts = ConfigSelection(default="Roboto-Regular", choices = fonts)
 
@@ -266,6 +280,10 @@ else:
 
 config.skin.cyberlcd.backgroundtransparent = ConfigSelection(default="5", choices = styletransparent)
 config.skin.cyberlcd.foregroundtransparent = ConfigSelection(default="0", choices = styletransparent)
+
+config.skin.cyberlcd.progressmode = ConfigSelection(default="TemplatesDisplayProgressLayerStandard", choices = progressmode)
+
+config.skin.cyberlcd.widgetinfobar = ConfigSelection(default="TemplatesInfoBarDisplayName", choices = widgetinfobar)
 
 SKIN_CYBERLCD = """
 	<!-- Setup CyberLCD -->
@@ -413,6 +431,12 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 
 		list.append(getConfigListEntry(_("Background transparent:"), config.skin.cyberlcd.backgroundtransparent))
 		list.append(getConfigListEntry(_("Text transparent:"), config.skin.cyberlcd.foregroundtransparent))
+		section = _("Progress")
+		list.append(getConfigListEntry(sep*(char-(len(section))/2) + tab + section + tab + sep*(char-(len(section))/2)))
+		list.append(getConfigListEntry(_("Progress mode:"), config.skin.cyberlcd.progressmode))
+		section = _("Infobar")
+		list.append(getConfigListEntry(sep*(char-(len(section))/2) + tab + section + tab + sep*(char-(len(section))/2)))
+		list.append(getConfigListEntry(_("Widget in infobar:"), config.skin.cyberlcd.widgetinfobar))
 		return list
 
 	def keyLeft(self):
@@ -512,7 +536,10 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 			os.system("sed -i 's/#1000ffff/#%s%s/w' %sskin_user.xml" % (config.skin.cyberlcd.foregroundtransparent.value, config.skin.cyberlcd.colorforeground4.value, skinlcd))
 	# fonts	
 			os.system("sed -i 's/Roboto-Regular/%s/w' %sskin_user.xml" % (config.skin.cyberlcd.fonts.value, skinlcd))
-
+	# progress
+			os.system("sed -i 's/%s/TemplatesDisplayProgressLayer/w' %sskin_user.xml" % (config.skin.cyberlcd.progressmode.value, skinlcd))
+	# widget infobar
+			os.system("sed -i 's/%s/TemplatesInfoBarDisplay/w' %sskin_user.xml" % (config.skin.cyberlcd.widgetinfobar.value, skinlcd))
 	# end
 		except:
 			self.session.open(MessageBox, _("Error by processing !!!"), MessageBox.TYPE_ERROR)
