@@ -256,6 +256,16 @@ else:
 		("TemplatesInfoBarDisplayPicon", _("Picon")),
 		("TemplatesInfoBarDisplayClock", _("Clock"))]
 
+if not fileExists("/usr/lib/enigma2/python/Components/Converter/AlwaysTrue.py"):
+	widgetchannelselection = [
+		("TemplatesChannelSelectionDisplayName", _("Name")),
+		("TemplatesChannelSelectionDisplayPicon", _("Picon"))]
+else:
+	widgetchannelselection = [
+		("TemplatesChannelSelectionDisplayName", _("Name")),
+		("TemplatesChannelSelectionDisplayPicon", _("Picon")),
+		("TemplatesChannelSelectionDisplayClock", _("Clock"))]
+
 config.skin.cyberlcd = ConfigSubsection()
 config.skin.cyberlcd.fonts = ConfigSelection(default="Roboto-Regular", choices = fonts)
 
@@ -284,6 +294,8 @@ config.skin.cyberlcd.foregroundtransparent = ConfigSelection(default="0", choice
 config.skin.cyberlcd.progressmode = ConfigSelection(default="TemplatesDisplayProgressLayerStandard", choices = progressmode)
 
 config.skin.cyberlcd.widgetinfobar = ConfigSelection(default="TemplatesInfoBarDisplayName", choices = widgetinfobar)
+
+config.skin.cyberlcd.widgetchannelselection = ConfigSelection(default="TemplatesChannelSelectionDisplayName", choices = widgetchannelselection)
 
 SKIN_CYBERLCD = """
 	<!-- Setup CyberLCD -->
@@ -437,6 +449,9 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 		section = _("Infobar")
 		list.append(getConfigListEntry(sep*(char-(len(section))/2) + tab + section + tab + sep*(char-(len(section))/2)))
 		list.append(getConfigListEntry(_("Widget in infobar:"), config.skin.cyberlcd.widgetinfobar))
+		section = _("Channel Selection")
+		list.append(getConfigListEntry(sep*(char-(len(section))/2) + tab + section + tab + sep*(char-(len(section))/2)))
+		list.append(getConfigListEntry(_("Widget in channel selection:"), config.skin.cyberlcd.widgetchannelselection))
 		return list
 
 	def keyLeft(self):
@@ -540,6 +555,8 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 			os.system("sed -i 's/%s/TemplatesDisplayProgressLayer/w' %sskin_user.xml" % (config.skin.cyberlcd.progressmode.value, skinlcd))
 	# widget infobar
 			os.system("sed -i 's/%s/TemplatesInfoBarDisplay/w' %sskin_user.xml" % (config.skin.cyberlcd.widgetinfobar.value, skinlcd))
+	# widget channel selection
+			os.system("sed -i 's/%s/TemplatesChannelSelectionDisplay/w' %sskin_user.xml" % (config.skin.cyberlcd.widgetchannelselection.value, skinlcd))
 	# end
 		except:
 			self.session.open(MessageBox, _("Error by processing !!!"), MessageBox.TYPE_ERROR)
@@ -573,7 +590,8 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 			if len(x) > 1:
 				self.setDefault(x[1])
 				x[1].save()
-		self.createSkin()
+		os.system("rm -f /etc/enigma2/skin_user.xml")
+		self.session.openWithCallback(self.restart, MessageBox,_("Do you want to restart the GUI now ?"), MessageBox.TYPE_YESNO)
 
 	def exit(self):
 		for x in self["config"].list:
