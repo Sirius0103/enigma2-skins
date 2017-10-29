@@ -65,31 +65,11 @@
   </screen>
   <!-- Setup CyberLCD -->
   <screen name="SetupCyberLCD" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
-    <!-- Up Layer -->
-    <eLabel position="0,88" size="1920,54" backgroundColor="background3" zPosition="-14" />
-    <eLabel position="0,90" size="1920,50" backgroundColor="background1" zPosition="-13" />
-    <!-- Down Layer -->
-    <eLabel position="0,888" size="1920,104" backgroundColor="background3" zPosition="-14" />
-    <eLabel position="0,890" size="1920,100" backgroundColor="background1" zPosition="-13" />
-    <!-- Picon Layer -->
-    <eLabel position="98,867" size="234,146" backgroundColor="background3" zPosition="-12" />
-    <eLabel position="100,869" size="230,142" backgroundColor="background2" zPosition="-11" />
-    <!-- Menu Layer -->
-    <eLabel position="78,188" size="1004,659" backgroundColor="background3" zPosition="-12" />
-    <eLabel position="80,190" size="1000,655" backgroundColor="background1" zPosition="-11" />
-    <!-- Layer Menu Left -->
-    <eLabel position="0,188" size="80,659" backgroundColor="background3" zPosition="-12" />
-    <eLabel position="0,190" size="80,655" backgroundColor="background1" zPosition="-11" />
-    <eLabel position="10,200" size="70,635" backgroundColor="background2" zPosition="-10" />
-    <eLabel text="C" position="10,205" size="70,70" font="Titles; 70" foregroundColor="background3" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="-9" />
-    <eLabel text="Y" position="10,275" size="70,70" font="Titles; 70" foregroundColor="background3" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="-9" />
-    <eLabel text="B" position="10,345" size="70,70" font="Titles; 70" foregroundColor="background3" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="-9" />
-    <eLabel text="E" position="10,415" size="70,70" font="Titles; 70" foregroundColor="background3" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="-9" />
-    <eLabel text="R" position="10,485" size="70,70" font="Titles; 70" foregroundColor="background3" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="-9" />
-    <eLabel text="L" position="10,625" size="70,70" font="Titles; 70" foregroundColor="background3" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="-9" />
-    <eLabel text="C" position="10,695" size="70,70" font="Titles; 70" foregroundColor="background3" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="-9" />
-    <eLabel text="D" position="10,765" size="70,70" font="Titles; 70" foregroundColor="background3" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="-9" />
-    <widget source="Title" render="Label" position="80,96" size="1500,44" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesMenu1000Layer" />
+    <panel name="TemplatesMenuLeftLayer" />
+    <eLabel text="¤" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <panel name="TemplatesTitle1" />
     <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget source="info_com" render="Label" position="340,895" size="1000,60" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
     <widget source="version_sk" render="Label" position="340,960" size="250,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="center" transparent="1" />
