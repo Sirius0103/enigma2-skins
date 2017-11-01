@@ -207,14 +207,12 @@
     </widget>
   </screen>
   <screen name="TemplatesChannelSelectionDisplayPicon">
-    <panel name="TemplatesChannelSelectionDisplayIndication" />
     <!-- Picon Layer -->
     <widget source="parent.ServiceEvent" render="Picon" position="130,0" size="220,132" zPosition="2" alphatest="blend">
       <convert type="ServiceName">Reference</convert>
     </widget>
   </screen>
   <screen name="TemplatesChannelSelectionDisplayClock">
-    <panel name="TemplatesChannelSelectionDisplayIndication" />
     <!-- Clock Layer -->
     <widget source="global.CurrentTime" render="Label" position="120,30" size="100,60" font="LCDIndication; 60" foregroundColor="LCDcolor1" halign="right" transparent="1">
       <convert type="ClockToText">Format:%H</convert>
@@ -249,6 +247,54 @@
       <convert type="ClockToText">Default</convert>
     </widget>
   </screen>
+  <!--  ########## Templates EPG Selection Display ########## -->
+  <screen name="TemplatesEPGSelectionDisplayName">
+    <!-- Name Layer -->
+    <widget source="parent.Service" render="Label" position="10,10" size="460,95" font="LCDTitles; 50" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+  </screen>
+  <screen name="TemplatesEPGSelectionDisplayPicon">
+    <!-- Picon Layer -->
+    <widget source="parent.Service" render="Picon" position="130,0" size="220,132" zPosition="2" alphatest="blend">
+      <convert type="ServiceName">Reference</convert>
+    </widget>
+  </screen>
+  <screen name="TemplatesEPGSelectionDisplayClock">
+    <!-- Clock Layer -->
+    <widget source="global.CurrentTime" render="Label" position="120,30" size="100,60" font="LCDIndication; 60" foregroundColor="LCDcolor1" halign="right" transparent="1">
+      <convert type="ClockToText">Format:%H</convert>
+    </widget>
+    <eLabel text=":" position="230,30" size="20,60" font="LCDIndication; 60" foregroundColor="LCDgray" halign="center" transparent="1" zPosition="-1" />
+    <widget source="global.CurrentTime" render="FixedLabel" text=":" position="230,30" size="20,60" font="LCDIndication; 60" foregroundColor="LCDcolor1" halign="center" transparent="1">
+      <convert type="AlwaysTrue">
+      </convert>
+      <convert type="ConditionalShowHide">Blink</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="260,30" size="100,60" font="LCDIndication; 60" foregroundColor="LCDcolor1" halign="left" transparent="1">
+      <convert type="ClockToText">Format:%M</convert>
+    </widget>
+  </screen>
+  <screen name="TemplatesEPGSelectionDisplayProgress">
+    <!-- Progress Layer -->
+    <panel name="TemplatesDisplayProgressLayerImproved" />
+    <widget source="parent.Event" render="Progress" position="5,240" size="470,20" foregroundColor="LCDbackground4" transparent="1" zPosition="2">
+      <convert type="EventTime">Progress</convert>
+    </widget>
+    <eLabel text="-" position="160,270" size="20,50" font="LCDIndication; 50" foregroundColor="LCDcolor4" halign="center" transparent="1" />
+    <widget source="parent.Event" render="Label" position="0,270" size="150,50" font="LCDIndication; 50" foregroundColor="LCDcolor4" halign="right" transparent="1">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="parent.Event" render="Label" position="320,270" size="150,50" font="LCDIndication; 50" foregroundColor="LCDcolor4" halign="right" transparent="1">
+      <convert type="EventTime">Remaining</convert>
+      <convert type="RemainingToText">InMinutes</convert>
+    </widget>
+    <widget source="parent.Event" render="Label" position="190,270" size="150,50" font="LCDIndication; 50" foregroundColor="LCDcolor4" halign="left" transparent="1">
+      <convert type="EventTime">EndTime</convert>
+      <convert type="ClockToText">Default</convert>
+    </widget>
+  </screen>
   <!-- # # # # # # # # # # Display Skins # # # # # # # # # #-->
   <!-- ########## InfoBar Display ########## -->
   <screen name="InfoBarSummary" position="0,0" size="480,320">
@@ -263,7 +309,7 @@
   <screen name="ChannelSelection_summary" position="0,0" size="480,320">
     <panel name="TemplatesDisplayLayer" />
     <panel name="TemplatesChannelSelectionDisplay" />
-    <widget source="parent.ServiceEvent" render="Label" position="10,130" size="460,100" font="LCDGlobal; 40" halign="center" valign="center" transparent="1">
+    <widget source="parent.ServiceEvent" render="Label" position="10,130" size="460,100" font="LCDGlobal; 40" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1">
       <convert type="EventName">Name</convert>
     </widget>
     <panel name="TemplatesChannelSelectionDisplayProgress" />
@@ -304,6 +350,72 @@
     <widget source="parent.Title" render="Label" position="10,10" size="460,95" font="LCDTitles; 50" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1" />
     <widget source="selected" render="Label" position="10,110" size="460,200" font="LCDGlobal; 40" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1" />
   </screen>
+  <!-- ########## EPG Selection ########## -->
+  <!-- EPG Screens -->
+  <screen name="EPGSelection_summary" position="0,0" size="480,320">
+    <panel name="TemplatesDisplayLayer" />
+    <panel name="TemplatesEPGSelectionDisplay" />
+    <widget source="parent.Event" render="Label" position="10,130" size="460,100" font="LCDGlobal; 40" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <panel name="TemplatesEPGSelectionDisplayProgress" />
+  </screen>
+  <!-- Quick EPG -->
+  <screen name="QuickEPG_summary" position="0,0" size="480,320">
+    <panel name="TemplatesDisplayLayer" />
+    <panel name="TemplatesEPGSelectionDisplay" />
+    <widget source="parent.Event" render="Label" position="10,130" size="460,100" font="LCDGlobal; 40" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <panel name="TemplatesEPGSelectionDisplayProgress" />
+  </screen>
+  <!-- Graphical EPG -->
+  <screen name="GraphicalEPG_summary" position="0,0" size="480,320">
+    <panel name="TemplatesDisplayLayer" />
+    <panel name="TemplatesEPGSelectionDisplay" />
+    <widget source="parent.Event" render="Label" position="10,130" size="460,100" font="LCDGlobal; 40" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <panel name="TemplatesEPGSelectionDisplayProgress" />
+  </screen>
+  <!-- Graphical EPG PIG -->
+  <screen name="GraphicalEPGPIG_summary" position="0,0" size="480,320">
+    <panel name="TemplatesDisplayLayer" />
+    <panel name="TemplatesEPGSelectionDisplay" />
+    <widget source="parent.Event" render="Label" position="10,130" size="460,100" font="LCDGlobal; 40" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <panel name="TemplatesEPGSelectionDisplayProgress" />
+  </screen>
+  <!-- Graphical InfoBar EPG -->
+  <screen name="GraphicalInfoBarEPG_summary" position="0,0" size="480,320">
+    <panel name="TemplatesDisplayLayer" />
+    <panel name="TemplatesEPGSelectionDisplay" />
+    <widget source="parent.Event" render="Label" position="10,130" size="460,100" font="LCDGlobal; 40" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <panel name="TemplatesEPGSelectionDisplayProgress" />
+  </screen>
+  <!-- EPG Selection Multi -->
+  <screen name="EPGSelectionMulti_summary" position="0,0" size="480,320">
+    <panel name="TemplatesDisplayLayer" />
+    <panel name="TemplatesEPGSelectionDisplay" />
+    <widget source="parent.Event" render="Label" position="10,130" size="460,100" font="LCDGlobal; 40" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <panel name="TemplatesEPGSelectionDisplayProgress" />
+  </screen>
+  <!-- ########## Event View ########## -->
+  <!-- Event View -->
+  <screen name="EventView_summary" position="0,0" size="480,320">
+    <widget source="parent.Title" position="10,10" size="460,95" font="LCDTitles; 50" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1" />
+    <widget source="parent.summary_description" render="Label" position="10,110" size="460,200" font="LCDGlobal; 40" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1" />
+  </screen>
+  <!-- Event View Simple -->
+  <screen name="EventViewSimple_summary" position="0,0" size="480,320">
+    <widget source="parent.Title" position="10,10" size="460,95" font="LCDTitles; 50" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1" />
+    <widget source="parent.summary_description" render="Label" position="10,110" size="460,200" font="LCDGlobal; 40" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1" />
+  </screen>
   <!-- ########## Menu ########## -->
   <screen name="MenuSummary" position="0,0" size="480,320">
     <panel name="TemplatesDisplayLayer" />
@@ -323,6 +435,17 @@
   <screen name="SimpleSummary" position="0,0" size="480,320">
     <panel name="TemplatesDisplayLayer" />
     <widget source="SetupEntry" render="Label" position="10,10" size="460,100" font="LCDGlobal; 40" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1" />
+  </screen>
+  <!-- ########## About ########## -->
+  <screen name="AboutSummary" position="0,0" size="480,320">
+    <widget source="AboutText" render="Label" position="10,10" size="460,300" font="LCDGlobal; 20" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1" />
+  </screen>
+  <!-- ########## Plugin browser ########## -->
+  <screen name="PluginBrowserSummary" position="0,0" size="480,320">
+    <panel name="TemplatesDisplayLayer" />
+    <widget source="parent.Title" render="Label" position="10,10" size="460,95" font="LCDTitles; 50" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1" />
+    <widget source="entry" render="Label" position="10,110" size="460,100" font="LCDGlobal; 40" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1" />
+    <widget source="desc" render="Label" position="10,215" size="460,100" font="LCDGlobal; 40" foregroundColor="LCDcolor3" halign="center" valign="center" transparent="1" />
   </screen>
   <!-- ########## Choice Box ########## -->
   <screen name="ChoiceBox_summary" position="0,0" size="480,320">
@@ -364,32 +487,24 @@
       <convert type="ClockToText">Format:%d.%m.%Y</convert>
     </widget>
   </screen>
-  <!-- Plugin browser -->
-  <screen name="PluginBrowserSummary" position="0,0" size="96,64">
-    <panel name="TemplatesDisplayLayer" />
-    <widget source="parent.Title" render="Label" position="0,4" size="96,16" font="LCDGlobal;12" noWrap="1" />
-    <widget source="entry" render="Label" position="0,16" size="96,20" font="LCDGlobal;18" noWrap="1" />
-    <widget source="desc" render="Label" position="0,36" size="96,28" font="LCDGlobal;12" valign="top" />
-  </screen>
-  <screen name="WizardSummary" position="fill">
-    <widget source="text" render="Label" position="top" size="*,16" font="LCDGlobal;16" />
-    <widget source="parent.list" render="Label" position="fill" font="LCDGlobal;12">
+  <!-- ########## Wizard ########## -->
+  <!-- Wizard -->
+  <screen name="WizardSummary" position="0,0" size="480,320">
+    <widget source="text" render="Label" position="10,10" size="460,95" font="LCDTitles; 50" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1" />
+    <widget source="parent.list" render="Label" position="10,110" size="460,200" font="LCDGlobal; 40" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1">
       <convert type="StringListSelection" />
     </widget>
   </screen>
-  <screen name="VideoWizardSummary" position="fill">
-    <widget name="text" position="top" size="*,40" font="LCDGlobal;12" transparent="1" />
-    <widget source="parent.list" render="Label" position="fill" font="LCDGlobal;14">
-      <convert type="StringListSelection" />
-    </widget>
+  <!-- Language Wizard -->
+  <screen name="LanguageWizardSummary" position="0,0" size="480,320">
+    <widget source="parent.summarytext" render="Label" position="10,10" size="460,95" font="LCDTitles; 50" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1" />
+    <widget source="parent.summarylangname" render="Label" position="10,110" size="460,200" font="LCDGlobal; 40" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1" />
   </screen>
-  <!-- JobView Summary -->
-  <screen name="JobView_summary" position="0,0" size="96,64">
-    <widget source="parent.summary_job_name" render="Label" position="0,4" size="96,42" font="LCDGlobal;16" />
-    <widget source="parent.summary_job_task" render="Label" position="0,22" size="96,26" font="LCDGlobal;12" />
-    <widget source="parent.summary_job_progress" render="Progress" position="0,50" size="60,12" borderWidth="1" zPosition="1" />
-    <widget source="parent.summary_job_progress" render="Label" position="60,50" size="40,12" font="LCDGlobal;12" zPosition="2" halign="center" transparent="1">
-      <convert type="ProgressToText" />
+  <!-- Video Wizard -->
+  <screen name="VideoWizardSummary" position="0,0" size="480,320">
+    <widget name="text" render="Label" position="10,10" size="460,95" font="LCDTitles; 50" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1" />
+    <widget source="parent.list" render="Label" position="10,110" size="460,200" font="LCDGlobal; 40" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1">
+      <convert type="StringListSelection" />
     </widget>
   </screen>
 </skin>

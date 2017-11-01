@@ -266,6 +266,16 @@ else:
 		("TemplatesChannelSelectionDisplayPicon", _("Picon")),
 		("TemplatesChannelSelectionDisplayClock", _("Clock"))]
 
+if not fileExists("/usr/lib/enigma2/python/Components/Converter/AlwaysTrue.py"):
+	widgetepgselection = [
+		("TemplatesEPGSelectionDisplayName", _("Name")),
+		("TemplatesEPGSelectionDisplayPicon", _("Picon"))]
+else:
+	widgetepgselection = [
+		("TemplatesEPGSelectionDisplayName", _("Name")),
+		("TemplatesEPGSelectionDisplayPicon", _("Picon")),
+		("TemplatesEPGSelectionDisplayClock", _("Clock"))]
+
 config.skin.cyberlcd = ConfigSubsection()
 config.skin.cyberlcd.fonts = ConfigSelection(default="Roboto-Regular", choices = fonts)
 
@@ -296,6 +306,8 @@ config.skin.cyberlcd.progressmode = ConfigSelection(default="TemplatesDisplayPro
 config.skin.cyberlcd.widgetinfobar = ConfigSelection(default="TemplatesInfoBarDisplayName", choices = widgetinfobar)
 
 config.skin.cyberlcd.widgetchannelselection = ConfigSelection(default="TemplatesChannelSelectionDisplayName", choices = widgetchannelselection)
+
+config.skin.cyberlcd.widgetepgselection = ConfigSelection(default="TemplatesEPGSelectionDisplayName", choices = widgetepgselection)
 
 SKIN_CYBERLCD = """
 	<!-- Setup CyberLCD -->
@@ -452,6 +464,9 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 		section = _("Channel Selection")
 		list.append(getConfigListEntry(sep*(char-(len(section))/2) + tab + section + tab + sep*(char-(len(section))/2)))
 		list.append(getConfigListEntry(_("Widget in channel selection:"), config.skin.cyberlcd.widgetchannelselection))
+		section = _("EPG Selection")
+		list.append(getConfigListEntry(sep*(char-(len(section))/2) + tab + section + tab + sep*(char-(len(section))/2)))
+		list.append(getConfigListEntry(_("Widget in channel selection:"), config.skin.cyberlcd.widgetepgselection))
 		return list
 
 	def keyLeft(self):
@@ -557,6 +572,8 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 			os.system("sed -i 's/%s/TemplatesInfoBarDisplay/w' %sskin_user.xml" % (config.skin.cyberlcd.widgetinfobar.value, skinlcd))
 	# widget channel selection
 			os.system("sed -i 's/%s/TemplatesChannelSelectionDisplay/w' %sskin_user.xml" % (config.skin.cyberlcd.widgetchannelselection.value, skinlcd))
+	# widget epg selection
+			os.system("sed -i 's/%s/TemplatesEPGSelectionDisplay/w' %sskin_user.xml" % (config.skin.cyberlcd.widgetepgselection.value, skinlcd))
 	# end
 		except:
 			self.session.open(MessageBox, _("Error by processing !!!"), MessageBox.TYPE_ERROR)
