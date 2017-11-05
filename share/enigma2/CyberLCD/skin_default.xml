@@ -199,6 +199,68 @@
       <convert type="ConditionalShowHide" />
     </widget>
   </screen>
+  <!--  ########## Templates Movie InfoBar Display ########## -->
+  <screen name="TemplatesMovieInfoBarDisplayName">
+    <panel name="TemplatesMovieInfoBarDisplayIndication" />
+  </screen>
+  <screen name="TemplatesMovieInfoBarDisplayClock">
+    <panel name="TemplatesMovieInfoBarDisplayIndication" />
+    <!-- Clock Layer -->
+    <widget source="global.CurrentTime" render="Label" position="120,30" size="100,60" font="LCDIndication; 60" foregroundColor="LCDcolor1" halign="right" transparent="1">
+      <convert type="ClockToText">Format:%H</convert>
+    </widget>
+    <eLabel text=":" position="230,30" size="20,60" font="LCDIndication; 60" foregroundColor="LCDgray" halign="center" transparent="1" zPosition="-1" />
+    <widget source="global.CurrentTime" render="FixedLabel" text=":" position="230,30" size="20,60" font="LCDIndication; 60" foregroundColor="LCDcolor1" halign="center" transparent="1">
+      <convert type="AlwaysTrue">
+      </convert>
+      <convert type="ConditionalShowHide">Blink</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="260,30" size="100,60" font="LCDIndication; 60" foregroundColor="LCDcolor1" halign="left" transparent="1">
+      <convert type="ClockToText">Format:%M</convert>
+    </widget>
+  </screen>
+  <screen name="TemplatesMovieInfoBarDisplayProgress">
+    <!-- Progress Layer -->
+    <panel name="TemplatesDisplayProgressLayerImproved" />
+    <widget source="session.CurrentService" render="Progress" position="5,240" size="470,20" foregroundColor="LCDbackground4" transparent="1" zPosition="2">
+      <convert type="ServicePosition">Position</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="10,270" size="200,50" font="LCDIndication; 50" foregroundColor="LCDcolor4" halign="left" transparent="1">
+      <convert type="ServicePosition">Length</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="270,270" size="200,50" font="LCDIndication; 50" foregroundColor="LCDcolor4" halign="right" transparent="1">
+      <convert type="ServicePosition">Position</convert>
+    </widget>
+  </screen>
+  <screen name="TemplatesMovieInfoBarDisplayIndication">
+    <!-- Indication Layer -->
+    <eLabel text="SUB" position="10,60" size="110,50" font="LCDIndication; 50" foregroundColor="LCDgray" backgroundColor="LCDbackground" transparent="1" halign="left" />
+    <widget source="session.CurrentService" render="FixedLabel" text="SUB" position="10,60" size="110,50" font="LCDIndication; 50" foregroundColor="LCDcolor4" backgroundColor="LCDbackground" transparent="1" zPosition="3" halign="left">
+      <convert type="ServiceInfo">SubservicesAvailable</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <eLabel text="REC" position="10,10" size="110,50" font="LCDIndication; 50" foregroundColor="LCDgray" backgroundColor="LCDbackground" transparent="1" halign="left" />
+    <widget source="session.RecordState" render="FixedLabel" text="REC" position="10,10" size="110,50" font="LCDIndication; 50" foregroundColor="LCDred" backgroundColor="LCDbackground" transparent="1" zPosition="3" halign="left">
+      <convert type="ConditionalShowHide">Blink</convert>
+    </widget>
+    <eLabel text="SD" position="390,60" size="80,50" font="LCDIndication; 50" foregroundColor="LCDgray" backgroundColor="LCDbackground" transparent="1" halign="right" />
+    <widget source="session.CurrentService" render="FixedLabel" text="SD" position="390,60" size="80,50" font="LCDIndication; 50" foregroundColor="LCDcolor4" backgroundColor="LCDbackground" transparent="1" zPosition="3" halign="right">
+      <convert type="ServiceInfo">VideoWidth</convert>
+      <convert type="ValueRange">0,720</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <eLabel text="UHD" position="360,10" size="110,50" font="LCDIndication; 50" foregroundColor="LCDgray" backgroundColor="LCDbackground" transparent="1" halign="right" />
+    <widget source="session.CurrentService" render="FixedLabel" text="HD" position="390,10" size="80,50" font="LCDIndication; 50" foregroundColor="LCDcolor4" backgroundColor="LCDbackground" transparent="1" zPosition="3" halign="right">
+      <convert type="ServiceInfo">VideoWidth</convert>
+      <convert type="ValueRange">721,1980</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="FixedLabel" text="UHD" position="360,10" size="110,50" font="LCDIndication; 50" foregroundColor="LCDcolor4" backgroundColor="LCDbackground" transparent="1" zPosition="3" halign="right">
+      <convert type="ServiceInfo">VideoWidth</convert>
+      <convert type="ValueRange">1981,3840</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+  </screen>
   <!--  ########## Templates Channel Selection Display ########## -->
   <screen name="TemplatesChannelSelectionDisplayName">
     <!-- Name Layer -->
@@ -305,6 +367,15 @@
     </widget>
     <panel name="TemplatesInfoBarDisplayProgress" />
   </screen>
+  <!-- ########## InfoBar MoviePlayer ########## -->
+  <screen name="InfoBarMoviePlayerSummary" position="0,0" size="480,320">
+    <panel name="TemplatesDisplayLayer" />
+    <panel name="TemplatesMovieInfoBarDisplay" />
+    <widget source="session.CurrentService" render="Label" position="10,130" size="460,100" font="LCDGlobal; 40" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+    <panel name="TemplatesMovieInfoBarDisplayProgress" />
+  </screen>
   <!-- ########## Channel Selection ########## -->
   <screen name="ChannelSelection_summary" position="0,0" size="480,320">
     <panel name="TemplatesDisplayLayer" />
@@ -319,24 +390,6 @@
     <panel name="TemplatesDisplayLayer" />
     <widget source="parent.Title" render="Label" position="10,10" size="460,95" font="LCDTitles; 50" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1" />
     <widget source="selected" render="Label" position="10,110" size="460,200" font="LCDGlobal; 40" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1" />
-  </screen>
-  <!-- ########## InfoBar MoviePlayer ########## -->
-  <screen name="InfoBarMoviePlayerSummary" position="0,0" size="480,320">
-    <panel name="TemplatesDisplayLayer" />
-    <widget source="session.CurrentService" render="Label" position="10,10" size="460,220" font="LCDGlobal; 40" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1">
-      <convert type="ServiceName">Name</convert>
-    </widget>
-    <!-- Progress Layer -->
-    <panel name="TemplatesDisplayProgressLayerImproved" />
-    <widget source="session.CurrentService" render="Progress" position="5,240" size="470,20" foregroundColor="LCDbackground4" transparent="1" zPosition="2">
-      <convert type="ServicePosition">Position</convert>
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="10,270" size="200,50" font="LCDIndication; 50" foregroundColor="LCDcolor4" halign="left" transparent="1">
-      <convert type="ServicePosition">Length</convert>
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="270,270" size="200,50" font="LCDIndication; 50" foregroundColor="LCDcolor4" halign="right" transparent="1">
-      <convert type="ServicePosition">Position</convert>
-    </widget>
   </screen>
   <!-- ########## Movie Selection ########## -->
   <screen name="MovieSelectionSummary" position="0,0" size="480,320">

@@ -257,6 +257,14 @@ else:
 		("TemplatesInfoBarDisplayClock", _("Clock"))]
 
 if not fileExists("/usr/lib/enigma2/python/Components/Converter/AlwaysTrue.py"):
+	widgetmovieinfobar = [
+		("TemplatesMovieInfoBarDisplayName", _("Name"))]
+else:
+	widgetmovieinfobar = [
+		("TemplatesMovieInfoBarDisplayName", _("Name")),
+		("TemplatesMovieInfoBarDisplayClock", _("Clock"))]
+
+if not fileExists("/usr/lib/enigma2/python/Components/Converter/AlwaysTrue.py"):
 	widgetchannelselection = [
 		("TemplatesChannelSelectionDisplayName", _("Name")),
 		("TemplatesChannelSelectionDisplayPicon", _("Picon"))]
@@ -304,6 +312,8 @@ config.skin.cyberlcd.foregroundtransparent = ConfigSelection(default="0", choice
 config.skin.cyberlcd.progressmode = ConfigSelection(default="TemplatesDisplayProgressLayerStandard", choices = progressmode)
 
 config.skin.cyberlcd.widgetinfobar = ConfigSelection(default="TemplatesInfoBarDisplayName", choices = widgetinfobar)
+
+config.skin.cyberlcd.widgetmovieinfobar = ConfigSelection(default="TemplatesMovieInfoBarDisplayName", choices = widgetmovieinfobar)
 
 config.skin.cyberlcd.widgetchannelselection = ConfigSelection(default="TemplatesChannelSelectionDisplayName", choices = widgetchannelselection)
 
@@ -461,6 +471,9 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 		section = _("Infobar")
 		list.append(getConfigListEntry(sep*(char-(len(section))/2) + tab + section + tab + sep*(char-(len(section))/2)))
 		list.append(getConfigListEntry(_("Widget in infobar:"), config.skin.cyberlcd.widgetinfobar))
+		section = _("Movie Infobar")
+		list.append(getConfigListEntry(sep*(char-(len(section))/2) + tab + section + tab + sep*(char-(len(section))/2)))
+		list.append(getConfigListEntry(_("Widget in movieinfobar:"), config.skin.cyberlcd.widgetmovieinfobar))
 		section = _("Channel Selection")
 		list.append(getConfigListEntry(sep*(char-(len(section))/2) + tab + section + tab + sep*(char-(len(section))/2)))
 		list.append(getConfigListEntry(_("Widget in channel selection:"), config.skin.cyberlcd.widgetchannelselection))
@@ -570,6 +583,8 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 			os.system("sed -i 's/%s/TemplatesDisplayProgressLayer/w' %sskin_user.xml" % (config.skin.cyberlcd.progressmode.value, skinlcd))
 	# widget infobar
 			os.system("sed -i 's/%s/TemplatesInfoBarDisplay/w' %sskin_user.xml" % (config.skin.cyberlcd.widgetinfobar.value, skinlcd))
+	# widget movie infobar
+			os.system("sed -i 's/%s/TemplatesMovieInfoBarDisplay/w' %sskin_user.xml" % (config.skin.cyberlcd.widgetmovieinfobar.value, skinlcd))
 	# widget channel selection
 			os.system("sed -i 's/%s/TemplatesChannelSelectionDisplay/w' %sskin_user.xml" % (config.skin.cyberlcd.widgetchannelselection.value, skinlcd))
 	# widget epg selection
