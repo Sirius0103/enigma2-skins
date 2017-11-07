@@ -54,6 +54,21 @@
     <!-- Templates Display -->
     <eLabel position="0,0" size="480,320" backgroundColor="LCDbackground1" zPosition="-10" />
   </screen>
+  <screen name="TemplatesDisplayClock">
+    <!-- Clock Layer -->
+    <widget source="global.CurrentTime" render="Label" position="120,30" size="100,60" font="LCDIndication; 60" foregroundColor="LCDcolor1" halign="right" transparent="1">
+      <convert type="ClockToText">Format:%H</convert>
+    </widget>
+    <eLabel text=":" position="230,30" size="20,60" font="LCDIndication; 60" foregroundColor="LCDgray" halign="center" transparent="1" zPosition="-1" />
+    <widget source="global.CurrentTime" render="FixedLabel" text=":" position="230,30" size="20,60" font="LCDIndication; 60" foregroundColor="LCDcolor1" halign="center" transparent="1">
+      <convert type="AlwaysTrue">
+      </convert>
+      <convert type="ConditionalShowHide">Blink</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="260,30" size="100,60" font="LCDIndication; 60" foregroundColor="LCDcolor1" halign="left" transparent="1">
+      <convert type="ClockToText">Format:%M</convert>
+    </widget>
+  </screen>
   <!--  ########## Templates Progress Layer ########## -->
   <screen name="TemplatesDisplayProgressLayerDefault">
     <!-- Templates Progress -->
@@ -135,20 +150,9 @@
     </widget>
   </screen>
   <screen name="TemplatesInfoBarDisplayClock">
-    <panel name="TemplatesInfoBarDisplayIndication" />
     <!-- Clock Layer -->
-    <widget source="global.CurrentTime" render="Label" position="120,30" size="100,60" font="LCDIndication; 60" foregroundColor="LCDcolor1" halign="right" transparent="1">
-      <convert type="ClockToText">Format:%H</convert>
-    </widget>
-    <eLabel text=":" position="230,30" size="20,60" font="LCDIndication; 60" foregroundColor="LCDgray" halign="center" transparent="1" zPosition="-1" />
-    <widget source="global.CurrentTime" render="FixedLabel" text=":" position="230,30" size="20,60" font="LCDIndication; 60" foregroundColor="LCDcolor1" halign="center" transparent="1">
-      <convert type="AlwaysTrue">
-      </convert>
-      <convert type="ConditionalShowHide">Blink</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="260,30" size="100,60" font="LCDIndication; 60" foregroundColor="LCDcolor1" halign="left" transparent="1">
-      <convert type="ClockToText">Format:%M</convert>
-    </widget>
+    <panel name="TemplatesDisplayClock" />
+    <panel name="TemplatesInfoBarDisplayIndication" />
   </screen>
   <screen name="TemplatesInfoBarDisplayProgress">
     <!-- Progress Layer -->
@@ -204,20 +208,9 @@
     <panel name="TemplatesMovieInfoBarDisplayIndication" />
   </screen>
   <screen name="TemplatesMovieInfoBarDisplayClock">
-    <panel name="TemplatesMovieInfoBarDisplayIndication" />
     <!-- Clock Layer -->
-    <widget source="global.CurrentTime" render="Label" position="120,30" size="100,60" font="LCDIndication; 60" foregroundColor="LCDcolor1" halign="right" transparent="1">
-      <convert type="ClockToText">Format:%H</convert>
-    </widget>
-    <eLabel text=":" position="230,30" size="20,60" font="LCDIndication; 60" foregroundColor="LCDgray" halign="center" transparent="1" zPosition="-1" />
-    <widget source="global.CurrentTime" render="FixedLabel" text=":" position="230,30" size="20,60" font="LCDIndication; 60" foregroundColor="LCDcolor1" halign="center" transparent="1">
-      <convert type="AlwaysTrue">
-      </convert>
-      <convert type="ConditionalShowHide">Blink</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="260,30" size="100,60" font="LCDIndication; 60" foregroundColor="LCDcolor1" halign="left" transparent="1">
-      <convert type="ClockToText">Format:%M</convert>
-    </widget>
+    <panel name="TemplatesDisplayClock" />
+    <panel name="TemplatesMovieInfoBarDisplayIndication" />
   </screen>
   <screen name="TemplatesMovieInfoBarDisplayProgress">
     <!-- Progress Layer -->
@@ -276,18 +269,7 @@
   </screen>
   <screen name="TemplatesChannelSelectionDisplayClock">
     <!-- Clock Layer -->
-    <widget source="global.CurrentTime" render="Label" position="120,30" size="100,60" font="LCDIndication; 60" foregroundColor="LCDcolor1" halign="right" transparent="1">
-      <convert type="ClockToText">Format:%H</convert>
-    </widget>
-    <eLabel text=":" position="230,30" size="20,60" font="LCDIndication; 60" foregroundColor="LCDgray" halign="center" transparent="1" zPosition="-1" />
-    <widget source="global.CurrentTime" render="FixedLabel" text=":" position="230,30" size="20,60" font="LCDIndication; 60" foregroundColor="LCDcolor1" halign="center" transparent="1">
-      <convert type="AlwaysTrue">
-      </convert>
-      <convert type="ConditionalShowHide">Blink</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="260,30" size="100,60" font="LCDIndication; 60" foregroundColor="LCDcolor1" halign="left" transparent="1">
-      <convert type="ClockToText">Format:%M</convert>
-    </widget>
+    <panel name="TemplatesDisplayClock" />
   </screen>
   <screen name="TemplatesChannelSelectionDisplayProgress">
     <!-- Progress Layer -->
@@ -324,18 +306,7 @@
   </screen>
   <screen name="TemplatesEPGSelectionDisplayClock">
     <!-- Clock Layer -->
-    <widget source="global.CurrentTime" render="Label" position="120,30" size="100,60" font="LCDIndication; 60" foregroundColor="LCDcolor1" halign="right" transparent="1">
-      <convert type="ClockToText">Format:%H</convert>
-    </widget>
-    <eLabel text=":" position="230,30" size="20,60" font="LCDIndication; 60" foregroundColor="LCDgray" halign="center" transparent="1" zPosition="-1" />
-    <widget source="global.CurrentTime" render="FixedLabel" text=":" position="230,30" size="20,60" font="LCDIndication; 60" foregroundColor="LCDcolor1" halign="center" transparent="1">
-      <convert type="AlwaysTrue">
-      </convert>
-      <convert type="ConditionalShowHide">Blink</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="260,30" size="100,60" font="LCDIndication; 60" foregroundColor="LCDcolor1" halign="left" transparent="1">
-      <convert type="ClockToText">Format:%M</convert>
-    </widget>
+    <panel name="TemplatesDisplayClock" />
   </screen>
   <screen name="TemplatesEPGSelectionDisplayProgress">
     <!-- Progress Layer -->
@@ -355,6 +326,71 @@
     <widget source="parent.Event" render="Label" position="190,270" size="150,50" font="LCDIndication; 50" foregroundColor="LCDcolor4" halign="left" transparent="1">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Default</convert>
+    </widget>
+  </screen>
+  <!--  ########## Templates Standby Display ########## -->
+  <screen name="TemplatesStandbyDisplayClockDefaut">
+    <!-- Clock Layer -->
+    <widget source="global.CurrentTime" render="Label" position="10,100" size="200,120" font="LCDIndication; 120" foregroundColor="LCDcolor1" halign="right" transparent="1">
+      <convert type="ClockToText">Format:%H</convert>
+    </widget>
+    <eLabel text=":" position="220,100" size="40,120" font="LCDIndication; 120" foregroundColor="LCDcolor1" halign="center" transparent="1" zPosition="-1" />
+    <widget source="global.CurrentTime" render="Label" position="270,100" size="200,120" font="LCDIndication; 120" foregroundColor="LCDcolor1" halign="left" transparent="1">
+      <convert type="ClockToText">Format:%M</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="10,30" size="460,40" font="LCDTitles; 35" foregroundColor="LCDcolor2" halign="center" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="10,250" size="460,40" font="LCDTitles; 35" foregroundColor="LCDcolor2" halign="center" transparent="1">
+      <convert type="ClockToText">Format:%d.%m.%Y</convert>
+    </widget>
+  </screen>
+  <screen name="TemplatesStandbyDisplayClockStyle">
+    <!-- Clock Layer -->
+    <widget source="global.CurrentTime" render="Label" position="10,100" size="200,120" font="LCDIndication; 120" foregroundColor="LCDcolor1" halign="right" transparent="1">
+      <convert type="ClockToText">Format:%H</convert>
+    </widget>
+    <eLabel text=":" position="220,100" size="40,120" font="LCDIndication; 120" foregroundColor="LCDgray" halign="center" transparent="1" zPosition="-1" />
+    <widget source="global.CurrentTime" render="FixedLabel" text=":" position="220,100" size="40,120" font="LCDIndication; 120" foregroundColor="LCDcolor1" halign="center" transparent="1">
+      <convert type="AlwaysTrue">
+      </convert>
+      <convert type="ConditionalShowHide">Blink</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="270,100" size="200,120" font="LCDIndication; 120" foregroundColor="LCDcolor1" halign="left" transparent="1">
+      <convert type="ClockToText">Format:%M</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="10,30" size="460,40" font="LCDTitles; 35" foregroundColor="LCDcolor2" halign="center" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="10,250" size="460,40" font="LCDTitles; 35" foregroundColor="LCDcolor2" halign="center" transparent="1">
+      <convert type="ClockToText">Format:%d.%m.%Y</convert>
+    </widget>
+  </screen>
+  <screen name="TemplatesStandbyDisplayWeather">
+    <!-- Clock Layer -->
+    <panel name="TemplatesDisplayClock" />
+    <!-- Weather Layer -->
+    <widget source="session.CurrentService" render="Label" position="10,95" size="460,80" font="LCDTitles; 30" foregroundColor="LCDcolor1" halign="center" transparent="1">
+      <convert type="MSNWeather2">Location</convert>
+    </widget>
+    <widget source="session.CurrentService" render="PiconUni" path="CyberFHD/msnweather" position="10,185" size="128,128" zPosition="2" alphatest="blend">
+      <convert type="MSNWeather2">Picon</convert>
+    </widget>
+    <eLabel text="Temperature:" position="150,180" size="180,30" font="LCDGlobal; 25" foregroundColor="LCDcolor2" halign="left" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="290,180" size="180,30" font="LCDIndication; 30" foregroundColor="LCDcolor4" halign="right" transparent="1">
+      <convert type="MSNWeather2">Temp</convert>
+    </widget>
+    <eLabel text="Feelslike:" position="150,215" size="180,30" font="LCDGlobal; 25" foregroundColor="LCDcolor2" halign="left" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="290,215" size="180,30" font="LCDIndication; 30" foregroundColor="LCDcolor4" halign="right" transparent="1">
+      <convert type="MSNWeather2">Feelslike</convert>
+    </widget>
+    <eLabel text="Wind:" position="150,250" size="180,30" font="LCDGlobal; 25" foregroundColor="LCDcolor2" halign="left" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="290,250" size="180,30" font="LCDIndication; 30" foregroundColor="LCDcolor4" halign="right" transparent="1">
+      <convert type="MSNWeather2">Windspeed</convert>
+    </widget>
+    <eLabel text="Humidity:" position="150,285" size="180,30" font="LCDGlobal; 25" foregroundColor="LCDcolor2" halign="left" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="290,285" size="180,30" font="LCDIndication; 30" foregroundColor="LCDcolor4" halign="right" transparent="1">
+      <convert type="MSNWeather2">Humidity</convert>
     </widget>
   </screen>
   <!-- # # # # # # # # # # Display Skins # # # # # # # # # #-->
@@ -521,24 +557,7 @@
   <!-- ########## Standby ########## -->
   <screen name="StandbySummary" position="0,0" size="480,320">
     <panel name="TemplatesDisplayLayer" />
-    <widget source="global.CurrentTime" render="Label" position="10,100" size="200,120" font="LCDIndication; 120" foregroundColor="LCDcolor1" halign="right" transparent="1">
-      <convert type="ClockToText">Format:%H</convert>
-    </widget>
-    <eLabel text=":" position="220,100" size="40,120" font="LCDIndication; 120" foregroundColor="LCDgray" halign="center" transparent="1" zPosition="-1" />
-    <widget source="global.CurrentTime" render="FixedLabel" text=":" position="220,100" size="40,120" font="LCDIndication; 120" foregroundColor="LCDcolor1" halign="center" transparent="1">
-      <convert type="AlwaysTrue">
-      </convert>
-      <convert type="ConditionalShowHide">Blink</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="270,100" size="200,120" font="LCDIndication; 120" foregroundColor="LCDcolor1" halign="left" transparent="1">
-      <convert type="ClockToText">Format:%M</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="10,30" size="460,40" font="LCDTitles; 35" halign="center" transparent="1">
-      <convert type="ClockToText">Format:%A</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="10,250" size="460,40" font="LCDTitles; 35" halign="center" transparent="1">
-      <convert type="ClockToText">Format:%d.%m.%Y</convert>
-    </widget>
+    <panel name="TemplatesStandbyDisplay" />
   </screen>
   <!-- ########## Wizard ########## -->
   <!-- Wizard -->

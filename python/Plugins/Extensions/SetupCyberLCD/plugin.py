@@ -284,6 +284,16 @@ else:
 		("TemplatesEPGSelectionDisplayPicon", _("Picon")),
 		("TemplatesEPGSelectionDisplayClock", _("Clock"))]
 
+if not fileExists("/usr/lib/enigma2/python/Components/Converter/AlwaysTrue.py")\
+	or not fileExists("/usr/lib/enigma2/python/Components/Converter/MSNWeather2.py")\
+	or not fileExists("/usr/lib/enigma2/python/Components/Renderer/PiconUni.py"):
+	widgetstandby = [
+		("TemplatesStandbyDisplayClockDefaut", _("Clock"))]
+else:
+	widgetstandby = [
+		("TemplatesStandbyDisplayClockStyle", _("Clock")),
+		("TemplatesStandbyDisplayWeather", _("Weather"))]
+
 config.skin.cyberlcd = ConfigSubsection()
 config.skin.cyberlcd.fonts = ConfigSelection(default="Roboto-Regular", choices = fonts)
 
@@ -318,6 +328,8 @@ config.skin.cyberlcd.widgetmovieinfobar = ConfigSelection(default="TemplatesMovi
 config.skin.cyberlcd.widgetchannelselection = ConfigSelection(default="TemplatesChannelSelectionDisplayName", choices = widgetchannelselection)
 
 config.skin.cyberlcd.widgetepgselection = ConfigSelection(default="TemplatesEPGSelectionDisplayName", choices = widgetepgselection)
+
+config.skin.cyberlcd.widgetstandby = ConfigSelection(default="TemplatesStandbyDisplayClockDefaut", choices = widgetstandby)
 
 SKIN_CYBERLCD = """
 	<!-- Setup CyberLCD -->
@@ -479,7 +491,10 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 		list.append(getConfigListEntry(_("Widget in channel selection:"), config.skin.cyberlcd.widgetchannelselection))
 		section = _("EPG Selection")
 		list.append(getConfigListEntry(sep*(char-(len(section))/2) + tab + section + tab + sep*(char-(len(section))/2)))
-		list.append(getConfigListEntry(_("Widget in channel selection:"), config.skin.cyberlcd.widgetepgselection))
+		list.append(getConfigListEntry(_("Widget in EPG selection:"), config.skin.cyberlcd.widgetepgselection))
+		section = _("Standby")
+		list.append(getConfigListEntry(sep*(char-(len(section))/2) + tab + section + tab + sep*(char-(len(section))/2)))
+		list.append(getConfigListEntry(_("Widget in standby:"), config.skin.cyberlcd.widgetstandby))
 		return list
 
 	def keyLeft(self):
@@ -558,7 +573,8 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 		if fileExists("/usr/lib/enigma2/python/Plugins/Extensions/WeatherMSN/plugin.pyo")\
 			and not fileExists("/usr/lib/enigma2/python/Components/Converter/MSNWeather2.py"):
 			self["info_com"] = StaticText(_("No install components skin !!! \nPress blue button to install !!!"))
-		elif not fileExists("/usr/lib/enigma2/python/Components/Converter/AlwaysTrue.py"):
+		elif not fileExists("/usr/lib/enigma2/python/Components/Converter/AlwaysTrue.py")\
+			or not fileExists("/usr/lib/enigma2/python/Components/Renderer/PiconUni.py"):
 			self["info_com"] = StaticText(_("No install components skin !!! \nPress blue button to install !!!"))
 		else:
 			self["info_com"] = StaticText(_(" "))
@@ -589,6 +605,8 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 			os.system("sed -i 's/%s/TemplatesChannelSelectionDisplay/w' %sskin_user.xml" % (config.skin.cyberlcd.widgetchannelselection.value, skinlcd))
 	# widget epg selection
 			os.system("sed -i 's/%s/TemplatesEPGSelectionDisplay/w' %sskin_user.xml" % (config.skin.cyberlcd.widgetepgselection.value, skinlcd))
+	# widget standby
+			os.system("sed -i 's/%s/TemplatesStandbyDisplay/w' %sskin_user.xml" % (config.skin.cyberlcd.widgetstandby.value, skinlcd))
 	# end
 		except:
 			self.session.open(MessageBox, _("Error by processing !!!"), MessageBox.TYPE_ERROR)
@@ -603,6 +621,8 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 			os.system("cp %sSetupCyberLCD/components/AlwaysTrue.py %sConverter/AlwaysTrue.py" % (pluginpath, componentspath))
 
 			os.system("cp %sWeatherMSN/components/MSNWeather2.py %sConverter/MSNWeather2.py" % (pluginpath, componentspath))
+	# install renderer
+			os.system("cp %sSetupCyberLCD/components/PiconUni.py %sRenderer/PiconUni.py" % (pluginpath, componentspath))
 	# end
 		except:
 			self.session.open(MessageBox, _("Error by processing !!!"), MessageBox.TYPE_ERROR)
