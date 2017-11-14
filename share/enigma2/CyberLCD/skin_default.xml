@@ -444,6 +444,7 @@
     <panel name="TemplatesMovieInfoBarDisplayProgress" />
   </screen>
   <!-- ########## Channel Selection ########## -->
+  <!-- Channel Selection -->
   <screen name="ChannelSelection_summary" position="0,0" size="480,320">
     <panel name="TemplatesDisplayLayer" />
     <panel name="TemplatesChannelSelectionDisplay" />
@@ -452,7 +453,7 @@
     </widget>
     <panel name="TemplatesChannelSelectionDisplayProgress" />
   </screen>
-  <!-- ########## Channel Context Menu ########## -->
+  <!-- Channel Context Menu -->
   <screen name="ChannelContextMenuSummary" position="0,0" size="480,320">
     <panel name="TemplatesDisplayLayer" />
     <widget source="parent.Title" render="Label" position="10,10" size="460,95" font="LCDTitles; 50" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1" />
@@ -468,12 +469,13 @@
     <panel name="TemplatesRadioSelectionDisplayProgress" />
   </screen>
   <!-- ########## Movie Selection ########## -->
+  <!-- Movie Selection -->
   <screen name="MovieSelectionSummary" position="0,0" size="480,320">
     <panel name="TemplatesDisplayLayer" />
     <widget source="parent.Title" render="Label" position="10,10" size="460,95" font="LCDTitles; 50" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1" />
     <widget source="name" render="Label" position="10,110" size="460,200" font="LCDGlobal; 40" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1" />
   </screen>
-  <!-- ########## Movie Context Menu ########## -->
+  <!-- Movie Context Menu -->
   <screen name="MovieContextMenuSummary" position="0,0" size="480,320">
     <panel name="TemplatesDisplayLayer" />
     <widget source="parent.Title" render="Label" position="10,10" size="460,95" font="LCDTitles; 50" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1" />
@@ -610,12 +612,13 @@
     <widget source="parent.summary_selection" render="Label" position="10,110" size="460,200" font="LCDGlobal; 40" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1" />
   </screen>
   <!-- ########## Message Box ########## -->
+  <!-- Message Box -->
   <screen name="MessageBox_summary" position="0,0" size="480,320">
     <panel name="TemplatesDisplayLayer" />
     <widget source="parent.Text" render="Label" position="10,10" size="460,95" font="LCDTitles; 50" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1" />
     <widget source="parent.selectedChoice" render="Label" position="10,110" size="460,200" font="LCDGlobal; 40" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1" />
   </screen>
-  <!-- ########## Message Box ########## -->
+  <!-- Message Box Simple -->
   <screen name="MessageBoxSimple_summary" position="0,0" size="480,320">
     <panel name="TemplatesDisplayLayer" />
     <widget source="parent.Text" render="Label" position="10,10" size="460,95" font="LCDTitles; 50" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1" />

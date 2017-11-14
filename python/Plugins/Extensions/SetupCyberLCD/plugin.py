@@ -29,6 +29,11 @@ from Components.ConfigList import ConfigListScreen
 from Components.config import config, ConfigYesNo, ConfigSubsection, getConfigListEntry, ConfigSelection
 from Tools.Directories import fileExists, resolveFilename, SCOPE_PLUGINS, SCOPE_SKIN_IMAGE, SCOPE_LANGUAGE
 from Tools.LoadPixmap import LoadPixmap
+
+from xml.etree.cElementTree import fromstring as cet_fromstring
+from urllib2 import Request, urlopen, URLError, HTTPError
+from twisted.web.client import downloadPage
+
 from skin import parseColor, parseFont
 from os import system, environ
 from enigma import addFont
@@ -438,14 +443,14 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 			"red": self.exit,
 			"green": self.save,
 			"yellow": self.default,
-			"blue": self.install,
+			"blue": self.download,
 			"info": self.about
 		}, -1)
 
 		self["key_red"] = StaticText(_("Cancel"))
 		self["key_green"] = StaticText(_("Save"))
 		self["key_yellow"] = StaticText(_("Default"))
-		self["key_blue"] = StaticText(_("Install components"))
+		self["key_blue"] = StaticText(_("Update CyberLCD"))
 		self["Title"] = StaticText(_("Setup CyberLCD"))
 
 		self["bgcolor1a"] = Label(_(" "))
@@ -594,11 +599,11 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 
 	def createSkin(self):
 		skinlcd = "/etc/enigma2/"
-		skinpath = "/usr/share/enigma2/CyberLCD/"
+		skinpath = "/usr/share/enigma2/"
 
 		try:
 	# default skin
-			os.system("cp %sskin_default.xml %sskin_user.xml" % (skinpath, skinlcd))
+			os.system("cp %sCyberLCD/skin_default.xml %sskin_user.xml" % (skinpath, skinlcd))
 	# color`s
 			os.system("sed -i 's/#50000000/#%s%s/w' %sskin_user.xml" % (config.skin.cyberlcd.backgroundtransparent.value, config.skin.cyberlcd.colorbackground1.value, skinlcd))
 			os.system("sed -i 's/#5000ffff/#%s%s/w' %sskin_user.xml" % (config.skin.cyberlcd.foregroundtransparent.value, config.skin.cyberlcd.colorbackground4.value, skinlcd))
@@ -625,23 +630,47 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 	# end
 		except:
 			self.session.open(MessageBox, _("Error by processing !!!"), MessageBox.TYPE_ERROR)
-			os.system("cp %sskin_default.xml %sskin_user.xml" % (skinpath, skinlcd))
+			os.system("cp %sCyberLCD/skin_default.xml %sskin_user.xml" % (skinpath, skinlcd))
 		self.session.openWithCallback(self.restart, MessageBox,_("Do you want to restart the GUI now ?"), MessageBox.TYPE_YESNO)
 
 	def install(self):
+		skinpath = "/usr/share/enigma2/"
 		pluginpath = "/usr/lib/enigma2/python/Plugins/Extensions/"
 		componentspath = "/usr/lib/enigma2/python/Components/"
-		try:
-	# install converter
-			os.system("cp %sSetupCyberLCD/components/AlwaysTrue.py %sConverter/AlwaysTrue.py" % (pluginpath, componentspath))
 
+		try:
+	# install plugin
+			os.system("cp /tmp/plugin.py %sSetupCyberLCD/plugin.py" % (pluginpath))
+	# install skin
+			os.system("cp /tmp/skin_default.xml %sCyberLCD/skin_default.xml" % (skinpath))
+	# install converter
+			os.system("cp /tmp/AlwaysTrue.py %sConverter/AlwaysTrue.py" % (componentspath))
 			os.system("cp %sWeatherMSN/components/MSNWeather2.py %sConverter/MSNWeather2.py" % (pluginpath, componentspath))
 	# install renderer
-			os.system("cp %sSetupCyberLCD/components/PiconUni.py %sRenderer/PiconUni.py" % (pluginpath, componentspath))
+			os.system("cp /tmp/PiconUni.py %sRenderer/PiconUni.py" % (componentspath))
 	# end
 		except:
 			self.session.open(MessageBox, _("Error by processing !!!"), MessageBox.TYPE_ERROR)
 		self.session.openWithCallback(self.restart, MessageBox,_("Do you want to restart the GUI now ?"), MessageBox.TYPE_YESNO)
+
+	def download(self):
+		gitfile1 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberLCD/plugin.py"
+		downloadPage(gitfile1, "/tmp/plugin.py").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
+		gitfile2 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberLCD/skin_default.xml"
+		downloadPage(gitfile2, "/tmp/skin_default.xml").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
+		gitfile3 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberLCD/components/AlwaysTrue.py"
+		downloadPage(gitfile3, "/tmp/AlwaysTrue.py").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
+		gitfile4 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberLCD/components/PiconUni.py"
+		downloadPage(gitfile4, "/tmp/PiconUni.py").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
+
+	def downloadFinished(self, result):
+		self.notdata = False
+		print "[Setup CyberLCD] Download finished!"
+		self.install()
+
+	def downloadFailed(self, result):
+		self.notdata = True
+		print "[Setup CyberLCD] Download failed!"
 
 	def setDefault(self, configItem):
 		configItem.setValue(configItem.default)
