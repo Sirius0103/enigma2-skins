@@ -275,6 +275,14 @@ else:
 		("TemplatesChannelSelectionDisplayClock", _("Clock"))]
 
 if not fileExists("/usr/lib/enigma2/python/Components/Converter/AlwaysTrue.py"):
+	widgetradioselection = [
+		("TemplatesRadioSelectionDisplayName", _("Name"))]
+else:
+	widgetradioselection = [
+		("TemplatesRadioSelectionDisplayName", _("Name")),
+		("TemplatesRadioSelectionDisplayClock", _("Clock"))]
+
+if not fileExists("/usr/lib/enigma2/python/Components/Converter/AlwaysTrue.py"):
 	widgetepgselection = [
 		("TemplatesEPGSelectionDisplayName", _("Name")),
 		("TemplatesEPGSelectionDisplayPicon", _("Picon"))]
@@ -326,6 +334,8 @@ config.skin.cyberlcd.widgetinfobar = ConfigSelection(default="TemplatesInfoBarDi
 config.skin.cyberlcd.widgetmovieinfobar = ConfigSelection(default="TemplatesMovieInfoBarDisplayName", choices = widgetmovieinfobar)
 
 config.skin.cyberlcd.widgetchannelselection = ConfigSelection(default="TemplatesChannelSelectionDisplayName", choices = widgetchannelselection)
+
+config.skin.cyberlcd.widgetradioselection = ConfigSelection(default="TemplatesRadioSelectionDisplayName", choices = widgetradioselection)
 
 config.skin.cyberlcd.widgetepgselection = ConfigSelection(default="TemplatesEPGSelectionDisplayName", choices = widgetepgselection)
 
@@ -489,6 +499,9 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 		section = _("Channel Selection")
 		list.append(getConfigListEntry(sep*(char-(len(section))/2) + tab + section + tab + sep*(char-(len(section))/2)))
 		list.append(getConfigListEntry(_("Widget in channel selection:"), config.skin.cyberlcd.widgetchannelselection))
+		section = _("Radio Selection")
+		list.append(getConfigListEntry(sep*(char-(len(section))/2) + tab + section + tab + sep*(char-(len(section))/2)))
+		list.append(getConfigListEntry(_("Widget in radio selection:"), config.skin.cyberlcd.widgetradioselection))
 		section = _("EPG Selection")
 		list.append(getConfigListEntry(sep*(char-(len(section))/2) + tab + section + tab + sep*(char-(len(section))/2)))
 		list.append(getConfigListEntry(_("Widget in EPG selection:"), config.skin.cyberlcd.widgetepgselection))
@@ -603,6 +616,8 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 			os.system("sed -i 's/%s/TemplatesMovieInfoBarDisplay/w' %sskin_user.xml" % (config.skin.cyberlcd.widgetmovieinfobar.value, skinlcd))
 	# widget channel selection
 			os.system("sed -i 's/%s/TemplatesChannelSelectionDisplay/w' %sskin_user.xml" % (config.skin.cyberlcd.widgetchannelselection.value, skinlcd))
+	# widget radio selection
+			os.system("sed -i 's/%s/TemplatesRadioSelectionDisplay/w' %sskin_user.xml" % (config.skin.cyberlcd.widgetradioselection.value, skinlcd))
 	# widget epg selection
 			os.system("sed -i 's/%s/TemplatesEPGSelectionDisplay/w' %sskin_user.xml" % (config.skin.cyberlcd.widgetepgselection.value, skinlcd))
 	# widget standby

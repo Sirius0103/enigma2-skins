@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Setup skin Skin CyberLCD\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-07-29 01:13+0100\n"
-"PO-Revision-Date: 2017-11-07 12:04+0300\n"
+"PO-Revision-Date: 2017-11-14 08:23+0300\n"
 "Last-Translator: Sirius <sirius.altech@gmail.com>\n"
 "Language-Team: sirius.al@rambler.ru\n"
 "MIME-Version: 1.0\n"
@@ -63,6 +63,9 @@ msgstr "Виджет в инфобаре плеера:"
 
 msgid "Widget in channel selection:"
 msgstr "Виджет в селекторе каналов:"
+
+msgid "Widget in radio selection:"
+msgstr "Виджет в селекторе радио:"
 
 msgid "Widget in EPG selection:"
 msgstr "Виджет в EPG селекторе:"
