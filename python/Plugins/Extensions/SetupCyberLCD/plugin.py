@@ -29,14 +29,10 @@ from Components.ConfigList import ConfigListScreen
 from Components.config import config, ConfigYesNo, ConfigSubsection, getConfigListEntry, ConfigSelection
 from Tools.Directories import fileExists, resolveFilename, SCOPE_PLUGINS, SCOPE_SKIN_IMAGE, SCOPE_LANGUAGE
 from Tools.LoadPixmap import LoadPixmap
-
-from xml.etree.cElementTree import fromstring as cet_fromstring
-from urllib2 import Request, urlopen, URLError, HTTPError
-from twisted.web.client import downloadPage
-
 from skin import parseColor, parseFont
 from os import system, environ
 from enigma import addFont
+import urllib
 import gettext
 import os
 
@@ -655,27 +651,25 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 
 	def download(self):
 	# download plugin
-		gitfile1 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberLCD/plugin.py"
-		downloadPage(gitfile1, "/tmp/plugin.py").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
+		gitfile01 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberLCD/plugin.py"
 	# download skin
-		gitfile2 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberLCD/skin_default.xml"
-		downloadPage(gitfile2, "/tmp/skin_default.xml").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
+		gitfile02 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberLCD/skin_default.xml"
 	# download converter
-		gitfile3 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/AlwaysTrue.py"
-		downloadPage(gitfile3, "/tmp/AlwaysTrue.py").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
+		gitfile03 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/AlwaysTrue.py"
 	# download renderer
-		gitfile4 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/PiconUni.py"
-		downloadPage(gitfile4, "/tmp/PiconUni.py").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
+		gitfile04 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/PiconUni.py"
 	# end
 
-	def downloadFinished(self, result):
-		self.notdata = False
-		print "[Setup CyberLCD] Download finished!"
-		self.install()
+		urllib.urlretrieve (gitfile01, "/tmp/plugin.py")
+		urllib.urlretrieve (gitfile02, "/tmp/skin_default.xml")
+		urllib.urlretrieve (gitfile03, "/tmp/AlwaysTrue.py")
+		urllib.urlretrieve (gitfile04, "/tmp/PiconUni.py")
 
-	def downloadFailed(self, result):
-		self.notdata = True
-		print "[Setup CyberLCD] Download failed!"
+		if fileExists("/tmp/plugin.py")\
+			and fileExists("/tmp/skin_default.xml")\
+			and fileExists("/tmp/AlwaysTrue.py")\
+			and fileExists("/tmp/PiconUni.py"):
+			self.install()
 
 	def setDefault(self, configItem):
 		configItem.setValue(configItem.default)

@@ -29,14 +29,10 @@ from Components.ConfigList import ConfigListScreen
 from Components.config import config, ConfigYesNo, ConfigSubsection, getConfigListEntry, ConfigSelection
 from Tools.Directories import fileExists, resolveFilename, SCOPE_PLUGINS, SCOPE_SKIN_IMAGE, SCOPE_LANGUAGE
 from Tools.LoadPixmap import LoadPixmap
-
-from xml.etree.cElementTree import fromstring as cet_fromstring
-from urllib2 import Request, urlopen, URLError, HTTPError
-from twisted.web.client import downloadPage
-
 from skin import parseColor, parseFont
 from os import system, environ
 from enigma import addFont
+import urllib
 import gettext
 import os
 
@@ -852,58 +848,69 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 	def download(self):
 	# download plugin
 		gitfile01 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberFHD/plugin.py"
-		downloadPage(gitfile01, "/tmp/plugin.py").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
 	# download skin
 		gitfile02 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberFHD/skin.xml"
-		downloadPage(gitfile02, "/tmp/skin.xml").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
 		gitfile03 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberFHD/skin_default.xml"
-		downloadPage(gitfile03, "/tmp/skin_default.xml").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
 		gitfile04 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberFHD/skin_templates.xml"
-		downloadPage(gitfile04, "/tmp/skin_templates.xml").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
 		gitfile05 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberFHD/skin_templates_default.xml"
-		downloadPage(gitfile05, "/tmp/skin_templates_default.xml").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
 		gitfile06 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberFHD/skin_extra.xml"
-		downloadPage(gitfile06, "/tmp/skin_extra.xml").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
 	# download converter
 		gitfile07 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/AlwaysTrue.py"
-		downloadPage(gitfile07, "/tmp/AlwaysTrue.py").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
 		gitfile08 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/AC3DownMixStatus.py"
-		downloadPage(gitfile08, "/tmp/AC3DownMixStatus.py").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
 		gitfile09 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/CaidInfo2.py"
-		downloadPage(gitfile09, "/tmp/CaidInfo2.py").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
-		gitfile10 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/CaidInfo2.py"
-		downloadPage(gitfile10, "/tmp/CaidInfo2.py").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
-		gitfile11 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/CamdInfo3.py"
-		downloadPage(gitfile11, "/tmp/CamdInfo3.py").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
-		gitfile12 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/EventName2.py"
-		downloadPage(gitfile12, "/tmp/EventName2.py").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
-		gitfile13 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/FrontendInfo2.py"
-		downloadPage(gitfile13, "/tmp/FrontendInfo2.py").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
-		gitfile14 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/ModuleControl.py"
-		downloadPage(gitfile14, "/tmp/ModuleControl.py").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
-		gitfile15 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/ProgressDiskSpaceInfo.py"
-		downloadPage(gitfile15, "/tmp/ProgressDiskSpaceInfo.py").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
-		gitfile16 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/ServiceInfoEX.py"
-		downloadPage(gitfile16, "/tmp/ServiceInfoEX.py").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
-		gitfile17 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/ServiceName2.py"
-		downloadPage(gitfile17, "/tmp/ServiceName2.py").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
+		gitfile10 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/CamdInfo3.py"
+		gitfile11 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/EventName2.py"
+		gitfile12 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/FrontendInfo2.py"
+		gitfile13 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/ModuleControl.py"
+		gitfile14 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/ProgressDiskSpaceInfo.py"
+		gitfile15 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/ServiceInfoEX.py"
+		gitfile16 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/ServiceName2.py"
 	# download renderer
-		gitfile18 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/PiconUni.py"
-		downloadPage(gitfile18, "/tmp/PiconUni.py").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
-		gitfile19 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/RendVolumeText.py"
-		downloadPage(gitfile19, "/tmp/RendVolumeText.py").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
-		gitfile20 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/Watches.py"
-		downloadPage(gitfile20, "/tmp/Watches.py").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
+		gitfile17 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/PiconUni.py"
+		gitfile18 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/RendVolumeText.py"
+		gitfile19 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/Watches.py"
 	# end
 
-	def downloadFinished(self, result):
-		self.notdata = False
-		print "[Setup CyberLCD] Download finished!"
-		self.install()
+		urllib.urlretrieve (gitfile01, "/tmp/plugin.py")
+		urllib.urlretrieve (gitfile02, "/tmp/skin.xml")
+		urllib.urlretrieve (gitfile03, "/tmp/skin_default.xml")
+		urllib.urlretrieve (gitfile04, "/tmp/skin_templates.xml")
+		urllib.urlretrieve (gitfile05, "/tmp/skin_templates_default.xml")
+		urllib.urlretrieve (gitfile06, "/tmp/skin_extra.xml")
+		urllib.urlretrieve (gitfile07, "/tmp/AlwaysTrue.py")
+		urllib.urlretrieve (gitfile08, "/tmp/AC3DownMixStatus.py")
+		urllib.urlretrieve (gitfile09, "/tmp/CaidInfo2.py")
+		urllib.urlretrieve (gitfile10, "/tmp/CamdInfo3.py")
+		urllib.urlretrieve (gitfile11, "/tmp/EventName2.py")
+		urllib.urlretrieve (gitfile12, "/tmp/FrontendInfo2.py")
+		urllib.urlretrieve (gitfile13, "/tmp/ModuleControl.py")
+		urllib.urlretrieve (gitfile14, "/tmp/ProgressDiskSpaceInfo.py")
+		urllib.urlretrieve (gitfile15, "/tmp/ServiceInfoEX.py")
+		urllib.urlretrieve (gitfile16, "/tmp/ServiceName2.py")
+		urllib.urlretrieve (gitfile17, "/tmp/PiconUni.py")
+		urllib.urlretrieve (gitfile18, "/tmp/RendVolumeText.py")
+		urllib.urlretrieve (gitfile19, "/tmp/Watches.py")
 
-	def downloadFailed(self, result):
-		self.notdata = True
-		print "[Setup CyberLCD] Download failed!"
+		if fileExists("/tmp/plugin.py")\
+			and fileExists("/tmp/skin.xml")\
+			and fileExists("/tmp/skin_default.xml")\
+			and fileExists("/tmp/skin_templates.xml")\
+			and fileExists("/tmp/skin_templates_default.xml")\
+			and fileExists("/tmp/skin_extra.xml")\
+			and fileExists("/tmp/AlwaysTrue.py")\
+			and fileExists("/tmp/AC3DownMixStatus.py")\
+			and fileExists("/tmp/CaidInfo2.py")\
+			and fileExists("/tmp/CamdInfo3.py")\
+			and fileExists("/tmp/EventName2.py")\
+			and fileExists("/tmp/FrontendInfo2.py")\
+			and fileExists("/tmp/ModuleControl.py")\
+			and fileExists("/tmp/ProgressDiskSpaceInfo.py")\
+			and fileExists("/tmp/ServiceInfoEX.py")\
+			and fileExists("/tmp/ServiceName2.py")\
+			and fileExists("/tmp/PiconUni.py")\
+			and fileExists("/tmp/RendVolumeText.py")\
+			and fileExists("/tmp/Watches.py"):
+			self.install()
 
 	def setDefault(self, configItem):
 		configItem.setValue(configItem.default)
