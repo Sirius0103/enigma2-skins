@@ -29,6 +29,11 @@ from Components.ConfigList import ConfigListScreen
 from Components.config import config, ConfigYesNo, ConfigSubsection, getConfigListEntry, ConfigSelection
 from Tools.Directories import fileExists, resolveFilename, SCOPE_PLUGINS, SCOPE_SKIN_IMAGE, SCOPE_LANGUAGE
 from Tools.LoadPixmap import LoadPixmap
+
+from xml.etree.cElementTree import fromstring as cet_fromstring
+from urllib2 import Request, urlopen, URLError, HTTPError
+from twisted.web.client import downloadPage
+
 from skin import parseColor, parseFont
 from os import system, environ
 from enigma import addFont
@@ -283,12 +288,12 @@ if not fileExists("/usr/lib/enigma2/python/Components/Converter/CaidInfo2.py")\
 else:
 	infopanelinfobar = [
 		("TemplatesInfoBarTvInfoPanelDefault", _("No")),
-		("TemplatesInfoBarTvInfoPanelCI", _("CI")),
+#		("TemplatesInfoBarTvInfoPanelCI", _("CI")),
 		("TemplatesInfoBarTvInfoPanelNIM", _("NIM")),
 		("TemplatesInfoBarTvInfoPanelECM", _("ECM")),
 		("TemplatesInfoBarTvInfoPanelPID", _("PID"))]
 if not fileExists("/usr/lib/enigma2/python/Components/Converter/MSNWeather2.py")\
-	and fileExists("/usr/lib/enigma2/python/Components/Renderer/PiconUni.py"):
+	or not fileExists("/usr/lib/enigma2/python/Components/Renderer/PiconUni.py"):
 	weatherpanelinfobar = [
 		("TemplatesInfoBarTvInfoWeatherDefault", _("No"))]
 else:
@@ -509,14 +514,14 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 			"red": self.exit,
 			"green": self.save,
 			"yellow": self.default,
-			"blue": self.install,
+			"blue": self.download,
 			"info": self.about
 		}, -1)
 
 		self["key_red"] = StaticText(_("Cancel"))
 		self["key_green"] = StaticText(_("Save"))
 		self["key_yellow"] = StaticText(_("Default"))
-		self["key_blue"] = StaticText(_("Install components"))
+		self["key_blue"] = StaticText(_("Update CyberFHD"))
 		self["Title"] = StaticText(_("Setup CyberFHD"))
 
 		self["bgcolor1a"] = Label(_(" "))
@@ -740,100 +745,165 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 			self["info_com"] = StaticText(_(" "))
 
 	def createSkin(self):
-		skinpath = "/usr/share/enigma2/CyberFHD/"
+		skinpath = "/usr/share/enigma2/"
 
 		try:
 	# default skin
-			os.system("cp %sskin_default.xml %sskin.xml" % (skinpath, skinpath))
-			os.system("cp %sskin_templates_default.xml %sskin_templates.xml" % (skinpath, skinpath))
+			os.system("cp %sCyberFHD/skin_default.xml %sCyberFHD/skin.xml" % (skinpath, skinpath))
+			os.system("cp %sCyberFHD/skin_templates_default.xml %sCyberFHD/skin_templates.xml" % (skinpath, skinpath))
 	# color`s
-			os.system("sed -i 's/#50000000/#%s%s/w' %sskin.xml" % (config.skin.cyberfhd.backgroundtransparent.value, config.skin.cyberfhd.colorbackground1.value, skinpath))
-			os.system("sed -i 's/#50696969/#%s%s/w' %sskin.xml" % (config.skin.cyberfhd.backgroundtransparent.value, config.skin.cyberfhd.colorbackground2.value, skinpath))
-			os.system("sed -i 's/#50ffffff/#%s%s/w' %sskin.xml" % (config.skin.cyberfhd.backgroundtransparent.value, config.skin.cyberfhd.colorbackground3.value, skinpath))
-			os.system("sed -i 's/#5000ffff/#%s%s/w' %sskin.xml" % (config.skin.cyberfhd.foregroundtransparent.value, config.skin.cyberfhd.colorbackground4.value, skinpath))
-			os.system("sed -i 's/#60696969/#%s%s/w' %sskin.xml" % (config.skin.cyberfhd.backgroundtransparent.value, config.skin.cyberfhd.colorbackground5.value, skinpath))
-			os.system("sed -i 's/#10ffd700/#%s%s/w' %sskin.xml" % (config.skin.cyberfhd.foregroundtransparent.value, config.skin.cyberfhd.colorforeground1.value, skinpath))
-			os.system("sed -i 's/#10f5f5f5/#%s%s/w' %sskin.xml" % (config.skin.cyberfhd.foregroundtransparent.value, config.skin.cyberfhd.colorforeground2.value, skinpath))
-			os.system("sed -i 's/#10a9a9a9/#%s%s/w' %sskin.xml" % (config.skin.cyberfhd.foregroundtransparent.value, config.skin.cyberfhd.colorforeground3.value, skinpath))
-			os.system("sed -i 's/#1000ffff/#%s%s/w' %sskin.xml" % (config.skin.cyberfhd.foregroundtransparent.value, config.skin.cyberfhd.colorforeground4.value, skinpath))
-			os.system("sed -i 's/#10ffffff/#%s%s/w' %sskin.xml" % (config.skin.cyberfhd.backgroundtransparent.value, config.skin.cyberfhd.colorforeground5.value, skinpath))
+			os.system("sed -i 's/#50000000/#%s%s/w' %sCyberFHD/skin.xml" % (config.skin.cyberfhd.backgroundtransparent.value, config.skin.cyberfhd.colorbackground1.value, skinpath))
+			os.system("sed -i 's/#50696969/#%s%s/w' %sCyberFHD/skin.xml" % (config.skin.cyberfhd.backgroundtransparent.value, config.skin.cyberfhd.colorbackground2.value, skinpath))
+			os.system("sed -i 's/#50ffffff/#%s%s/w' %sCyberFHD/skin.xml" % (config.skin.cyberfhd.backgroundtransparent.value, config.skin.cyberfhd.colorbackground3.value, skinpath))
+			os.system("sed -i 's/#5000ffff/#%s%s/w' %sCyberFHD/skin.xml" % (config.skin.cyberfhd.foregroundtransparent.value, config.skin.cyberfhd.colorbackground4.value, skinpath))
+			os.system("sed -i 's/#60696969/#%s%s/w' %sCyberFHD/skin.xml" % (config.skin.cyberfhd.backgroundtransparent.value, config.skin.cyberfhd.colorbackground5.value, skinpath))
+			os.system("sed -i 's/#10ffd700/#%s%s/w' %sCyberFHD/skin.xml" % (config.skin.cyberfhd.foregroundtransparent.value, config.skin.cyberfhd.colorforeground1.value, skinpath))
+			os.system("sed -i 's/#10f5f5f5/#%s%s/w' %sCyberFHD/skin.xml" % (config.skin.cyberfhd.foregroundtransparent.value, config.skin.cyberfhd.colorforeground2.value, skinpath))
+			os.system("sed -i 's/#10a9a9a9/#%s%s/w' %sCyberFHD/skin.xml" % (config.skin.cyberfhd.foregroundtransparent.value, config.skin.cyberfhd.colorforeground3.value, skinpath))
+			os.system("sed -i 's/#1000ffff/#%s%s/w' %sCyberFHD/skin.xml" % (config.skin.cyberfhd.foregroundtransparent.value, config.skin.cyberfhd.colorforeground4.value, skinpath))
+			os.system("sed -i 's/#10ffffff/#%s%s/w' %sCyberFHD/skin.xml" % (config.skin.cyberfhd.backgroundtransparent.value, config.skin.cyberfhd.colorforeground5.value, skinpath))
 	# clock	
 			if not fileExists("/usr/lib/enigma2/python/Components/Converter/AlwaysTrue.py"):
-				os.system("sed -i 's/TemplatesClockDefault/TemplatesClock/w' %sskin_templates.xml" % (skinpath))
+				os.system("sed -i 's/TemplatesClockDefault/TemplatesClock/w' %sCyberFHD/skin_templates.xml" % (skinpath))
 			else:
-				os.system("sed -i 's/TemplatesClockStyle/TemplatesClock/w' %sskin_templates.xml" % (skinpath))
+				os.system("sed -i 's/TemplatesClockStyle/TemplatesClock/w' %sCyberFHD/skin_templates.xml" % (skinpath))
 	# indication	
 			if not fileExists("/usr/lib/enigma2/python/Components/Converter/AC3DownMixStatus.py")\
 				or not fileExists("/usr/lib/enigma2/python/Components/Converter/ServiceInfoEX.py"):
-				os.system("sed -i 's/TemplatesInfoBarTvIndicationDefault/TemplatesInfoBarTvIndication/w' %sskin_templates.xml" % (skinpath))
-				os.system("sed -i 's/TemplatesInfoBarMediaIndicationDefault/TemplatesInfoBarMediaIndication/w' %sskin_templates.xml" % (skinpath))
-				os.system("sed -i 's/TemplatesInfoBarRadioIndicationDefault/TemplatesInfoBarRadioIndication/w' %sskin_templates.xml" % (skinpath))
+				os.system("sed -i 's/TemplatesInfoBarTvIndicationDefault/TemplatesInfoBarTvIndication/w' %sCyberFHD/skin_templates.xml" % (skinpath))
+				os.system("sed -i 's/TemplatesInfoBarMediaIndicationDefault/TemplatesInfoBarMediaIndication/w' %sCyberFHD/skin_templates.xml" % (skinpath))
+				os.system("sed -i 's/TemplatesInfoBarRadioIndicationDefault/TemplatesInfoBarRadioIndication/w' %sCyberFHD/skin_templates.xml" % (skinpath))
 			else:
-				os.system("sed -i 's/TemplatesInfoBarTvIndicationStyle/TemplatesInfoBarTvIndication/w' %sskin_templates.xml" % (skinpath))
-				os.system("sed -i 's/TemplatesInfoBarMediaIndicationStyle/TemplatesInfoBarMediaIndication/w' %sskin_templates.xml" % (skinpath))
-				os.system("sed -i 's/TemplatesInfoBarRadioIndicationStyle/TemplatesInfoBarRadioIndication/w' %sskin_templates.xml" % (skinpath))
+				os.system("sed -i 's/TemplatesInfoBarTvIndicationStyle/TemplatesInfoBarTvIndication/w' %sCyberFHD/skin_templates.xml" % (skinpath))
+				os.system("sed -i 's/TemplatesInfoBarMediaIndicationStyle/TemplatesInfoBarMediaIndication/w' %sCyberFHD/skin_templates.xml" % (skinpath))
+				os.system("sed -i 's/TemplatesInfoBarRadioIndicationStyle/TemplatesInfoBarRadioIndication/w' %sCyberFHD/skin_templates.xml" % (skinpath))
 	# fonts	
-			os.system("sed -i 's/Roboto-Regular/%s/w' %sskin.xml" % (config.skin.cyberfhd.fonts.value, skinpath))
+			os.system("sed -i 's/Roboto-Regular/%s/w' %sCyberFHD/skin.xml" % (config.skin.cyberfhd.fonts.value, skinpath))
 	# scrollbar
-			os.system("sed -i 's/showNever/%s/w' %sskin.xml" % (config.skin.cyberfhd.scrollbarmode.value, skinpath))
+			os.system("sed -i 's/showNever/%s/w' %sCyberFHD/skin.xml" % (config.skin.cyberfhd.scrollbarmode.value, skinpath))
 	# number channel
-			os.system("sed -i 's/%s/TemplatesInfoBarTvNumber/w' %sskin_templates.xml" % (config.skin.cyberfhd.numberchannel.value, skinpath))
+			os.system("sed -i 's/%s/TemplatesInfoBarTvNumber/w' %sCyberFHD/skin_templates.xml" % (config.skin.cyberfhd.numberchannel.value, skinpath))
 	# tuner panel
-			os.system("sed -i 's/%s/TemplatesInfoBarTvTuner/w' %sskin_templates.xml" % (config.skin.cyberfhd.tunerpanelinfobar.value, skinpath))
+			os.system("sed -i 's/%s/TemplatesInfoBarTvTuner/w' %sCyberFHD/skin_templates.xml" % (config.skin.cyberfhd.tunerpanelinfobar.value, skinpath))
 	# epg panel
-			os.system("sed -i 's/%s/TemplatesInfoBarTvInfoEPG/w' %sskin_templates.xml" % (config.skin.cyberfhd.epgpanelinfobar.value, skinpath))
+			os.system("sed -i 's/%s/TemplatesInfoBarTvInfoEPG/w' %sCyberFHD/skin_templates.xml" % (config.skin.cyberfhd.epgpanelinfobar.value, skinpath))
 	# crypted panel
-			os.system("sed -i 's/%s/TemplatesInfoBarTvInfoCrypted/w' %sskin_templates.xml" % (config.skin.cyberfhd.cryptedpanelinfobar.value, skinpath))
+			os.system("sed -i 's/%s/TemplatesInfoBarTvInfoCrypted/w' %sCyberFHD/skin_templates.xml" % (config.skin.cyberfhd.cryptedpanelinfobar.value, skinpath))
 	# info panel
-			os.system("sed -i 's/%s/TemplatesInfoBarTvInfoPanel/w' %sskin_templates.xml" % (config.skin.cyberfhd.infopanelinfobar.value, skinpath))
+			os.system("sed -i 's/%s/TemplatesInfoBarTvInfoPanel/w' %sCyberFHD/skin_templates.xml" % (config.skin.cyberfhd.infopanelinfobar.value, skinpath))
 	# weather panel
-			os.system("sed -i 's/%s/TemplatesInfoBarTvInfoWeather/w' %sskin_templates.xml" % (config.skin.cyberfhd.weatherpanelinfobar.value, skinpath))
+			os.system("sed -i 's/%s/TemplatesInfoBarTvInfoWeather/w' %sCyberFHD/skin_templates.xml" % (config.skin.cyberfhd.weatherpanelinfobar.value, skinpath))
 	# progress
-			os.system("sed -i 's/%s/ProgressLayer/w' %sskin_templates.xml" % (config.skin.cyberfhd.progressmode.value, skinpath))
+			os.system("sed -i 's/%s/ProgressLayer/w' %sCyberFHD/skin_templates.xml" % (config.skin.cyberfhd.progressmode.value, skinpath))
 	# bouquet
-			os.system("sed -i 's/%s/TemplatesChannelSelectionTvBouquet/w' %sskin_templates.xml" % (config.skin.cyberfhd.bouquetchannelselection.value, skinpath))
-			os.system("sed -i 's/%sFull/TemplatesChannelSelectionTvBouquetFull/w' %sskin_templates.xml" % (config.skin.cyberfhd.bouquetchannelselection.value, skinpath))
+			os.system("sed -i 's/%s/TemplatesChannelSelectionTvBouquet/w' %sCyberFHD/skin_templates.xml" % (config.skin.cyberfhd.bouquetchannelselection.value, skinpath))
+			os.system("sed -i 's/%sFull/TemplatesChannelSelectionTvBouquetFull/w' %sCyberFHD/skin_templates.xml" % (config.skin.cyberfhd.bouquetchannelselection.value, skinpath))
 	# picon panel
-			os.system("sed -i 's/%s/TemplatesChannelSelectionTvPicon/w' %sskin_templates.xml" % (config.skin.cyberfhd.piconchannelselection.value, skinpath))
+			os.system("sed -i 's/%s/TemplatesChannelSelectionTvPicon/w' %sCyberFHD/skin_templates.xml" % (config.skin.cyberfhd.piconchannelselection.value, skinpath))
 	# epg panel
-			os.system("sed -i 's/%s/TemplatesChannelSelectionTvInfoEPG/w' %sskin_templates.xml" % (config.skin.cyberfhd.epgpanelchannelselection.value, skinpath))
+			os.system("sed -i 's/%s/TemplatesChannelSelectionTvInfoEPG/w' %sCyberFHD/skin_templates.xml" % (config.skin.cyberfhd.epgpanelchannelselection.value, skinpath))
 	# channel panel
-			os.system("sed -i 's/%s/TemplatesChannelSelectionTvInfoChannel/w' %sskin_templates.xml" % (config.skin.cyberfhd.channelpanelchannelselection.value, skinpath))
+			os.system("sed -i 's/%s/TemplatesChannelSelectionTvInfoChannel/w' %sCyberFHD/skin_templates.xml" % (config.skin.cyberfhd.channelpanelchannelselection.value, skinpath))
 	# bouquet
-			os.system("sed -i 's/%s/TemplatesChannelSelectionRadioBouquet/w' %sskin_templates.xml" % (config.skin.cyberfhd.bouquetradiochannelselection.value, skinpath))
+			os.system("sed -i 's/%s/TemplatesChannelSelectionRadioBouquet/w' %sCyberFHD/skin_templates.xml" % (config.skin.cyberfhd.bouquetradiochannelselection.value, skinpath))
 	# description panel
-			os.system("sed -i 's/%s/TemplatesMovieSelectionDescription/w' %sskin_templates.xml" % (config.skin.cyberfhd.panelmovieselection.value, skinpath))
+			os.system("sed -i 's/%s/TemplatesMovieSelectionDescription/w' %sCyberFHD/skin_templates.xml" % (config.skin.cyberfhd.panelmovieselection.value, skinpath))
 		except:
-			os.system("cp %sskin_default.xml %sskin.xml" % (skinpath, skinpath))
-			os.system("cp %sskin_templates_default.xml %sskin_templates.xml" % (skinpath, skinpath))
+			os.system("cp %sCyberFHD/skin_default.xml %sCyberFHD/skin.xml" % (skinpath, skinpath))
+			os.system("cp %sCyberFHD/skin_templates_default.xml %sCyberFHD/skin_templates.xml" % (skinpath, skinpath))
 			self.session.open(MessageBox, _("Error by processing !!!"), MessageBox.TYPE_ERROR)
 	# end
 		self.session.openWithCallback(self.restart, MessageBox,_("Do you want to restart the GUI now ?"), MessageBox.TYPE_YESNO)
 
 	def install(self):
+		skinpath = "/usr/share/enigma2/"
 		pluginpath = "/usr/lib/enigma2/python/Plugins/Extensions/"
 		componentspath = "/usr/lib/enigma2/python/Components/"
 		try:
+	# install plugin
+			os.system("cp /tmp/plugin.py %sSetupCyberFHD/plugin.py" % (pluginpath))
+	# install skin
+			os.system("cp /tmp/skin.xml %sCyberFHD/skin.xml" % (skinpath))
+			os.system("cp /tmp/skin_default.xml %sCyberFHD/skin_default.xml" % (skinpath))
+			os.system("cp /tmp/skin_templates.xml %sCyberFHD/skin_templates.xml" % (skinpath))
+			os.system("cp /tmp/skin_templates_default.xml %sCyberFHD/skin_templates_default.xml" % (skinpath))
+			os.system("cp /tmp/skin_extra.xml %sCyberFHD/skin_extra.xml" % (skinpath))
 	# install converter
-			os.system("cp %sSetupCyberFHD/components/AlwaysTrue.py %sConverter/AlwaysTrue.py" % (pluginpath, componentspath))
-			os.system("cp %sSetupCyberFHD/components/AC3DownMixStatus.py %sConverter/AC3DownMixStatus.py" % (pluginpath, componentspath))
-			os.system("cp %sSetupCyberFHD/components/CaidInfo2.py %sConverter/CaidInfo2.py" % (pluginpath, componentspath))
-			os.system("cp %sSetupCyberFHD/components/CamdInfo3.py %sConverter/CamdInfo3.py" % (pluginpath, componentspath))
-			os.system("cp %sSetupCyberFHD/components/EventName2.py %sConverter/EventName2.py" % (pluginpath, componentspath))
-			os.system("cp %sSetupCyberFHD/components/FrontendInfo2.py %sConverter/FrontendInfo2.py" % (pluginpath, componentspath))
-			os.system("cp %sSetupCyberFHD/components/ModuleControl.py %sConverter/ModuleControl.py" % (pluginpath, componentspath))
-			os.system("cp %sSetupCyberFHD/components/ProgressDiskSpaceInfo.py %sConverter/ProgressDiskSpaceInfo.py" % (pluginpath, componentspath))
-			os.system("cp %sSetupCyberFHD/components/ServiceInfoEX.py %sConverter/ServiceInfoEX.py" % (pluginpath, componentspath))
-			os.system("cp %sSetupCyberFHD/components/ServiceName2.py %sConverter/ServiceName2.py" % (pluginpath, componentspath))
+			os.system("cp /tmp/AlwaysTrue.py %sConverter/AlwaysTrue.py" % (componentspath))
+			os.system("cp /tmp/AC3DownMixStatus.py %sConverter/AC3DownMixStatus.py" % (componentspath))
+			os.system("cp /tmp/CaidInfo2.py %sConverter/CaidInfo2.py" % (componentspath))
+			os.system("cp /tmp/CamdInfo3.py %sConverter/CamdInfo3.py" % (componentspath))
+			os.system("cp /tmp/EventName2.py %sConverter/EventName2.py" % (componentspath))
+			os.system("cp /tmp/FrontendInfo2.py %sConverter/FrontendInfo2.py" % (componentspath))
+			os.system("cp /tmp/ModuleControl.py %sConverter/ModuleControl.py" % (componentspath))
+			os.system("cp /tmp/ProgressDiskSpaceInfo.py %sConverter/ProgressDiskSpaceInfo.py" % (componentspath))
+			os.system("cp /tmp/ServiceInfoEX.py %sConverter/ServiceInfoEX.py" % (componentspath))
+			os.system("cp /tmp/ServiceName2.py %sConverter/ServiceName2.py" % (componentspath))
 			os.system("cp %sWeatherMSN/components/MSNWeather2.py %sConverter/MSNWeather2.py" % (pluginpath, componentspath))
 	# install renderer
-			os.system("cp %sSetupCyberFHD/components/PiconUni.py %sRenderer/PiconUni.py" % (pluginpath, componentspath))
-			os.system("cp %sSetupCyberFHD/components/RendVolumeText.py %sRenderer/RendVolumeText.py" % (pluginpath, componentspath))
-			os.system("cp %sSetupCyberFHD/components/Watches.py %sRenderer/Watches.py" % (pluginpath, componentspath))
+			os.system("cp /tmp/PiconUni.py %sRenderer/PiconUni.py" % (componentspath))
+			os.system("cp /tmp/RendVolumeText.py %sRenderer/RendVolumeText.py" % (componentspath))
+			os.system("cp /tmp/Watches.py %sRenderer/Watches.py" % (componentspath))
 	# end
 		except:
 			self.session.open(MessageBox, _("Error by processing !!!"), MessageBox.TYPE_ERROR)
 		self.session.openWithCallback(self.restart, MessageBox,_("Do you want to restart the GUI now ?"), MessageBox.TYPE_YESNO)
+
+	def download(self):
+	# download plugin
+		gitfile01 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberFHD/plugin.py"
+		downloadPage(gitfile01, "/tmp/plugin.py").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
+	# download skin
+		gitfile02 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberFHD/skin.xml"
+		downloadPage(gitfile02, "/tmp/skin.xml").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
+		gitfile03 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberFHD/skin_default.xml"
+		downloadPage(gitfile03, "/tmp/skin_default.xml").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
+		gitfile04 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberFHD/skin_templates.xml"
+		downloadPage(gitfile04, "/tmp/skin_templates.xml").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
+		gitfile05 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberFHD/skin_templates_default.xml"
+		downloadPage(gitfile05, "/tmp/skin_templates_default.xml").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
+		gitfile06 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberFHD/skin_extra.xml"
+		downloadPage(gitfile06, "/tmp/skin_extra.xml").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
+	# download converter
+		gitfile07 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/AlwaysTrue.py"
+		downloadPage(gitfile07, "/tmp/AlwaysTrue.py").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
+		gitfile08 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/AC3DownMixStatus.py"
+		downloadPage(gitfile08, "/tmp/AC3DownMixStatus.py").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
+		gitfile09 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/CaidInfo2.py"
+		downloadPage(gitfile09, "/tmp/CaidInfo2.py").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
+		gitfile10 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/CaidInfo2.py"
+		downloadPage(gitfile10, "/tmp/CaidInfo2.py").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
+		gitfile11 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/CamdInfo3.py"
+		downloadPage(gitfile11, "/tmp/CamdInfo3.py").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
+		gitfile12 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/EventName2.py"
+		downloadPage(gitfile12, "/tmp/EventName2.py").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
+		gitfile13 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/FrontendInfo2.py"
+		downloadPage(gitfile13, "/tmp/FrontendInfo2.py").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
+		gitfile14 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/ModuleControl.py"
+		downloadPage(gitfile14, "/tmp/ModuleControl.py").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
+		gitfile15 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/ProgressDiskSpaceInfo.py"
+		downloadPage(gitfile15, "/tmp/ProgressDiskSpaceInfo.py").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
+		gitfile16 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/ServiceInfoEX.py"
+		downloadPage(gitfile16, "/tmp/ServiceInfoEX.py").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
+		gitfile17 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/ServiceName2.py"
+		downloadPage(gitfile17, "/tmp/ServiceName2.py").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
+	# download renderer
+		gitfile18 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/PiconUni.py"
+		downloadPage(gitfile18, "/tmp/PiconUni.py").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
+		gitfile19 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/RendVolumeText.py"
+		downloadPage(gitfile19, "/tmp/RendVolumeText.py").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
+		gitfile20 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/Watches.py"
+		downloadPage(gitfile20, "/tmp/Watches.py").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
+	# end
+
+	def downloadFinished(self, result):
+		self.notdata = False
+		print "[Setup CyberLCD] Download finished!"
+		self.install()
+
+	def downloadFailed(self, result):
+		self.notdata = True
+		print "[Setup CyberLCD] Download failed!"
 
 	def setDefault(self, configItem):
 		configItem.setValue(configItem.default)

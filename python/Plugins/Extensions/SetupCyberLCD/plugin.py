@@ -654,14 +654,19 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 		self.session.openWithCallback(self.restart, MessageBox,_("Do you want to restart the GUI now ?"), MessageBox.TYPE_YESNO)
 
 	def download(self):
+	# download plugin
 		gitfile1 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberLCD/plugin.py"
 		downloadPage(gitfile1, "/tmp/plugin.py").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
+	# download skin
 		gitfile2 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberLCD/skin_default.xml"
 		downloadPage(gitfile2, "/tmp/skin_default.xml").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
-		gitfile3 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberLCD/components/AlwaysTrue.py"
+	# download converter
+		gitfile3 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/AlwaysTrue.py"
 		downloadPage(gitfile3, "/tmp/AlwaysTrue.py").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
-		gitfile4 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberLCD/components/PiconUni.py"
+	# download renderer
+		gitfile4 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/PiconUni.py"
 		downloadPage(gitfile4, "/tmp/PiconUni.py").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
+	# end
 
 	def downloadFinished(self, result):
 		self.notdata = False
