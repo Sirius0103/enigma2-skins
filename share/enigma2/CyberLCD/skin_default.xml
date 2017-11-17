@@ -54,7 +54,17 @@
     <!-- Templates Display -->
     <eLabel position="0,0" size="480,320" backgroundColor="LCDbackground1" zPosition="-10" />
   </screen>
-  <screen name="TemplatesDisplayClock">
+  <screen name="TemplatesDisplayClockDefault">
+    <!-- Clock Layer -->
+    <widget source="global.CurrentTime" render="Label" position="120,30" size="100,60" font="LCDIndication; 60" foregroundColor="LCDcolor1" halign="right" transparent="1">
+      <convert type="ClockToText">Format:%H</convert>
+    </widget>
+    <eLabel text=":" position="230,30" size="20,60" font="LCDIndication; 60" foregroundColor="LCDcolor1" halign="center" transparent="1" zPosition="-1" />
+    <widget source="global.CurrentTime" render="Label" position="260,30" size="100,60" font="LCDIndication; 60" foregroundColor="LCDcolor1" halign="left" transparent="1">
+      <convert type="ClockToText">Format:%M</convert>
+    </widget>
+  </screen>
+  <screen name="TemplatesDisplayClockStyle">
     <!-- Clock Layer -->
     <widget source="global.CurrentTime" render="Label" position="120,30" size="100,60" font="LCDIndication; 60" foregroundColor="LCDcolor1" halign="right" transparent="1">
       <convert type="ClockToText">Format:%H</convert>

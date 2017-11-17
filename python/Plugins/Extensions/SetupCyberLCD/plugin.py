@@ -247,60 +247,36 @@ progressmode = [
 	("TemplatesDisplayProgressLayerStandard", _("Standard")),
 	("TemplatesDisplayProgressLayerImproved", _("Improved"))]
 
-if not fileExists("/usr/lib/enigma2/python/Components/Converter/AlwaysTrue.py"):
-	widgetinfobar = [
-		("TemplatesInfoBarDisplayName", _("Name")),
-		("TemplatesInfoBarDisplayPicon", _("Picon"))]
-else:
-	widgetinfobar = [
-		("TemplatesInfoBarDisplayName", _("Name")),
-		("TemplatesInfoBarDisplayPicon", _("Picon")),
-		("TemplatesInfoBarDisplayClock", _("Clock"))]
+widgetinfobar = [
+	("TemplatesInfoBarDisplayName", _("Name")),
+	("TemplatesInfoBarDisplayPicon", _("Picon")),
+	("TemplatesInfoBarDisplayClock", _("Clock"))]
 
-if not fileExists("/usr/lib/enigma2/python/Components/Converter/AlwaysTrue.py"):
-	widgetmovieinfobar = [
-		("TemplatesMovieInfoBarDisplayName", _("Name"))]
-else:
-	widgetmovieinfobar = [
-		("TemplatesMovieInfoBarDisplayName", _("Name")),
-		("TemplatesMovieInfoBarDisplayClock", _("Clock"))]
+widgetmovieinfobar = [
+	("TemplatesMovieInfoBarDisplayName", _("Name")),
+	("TemplatesMovieInfoBarDisplayClock", _("Clock"))]
 
-if not fileExists("/usr/lib/enigma2/python/Components/Converter/AlwaysTrue.py"):
-	widgetchannelselection = [
-		("TemplatesChannelSelectionDisplayName", _("Name")),
-		("TemplatesChannelSelectionDisplayPicon", _("Picon"))]
-else:
-	widgetchannelselection = [
-		("TemplatesChannelSelectionDisplayName", _("Name")),
-		("TemplatesChannelSelectionDisplayPicon", _("Picon")),
-		("TemplatesChannelSelectionDisplayClock", _("Clock"))]
+widgetchannelselection = [
+	("TemplatesChannelSelectionDisplayName", _("Name")),
+	("TemplatesChannelSelectionDisplayPicon", _("Picon")),
+	("TemplatesChannelSelectionDisplayClock", _("Clock"))]
 
-if not fileExists("/usr/lib/enigma2/python/Components/Converter/AlwaysTrue.py"):
-	widgetradioselection = [
-		("TemplatesRadioSelectionDisplayName", _("Name"))]
-else:
-	widgetradioselection = [
-		("TemplatesRadioSelectionDisplayName", _("Name")),
-		("TemplatesRadioSelectionDisplayClock", _("Clock"))]
+widgetradioselection = [
+	("TemplatesRadioSelectionDisplayName", _("Name")),
+	("TemplatesRadioSelectionDisplayClock", _("Clock"))]
 
-if not fileExists("/usr/lib/enigma2/python/Components/Converter/AlwaysTrue.py"):
-	widgetepgselection = [
-		("TemplatesEPGSelectionDisplayName", _("Name")),
-		("TemplatesEPGSelectionDisplayPicon", _("Picon"))]
-else:
-	widgetepgselection = [
-		("TemplatesEPGSelectionDisplayName", _("Name")),
-		("TemplatesEPGSelectionDisplayPicon", _("Picon")),
-		("TemplatesEPGSelectionDisplayClock", _("Clock"))]
+widgetepgselection = [
+	("TemplatesEPGSelectionDisplayName", _("Name")),
+	("TemplatesEPGSelectionDisplayPicon", _("Picon")),
+	("TemplatesEPGSelectionDisplayClock", _("Clock"))]
 
-if not fileExists("/usr/lib/enigma2/python/Components/Converter/AlwaysTrue.py")\
-	or not fileExists("/usr/lib/enigma2/python/Components/Converter/MSNWeather2.py")\
+if not fileExists("/usr/lib/enigma2/python/Components/Converter/MSNWeather2.py")\
 	or not fileExists("/usr/lib/enigma2/python/Components/Renderer/PiconUni.py"):
 	widgetstandby = [
-		("TemplatesStandbyDisplayClockDefaut", _("Clock"))]
+		("TemplatesStandbyDisplayClock", _("Clock"))]
 else:
 	widgetstandby = [
-		("TemplatesStandbyDisplayClockStyle", _("Clock")),
+		("TemplatesStandbyDisplayClock", _("Clock")),
 		("TemplatesStandbyDisplayWeather", _("Weather"))]
 
 config.skin.cyberlcd = ConfigSubsection()
@@ -607,7 +583,14 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 			os.system("sed -i 's/#10f5f5f5/#%s%s/w' %sskin_user.xml" % (config.skin.cyberlcd.foregroundtransparent.value, config.skin.cyberlcd.colorforeground2.value, skinlcd))
 			os.system("sed -i 's/#10a9a9a9/#%s%s/w' %sskin_user.xml" % (config.skin.cyberlcd.foregroundtransparent.value, config.skin.cyberlcd.colorforeground3.value, skinlcd))
 			os.system("sed -i 's/#1000ffff/#%s%s/w' %sskin_user.xml" % (config.skin.cyberlcd.foregroundtransparent.value, config.skin.cyberlcd.colorforeground4.value, skinlcd))
-	# fonts	
+	# clock
+			if not fileExists("/usr/lib/enigma2/python/Components/Converter/AlwaysTrue.py"):
+				os.system("sed -i 's/TemplatesDisplayClockDefault/TemplatesDisplayClock/w' %sskin_user.xml" % (skinlcd))
+				os.system("sed -i 's/TemplatesStandbyDisplayClockDefault/TemplatesStandbyDisplayClock/w' %sskin_user.xml" % (skinlcd))
+			else:
+				os.system("sed -i 's/TemplatesDisplayClockStyle/TemplatesDisplayClock/w' %sskin_user.xml" % (skinlcd))
+				os.system("sed -i 's/TemplatesStandbyDisplayClockStyle/TemplatesStandbyDisplayClock/w' %sskin_user.xml" % (skinlcd))
+	# fonts
 			os.system("sed -i 's/Roboto-Regular/%s/w' %sskin_user.xml" % (config.skin.cyberlcd.fonts.value, skinlcd))
 	# progress
 			os.system("sed -i 's/%s/TemplatesDisplayProgressLayer/w' %sskin_user.xml" % (config.skin.cyberlcd.progressmode.value, skinlcd))
