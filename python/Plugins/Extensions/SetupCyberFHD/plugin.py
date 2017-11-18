@@ -936,7 +936,7 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 
 	def restart(self, answer):
 		if answer is True:
-			config.skin.primary_skin.value = 'Cyber_fhd/skin.xml'
+			config.skin.primary_skin.value = 'CyberFHD/skin.xml'
 			config.skin.primary_skin.save()
 			self.session.open(TryQuitMainloop, 3)
 
