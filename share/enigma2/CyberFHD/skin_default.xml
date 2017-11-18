@@ -1030,10 +1030,10 @@
     <panel name="TemplatesMenuLayer" />
     <panel name="TemplatesMenu500Layer" />
     <panel name="TemplatesMenuLeftLayer" />
-    <eLabel text="³" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <eLabel text="f" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
     <eLabel text="Choose your Skin" position="80,96" size="1500,44" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
     <widget name="SkinList" position="90,200" size="480,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-    <widget name="Preview" position="870,380" size="280,210" alphatest="on" />
+    <widget name="Preview" position="1060,380" size="280,210" alphatest="on" />
     <widget source="introduction" render="Label" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
     <panel name="TemplatesButtonsRedSource" />
     <panel name="TemplatesButtons" />
@@ -1989,34 +1989,34 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <widget name="Adaptertext" position="90,200" size="450,35" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" />
     <widget name="Adapter" position="90,230" size="450,35" font="Global; 25" foregroundColors="#8c8c93,#f23d21,#1cff1c" backgroundColor="background1" halign="left" transparent="1" />
     <widget name="AdapterInfo_OK" position="1020,215" size="38,31" pixmap="CyberFHD/icons/lock_on.png" alphatest="on" zPosition="2" />
-    <widget name="AdapterInfo" position="550,200" size="450,65" pixmaps="CyberFHD/icons/select300blue.png,CyberFHD/icons/select300red.png" zPosition="1" />
+    <widget name="AdapterInfo" position="550,200" size="450,65" pixmaps="CyberFHD/icons/selectgreen.png,CyberFHD/icons/selectred.png" zPosition="1" />
     <widget name="AdapterInfo_Text" position="550,200" size="450,65" font="Global; 25" foregroundColors="#ffffff,#ffffff,#ffffff" backgroundColor="background1" halign="center" valign="center" transparent="1" zPosition="2" />
     <eLabel position="90,275" size="980,2" backgroundColor="background3" zPosition="1" />
     <widget name="Networktext" position="90,290" size="450,35" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" />
     <widget name="Network" position="90,320" size="450,35" font="Global; 25" foregroundColors="#8c8c93,#f23d21,#1cff1c" backgroundColor="background1" halign="left" transparent="1" />
     <widget name="NetworkInfo_Check" position="1020,305" size="38,31" pixmaps="CyberFHD/icons/lock_on.png,CyberFHD/icons/lock_error.png" alphatest="on" zPosition="2" />
-    <widget name="NetworkInfo" position="550,290" size="450,65" pixmaps="CyberFHD/icons/select300blue.png,CyberFHD/icons/select300red.png" zPosition="1" />
+    <widget name="NetworkInfo" position="550,290" size="450,65" pixmaps="CyberFHD/icons/selectgreen.png,CyberFHD/icons/selectred.png" zPosition="1" />
     <widget name="NetworkInfo_Text" position="550,290" size="450,65" font="Global; 25" foregroundColors="#ffffff,#ffffff,#ffffff" backgroundColor="background1" halign="center" valign="center" transparent="1" zPosition="2" />
     <eLabel position="90,365" size="980,2" backgroundColor="background3" zPosition="1" />
     <widget name="Dhcptext" position="90,380" size="450,35" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" />
     <widget name="Dhcp" position="90,410" size="450,35" font="Global; 25" foregroundColors="#8c8c93,#f23d21,#1cff1c" backgroundColor="background1" halign="left" transparent="1" />
     <widget name="DhcpInfo_Check" position="1020,395" size="38,31" pixmaps="CyberFHD/icons/lock_on.png,CyberFHD/icons/lock_error.png" alphatest="on" zPosition="2" />
-    <widget name="DhcpInfo" position="550,380" size="450,65" pixmaps="CyberFHD/icons/select300blue.png,CyberFHD/icons/select300red.png" zPosition="1" />
+    <widget name="DhcpInfo" position="550,380" size="450,65" pixmaps="CyberFHD/icons/selectgreen.png,CyberFHD/icons/selectred.png" zPosition="1" />
     <widget name="DhcpInfo_Text" position="550,380" size="450,65" font="Global; 25" foregroundColors="#ffffff,#ffffff,#ffffff" backgroundColor="background1" halign="center" valign="center" transparent="1" zPosition="2" />
     <eLabel position="90,455" size="980,2" backgroundColor="background3" zPosition="1" />
     <widget name="IPtext" position="90,470" size="450,35" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" />
     <widget name="IP" position="90,500" size="450,35" font="Global; 25" foregroundColors="#8c8c93,#f23d21,#1cff1c" backgroundColor="background1" halign="left" transparent="1" />
     <widget name="IPInfo_Check" position="1020,485" size="38,31" pixmaps="CyberFHD/icons/lock_on.png,CyberFHD/icons/lock_error.png" alphatest="on" zPosition="2" />
-    <widget name="IPInfo" position="550,470" size="450,65" pixmaps="CyberFHD/icons/select300blue.png,CyberFHD/icons/select300red.png" zPosition="1" />
+    <widget name="IPInfo" position="550,470" size="450,65" pixmaps="CyberFHD/icons/selectgreen.png,CyberFHD/icons/selectred.png" zPosition="1" />
     <widget name="IPInfo_Text" position="550,470" size="450,65" font="Global; 25" foregroundColors="#ffffff,#ffffff,#ffffff" backgroundColor="background1" halign="center" valign="center" transparent="1" zPosition="2" />
     <eLabel position="90,545" size="980,2" backgroundColor="background3" zPosition="1" />
     <widget name="DNStext" position="90,560" size="450,35" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" />
     <widget name="DNS" position="90,590" size="450,35" font="Global; 25" foregroundColors="#8c8c93,#f23d21,#1cff1c" backgroundColor="background1" halign="left" transparent="1" />
     <widget name="DNSInfo_Check" position="1020,575" size="38,31" pixmaps="CyberFHD/icons/lock_on.png,CyberFHD/icons/lock_error.png" alphatest="on" zPosition="2" />
-    <widget name="DNSInfo" position="550,560" size="450,65" pixmaps="CyberFHD/icons/select300blue.png,CyberFHD/icons/select300red.png" zPosition="1" />
+    <widget name="DNSInfo" position="550,560" size="450,65" pixmaps="CyberFHD/icons/selectgreen.png,CyberFHD/icons/selectred.png" zPosition="1" />
     <widget name="DNSInfo_Text" position="550,560" size="450,65" font="Global; 25" foregroundColors="#ffffff,#ffffff,#ffffff" backgroundColor="background1" halign="center" valign="center" transparent="1" zPosition="2" />
     <eLabel position="90,635" size="980,2" backgroundColor="background3" zPosition="1" />
-    <widget name="EditSettingsButton" position="550,650" size="450,65" pixmaps="CyberFHD/icons/select300blue.png,CyberFHD/icons/select300red.png" zPosition="1" />
+    <widget name="EditSettingsButton" position="550,650" size="450,65" pixmaps="CyberFHD/icons/selectgreen.png,CyberFHD/icons/selectred.png" zPosition="1" />
     <widget name="EditSettings_Text" position="550,650" size="450,65" font="Global; 25" foregroundColors="#ffffff,#ffffff,#ffffff" backgroundColor="background1" halign="center" valign="center" transparent="1" zPosition="2" />
     <widget name="InfoText" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
     <widget name="InfoTextBorder" position="0,0" size="0,0" />
