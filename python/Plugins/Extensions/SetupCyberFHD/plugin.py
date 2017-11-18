@@ -758,12 +758,12 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 			os.system("sed -i 's/#10a9a9a9/#%s%s/w' %sCyberFHD/skin.xml" % (config.skin.cyberfhd.foregroundtransparent.value, config.skin.cyberfhd.colorforeground3.value, skinpath))
 			os.system("sed -i 's/#1000ffff/#%s%s/w' %sCyberFHD/skin.xml" % (config.skin.cyberfhd.foregroundtransparent.value, config.skin.cyberfhd.colorforeground4.value, skinpath))
 			os.system("sed -i 's/#10ffffff/#%s%s/w' %sCyberFHD/skin.xml" % (config.skin.cyberfhd.backgroundtransparent.value, config.skin.cyberfhd.colorforeground5.value, skinpath))
-	# clock	
+	# clock
 			if not fileExists("/usr/lib/enigma2/python/Components/Converter/AlwaysTrue.py"):
 				os.system("sed -i 's/TemplatesClockDefault/TemplatesClock/w' %sCyberFHD/skin_templates.xml" % (skinpath))
 			else:
 				os.system("sed -i 's/TemplatesClockStyle/TemplatesClock/w' %sCyberFHD/skin_templates.xml" % (skinpath))
-	# indication	
+	# indication
 			if not fileExists("/usr/lib/enigma2/python/Components/Converter/AC3DownMixStatus.py")\
 				or not fileExists("/usr/lib/enigma2/python/Components/Converter/ServiceInfoEX.py"):
 				os.system("sed -i 's/TemplatesInfoBarTvIndicationDefault/TemplatesInfoBarTvIndication/w' %sCyberFHD/skin_templates.xml" % (skinpath))
@@ -773,7 +773,7 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 				os.system("sed -i 's/TemplatesInfoBarTvIndicationStyle/TemplatesInfoBarTvIndication/w' %sCyberFHD/skin_templates.xml" % (skinpath))
 				os.system("sed -i 's/TemplatesInfoBarMediaIndicationStyle/TemplatesInfoBarMediaIndication/w' %sCyberFHD/skin_templates.xml" % (skinpath))
 				os.system("sed -i 's/TemplatesInfoBarRadioIndicationStyle/TemplatesInfoBarRadioIndication/w' %sCyberFHD/skin_templates.xml" % (skinpath))
-	# fonts	
+	# fonts
 			os.system("sed -i 's/Roboto-Regular/%s/w' %sCyberFHD/skin.xml" % (config.skin.cyberfhd.fonts.value, skinpath))
 	# scrollbar
 			os.system("sed -i 's/showNever/%s/w' %sCyberFHD/skin.xml" % (config.skin.cyberfhd.scrollbarmode.value, skinpath))
@@ -936,6 +936,8 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 
 	def restart(self, answer):
 		if answer is True:
+			config.skin.primary_skin.value = 'Cyber_fhd/skin.xml'
+			config.skin.primary_skin.save()
 			self.session.open(TryQuitMainloop, 3)
 
 	def about(self):
