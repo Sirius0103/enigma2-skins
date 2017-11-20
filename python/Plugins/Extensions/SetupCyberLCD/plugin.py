@@ -346,7 +346,7 @@ SKIN_CYBERLCD = """
 		<widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="SkinGlobal; 25" backgroundColor="#50000000" backgroundColorSelected="#50696969" transparent="1" />
 		<widget source="info_com" render="Label" position="340,895" size="1000,60" font="SkinGlobal; 25" foregroundColor="#10a9a9a9" backgroundColor="#50000000" halign="left" valign="bottom" transparent="1" />
 		<widget source="version_sk" render="Label" position="340,960" size="250,30" font="SkinGlobal; 25" foregroundColor="#10a9a9a9" backgroundColor="#50000000" halign="left" valign="center" transparent="1" />
-		<widget source="info_sk" render="Label" position="590,960" size="100,30" font="SkinGlobal; 25" foregroundColor="#10a9a9a9" backgroundColor="#50000000" halign="left" valign="center" transparent="1" />
+		<widget source="info_sk" render="Label" position="590,960" size="750,30" font="SkinGlobal; 25" foregroundColor="#10a9a9a9" backgroundColor="#50000000" halign="left" valign="center" transparent="1" />
 
 	<!-- Preview Layer -->
 		<eLabel position="1098,363" size="742,484" backgroundColor="#50ffffff" zPosition="-12" />
@@ -540,24 +540,25 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 			pass
 
 	def infosk(self):
-		package = 0
-		global status
-		if fileExists("/usr/lib/opkg/status"):
-			status = "/usr/lib/opkg/status"
-		elif fileExists("/var/lib/opkg/status"):
-			status = "/var/lib/opkg/status"
-		elif fileExists("/var/opkg/status"):
-			status = "/var/opkg/status"
-		for line in open(status):
-			if line.find("CyberLCD") > -1:
-				package = 1
-			if line.find("Version:") > -1 and package == 1:
-				package = 0
-				try:
-					self["info_sk"].text = line.split()[1]
-				except:
-					self["info_sk"].text = " "
-				break
+		self["info_sk"].text = "release candidate"
+#		package = 0
+#		global status
+#		if fileExists("/usr/lib/opkg/status"):
+#			status = "/usr/lib/opkg/status"
+#		elif fileExists("/var/lib/opkg/status"):
+#			status = "/var/lib/opkg/status"
+#		elif fileExists("/var/opkg/status"):
+#			status = "/var/opkg/status"
+#		for line in open(status):
+#			if line.find("CyberLCD") > -1:
+#				package = 1
+#			if line.find("Version:") > -1 and package == 1:
+#				package = 0
+#				try:
+#					self["info_sk"].text = line.split()[1]
+#				except:
+#					self["info_sk"].text = " "
+#				break
 
 	def infocom(self):
 		if fileExists("/usr/lib/enigma2/python/Plugins/Extensions/WeatherMSN/plugin.pyo")\

@@ -28,7 +28,7 @@
     <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget source="info_com" render="Label" position="340,895" size="1000,60" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
     <widget source="version_sk" render="Label" position="340,960" size="250,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="center" transparent="1" />
-    <widget source="info_sk" render="Label" position="590,960" size="100,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="center" transparent="1" />
+    <widget source="info_sk" render="Label" position="590,960" size="750,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="center" transparent="1" />
     <!-- Layer Preview -->
     <eLabel position="1098,363" size="742,484" backgroundColor="background3" zPosition="-12" />
     <eLabel position="1100,365" size="740,480" backgroundColor="background1" zPosition="-11" />
@@ -73,7 +73,7 @@
     <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget source="info_com" render="Label" position="340,895" size="1000,60" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
     <widget source="version_sk" render="Label" position="340,960" size="250,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="center" transparent="1" />
-    <widget source="info_sk" render="Label" position="590,960" size="100,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="center" transparent="1" />
+    <widget source="info_sk" render="Label" position="590,960" size="750,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="center" transparent="1" />
     <!-- Layer Preview -->
     <eLabel position="1098,363" size="742,484" backgroundColor="background3" zPosition="-12" />
     <eLabel position="1100,365" size="740,480" backgroundColor="background1" zPosition="-11" />
