@@ -538,10 +538,10 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 			pass
 
 	def infosk(self):
-		skinpath = "/usr/share/enigma2/"
+		pluginpath = "/usr/lib/enigma2/python/Plugins/Extensions/"
 		list = ""
 		try:
-			text = open(("%sCyberLCD/version" % (skinpath)), "r").readlines()[1]
+			text = open(("%sSetupCyberLCD/version" % (pluginpath)), "r").readlines()[1]
 			for line in text:
 				list += line
 			self["info_sk"].setText(list)
@@ -553,6 +553,7 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 	def infocom(self):
 		gitversion = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberLCD/version"
 		urllib.urlretrieve (gitversion, "/tmp/version")
+
 		if fileExists("/usr/lib/enigma2/python/Plugins/Extensions/WeatherMSN/plugin.pyo")\
 			and not fileExists("/usr/lib/enigma2/python/Components/Converter/MSNWeather2.py"):
 			self["info_com"] = StaticText(_("No install components skin !!! \nPress blue button to install !!!"))
@@ -620,7 +621,7 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 		componentspath = "/usr/lib/enigma2/python/Components/"
 
 		try:
-			os.system("cp /tmp/version %sCyberLCD/version" % (skinpath))
+			os.system("cp /tmp/version %sSetupCyberLCD/version" % (pluginpath))
 	# install plugin
 			os.system("cp /tmp/plugin.py %sSetupCyberLCD/plugin.py" % (pluginpath))
 	# install skin

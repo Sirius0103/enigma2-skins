@@ -422,9 +422,8 @@ SKIN_CYBERFHD = """
 		<eLabel text="D" position="10,765" size="70,70" font="SkinTitles; 70" foregroundColor="color5" backgroundColor="#50696969" halign="center" valign="center" transparent="1" zPosition="-9" />
 		<widget source="Title" render="Label" position="80,96" size="1500,44" font="SkinTitles; 40" foregroundColor="#10ffd700" backgroundColor="#50000000" halign="left" transparent="1" />
 		<widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="SkinGlobal; 25" backgroundColor="#50000000" backgroundColorSelected="#50696969" transparent="1" />
-		<widget source="info_com" render="Label" position="340,895" size="1000,60" font="SkinGlobal; 25" foregroundColor="#10a9a9a9" backgroundColor="#50000000" halign="left" valign="bottom" transparent="1" />
-		<widget source="version_sk" render="Label" position="340,960" size="250,30" font="SkinGlobal; 25" foregroundColor="#10a9a9a9" backgroundColor="#50000000" halign="left" valign="center" transparent="1" />
-		<widget source="info_sk" render="Label" position="590,960" size="750,30" font="SkinGlobal; 25" foregroundColor="#10a9a9a9" backgroundColor="#50000000" halign="left" valign="center" transparent="1" />
+		<widget name="info_com" position="340,895" size="1000,60" font="SkinGlobal; 25" foregroundColor="#10a9a9a9" backgroundColor="#50000000" halign="left" valign="top" transparent="1" />
+		<widget name="info_sk" position="340,960" size="1000,30" font="SkinGlobal; 25" foregroundColor="#10a9a9a9" backgroundColor="#50000000" halign="left" valign="center" transparent="1" />
 
 	<!-- Preview Layer -->
 		<eLabel position="1098,363" size="742,484" backgroundColor="#50ffffff" zPosition="-12" />
@@ -537,9 +536,8 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 		self["fgcolor4a"] = Label(_(" "))
 		self["fgcolor5a"] = Label(_(" "))
 
-		self["version_sk"] = StaticText(_("Version skin:"))
-		self["info_sk"] = StaticText()
-		self["info_com"] = StaticText()
+		self["info_sk"] = Label(_(" "))
+		self["info_com"] = Label(_(" "))
 
 		self.infosk()
 		self.infocom()
@@ -696,27 +694,22 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 			pass
 
 	def infosk(self):
-		self["info_sk"].text = "release candidate"
-#		package = 0
-#		global status
-#		if fileExists("/usr/lib/opkg/status"):
-#			status = "/usr/lib/opkg/status"
-#		elif fileExists("/var/lib/opkg/status"):
-#			status = "/var/lib/opkg/status"
-#		elif fileExists("/var/opkg/status"):
-#			status = "/var/opkg/status"
-#		for line in open(status):
-#			if line.find("CyberFHD") > -1:
-#				package = 1
-#			if line.find("Version:") > -1 and package == 1:
-#				package = 0
-#				try:
-#					self["info_sk"].text = line.split()[1]
-#				except:
-#					self["info_sk"].text = " "
-#				break
+		pluginpath = "/usr/lib/enigma2/python/Plugins/Extensions/"
+		list = ""
+		try:
+			text = open(("%sSetupCyberFHD/version" % (pluginpath)), "r").readlines()[1]
+			for line in text:
+				list += line
+			self["info_sk"].setText(list)
+			text.close()
+			return list
+		except:
+			return ""
 
 	def infocom(self):
+		gitversion = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberLCD/version"
+		urllib.urlretrieve (gitversion, "/tmp/version")
+
 		if fileExists("/usr/lib/enigma2/python/Plugins/Extensions/WeatherMSN/plugin.pyo")\
 			and not fileExists("/usr/lib/enigma2/python/Components/Converter/MSNWeather2.py"):
 			self["info_com"] = StaticText(_("No install components skin !!! \nPress blue button to install !!!"))
@@ -735,7 +728,16 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 			or not fileExists("/usr/lib/enigma2/python/Components/Renderer/Watches.py"):
 			self["info_com"] = StaticText(_("No install components skin !!! \nPress blue button to install !!!"))
 		else:
-			self["info_com"] = StaticText(_(" "))
+			list = ""
+			try:
+				text = open(("/tmp/version"), "r").readlines()[3]
+				for line in text:
+					list += line
+				self["info_com"].setText(list)
+				text.close()
+				return list
+			except:
+				return ""
 
 	def createSkin(self):
 		skinpath = "/usr/share/enigma2/"
@@ -812,7 +814,9 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 		skinpath = "/usr/share/enigma2/"
 		pluginpath = "/usr/lib/enigma2/python/Plugins/Extensions/"
 		componentspath = "/usr/lib/enigma2/python/Components/"
+
 		try:
+			os.system("cp /tmp/version %sSetupCyberFHD/version" % (pluginpath))
 	# install plugin
 			os.system("cp /tmp/plugin.py %sSetupCyberFHD/plugin.py" % (pluginpath))
 	# install skin
@@ -888,7 +892,8 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 		urllib.urlretrieve (gitfile18, "/tmp/RendVolumeText.py")
 		urllib.urlretrieve (gitfile19, "/tmp/Watches.py")
 
-		if fileExists("/tmp/plugin.py")\
+		if fileExists("/tmp/version")\
+			and fileExists("/tmp/plugin.py")\
 			and fileExists("/tmp/skin.xml")\
 			and fileExists("/tmp/skin_default.xml")\
 			and fileExists("/tmp/skin_templates.xml")\
