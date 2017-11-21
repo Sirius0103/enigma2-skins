@@ -552,14 +552,17 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 
 	def infocom(self):
 		gitversion = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberLCD/version"
-		urllib.urlretrieve (gitversion, "/tmp/version")
+		try:
+			urllib.urlretrieve (gitversion, "/tmp/version")
+		except:
+			pass
 
 		if fileExists("/usr/lib/enigma2/python/Plugins/Extensions/WeatherMSN/plugin.pyo")\
 			and not fileExists("/usr/lib/enigma2/python/Components/Converter/MSNWeather2.py"):
-			self["info_com"] = StaticText(_("No install components skin !!! \nPress blue button to install !!!"))
+			self["info_com"] = Label(_("No install components skin !!! \nPress blue button to install !!!"))
 		elif not fileExists("/usr/lib/enigma2/python/Components/Converter/AlwaysTrue.py")\
 			or not fileExists("/usr/lib/enigma2/python/Components/Renderer/PiconUni.py"):
-			self["info_com"] = StaticText(_("No install components skin !!! \nPress blue button to install !!!"))
+			self["info_com"] = Label(_("No install components skin !!! \nPress blue button to install !!!"))
 		else:
 			list = ""
 			try:
