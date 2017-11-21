@@ -707,7 +707,7 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 			return ""
 
 	def infocom(self):
-		gitversion = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberLCD/version"
+		gitversion = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberFHD/version"
 		urllib.urlretrieve (gitversion, "/tmp/version")
 
 		if fileExists("/usr/lib/enigma2/python/Plugins/Extensions/WeatherMSN/plugin.pyo")\
