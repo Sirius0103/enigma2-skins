@@ -631,67 +631,64 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 		self.fgColor4 = "#0%s" % config.skin.cyberfhd.colorforeground4.value
 		self.fgColor5 = "#0%s" % config.skin.cyberfhd.colorforeground5.value
 
-		try:
-		# Background 1
-			self["bgcolor1a"].setText(_(self.bgtext))
-			self["bgcolor1a"].instance.setBackgroundColor(parseColor(self.bgColor1))
-			self["bgcolor1a"].instance.setForegroundColor(parseColor(self.bgColor1))
-			self["bgcolor1b"].setText(_(self.bgtext))
-			self["bgcolor1b"].instance.setBackgroundColor(parseColor(self.bgColor1))
-			self["bgcolor1b"].instance.setForegroundColor(parseColor(self.bgColor1))
-			self["bgcolor1c"].setText(_(self.bgtext))
-			self["bgcolor1c"].instance.setBackgroundColor(parseColor(self.bgColor1))
-			self["bgcolor1c"].instance.setForegroundColor(parseColor(self.bgColor1))
-		# Background 2
-			self["bgcolor2a"].setText(_(self.bgtext))
-			self["bgcolor2a"].instance.setBackgroundColor(parseColor(self.bgColor2))
-			self["bgcolor2a"].instance.setForegroundColor(parseColor(self.bgColor2))
-		# Background 3
-			self["bgcolor3a"].setText(_(self.bgtext))
-			self["bgcolor3a"].instance.setBackgroundColor(parseColor(self.bgColor3))
-			self["bgcolor3a"].instance.setForegroundColor(parseColor(self.bgColor3))
-			self["bgcolor3b"].setText(_(self.bgtext))
-			self["bgcolor3b"].instance.setBackgroundColor(parseColor(self.bgColor3))
-			self["bgcolor3b"].instance.setForegroundColor(parseColor(self.bgColor3))
-			self["bgcolor3c"].setText(_(self.bgtext))
-			self["bgcolor3c"].instance.setBackgroundColor(parseColor(self.bgColor3))
-			self["bgcolor3c"].instance.setForegroundColor(parseColor(self.bgColor3))
-			self["bgcolor3d"].setText(_(self.bgtext))
-			self["bgcolor3d"].instance.setBackgroundColor(parseColor(self.bgColor3))
-			self["bgcolor3d"].instance.setForegroundColor(parseColor(self.bgColor3))
-		# Progress
-			self["bgcolor4a"].setText(_(self.bgtext))
-			self["bgcolor4a"].instance.setBackgroundColor(parseColor(self.bgColor4))
-			self["bgcolor4a"].instance.setForegroundColor(parseColor(self.bgColor4))
-		# Cursor
-			self["bgcolor5a"].setText(_(self.bgtext))
-			self["bgcolor5a"].instance.setBackgroundColor(parseColor(self.bgColor5))
-			self["bgcolor5a"].instance.setForegroundColor(parseColor(self.bgColor5))
-		# Title
-			self["fgcolor1a"].setText(_(self.fgtext))
-			self["fgcolor1a"].instance.setForegroundColor(parseColor(self.fgColor1))
-			self["fgcolor1b"].setText(_(self.fgtext))
-			self["fgcolor1b"].instance.setForegroundColor(parseColor(self.fgColor1))
-		# Font 1
-			self["fgcolor2a"].setText(_(self.fgtext))
-			self["fgcolor2a"].instance.setForegroundColor(parseColor(self.fgColor2))
-			self["fgcolor2b"].setText(_(self.fgtext))
-			self["fgcolor2b"].instance.setForegroundColor(parseColor(self.fgColor2))
-			self["fgcolor2c"].setText(_(self.fgtext))
-			self["fgcolor2c"].instance.setForegroundColor(parseColor(self.fgColor2))
-		# Font 2
-			self["fgcolor3a"].setText(_(self.fgtext))
-			self["fgcolor3a"].instance.setForegroundColor(parseColor(self.fgColor3))
-			self["fgcolor3b"].setText(_(self.fgtext))
-			self["fgcolor3b"].instance.setForegroundColor(parseColor(self.fgColor3))
-		# Indication
-			self["fgcolor4a"].setText(_(self.fgtext))
-			self["fgcolor4a"].instance.setForegroundColor(parseColor(self.fgColor4))
-		# Icon
-			self["fgcolor5a"].setText(_(self.fglogo))
-			self["fgcolor5a"].instance.setForegroundColor(parseColor(self.fgColor5))
-		except:
-			pass
+	# Background 1
+		self["bgcolor1a"].setText(_(self.bgtext))
+		self["bgcolor1a"].instance.setBackgroundColor(parseColor(self.bgColor1))
+		self["bgcolor1a"].instance.setForegroundColor(parseColor(self.bgColor1))
+		self["bgcolor1b"].setText(_(self.bgtext))
+		self["bgcolor1b"].instance.setBackgroundColor(parseColor(self.bgColor1))
+		self["bgcolor1b"].instance.setForegroundColor(parseColor(self.bgColor1))
+		self["bgcolor1c"].setText(_(self.bgtext))
+		self["bgcolor1c"].instance.setBackgroundColor(parseColor(self.bgColor1))
+		self["bgcolor1c"].instance.setForegroundColor(parseColor(self.bgColor1))
+	# Background 2
+		self["bgcolor2a"].setText(_(self.bgtext))
+		self["bgcolor2a"].instance.setBackgroundColor(parseColor(self.bgColor2))
+		self["bgcolor2a"].instance.setForegroundColor(parseColor(self.bgColor2))
+	# Background 3
+		self["bgcolor3a"].setText(_(self.bgtext))
+		self["bgcolor3a"].instance.setBackgroundColor(parseColor(self.bgColor3))
+		self["bgcolor3a"].instance.setForegroundColor(parseColor(self.bgColor3))
+		self["bgcolor3b"].setText(_(self.bgtext))
+		self["bgcolor3b"].instance.setBackgroundColor(parseColor(self.bgColor3))
+		self["bgcolor3b"].instance.setForegroundColor(parseColor(self.bgColor3))
+		self["bgcolor3c"].setText(_(self.bgtext))
+		self["bgcolor3c"].instance.setBackgroundColor(parseColor(self.bgColor3))
+		self["bgcolor3c"].instance.setForegroundColor(parseColor(self.bgColor3))
+		self["bgcolor3d"].setText(_(self.bgtext))
+		self["bgcolor3d"].instance.setBackgroundColor(parseColor(self.bgColor3))
+		self["bgcolor3d"].instance.setForegroundColor(parseColor(self.bgColor3))
+	# Progress
+		self["bgcolor4a"].setText(_(self.bgtext))
+		self["bgcolor4a"].instance.setBackgroundColor(parseColor(self.bgColor4))
+		self["bgcolor4a"].instance.setForegroundColor(parseColor(self.bgColor4))
+	# Cursor
+		self["bgcolor5a"].setText(_(self.bgtext))
+		self["bgcolor5a"].instance.setBackgroundColor(parseColor(self.bgColor5))
+		self["bgcolor5a"].instance.setForegroundColor(parseColor(self.bgColor5))
+	# Title
+		self["fgcolor1a"].setText(_(self.fgtext))
+		self["fgcolor1a"].instance.setForegroundColor(parseColor(self.fgColor1))
+		self["fgcolor1b"].setText(_(self.fgtext))
+		self["fgcolor1b"].instance.setForegroundColor(parseColor(self.fgColor1))
+	# Font 1
+		self["fgcolor2a"].setText(_(self.fgtext))
+		self["fgcolor2a"].instance.setForegroundColor(parseColor(self.fgColor2))
+		self["fgcolor2b"].setText(_(self.fgtext))
+		self["fgcolor2b"].instance.setForegroundColor(parseColor(self.fgColor2))
+		self["fgcolor2c"].setText(_(self.fgtext))
+		self["fgcolor2c"].instance.setForegroundColor(parseColor(self.fgColor2))
+	# Font 2
+		self["fgcolor3a"].setText(_(self.fgtext))
+		self["fgcolor3a"].instance.setForegroundColor(parseColor(self.fgColor3))
+		self["fgcolor3b"].setText(_(self.fgtext))
+		self["fgcolor3b"].instance.setForegroundColor(parseColor(self.fgColor3))
+	# Indication
+		self["fgcolor4a"].setText(_(self.fgtext))
+		self["fgcolor4a"].instance.setForegroundColor(parseColor(self.fgColor4))
+	# Icon
+		self["fgcolor5a"].setText(_(self.fglogo))
+		self["fgcolor5a"].instance.setForegroundColor(parseColor(self.fgColor5))
 
 	def infosk(self):
 		pluginpath = "/usr/lib/enigma2/python/Plugins/Extensions/"
@@ -873,27 +870,29 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 		gitfile17 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/PiconUni.py"
 		gitfile18 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/RendVolumeText.py"
 		gitfile19 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/Watches.py"
-	# end
 
-		urllib.urlretrieve (gitfile01, "/tmp/plugin.py")
-		urllib.urlretrieve (gitfile02, "/tmp/skin.xml")
-		urllib.urlretrieve (gitfile03, "/tmp/skin_default.xml")
-		urllib.urlretrieve (gitfile04, "/tmp/skin_templates.xml")
-		urllib.urlretrieve (gitfile05, "/tmp/skin_templates_default.xml")
-		urllib.urlretrieve (gitfile06, "/tmp/skin_extra.xml")
-		urllib.urlretrieve (gitfile07, "/tmp/AlwaysTrue.py")
-		urllib.urlretrieve (gitfile08, "/tmp/AC3DownMixStatus.py")
-		urllib.urlretrieve (gitfile09, "/tmp/CaidInfo2.py")
-		urllib.urlretrieve (gitfile10, "/tmp/CamdInfo3.py")
-		urllib.urlretrieve (gitfile11, "/tmp/EventName2.py")
-		urllib.urlretrieve (gitfile12, "/tmp/FrontendInfo2.py")
-		urllib.urlretrieve (gitfile13, "/tmp/ModuleControl.py")
-		urllib.urlretrieve (gitfile14, "/tmp/ProgressDiskSpaceInfo.py")
-		urllib.urlretrieve (gitfile15, "/tmp/ServiceInfoEX.py")
-		urllib.urlretrieve (gitfile16, "/tmp/ServiceName2.py")
-		urllib.urlretrieve (gitfile17, "/tmp/PiconUni.py")
-		urllib.urlretrieve (gitfile18, "/tmp/RendVolumeText.py")
-		urllib.urlretrieve (gitfile19, "/tmp/Watches.py")
+		try:
+			urllib.urlretrieve (gitfile01, "/tmp/plugin.py")
+			urllib.urlretrieve (gitfile02, "/tmp/skin.xml")
+			urllib.urlretrieve (gitfile03, "/tmp/skin_default.xml")
+			urllib.urlretrieve (gitfile04, "/tmp/skin_templates.xml")
+			urllib.urlretrieve (gitfile05, "/tmp/skin_templates_default.xml")
+			urllib.urlretrieve (gitfile06, "/tmp/skin_extra.xml")
+			urllib.urlretrieve (gitfile07, "/tmp/AlwaysTrue.py")
+			urllib.urlretrieve (gitfile08, "/tmp/AC3DownMixStatus.py")
+			urllib.urlretrieve (gitfile09, "/tmp/CaidInfo2.py")
+			urllib.urlretrieve (gitfile10, "/tmp/CamdInfo3.py")
+			urllib.urlretrieve (gitfile11, "/tmp/EventName2.py")
+			urllib.urlretrieve (gitfile12, "/tmp/FrontendInfo2.py")
+			urllib.urlretrieve (gitfile13, "/tmp/ModuleControl.py")
+			urllib.urlretrieve (gitfile14, "/tmp/ProgressDiskSpaceInfo.py")
+			urllib.urlretrieve (gitfile15, "/tmp/ServiceInfoEX.py")
+			urllib.urlretrieve (gitfile16, "/tmp/ServiceName2.py")
+			urllib.urlretrieve (gitfile17, "/tmp/PiconUni.py")
+			urllib.urlretrieve (gitfile18, "/tmp/RendVolumeText.py")
+			urllib.urlretrieve (gitfile19, "/tmp/Watches.py")
+		except:
+			pass
 
 		if fileExists("/tmp/version")\
 			and fileExists("/tmp/plugin.py")\
@@ -941,7 +940,7 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 
 	def restart(self, answer):
 		if answer is True:
-			config.skin.primary_skin.value = 'CyberFHD/skin.xml'
+			config.skin.primary_skin.value = "CyberFHD/skin.xml"
 			config.skin.primary_skin.save()
 			self.session.open(TryQuitMainloop, 3)
 

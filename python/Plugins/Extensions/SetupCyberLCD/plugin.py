@@ -513,29 +513,26 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 		self.fgColor3 = "#0%s" % config.skin.cyberlcd.colorforeground3.value
 		self.fgColor4 = "#0%s" % config.skin.cyberlcd.colorforeground4.value
 
-		try:
-		# Background
-			self["bgcolor1a"].setText(_(self.bgtext))
-			self["bgcolor1a"].instance.setBackgroundColor(parseColor(self.bgColor1))
-			self["bgcolor1a"].instance.setForegroundColor(parseColor(self.bgColor1))
-		# Progress
-			self["bgcolor4a"].setText(_(self.bgtext))
-			self["bgcolor4a"].instance.setBackgroundColor(parseColor(self.bgColor4))
-			self["bgcolor4a"].instance.setForegroundColor(parseColor(self.bgColor4))
-		# Title
-			self["fgcolor1a"].setText(_(self.fgtext))
-			self["fgcolor1a"].instance.setForegroundColor(parseColor(self.fgColor1))
-		# Font 1
-			self["fgcolor2a"].setText(_(self.fgtext))
-			self["fgcolor2a"].instance.setForegroundColor(parseColor(self.fgColor2))
-		# Font 2
-			self["fgcolor3a"].setText(_(self.fgtext))
-			self["fgcolor3a"].instance.setForegroundColor(parseColor(self.fgColor3))
-		# Indication
-			self["fgcolor4a"].setText(_(self.fgtext))
-			self["fgcolor4a"].instance.setForegroundColor(parseColor(self.fgColor4))
-		except:
-			pass
+	# Background
+		self["bgcolor1a"].setText(_(self.bgtext))
+		self["bgcolor1a"].instance.setBackgroundColor(parseColor(self.bgColor1))
+		self["bgcolor1a"].instance.setForegroundColor(parseColor(self.bgColor1))
+	# Progress
+		self["bgcolor4a"].setText(_(self.bgtext))
+		self["bgcolor4a"].instance.setBackgroundColor(parseColor(self.bgColor4))
+		self["bgcolor4a"].instance.setForegroundColor(parseColor(self.bgColor4))
+	# Title
+		self["fgcolor1a"].setText(_(self.fgtext))
+		self["fgcolor1a"].instance.setForegroundColor(parseColor(self.fgColor1))
+	# Font 1
+		self["fgcolor2a"].setText(_(self.fgtext))
+		self["fgcolor2a"].instance.setForegroundColor(parseColor(self.fgColor2))
+	# Font 2
+		self["fgcolor3a"].setText(_(self.fgtext))
+		self["fgcolor3a"].instance.setForegroundColor(parseColor(self.fgColor3))
+	# Indication
+		self["fgcolor4a"].setText(_(self.fgtext))
+		self["fgcolor4a"].instance.setForegroundColor(parseColor(self.fgColor4))
 
 	def infosk(self):
 		pluginpath = "/usr/lib/enigma2/python/Plugins/Extensions/"
@@ -648,12 +645,14 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 		gitfile03 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/AlwaysTrue.py"
 	# download renderer
 		gitfile04 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/PiconUni.py"
-	# end
 
-		urllib.urlretrieve (gitfile01, "/tmp/plugin.py")
-		urllib.urlretrieve (gitfile02, "/tmp/skin_default.xml")
-		urllib.urlretrieve (gitfile03, "/tmp/AlwaysTrue.py")
-		urllib.urlretrieve (gitfile04, "/tmp/PiconUni.py")
+		try:
+			urllib.urlretrieve (gitfile01, "/tmp/plugin.py")
+			urllib.urlretrieve (gitfile02, "/tmp/skin_default.xml")
+			urllib.urlretrieve (gitfile03, "/tmp/AlwaysTrue.py")
+			urllib.urlretrieve (gitfile04, "/tmp/PiconUni.py")
+		except:
+			pass
 
 		if fileExists("/tmp/version")\
 			and fileExists("/tmp/plugin.py")\
