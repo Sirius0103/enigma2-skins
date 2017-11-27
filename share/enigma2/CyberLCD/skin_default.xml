@@ -444,7 +444,7 @@
     </widget>
     <panel name="TemplatesInfoBarDisplayProgress" />
   </screen>
-  <!-- ########## InfoBar MoviePlayer ########## -->
+  <!-- ########## InfoBar Movie Player ########## -->
   <screen name="InfoBarMoviePlayerSummary" position="0,0" size="480,320">
     <panel name="TemplatesDisplayLayer" />
     <panel name="TemplatesMovieInfoBarDisplay" />
@@ -549,11 +549,13 @@
   <!-- ########## Event View ########## -->
   <!-- Event View -->
   <screen name="EventView_summary" position="0,0" size="480,320">
+    <panel name="TemplatesDisplayLayer" />
     <widget source="parent.Title" position="10,10" size="460,95" font="LCDTitles; 50" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1" />
     <widget source="parent.summary_description" render="Label" position="10,110" size="460,200" font="LCDGlobal; 40" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1" />
   </screen>
   <!-- Event View Simple -->
   <screen name="EventViewSimple_summary" position="0,0" size="480,320">
+    <panel name="TemplatesDisplayLayer" />
     <widget source="parent.Title" position="10,10" size="460,95" font="LCDTitles; 50" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1" />
     <widget source="parent.summary_description" render="Label" position="10,110" size="460,200" font="LCDGlobal; 40" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1" />
   </screen>
@@ -579,6 +581,7 @@
   </screen>
   <!-- ########## About ########## -->
   <screen name="AboutSummary" position="0,0" size="480,320">
+    <panel name="TemplatesDisplayLayer" />
     <widget source="AboutText" render="Label" position="10,10" size="460,300" font="LCDGlobal; 20" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1" />
   </screen>
   <!-- ########## Plugin browser ########## -->
@@ -634,6 +637,72 @@
     <widget source="parent.Text" render="Label" position="10,10" size="460,95" font="LCDTitles; 50" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1" />
     <widget source="parent.selectedChoice" render="Label" position="10,110" size="460,200" font="LCDGlobal; 40" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1" />
   </screen>
+  <!-- ########## Quick Menu ########## -->
+  <!-- Quick Menu -->
+  <screen name="QuickMenu_summary" position="0,0" size="480,320">
+    <panel name="TemplatesDisplayLayer" />
+    <widget source="parent.Title" render="Label" position="10,10" size="460,95" font="LCDTitles; 50" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1" />
+    <widget source="parent.summary_description" render="Label" position="10,110" size="460,200" font="LCDGlobal; 40" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1" />
+  </screen>
+  <!-- Infopanel -->
+  <screen name="Infopanel_summary" position="0,0" size="480,320">
+    <panel name="TemplatesDisplayLayer" />
+    <widget source="parent.Title" render="Label" position="10,10" size="460,95" font="LCDTitles; 50" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1" />
+    <widget source="parent.summary_description" render="Label" position="10,110" size="460,200" font="LCDGlobal; 40" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1" />
+  </screen>
+  <!-- ########## Softwaremanager ########## -->
+  <!-- Update Plugin -->
+  <screen name="UpdatePlugin_summary" position="0,0" size="480,320">
+    <panel name="TemplatesDisplayLayer" />
+    <widget source="parent.Title" render="Label" position="10,10" size="460,95" font="LCDTitles; 50" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1" />
+    <widget source="parent.package" render="Label" position="10,110" size="460,100" font="LCDGlobal; 40" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1" />
+    <widget source="parent.status" render="Label" position="10,215" size="460,100" font="LCDGlobal; 40" foregroundColor="LCDcolor3" halign="center" valign="center" transparent="1" />
+  </screen>
+  <!-- Software Update -->
+  <screen name="SoftwareUpdateChanges_summary" position="0,0" size="480,320">
+    <panel name="TemplatesDisplayLayer" />
+    <widget source="parent.title_summary" render="Label" position="10,10" size="460,95" font="LCDTitles; 50" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1" />
+    <widget source="parent.text_summary" render="Label" position="10,110" size="460,200" font="LCDGlobal; 40" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1" />
+  </screen>
+  <!-- Backup Selection -->
+  <screen name="BackupSelection_summary" position="0,0" size="480,320">
+    <panel name="TemplatesDisplayLayer" />
+    <widget source="parent.Title" render="Label" position="10,10" size="460,95" font="LCDTitles; 50" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1" />
+    <widget source="parent.summary_description" render="Label" position="10,110" size="460,200" font="LCDGlobal; 40" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1" />
+  </screen>
+  <!-- Restore Screen -->
+  <screen name="RestoreScreen_summary" position="0,0" size="480,320">
+    <panel name="TemplatesDisplayLayer" />
+    <widget source="parent.Title" render="Label" position="10,10" size="460,95" font="LCDTitles; 50" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1" />
+    <widget source="parent.summary_description" render="Label" position="10,110" size="460,200" font="LCDGlobal; 40" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1" />
+  </screen>
+  <!-- Installed Plugins -->
+  <screen name="installedPlugins_summary" position="0,0" size="480,320">
+    <panel name="TemplatesDisplayLayer" />
+    <widget source="parent.Title" render="Label" position="10,10" size="460,95" font="LCDTitles; 50" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1" />
+    <widget source="parent.summary_description" render="Label" position="10,110" size="460,200" font="LCDGlobal; 40" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1" />
+  </screen>
+  <!-- Restore Plugins -->
+  <screen name="RestorePlugins_summary" position="0,0" size="480,320">
+    <panel name="TemplatesDisplayLayer" />
+    <widget source="parent.Title" render="Label" position="10,10" size="460,95" font="LCDTitles; 50" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1" />
+    <widget source="parent.summary_description" render="Label" position="10,110" size="460,200" font="LCDGlobal; 40" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1" />
+  </screen>
+  <!-- Restart Network -->
+  <screen name="RestartNetwork_summary" position="0,0" size="480,320">
+    <panel name="TemplatesDisplayLayer" />
+    <widget source="parent.Title" render="Label" position="10,10" size="460,95" font="LCDTitles; 50" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1" />
+    <widget source="parent.summary_description" render="Label" position="10,110" size="460,200" font="LCDGlobal; 40" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1" />
+  </screen>
+  <!-- ########## Service Scan ########## -->
+  <screen name="ServiceScanSummary" position="0,0" size="480,320">
+    <panel name="TemplatesDisplayLayer" />
+    <widget name="Title" position="10,10" size="460,95" font="LCDTitles; 50" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1" />
+    <widget name="Service" position="10,110" size="460,120" font="LCDGlobal; 40" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1" />
+    <!-- Progress Layer -->
+    <panel name="TemplatesDisplayProgressLayer" />
+    <widget name="scan_progress" position="5,240" size="470,20" foregroundColor="LCDbackground4" transparent="1" zPosition="2" />
+  </screen>
   <!-- ########## Standby ########## -->
   <screen name="StandbySummary" position="0,0" size="480,320">
     <panel name="TemplatesDisplayLayer" />
@@ -642,6 +711,7 @@
   <!-- ########## Wizard ########## -->
   <!-- Wizard -->
   <screen name="WizardSummary" position="0,0" size="480,320">
+    <panel name="TemplatesDisplayLayer" />
     <widget source="text" render="Label" position="10,10" size="460,95" font="LCDTitles; 50" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1" />
     <widget source="parent.list" render="Label" position="10,110" size="460,200" font="LCDGlobal; 40" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1">
       <convert type="StringListSelection" />
@@ -649,11 +719,13 @@
   </screen>
   <!-- Language Wizard -->
   <screen name="LanguageWizardSummary" position="0,0" size="480,320">
+    <panel name="TemplatesDisplayLayer" />
     <widget source="parent.summarytext" render="Label" position="10,10" size="460,95" font="LCDTitles; 50" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1" />
     <widget source="parent.summarylangname" render="Label" position="10,110" size="460,200" font="LCDGlobal; 40" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1" />
   </screen>
   <!-- Video Wizard -->
   <screen name="VideoWizardSummary" position="0,0" size="480,320">
+    <panel name="TemplatesDisplayLayer" />
     <widget name="text" render="Label" position="10,10" size="460,95" font="LCDTitles; 50" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1" />
     <widget source="parent.list" render="Label" position="10,110" size="460,200" font="LCDGlobal; 40" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1">
       <convert type="StringListSelection" />
