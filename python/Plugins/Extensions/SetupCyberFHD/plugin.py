@@ -304,9 +304,9 @@ else:
 		("TemplatesInfoBarTvInfoCryptedStyle", _("Yes"))]
 	infopanelinfobar = [
 		("TemplatesInfoBarTvInfoPanelDefault", _("No")),
-#		("TemplatesInfoBarTvInfoPanelCI", _("CI")),
 		("TemplatesInfoBarTvInfoPanelNIM", _("NIM")),
 		("TemplatesInfoBarTvInfoPanelECM", _("ECM")),
+		("TemplatesInfoBarTvInfoPanelCI", _("ECM+CI")),
 		("TemplatesInfoBarTvInfoPanelPID", _("PID"))]
 	piconchannelselection = [
 		("TemplatesChannelSelectionTvPiconDefault", _("No")),

@@ -4051,31 +4051,20 @@
     <!-- Templates Info Bar Tv Info -->
   </screen>
   <screen name="TemplatesInfoBarTvInfoPanelCI">
+    <panel name="TemplatesInfoBarTvInfoPanelECM" />
     <!-- Templates Info Bar Tv Info -->
     <!-- CI Layer -->
-    <eLabel position="1368,513" size="552,329" backgroundColor="background3" zPosition="-12" />
-    <eLabel position="1370,515" size="550,325" backgroundColor="background1" zPosition="-11" />
-    <eLabel position="1375,520" size="460,280" backgroundColor="background2" zPosition="-10" />
-    <eLabel position="1840,520" size="70,280" backgroundColor="background2" zPosition="-10" />
-    <!-- Crypted -->
-    <eLabel text="CI:" position="1380,525" size="150,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
-    <widget source="session.CurrentService" render="Label" position="1530,525" size="300,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
-      <convert type="ModuleControl">Slot1</convert>
+    <eLabel position="1368,396" size="552,117" backgroundColor="background3" zPosition="-12" />
+    <eLabel position="1370,398" size="550,115" backgroundColor="background1" zPosition="-11" />
+    <eLabel position="1375,438" size="460,70" backgroundColor="background2" zPosition="-10" />
+    <eLabel position="1840,438" size="70,70" backgroundColor="background2" zPosition="-10" />
+    <eLabel text="CI Info" position="1375,403" size="460,35" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="right" transparent="1" />
+    <!-- CI -->
+    <widget source="session.CurrentService" render="Label" position="1380,443" size="450,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1">
+      <convert type="ModuleControl">NameSlot1</convert>
     </widget>
-    <eLabel text="CI:" position="1380,555" size="150,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
-    <widget source="session.CurrentService" render="Label" position="1530,555" size="300,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
-      <convert type="ModuleControl">Slot2</convert>
-    </widget>
-    <eLabel text="CI:" position="1380,585" size="150,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
-    <widget source="session.CurrentService" render="Label" position="1530,585" size="300,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
-      <convert type="ModuleControl">Slot3</convert>
-    </widget>
-    <eLabel text="CI:" position="1380,615" size="150,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
-    <widget source="session.CurrentService" render="Label" position="1530,615" size="300,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
-      <convert type="ModuleControl">Slot4</convert>
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="1375,805" size="460,35" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="right" transparent="1">
-      <convert type="CamdInfo3">Camd</convert>
+    <widget source="session.CurrentService" render="Label" position="1380,473" size="450,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1">
+      <convert type="ModuleControl">NameSlot2</convert>
     </widget>
   </screen>
   <screen name="TemplatesInfoBarTvInfoPanelNIM">
