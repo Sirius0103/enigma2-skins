@@ -3575,22 +3575,22 @@
   <!--  ########## Templates InfoBar Tv ########## -->
   <screen name="TemplatesInfoBarTvNumberDefault">
     <!-- Templates Info Bar Tv Name -->
-    <widget source="session.CurrentService" render="Label" position="80,96" size="1360,44" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1">
+    <widget source="session.CurrentService" render="Label" position="80,96" size="1360,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="240,96" size="1360,44" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="right" transparent="1">
+    <widget source="session.CurrentService" render="Label" position="240,96" size="1360,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="right" transparent="1">
       <convert type="ServiceName">Provider</convert>
     </widget>
   </screen>
   <screen name="TemplatesInfoBarTvNumberStyle">
     <!-- Templates Info Bar Tv Name -->
-    <widget source="session.CurrentService" render="Label" position="0,96" size="220,46" font="Indication; 46" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
+    <widget source="session.CurrentService" render="Label" position="0,96" size="220,44" font="Indication; 44" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
       <convert type="ServiceName2">%n</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="240,96" size="1360,44" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1">
+    <widget source="session.CurrentService" render="Label" position="240,96" size="1360,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1">
       <convert type="ServiceName2">Name</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="240,96" size="1360,44" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="right" transparent="1">
+    <widget source="session.CurrentService" render="Label" position="240,96" size="1360,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="right" transparent="1">
       <convert type="ServiceName2">Provider</convert>
     </widget>
   </screen>
@@ -3617,23 +3617,23 @@
     <eLabel position="1368,867" size="454,146" backgroundColor="background3" zPosition="-12" />
     <eLabel position="1370,869" size="450,142" backgroundColor="background1" zPosition="-11" />
     <eLabel position="1485,875" size="330,130" backgroundColor="background2" zPosition="-10" />
-    <eLabel text="NIMS" position="1375,880" size="105,35" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="center" transparent="1" />
-    <widget source="session.FrontendInfo" render="Label" position="1490,880" size="320,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="left" transparent="1" zPosition="5">
+    <eLabel text="NIMS" position="1375,880" size="105,30" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="center" transparent="1" />
+    <widget source="session.FrontendInfo" render="Label" position="1490,880" size="320,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="left" transparent="1" zPosition="5">
       <convert type="FrontendInfo">STRING</convert>
     </widget>
-    <eLabel text="SNR" position="1375,910" size="105,35" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="center" transparent="1" />
-    <widget source="session.FrontendStatus" render="Label" position="1490,910" size="150,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="left" transparent="1" zPosition="5">
+    <eLabel text="SNR" position="1375,910" size="105,30" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="center" transparent="1" />
+    <widget source="session.FrontendStatus" render="Label" position="1490,910" size="150,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="left" transparent="1" zPosition="5">
       <convert type="FrontendInfo">SNR</convert>
     </widget>
-    <widget source="session.FrontendStatus" render="Label" position="1635,910" size="150,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="left" transparent="1" zPosition="5">
+    <widget source="session.FrontendStatus" render="Label" position="1635,910" size="150,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="left" transparent="1" zPosition="5">
       <convert type="FrontendInfo">SNRdB</convert>
     </widget>
-    <eLabel text="AGC" position="1375,940" size="105,35" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="center" transparent="1" />
-    <widget source="session.FrontendStatus" render="Label" position="1490,940" size="150,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="left" transparent="1" zPosition="5">
+    <eLabel text="AGC" position="1375,940" size="105,30" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="center" transparent="1" />
+    <widget source="session.FrontendStatus" render="Label" position="1490,940" size="150,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="left" transparent="1" zPosition="5">
       <convert type="FrontendInfo">AGC</convert>
     </widget>
-    <eLabel text="BER" position="1375,970" size="105,35" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="center" transparent="1" />
-    <widget source="session.FrontendStatus" render="Label" position="1490,970" size="320,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="left" transparent="1" zPosition="5">
+    <eLabel text="BER" position="1375,970" size="105,30" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="center" transparent="1" />
+    <widget source="session.FrontendStatus" render="Label" position="1490,970" size="320,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="left" transparent="1" zPosition="5">
       <convert type="FrontendInfo">BER</convert>
     </widget>
   </screen>
@@ -3644,14 +3644,14 @@
     <eLabel position="1485,875" size="330,130" backgroundColor="background2" zPosition="-10" />
     <!-- Progress Layer -->
     <panel name="TemplatesInfoBarTvTunerProgressLayer" />
-    <eLabel text="SNR" position="1375,890" size="105,35" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="center" transparent="1" />
+    <eLabel text="SNR" position="1375,890" size="105,30" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="center" transparent="1" />
     <widget source="session.FrontendStatus" render="Label" position="1495,880" size="150,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="left" transparent="1" zPosition="5">
       <convert type="FrontendInfo">SNRdB</convert>
     </widget>
     <widget source="session.FrontendStatus" render="Progress" position="1490,880" size="320,50" foregroundColor="background4" backgroundColor="background4" transparent="1" zPosition="2">
       <convert type="FrontendInfo">SNR</convert>
     </widget>
-    <eLabel text="AGC" position="1375,960" size="105,35" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="center" transparent="1" />
+    <eLabel text="AGC" position="1375,960" size="105,30" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="center" transparent="1" />
     <widget source="session.FrontendStatus" render="Label" position="1495,950" size="150,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="left" transparent="1" zPosition="5">
       <convert type="FrontendInfo">AGC</convert>
     </widget>
@@ -3726,14 +3726,14 @@
       <convert type="ValueRange">2,2</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <eLabel text="SNR" position="1420,980" size="100,35" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="center" transparent="1" />
+    <eLabel text="SNR" position="1420,980" size="100,30" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="center" transparent="1" />
     <widget source="session.FrontendStatus" render="Label" position="1380,880" size="150,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="left" transparent="1">
       <convert type="FrontendInfo">SNRdB</convert>
     </widget>
     <widget source="session.FrontendStatus" render="Watches" position="1370,880" size="200,200" foregroundColor="color4" borderColor="black" zPosition="-2" alphatest="on">
       <convert type="FrontendInfo2">SNR_ANALOG</convert>
     </widget>
-    <eLabel text="AGC" position="1670,980" size="100,35" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="center" transparent="1" />
+    <eLabel text="AGC" position="1670,980" size="100,30" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="center" transparent="1" />
     <widget source="session.FrontendStatus" render="Label" position="1650,880" size="150,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="left" transparent="1">
       <convert type="FrontendInfo">AGC</convert>
     </widget>
@@ -4058,7 +4058,7 @@
     <eLabel position="1370,398" size="550,115" backgroundColor="background1" zPosition="-11" />
     <eLabel position="1375,438" size="460,70" backgroundColor="background2" zPosition="-10" />
     <eLabel position="1840,438" size="70,70" backgroundColor="background2" zPosition="-10" />
-    <eLabel text="CI Info" position="1375,403" size="460,35" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="right" transparent="1" />
+    <eLabel text="CI Info" position="1375,403" size="460,30" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="right" transparent="1" />
     <!-- CI -->
     <widget source="session.CurrentService" render="Label" position="1380,443" size="450,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1">
       <convert type="ModuleControl">NameSlot1</convert>
@@ -4111,7 +4111,7 @@
     <widget source="session.CurrentService" render="Label" position="1530,765" size="300,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
       <convert type="ServiceName2">%s</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="1375,805" size="460,35" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="right" transparent="1">
+    <widget source="session.CurrentService" render="Label" position="1375,805" size="460,30" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="right" transparent="1">
       <convert type="ServiceName2">%t</convert>
     </widget>
   </screen>
@@ -4159,7 +4159,7 @@
     <widget source="session.CurrentService" render="Label" position="1530,765" size="300,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
       <convert type="CaidInfo2">%T</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="1375,805" size="460,35" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="right" transparent="1">
+    <widget source="session.CurrentService" render="Label" position="1375,805" size="460,30" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="right" transparent="1">
       <convert type="CamdInfo3">Camd</convert>
     </widget>
   </screen>
@@ -4203,7 +4203,7 @@
     <widget source="session.CurrentService" render="Label" position="1530,735" size="300,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
       <convert type="ServiceInfoEX">%txtpid</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="1375,805" size="460,35" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="right" transparent="1">
+    <widget source="session.CurrentService" render="Label" position="1375,805" size="460,30" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="right" transparent="1">
       <convert type="ServiceName2">%t</convert>
     </widget>
   </screen>
@@ -4217,7 +4217,7 @@
     <eLabel position="1370,195" size="550,180" backgroundColor="background1" zPosition="-11" />
     <eLabel position="1375,235" size="460,135" backgroundColor="background2" zPosition="-10" />
     <eLabel position="1840,235" size="70,135" backgroundColor="background2" zPosition="-10" />
-    <widget source="session.CurrentService" render="Label" position="1375,200" size="460,35" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="right" transparent="1">
+    <widget source="session.CurrentService" render="Label" position="1375,200" size="460,30" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="right" transparent="1">
       <convert type="MSNWeather2">Location</convert>
     </widget>
     <widget source="session.CurrentService" render="PiconUni" path="CyberFHD/msnweather" position="1378,239" size="128,128" zPosition="2" alphatest="blend">
@@ -4427,11 +4427,11 @@
   </screen>
   <screen name="TemplatesTitle1">
     <!-- Templates Title -->
-    <widget source="Title" render="Label" position="80,96" size="1500,44" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <widget source="Title" render="Label" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
   </screen>
   <screen name="TemplatesTitle2">
     <!-- Templates Title -->
-    <widget source="title" render="Label" position="80,96" size="1500,44" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <widget source="title" render="Label" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
   </screen>
   <screen name="TemplatesButtons">
     <panel name="TemplatesButtonsLayer" />
@@ -4511,7 +4511,7 @@
     <eLabel position="1840,563" size="80,284" backgroundColor="background3" zPosition="-12" />
     <eLabel position="1840,565" size="80,280" backgroundColor="background1" zPosition="-11" />
     <eLabel position="1840,610" size="70,230" backgroundColor="background2" zPosition="-10" />
-    <eLabel text="Tuner Info" position="1115,575" size="325,35" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <eLabel text="Tuner Info" position="1115,575" size="325,30" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
     <panel name="TemplatesSignalFinderProgressLayer" />
     <widget source="Frontend" render="Progress" position="1240,665" size="590,50" foregroundColor="background4" backgroundColor="background4" transparent="1" zPosition="2">
       <convert type="FrontendInfo">SNR</convert>
@@ -4559,7 +4559,7 @@
     <eLabel position="1840,485" size="80,360" backgroundColor="background1" zPosition="-11" />
     <eLabel position="1840,530" size="70,130" backgroundColor="background2" zPosition="-10" />
     <eLabel position="1840,670" size="70,170" backgroundColor="background2" zPosition="-10" />
-    <eLabel text="Tuner Info" position="1115,495" size="325,35" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <eLabel text="Tuner Info" position="1115,495" size="325,30" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
     <panel name="TemplatesSignalPositionerProgressLayer" />
     <eLabel text="SNR:" position="1110,737" size="120,30" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="center" transparent="1" />
     <widget name="snr_db" position="1675,680" size="150,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1" zPosition="5" />
@@ -4769,7 +4769,7 @@
     <eLabel position="1840,190" size="80,145" backgroundColor="background1" zPosition="-11" />
     <eLabel position="1840,230" size="70,100" backgroundColor="background2" zPosition="-10" />
     <!-- Templates Channel Selection Channel Info Info -->
-    <eLabel text="Channel Info" position="1110,195" size="725,35" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <eLabel text="Channel Info" position="1110,195" size="725,30" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
     <eLabel text="Satellite:" position="1115,235" size="200,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
     <widget source="ServiceEvent" render="Label" position="1260,235" size="570,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
       <convert type="ServiceName2">%S</convert>
@@ -4909,8 +4909,8 @@
     <panel name="TemplatesMenuInfoLayer" />
     <panel name="TemplatesMenuInfoRightLayer" />
     <!-- Templates Movie Selection Movie Info -->
-    <eLabel text="File size:" position="1115,470" size="715,35" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
-    <widget source="Service" render="Label" position="1530,470" size="300,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
+    <eLabel text="File size:" position="1115,470" size="715,30" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <widget source="Service" render="Label" position="1530,470" size="300,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
       <convert type="MovieInfo">FileSize</convert>
     </widget>
     <widget source="Service" render="Label" position="1115,510" size="715,325" font="Global; 25" foregroundColor="color3" backgroundColor="background2" halign="left" valign="top" transparent="1">
@@ -4921,8 +4921,8 @@
     <panel name="TemplatesMenuInfoLayer" />
     <panel name="TemplatesMenuInfoRightLayer" />
     <!-- Templates Movie Selection Movie Info -->
-    <eLabel text="File size:" position="1115,470" size="715,35" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
-    <widget source="Service" render="Label" position="1530,470" size="300,35" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
+    <eLabel text="File size:" position="1115,470" size="715,30" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <widget source="Service" render="Label" position="1530,470" size="300,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
       <convert type="MovieInfo">FileSize</convert>
     </widget>
     <widget source="Service" render="Label" position="1115,510" size="715,325" font="Global; 25" foregroundColor="color3" backgroundColor="background2" halign="left" valign="top" transparent="1">
