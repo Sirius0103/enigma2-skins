@@ -52,6 +52,17 @@ def _(txt):
 		t = gettext.gettext(txt)
 	return t
 
+def SearchReplaceWrite(skinPartSearchAndReplace, source, target):
+	inFile = open(source, "r")
+	file_lines = inFile.readlines()
+	inFile.close()
+	outFile =  open(target, "w")
+	for skinLine in file_lines:
+		for item in skinPartSearchAndReplace:
+			skinLine = skinLine.replace(item[0], item[1])
+		outFile.writelines(skinLine)
+	outFile.close()  
+
 colorsetting = [
 	("0", _("Standart")),
 	("1", _("Expert"))]
@@ -573,46 +584,44 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 				return ""
 
 	def createSkin(self):
-		skinlcd = "/etc/enigma2/"
-		skinpath = "/usr/share/enigma2/"
-
 		try:
-	# default skin
-			os.system("cp %sCyberLCD/skin_default.xml %sskin_user.xml" % (skinpath, skinlcd))
+	# user skin
+			skin_user = []
 	# color`s
-			os.system("sed -i 's/#50000000/#%s%s/w' %sskin_user.xml" % (config.skin.cyberlcd.backgroundtransparent.value, config.skin.cyberlcd.colorbackground1.value, skinlcd))
-			os.system("sed -i 's/#5000ffff/#%s%s/w' %sskin_user.xml" % (config.skin.cyberlcd.foregroundtransparent.value, config.skin.cyberlcd.colorbackground4.value, skinlcd))
-			os.system("sed -i 's/#10ffd700/#%s%s/w' %sskin_user.xml" % (config.skin.cyberlcd.foregroundtransparent.value, config.skin.cyberlcd.colorforeground1.value, skinlcd))
-			os.system("sed -i 's/#10f5f5f5/#%s%s/w' %sskin_user.xml" % (config.skin.cyberlcd.foregroundtransparent.value, config.skin.cyberlcd.colorforeground2.value, skinlcd))
-			os.system("sed -i 's/#10a9a9a9/#%s%s/w' %sskin_user.xml" % (config.skin.cyberlcd.foregroundtransparent.value, config.skin.cyberlcd.colorforeground3.value, skinlcd))
-			os.system("sed -i 's/#1000ffff/#%s%s/w' %sskin_user.xml" % (config.skin.cyberlcd.foregroundtransparent.value, config.skin.cyberlcd.colorforeground4.value, skinlcd))
+			skin_user.append(["#50000000", "#" + config.skin.cyberlcd.backgroundtransparent.value + config.skin.cyberlcd.colorbackground1.value])
+			skin_user.append(["#5000ffff", "#" + config.skin.cyberlcd.foregroundtransparent.value + config.skin.cyberlcd.colorbackground4.value])
+			skin_user.append(["#10ffd700", "#" + config.skin.cyberlcd.foregroundtransparent.value + config.skin.cyberlcd.colorforeground1.value])
+			skin_user.append(["#10f5f5f5", "#" + config.skin.cyberlcd.foregroundtransparent.value + config.skin.cyberlcd.colorforeground2.value])
+			skin_user.append(["#10a9a9a9", "#" + config.skin.cyberlcd.foregroundtransparent.value + config.skin.cyberlcd.colorforeground3.value])
+			skin_user.append(["#1000ffff", "#" + config.skin.cyberlcd.foregroundtransparent.value + config.skin.cyberlcd.colorforeground4.value])
 	# clock
 			if not fileExists("/usr/lib/enigma2/python/Components/Converter/AlwaysTrue.py"):
-				os.system("sed -i 's/TemplatesDisplayClockDefault/TemplatesDisplayClock/w' %sskin_user.xml" % (skinlcd))
-				os.system("sed -i 's/TemplatesStandbyDisplayClockDefault/TemplatesStandbyDisplayClock/w' %sskin_user.xml" % (skinlcd))
+				skin_user.append(["TemplatesDisplayClockDefault","TemplatesDisplayClock"])
+				skin_user.append(["TemplatesStandbyDisplayClockDefault","TemplatesStandbyDisplayClock"])
 			else:
-				os.system("sed -i 's/TemplatesDisplayClockStyle/TemplatesDisplayClock/w' %sskin_user.xml" % (skinlcd))
-				os.system("sed -i 's/TemplatesStandbyDisplayClockStyle/TemplatesStandbyDisplayClock/w' %sskin_user.xml" % (skinlcd))
+				skin_user.append(["TemplatesDisplayClockStyle","TemplatesDisplayClock"])
+				skin_user.append(["TemplatesStandbyDisplayClockStyle","TemplatesStandbyDisplayClock"])
 	# fonts
-			os.system("sed -i 's/Roboto-Regular/%s/w' %sskin_user.xml" % (config.skin.cyberlcd.fonts.value, skinlcd))
+			skin_user.append(["Roboto-Regular", config.skin.cyberlcd.fonts.value])
 	# progress
-			os.system("sed -i 's/%s/TemplatesDisplayProgressLayer/w' %sskin_user.xml" % (config.skin.cyberlcd.progressmode.value, skinlcd))
+			skin_user.append([config.skin.cyberlcd.progressmode.value, "TemplatesDisplayProgressLayer"])
 	# widget infobar
-			os.system("sed -i 's/%s/TemplatesInfoBarDisplay/w' %sskin_user.xml" % (config.skin.cyberlcd.widgetinfobar.value, skinlcd))
+			skin_user.append([config.skin.cyberlcd.widgetinfobar.value, "TemplatesInfoBarDisplay"])
 	# widget movie infobar
-			os.system("sed -i 's/%s/TemplatesMovieInfoBarDisplay/w' %sskin_user.xml" % (config.skin.cyberlcd.widgetmovieinfobar.value, skinlcd))
+			skin_user.append([config.skin.cyberlcd.widgetmovieinfobar.value, "TemplatesMovieInfoBarDisplay"])
 	# widget channel selection
-			os.system("sed -i 's/%s/TemplatesChannelSelectionDisplay/w' %sskin_user.xml" % (config.skin.cyberlcd.widgetchannelselection.value, skinlcd))
+			skin_user.append([config.skin.cyberlcd.widgetchannelselection.value, "TemplatesChannelSelectionDisplay"])
 	# widget radio selection
-			os.system("sed -i 's/%s/TemplatesRadioSelectionDisplay/w' %sskin_user.xml" % (config.skin.cyberlcd.widgetradioselection.value, skinlcd))
+			skin_user.append([config.skin.cyberlcd.widgetradioselection.value, "TemplatesRadioSelectionDisplay"])
 	# widget epg selection
-			os.system("sed -i 's/%s/TemplatesEPGSelectionDisplay/w' %sskin_user.xml" % (config.skin.cyberlcd.widgetepgselection.value, skinlcd))
+			skin_user.append([config.skin.cyberlcd.widgetepgselection.value, "TemplatesEPGSelectionDisplay"])
 	# widget standby
-			os.system("sed -i 's/%s/TemplatesStandbyDisplay/w' %sskin_user.xml" % (config.skin.cyberlcd.widgetstandby.value, skinlcd))
-	# end
+			skin_user.append([config.skin.cyberlcd.widgetstandby.value, "TemplatesStandbyDisplay"])
+
+			SearchReplaceWrite(skin_user, "/usr/share/enigma2/CyberLCD/skin_default.xml", "/etc/enigma2/skin_user.xml")
 		except:
-			self.session.open(MessageBox, _("Error by processing !!!"), MessageBox.TYPE_ERROR)
-			os.system("cp %sCyberLCD/skin_default.xml %sskin_user.xml" % (skinpath, skinlcd))
+			self.error()
+	# end
 		self.session.openWithCallback(self.restart, MessageBox,_("Do you want to restart the GUI now ?"), MessageBox.TYPE_YESNO)
 
 	def install(self):
@@ -633,7 +642,7 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 			os.system("cp /tmp/PiconUni.py %sRenderer/PiconUni.py" % (componentspath))
 	# end
 		except:
-			self.session.open(MessageBox, _("Error by processing !!!"), MessageBox.TYPE_ERROR)
+			self.error()
 		self.session.openWithCallback(self.restart, MessageBox,_("Do you want to restart the GUI now ?"), MessageBox.TYPE_YESNO)
 
 	def download(self):
@@ -677,6 +686,11 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 				x[1].save()
 		os.system("rm -f /etc/enigma2/skin_user.xml")
 		self.session.openWithCallback(self.restart, MessageBox,_("Do you want to restart the GUI now ?"), MessageBox.TYPE_YESNO)
+
+	def error(self):
+		os.system("cp /usr/share/enigma2/CyberLCD/skin_default.xml /etc/enigma2/skin_user.xml")
+		self.session.open(MessageBox, _("Error by processing !!!"), MessageBox.TYPE_ERROR)
+		self.restart()
 
 	def exit(self):
 		for x in self["config"].list:

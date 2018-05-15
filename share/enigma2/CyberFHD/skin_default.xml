@@ -3576,7 +3576,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <eLabel position="1840,770" size="70,70" backgroundColor="background2" zPosition="-10" />
     <eLabel text="Tuner Info" position="610,735" size="1225,30" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
     <eLabel text="Satellite:" position="615,775" size="200,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
-    <eLabel text="Tpansponder:" position="615,805" size="200,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+    <eLabel text="Transponder:" position="615,805" size="200,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
     <widget name="network" position="800,775" size="1030,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1" />
     <widget name="transponder" position="800,805" size="1030,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1" />
     <widget name="pass" position="340,925" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
@@ -4204,7 +4204,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
     <panel name="TemplatesTitle1" />
     <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-    <widget name="status" position="340,925" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+    <widget name="status" position="340,895" size="1000,60" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
     <widget name="statusbar" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
     <panel name="TemplatesButtonsRedName" />
     <panel name="TemplatesButtonsGreenName" />

@@ -4774,7 +4774,7 @@
     <widget source="ServiceEvent" render="Label" position="1260,235" size="570,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
       <convert type="ServiceName2">%S</convert>
     </widget>
-    <eLabel text="Tpansponder:" position="1115,265" size="200,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+    <eLabel text="Transponder:" position="1115,265" size="200,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
     <widget source="ServiceEvent" render="Label" position="1275,265" size="555,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
       <convert type="ServiceName2">%F %p %Y %f %M %s</convert>
     </widget>

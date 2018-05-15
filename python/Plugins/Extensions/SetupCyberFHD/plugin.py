@@ -52,6 +52,17 @@ def _(txt):
 		t = gettext.gettext(txt)
 	return t
 
+def SearchReplaceWrite(skinPartSearchAndReplace, source, target):
+	inFile = open(source, "r")
+	file_lines = inFile.readlines()
+	inFile.close()
+	outFile =  open(target, "w")
+	for skinLine in file_lines:
+		for item in skinPartSearchAndReplace:
+			skinLine = skinLine.replace(item[0], item[1])
+		outFile.writelines(skinLine)
+	outFile.close()  
+
 colorsetting = [
 	("0", _("Standart")),
 	("1", _("Expert"))]
@@ -740,73 +751,71 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 				return ""
 
 	def createSkin(self):
-		skinpath = "/usr/share/enigma2/"
-
 		try:
-	# default skin
-			os.system("cp %sCyberFHD/skin_default.xml %sCyberFHD/skin.xml" % (skinpath, skinpath))
-			os.system("cp %sCyberFHD/skin_templates_default.xml %sCyberFHD/skin_templates.xml" % (skinpath, skinpath))
+	# user skin
+			skin_user = skin_templates_user = []
 	# color`s
-			os.system("sed -i 's/#50000000/#%s%s/w' %sCyberFHD/skin.xml" % (config.skin.cyberfhd.backgroundtransparent.value, config.skin.cyberfhd.colorbackground1.value, skinpath))
-			os.system("sed -i 's/#50696969/#%s%s/w' %sCyberFHD/skin.xml" % (config.skin.cyberfhd.backgroundtransparent.value, config.skin.cyberfhd.colorbackground2.value, skinpath))
-			os.system("sed -i 's/#50ffffff/#%s%s/w' %sCyberFHD/skin.xml" % (config.skin.cyberfhd.backgroundtransparent.value, config.skin.cyberfhd.colorbackground3.value, skinpath))
-			os.system("sed -i 's/#5000ffff/#%s%s/w' %sCyberFHD/skin.xml" % (config.skin.cyberfhd.foregroundtransparent.value, config.skin.cyberfhd.colorbackground4.value, skinpath))
-			os.system("sed -i 's/#60696969/#%s%s/w' %sCyberFHD/skin.xml" % (config.skin.cyberfhd.backgroundtransparent.value, config.skin.cyberfhd.colorbackground5.value, skinpath))
-			os.system("sed -i 's/#10ffd700/#%s%s/w' %sCyberFHD/skin.xml" % (config.skin.cyberfhd.foregroundtransparent.value, config.skin.cyberfhd.colorforeground1.value, skinpath))
-			os.system("sed -i 's/#10f5f5f5/#%s%s/w' %sCyberFHD/skin.xml" % (config.skin.cyberfhd.foregroundtransparent.value, config.skin.cyberfhd.colorforeground2.value, skinpath))
-			os.system("sed -i 's/#10a9a9a9/#%s%s/w' %sCyberFHD/skin.xml" % (config.skin.cyberfhd.foregroundtransparent.value, config.skin.cyberfhd.colorforeground3.value, skinpath))
-			os.system("sed -i 's/#1000ffff/#%s%s/w' %sCyberFHD/skin.xml" % (config.skin.cyberfhd.foregroundtransparent.value, config.skin.cyberfhd.colorforeground4.value, skinpath))
-			os.system("sed -i 's/#10ffffff/#%s%s/w' %sCyberFHD/skin.xml" % (config.skin.cyberfhd.backgroundtransparent.value, config.skin.cyberfhd.colorforeground5.value, skinpath))
+			skin_user.append(["#50000000", "#" + config.skin.cyberfhd.backgroundtransparent.value + config.skin.cyberfhd.colorbackground1.value])
+			skin_user.append(["#50696969", "#" + config.skin.cyberfhd.backgroundtransparent.value + config.skin.cyberfhd.colorbackground2.value])
+			skin_user.append(["#50ffffff", "#" + config.skin.cyberfhd.backgroundtransparent.value + config.skin.cyberfhd.colorbackground3.value])
+			skin_user.append(["#5000ffff", "#" + config.skin.cyberfhd.foregroundtransparent.value + config.skin.cyberfhd.colorbackground4.value])
+			skin_user.append(["#60696969", "#" + config.skin.cyberfhd.backgroundtransparent.value + config.skin.cyberfhd.colorbackground5.value])
+			skin_user.append(["#10ffd700", "#" + config.skin.cyberfhd.foregroundtransparent.value + config.skin.cyberfhd.colorforeground1.value])
+			skin_user.append(["#10f5f5f5", "#" + config.skin.cyberfhd.foregroundtransparent.value + config.skin.cyberfhd.colorforeground2.value])
+			skin_user.append(["#10a9a9a9", "#" + config.skin.cyberfhd.foregroundtransparent.value + config.skin.cyberfhd.colorforeground3.value])
+			skin_user.append(["#1000ffff", "#" + config.skin.cyberfhd.foregroundtransparent.value + config.skin.cyberfhd.colorforeground4.value])
+			skin_user.append(["#10ffffff", "#" + config.skin.cyberfhd.backgroundtransparent.value + config.skin.cyberfhd.colorforeground5.value])
 	# clock
 			if not fileExists("/usr/lib/enigma2/python/Components/Converter/AlwaysTrue.py"):
-				os.system("sed -i 's/TemplatesClockDefault/TemplatesClock/w' %sCyberFHD/skin_templates.xml" % (skinpath))
+				skin_templates_user.append(["TemplatesClockDefault","TemplatesClock"])
 			else:
-				os.system("sed -i 's/TemplatesClockStyle/TemplatesClock/w' %sCyberFHD/skin_templates.xml" % (skinpath))
+				skin_templates_user.append(["TemplatesClockStyle","TemplatesClock"])
 	# indication
 			if not fileExists("/usr/lib/enigma2/python/Components/Converter/AC3DownMixStatus.py")\
 				or not fileExists("/usr/lib/enigma2/python/Components/Converter/ServiceInfoEX.py"):
-				os.system("sed -i 's/TemplatesInfoBarTvIndicationDefault/TemplatesInfoBarTvIndication/w' %sCyberFHD/skin_templates.xml" % (skinpath))
-				os.system("sed -i 's/TemplatesInfoBarMediaIndicationDefault/TemplatesInfoBarMediaIndication/w' %sCyberFHD/skin_templates.xml" % (skinpath))
-				os.system("sed -i 's/TemplatesInfoBarRadioIndicationDefault/TemplatesInfoBarRadioIndication/w' %sCyberFHD/skin_templates.xml" % (skinpath))
+				skin_templates_user.append(["TemplatesInfoBarTvIndicationDefault","TemplatesInfoBarTvIndication"])
+				skin_templates_user.append(["TemplatesInfoBarMediaIndicationDefault","TemplatesInfoBarMediaIndication"])
+				skin_templates_user.append(["TemplatesInfoBarRadioIndicationDefault","TemplatesInfoBarRadioIndication"])
 			else:
-				os.system("sed -i 's/TemplatesInfoBarTvIndicationStyle/TemplatesInfoBarTvIndication/w' %sCyberFHD/skin_templates.xml" % (skinpath))
-				os.system("sed -i 's/TemplatesInfoBarMediaIndicationStyle/TemplatesInfoBarMediaIndication/w' %sCyberFHD/skin_templates.xml" % (skinpath))
-				os.system("sed -i 's/TemplatesInfoBarRadioIndicationStyle/TemplatesInfoBarRadioIndication/w' %sCyberFHD/skin_templates.xml" % (skinpath))
+				skin_templates_user.append(["TemplatesInfoBarTvIndicationStyle","TemplatesInfoBarTvIndication"])
+				skin_templates_user.append(["TemplatesInfoBarMediaIndicationStyle","TemplatesInfoBarMediaIndication"])
+				skin_templates_user.append(["TemplatesInfoBarRadioIndicationStyle","TemplatesInfoBarRadioIndication"])
 	# fonts
-			os.system("sed -i 's/Roboto-Regular/%s/w' %sCyberFHD/skin.xml" % (config.skin.cyberfhd.fonts.value, skinpath))
+			skin_user.append(["Roboto-Regular", config.skin.cyberfhd.fonts.value])
 	# scrollbar
-			os.system("sed -i 's/showNever/%s/w' %sCyberFHD/skin.xml" % (config.skin.cyberfhd.scrollbarmode.value, skinpath))
+			skin_user.append(["showNever", config.skin.cyberfhd.scrollbarmode.value])
 	# number channel
-			os.system("sed -i 's/%s/TemplatesInfoBarTvNumber/w' %sCyberFHD/skin_templates.xml" % (config.skin.cyberfhd.numberchannel.value, skinpath))
+			skin_templates_user.append([config.skin.cyberfhd.numberchannel.value, "TemplatesInfoBarTvNumber"])
 	# tuner panel
-			os.system("sed -i 's/%s/TemplatesInfoBarTvTuner/w' %sCyberFHD/skin_templates.xml" % (config.skin.cyberfhd.tunerpanelinfobar.value, skinpath))
+			skin_templates_user.append([config.skin.cyberfhd.tunerpanelinfobar.value, "TemplatesInfoBarTvTuner"])
 	# epg panel
-			os.system("sed -i 's/%s/TemplatesInfoBarTvInfoEPG/w' %sCyberFHD/skin_templates.xml" % (config.skin.cyberfhd.epgpanelinfobar.value, skinpath))
+			skin_templates_user.append([config.skin.cyberfhd.epgpanelinfobar.value, "TemplatesInfoBarTvInfoEPG"])
 	# crypted panel
-			os.system("sed -i 's/%s/TemplatesInfoBarTvInfoCrypted/w' %sCyberFHD/skin_templates.xml" % (config.skin.cyberfhd.cryptedpanelinfobar.value, skinpath))
+			skin_templates_user.append([config.skin.cyberfhd.cryptedpanelinfobar.value, "TemplatesInfoBarTvInfoCrypted"])
 	# info panel
-			os.system("sed -i 's/%s/TemplatesInfoBarTvInfoPanel/w' %sCyberFHD/skin_templates.xml" % (config.skin.cyberfhd.infopanelinfobar.value, skinpath))
+			skin_templates_user.append([config.skin.cyberfhd.infopanelinfobar.value, "TemplatesInfoBarTvInfoPanel"])
 	# weather panel
-			os.system("sed -i 's/%s/TemplatesInfoBarTvInfoWeather/w' %sCyberFHD/skin_templates.xml" % (config.skin.cyberfhd.weatherpanelinfobar.value, skinpath))
+			skin_templates_user.append([config.skin.cyberfhd.weatherpanelinfobar.value, "TemplatesInfoBarTvInfoWeather"])
 	# progress
-			os.system("sed -i 's/%s/ProgressLayer/w' %sCyberFHD/skin_templates.xml" % (config.skin.cyberfhd.progressmode.value, skinpath))
+			skin_templates_user.append([config.skin.cyberfhd.progressmode.value, "ProgressLayer"])
 	# bouquet
-			os.system("sed -i 's/%s/TemplatesChannelSelectionTvBouquet/w' %sCyberFHD/skin_templates.xml" % (config.skin.cyberfhd.bouquetchannelselection.value, skinpath))
-			os.system("sed -i 's/%sFull/TemplatesChannelSelectionTvBouquetFull/w' %sCyberFHD/skin_templates.xml" % (config.skin.cyberfhd.bouquetchannelselection.value, skinpath))
+			skin_templates_user.append([config.skin.cyberfhd.bouquetchannelselection.value, "TemplatesChannelSelectionTvBouquet"])
+			skin_templates_user.append([config.skin.cyberfhd.bouquetchannelselection.value +"Full", "TemplatesChannelSelectionTvBouquetFull"])
 	# picon panel
-			os.system("sed -i 's/%s/TemplatesChannelSelectionTvPicon/w' %sCyberFHD/skin_templates.xml" % (config.skin.cyberfhd.piconchannelselection.value, skinpath))
+			skin_templates_user.append([config.skin.cyberfhd.piconchannelselection.value, "TemplatesChannelSelectionTvPicon"])
 	# epg panel
-			os.system("sed -i 's/%s/TemplatesChannelSelectionTvInfoEPG/w' %sCyberFHD/skin_templates.xml" % (config.skin.cyberfhd.epgpanelchannelselection.value, skinpath))
+			skin_templates_user.append([config.skin.cyberfhd.epgpanelchannelselection.value, "TemplatesChannelSelectionTvInfoEPG"])
 	# channel panel
-			os.system("sed -i 's/%s/TemplatesChannelSelectionTvInfoChannel/w' %sCyberFHD/skin_templates.xml" % (config.skin.cyberfhd.channelpanelchannelselection.value, skinpath))
+			skin_templates_user.append([config.skin.cyberfhd.channelpanelchannelselection.value, "TemplatesChannelSelectionTvInfoChannel"])
 	# bouquet
-			os.system("sed -i 's/%s/TemplatesChannelSelectionRadioBouquet/w' %sCyberFHD/skin_templates.xml" % (config.skin.cyberfhd.bouquetradiochannelselection.value, skinpath))
+			skin_templates_user.append([config.skin.cyberfhd.bouquetradiochannelselection.value, "TemplatesChannelSelectionRadioBouquet"])
 	# description panel
-			os.system("sed -i 's/%s/TemplatesMovieSelectionDescription/w' %sCyberFHD/skin_templates.xml" % (config.skin.cyberfhd.panelmovieselection.value, skinpath))
+			skin_templates_user.append([config.skin.cyberfhd.panelmovieselection.value, "TemplatesMovieSelectionDescription"])
+
+			SearchReplaceWrite(skin_user, "/usr/share/enigma2/CyberFHD/skin_default.xml", "/usr/share/enigma2/CyberFHD/skin.xml")
+			SearchReplaceWrite(skin_templates_user, "/usr/share/enigma2/CyberFHD/skin_templates_default.xml", "/usr/share/enigma2/CyberFHD/skin_templates.xml")
 		except:
-			os.system("cp %sCyberFHD/skin_default.xml %sCyberFHD/skin.xml" % (skinpath, skinpath))
-			os.system("cp %sCyberFHD/skin_templates_default.xml %sCyberFHD/skin_templates.xml" % (skinpath, skinpath))
-			self.session.open(MessageBox, _("Error by processing !!!"), MessageBox.TYPE_ERROR)
+			self.error()
 	# end
 		self.session.openWithCallback(self.restart, MessageBox,_("Do you want to restart the GUI now ?"), MessageBox.TYPE_YESNO)
 
@@ -843,7 +852,7 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 			os.system("cp /tmp/Watches.py %sRenderer/Watches.py" % (componentspath))
 	# end
 		except:
-			self.session.open(MessageBox, _("Error by processing !!!"), MessageBox.TYPE_ERROR)
+			self.error()
 		self.session.openWithCallback(self.restart, MessageBox,_("Do you want to restart the GUI now ?"), MessageBox.TYPE_YESNO)
 
 	def download(self):
@@ -931,6 +940,12 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 				self.setDefault(x[1])
 				x[1].save()
 		self.createSkin()
+
+	def error(self):
+		os.system("cp /usr/share/enigma2/CyberFHD/skin_default.xml /usr/share/enigma2/CyberFHD/skin.xml")
+		os.system("cp /usr/share/enigma2/CyberFHD/skin_templates_default.xml /usr/share/enigma2/CyberFHD/skin_templates.xml")
+		self.session.open(MessageBox, _("Error by processing !!!"), MessageBox.TYPE_ERROR)
+		self.restart()
 
 	def exit(self):
 		for x in self["config"].list:
