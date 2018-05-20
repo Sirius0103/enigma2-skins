@@ -2865,6 +2865,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <widget source="introduction" render="Label" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
     <panel name="TemplatesButtonsRedSource" />
     <panel name="TemplatesButtonsGreenSource" />
+    <panel name="TemplatesButtonsBlueSource" />
     <panel name="TemplatesButtons" />
     <panel name="TemplatesClock" />
   </screen>
