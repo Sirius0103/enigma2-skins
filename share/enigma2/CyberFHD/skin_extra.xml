@@ -58,7 +58,7 @@
   </screen>
   <!-- ########## CyberFHD ########## -->
   <!-- Setup CyberFHD -->
-  <screen name="SetupCyberFHD" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="SetupCyberFHD" position="0,0" size="1920,1080" title="Setup CyberFHD" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenuLayer" />
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
@@ -103,7 +103,7 @@
   </screen>
   <!-- ########## CyberLCD ########## -->
   <!-- Setup CyberLCD -->
-  <screen name="SetupCyberLCD" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="SetupCyberLCD" position="0,0" size="1920,1080" title="Setup CyberLCD" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenuLayer" />
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />

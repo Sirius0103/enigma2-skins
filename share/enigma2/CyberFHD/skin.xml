@@ -1385,6 +1385,27 @@ newheight = wsize[1]
 self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight)/2))
 		</applet>
   </screen>
+  <!-- ########## Text ########## -->
+  <!-- Text Box -->
+  <screen name="TextBox" position="0,0" size="1920,1080" title="Message" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesMenu1000Layer" />
+    <panel name="TemplatesMenuLeftLayer" />
+    <eLabel text="i" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <panel name="TemplatesTitle1" />
+    <widget name="text" position="90,200" size="980,600" scrollbarMode="showNever" itemHeight="60" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+    <panel name="TemplatesClock" />
+  </screen>
+  <!-- Text Box Pig Less -->
+  <screen name="TextBoxPigLess" position="0,0" size="1920,1080" title="Message" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesMenu1000Layer" />
+    <panel name="TemplatesMenuLeftLayer" />
+    <eLabel text="i" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <panel name="TemplatesTitle1" />
+    <widget name="text" position="90,200" size="980,600" scrollbarMode="showNever" itemHeight="60" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+    <panel name="TemplatesClock" />
+  </screen>
   <!-- ########## Input ########## -->
   <!-- Choice Box  -->
   <screen name="ChoiceBox" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
@@ -2761,6 +2782,27 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesButtons" />
     <panel name="TemplatesClock" />
   </screen>
+  <!-- Plugin Manager Help -->
+  <screen name="PluginManagerHelp" position="0,0" size="1920,1080" title="Plugin manager help" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesMenu1000Layer" />
+    <panel name="TemplatesMenuLeftLayer" />
+    <eLabel text="H" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <panel name="TemplatesTitle1" />
+    <widget source="list" render="Listbox" position="90,200" size="980,600" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
+      <convert type="TemplatedMultiContent">
+			{"template": [
+					MultiContentEntryText(pos = (80, 5), size = (900, 25), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+					MultiContentEntryText(pos = (90, 35), size = (900, 25), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the state
+					MultiContentEntryPixmapAlphaTest(pos = (10, 5), size = (48, 48), png = 2), # index 2 is the status pixmap
+				],
+			"fonts": [gFont("Global", 25),gFont("Global", 20)],
+			"itemHeight": 60
+			}
+      </convert>
+    </widget>
+    <widget source="status" render="Label" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+  </screen>
   <!-- Plugin Details -->
   <screen name="PluginDetails" position="0,0" size="1920,1080" title="Plugin Details" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenuLayer" />
@@ -3689,7 +3731,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
   </screen>
   <!-- ########## Backup Suite ########## -->
   <!-- Backup Suite -->
-  <screen name="BackupStart" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="BackupStart" position="0,0" size="1920,1080" title="Backup Suite" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenuLayer" />
     <eLabel text="b" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
     <panel name="TemplatesTitle1" />
@@ -3704,7 +3746,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesClock" />
   </screen>
   <!-- Whatis New Info -->
-  <screen name="WhatisNewInfo" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="WhatisNewInfo" position="0,0" size="1920,1080" title="Whatis New Info" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenuLayer" />
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
@@ -3716,7 +3758,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesClock" />
   </screen>
   <!-- Flash Image Config -->
-  <screen name="FlashImageConfig" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="FlashImageConfig" position="0,0" size="1920,1080" title="Flash Image Config" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenuLayer" />
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
@@ -3806,7 +3848,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
   </screen>
   <!-- ########## Birthday Reminder ########## -->
   <!-- Birthday Reminder -->
-  <screen name="BirthdayReminder" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="BirthdayReminder" position="0,0" size="1920,1080" title="Birthday Reminder" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenuLayer" />
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
@@ -3837,7 +3879,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesClock" />
   </screen>
   <!-- Birthday Reminder Settings -->
-  <screen name="BirthdayReminderSettings" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="BirthdayReminderSettings" position="0,0" size="1920,1080" title="Birthday Reminder Settings" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenuLayer" />
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
@@ -3852,7 +3894,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesClock" />
   </screen>
   <!-- Edit Birthday Screen -->
-  <screen name="EditBirthdayScreen" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="EditBirthdayScreen" position="0,0" size="1920,1080" title="Edit Birthday Screen" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenuLayer" />
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
@@ -3867,7 +3909,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesClock" />
   </screen>
   <!-- Path Selection Screen -->
-  <screen name="PathSelectionScreen" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="PathSelectionScreen" position="0,0" size="1920,1080" title="Path Selection Screen" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenuLayer" />
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
@@ -3882,7 +3924,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
   </screen>
   <!-- ########## Calendar ########## -->
   <!-- Calendar -->
-  <screen name="Calendar" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="Calendar" position="0,0" size="1920,1080" title="Calendar" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenuLayer" />
     <panel name="TemplatesMenu1000Layer" />
     <eLabel position="1103,188" size="739,659" backgroundColor="background3" zPosition="-12" />
@@ -3965,7 +4007,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesClock" />
   </screen>
   <!-- Config Calendar -->
-  <screen name="ConfigCalendar" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="ConfigCalendar" position="0,0" size="1920,1080" title="Config Calendar" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenuLayer" />
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
@@ -4310,7 +4352,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
   </screen>
   <!-- ########## Email Client ########## -->
   <!-- Email Config Options -->
-  <screen name="EmailConfigOptions" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="EmailConfigOptions" position="0,0" size="1920,1080" title="Email Config Options" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenuLayer" />
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
@@ -4326,7 +4368,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesClock" />
   </screen>
   <!-- Email Config Account -->
-  <screen name="EmailConfigAccount" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="EmailConfigAccount" position="0,0" size="1920,1080" title="Email Config Account" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenuLayer" />
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
@@ -4342,7 +4384,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesClock" />
   </screen>
   <!-- Email Account List -->
-  <screen name="EmailAccountList" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="EmailAccountList" position="0,0" size="1920,1080" title="Email Account List" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenuLayer" />
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
@@ -4360,7 +4402,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesClock" />
   </screen>
   <!-- Screen Mail View -->
-  <screen name="ScreenMailView" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="ScreenMailView" position="0,0" size="1920,1080" title="Screen Mail View" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenuLayer" />
     <panel name="TemplatesMenu1800Layer" />
     <panel name="TemplatesMenuLeftLayer" />
@@ -4379,7 +4421,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesClock" />
   </screen>
   <!-- Email Screen -->
-  <screen name="EmailScreen" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="EmailScreen" position="0,0" size="1920,1080" title="Email Screen" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenuLayer" />
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
@@ -5026,7 +5068,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
   </screen>
   <!-- ########## MediaInfo ########## -->
   <!-- MediaInfo -->
-  <screen name="mediaInfo" position="0,0" size="1920,1080" title="MediaInfo v0.6" flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="mediaInfo" position="0,0" size="1920,1080" title="MediaInfo" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenuLayer" />
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
@@ -5287,7 +5329,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesClock" />
   </screen>
   <!-- PinInput -->
-  <screen name="PinInput" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="PinInput" position="0,0" size="1920,1080" title="PinInput" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenuLayer" />
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
@@ -5307,13 +5349,13 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
   </screen>
   <!-- ########## PiP Setup ########## -->
   <!-- PiP Zapping -->
-  <screen name="PictureInPictureZapping" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent" zPosition="98">
+  <screen name="PictureInPictureZapping" position="0,0" size="1920,1080" title="PiP Zapping" flags="wfNoBorder" backgroundColor="transparent" zPosition="98">
     <panel name="TemplatesUpLayer1" />
     <eLabel text="PiP-Zap" position="80,96" size="1350,44" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
     <panel name="TemplatesClock" />
   </screen>
   <!-- PiP Setup -->
-  <screen name="PiPSetup" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="PiPSetup" position="0,0" size="1920,1080" title="PiP Setup" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenuLayer" />
     <eLabel text="T" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
     <widget name="text" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="top" transparent="1" />
@@ -6484,7 +6526,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesClock" />
   </screen>
   <!-- ########## User Interface Positioner ########## -->
-  <screen name="UserInterfacePositioner2" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="UserInterfacePositioner2" position="0,0" size="1920,1080" title="User Interface Positioner" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenuLayer" />
     <eLabel text="s" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
     <eLabel text="Put a red area in the corner of the tv screen" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
@@ -6890,7 +6932,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
   </screen>
   <!-- ########## SystemTime ########## -->
   <!-- SystemTime SetupScreen -->
-  <screen name="SystemTimeSetupScreen" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="SystemTimeSetupScreen" position="0,0" size="1920,1080" title="System Time" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenuLayer" />
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
@@ -7306,7 +7348,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
   </screen>
   <!-- ########## You Tube ########## -->
   <!-- You Tube Window-->
-  <screen name="YoutubeTVWindow" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="YoutubeTVWindow" position="0,0" size="1920,1080" title="You Tube Window" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenuLayer" />
     <eLabel text="Y" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
     <panel name="TemplatesTitle1" />
@@ -7319,7 +7361,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesClock" />
   </screen>
   <!-- You Tube Settings-->
-  <screen name="YoutubeTVSettings" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="YoutubeTVSettings" position="0,0" size="1920,1080" title="You Tube Settings" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenuLayer" />
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
@@ -7333,7 +7375,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
   </screen>
   <!-- ########## You Tube Player ########## -->
   <!-- You Tube Main -->
-  <screen name="YouTubeMain" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="YouTubeMain" position="0,0" size="1920,1080" title="You Tube Main" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenuLayer" />
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
@@ -7361,7 +7403,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesClock" />
   </screen>
   <!-- You Tube Search -->
-  <screen name="YouTubeSearch" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="YouTubeSearch" position="0,0" size="1920,1080" title="You Tube Search" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenuLayer" />
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
@@ -7388,7 +7430,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesClock" />
   </screen>
   <!-- YouTube Download List -->
-  <screen name="YouTubeDownloadList" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="YouTubeDownloadList" position="0,0" size="1920,1080" title="YouTube Download List" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenuLayer" />
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
@@ -7411,7 +7453,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesClock" />
   </screen>
   <!-- You Tube Info -->
-  <screen name="YouTubeInfo" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="YouTubeInfo" position="0,0" size="1920,1080" title="You Tube Info" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenuLayer" />
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
@@ -7652,7 +7694,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
   </screen>
   <!-- ########## WeatherMSN ########## -->
   <!-- WeatherMSN -->
-  <screen name="WeatherMSN" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="WeatherMSN" position="0,0" size="1920,1080" title="Weather MSN" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenuLayer" />
     <panel name="TemplatesMenu1000Layer" />
     <eLabel position="1103,188" size="739,659" backgroundColor="background3" zPosition="-12" />
@@ -7740,7 +7782,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesClock" />
   </screen>
   <!-- Config WeatherMSN -->
-  <screen name="ConfigWeatherMSN" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="ConfigWeatherMSN" position="0,0" size="1920,1080" title="Config WeatherMSN" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenuLayer" />
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
@@ -7755,7 +7797,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesClock" />
   </screen>
   <!-- Search LocationMSN -->
-  <screen name="SearchLocationMSN" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="SearchLocationMSN" position="0,0" size="1920,1080" title="Search Location MSN" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenuLayer" />
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
