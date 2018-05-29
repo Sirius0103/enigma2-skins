@@ -393,6 +393,7 @@
     <widget source="key_blue" render="Pixmap" pixmap="CyberFHD/buttons/button_key_blue.png" position="90,310" size="40,20" alphatest="on">
       <convert type="ConditionalShowHide" />
     </widget>
+    <panel name="TemplatesButtonsMenu" />
     <panel name="TemplatesClock" />
   </screen>
   <!-- Volume -->
@@ -1234,9 +1235,10 @@
   <screen name="HelpMenu" position="0,0" size="1920,1080" title="Menu" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="I" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
     <eLabel text="Help..." position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
-    <widget name="list" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="75" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+    <widget name="list" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget name="rc" position="1459,335" size="154,500" zPosition="10" pixmaps="CyberFHD/rc.png,CyberFHD/rcold.png" alphatest="on" />
     <widget name="arrowdown" pixmap="CyberFHD/arrowdown.png" position="-100,-100" size="37,70" zPosition="11" alphatest="on" />
     <widget name="arrowdown2" pixmap="CyberFHD/arrowdown.png" position="-100,-100" size="37,70" zPosition="11" alphatest="on" />
@@ -2949,6 +2951,16 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesButtonsGreenSource" />
     <panel name="TemplatesButtonsBlueSource" />
     <panel name="TemplatesButtons" />
+    <panel name="TemplatesClock" />
+  </screen>
+  <!-- Select Image -->
+  <screen name="SelectImage" position="0,0" size="1920,1080" title="SelectImage" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesMenu1000Layer" />
+    <panel name="TemplatesMenuLeftLayer" />
+    <eLabel text="P" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <panel name="TemplatesTitle1" />
+    <widget name="list" position="90,200" size="980,600" scrollbarMode="showNever" itemHeight="60" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <panel name="TemplatesClock" />
   </screen>
   <!-- Image Backup -->
