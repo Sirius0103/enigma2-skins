@@ -51,8 +51,8 @@
 			}
     </convert>
     </widget>
-    <panel name="TemplatesButtonsRedSource" />
-    <panel name="TemplatesButtonsGreenSource" />
+    <panel name="TemplatesButtonsRed" />
+    <panel name="TemplatesButtonsGreen" />
     <panel name="TemplatesButtons" />
     <panel name="TemplatesClock" />
   </screen>
@@ -94,10 +94,10 @@
     <widget name="fgcolor3b" position="1525,595" size="300,140" font="Global; 15" halign="left" backgroundColor="background" transparent="1" />
     <widget name="fgcolor4a" position="1520,413" size="300,25" font="Indication; 25" halign="right" backgroundColor="background" transparent="1" />
     <widget name="fgcolor5a" position="1525,685" size="300,50" font="Titles; 30" halign="left" backgroundColor="background" transparent="1" />
-    <panel name="TemplatesButtonsRedSource" />
-    <panel name="TemplatesButtonsGreenSource" />
-    <panel name="TemplatesButtonsYellowSource" />
-    <panel name="TemplatesButtonsBlueSource" />
+    <panel name="TemplatesButtonsRed" />
+    <panel name="TemplatesButtonsGreen" />
+    <panel name="TemplatesButtonsYellow" />
+    <panel name="TemplatesButtonsBlue" />
     <panel name="TemplatesButtons" />
     <panel name="TemplatesClock" />
   </screen>
@@ -126,10 +126,10 @@
     <widget name="fgcolor2a" position="1120,670" size="700,25" font="Global; 25" halign="center" backgroundColor="background" transparent="1" />
     <widget name="fgcolor3a" position="1120,710" size="700,25" font="Global; 25" halign="center" backgroundColor="background" transparent="1" />
     <widget name="fgcolor4a" position="1120,775" size="700,35" font="Indication; 35" halign="center" backgroundColor="background" transparent="1" />
-    <panel name="TemplatesButtonsRedSource" />
-    <panel name="TemplatesButtonsGreenSource" />
-    <panel name="TemplatesButtonsYellowSource" />
-    <panel name="TemplatesButtonsBlueSource" />
+    <panel name="TemplatesButtonsRed" />
+    <panel name="TemplatesButtonsGreen" />
+    <panel name="TemplatesButtonsYellow" />
+    <panel name="TemplatesButtonsBlue" />
     <panel name="TemplatesButtons" />
     <panel name="TemplatesClock" />
   </screen>
