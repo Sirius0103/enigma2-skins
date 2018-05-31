@@ -965,12 +965,12 @@
 			}
       </convert>
     </widget>
-    <panel name="TemplatesClock" />
     <panel name="TemplatesButtonsRed" />
     <panel name="TemplatesButtonsGreen" />
     <panel name="TemplatesButtonsYellow" />
     <panel name="TemplatesButtonsBlue" />
     <panel name="TemplatesButtons" />
+    <panel name="TemplatesClock" />
   </screen>
   <!-- Language Selection -->
   <screen name="LanguageSelection" position="0,0" size="1920,1080" title="Language selection" flags="wfNoBorder" backgroundColor="transparent">
@@ -1245,6 +1245,7 @@
     <widget name="arrowup" pixmap="CyberFHD/arrowup.png" position="-100,-100" size="37,70" zPosition="11" alphatest="on" />
     <widget name="arrowup2" pixmap="CyberFHD/arrowup.png" position="-100,-100" size="37,70" zPosition="11" alphatest="on" />
     <widget name="long_key" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+    <panel name="TemplatesClock" />
   </screen>
   <!-- ########## Console ########## -->
   <!-- Console  -->
@@ -3666,6 +3667,28 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <eLabel text="Transponders List" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
     <widget name="menu" position="90,200" size="480,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget name="introduction" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+    <panel name="TemplatesClock" />
+  </screen>
+  <!--  Cable Scan -->
+  <screen name="CableScanScreen" position="0,0" size="1920,1080" title="Cable Scan" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesMenu1000Layer" />
+    <panel name="TemplatesMenuLeftLayer" />
+    <eLabel text="±" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <panel name="TemplatesTitle1" />
+    <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+    <widget name="introduction" render="Label" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+    <panel name="TemplatesClock" />
+  </screen>
+  <!-- Cable Scan Status  -->
+  <screen name="CableScanStatus" position="0,0" size="1920,1080" title="Cable scan" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <eLabel text="±" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <panel name="TemplatesTitle1" />
+    <widget name="frontend" position="1775,920" size="64,64" pixmap="CyberFHD/icons/scan-c.png" alphatest="on" />
+    <widget name="scan_state" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+    <panel name="TemplatesMenuUpProgressLayer" />
+    <widget name="scan_progress" position="340,905" size="1500,15" foregroundColor="background4" backgroundColor="background4" transparent="1" zPosition="3" />
     <panel name="TemplatesClock" />
   </screen>
   <!-- # # # # # # # # # # Other Plugins # # # # # # # # # #-->
