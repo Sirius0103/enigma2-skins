@@ -629,7 +629,7 @@
     <panel name="TemplatesClock" />
   </screen>
   <!-- Movie List Tags -->
-  <screen name="MovieListTags" pposition="0,0" size="1920,1080" title="Please select tag to filter..." flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="MovieListTags" position="0,0" size="1920,1080" title="Please select tag to filter..." flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenuLayer" />
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
@@ -643,7 +643,7 @@
   <screen name="MediaPlayer" position="0,0" size="1920,1080" title="MediaPlayer" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMediaMenuLayer" />
     <panel name="TemplatesMenuRightLayer" />
-    <!-- escription Layer -->
+    <!-- Description Layer -->
     <eLabel position="78,643" size="874,144" backgroundColor="background3" zPosition="-12" />
     <eLabel position="80,645" size="870,140" backgroundColor="background1" zPosition="-11" />
     <eLabel position="85,650" size="860,130" backgroundColor="background2" zPosition="-10" />
@@ -2653,7 +2653,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
       <convert type="TemplatedMultiContent">
 			{"template": [
 					MultiContentEntryText(pos = (10, 5), size = (900, 25), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-					MultiContentEntryText(pos = (20, 35), size = (900, 25), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
+					MultiContentEntryText(pos = (20, 35), size = (850, 25), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
 					MultiContentEntryPixmapAlphaTest(pos = (900, 5), size = (48, 48), png = 4), # index 4 is the status pixmap
 				],
 			"fonts": [gFont("Global", 25),gFont("Console", 20)],
@@ -2739,12 +2739,12 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 			{"templates":
 				{"default": (60,[
 						MultiContentEntryText(pos = (10, 5), size = (900, 25), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-						MultiContentEntryText(pos = (20, 35), size = (900, 25), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
+						MultiContentEntryText(pos = (20, 35), size = (850, 25), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
 						MultiContentEntryPixmapAlphaTest(pos = (900, 5), size = (48, 48), png = 5), # index 5 is the status pixmap
 					]),
 					"category": (60,[
 						MultiContentEntryText(pos = (10, 5), size = (900, 25), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-						MultiContentEntryText(pos = (20, 35), size = (900, 25), font=2, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the description
+						MultiContentEntryText(pos = (20, 35), size = (850, 25), font=2, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the description
 					])
 				},
 				"fonts": [gFont("Global", 25),gFont("Console", 20),gFont("Console", 20)],
@@ -2771,7 +2771,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
       <convert type="TemplatedMultiContent">
 			{"template": [
 					MultiContentEntryText(pos = (80, 5), size = (900, 25), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-					MultiContentEntryText(pos = (90, 35), size = (900, 25), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the state
+					MultiContentEntryText(pos = (90, 35), size = (850, 25), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the state
 					MultiContentEntryPixmapAlphaTest(pos = (10, 5), size = (48, 48), png = 2), # index 2 is the status pixmap
 				],
 			"fonts": [gFont("Global", 25),gFont("Global", 20)],
@@ -2796,7 +2796,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
       <convert type="TemplatedMultiContent">
 			{"template": [
 					MultiContentEntryText(pos = (80, 5), size = (900, 25), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-					MultiContentEntryText(pos = (90, 35), size = (900, 25), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the state
+					MultiContentEntryText(pos = (90, 35), size = (850, 25), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the state
 					MultiContentEntryPixmapAlphaTest(pos = (10, 5), size = (48, 48), png = 2), # index 2 is the status pixmap
 				],
 			"fonts": [gFont("Global", 25),gFont("Global", 20)],
@@ -2886,7 +2886,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
       <convert type="TemplatedMultiContent">
 			{"template": [
 					MultiContentEntryText(pos = (10, 5), size = (900, 25), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-					MultiContentEntryText(pos = (20, 35), size = (900, 25), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
+					MultiContentEntryText(pos = (20, 35), size = (850, 25), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
 					MultiContentEntryPixmapAlphaTest(pos = (900, 5), size = (48, 48), png = 4), # index 4 is the status pixmap
 				],
 			"fonts": [gFont("Global", 25),gFont("Console", 20)],
@@ -3412,14 +3412,14 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="s" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
     <eLabel text="Choose Tuner" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
-    <widget source="nimlist" render="Listbox" position="90,200" size="980,600" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
+    <widget source="nimlist" render="Listbox" position="90,200" size="980,560" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
       <convert type="TemplatedMultiContent">
 			{"template": [
 					MultiContentEntryText(pos = (10, 5), size = (950, 50), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the nim name,
 					MultiContentEntryText(pos = (120, 35), size = (950, 50), font = 1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is a description of the nim settings,
 				],
 			 "fonts": [gFont("Global", 25), gFont("Console", 20)],
-			 "itemHeight": 70
+			 "itemHeight": 80
 			}
       </convert>
     </widget>
@@ -4097,6 +4097,49 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesButtonsRed" />
     <panel name="TemplatesButtonsGreen" />
     <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+    <panel name="TemplatesButtons" />
+    <panel name="TemplatesClock" />
+  </screen>
+  <!-- ########## Cache Flush ########## -->
+  <!-- Cache Flush -->
+  <screen name="CacheFlushSetupMenu" position="0,0" size="1920,1080" title="Cache Flush" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesMenu1000Layer" />
+    <panel name="TemplatesMenuLeftLayer" />
+    <eLabel text="s" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <panel name="TemplatesTitle1" />
+    <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+    <widget name="min_free_kb" position="355,900" size="1000,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" transparent="1" />
+    <widget name="memory" position="355,955" size="1000,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesInfoBarTvProgressLayer" />
+    <widget name="slide" render="Progress" position="355,935" size="990,15" foregroundColor="background4" backgroundColor="background4" transparent="1" zPosition="2" />
+    <panel name="TemplatesButtonsRed" />
+    <panel name="TemplatesButtonsGreen" />
+    <panel name="TemplatesButtonsYellow" />
+    <panel name="TemplatesButtonsBlue" />
+    <panel name="TemplatesButtons" />
+    <panel name="TemplatesClock" />
+  </screen>
+  <!-- Cache Flush Info Screen -->
+  <screen name="CacheFlushInfoScreen" position="0,0" size="1920,1080" title="CacheFlush Info" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesMenu1000Layer" />
+    <panel name="TemplatesMenuLeftLayer" />
+    <eLabel text="i" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <panel name="TemplatesTitle1" />
+    <eLabel position="579,200" size="2,635" backgroundColor="background3" zPosition="1" />
+    <widget name="lmemtext" position="110,205" size="200,620" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" />
+    <widget name="lmemvalue" position="310,205" size="200,620" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" />
+    <widget name="rmemtext" position="610,205" size="200,620" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" />
+    <widget name="rmemvalue" position="810,205" size="200,620" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" />
+    <widget name="pfree" position="1245,900" size="100,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" transparent="1" />
+    <widget name="pused" position="355,900" size="100,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesInfoBarTvProgressLayer" />
+    <widget name="slide" render="Progress" position="355,935" size="990,15" foregroundColor="background4" backgroundColor="background4" transparent="1" zPosition="2" />
+    <panel name="TemplatesButtonsRed" />
+    <panel name="TemplatesButtonsGreen" />
+    <panel name="TemplatesButtonsYellow" />
+    <panel name="TemplatesButtonsBlue" />
     <panel name="TemplatesButtons" />
     <panel name="TemplatesClock" />
   </screen>
@@ -5261,6 +5304,62 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
   <screen name="MerlinMusicPlayerScreenSaver" position="0,0" size="1920,1080" title="Merlin Music Player ScreenSaver" flags="wfNoBorder" backgroundColor="transparent">
     <widget name="coverArt" pixmap="CyberFHD/no_cover.png" position="123,810" size="200,200" alphatest="on" zPosition="2" />
     <widget name="display" size="1000,30" font="Global; 25" halign="left" valign="top" foregroundColor="color3" backgroundColor="background1" transparent="1" position="120,1010" />
+  </screen>
+  <!-- ########## Multiboot ########## -->
+  <!-- OMB Manager List -->
+  <screen name="OMBManagerList" position="0,0" size="1920,1080" title="openMultiboot Manager" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesMenu1000Layer" />
+    <panel name="TemplatesMenuLeftLayer" />
+    <eLabel text="b" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <panel name="TemplatesTitle1" />
+    <eLabel position="90,200" size="980,40" backgroundColor="background2" zPosition="-1" />
+    <eLabel text="&gt;" position="95,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+    <widget name="label1" position="125,205" size="940,30" font="Titles; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+    <eLabel position="90,370" size="980,40" backgroundColor="background2" zPosition="-1" />
+    <eLabel text="&gt;" position="95,375" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+    <widget name="label2" position="90,245" size="980,90" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" />
+    <widget name="nextboot" position="125,375" size="940,30" font="Titles; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+    <widget source="list" render="Listbox" position="90,420" size="980,420" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
+      <convert type="StringList" />
+    </widget>
+    <widget name="key_ok" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
+    <panel name="TemplatesButtonsRed" />
+    <panel name="TemplatesButtonsGreen" />
+    <panel name="TemplatesButtonsYellow" />
+    <panel name="TemplatesButtonsBlue" />
+    <panel name="TemplatesButtonsInfo" />
+    <panel name="TemplatesButtons" />
+    <panel name="TemplatesClock" />
+  </screen>
+  <!-- OMB Manager Install -->
+  <screen name="OMBManagerInstall" position="0,0" size="1920,1080" title="openMultiboot Install" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesMenu1000Layer" />
+    <panel name="TemplatesMenuLeftLayer" />
+    <eLabel text="b" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <panel name="TemplatesTitle1" />
+    <eLabel position="90,200" size="980,40" backgroundColor="background2" zPosition="-1" />
+    <eLabel text="&gt;" position="95,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+    <widget name="info" position="125,205" size="940,30" font="Titles; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+    <widget source="list" render="Listbox" position="90,250" size="980,575" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
+      <convert type="StringList" />
+    </widget>
+    <panel name="TemplatesButtonsRed" />
+    <panel name="TemplatesButtonsGreen" />
+    <panel name="TemplatesButtonsYellow" />
+    <panel name="TemplatesButtons" />
+    <panel name="TemplatesClock" />
+  </screen>
+  <!-- OMB Manager About -->
+  <screen name="OMBManagerAbout" position="0,0" size="1920,1080" title="openMultiboot About" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesMenu1000Layer" />
+    <panel name="TemplatesMenuLeftLayer" />
+    <eLabel text="i" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <panel name="TemplatesTitle1" />
+    <widget name="about" position="90,200" size="980,635" font="Global; 25" backgroundColor="background1" transparent="1" />
+    <panel name="TemplatesClock" />
   </screen>
   <!-- ########## Newcamd.list Editor ########## -->
   <!-- NCLEdit Main -->
