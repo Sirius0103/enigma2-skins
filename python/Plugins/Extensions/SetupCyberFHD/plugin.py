@@ -294,6 +294,8 @@ if not fileExists("/usr/lib/enigma2/python/Components/Converter/CaidInfo2.py")\
 		("TemplatesInfoBarTvInfoCryptedDefault", _("No"))]
 	infopanelinfobar = [
 		("TemplatesInfoBarTvInfoPanelDefault", _("No"))]
+	cipanelinfobar = [
+		("TemplatesInfoBarTvInfoPanelCIDefault", _("No"))]
 	piconchannelselection = [
 		("TemplatesChannelSelectionTvPiconDefault", _("No"))]
 	channelpanelchannelselection = [
@@ -317,8 +319,10 @@ else:
 		("TemplatesInfoBarTvInfoPanelDefault", _("No")),
 		("TemplatesInfoBarTvInfoPanelNIM", _("NIM")),
 		("TemplatesInfoBarTvInfoPanelECM", _("ECM")),
-		("TemplatesInfoBarTvInfoPanelCI", _("ECM+CI")),
 		("TemplatesInfoBarTvInfoPanelPID", _("PID"))]
+	cipanelinfobar = [
+		("TemplatesInfoBarTvInfoPanelCIDefault", _("No")),
+		("TemplatesInfoBarTvInfoPanelCIStyle", _("Yes"))]
 	piconchannelselection = [
 		("TemplatesChannelSelectionTvPiconDefault", _("No")),
 		("TemplatesChannelSelectionTvPiconStyle", _("Yes"))]
@@ -333,13 +337,15 @@ else:
 		("TemplatesChannelSelectionTvInfoEPGPrograms", _("10 Programs"))]
 
 if not fileExists("/usr/lib/enigma2/python/Components/Converter/MSNWeather2.py")\
-	or not fileExists("/usr/lib/enigma2/python/Components/Renderer/PiconUni.py"):
+	or not fileExists("/usr/lib/enigma2/python/Components/Renderer/PiconUni.py")\
+	or not fileExists("/usr/lib/enigma2/python/Components/Renderer/AnimatedWeatherPixmap.py"):
 	weatherpanelinfobar = [
 		("TemplatesInfoBarTvInfoWeatherDefault", _("No"))]
 else:
 	weatherpanelinfobar = [
 		("TemplatesInfoBarTvInfoWeatherDefault", _("No")),
-		("TemplatesInfoBarTvInfoWeatherMSN", _("MSN"))]
+		("TemplatesInfoBarTvInfoWeatherMSN", _("MSN")),
+		("TemplatesInfoBarTvInfoWeatherMSNAnimated", _("Animated MSN"))]
 
 if not fileExists("/usr/lib/enigma2/python/Components/Converter/MovieInfo2.py")\
 	or not fileExists("/usr/lib/enigma2/python/Components/Renderer/CoverTmbd.py")\
@@ -392,7 +398,7 @@ config.skin.cyberfhd.numberchannel = ConfigSelection(default="TemplatesInfoBarTv
 config.skin.cyberfhd.tunerpanelinfobar = ConfigSelection(default="TemplatesInfoBarTvTunerStyle", choices = tunerpanelinfobar)
 config.skin.cyberfhd.epgpanelinfobar = ConfigSelection(default="TemplatesInfoBarTvInfoEPGDefault", choices = epgpanelinfobar)
 config.skin.cyberfhd.cryptedpanelinfobar = ConfigSelection(default="TemplatesInfoBarTvInfoCryptedDefault", choices = cryptedpanelinfobar)
-config.skin.cyberfhd.infopanelinfobar = ConfigSelection(default="TemplatesInfoBarTvInfoPanelDefault", choices = infopanelinfobar)
+config.skin.cyberfhd.cipanelinfobar = ConfigSelection(default="TemplatesInfoBarTvInfoPanelCIDefault", choices = cipanelinfobar)
 config.skin.cyberfhd.weatherpanelinfobar = ConfigSelection(default="TemplatesInfoBarTvInfoWeatherDefault", choices = weatherpanelinfobar)
 
 config.skin.cyberfhd.progressmode = ConfigSelection(default="ProgressLayerStandard", choices = progressmode)
@@ -588,6 +594,7 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 		list.append(getConfigListEntry(_("EPG panel in secondinfobar:"), config.skin.cyberfhd.epgpanelinfobar))
 		list.append(getConfigListEntry(_("Crypted panel in secondinfobar:"), config.skin.cyberfhd.cryptedpanelinfobar))
 		list.append(getConfigListEntry(_("Info panel in secondinfobar:"), config.skin.cyberfhd.infopanelinfobar))
+		list.append(getConfigListEntry(_("Show CI in info panel:"), config.skin.cyberfhd.cipanelinfobar))
 		list.append(getConfigListEntry(_("Weather panel in secondinfobar:"), config.skin.cyberfhd.weatherpanelinfobar))
 		section = _("Movie Infobar")
 		list.append(getConfigListEntry(sep*(char-(len(section))/2) + tab + section + tab + sep*(char-(len(section))/2)))
@@ -734,6 +741,7 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 			or not fileExists("/usr/lib/enigma2/python/Components/Converter/ProgressDiskSpaceInfo.py")\
 			or not fileExists("/usr/lib/enigma2/python/Components/Converter/ServiceInfoEX.py")\
 			or not fileExists("/usr/lib/enigma2/python/Components/Converter/ServiceName2.py")\
+			or not fileExists("/usr/lib/enigma2/python/Components/Renderer/AnimatedWeatherPixmap.py")\
 			or not fileExists("/usr/lib/enigma2/python/Components/Renderer/PiconUni.py")\
 			or not fileExists("/usr/lib/enigma2/python/Components/Renderer/RendVolumeText.py")\
 			or not fileExists("/usr/lib/enigma2/python/Components/Renderer/Watches.py"):
@@ -794,6 +802,8 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 			skin_templates_user.append([config.skin.cyberfhd.cryptedpanelinfobar.value, "TemplatesInfoBarTvInfoCrypted"])
 	# info panel
 			skin_templates_user.append([config.skin.cyberfhd.infopanelinfobar.value, "TemplatesInfoBarTvInfoPanel"])
+	# ci panel
+			skin_templates_user.append([config.skin.cyberfhd.cipanelinfobar.value, "TemplatesInfoBarTvInfoPanelCI"])
 	# weather panel
 			skin_templates_user.append([config.skin.cyberfhd.weatherpanelinfobar.value, "TemplatesInfoBarTvInfoWeather"])
 	# progress
@@ -847,6 +857,7 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 			os.system("cp /tmp/ServiceName2.py %sConverter/ServiceName2.py" % (componentspath))
 			os.system("cp %sWeatherMSN/components/MSNWeather2.py %sConverter/MSNWeather2.py" % (pluginpath, componentspath))
 	# install renderer
+			os.system("cp /tmp/AnimatedWeatherPixmap.py %sRenderer/AnimatedWeatherPixmap.py" % (componentspath))
 			os.system("cp /tmp/PiconUni.py %sRenderer/PiconUni.py" % (componentspath))
 			os.system("cp /tmp/RendVolumeText.py %sRenderer/RendVolumeText.py" % (componentspath))
 			os.system("cp /tmp/Watches.py %sRenderer/Watches.py" % (componentspath))
@@ -876,9 +887,10 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 		gitfile15 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/ServiceInfoEX.py"
 		gitfile16 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/ServiceName2.py"
 	# download renderer
-		gitfile17 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/PiconUni.py"
-		gitfile18 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/RendVolumeText.py"
-		gitfile19 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/Watches.py"
+		gitfile17 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/AnimatedWeatherPixmap.py"
+		gitfile18 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/PiconUni.py"
+		gitfile19 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/RendVolumeText.py"
+		gitfile20 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/Watches.py"
 
 		try:
 			urllib.urlretrieve (gitfile01, "/tmp/plugin.py")
@@ -897,9 +909,10 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 			urllib.urlretrieve (gitfile14, "/tmp/ProgressDiskSpaceInfo.py")
 			urllib.urlretrieve (gitfile15, "/tmp/ServiceInfoEX.py")
 			urllib.urlretrieve (gitfile16, "/tmp/ServiceName2.py")
-			urllib.urlretrieve (gitfile17, "/tmp/PiconUni.py")
-			urllib.urlretrieve (gitfile18, "/tmp/RendVolumeText.py")
-			urllib.urlretrieve (gitfile19, "/tmp/Watches.py")
+			urllib.urlretrieve (gitfile17, "/tmp/AnimatedWeatherPixmap.py")
+			urllib.urlretrieve (gitfile18, "/tmp/PiconUni.py")
+			urllib.urlretrieve (gitfile19, "/tmp/RendVolumeText.py")
+			urllib.urlretrieve (gitfile20, "/tmp/Watches.py")
 		except:
 			pass
 
@@ -920,10 +933,13 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 			and fileExists("/tmp/ProgressDiskSpaceInfo.py")\
 			and fileExists("/tmp/ServiceInfoEX.py")\
 			and fileExists("/tmp/ServiceName2.py")\
+			and fileExists("/tmp/AnimatedWeatherPixmap.py")\
 			and fileExists("/tmp/PiconUni.py")\
 			and fileExists("/tmp/RendVolumeText.py")\
 			and fileExists("/tmp/Watches.py"):
 			self.install()
+		else:
+			self.error()
 
 	def setDefault(self, configItem):
 		configItem.setValue(configItem.default)

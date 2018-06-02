@@ -21,24 +21,24 @@
   <!-- # # # # # # # # # # Templates # # # # # # # # # #-->
   <!--  ########## Templates Layer ########## -->
   <screen name="TemplatesUpLayer1">
-    <!-- Up Layer 1 -->
+  <!-- Up Layer 1 -->
     <eLabel position="0,88" size="1920,54" backgroundColor="background3" zPosition="-14" />
     <eLabel position="0,90" size="1920,50" backgroundColor="background1" zPosition="-13" />
   </screen>
   <screen name="TemplatesDownLayer1">
-    <!-- Down Layer 1 -->
+  <!-- Down Layer 1 -->
     <eLabel position="0,888" size="1920,104" backgroundColor="background3" zPosition="-14" />
     <eLabel position="0,890" size="1920,100" backgroundColor="background1" zPosition="-13" />
   </screen>
   <screen name="TemplatesUpLayer2">
-    <!-- Up Layer 2 -->
+  <!-- Up Layer 2 -->
     <eLabel position="0,48" size="1612,34" backgroundColor="background3" zPosition="-14" />
     <eLabel position="0,50" size="1610,30" backgroundColor="background2" zPosition="-13" />
     <eLabel position="1828,48" size="92,34" backgroundColor="background3" zPosition="-14" />
     <eLabel position="1830,50" size="90,30" backgroundColor="background2" zPosition="-13" />
   </screen>
   <screen name="TemplatesDownLayer2">
-    <!-- Down Layer 2 -->
+  <!-- Down Layer 2 -->
     <eLabel position="0,998" size="92,34" backgroundColor="background3" zPosition="-14" />
     <eLabel position="338,998" size="1024,34" backgroundColor="background3" zPosition="-14" />
     <eLabel position="1828,998" size="92,34" backgroundColor="background3" zPosition="-14" />
@@ -47,21 +47,21 @@
     <eLabel position="1830,1000" size="90,30" backgroundColor="background2" zPosition="-13" />
   </screen>
   <screen name="TemplatesUpLayer3">
-    <!-- Up Layer 3 -->
+  <!-- Up Layer 3 -->
     <eLabel position="0,148" size="1612,34" backgroundColor="background3" zPosition="-14" />
     <eLabel position="0,150" size="1610,30" backgroundColor="background2" zPosition="-13" />
     <eLabel position="1828,148" size="92,34" backgroundColor="background3" zPosition="-14" />
     <eLabel position="1830,150" size="90,30" backgroundColor="background2" zPosition="-13" />
   </screen>
   <screen name="TemplatesDownLayer3">
-    <!-- Down Layer 3-->
+  <!-- Down Layer 3-->
     <eLabel position="0,998" size="92,34" backgroundColor="background3" zPosition="-14" />
     <eLabel position="0,1000" size="90,30" backgroundColor="background2" zPosition="-13" />
     <eLabel position="338,998" size="1582,34" backgroundColor="background3" zPosition="-14" />
     <eLabel position="340,1000" size="1580,30" backgroundColor="background2" zPosition="-13" />
   </screen>
   <screen name="TemplatesDownLayer4">
-    <!-- Down Layer 4 -->
+  <!-- Down Layer 4 -->
     <eLabel position="0,848" size="92,34" backgroundColor="background3" zPosition="-14" />
     <eLabel position="338,848" size="1024,34" backgroundColor="background3" zPosition="-14" />
     <eLabel position="1828,848" size="92,34" backgroundColor="background3" zPosition="-14" />
@@ -70,66 +70,66 @@
     <eLabel position="1830,850" size="90,30" backgroundColor="background2" zPosition="-13" />
   </screen>
   <screen name="TemplatesClockLayer">
-    <!-- Clock Layer -->
+  <!-- Clock Layer -->
     <eLabel position="1618,63" size="204,104" backgroundColor="background3" zPosition="-12" />
     <eLabel position="1620,65" size="200,100" backgroundColor="background2" zPosition="-11" />
   </screen>
   <screen name="TemplatesPiconLayer">
-    <!-- Picon Layer -->
+  <!-- Picon Layer -->
     <eLabel position="98,867" size="234,146" backgroundColor="background3" zPosition="-12" />
     <eLabel position="100,869" size="230,142" backgroundColor="background2" zPosition="-11" />
   </screen>
   <screen name="TemplatesButtonsLayer">
-    <!-- Buttons Layer -->
+  <!-- Buttons Layer -->
     <eLabel position="1368,867" size="454,146" backgroundColor="background3" zPosition="-12" />
     <eLabel position="1370,869" size="450,142" backgroundColor="background1" zPosition="-11" />
     <eLabel position="1375,875" size="390,130" backgroundColor="background2" zPosition="-10" />
   </screen>
   <screen name="TemplatesMenuLayer">
-    <!-- Menu Layer -->
+  <!-- Menu Layer -->
     <panel name="TemplatesUpLayer1" />
     <panel name="TemplatesDownLayer1" />
     <panel name="TemplatesPiconLayer" />
   </screen>
   <screen name="TemplatesMenuInfoLayer">
-    <!-- Menu Info Layer -->
+  <!-- Menu Info Layer -->
     <eLabel position="1103,458" size="739,389" backgroundColor="background3" zPosition="-12" />
     <eLabel position="1105,460" size="735,385" backgroundColor="background1" zPosition="-11" />
     <eLabel position="1110,505" size="725,335" backgroundColor="background2" zPosition="-10" />
   </screen>
   <screen name="TemplatesInfoBarTvLayer">
-    <!-- Info Bar Tv Layer -->
+  <!-- Info Bar Tv Layer -->
     <panel name="TemplatesUpLayer1" />
     <panel name="TemplatesDownLayer1" />
     <panel name="TemplatesPiconLayer" />
   </screen>
   <screen name="TemplatesMediaMenuLayer">
-    <!-- Media Menu Layer -->
+  <!-- Media Menu Layer -->
     <panel name="TemplatesUpLayer1" />
     <panel name="TemplatesDownLayer1" />
   </screen>
   <screen name="TemplatesInfoBarMediaLayer">
-    <!-- Info Bar Media Layer -->
+  <!-- Info Bar Media Layer -->
     <panel name="TemplatesUpLayer1" />
     <panel name="TemplatesDownLayer1" />
   </screen>
   <screen name="TemplatesMenu500Layer">
-    <!-- Menu500 Layer -->
+  <!-- Menu500 Layer -->
     <eLabel position="78,188" size="504,659" backgroundColor="background3" zPosition="-12" />
     <eLabel position="80,190" size="500,655" backgroundColor="background1" zPosition="-11" />
   </screen>
   <screen name="TemplatesMenu1000Layer">
-    <!-- Menu1000 Layer -->
+  <!-- Menu1000 Layer -->
     <eLabel position="78,188" size="1004,659" backgroundColor="background3" zPosition="-12" />
     <eLabel position="80,190" size="1000,655" backgroundColor="background1" zPosition="-11" />
   </screen>
   <screen name="TemplatesMenu1800Layer">
-    <!-- Menu1700 Layer -->
+  <!-- Menu1700 Layer -->
     <eLabel position="78,188" size="1764,659" backgroundColor="background3" zPosition="-12" />
     <eLabel position="80,190" size="1760,655" backgroundColor="background1" zPosition="-11" />
   </screen>
   <screen name="TemplatesMenuLeftLayer">
-    <!-- Layer Menu Left -->
+  <!-- Layer Menu Left -->
     <eLabel position="0,188" size="80,659" backgroundColor="background3" zPosition="-12" />
     <eLabel position="0,190" size="80,655" backgroundColor="background1" zPosition="-11" />
     <eLabel position="10,200" size="70,635" backgroundColor="background2" zPosition="-10" />
@@ -143,7 +143,7 @@
     <eLabel text="D" position="10,765" size="70,70" font="Titles; 70" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="-9" />
   </screen>
   <screen name="TemplatesMenuRightLayer">
-    <!-- Layer Menu Right -->
+  <!-- Layer Menu Right -->
     <eLabel position="1840,188" size="80,659" backgroundColor="background3" zPosition="-12" />
     <eLabel position="1840,190" size="80,655" backgroundColor="background1" zPosition="-11" />
     <eLabel position="1840,200" size="70,635" backgroundColor="background2" zPosition="-10" />
@@ -157,31 +157,31 @@
     <eLabel text="D" position="1840,765" size="70,70" font="Titles; 70" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="-9" />
   </screen>
   <screen name="TemplatesMenuInfoRightLayer">
-    <!-- Layer Menu Info Right -->
+  <!-- Layer Menu Info Right -->
     <eLabel position="1840,458" size="80,389" backgroundColor="background3" zPosition="-12" />
     <eLabel position="1840,460" size="80,385" backgroundColor="background1" zPosition="-11" />
     <eLabel position="1840,505" size="70,335" backgroundColor="background2" zPosition="-10" />
   </screen>
   <!--  ########## Templates Progress Layer ########## -->
   <screen name="TemplatesMenuUpProgressLayerDefault">
-    <!-- Progress Layer -->
+  <!-- Progress Layer -->
     <eLabel position="340,905" size="1500,15" backgroundColor="gray" zPosition="1" />
   </screen>
   <screen name="TemplatesMenuUpProgressLayerStandard">
-    <!-- Progress Layer -->
+  <!-- Progress Layer -->
     <panel name="TemplatesMenuUpProgressLayerDefault" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="340,908" size="1500,3" backgroundColor="background1" zPosition="3" />
     <eLabel position="340,914" size="1500,3" backgroundColor="background1" zPosition="3" />
   </screen>
   <screen name="TemplatesMenuUpProgressLayerImproved">
-    <!-- Progress Layer -->
+  <!-- Progress Layer -->
     <panel name="TemplatesMenuUpProgressLayerDefault" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="340,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="345,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="350,905" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="355,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="360,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="365,905" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -202,7 +202,7 @@
     <eLabel position="440,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="445,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="450,905" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="455,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="460,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="465,905" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -223,7 +223,7 @@
     <eLabel position="540,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="545,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="550,905" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="555,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="560,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="565,905" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -244,7 +244,7 @@
     <eLabel position="640,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="645,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="650,905" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="655,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="660,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="665,905" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -265,7 +265,7 @@
     <eLabel position="740,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="745,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="750,905" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="755,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="760,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="765,905" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -286,7 +286,7 @@
     <eLabel position="840,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="845,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="850,905" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="855,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="860,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="865,905" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -307,7 +307,7 @@
     <eLabel position="940,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="945,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="950,905" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="955,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="960,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="965,905" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -328,7 +328,7 @@
     <eLabel position="1040,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1045,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1050,905" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1055,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1060,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1065,905" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -349,7 +349,7 @@
     <eLabel position="1140,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1145,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1150,905" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1155,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1160,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1165,905" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -370,7 +370,7 @@
     <eLabel position="1240,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1245,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1250,905" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1255,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1260,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1265,905" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -391,7 +391,7 @@
     <eLabel position="1340,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1345,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1350,905" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1355,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1360,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1365,905" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -412,7 +412,7 @@
     <eLabel position="1440,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1445,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1450,905" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1455,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1460,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1465,905" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -433,7 +433,7 @@
     <eLabel position="1540,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1545,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1550,905" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1555,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1560,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1565,905" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -454,7 +454,7 @@
     <eLabel position="1640,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1645,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1650,905" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1655,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1660,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1665,905" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -475,7 +475,7 @@
     <eLabel position="1740,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1745,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1750,905" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1755,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1760,905" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1765,905" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -495,24 +495,24 @@
     <eLabel position="1835,905" size="3,15" backgroundColor="background1" zPosition="3" />
   </screen>
   <screen name="TemplatesMenuDownProgressLayerDefault">
-    <!-- Progress Layer -->
+  <!-- Progress Layer -->
     <eLabel position="340,935" size="1500,15" backgroundColor="gray" zPosition="1" />
   </screen>
   <screen name="TemplatesMenuDownProgressLayerStandard">
-    <!-- Progress Layer -->
+  <!-- Progress Layer -->
     <panel name="TemplatesMenuDownProgressLayerDefault" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="340,938" size="1500,3" backgroundColor="background1" zPosition="3" />
     <eLabel position="340,944" size="1500,3" backgroundColor="background1" zPosition="3" />
   </screen>
   <screen name="TemplatesMenuDownProgressLayerImproved">
-    <!-- Progress Layer -->
+  <!-- Progress Layer -->
     <panel name="TemplatesMenuDownProgressLayerDefault" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="340,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="345,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="350,935" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="355,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="360,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="365,935" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -533,7 +533,7 @@
     <eLabel position="440,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="445,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="450,935" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="455,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="460,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="465,935" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -554,7 +554,7 @@
     <eLabel position="540,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="545,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="550,935" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="555,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="560,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="565,935" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -575,7 +575,7 @@
     <eLabel position="640,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="645,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="650,935" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="655,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="660,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="665,935" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -596,7 +596,7 @@
     <eLabel position="740,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="745,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="750,935" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="755,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="760,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="765,935" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -617,7 +617,7 @@
     <eLabel position="840,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="845,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="850,935" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="855,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="860,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="865,935" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -638,7 +638,7 @@
     <eLabel position="940,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="945,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="950,935" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="955,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="960,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="965,935" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -659,7 +659,7 @@
     <eLabel position="1040,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1045,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1050,935" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1055,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1060,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1065,935" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -680,7 +680,7 @@
     <eLabel position="1140,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1145,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1150,935" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1155,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1160,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1165,935" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -701,7 +701,7 @@
     <eLabel position="1240,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1245,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1250,935" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1255,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1260,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1265,935" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -722,7 +722,7 @@
     <eLabel position="1340,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1345,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1350,935" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1355,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1360,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1365,935" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -743,7 +743,7 @@
     <eLabel position="1440,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1445,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1450,935" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1455,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1460,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1465,935" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -764,7 +764,7 @@
     <eLabel position="1540,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1545,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1550,935" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1555,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1560,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1565,935" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -785,7 +785,7 @@
     <eLabel position="1640,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1645,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1650,935" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1655,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1660,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1665,935" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -806,7 +806,7 @@
     <eLabel position="1740,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1745,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1750,935" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1755,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1760,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1765,935" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -826,20 +826,20 @@
     <eLabel position="1835,935" size="3,15" backgroundColor="background1" zPosition="3" />
   </screen>
   <screen name="TemplatesInfoBarTvProgressLayerDefault">
-    <!-- Progress Layer -->
+  <!-- Progress Layer -->
     <eLabel position="355,935" size="990,15" backgroundColor="gray" zPosition="1" />
   </screen>
   <screen name="TemplatesInfoBarTvProgressLayerStandard">
-    <!-- Progress Layer -->
+  <!-- Progress Layer -->
     <panel name="TemplatesInfoBarTvProgressLayerDefault" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="355,938" size="990,3" backgroundColor="background1" zPosition="3" />
     <eLabel position="355,944" size="990,3" backgroundColor="background1" zPosition="3" />
   </screen>
   <screen name="TemplatesInfoBarTvProgressLayerImproved">
-    <!-- Progress Layer -->
+  <!-- Progress Layer -->
     <panel name="TemplatesInfoBarTvProgressLayerDefault" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="355,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="360,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="365,935" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -860,7 +860,7 @@
     <eLabel position="440,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="445,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="450,935" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="455,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="460,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="465,935" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -881,7 +881,7 @@
     <eLabel position="540,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="545,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="550,935" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="555,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="560,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="565,935" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -902,7 +902,7 @@
     <eLabel position="640,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="645,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="650,935" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="655,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="660,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="665,935" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -923,7 +923,7 @@
     <eLabel position="740,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="745,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="750,935" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="755,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="760,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="765,935" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -944,7 +944,7 @@
     <eLabel position="840,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="845,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="850,935" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="855,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="860,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="865,935" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -965,7 +965,7 @@
     <eLabel position="940,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="945,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="950,935" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="955,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="960,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="965,935" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -986,7 +986,7 @@
     <eLabel position="1040,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1045,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1050,935" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1055,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1060,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1065,935" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -1007,7 +1007,7 @@
     <eLabel position="1140,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1145,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1150,935" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1155,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1160,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1165,935" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -1028,7 +1028,7 @@
     <eLabel position="1240,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1245,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1250,935" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1255,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1260,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1265,935" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -1049,20 +1049,20 @@
     <eLabel position="1340,935" size="3,15" backgroundColor="background1" zPosition="3" />
   </screen>
   <screen name="TemplatesInfoBarMediaProgressLayerDefault">
-    <!-- Progress Layer -->
+  <!-- Progress Layer -->
     <eLabel position="355,935" size="1450,15" backgroundColor="gray" zPosition="1" />
   </screen>
   <screen name="TemplatesInfoBarMediaProgressLayerStandard">
-    <!-- Progress Layer -->
+  <!-- Progress Layer -->
     <panel name="TemplatesInfoBarMediaProgressLayerDefault" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="355,938" size="1450,3" backgroundColor="background1" zPosition="3" />
     <eLabel position="355,944" size="1450,3" backgroundColor="background1" zPosition="3" />
   </screen>
   <screen name="TemplatesInfoBarMediaProgressLayerImproved">
-    <!-- Progress Layer -->
+  <!-- Progress Layer -->
     <panel name="TemplatesInfoBarMediaProgressLayerDefault" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="355,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="360,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="365,935" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -1083,7 +1083,7 @@
     <eLabel position="440,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="445,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="450,935" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="455,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="460,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="465,935" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -1104,7 +1104,7 @@
     <eLabel position="540,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="545,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="550,935" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="555,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="560,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="565,935" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -1125,7 +1125,7 @@
     <eLabel position="640,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="645,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="650,935" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="655,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="660,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="665,935" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -1146,7 +1146,7 @@
     <eLabel position="740,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="745,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="750,935" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="755,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="760,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="765,935" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -1167,7 +1167,7 @@
     <eLabel position="840,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="845,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="850,935" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="855,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="860,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="865,935" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -1188,7 +1188,7 @@
     <eLabel position="940,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="945,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="950,935" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="955,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="960,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="965,935" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -1209,7 +1209,7 @@
     <eLabel position="1040,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1045,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1050,935" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1055,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1060,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1065,935" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -1230,7 +1230,7 @@
     <eLabel position="1140,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1145,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1150,935" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1155,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1160,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1165,935" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -1251,7 +1251,7 @@
     <eLabel position="1240,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1245,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1250,935" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1255,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1260,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1265,935" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -1272,7 +1272,7 @@
     <eLabel position="1340,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1345,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1350,935" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1355,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1360,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1365,935" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -1293,7 +1293,7 @@
     <eLabel position="1440,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1445,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1450,935" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1455,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1460,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1465,935" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -1314,7 +1314,7 @@
     <eLabel position="1540,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1545,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1550,935" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1555,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1560,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1565,935" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -1335,7 +1335,7 @@
     <eLabel position="1640,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1645,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1650,935" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1655,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1660,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1665,935" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -1356,7 +1356,7 @@
     <eLabel position="1740,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1745,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1750,935" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1755,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1760,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1765,935" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -1369,20 +1369,20 @@
     <eLabel position="1800,935" size="3,15" backgroundColor="background1" zPosition="3" />
   </screen>
   <screen name="TemplatesInfoBarRadioProgressLayerDefault">
-    <!-- Progress Layer -->
+  <!-- Progress Layer -->
     <eLabel position="355,935" size="600,15" backgroundColor="gray" zPosition="1" />
   </screen>
   <screen name="TemplatesInfoBarRadioProgressLayerStandard">
-    <!-- Progress Layer -->
+  <!-- Progress Layer -->
     <panel name="TemplatesInfoBarRadioProgressLayerDefault" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="355,938" size="600,3" backgroundColor="background1" zPosition="3" />
     <eLabel position="355,944" size="600,3" backgroundColor="background1" zPosition="3" />
   </screen>
   <screen name="TemplatesInfoBarRadioProgressLayerImproved">
-    <!-- Progress Layer -->
+  <!-- Progress Layer -->
     <panel name="TemplatesInfoBarRadioProgressLayerDefault" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="355,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="360,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="365,935" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -1403,7 +1403,7 @@
     <eLabel position="440,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="445,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="450,935" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="455,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="460,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="465,935" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -1424,7 +1424,7 @@
     <eLabel position="540,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="545,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="550,935" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="555,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="560,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="565,935" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -1445,7 +1445,7 @@
     <eLabel position="640,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="645,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="650,935" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="655,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="660,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="665,935" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -1466,7 +1466,7 @@
     <eLabel position="740,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="745,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="750,935" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="755,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="760,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="765,935" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -1487,7 +1487,7 @@
     <eLabel position="840,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="845,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="850,935" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="855,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="860,935" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="865,935" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -1510,26 +1510,26 @@
     <eLabel position="950,935" size="3,15" backgroundColor="background1" zPosition="3" />
   </screen>
   <screen name="TemplatesInfoBarTvTunerProgressLayerDefault">
-    <!-- Progress Layer -->
+  <!-- Progress Layer -->
     <eLabel position="1490,880" size="320,50" backgroundColor="gray" zPosition="1" />
     <eLabel position="1490,950" size="320,50" backgroundColor="gray" zPosition="1" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1490,905" size="320,3" backgroundColor="background2" zPosition="3" />
     <eLabel position="1490,975" size="320,3" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1490,880" size="155,25" backgroundColor="background2" zPosition="3" />
     <eLabel position="1490,950" size="155,25" backgroundColor="background2" zPosition="3" />
   </screen>
   <screen name="TemplatesInfoBarTvTunerProgressLayerStandard">
-    <!-- Progress Layer -->
+  <!-- Progress Layer -->
     <panel name="TemplatesInfoBarTvTunerProgressLayerDefault" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1490,883" size="320,3" backgroundColor="background2" zPosition="3" />
     <eLabel position="1490,924" size="320,3" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1490,953" size="320,3" backgroundColor="background2" zPosition="3" />
     <eLabel position="1490,994" size="320,3" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1645,880" size="2,23" backgroundColor="background2" zPosition="3" />
     <eLabel position="1647,880" size="2,21" backgroundColor="background2" zPosition="3" />
     <eLabel position="1649,880" size="2,19" backgroundColor="background2" zPosition="3" />
@@ -1542,7 +1542,7 @@
     <eLabel position="1663,880" size="2,05" backgroundColor="background2" zPosition="3" />
     <eLabel position="1665,880" size="2,03" backgroundColor="background2" zPosition="3" />
     <eLabel position="1667,880" size="2,01" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1645,950" size="2,23" backgroundColor="background2" zPosition="3" />
     <eLabel position="1647,950" size="2,21" backgroundColor="background2" zPosition="3" />
     <eLabel position="1649,950" size="2,19" backgroundColor="background2" zPosition="3" />
@@ -1557,9 +1557,9 @@
     <eLabel position="1667,950" size="2,01" backgroundColor="background2" zPosition="3" />
   </screen>
   <screen name="TemplatesInfoBarTvTunerProgressLayerImproved">
-    <!-- Progress Layer -->
+  <!-- Progress Layer -->
     <panel name="TemplatesInfoBarTvTunerProgressLayerDefault" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1490,880" size="3,120" backgroundColor="background2" zPosition="3" />
     <eLabel position="1495,880" size="3,120" backgroundColor="background2" zPosition="3" />
     <eLabel position="1500,880" size="3,120" backgroundColor="background2" zPosition="3" />
@@ -1580,7 +1580,7 @@
     <eLabel position="1575,880" size="3,120" backgroundColor="background2" zPosition="3" />
     <eLabel position="1580,880" size="3,120" backgroundColor="background2" zPosition="3" />
     <eLabel position="1585,880" size="3,120" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1590,880" size="3,120" backgroundColor="background2" zPosition="3" />
     <eLabel position="1595,880" size="3,120" backgroundColor="background2" zPosition="3" />
     <eLabel position="1600,880" size="3,120" backgroundColor="background2" zPosition="3" />
@@ -1601,7 +1601,7 @@
     <eLabel position="1675,880" size="3,120" backgroundColor="background2" zPosition="3" />
     <eLabel position="1680,880" size="3,120" backgroundColor="background2" zPosition="3" />
     <eLabel position="1685,880" size="3,120" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1690,880" size="3,120" backgroundColor="background2" zPosition="3" />
     <eLabel position="1695,880" size="3,120" backgroundColor="background2" zPosition="3" />
     <eLabel position="1700,880" size="3,120" backgroundColor="background2" zPosition="3" />
@@ -1622,18 +1622,18 @@
     <eLabel position="1775,880" size="3,120" backgroundColor="background2" zPosition="3" />
     <eLabel position="1780,880" size="3,120" backgroundColor="background2" zPosition="3" />
     <eLabel position="1785,880" size="3,120" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1790,880" size="3,120" backgroundColor="background2" zPosition="3" />
     <eLabel position="1795,880" size="3,120" backgroundColor="background2" zPosition="3" />
     <eLabel position="1800,880" size="3,120" backgroundColor="background2" zPosition="3" />
     <eLabel position="1805,880" size="3,120" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1642,880" size="4,25" backgroundColor="background2" zPosition="3" />
     <eLabel position="1647,880" size="4,20" backgroundColor="background2" zPosition="3" />
     <eLabel position="1652,880" size="4,15" backgroundColor="background2" zPosition="3" />
     <eLabel position="1657,880" size="4,10" backgroundColor="background2" zPosition="3" />
     <eLabel position="1662,880" size="4,05" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1642,950" size="4,25" backgroundColor="background2" zPosition="3" />
     <eLabel position="1647,950" size="4,20" backgroundColor="background2" zPosition="3" />
     <eLabel position="1652,950" size="4,15" backgroundColor="background2" zPosition="3" />
@@ -1641,32 +1641,32 @@
     <eLabel position="1662,950" size="4,05" backgroundColor="background2" zPosition="3" />
   </screen>
   <screen name="TemplatesSignalFinderProgressLayerDefault">
-    <!-- Progress Layer -->
+  <!-- Progress Layer -->
     <eLabel position="1240,665" size="590,50" backgroundColor="gray" zPosition="1" />
     <eLabel position="1240,725" size="590,50" backgroundColor="gray" zPosition="1" />
     <eLabel position="1240,785" size="590,50" backgroundColor="gray" zPosition="1" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1240,690" size="590,3" backgroundColor="background2" zPosition="3" />
     <eLabel position="1240,750" size="590,3" backgroundColor="background2" zPosition="3" />
     <eLabel position="1240,810" size="590,3" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1240,665" size="155,25" backgroundColor="background2" zPosition="3" />
     <eLabel position="1240,725" size="155,25" backgroundColor="background2" zPosition="3" />
     <eLabel position="1240,785" size="155,25" backgroundColor="background2" zPosition="3" />
   </screen>
   <screen name="TemplatesSignalFinderProgressLayerStandard">
-    <!-- Progress Layer -->
+  <!-- Progress Layer -->
     <panel name="TemplatesSignalFinderProgressLayerDefault" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1240,668" size="590,3" backgroundColor="background2" zPosition="3" />
     <eLabel position="1240,709" size="590,3" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1240,728" size="590,3" backgroundColor="background2" zPosition="3" />
     <eLabel position="1240,769" size="590,3" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1240,788" size="590,3" backgroundColor="background2" zPosition="3" />
     <eLabel position="1240,829" size="590,3" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1395,665" size="2,23" backgroundColor="background2" zPosition="3" />
     <eLabel position="1397,665" size="2,21" backgroundColor="background2" zPosition="3" />
     <eLabel position="1399,665" size="2,19" backgroundColor="background2" zPosition="3" />
@@ -1679,7 +1679,7 @@
     <eLabel position="1413,665" size="2,05" backgroundColor="background2" zPosition="3" />
     <eLabel position="1415,665" size="2,03" backgroundColor="background2" zPosition="3" />
     <eLabel position="1417,665" size="2,01" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1395,725" size="2,23" backgroundColor="background2" zPosition="3" />
     <eLabel position="1397,725" size="2,21" backgroundColor="background2" zPosition="3" />
     <eLabel position="1399,725" size="2,19" backgroundColor="background2" zPosition="3" />
@@ -1692,7 +1692,7 @@
     <eLabel position="1413,725" size="2,05" backgroundColor="background2" zPosition="3" />
     <eLabel position="1415,725" size="2,03" backgroundColor="background2" zPosition="3" />
     <eLabel position="1417,725" size="2,01" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1395,785" size="2,23" backgroundColor="background2" zPosition="3" />
     <eLabel position="1397,785" size="2,21" backgroundColor="background2" zPosition="3" />
     <eLabel position="1399,785" size="2,19" backgroundColor="background2" zPosition="3" />
@@ -1707,9 +1707,9 @@
     <eLabel position="1417,785" size="2,01" backgroundColor="background2" zPosition="3" />
   </screen>
   <screen name="TemplatesSignalFinderProgressLayerImproved">
-    <!-- Progress Layer -->
+  <!-- Progress Layer -->
     <panel name="TemplatesSignalFinderProgressLayerDefault" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1240,665" size="3,170" backgroundColor="background2" zPosition="3" />
     <eLabel position="1245,665" size="3,170" backgroundColor="background2" zPosition="3" />
     <eLabel position="1250,665" size="3,170" backgroundColor="background2" zPosition="3" />
@@ -1730,7 +1730,7 @@
     <eLabel position="1325,665" size="3,170" backgroundColor="background2" zPosition="3" />
     <eLabel position="1330,665" size="3,170" backgroundColor="background2" zPosition="3" />
     <eLabel position="1335,665" size="3,170" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1340,665" size="3,170" backgroundColor="background2" zPosition="3" />
     <eLabel position="1345,665" size="3,170" backgroundColor="background2" zPosition="3" />
     <eLabel position="1350,665" size="3,170" backgroundColor="background2" zPosition="3" />
@@ -1751,7 +1751,7 @@
     <eLabel position="1425,665" size="3,170" backgroundColor="background2" zPosition="3" />
     <eLabel position="1430,665" size="3,170" backgroundColor="background2" zPosition="3" />
     <eLabel position="1435,665" size="3,170" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1440,665" size="3,170" backgroundColor="background2" zPosition="3" />
     <eLabel position="1445,665" size="3,170" backgroundColor="background2" zPosition="3" />
     <eLabel position="1450,665" size="3,170" backgroundColor="background2" zPosition="3" />
@@ -1772,7 +1772,7 @@
     <eLabel position="1525,665" size="3,170" backgroundColor="background2" zPosition="3" />
     <eLabel position="1530,665" size="3,170" backgroundColor="background2" zPosition="3" />
     <eLabel position="1535,665" size="3,170" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1540,665" size="3,170" backgroundColor="background2" zPosition="3" />
     <eLabel position="1545,665" size="3,170" backgroundColor="background2" zPosition="3" />
     <eLabel position="1550,665" size="3,170" backgroundColor="background2" zPosition="3" />
@@ -1793,7 +1793,7 @@
     <eLabel position="1625,665" size="3,170" backgroundColor="background2" zPosition="3" />
     <eLabel position="1630,665" size="3,170" backgroundColor="background2" zPosition="3" />
     <eLabel position="1635,665" size="3,170" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1640,665" size="3,170" backgroundColor="background2" zPosition="3" />
     <eLabel position="1645,665" size="3,170" backgroundColor="background2" zPosition="3" />
     <eLabel position="1650,665" size="3,170" backgroundColor="background2" zPosition="3" />
@@ -1814,7 +1814,7 @@
     <eLabel position="1725,665" size="3,170" backgroundColor="background2" zPosition="3" />
     <eLabel position="1730,665" size="3,170" backgroundColor="background2" zPosition="3" />
     <eLabel position="1735,665" size="3,170" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1740,665" size="3,170" backgroundColor="background2" zPosition="3" />
     <eLabel position="1745,665" size="3,170" backgroundColor="background2" zPosition="3" />
     <eLabel position="1750,665" size="3,170" backgroundColor="background2" zPosition="3" />
@@ -1833,19 +1833,19 @@
     <eLabel position="1815,665" size="3,170" backgroundColor="background2" zPosition="3" />
     <eLabel position="1820,665" size="3,170" backgroundColor="background2" zPosition="3" />
     <eLabel position="1825,665" size="3,170" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1392,665" size="4,25" backgroundColor="background2" zPosition="3" />
     <eLabel position="1397,665" size="4,20" backgroundColor="background2" zPosition="3" />
     <eLabel position="1402,665" size="4,15" backgroundColor="background2" zPosition="3" />
     <eLabel position="1407,665" size="4,10" backgroundColor="background2" zPosition="3" />
     <eLabel position="1412,665" size="4,05" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1392,725" size="4,25" backgroundColor="background2" zPosition="3" />
     <eLabel position="1397,725" size="4,20" backgroundColor="background2" zPosition="3" />
     <eLabel position="1402,725" size="4,15" backgroundColor="background2" zPosition="3" />
     <eLabel position="1407,725" size="4,10" backgroundColor="background2" zPosition="3" />
     <eLabel position="1412,725" size="4,05" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1392,785" size="4,25" backgroundColor="background2" zPosition="3" />
     <eLabel position="1397,785" size="4,20" backgroundColor="background2" zPosition="3" />
     <eLabel position="1402,785" size="4,15" backgroundColor="background2" zPosition="3" />
@@ -1853,26 +1853,26 @@
     <eLabel position="1412,785" size="4,05" backgroundColor="background2" zPosition="3" />
   </screen>
   <screen name="TemplatesSignalPositionerProgressLayerDefault">
-    <!-- Progress Layer -->
+  <!-- Progress Layer -->
     <eLabel position="1240,725" size="590,50" backgroundColor="gray" zPosition="1" />
     <eLabel position="1240,785" size="590,50" backgroundColor="gray" zPosition="1" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1240,750" size="590,3" backgroundColor="background2" zPosition="3" />
     <eLabel position="1240,810" size="590,3" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1240,725" size="155,25" backgroundColor="background2" zPosition="3" />
     <eLabel position="1240,785" size="155,25" backgroundColor="background2" zPosition="3" />
   </screen>
   <screen name="TemplatesSignalPositionerProgressLayerStandard">
-    <!-- Progress Layer -->
+  <!-- Progress Layer -->
     <panel name="TemplatesSignalPositionerProgressLayerDefault" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1240,728" size="590,3" backgroundColor="background2" zPosition="3" />
     <eLabel position="1240,769" size="590,3" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1240,788" size="590,3" backgroundColor="background2" zPosition="3" />
     <eLabel position="1240,829" size="590,3" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1395,725" size="2,23" backgroundColor="background2" zPosition="3" />
     <eLabel position="1397,725" size="2,21" backgroundColor="background2" zPosition="3" />
     <eLabel position="1399,725" size="2,19" backgroundColor="background2" zPosition="3" />
@@ -1885,7 +1885,7 @@
     <eLabel position="1413,725" size="2,05" backgroundColor="background2" zPosition="3" />
     <eLabel position="1415,725" size="2,03" backgroundColor="background2" zPosition="3" />
     <eLabel position="1417,725" size="2,01" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1395,785" size="2,23" backgroundColor="background2" zPosition="3" />
     <eLabel position="1397,785" size="2,21" backgroundColor="background2" zPosition="3" />
     <eLabel position="1399,785" size="2,19" backgroundColor="background2" zPosition="3" />
@@ -1900,9 +1900,9 @@
     <eLabel position="1417,785" size="2,01" backgroundColor="background2" zPosition="3" />
   </screen>
   <screen name="TemplatesSignalPositionerProgressLayerImproved">
-    <!-- Progress Layer -->
+  <!-- Progress Layer -->
     <panel name="TemplatesSignalPositionerProgressLayerDefault" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1240,725" size="3,110" backgroundColor="background2" zPosition="3" />
     <eLabel position="1245,725" size="3,110" backgroundColor="background2" zPosition="3" />
     <eLabel position="1250,725" size="3,110" backgroundColor="background2" zPosition="3" />
@@ -1923,7 +1923,7 @@
     <eLabel position="1325,725" size="3,110" backgroundColor="background2" zPosition="3" />
     <eLabel position="1330,725" size="3,110" backgroundColor="background2" zPosition="3" />
     <eLabel position="1335,725" size="3,110" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1340,725" size="3,110" backgroundColor="background2" zPosition="3" />
     <eLabel position="1345,725" size="3,110" backgroundColor="background2" zPosition="3" />
     <eLabel position="1350,725" size="3,110" backgroundColor="background2" zPosition="3" />
@@ -1944,7 +1944,7 @@
     <eLabel position="1425,725" size="3,110" backgroundColor="background2" zPosition="3" />
     <eLabel position="1430,725" size="3,110" backgroundColor="background2" zPosition="3" />
     <eLabel position="1435,725" size="3,110" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1440,725" size="3,110" backgroundColor="background2" zPosition="3" />
     <eLabel position="1445,725" size="3,110" backgroundColor="background2" zPosition="3" />
     <eLabel position="1450,725" size="3,110" backgroundColor="background2" zPosition="3" />
@@ -1965,7 +1965,7 @@
     <eLabel position="1525,725" size="3,110" backgroundColor="background2" zPosition="3" />
     <eLabel position="1530,725" size="3,110" backgroundColor="background2" zPosition="3" />
     <eLabel position="1535,725" size="3,110" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1540,725" size="3,110" backgroundColor="background2" zPosition="3" />
     <eLabel position="1545,725" size="3,110" backgroundColor="background2" zPosition="3" />
     <eLabel position="1550,725" size="3,110" backgroundColor="background2" zPosition="3" />
@@ -1986,7 +1986,7 @@
     <eLabel position="1625,725" size="3,110" backgroundColor="background2" zPosition="3" />
     <eLabel position="1630,725" size="3,110" backgroundColor="background2" zPosition="3" />
     <eLabel position="1635,725" size="3,110" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1640,725" size="3,110" backgroundColor="background2" zPosition="3" />
     <eLabel position="1645,725" size="3,110" backgroundColor="background2" zPosition="3" />
     <eLabel position="1650,725" size="3,110" backgroundColor="background2" zPosition="3" />
@@ -2007,7 +2007,7 @@
     <eLabel position="1725,725" size="3,110" backgroundColor="background2" zPosition="3" />
     <eLabel position="1730,725" size="3,110" backgroundColor="background2" zPosition="3" />
     <eLabel position="1735,725" size="3,110" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1740,725" size="3,110" backgroundColor="background2" zPosition="3" />
     <eLabel position="1745,725" size="3,110" backgroundColor="background2" zPosition="3" />
     <eLabel position="1750,725" size="3,110" backgroundColor="background2" zPosition="3" />
@@ -2026,13 +2026,13 @@
     <eLabel position="1815,725" size="3,110" backgroundColor="background2" zPosition="3" />
     <eLabel position="1820,725" size="3,110" backgroundColor="background2" zPosition="3" />
     <eLabel position="1825,725" size="3,110" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1392,725" size="4,25" backgroundColor="background2" zPosition="3" />
     <eLabel position="1397,725" size="4,20" backgroundColor="background2" zPosition="3" />
     <eLabel position="1402,725" size="4,15" backgroundColor="background2" zPosition="3" />
     <eLabel position="1407,725" size="4,10" backgroundColor="background2" zPosition="3" />
     <eLabel position="1412,725" size="4,05" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1392,785" size="4,25" backgroundColor="background2" zPosition="3" />
     <eLabel position="1397,785" size="4,20" backgroundColor="background2" zPosition="3" />
     <eLabel position="1402,785" size="4,15" backgroundColor="background2" zPosition="3" />
@@ -2040,26 +2040,26 @@
     <eLabel position="1412,785" size="4,05" backgroundColor="background2" zPosition="3" />
   </screen>
   <screen name="TemplatesSignalQuickInfoProgressLayerDefault">
-    <!-- Progress Layer -->
+  <!-- Progress Layer -->
     <eLabel position="450,320" size="1000,120" backgroundColor="gray" zPosition="1" />
     <eLabel position="450,480" size="1000,120" backgroundColor="gray" zPosition="1" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="450,379" size="1000,3" backgroundColor="background2" zPosition="3" />
     <eLabel position="450,539" size="1000,3" backgroundColor="background2" zPosition="3" />
   </screen>
   <screen name="TemplatesSignalQuickInfoProgressLayerStandard">
-    <!-- Progress Layer -->
+  <!-- Progress Layer -->
     <panel name="TemplatesSignalQuickInfoProgressLayerDefault" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="450,323" size="1000,3" backgroundColor="background2" zPosition="3" />
     <eLabel position="450,434" size="1000,3" backgroundColor="background2" zPosition="3" />
     <eLabel position="450,483" size="1000,3" backgroundColor="background2" zPosition="3" />
     <eLabel position="450,594" size="1000,3" backgroundColor="background2" zPosition="3" />
   </screen>
   <screen name="TemplatesSignalQuickInfoProgressLayerImproved">
-    <!-- Progress Layer -->
+  <!-- Progress Layer -->
     <panel name="TemplatesSignalQuickInfoProgressLayerDefault" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="450,320" size="3,280" backgroundColor="background2" zPosition="3" />
     <eLabel position="455,320" size="3,280" backgroundColor="background2" zPosition="3" />
     <eLabel position="460,320" size="3,280" backgroundColor="background2" zPosition="3" />
@@ -2080,7 +2080,7 @@
     <eLabel position="535,320" size="3,280" backgroundColor="background2" zPosition="3" />
     <eLabel position="540,320" size="3,280" backgroundColor="background2" zPosition="3" />
     <eLabel position="545,320" size="3,280" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="550,320" size="3,280" backgroundColor="background2" zPosition="3" />
     <eLabel position="555,320" size="3,280" backgroundColor="background2" zPosition="3" />
     <eLabel position="560,320" size="3,280" backgroundColor="background2" zPosition="3" />
@@ -2101,7 +2101,7 @@
     <eLabel position="635,320" size="3,280" backgroundColor="background2" zPosition="3" />
     <eLabel position="640,320" size="3,280" backgroundColor="background2" zPosition="3" />
     <eLabel position="645,320" size="3,280" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="650,320" size="3,280" backgroundColor="background2" zPosition="3" />
     <eLabel position="655,320" size="3,280" backgroundColor="background2" zPosition="3" />
     <eLabel position="660,320" size="3,280" backgroundColor="background2" zPosition="3" />
@@ -2122,7 +2122,7 @@
     <eLabel position="735,320" size="3,280" backgroundColor="background2" zPosition="3" />
     <eLabel position="740,320" size="3,280" backgroundColor="background2" zPosition="3" />
     <eLabel position="745,320" size="3,280" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="750,320" size="3,280" backgroundColor="background2" zPosition="3" />
     <eLabel position="755,320" size="3,280" backgroundColor="background2" zPosition="3" />
     <eLabel position="760,320" size="3,280" backgroundColor="background2" zPosition="3" />
@@ -2143,7 +2143,7 @@
     <eLabel position="835,320" size="3,280" backgroundColor="background2" zPosition="3" />
     <eLabel position="840,320" size="3,280" backgroundColor="background2" zPosition="3" />
     <eLabel position="845,320" size="3,280" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="850,320" size="3,280" backgroundColor="background2" zPosition="3" />
     <eLabel position="855,320" size="3,280" backgroundColor="background2" zPosition="3" />
     <eLabel position="860,320" size="3,280" backgroundColor="background2" zPosition="3" />
@@ -2164,7 +2164,7 @@
     <eLabel position="935,320" size="3,280" backgroundColor="background2" zPosition="3" />
     <eLabel position="940,320" size="3,280" backgroundColor="background2" zPosition="3" />
     <eLabel position="945,320" size="3,280" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="950,320" size="3,280" backgroundColor="background2" zPosition="3" />
     <eLabel position="955,320" size="3,280" backgroundColor="background2" zPosition="3" />
     <eLabel position="960,320" size="3,280" backgroundColor="background2" zPosition="3" />
@@ -2185,7 +2185,7 @@
     <eLabel position="1035,320" size="3,280" backgroundColor="background2" zPosition="3" />
     <eLabel position="1040,320" size="3,280" backgroundColor="background2" zPosition="3" />
     <eLabel position="1045,320" size="3,280" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1050,320" size="3,280" backgroundColor="background2" zPosition="3" />
     <eLabel position="1055,320" size="3,280" backgroundColor="background2" zPosition="3" />
     <eLabel position="1060,320" size="3,280" backgroundColor="background2" zPosition="3" />
@@ -2206,7 +2206,7 @@
     <eLabel position="1135,320" size="3,280" backgroundColor="background2" zPosition="3" />
     <eLabel position="1140,320" size="3,280" backgroundColor="background2" zPosition="3" />
     <eLabel position="1145,320" size="3,280" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1150,320" size="3,280" backgroundColor="background2" zPosition="3" />
     <eLabel position="1155,320" size="3,280" backgroundColor="background2" zPosition="3" />
     <eLabel position="1160,320" size="3,280" backgroundColor="background2" zPosition="3" />
@@ -2227,7 +2227,7 @@
     <eLabel position="1235,320" size="3,280" backgroundColor="background2" zPosition="3" />
     <eLabel position="1240,320" size="3,280" backgroundColor="background2" zPosition="3" />
     <eLabel position="1245,320" size="3,280" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1250,320" size="3,280" backgroundColor="background2" zPosition="3" />
     <eLabel position="1255,320" size="3,280" backgroundColor="background2" zPosition="3" />
     <eLabel position="1260,320" size="3,280" backgroundColor="background2" zPosition="3" />
@@ -2248,7 +2248,7 @@
     <eLabel position="1335,320" size="3,280" backgroundColor="background2" zPosition="3" />
     <eLabel position="1340,320" size="3,280" backgroundColor="background2" zPosition="3" />
     <eLabel position="1345,320" size="3,280" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1350,320" size="3,280" backgroundColor="background2" zPosition="3" />
     <eLabel position="1355,320" size="3,280" backgroundColor="background2" zPosition="3" />
     <eLabel position="1360,320" size="3,280" backgroundColor="background2" zPosition="3" />
@@ -2271,20 +2271,20 @@
     <eLabel position="1445,320" size="3,280" backgroundColor="background2" zPosition="3" />
   </screen>
   <screen name="TemplatesChannelSelectionProgressLayerDefault">
-    <!-- Progress Layer -->
+  <!-- Progress Layer -->
     <eLabel position="1235,477" size="475,15" backgroundColor="gray" zPosition="1" />
   </screen>
   <screen name="TemplatesChannelSelectionProgressLayerStandard">
-    <!-- Progress Layer -->
+  <!-- Progress Layer -->
     <panel name="TemplatesChannelSelectionProgressLayerDefault" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1235,480" size="475,3" backgroundColor="background1" zPosition="3" />
     <eLabel position="1235,486" size="475,3" backgroundColor="background1" zPosition="3" />
   </screen>
   <screen name="TemplatesChannelSelectionProgressLayerImproved">
-    <!-- Progress Layer -->
+  <!-- Progress Layer -->
     <panel name="TemplatesChannelSelectionProgressLayerDefault" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1235,477" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1240,477" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1245,477" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -2305,7 +2305,7 @@
     <eLabel position="1320,477" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1325,477" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1330,477" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1335,477" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1340,477" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1345,477" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -2326,7 +2326,7 @@
     <eLabel position="1420,477" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1425,477" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1430,477" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1435,477" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1440,477" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1445,477" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -2347,7 +2347,7 @@
     <eLabel position="1520,477" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1525,477" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1530,477" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1535,477" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1540,477" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1545,477" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -2368,7 +2368,7 @@
     <eLabel position="1620,477" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1625,477" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1630,477" size="3,15" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1635,477" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1640,477" size="3,15" backgroundColor="background1" zPosition="3" />
     <eLabel position="1645,477" size="3,15" backgroundColor="background1" zPosition="3" />
@@ -2386,19 +2386,19 @@
     <eLabel position="1705,477" size="3,15" backgroundColor="background1" zPosition="3" />
   </screen>
   <screen name="TemplatesMemoryProgressLayerDefault">
-    <!-- Progress Layer -->
+  <!-- Progress Layer -->
     <eLabel position="615,545" size="1215,50" backgroundColor="gray" zPosition="1" />
     <eLabel position="615,605" size="1215,50" backgroundColor="gray" zPosition="1" />
     <eLabel position="615,665" size="1215,50" backgroundColor="gray" zPosition="1" />
     <eLabel position="615,725" size="1215,50" backgroundColor="gray" zPosition="1" />
     <eLabel position="615,785" size="1215,50" backgroundColor="gray" zPosition="1" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="615,570" size="1215,3" backgroundColor="background2" zPosition="3" />
     <eLabel position="615,630" size="1215,3" backgroundColor="background2" zPosition="3" />
     <eLabel position="615,690" size="1215,3" backgroundColor="background2" zPosition="3" />
     <eLabel position="615,750" size="1215,3" backgroundColor="background2" zPosition="3" />
     <eLabel position="615,810" size="1215,3" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="615,545" size="800,25" backgroundColor="background2" zPosition="3" />
     <eLabel position="615,605" size="800,25" backgroundColor="background2" zPosition="3" />
     <eLabel position="615,665" size="800,25" backgroundColor="background2" zPosition="3" />
@@ -2406,24 +2406,24 @@
     <eLabel position="615,785" size="800,25" backgroundColor="background2" zPosition="3" />
   </screen>
   <screen name="TemplatesMemoryProgressLayerStandard">
-    <!-- Progress Layer -->
+  <!-- Progress Layer -->
     <panel name="TemplatesMemoryProgressLayerDefault" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="615,548" size="1215,3" backgroundColor="background2" zPosition="3" />
     <eLabel position="615,589" size="1215,3" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="615,608" size="1215,3" backgroundColor="background2" zPosition="3" />
     <eLabel position="615,649" size="1215,3" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="615,668" size="1215,3" backgroundColor="background2" zPosition="3" />
     <eLabel position="615,709" size="1215,3" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="615,728" size="1215,3" backgroundColor="background2" zPosition="3" />
     <eLabel position="615,769" size="1215,3" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="615,788" size="1215,3" backgroundColor="background2" zPosition="3" />
     <eLabel position="615,829" size="1215,3" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1415,545" size="2,23" backgroundColor="background2" zPosition="3" />
     <eLabel position="1417,545" size="2,21" backgroundColor="background2" zPosition="3" />
     <eLabel position="1419,545" size="2,19" backgroundColor="background2" zPosition="3" />
@@ -2436,7 +2436,7 @@
     <eLabel position="1433,545" size="2,05" backgroundColor="background2" zPosition="3" />
     <eLabel position="1435,545" size="2,03" backgroundColor="background2" zPosition="3" />
     <eLabel position="1437,545" size="2,01" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1415,605" size="2,23" backgroundColor="background2" zPosition="3" />
     <eLabel position="1417,605" size="2,21" backgroundColor="background2" zPosition="3" />
     <eLabel position="1419,605" size="2,19" backgroundColor="background2" zPosition="3" />
@@ -2449,7 +2449,7 @@
     <eLabel position="1433,605" size="2,05" backgroundColor="background2" zPosition="3" />
     <eLabel position="1435,605" size="2,03" backgroundColor="background2" zPosition="3" />
     <eLabel position="1437,605" size="2,01" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1415,665" size="2,23" backgroundColor="background2" zPosition="3" />
     <eLabel position="1417,665" size="2,21" backgroundColor="background2" zPosition="3" />
     <eLabel position="1419,665" size="2,19" backgroundColor="background2" zPosition="3" />
@@ -2462,7 +2462,7 @@
     <eLabel position="1433,665" size="2,05" backgroundColor="background2" zPosition="3" />
     <eLabel position="1435,665" size="2,03" backgroundColor="background2" zPosition="3" />
     <eLabel position="1437,665" size="2,01" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1415,725" size="2,23" backgroundColor="background2" zPosition="3" />
     <eLabel position="1417,725" size="2,21" backgroundColor="background2" zPosition="3" />
     <eLabel position="1419,725" size="2,19" backgroundColor="background2" zPosition="3" />
@@ -2475,7 +2475,7 @@
     <eLabel position="1433,725" size="2,05" backgroundColor="background2" zPosition="3" />
     <eLabel position="1435,725" size="2,03" backgroundColor="background2" zPosition="3" />
     <eLabel position="1437,725" size="2,01" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1415,785" size="2,23" backgroundColor="background2" zPosition="3" />
     <eLabel position="1417,785" size="2,21" backgroundColor="background2" zPosition="3" />
     <eLabel position="1419,785" size="2,19" backgroundColor="background2" zPosition="3" />
@@ -2490,9 +2490,9 @@
     <eLabel position="1437,785" size="2,01" backgroundColor="background2" zPosition="3" />
   </screen>
   <screen name="TemplatesMemoryProgressLayerImproved">
-    <!-- Progress Layer -->
+  <!-- Progress Layer -->
     <panel name="TemplatesMemoryProgressLayerDefault" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="615,545" size="3,290" backgroundColor="background2" zPosition="3" />
     <eLabel position="620,545" size="3,290" backgroundColor="background2" zPosition="3" />
     <eLabel position="625,545" size="3,290" backgroundColor="background2" zPosition="3" />
@@ -2513,7 +2513,7 @@
     <eLabel position="700,545" size="3,290" backgroundColor="background2" zPosition="3" />
     <eLabel position="705,545" size="3,290" backgroundColor="background2" zPosition="3" />
     <eLabel position="710,545" size="3,290" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="715,545" size="3,290" backgroundColor="background2" zPosition="3" />
     <eLabel position="720,545" size="3,290" backgroundColor="background2" zPosition="3" />
     <eLabel position="725,545" size="3,290" backgroundColor="background2" zPosition="3" />
@@ -2534,7 +2534,7 @@
     <eLabel position="800,545" size="3,290" backgroundColor="background2" zPosition="3" />
     <eLabel position="805,545" size="3,290" backgroundColor="background2" zPosition="3" />
     <eLabel position="810,545" size="3,290" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="815,545" size="3,290" backgroundColor="background2" zPosition="3" />
     <eLabel position="820,545" size="3,290" backgroundColor="background2" zPosition="3" />
     <eLabel position="825,545" size="3,290" backgroundColor="background2" zPosition="3" />
@@ -2555,7 +2555,7 @@
     <eLabel position="900,545" size="3,290" backgroundColor="background2" zPosition="3" />
     <eLabel position="905,545" size="3,290" backgroundColor="background2" zPosition="3" />
     <eLabel position="910,545" size="3,290" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="915,545" size="3,290" backgroundColor="background2" zPosition="3" />
     <eLabel position="920,545" size="3,290" backgroundColor="background2" zPosition="3" />
     <eLabel position="925,545" size="3,290" backgroundColor="background2" zPosition="3" />
@@ -2576,7 +2576,7 @@
     <eLabel position="1000,545" size="3,290" backgroundColor="background2" zPosition="3" />
     <eLabel position="1005,545" size="3,290" backgroundColor="background2" zPosition="3" />
     <eLabel position="1010,545" size="3,290" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1015,545" size="3,290" backgroundColor="background2" zPosition="3" />
     <eLabel position="1020,545" size="3,290" backgroundColor="background2" zPosition="3" />
     <eLabel position="1025,545" size="3,290" backgroundColor="background2" zPosition="3" />
@@ -2597,7 +2597,7 @@
     <eLabel position="1100,545" size="3,290" backgroundColor="background2" zPosition="3" />
     <eLabel position="1105,545" size="3,290" backgroundColor="background2" zPosition="3" />
     <eLabel position="1110,545" size="3,290" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1115,545" size="3,290" backgroundColor="background2" zPosition="3" />
     <eLabel position="1120,545" size="3,290" backgroundColor="background2" zPosition="3" />
     <eLabel position="1125,545" size="3,290" backgroundColor="background2" zPosition="3" />
@@ -2618,7 +2618,7 @@
     <eLabel position="1200,545" size="3,290" backgroundColor="background2" zPosition="3" />
     <eLabel position="1205,545" size="3,290" backgroundColor="background2" zPosition="3" />
     <eLabel position="1210,545" size="3,290" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1215,545" size="3,290" backgroundColor="background2" zPosition="3" />
     <eLabel position="1220,545" size="3,290" backgroundColor="background2" zPosition="3" />
     <eLabel position="1225,545" size="3,290" backgroundColor="background2" zPosition="3" />
@@ -2639,7 +2639,7 @@
     <eLabel position="1300,545" size="3,290" backgroundColor="background2" zPosition="3" />
     <eLabel position="1305,545" size="3,290" backgroundColor="background2" zPosition="3" />
     <eLabel position="1310,545" size="3,290" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1315,545" size="3,290" backgroundColor="background2" zPosition="3" />
     <eLabel position="1320,545" size="3,290" backgroundColor="background2" zPosition="3" />
     <eLabel position="1325,545" size="3,290" backgroundColor="background2" zPosition="3" />
@@ -2660,7 +2660,7 @@
     <eLabel position="1400,545" size="3,290" backgroundColor="background2" zPosition="3" />
     <eLabel position="1405,545" size="3,290" backgroundColor="background2" zPosition="3" />
     <eLabel position="1410,545" size="3,290" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1415,545" size="3,290" backgroundColor="background2" zPosition="3" />
     <eLabel position="1420,545" size="3,290" backgroundColor="background2" zPosition="3" />
     <eLabel position="1425,545" size="3,290" backgroundColor="background2" zPosition="3" />
@@ -2681,7 +2681,7 @@
     <eLabel position="1500,545" size="3,290" backgroundColor="background2" zPosition="3" />
     <eLabel position="1505,545" size="3,290" backgroundColor="background2" zPosition="3" />
     <eLabel position="1510,545" size="3,290" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1515,545" size="3,290" backgroundColor="background2" zPosition="3" />
     <eLabel position="1520,545" size="3,290" backgroundColor="background2" zPosition="3" />
     <eLabel position="1525,545" size="3,290" backgroundColor="background2" zPosition="3" />
@@ -2702,7 +2702,7 @@
     <eLabel position="1600,545" size="3,290" backgroundColor="background2" zPosition="3" />
     <eLabel position="1605,545" size="3,290" backgroundColor="background2" zPosition="3" />
     <eLabel position="1610,545" size="3,290" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1615,545" size="3,290" backgroundColor="background2" zPosition="3" />
     <eLabel position="1620,545" size="3,290" backgroundColor="background2" zPosition="3" />
     <eLabel position="1625,545" size="3,290" backgroundColor="background2" zPosition="3" />
@@ -2723,7 +2723,7 @@
     <eLabel position="1700,545" size="3,290" backgroundColor="background2" zPosition="3" />
     <eLabel position="1705,545" size="3,290" backgroundColor="background2" zPosition="3" />
     <eLabel position="1710,545" size="3,290" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1715,545" size="3,290" backgroundColor="background2" zPosition="3" />
     <eLabel position="1720,545" size="3,290" backgroundColor="background2" zPosition="3" />
     <eLabel position="1725,545" size="3,290" backgroundColor="background2" zPosition="3" />
@@ -2744,35 +2744,35 @@
     <eLabel position="1800,545" size="3,290" backgroundColor="background2" zPosition="3" />
     <eLabel position="1805,545" size="3,290" backgroundColor="background2" zPosition="3" />
     <eLabel position="1810,545" size="3,290" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1815,545" size="3,290" backgroundColor="background2" zPosition="3" />
     <eLabel position="1820,545" size="3,290" backgroundColor="background2" zPosition="3" />
     <eLabel position="1825,545" size="3,290" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1412,545" size="4,25" backgroundColor="background2" zPosition="3" />
     <eLabel position="1417,545" size="4,20" backgroundColor="background2" zPosition="3" />
     <eLabel position="1422,545" size="4,15" backgroundColor="background2" zPosition="3" />
     <eLabel position="1427,545" size="4,10" backgroundColor="background2" zPosition="3" />
     <eLabel position="1432,545" size="4,05" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1412,605" size="4,25" backgroundColor="background2" zPosition="3" />
     <eLabel position="1417,605" size="4,20" backgroundColor="background2" zPosition="3" />
     <eLabel position="1422,605" size="4,15" backgroundColor="background2" zPosition="3" />
     <eLabel position="1427,605" size="4,10" backgroundColor="background2" zPosition="3" />
     <eLabel position="1432,605" size="4,05" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1412,665" size="4,25" backgroundColor="background2" zPosition="3" />
     <eLabel position="1417,665" size="4,20" backgroundColor="background2" zPosition="3" />
     <eLabel position="1422,665" size="4,15" backgroundColor="background2" zPosition="3" />
     <eLabel position="1427,665" size="4,10" backgroundColor="background2" zPosition="3" />
     <eLabel position="1432,665" size="4,05" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1412,725" size="4,25" backgroundColor="background2" zPosition="3" />
     <eLabel position="1417,725" size="4,20" backgroundColor="background2" zPosition="3" />
     <eLabel position="1422,725" size="4,15" backgroundColor="background2" zPosition="3" />
     <eLabel position="1427,725" size="4,10" backgroundColor="background2" zPosition="3" />
     <eLabel position="1432,725" size="4,05" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1412,785" size="4,25" backgroundColor="background2" zPosition="3" />
     <eLabel position="1417,785" size="4,20" backgroundColor="background2" zPosition="3" />
     <eLabel position="1422,785" size="4,15" backgroundColor="background2" zPosition="3" />
@@ -2780,21 +2780,21 @@
     <eLabel position="1432,785" size="4,05" backgroundColor="background2" zPosition="3" />
   </screen>
   <screen name="TemplatesFanControlProgressLayerDefault">
-    <!-- Progress Layer -->
+  <!-- Progress Layer -->
     <eLabel position="1115,485" size="715,50" backgroundColor="gray" zPosition="1" />
     <eLabel position="1115,545" size="715,50" backgroundColor="gray" zPosition="1" />
     <eLabel position="1115,605" size="715,50" backgroundColor="gray" zPosition="1" />
     <eLabel position="1115,665" size="715,50" backgroundColor="gray" zPosition="1" />
     <eLabel position="1115,725" size="715,50" backgroundColor="gray" zPosition="1" />
     <eLabel position="1115,785" size="715,50" backgroundColor="gray" zPosition="1" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1115,510" size="715,3" backgroundColor="background2" zPosition="3" />
     <eLabel position="1115,570" size="715,3" backgroundColor="background2" zPosition="3" />
     <eLabel position="1115,630" size="715,3" backgroundColor="background2" zPosition="3" />
     <eLabel position="1115,690" size="715,3" backgroundColor="background2" zPosition="3" />
     <eLabel position="1115,750" size="715,3" backgroundColor="background2" zPosition="3" />
     <eLabel position="1115,810" size="715,3" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1115,485" size="300,25" backgroundColor="background2" zPosition="3" />
     <eLabel position="1115,545" size="300,25" backgroundColor="background2" zPosition="3" />
     <eLabel position="1115,605" size="300,25" backgroundColor="background2" zPosition="3" />
@@ -2803,27 +2803,27 @@
     <eLabel position="1115,785" size="300,25" backgroundColor="background2" zPosition="3" />
   </screen>
   <screen name="TemplatesFanControlProgressLayerStandard">
-    <!-- Progress Layer -->
+  <!-- Progress Layer -->
     <panel name="TemplatesFanControlProgressLayerDefault" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1115,488" size="715,3" backgroundColor="background2" zPosition="3" />
     <eLabel position="1115,529" size="715,3" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1115,548" size="715,3" backgroundColor="background2" zPosition="3" />
     <eLabel position="1115,589" size="715,3" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1115,608" size="715,3" backgroundColor="background2" zPosition="3" />
     <eLabel position="1115,649" size="715,3" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1115,668" size="715,3" backgroundColor="background2" zPosition="3" />
     <eLabel position="1115,709" size="715,3" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1115,728" size="715,3" backgroundColor="background2" zPosition="3" />
     <eLabel position="1115,769" size="715,3" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1115,788" size="715,3" backgroundColor="background2" zPosition="3" />
     <eLabel position="1115,829" size="715,3" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1415,485" size="2,23" backgroundColor="background2" zPosition="3" />
     <eLabel position="1417,485" size="2,21" backgroundColor="background2" zPosition="3" />
     <eLabel position="1419,485" size="2,19" backgroundColor="background2" zPosition="3" />
@@ -2836,7 +2836,7 @@
     <eLabel position="1433,485" size="2,05" backgroundColor="background2" zPosition="3" />
     <eLabel position="1435,485" size="2,03" backgroundColor="background2" zPosition="3" />
     <eLabel position="1437,485" size="2,01" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1415,545" size="2,23" backgroundColor="background2" zPosition="3" />
     <eLabel position="1417,545" size="2,21" backgroundColor="background2" zPosition="3" />
     <eLabel position="1419,545" size="2,19" backgroundColor="background2" zPosition="3" />
@@ -2849,7 +2849,7 @@
     <eLabel position="1433,545" size="2,05" backgroundColor="background2" zPosition="3" />
     <eLabel position="1435,545" size="2,03" backgroundColor="background2" zPosition="3" />
     <eLabel position="1437,545" size="2,01" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1415,605" size="2,23" backgroundColor="background2" zPosition="3" />
     <eLabel position="1417,605" size="2,21" backgroundColor="background2" zPosition="3" />
     <eLabel position="1419,605" size="2,19" backgroundColor="background2" zPosition="3" />
@@ -2862,7 +2862,7 @@
     <eLabel position="1433,605" size="2,05" backgroundColor="background2" zPosition="3" />
     <eLabel position="1435,605" size="2,03" backgroundColor="background2" zPosition="3" />
     <eLabel position="1437,605" size="2,01" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1415,665" size="2,23" backgroundColor="background2" zPosition="3" />
     <eLabel position="1417,665" size="2,21" backgroundColor="background2" zPosition="3" />
     <eLabel position="1419,665" size="2,19" backgroundColor="background2" zPosition="3" />
@@ -2875,7 +2875,7 @@
     <eLabel position="1433,665" size="2,05" backgroundColor="background2" zPosition="3" />
     <eLabel position="1435,665" size="2,03" backgroundColor="background2" zPosition="3" />
     <eLabel position="1437,665" size="2,01" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1415,725" size="2,23" backgroundColor="background2" zPosition="3" />
     <eLabel position="1417,725" size="2,21" backgroundColor="background2" zPosition="3" />
     <eLabel position="1419,725" size="2,19" backgroundColor="background2" zPosition="3" />
@@ -2888,7 +2888,7 @@
     <eLabel position="1433,725" size="2,05" backgroundColor="background2" zPosition="3" />
     <eLabel position="1435,725" size="2,03" backgroundColor="background2" zPosition="3" />
     <eLabel position="1437,725" size="2,01" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1415,785" size="2,23" backgroundColor="background2" zPosition="3" />
     <eLabel position="1417,785" size="2,21" backgroundColor="background2" zPosition="3" />
     <eLabel position="1419,785" size="2,19" backgroundColor="background2" zPosition="3" />
@@ -2903,9 +2903,9 @@
     <eLabel position="1437,785" size="2,01" backgroundColor="background2" zPosition="3" />
   </screen>
   <screen name="TemplatesFanControlProgressLayerImproved">
-    <!-- Progress Layer -->
+  <!-- Progress Layer -->
     <panel name="TemplatesFanControlProgressLayerDefault" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1115,485" size="3,350" backgroundColor="background2" zPosition="3" />
     <eLabel position="1120,485" size="3,350" backgroundColor="background2" zPosition="3" />
     <eLabel position="1125,485" size="3,350" backgroundColor="background2" zPosition="3" />
@@ -2926,7 +2926,7 @@
     <eLabel position="1200,485" size="3,350" backgroundColor="background2" zPosition="3" />
     <eLabel position="1205,485" size="3,350" backgroundColor="background2" zPosition="3" />
     <eLabel position="1210,485" size="3,350" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1215,485" size="3,350" backgroundColor="background2" zPosition="3" />
     <eLabel position="1220,485" size="3,350" backgroundColor="background2" zPosition="3" />
     <eLabel position="1225,485" size="3,350" backgroundColor="background2" zPosition="3" />
@@ -2947,7 +2947,7 @@
     <eLabel position="1300,485" size="3,350" backgroundColor="background2" zPosition="3" />
     <eLabel position="1305,485" size="3,350" backgroundColor="background2" zPosition="3" />
     <eLabel position="1310,485" size="3,350" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1315,485" size="3,350" backgroundColor="background2" zPosition="3" />
     <eLabel position="1320,485" size="3,350" backgroundColor="background2" zPosition="3" />
     <eLabel position="1325,485" size="3,350" backgroundColor="background2" zPosition="3" />
@@ -2968,7 +2968,7 @@
     <eLabel position="1400,485" size="3,350" backgroundColor="background2" zPosition="3" />
     <eLabel position="1405,485" size="3,350" backgroundColor="background2" zPosition="3" />
     <eLabel position="1410,485" size="3,350" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1415,485" size="3,350" backgroundColor="background2" zPosition="3" />
     <eLabel position="1420,485" size="3,350" backgroundColor="background2" zPosition="3" />
     <eLabel position="1425,485" size="3,350" backgroundColor="background2" zPosition="3" />
@@ -2989,7 +2989,7 @@
     <eLabel position="1500,485" size="3,350" backgroundColor="background2" zPosition="3" />
     <eLabel position="1505,485" size="3,350" backgroundColor="background2" zPosition="3" />
     <eLabel position="1510,485" size="3,350" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1515,485" size="3,350" backgroundColor="background2" zPosition="3" />
     <eLabel position="1520,485" size="3,350" backgroundColor="background2" zPosition="3" />
     <eLabel position="1525,485" size="3,350" backgroundColor="background2" zPosition="3" />
@@ -3010,7 +3010,7 @@
     <eLabel position="1600,485" size="3,350" backgroundColor="background2" zPosition="3" />
     <eLabel position="1605,485" size="3,350" backgroundColor="background2" zPosition="3" />
     <eLabel position="1610,485" size="3,350" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1615,485" size="3,350" backgroundColor="background2" zPosition="3" />
     <eLabel position="1620,485" size="3,350" backgroundColor="background2" zPosition="3" />
     <eLabel position="1625,485" size="3,350" backgroundColor="background2" zPosition="3" />
@@ -3031,7 +3031,7 @@
     <eLabel position="1700,485" size="3,350" backgroundColor="background2" zPosition="3" />
     <eLabel position="1705,485" size="3,350" backgroundColor="background2" zPosition="3" />
     <eLabel position="1710,485" size="3,350" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1715,485" size="3,350" backgroundColor="background2" zPosition="3" />
     <eLabel position="1720,485" size="3,350" backgroundColor="background2" zPosition="3" />
     <eLabel position="1725,485" size="3,350" backgroundColor="background2" zPosition="3" />
@@ -3052,41 +3052,41 @@
     <eLabel position="1800,485" size="3,350" backgroundColor="background2" zPosition="3" />
     <eLabel position="1805,485" size="3,350" backgroundColor="background2" zPosition="3" />
     <eLabel position="1810,485" size="3,350" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1815,485" size="3,350" backgroundColor="background2" zPosition="3" />
     <eLabel position="1820,485" size="3,350" backgroundColor="background2" zPosition="3" />
     <eLabel position="1825,485" size="3,350" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1412,485" size="4,25" backgroundColor="background2" zPosition="3" />
     <eLabel position="1417,485" size="4,20" backgroundColor="background2" zPosition="3" />
     <eLabel position="1422,485" size="4,15" backgroundColor="background2" zPosition="3" />
     <eLabel position="1427,485" size="4,10" backgroundColor="background2" zPosition="3" />
     <eLabel position="1432,485" size="4,05" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1412,545" size="4,25" backgroundColor="background2" zPosition="3" />
     <eLabel position="1417,545" size="4,20" backgroundColor="background2" zPosition="3" />
     <eLabel position="1422,545" size="4,15" backgroundColor="background2" zPosition="3" />
     <eLabel position="1427,545" size="4,10" backgroundColor="background2" zPosition="3" />
     <eLabel position="1432,545" size="4,05" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1412,605" size="4,25" backgroundColor="background2" zPosition="3" />
     <eLabel position="1417,605" size="4,20" backgroundColor="background2" zPosition="3" />
     <eLabel position="1422,605" size="4,15" backgroundColor="background2" zPosition="3" />
     <eLabel position="1427,605" size="4,10" backgroundColor="background2" zPosition="3" />
     <eLabel position="1432,605" size="4,05" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1412,665" size="4,25" backgroundColor="background2" zPosition="3" />
     <eLabel position="1417,665" size="4,20" backgroundColor="background2" zPosition="3" />
     <eLabel position="1422,665" size="4,15" backgroundColor="background2" zPosition="3" />
     <eLabel position="1427,665" size="4,10" backgroundColor="background2" zPosition="3" />
     <eLabel position="1432,665" size="4,05" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1412,725" size="4,25" backgroundColor="background2" zPosition="3" />
     <eLabel position="1417,725" size="4,20" backgroundColor="background2" zPosition="3" />
     <eLabel position="1422,725" size="4,15" backgroundColor="background2" zPosition="3" />
     <eLabel position="1427,725" size="4,10" backgroundColor="background2" zPosition="3" />
     <eLabel position="1432,725" size="4,05" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1412,785" size="4,25" backgroundColor="background2" zPosition="3" />
     <eLabel position="1417,785" size="4,20" backgroundColor="background2" zPosition="3" />
     <eLabel position="1422,785" size="4,15" backgroundColor="background2" zPosition="3" />
@@ -3094,7 +3094,7 @@
     <eLabel position="1432,785" size="4,05" backgroundColor="background2" zPosition="3" />
   </screen>
   <screen name="TemplatesFanMonitorProgressLayerDefault">
-    <!-- Progress Layer -->
+  <!-- Progress Layer -->
     <eLabel position="830,270" size="650,40" backgroundColor="gray" zPosition="1" />
     <eLabel position="830,320" size="650,40" backgroundColor="gray" zPosition="1" />
     <eLabel position="830,370" size="650,40" backgroundColor="gray" zPosition="1" />
@@ -3107,9 +3107,9 @@
     <eLabel position="830,720" size="650,40" backgroundColor="gray" zPosition="1" />
   </screen>
   <screen name="TemplatesFanMonitorProgressLayerStandard">
-    <!-- Progress Layer -->
+  <!-- Progress Layer -->
     <panel name="TemplatesFanMonitorProgressLayerDefault" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="830,273" size="650,3" backgroundColor="background2" zPosition="3" />
     <eLabel position="830,304" size="650,3" backgroundColor="background2" zPosition="3" />
     <eLabel position="830,323" size="650,3" backgroundColor="background2" zPosition="3" />
@@ -3132,9 +3132,9 @@
     <eLabel position="830,754" size="650,3" backgroundColor="background2" zPosition="3" />
   </screen>
   <screen name="TemplatesFanMonitorProgressLayerImproved">
-    <!-- Progress Layer -->
+  <!-- Progress Layer -->
     <panel name="TemplatesFanMonitorProgressLayerDefault" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="830,270" size="3,490" backgroundColor="background2" zPosition="3" />
     <eLabel position="835,270" size="3,490" backgroundColor="background2" zPosition="3" />
     <eLabel position="840,270" size="3,490" backgroundColor="background2" zPosition="3" />
@@ -3155,7 +3155,7 @@
     <eLabel position="915,270" size="3,490" backgroundColor="background2" zPosition="3" />
     <eLabel position="920,270" size="3,490" backgroundColor="background2" zPosition="3" />
     <eLabel position="925,270" size="3,490" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="930,270" size="3,490" backgroundColor="background2" zPosition="3" />
     <eLabel position="935,270" size="3,490" backgroundColor="background2" zPosition="3" />
     <eLabel position="940,270" size="3,490" backgroundColor="background2" zPosition="3" />
@@ -3176,7 +3176,7 @@
     <eLabel position="1015,270" size="3,490" backgroundColor="background2" zPosition="3" />
     <eLabel position="1020,270" size="3,490" backgroundColor="background2" zPosition="3" />
     <eLabel position="1025,270" size="3,490" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1030,270" size="3,490" backgroundColor="background2" zPosition="3" />
     <eLabel position="1035,270" size="3,490" backgroundColor="background2" zPosition="3" />
     <eLabel position="1040,270" size="3,490" backgroundColor="background2" zPosition="3" />
@@ -3197,7 +3197,7 @@
     <eLabel position="1115,270" size="3,490" backgroundColor="background2" zPosition="3" />
     <eLabel position="1120,270" size="3,490" backgroundColor="background2" zPosition="3" />
     <eLabel position="1125,270" size="3,490" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1130,270" size="3,490" backgroundColor="background2" zPosition="3" />
     <eLabel position="1135,270" size="3,490" backgroundColor="background2" zPosition="3" />
     <eLabel position="1140,270" size="3,490" backgroundColor="background2" zPosition="3" />
@@ -3218,7 +3218,7 @@
     <eLabel position="1215,270" size="3,490" backgroundColor="background2" zPosition="3" />
     <eLabel position="1220,270" size="3,490" backgroundColor="background2" zPosition="3" />
     <eLabel position="1225,270" size="3,490" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1230,270" size="3,490" backgroundColor="background2" zPosition="3" />
     <eLabel position="1235,270" size="3,490" backgroundColor="background2" zPosition="3" />
     <eLabel position="1240,270" size="3,490" backgroundColor="background2" zPosition="3" />
@@ -3239,7 +3239,7 @@
     <eLabel position="1315,270" size="3,490" backgroundColor="background2" zPosition="3" />
     <eLabel position="1320,270" size="3,490" backgroundColor="background2" zPosition="3" />
     <eLabel position="1325,270" size="3,490" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1330,270" size="3,490" backgroundColor="background2" zPosition="3" />
     <eLabel position="1335,270" size="3,490" backgroundColor="background2" zPosition="3" />
     <eLabel position="1340,270" size="3,490" backgroundColor="background2" zPosition="3" />
@@ -3260,7 +3260,7 @@
     <eLabel position="1415,270" size="3,490" backgroundColor="background2" zPosition="3" />
     <eLabel position="1420,270" size="3,490" backgroundColor="background2" zPosition="3" />
     <eLabel position="1425,270" size="3,490" backgroundColor="background2" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1430,270" size="3,490" backgroundColor="background2" zPosition="3" />
     <eLabel position="1435,270" size="3,490" backgroundColor="background2" zPosition="3" />
     <eLabel position="1440,270" size="3,490" backgroundColor="background2" zPosition="3" />
@@ -3273,20 +3273,20 @@
     <eLabel position="1475,270" size="3,490" backgroundColor="background2" zPosition="3" />
   </screen>
   <screen name="TemplatesVolumeProgressLayerDefault">
-    <!-- Progress Layer -->
+  <!-- Progress Layer -->
     <eLabel position="220,100" size="1350,30" backgroundColor="gray" zPosition="1" />
   </screen>
   <screen name="TemplatesVolumeProgressLayerStandard">
-    <!-- Progress Layer -->
+  <!-- Progress Layer -->
     <panel name="TemplatesVolumeProgressLayerDefault" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="220,103" size="1350,3" backgroundColor="background1" zPosition="3" />
     <eLabel position="220,124" size="1350,3" backgroundColor="background1" zPosition="3" />
   </screen>
   <screen name="TemplatesVolumeProgressLayerImproved">
-    <!-- Progress Layer -->
+  <!-- Progress Layer -->
     <panel name="TemplatesVolumeProgressLayerDefault" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="220,100" size="3,30" backgroundColor="background1" zPosition="3" />
     <eLabel position="225,100" size="3,30" backgroundColor="background1" zPosition="3" />
     <eLabel position="230,100" size="3,30" backgroundColor="background1" zPosition="3" />
@@ -3307,7 +3307,7 @@
     <eLabel position="305,100" size="3,30" backgroundColor="background1" zPosition="3" />
     <eLabel position="310,100" size="3,30" backgroundColor="background1" zPosition="3" />
     <eLabel position="315,100" size="3,30" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="320,100" size="3,30" backgroundColor="background1" zPosition="3" />
     <eLabel position="325,100" size="3,30" backgroundColor="background1" zPosition="3" />
     <eLabel position="330,100" size="3,30" backgroundColor="background1" zPosition="3" />
@@ -3328,7 +3328,7 @@
     <eLabel position="405,100" size="3,30" backgroundColor="background1" zPosition="3" />
     <eLabel position="410,100" size="3,30" backgroundColor="background1" zPosition="3" />
     <eLabel position="415,100" size="3,30" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="420,100" size="3,30" backgroundColor="background1" zPosition="3" />
     <eLabel position="425,100" size="3,30" backgroundColor="background1" zPosition="3" />
     <eLabel position="430,100" size="3,30" backgroundColor="background1" zPosition="3" />
@@ -3349,7 +3349,7 @@
     <eLabel position="505,100" size="3,30" backgroundColor="background1" zPosition="3" />
     <eLabel position="510,100" size="3,30" backgroundColor="background1" zPosition="3" />
     <eLabel position="515,100" size="3,30" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="520,100" size="3,30" backgroundColor="background1" zPosition="3" />
     <eLabel position="525,100" size="3,30" backgroundColor="background1" zPosition="3" />
     <eLabel position="530,100" size="3,30" backgroundColor="background1" zPosition="3" />
@@ -3370,7 +3370,7 @@
     <eLabel position="605,100" size="3,30" backgroundColor="background1" zPosition="3" />
     <eLabel position="610,100" size="3,30" backgroundColor="background1" zPosition="3" />
     <eLabel position="615,100" size="3,30" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="620,100" size="3,30" backgroundColor="background1" zPosition="3" />
     <eLabel position="625,100" size="3,30" backgroundColor="background1" zPosition="3" />
     <eLabel position="630,100" size="3,30" backgroundColor="background1" zPosition="3" />
@@ -3391,7 +3391,7 @@
     <eLabel position="705,100" size="3,30" backgroundColor="background1" zPosition="3" />
     <eLabel position="710,100" size="3,30" backgroundColor="background1" zPosition="3" />
     <eLabel position="715,100" size="3,30" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="720,100" size="3,30" backgroundColor="background1" zPosition="3" />
     <eLabel position="725,100" size="3,30" backgroundColor="background1" zPosition="3" />
     <eLabel position="730,100" size="3,30" backgroundColor="background1" zPosition="3" />
@@ -3412,7 +3412,7 @@
     <eLabel position="805,100" size="3,30" backgroundColor="background1" zPosition="3" />
     <eLabel position="810,100" size="3,30" backgroundColor="background1" zPosition="3" />
     <eLabel position="815,100" size="3,30" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="820,100" size="3,30" backgroundColor="background1" zPosition="3" />
     <eLabel position="825,100" size="3,30" backgroundColor="background1" zPosition="3" />
     <eLabel position="830,100" size="3,30" backgroundColor="background1" zPosition="3" />
@@ -3433,7 +3433,7 @@
     <eLabel position="905,100" size="3,30" backgroundColor="background1" zPosition="3" />
     <eLabel position="910,100" size="3,30" backgroundColor="background1" zPosition="3" />
     <eLabel position="915,100" size="3,30" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="920,100" size="3,30" backgroundColor="background1" zPosition="3" />
     <eLabel position="925,100" size="3,30" backgroundColor="background1" zPosition="3" />
     <eLabel position="930,100" size="3,30" backgroundColor="background1" zPosition="3" />
@@ -3454,7 +3454,7 @@
     <eLabel position="1005,100" size="3,30" backgroundColor="background1" zPosition="3" />
     <eLabel position="1010,100" size="3,30" backgroundColor="background1" zPosition="3" />
     <eLabel position="1015,100" size="3,30" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1020,100" size="3,30" backgroundColor="background1" zPosition="3" />
     <eLabel position="1025,100" size="3,30" backgroundColor="background1" zPosition="3" />
     <eLabel position="1030,100" size="3,30" backgroundColor="background1" zPosition="3" />
@@ -3475,7 +3475,7 @@
     <eLabel position="1105,100" size="3,30" backgroundColor="background1" zPosition="3" />
     <eLabel position="1110,100" size="3,30" backgroundColor="background1" zPosition="3" />
     <eLabel position="1115,100" size="3,30" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1120,100" size="3,30" backgroundColor="background1" zPosition="3" />
     <eLabel position="1125,100" size="3,30" backgroundColor="background1" zPosition="3" />
     <eLabel position="1130,100" size="3,30" backgroundColor="background1" zPosition="3" />
@@ -3496,7 +3496,7 @@
     <eLabel position="1205,100" size="3,30" backgroundColor="background1" zPosition="3" />
     <eLabel position="1210,100" size="3,30" backgroundColor="background1" zPosition="3" />
     <eLabel position="1215,100" size="3,30" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1220,100" size="3,30" backgroundColor="background1" zPosition="3" />
     <eLabel position="1225,100" size="3,30" backgroundColor="background1" zPosition="3" />
     <eLabel position="1230,100" size="3,30" backgroundColor="background1" zPosition="3" />
@@ -3517,7 +3517,7 @@
     <eLabel position="1305,100" size="3,30" backgroundColor="background1" zPosition="3" />
     <eLabel position="1310,100" size="3,30" backgroundColor="background1" zPosition="3" />
     <eLabel position="1315,100" size="3,30" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1320,100" size="3,30" backgroundColor="background1" zPosition="3" />
     <eLabel position="1325,100" size="3,30" backgroundColor="background1" zPosition="3" />
     <eLabel position="1330,100" size="3,30" backgroundColor="background1" zPosition="3" />
@@ -3538,7 +3538,7 @@
     <eLabel position="1405,100" size="3,30" backgroundColor="background1" zPosition="3" />
     <eLabel position="1410,100" size="3,30" backgroundColor="background1" zPosition="3" />
     <eLabel position="1415,100" size="3,30" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1420,100" size="3,30" backgroundColor="background1" zPosition="3" />
     <eLabel position="1425,100" size="3,30" backgroundColor="background1" zPosition="3" />
     <eLabel position="1430,100" size="3,30" backgroundColor="background1" zPosition="3" />
@@ -3559,7 +3559,7 @@
     <eLabel position="1505,100" size="3,30" backgroundColor="background1" zPosition="3" />
     <eLabel position="1510,100" size="3,30" backgroundColor="background1" zPosition="3" />
     <eLabel position="1515,100" size="3,30" backgroundColor="background1" zPosition="3" />
-    <!-- Layer -->
+  <!-- Layer -->
     <eLabel position="1520,100" size="3,30" backgroundColor="background1" zPosition="3" />
     <eLabel position="1525,100" size="3,30" backgroundColor="background1" zPosition="3" />
     <eLabel position="1530,100" size="3,30" backgroundColor="background1" zPosition="3" />
@@ -3574,7 +3574,7 @@
   </screen>
   <!--  ########## Templates InfoBar Tv ########## -->
   <screen name="TemplatesInfoBarTvNumberDefault">
-    <!-- Templates Info Bar Tv Name -->
+  <!-- Templates Info Bar Tv Name -->
     <widget source="session.CurrentService" render="Label" position="80,96" size="1360,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1">
       <convert type="ServiceName">Name</convert>
     </widget>
@@ -3583,7 +3583,7 @@
     </widget>
   </screen>
   <screen name="TemplatesInfoBarTvNumberStyle">
-    <!-- Templates Info Bar Tv Name -->
+  <!-- Templates Info Bar Tv Name -->
     <widget source="session.CurrentService" render="Label" position="0,96" size="220,44" font="Indication; 44" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
       <convert type="ServiceName2">%n</convert>
     </widget>
@@ -3596,13 +3596,13 @@
   </screen>
   <screen name="TemplatesInfoBarTvPicon">
     <panel name="TemplatesPiconLayer" />
-    <!-- Templates Info Bar Tv Picon -->
+  <!-- Templates Info Bar Tv Picon -->
     <widget source="session.CurrentService" render="Picon" position="105,874" size="220,132" zPosition="2" alphatest="blend">
       <convert type="ServiceName">Reference</convert>
     </widget>
   </screen>
   <screen name="TemplatesInfoBarTvTunerDefault">
-    <!-- Templates Info Bar Tv Picon -->
+  <!-- Templates Info Bar Tv Picon -->
     <eLabel position="1368,867" size="454,146" backgroundColor="background3" zPosition="-12" />
     <eLabel position="1370,869" size="450,142" backgroundColor="background2" zPosition="-11" />
     <widget source="session.CurrentService" render="PiconUni" path="piconProv" position="1375,874" size="220,132" zPosition="2" alphatest="blend">
@@ -3613,7 +3613,7 @@
     </widget>
   </screen>
   <screen name="TemplatesInfoBarTvTunerStyle">
-    <!-- Templates Info Bar Tv Tuner Info -->
+  <!-- Templates Info Bar Tv Tuner Info -->
     <eLabel position="1368,867" size="454,146" backgroundColor="background3" zPosition="-12" />
     <eLabel position="1370,869" size="450,142" backgroundColor="background1" zPosition="-11" />
     <eLabel position="1485,875" size="330,130" backgroundColor="background2" zPosition="-10" />
@@ -3638,11 +3638,11 @@
     </widget>
   </screen>
   <screen name="TemplatesInfoBarTvTunerDigital">
-    <!-- Templates Info Bar Tv Tuner Digital -->
+  <!-- Templates Info Bar Tv Tuner Digital -->
     <eLabel position="1368,867" size="454,146" backgroundColor="background3" zPosition="-12" />
     <eLabel position="1370,869" size="450,142" backgroundColor="background1" zPosition="-11" />
     <eLabel position="1485,875" size="330,130" backgroundColor="background2" zPosition="-10" />
-    <!-- Progress Layer -->
+  <!-- Progress Layer -->
     <panel name="TemplatesInfoBarTvTunerProgressLayer" />
     <eLabel text="SNR" position="1375,890" size="105,30" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="center" transparent="1" />
     <widget source="session.FrontendStatus" render="Label" position="1495,880" size="150,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="left" transparent="1" zPosition="5">
@@ -3660,7 +3660,7 @@
     </widget>
   </screen>
   <screen name="TemplatesInfoBarTvTunerAnalog">
-    <!-- Templates Info Bar Tv Tuner Analog -->
+  <!-- Templates Info Bar Tv Tuner Analog -->
     <eLabel position="1368,867" size="454,146" backgroundColor="background3" zPosition="-12" />
     <eLabel position="1370,869" size="450,142" backgroundColor="background1" zPosition="-11" />
     <eLabel position="1375,875" size="440,100" backgroundColor="background2" zPosition="-10" />
@@ -3743,7 +3743,7 @@
   </screen>
   <screen name="TemplatesInfoBarTvIndicationDefault">
     <panel name="TemplatesDownLayer2" />
-    <!-- Templates Info Bar Tv Indication -->
+  <!-- Templates Info Bar Tv Indication -->
     <eLabel text="$" position="345,1002" size="35,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" zPosition="1" />
     <widget source="session.CurrentService" render="FixedLabel" text="$" position="345,1002" size="35,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
       <convert type="ServiceInfo">IsCrypted</convert>
@@ -3796,7 +3796,7 @@
   </screen>
   <screen name="TemplatesInfoBarTvIndicationStyle">
     <panel name="TemplatesDownLayer2" />
-    <!-- Templates Info Bar Tv Indication -->
+  <!-- Templates Info Bar Tv Indication -->
     <eLabel text="$" position="345,1002" size="35,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" zPosition="1" />
     <widget source="session.CurrentService" render="FixedLabel" text="$" position="345,1002" size="35,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
       <convert type="ServiceInfo">IsCrypted</convert>
@@ -3859,7 +3859,7 @@
     </widget>
   </screen>
   <screen name="TemplatesInfoBarTvProgress">
-    <!-- Templates Info Bar Tv Progress -->
+  <!-- Templates Info Bar Tv Progress -->
     <widget source="session.Event_Now" render="Label" position="355,900" size="80,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Default</convert>
@@ -3888,13 +3888,13 @@
     </widget>
   </screen>
   <screen name="TemplatesInfoBarTvInfoCryptedDefault">
-    <!-- Templates Info Bar Tv Info -->
+  <!-- Templates Info Bar Tv Info -->
   </screen>
   <screen name="TemplatesInfoBarTvInfoCryptedStyle">
-    <!-- Templates Info Bar Tv Crypted -->
+  <!-- Templates Info Bar Tv Crypted -->
     <panel name="TemplatesUpLayer2" />
-    <!-- Crypted -->
-    <!-- betacrypt -->
+  <!-- Crypted -->
+  <!-- betacrypt -->
     <eLabel text="BETACRYPT" position="140,52" size="180,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
     <widget source="session.CurrentService" render="FixedLabel" text="BETACRYPT" position="140,52" size="180,30" font="Indication; 30" foregroundColor="yellow" backgroundColor="background" transparent="1" zPosition="2">
       <convert type="CaidInfo2">BetaCrypt</convert>
@@ -3904,7 +3904,7 @@
       <convert type="CaidInfo2">BetaEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <!-- irdeto crypt -->
+  <!-- irdeto crypt -->
     <eLabel text="IRDETO" position="410,52" size="130,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
     <widget source="session.CurrentService" render="FixedLabel" text="IRDETO" position="410,52" size="130,30" font="Indication; 30" foregroundColor="yellow" backgroundColor="background" transparent="1" zPosition="2">
       <convert type="CaidInfo2">IrdCrypt</convert>
@@ -3914,7 +3914,7 @@
       <convert type="CaidInfo2">IrdEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <!-- conax crypt -->
+  <!-- conax crypt -->
     <eLabel text="CONAX" position="310,52" size="110,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
     <widget source="session.CurrentService" render="FixedLabel" text="CONAX" position="310,52" size="110,30" font="Indication; 30" foregroundColor="yellow" backgroundColor="background" transparent="1" zPosition="2">
       <convert type="CaidInfo2">ConaxCrypt</convert>
@@ -3924,7 +3924,7 @@
       <convert type="CaidInfo2">ConaxEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <!-- seca crypt -->
+  <!-- seca crypt -->
     <eLabel text="SECA" position="835,52" size="90,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
     <widget source="session.CurrentService" render="FixedLabel" text="SECA" position="835,52" size="90,30" font="Indication; 30" foregroundColor="yellow" backgroundColor="background" transparent="1" zPosition="2">
       <convert type="CaidInfo2">SecaCrypt</convert>
@@ -3934,7 +3934,7 @@
       <convert type="CaidInfo2">SecaEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <!-- viaccess crypt -->
+  <!-- viaccess crypt -->
     <eLabel text="VIACCESS" position="530,52" size="170,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
     <widget source="session.CurrentService" render="FixedLabel" text="VIACCESS" position="530,52" size="170,30" font="Indication; 30" foregroundColor="yellow" backgroundColor="background" transparent="1" zPosition="2">
       <convert type="CaidInfo2">ViaCrypt</convert>
@@ -3944,7 +3944,7 @@
       <convert type="CaidInfo2">ViaEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <!-- dre crypt -->
+  <!-- dre crypt -->
     <eLabel text="DRECRYPT" position="685,52" size="160,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
     <widget source="session.CurrentService" render="FixedLabel" text="DRECRYPT" position="685,52" size="160,30" font="Indication; 30" foregroundColor="yellow" backgroundColor="background" transparent="1" zPosition="2">
       <convert type="CaidInfo2">DreamCrypt</convert>
@@ -3954,7 +3954,7 @@
       <convert type="CaidInfo2">DreamEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <!-- cryptoworks crypt -->
+  <!-- cryptoworks crypt -->
     <eLabel text="CRYPTOWORKS" position="1310,52" size="220,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
     <widget source="session.CurrentService" render="FixedLabel" text="CRYPTOWORKS" position="1310,52" size="220,30" font="Indication; 30" foregroundColor="yellow" backgroundColor="background" transparent="1" zPosition="2">
       <convert type="CaidInfo2">CrwCrypt</convert>
@@ -3964,7 +3964,7 @@
       <convert type="CaidInfo2">CrwEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <!-- nagra crypt -->
+  <!-- nagra crypt -->
     <eLabel text="NAGRAVISION" position="1105,52" size="220,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
     <widget source="session.CurrentService" render="FixedLabel" text="NAGRAVISION" position="1105,52" size="220,30" font="Indication; 30" foregroundColor="yellow" backgroundColor="background" transparent="1" zPosition="2">
       <convert type="CaidInfo2">NagraCrypt</convert>
@@ -3974,7 +3974,7 @@
       <convert type="CaidInfo2">NagraEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <!-- nds crypt -->
+  <!-- nds crypt -->
     <eLabel text="VIDEOGUARD" position="915,52" size="200,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
     <widget source="session.CurrentService" render="FixedLabel" text="VIDEOGUARD" position="915,52" size="200,30" font="Indication; 30" foregroundColor="yellow" backgroundColor="background" transparent="1" zPosition="2">
       <convert type="CaidInfo2">NdsCrypt</convert>
@@ -3984,7 +3984,7 @@
       <convert type="CaidInfo2">NdsEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <!-- ex crypt -->
+  <!-- ex crypt -->
     <eLabel text="EXSET" position="1515,52" size="110,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
     <widget source="session.CurrentService" render="FixedLabel" text="EXSET" position="1515,52" size="110,30" font="Indication; 30" foregroundColor="yellow" backgroundColor="background" transparent="1" zPosition="2">
       <convert type="CaidInfo2">ExsCrypt</convert>
@@ -3994,7 +3994,7 @@
       <convert type="CaidInfo2">ExsEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <!-- biss crypt -->
+  <!-- biss crypt -->
     <eLabel text="BISS" position="60,52" size="90,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
     <widget source="session.CurrentService" render="FixedLabel" text="BISS" position="60,52" size="90,30" font="Indication; 30" foregroundColor="yellow" backgroundColor="background" transparent="1" zPosition="2">
       <convert type="CaidInfo2">BisCrypt</convert>
@@ -4006,11 +4006,11 @@
     </widget>
   </screen>
   <screen name="TemplatesInfoBarTvInfoEPGDefault">
-    <!-- Templates Info Bar Tv Info -->
+  <!-- Templates Info Bar Tv Info -->
   </screen>
   <screen name="TemplatesInfoBarTvInfoEPGNow">
-    <!-- Templates Info Bar Tv EPG -->
-    <!-- Description Layer -->
+  <!-- Templates Info Bar Tv EPG -->
+  <!-- Description Layer -->
     <eLabel position="0,513" size="1352,329" backgroundColor="background3" zPosition="-12" />
     <eLabel position="0,515" size="1350,325" backgroundColor="background1" zPosition="-11" />
     <eLabel position="85,555" size="1260,280" backgroundColor="background2" zPosition="-10" />
@@ -4024,8 +4024,8 @@
     </widget>
   </screen>
   <screen name="TemplatesInfoBarTvInfoEPGNxt">
-    <!-- Templates Info Bar Tv EPG -->
-    <!-- Description Layer -->
+  <!-- Templates Info Bar Tv EPG -->
+  <!-- Description Layer -->
     <eLabel position="0,513" size="1352,329" backgroundColor="background3" zPosition="-12" />
     <eLabel position="0,515" size="1350,325" backgroundColor="background1" zPosition="-11" />
     <eLabel position="85,555" size="1260,120" backgroundColor="background2" zPosition="-10" />
@@ -4048,18 +4048,20 @@
     </widget>
   </screen>
   <screen name="TemplatesInfoBarTvInfoPanelDefault">
-    <!-- Templates Info Bar Tv Info -->
+  <!-- Templates Info Bar Tv Info -->
   </screen>
-  <screen name="TemplatesInfoBarTvInfoPanelCI">
-    <panel name="TemplatesInfoBarTvInfoPanelECM" />
-    <!-- Templates Info Bar Tv Info -->
-    <!-- CI Layer -->
+  <screen name="TemplatesInfoBarTvInfoPanelCIDefault">
+  <!-- Templates Info Bar Tv Info -->
+  </screen>
+  <screen name="TemplatesInfoBarTvInfoPanelCIStyle">
+  <!-- Templates Info Bar Tv Info -->
+  <!-- CI Layer -->
     <eLabel position="1368,396" size="552,117" backgroundColor="background3" zPosition="-12" />
     <eLabel position="1370,398" size="550,115" backgroundColor="background1" zPosition="-11" />
     <eLabel position="1375,438" size="460,70" backgroundColor="background2" zPosition="-10" />
     <eLabel position="1840,438" size="70,70" backgroundColor="background2" zPosition="-10" />
     <eLabel text="CI Info" position="1375,403" size="460,30" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="right" transparent="1" />
-    <!-- CI -->
+  <!-- CI -->
   <eLabel text="Slot1:" position="1380,443" size="150,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
     <widget source="session.CurrentService" render="Label" position="1460,443" size="370,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
       <convert type="ModuleControl">ModuleSlot1</convert>
@@ -4070,13 +4072,14 @@
     </widget>
   </screen>
   <screen name="TemplatesInfoBarTvInfoPanelNIM">
-    <!-- Templates Info Bar Tv Info -->
-    <!-- NIM Layer -->
+    <panel name="TemplatesInfoBarTvInfoPanelCI" />
+  <!-- Templates Info Bar Tv Info -->
+  <!-- NIM Layer -->
     <eLabel position="1368,513" size="552,329" backgroundColor="background3" zPosition="-12" />
     <eLabel position="1370,515" size="550,325" backgroundColor="background1" zPosition="-11" />
     <eLabel position="1375,555" size="460,280" backgroundColor="background2" zPosition="-10" />
     <eLabel position="1840,555" size="70,280" backgroundColor="background2" zPosition="-10" />
-    <!-- Tuner -->
+  <!-- Tuner -->
     <eLabel text="Position:" position="1380,560" size="150,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
     <widget source="session.CurrentService" render="Label" position="1530,560" size="300,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
       <convert type="ServiceName2">%O</convert>
@@ -4118,13 +4121,14 @@
     </widget>
   </screen>
   <screen name="TemplatesInfoBarTvInfoPanelECM">
-    <!-- Templates Info Bar Tv Info -->
-    <!-- ECM Layer -->
+    <panel name="TemplatesInfoBarTvInfoPanelCI" />
+  <!-- Templates Info Bar Tv Info -->
+  <!-- ECM Layer -->
     <eLabel position="1368,513" size="552,329" backgroundColor="background3" zPosition="-12" />
     <eLabel position="1370,515" size="550,325" backgroundColor="background1" zPosition="-11" />
     <eLabel position="1375,555" size="460,280" backgroundColor="background2" zPosition="-10" />
     <eLabel position="1840,555" size="70,280" backgroundColor="background2" zPosition="-10" />
-    <!-- Crypted -->
+  <!-- Crypted -->
     <eLabel text="Source:" position="1380,560" size="150,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
     <widget source="session.CurrentService" render="Label" position="1530,560" size="300,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
       <convert type="CaidInfo2">%O</convert>
@@ -4166,13 +4170,14 @@
     </widget>
   </screen>
   <screen name="TemplatesInfoBarTvInfoPanelPID">
-    <!-- Templates Info Bar Tv Info -->
-    <!-- PID Layer -->
+    <panel name="TemplatesInfoBarTvInfoPanelCI" />
+  <!-- Templates Info Bar Tv Info -->
+  <!-- PID Layer -->
     <eLabel position="1368,513" size="552,329" backgroundColor="background3" zPosition="-12" />
     <eLabel position="1370,515" size="550,325" backgroundColor="background1" zPosition="-11" />
     <eLabel position="1375,555" size="460,280" backgroundColor="background2" zPosition="-10" />
     <eLabel position="1840,555" size="70,280" backgroundColor="background2" zPosition="-10" />
-    <!-- Crypted -->
+  <!-- Crypted -->
     <eLabel text="APID:" position="1380,560" size="150,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
     <widget source="session.CurrentService" render="Label" position="1530,560" size="300,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
       <convert type="ServiceInfoEX">%apid</convert>
@@ -4209,21 +4214,14 @@
       <convert type="ServiceName2">%t</convert>
     </widget>
   </screen>
-  <screen name="TemplatesInfoBarTvInfoWeatherDefault">
-    <!-- Templates Info Bar Tv Info -->
-  </screen>
-  <screen name="TemplatesInfoBarTvInfoWeatherMSN">
-    <!-- Templates Info Bar Tv Info -->
-    <!-- MSN Weather Layer -->
+  <screen name="TemplatesInfoBarTvInfoWeatherLayer">
+  <!-- MSN Weather Layer -->
     <eLabel position="1368,193" size="552,184" backgroundColor="background3" zPosition="-12" />
     <eLabel position="1370,195" size="550,180" backgroundColor="background1" zPosition="-11" />
     <eLabel position="1375,235" size="460,135" backgroundColor="background2" zPosition="-10" />
     <eLabel position="1840,235" size="70,135" backgroundColor="background2" zPosition="-10" />
     <widget source="session.CurrentService" render="Label" position="1375,200" size="460,30" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="right" transparent="1">
       <convert type="MSNWeather2">Location</convert>
-    </widget>
-    <widget source="session.CurrentService" render="PiconUni" path="CyberFHD/msnweather" position="1378,239" size="128,128" zPosition="2" alphatest="blend">
-      <convert type="MSNWeather2">Picon</convert>
     </widget>
     <eLabel text="Temperature:" position="1510,240" size="180,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
     <widget source="session.CurrentService" render="Label" position="1650,240" size="180,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
@@ -4242,27 +4240,44 @@
       <convert type="MSNWeather2">Humidity</convert>
     </widget>
   </screen>
+  <screen name="TemplatesInfoBarTvInfoWeatherDefault">
+  <!-- Templates Info Bar Tv Info -->
+  </screen>
+  <screen name="TemplatesInfoBarTvInfoWeatherMSN">
+  <!-- Templates Info Bar Tv Info -->
+    <panel name="TemplatesInfoBarTvInfoWeatherLayer" />
+    <widget source="session.CurrentService" render="PiconUni" path="CyberFHD/msnweather" position="1378,239" size="128,128" zPosition="2" alphatest="blend">
+      <convert type="MSNWeather2">Picon</convert>
+    </widget>
+  </screen>
+  <screen name="TemplatesInfoBarTvInfoWeatherMSNAnimated">
+  <!-- Templates Info Bar Tv Info -->
+    <panel name="TemplatesInfoBarTvInfoWeatherLayer" />
+    <widget source="session.CurrentService" render="AnimatedWeatherPixmap" path="/usr/share/enigma2/CyberFHD/msnweatheranimated" position="1378,239" size="128,128" zPosition="2"  alphatest="blend">
+      <convert type="MSNWeather2">Picon</convert>
+    </widget>
+  </screen>
   <!--  ########## Templates InfoBar Media ########## -->
   <screen name="TemplatesInfoBarMediaCover">
     <panel name="TemplatesPiconLayer" />
-    <!-- Templates Media Cover -->
+  <!-- Templates Media Cover -->
     <eLabel text="v" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
   </screen>
   <screen name="TemplatesInfoBarMediaCoverYes">
-    <!-- CaseBar Layer-->
+  <!-- CaseBar Layer-->
     <eLabel position="104,705" size="226,305" backgroundColor="background2" zPosition="-11" />
     <eLabel position="102,703" size="230,309" backgroundColor="background3" zPosition="-12" />
-    <!-- Templates Media Cover-->
+  <!-- Templates Media Cover-->
     <ePixmap position="110,710" size="214,295" pixmap="CyberFHD/case_video_1.png" alphatest="on" zPosition="1" />
     <ePixmap position="122,715" size="200,285" pixmap="CyberFHD/case_video_2.png" alphatest="blend" zPosition="3" />
-    <!--
+  <!--
   <widget source="session.CurrentService" render="CoverTmbd" position="124,718" size="195,280" alphatest="on" zPosition="2">
     <convert type="MovieInfo">MovieName</convert>
   </widget>
 -->
   </screen>
   <screen name="TemplatesInfoBarMediaProgress">
-    <!-- Templates Info Bar Media Progress-->
+  <!-- Templates Info Bar Media Progress-->
     <widget source="session.CurrentService" render="Label" position="355,900" size="1450,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1">
       <convert type="ServiceName">Name</convert>
     </widget>
@@ -4282,7 +4297,7 @@
   </screen>
   <screen name="TemplatesInfoBarMediaIndicationDefault">
     <panel name="TemplatesDownLayer3" />
-    <!-- Templates Info Bar Media Indication-->
+  <!-- Templates Info Bar Media Indication-->
     <eLabel text="SUB" position="755,1002" size="70,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
     <widget source="session.CurrentService" render="FixedLabel" text="SUB" position="755,1002" size="70,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
       <convert type="ServiceInfo">SubservicesAvailable</convert>
@@ -4316,7 +4331,7 @@
   </screen>
   <screen name="TemplatesInfoBarMediaIndicationStyle">
     <panel name="TemplatesDownLayer3" />
-    <!-- Templates Info Bar Media Indication-->
+  <!-- Templates Info Bar Media Indication-->
     <eLabel text="SUB" position="855,1002" size="70,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
     <widget source="session.CurrentService" render="FixedLabel" text="SUB" position="855,1002" size="70,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
       <convert type="ServiceInfo">SubservicesAvailable</convert>
@@ -4360,18 +4375,18 @@
     </widget>
   </screen>
   <screen name="TemplatesInfoBarMediaInfo">
-    <!-- Layer Description -->
+  <!-- Layer Description -->
     <eLabel position="353,718" size="1567,144" backgroundColor="background3" zPosition="-14" />
     <eLabel position="355,720" size="1565,140" backgroundColor="background1" zPosition="-13" />
     <eLabel position="360,725" size="1560,130" backgroundColor="background2" zPosition="-12" />
-    <!-- Templates Info Bar Media Info-->
+  <!-- Templates Info Bar Media Info-->
     <widget source="session.CurrentService" render="Label" position="365,730" size="1450,120" font="Global; 25" foregroundColor="color3" backgroundColor="background2" halign="left" transparent="1">
       <convert type="MovieInfo">FullDescription</convert>
     </widget>
   </screen>
   <!--  ########## Templates InfoBar Radio ########## -->
   <screen name="TemplatesInfoBarRadioIndicationDefaut">
-    <!-- Templates Radio Indication -->
+  <!-- Templates Radio Indication -->
     <eLabel text="$" position="345,1002" size="35,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" zPosition="1" />
     <widget source="session.CurrentService" render="FixedLabel" text="$" position="345,1002" size="35,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
       <convert type="ServiceInfo">IsCrypted</convert>
@@ -4388,7 +4403,7 @@
     </widget>
   </screen>
   <screen name="TemplatesInfoBarRadioIndicationStyle">
-    <!-- Templates Radio Indication -->
+  <!-- Templates Radio Indication -->
     <eLabel text="$" position="345,1002" size="35,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" zPosition="1" />
     <widget source="session.CurrentService" render="FixedLabel" text="$" position="345,1002" size="35,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
       <convert type="ServiceInfo">IsCrypted</convert>
@@ -4414,7 +4429,7 @@
   </screen>
   <!--  ########## Templates Menu ########## -->
   <screen name="TemplatesDish">
-    <!-- Layer Dish -->
+  <!-- Layer Dish -->
     <eLabel position="0,0" size="300,300" backgroundColor="background3" zPosition="-12" />
     <eLabel position="2,2" size="296,296" backgroundColor="background1" zPosition="-11" />
     <eLabel position="7,193" size="286,100" backgroundColor="background2" zPosition="-10" />
@@ -4428,72 +4443,72 @@
     <widget name="turnSpeed" position="12,155" size="120,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="left" transparent="1" />
   </screen>
   <screen name="TemplatesTitle1">
-    <!-- Templates Title -->
+  <!-- Templates Title -->
     <widget source="Title" render="Label" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
   </screen>
   <screen name="TemplatesTitle2">
-    <!-- Templates Title -->
+  <!-- Templates Title -->
     <widget source="title" render="Label" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
   </screen>
   <screen name="TemplatesButtons">
     <panel name="TemplatesButtonsLayer" />
-    <!-- Templates Buttons -->
+  <!-- Templates Buttons -->
     <ePixmap pixmap="CyberFHD/buttons/button_key_red.png" position="1773,885" size="40,20" alphatest="on" />
     <ePixmap pixmap="CyberFHD/buttons/button_key_green.png" position="1773,915" size="40,20" alphatest="on" />
     <ePixmap pixmap="CyberFHD/buttons/button_key_yellow.png" position="1773,945" size="40,20" alphatest="on" />
     <ePixmap pixmap="CyberFHD/buttons/button_key_blue.png" position="1773,975" size="40,20" alphatest="on" />
   </screen>
   <screen name="TemplatesButtonsMenu">
-    <!-- Templates Buttons Menu -->
+  <!-- Templates Buttons Menu -->
     <eLabel text="&gt;MENU&lt;" position="1485,100" size="120,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
   </screen>
   <screen name="TemplatesButtonsExit">
-    <!-- Templates Buttons Exit -->
+  <!-- Templates Buttons Exit -->
     <eLabel text="&gt;EXIT&lt;" position="1365,100" size="120,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
   </screen>
   <screen name="TemplatesButtonsInfo">
-    <!-- Templates Buttons Info -->
+  <!-- Templates Buttons Info -->
     <eLabel text="&gt;INFO&lt;" position="1365,100" size="120,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
   </screen>
   <screen name="TemplatesButtonsOk">
-    <!-- Templates Buttons Ok -->
+  <!-- Templates Buttons Ok -->
     <eLabel text="&gt;OK&lt;" position="1245,100" size="120,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
   </screen>
   <screen name="TemplatesButtonsRed">
-    <!-- Templates Buttons Red -->
+  <!-- Templates Buttons Red -->
     <widget objectTypes="red,Label,Button" name="red" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="1" />
     <widget objectTypes="key_red,Label,Button" name="key_red" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="2" />
     <widget objectTypes="red_key,StaticText" source="red_key" render="Label" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="3" />
     <widget objectTypes="key_red,StaticText" source="key_red" render="Label" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="4" />
   </screen>
   <screen name="TemplatesButtonsGreen">
-    <!-- Templates Buttons Green -->
+  <!-- Templates Buttons Green -->
     <widget objectTypes="green,Label,Button" name="green" position="1380,914" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="1" />
     <widget objectTypes="key_green,Label,Button" name="key_green" position="1380,914" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="2" />
     <widget objectTypes="green_key,StaticText" source="green_key" render="Label" position="1380,914" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="3" />
     <widget objectTypes="key_green,StaticText" source="key_green" render="Label" position="1380,914" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="4" />
   </screen>
   <screen name="TemplatesButtonsYellow">
-    <!-- Templates Buttons Yellow -->
+  <!-- Templates Buttons Yellow -->
     <widget objectTypes="yellow,Label,Button" name="yellow" position="1380,944" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="1" />
     <widget objectTypes="key_yellow,Label,Button" name="key_yellow" position="1380,944" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="2" />
     <widget objectTypes="yellow_key,StaticText" source="yellow_key" render="Label" position="1380,944" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="3" />
     <widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Label" position="1380,944" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="4" />
   </screen>
   <screen name="TemplatesButtonsBlue">
-    <!-- Templates Buttons Blue -->
+  <!-- Templates Buttons Blue -->
     <widget objectTypes="blue,Label,Button" name="blue" position="1380,974" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="1" />
     <widget objectTypes="key_blue,Label,Button" name="key_blue" position="1380,974" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="2" />
     <widget objectTypes="blue_key,StaticText" source="blue_key" render="Label" position="1380,974" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="3" />
     <widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" position="1380,974" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="4" />
   </screen>
   <screen name="TemplatesSignalFinder">
-    <!-- Templates Signal Finder -->
-    <!-- Layer Satfinder Tuner Info -->
+  <!-- Templates Signal Finder -->
+  <!-- Layer Satfinder Tuner Info -->
     <eLabel position="1103,563" size="739,284" backgroundColor="background3" zPosition="-12" />
     <eLabel position="1105,565" size="735,280" backgroundColor="background1" zPosition="-11" />
     <eLabel position="1235,610" size="600,230" backgroundColor="background2" zPosition="-10" />
-    <!-- Layer Satfinder Tuner Info Right -->
+  <!-- Layer Satfinder Tuner Info Right -->
     <eLabel position="1840,563" size="80,284" backgroundColor="background3" zPosition="-12" />
     <eLabel position="1840,565" size="80,280" backgroundColor="background1" zPosition="-11" />
     <eLabel position="1840,610" size="70,230" backgroundColor="background2" zPosition="-10" />
@@ -4534,13 +4549,13 @@
     </widget>
   </screen>
   <screen name="TemplatesSignalPositioner">
-    <!-- Templates Signal Positioner -->
-    <!-- Layer Positioner Tuner Info -->
+  <!-- Templates Signal Positioner -->
+  <!-- Layer Positioner Tuner Info -->
     <eLabel position="1103,483" size="739,364" backgroundColor="background3" zPosition="-12" />
     <eLabel position="1105,485" size="735,360" backgroundColor="background1" zPosition="-11" />
     <eLabel position="1235,530" size="600,130" backgroundColor="background2" zPosition="-10" />
     <eLabel position="1235,670" size="600,170" backgroundColor="background2" zPosition="-10" />
-    <!-- Layer Positioner Tuner Info Right -->
+  <!-- Layer Positioner Tuner Info Right -->
     <eLabel position="1840,483" size="80,364" backgroundColor="background3" zPosition="-12" />
     <eLabel position="1840,485" size="80,360" backgroundColor="background1" zPosition="-11" />
     <eLabel position="1840,530" size="70,130" backgroundColor="background2" zPosition="-10" />
@@ -4567,11 +4582,11 @@
     <widget name="status_bar" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
   </screen>
   <screen name="TemplatesHelpWindow">
-    <!-- Templates Help Window -->
+  <!-- Templates Help Window -->
     <widget name="HelpWindow" position="130,530" size="1,1" />
   </screen>
   <screen name="TemplatesClockDefault">
-    <!-- Templates Clock -->
+  <!-- Templates Clock -->
     <widget source="global.CurrentTime" render="Label" position="1615,95" size="90,50" font="Indication; 50" foregroundColor="color1" backgroundColor="background2" halign="right" transparent="1">
       <convert type="ClockToText">Format:%H</convert>
     </widget>
@@ -4588,7 +4603,7 @@
     <panel name="TemplatesClockLayer" />
   </screen>
   <screen name="TemplatesClockStyle">
-    <!-- Templates Clock -->
+  <!-- Templates Clock -->
     <widget source="global.CurrentTime" render="Label" position="1615,95" size="90,50" font="Indication; 50" foregroundColor="color1" backgroundColor="background2" halign="right" transparent="1">
       <convert type="ClockToText">Format:%H</convert>
     </widget>
@@ -4627,7 +4642,7 @@
   <screen name="TemplatesChannelSelectionTvBouquetDefault">
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
-    <!-- Templates Channel Selection Tv Bouquet-->
+  <!-- Templates Channel Selection Tv Bouquet-->
     <widget name="list" 
 		position="90,200" size="980,635"
 		scrollbarMode="showNever" 
@@ -4649,7 +4664,7 @@
   <screen name="TemplatesChannelSelectionTvBouquetStyle">
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
-    <!-- Templates Channel Selection Tv Bouquet-->
+  <!-- Templates Channel Selection Tv Bouquet-->
     <eLabel position="90,200" size="980,40" backgroundColor="background2" zPosition="-1" />
     <eLabel text="&gt;" position="95,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
     <widget source="Title" render="Label" position="125,205" size="940,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
@@ -4675,7 +4690,7 @@
     <panel name="TemplatesMenu1800Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <panel name="TemplatesMenuRightLayer" />
-    <!-- Templates Channel Selection Tv Bouquet-->
+  <!-- Templates Channel Selection Tv Bouquet-->
     <widget name="list" 
 		position="90,200" size="1740,635" 
 		scrollbarMode="showNever" 
@@ -4698,7 +4713,7 @@
     <panel name="TemplatesMenu1800Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <panel name="TemplatesMenuRightLayer" />
-    <!-- Templates Channel Selection Tv Bouquet-->
+  <!-- Templates Channel Selection Tv Bouquet-->
     <eLabel position="90,200" size="1740,40" backgroundColor="background2" zPosition="-1" />
     <eLabel text="&gt;" position="95,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
     <widget source="Title" render="Label" position="125,205" size="1700,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
@@ -4721,11 +4736,11 @@
 		transparent="1" />
   </screen>
   <screen name="TemplatesChannelSelectionTvPiconDefault">
-    <!-- Layer Channel Selection Tv Info -->
+  <!-- Layer Channel Selection Tv Info -->
   </screen>
   <screen name="TemplatesChannelSelectionTvPiconStyle">
-    <!-- Layer Channel Selection Tv Info -->
-    <!-- Picon Layer -->
+  <!-- Layer Channel Selection Tv Info -->
+  <!-- Picon Layer -->
     <eLabel position="348,867" size="234,146" backgroundColor="background3" zPosition="-12" />
     <eLabel position="350,869" size="230,142" backgroundColor="background2" zPosition="-11" />
     <widget source="ServiceEvent" render="Picon" position="355,874" size="220,132" zPosition="2" alphatest="blend">
@@ -4743,18 +4758,18 @@
     </widget>
   </screen>
   <screen name="TemplatesChannelSelectionTvInfoChannelDefault">
-    <!-- Layer Channel Selection Tv Info -->
+  <!-- Layer Channel Selection Tv Info -->
   </screen>
   <screen name="TemplatesChannelSelectionTvInfoChannelStyle">
-    <!-- Layer Channel Selection Tv Channel Info -->
+  <!-- Layer Channel Selection Tv Channel Info -->
     <eLabel position="1103,188" size="739,149" backgroundColor="background3" zPosition="-12" />
     <eLabel position="1105,190" size="735,145" backgroundColor="background1" zPosition="-11" />
     <eLabel position="1110,230" size="725,100" backgroundColor="background2" zPosition="-10" />
-    <!-- Layer Channel Selection Tv Channel Info Right -->
+  <!-- Layer Channel Selection Tv Channel Info Right -->
     <eLabel position="1840,188" size="80,149" backgroundColor="background3" zPosition="-12" />
     <eLabel position="1840,190" size="80,145" backgroundColor="background1" zPosition="-11" />
     <eLabel position="1840,230" size="70,100" backgroundColor="background2" zPosition="-10" />
-    <!-- Templates Channel Selection Channel Info Info -->
+  <!-- Templates Channel Selection Channel Info Info -->
     <eLabel text="Channel Info" position="1110,195" size="725,30" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
     <eLabel text="Satellite:" position="1115,235" size="200,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
     <widget source="ServiceEvent" render="Label" position="1260,235" size="570,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
@@ -4770,13 +4785,13 @@
     </widget>
   </screen>
   <screen name="TemplatesChannelSelectionTvInfoEPGDefault">
-    <!-- Layer Channel Selection Tv Info-->
+  <!-- Layer Channel Selection Tv Info-->
   </screen>
   <screen name="TemplatesChannelSelectionTvInfoEPGNow">
     <panel name="TemplatesMenuInfoLayer" />
     <panel name="TemplatesMenuInfoRightLayer" />
     <panel name="TemplatesChannelSelectionProgress" />
-    <!-- Layer Channel Selection Tv Info-->
+  <!-- Layer Channel Selection Tv Info-->
     <eLabel text="&gt;" position="1115,509" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
     <widget source="ServiceEvent" render="Label" position="1145,510" size="685,25" font="Global; 25" foregroundColor="color1" backgroundColor="background2" halign="left" transparent="1" noWrap="1">
       <convert type="EventName">Name</convert>
@@ -4789,7 +4804,7 @@
     <panel name="TemplatesMenuInfoLayer" />
     <panel name="TemplatesMenuInfoRightLayer" />
     <panel name="TemplatesChannelSelectionProgress" />
-    <!-- Layer Channel Selection Tv Info-->
+  <!-- Layer Channel Selection Tv Info-->
     <eLabel text="&gt;" position="1115,509" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
     <widget source="ServiceEvent" render="Label" position="1145,510" size="685,25" font="Global; 25" foregroundColor="color1" backgroundColor="background2" halign="left" transparent="1" noWrap="1">
       <convert type="EventName2">Name</convert>
@@ -4809,7 +4824,7 @@
     <panel name="TemplatesMenuInfoLayer" />
     <panel name="TemplatesMenuInfoRightLayer" />
     <panel name="TemplatesChannelSelectionProgress" />
-    <!-- Layer Channel Selection Tv Info-->
+  <!-- Layer Channel Selection Tv Info-->
     <eLabel text="&gt;" position="1115,509" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
     <widget source="ServiceEvent" render="Label" position="1140,510" size="80,25" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1">
       <convert type="EventTime">StartTime</convert>
@@ -4830,7 +4845,7 @@
     <panel name="TemplatesMenuInfoLayer" />
     <panel name="TemplatesMenuInfoRightLayer" />
     <panel name="TemplatesChannelSelectionProgress" />
-    <!-- Layer Channel Selection Tv Info-->
+  <!-- Layer Channel Selection Tv Info-->
     <eLabel text="&gt;" position="1115,509" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
     <widget source="ServiceEvent" render="Label" position="1140,510" size="80,25" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1">
       <convert type="EventTime">StartTime</convert>
@@ -4845,7 +4860,7 @@
   </screen>
   <!--  ########## Templates Channel Selection Radio ########## -->
   <screen name="TemplatesChannelSelectionRadioBouquetDefault">
-    <!-- Templates Channel Selection Radio Bouquet-->
+  <!-- Templates Channel Selection Radio Bouquet-->
     <widget name="list" 
 		position="20,200" size="850,635" 
 		scrollbarMode="showNever" 
@@ -4865,7 +4880,7 @@
 		transparent="1" />
   </screen>
   <screen name="TemplatesChannelSelectionRadioBouquetStyle">
-    <!-- Templates Channel Selection Radio Bouquet-->
+  <!-- Templates Channel Selection Radio Bouquet-->
     <eLabel position="20,200" size="850,40" backgroundColor="background2" zPosition="-1" />
     <eLabel text="&gt;" position="25,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
     <widget source="Title" render="Label" position="55,205" size="810,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
@@ -4889,12 +4904,12 @@
   </screen>
   <!--  ########## Templates Movie Selection ########## -->
   <screen name="TemplatesMovieSelectionDescriptionDefault">
-    <!-- Templates MovieSelectionInfoMovie-->
+  <!-- Templates MovieSelectionInfoMovie-->
   </screen>
   <screen name="TemplatesMovieSelectionDescriptionShort">
     <panel name="TemplatesMenuInfoLayer" />
     <panel name="TemplatesMenuInfoRightLayer" />
-    <!-- Templates Movie Selection Movie Info -->
+  <!-- Templates Movie Selection Movie Info -->
     <eLabel text="File size:" position="1115,470" size="715,30" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
     <widget source="Service" render="Label" position="1530,470" size="300,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
       <convert type="MovieInfo">FileSize</convert>
@@ -4906,7 +4921,7 @@
   <screen name="TemplatesMovieSelectionDescriptionMeta">
     <panel name="TemplatesMenuInfoLayer" />
     <panel name="TemplatesMenuInfoRightLayer" />
-    <!-- Templates Movie Selection Movie Info -->
+  <!-- Templates Movie Selection Movie Info -->
     <eLabel text="File size:" position="1115,470" size="715,30" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
     <widget source="Service" render="Label" position="1530,470" size="300,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
       <convert type="MovieInfo">FileSize</convert>
@@ -4917,7 +4932,7 @@
   </screen>
   <screen name="TemplatesMovieSelectionDescriptionTMDB">
     <panel name="TemplatesMenuRightLayer" />
-    <!-- Movie Selection Movie Layer-->
+  <!-- Movie Selection Movie Layer-->
     <eLabel position="1103,158" size="264,379" backgroundColor="background3" zPosition="-12" />
     <eLabel position="1105,160" size="260,375" backgroundColor="background1" zPosition="-11" />
     <eLabel position="1388,188" size="454,349" backgroundColor="background3" zPosition="-12" />
@@ -4926,7 +4941,7 @@
     <eLabel position="1103,558" size="739,289" backgroundColor="background3" zPosition="-12" />
     <eLabel position="1105,560" size="735,285" backgroundColor="background1" zPosition="-11" />
     <eLabel position="1110,565" size="725,275" backgroundColor="background2" zPosition="-10" />
-    <!-- Templates Movie Selection Movie Info -->
+  <!-- Templates Movie Selection Movie Info -->
     <widget source="Service" render="CoverTmbd" position="1110,165" size="250,365" zPosition="2" alphatest="on">
       <convert type="MovieInfo">MovieName</convert>
     </widget>
