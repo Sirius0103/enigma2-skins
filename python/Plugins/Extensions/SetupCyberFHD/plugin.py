@@ -398,6 +398,7 @@ config.skin.cyberfhd.numberchannel = ConfigSelection(default="TemplatesInfoBarTv
 config.skin.cyberfhd.tunerpanelinfobar = ConfigSelection(default="TemplatesInfoBarTvTunerStyle", choices = tunerpanelinfobar)
 config.skin.cyberfhd.epgpanelinfobar = ConfigSelection(default="TemplatesInfoBarTvInfoEPGDefault", choices = epgpanelinfobar)
 config.skin.cyberfhd.cryptedpanelinfobar = ConfigSelection(default="TemplatesInfoBarTvInfoCryptedDefault", choices = cryptedpanelinfobar)
+config.skin.cyberfhd.infopanelinfobar = ConfigSelection(default="TemplatesInfoBarTvInfoPanelDefault", choices = infopanelinfobar)
 config.skin.cyberfhd.cipanelinfobar = ConfigSelection(default="TemplatesInfoBarTvInfoPanelCIDefault", choices = cipanelinfobar)
 config.skin.cyberfhd.weatherpanelinfobar = ConfigSelection(default="TemplatesInfoBarTvInfoWeatherDefault", choices = weatherpanelinfobar)
 
