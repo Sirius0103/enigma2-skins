@@ -4442,13 +4442,10 @@
     <widget name="turnTime" position="188,155" size="100,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1" />
     <widget name="turnSpeed" position="12,155" size="120,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="left" transparent="1" />
   </screen>
-  <screen name="TemplatesTitle1">
+  <screen name="TemplatesTitle">
   <!-- Templates Title -->
-    <widget source="Title" render="Label" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
-  </screen>
-  <screen name="TemplatesTitle2">
-  <!-- Templates Title -->
-    <widget source="title" render="Label" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <widget source="Title" render="Label" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" zPosition="1" />
+    <widget source="title" render="Label" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" zPosition="2" />
   </screen>
   <screen name="TemplatesButtons">
     <panel name="TemplatesButtonsLayer" />
