@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+  <!-- # # # # # # # # # # CyberLCD # # # # # # # # # # -->
+  <!--
+# Skin - LCD
+# Developer - Sirius
+# Homepage - http://www.gisclub.Tv
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program. If not, see <http://www.gnu.org/licenses/>.
+  -->
+<skin>
+  <!-- ########## Colors ########## -->
+  <colors>
+    <color name="LCDaqua" value="#0000ffff" />
+    <color name="LCDbackground" value="#00000000" />
+    <color name="LCDbackground1" value="#50000000" />
+    <color name="LCDbackground2" value="#50696969" />
+    <color name="LCDbackground3" value="#50ffffff" />
+    <color name="LCDbackground4" value="#5000ffff" />
+    <color name="LCDbackground5" value="#60696969" />
+    <color name="LCDblack" value="#00000000" />
+    <color name="LCDblue" value="#000000ff" />
+    <color name="LCDcolor1" value="#10ffd700" />
+    <color name="LCDcolor2" value="#10f5f5f5" />
+    <color name="LCDcolor3" value="#10a9a9a9" />
+    <color name="LCDcolor4" value="#1000ffff" />
+    <color name="LCDcolor5" value="#10ffffff" />
+    <color name="LCDgray" value="#00808080" />
+    <color name="LCDgreen" value="#00008000" />
+    <color name="LCDred" value="#00ff0000" />
+    <color name="LCDtransparent" value="#ffffffff" />
+    <color name="LCDwhite" value="#00ffffff" />
+    <color name="LCDyellow" value="#00ffff00" />
+  </colors>
+  <!-- ########## Fonts ########## -->
+  <fonts>
+    <font filename="CyberLCD/fonts/Roboto-Regular.ttf" name="LCDGlobal" scale="100" />
+    <font filename="CyberLCD/fonts/Neuropol.ttf" name="LCDTitles" scale="100" />
+    <font filename="CyberLCD/fonts/LedCounter.ttf" name="LCDIndication" scale="100" />
+  </fonts>
+  <!-- # # # # # # # # # # Display Templates # # # # # # # # # #-->
+  <!--  ########## Templates Display Layer ########## -->
+  <screen name="TemplatesDisplayLayer">
+    <!-- Templates Display -->
+    <eLabel position="0,0" size="320,240" backgroundColor="LCDbackground1" zPosition="-10" />
+  </screen>
+  <screen name="TemplatesDisplayClockDefault">
+    <!-- Clock Layer -->
+    <widget source="global.CurrentTime" render="Label" position="73,25" size="75,45" font="LCDIndication; 45" foregroundColor="LCDcolor1" halign="right" transparent="1">
+      <convert type="ClockToText">Format:%H</convert>
+    </widget>
+    <eLabel text=":" position="150,25" size="15,45" font="LCDIndication; 45" foregroundColor="LCDcolor1" halign="center" transparent="1" zPosition="-1" />
+    <widget source="global.CurrentTime" render="Label" position="167,25" size="75,45" font="LCDIndication; 45" foregroundColor="LCDcolor1" halign="left" transparent="1">
+      <convert type="ClockToText">Format:%M</convert>
+    </widget>
+  </screen>
+  <screen name="TemplatesDisplayClockStyle">
+    <!-- Clock Layer -->
+    <widget source="global.CurrentTime" render="Label" position="73,25" size="75,45" font="LCDIndication; 45" foregroundColor="LCDcolor1" halign="right" transparent="1">
+      <convert type="ClockToText">Format:%H</convert>
+    </widget>
+    <eLabel text=":" position="150,25" size="15,45" font="LCDIndication; 45" foregroundColor="LCDgray" halign="center" transparent="1" zPosition="-1" />
+    <widget source="global.CurrentTime" render="FixedLabel" text=":" position="150,25" size="15,45" font="LCDIndication; 45" foregroundColor="LCDcolor1" halign="center" transparent="1">
+      <convert type="AlwaysTrue">
+      </convert>
+      <convert type="ConditionalShowHide">Blink</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="167,25" size="75,45" font="LCDIndication; 45" foregroundColor="LCDcolor1" halign="left" transparent="1">
+      <convert type="ClockToText">Format:%M</convert>
+    </widget>
+  </screen>
+  <!--  ########## Templates Progress Layer ########## -->
+  <screen name="TemplatesDisplayProgressLayerDefault">
+    <!-- Templates Progress -->
+    <eLabel position="0,180" size="320,15" backgroundColor="LCDgray" zPosition="1" />
+  </screen>
+  <screen name="TemplatesDisplayProgressLayerStandard">
+    <!-- Progress Layer -->
+    <panel name="TemplatesDisplayProgressLayerDefault" />
+  </screen>
+  <screen name="TemplatesDisplayProgressLayerImproved">
+    <!-- Progress Layer -->
+    <panel name="TemplatesDisplayProgressLayerDefault" />
+    <!-- Layer -->
+    <eLabel position="0,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
+    <eLabel position="6,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
+    <eLabel position="12,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
+    <eLabel position="18,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
+    <eLabel position="24,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
+    <eLabel position="30,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
+    <eLabel position="36,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
+    <eLabel position="42,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
+    <eLabel position="48,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
+    <eLabel position="54,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
+    <!-- Layer -->
+    <eLabel position="60,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
+    <eLabel position="66,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
+    <eLabel position="72,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
+    <eLabel position="78,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
+    <eLabel position="84,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
+    <eLabel position="90,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
+    <eLabel position="96,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
+    <eLabel position="102,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
+    <eLabel position="108,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
+    <eLabel position="114,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
+    <!-- Layer -->
+    <eLabel position="120,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
+    <eLabel position="126,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
+    <eLabel position="132,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
+    <eLabel position="138,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
+    <eLabel position="144,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
+    <eLabel position="150,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
+    <eLabel position="156,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
+    <eLabel position="162,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
+    <eLabel position="168,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
+    <eLabel position="174,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
+    <!-- Layer -->
+    <eLabel position="180,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
+    <eLabel position="186,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
+    <eLabel position="192,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
+    <eLabel position="198,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
+    <eLabel position="204,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
+    <eLabel position="210,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
+    <eLabel position="216,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
+    <eLabel position="222,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
+    <eLabel position="228,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
+    <eLabel position="234,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
+    <!-- Layer -->
+    <eLabel position="240,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
+    <eLabel position="246,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
+    <eLabel position="252,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
+    <eLabel position="258,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
+    <eLabel position="264,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
+    <eLabel position="270,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
+    <eLabel position="276,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
+    <eLabel position="282,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
+    <eLabel position="288,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
+    <eLabel position="294,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
+    <!-- Layer -->
+    <eLabel position="300,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
+    <eLabel position="306,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
+    <eLabel position="312,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
+    <eLabel position="318,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
+  </screen>
+  <!--  ########## Templates InfoBar Display ########## -->
+  <screen name="TemplatesInfoBarDisplayName">
+    <!-- Name Layer -->
+    <widget source="session.CurrentService" render="Label" position="6,6" size="308,70" font="LCDTitles; 30" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+  </screen>
+  <screen name="TemplatesInfoBarDisplayPicon">
+    <panel name="TemplatesInfoBarDisplayIndication" />
+    <!-- Picon Layer -->
+    <widget source="session.CurrentService" render="Picon" position="90,0" size="140,85" zPosition="2" alphatest="blend">
+      <convert type="ServiceName">Reference</convert>
+    </widget>
+  </screen>
+  <screen name="TemplatesInfoBarDisplayClock">
+    <!-- Clock Layer -->
+    <panel name="TemplatesDisplayClock" />
+    <panel name="TemplatesInfoBarDisplayIndication" />
+  </screen>
+  <screen name="TemplatesInfoBarDisplayProgress">
+    <!-- Progress Layer -->
+    <panel name="TemplatesDisplayProgressLayer" />
+    <widget source="session.Event_Now" render="Progress" position="0,180" size="320,15" foregroundColor="LCDbackground4" transparent="1" zPosition="2">
+      <convert type="EventTime">Progress</convert>
+    </widget>
+    <eLabel text="-" position="102,205" size="16,35" font="LCDIndication; 35" foregroundColor="LCDcolor4" halign="center" transparent="1" />
+    <widget source="session.Event_Now" render="Label" position="0,205" size="100,35" font="LCDIndication; 35" foregroundColor="LCDcolor4" halign="right" transparent="1">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" position="210,205" size="100,35" font="LCDIndication; 35" foregroundColor="LCDcolor4" halign="right" transparent="1">
+      <convert type="EventTime">Remaining</convert>
+      <convert type="RemainingToText">InMinutes</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" position="120,205" size="100,35" font="LCDIndication; 35" foregroundColor="LCDcolor4" halign="left" transparent="1">
+      <convert type="EventTime">EndTime</convert>
+      <convert type="ClockToText">Default</convert>
+    </widget>
+  </screen>
+  <screen name="TemplatesInfoBarDisplayIndication">
+    <!-- Indication Layer -->
+    <eLabel text="TXT" position="6,41" size="80,35" font="LCDIndication; 35" foregroundColor="LCDgray" backgroundColor="LCDbackground" transparent="1" halign="left" />
+    <widget source="session.CurrentService" render="FixedLabel" text="TXT" position="6,41" size="80,35" font="LCDIndication; 35" foregroundColor="LCDcolor4" backgroundColor="LCDbackground" transparent="1" zPosition="3" halign="left">
+      <convert type="ServiceInfo">HasTelext</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <eLabel text="REC" position="6,6" size="80,35" font="LCDIndication; 35" foregroundColor="LCDgray" backgroundColor="LCDbackground" transparent="1" halign="left" />
+    <widget source="session.RecordState" render="FixedLabel" text="REC" position="6,6" size="80,35" font="LCDIndication; 35" foregroundColor="LCDred" backgroundColor="LCDbackground" transparent="1" zPosition="3" halign="left">
+      <convert type="ConditionalShowHide">Blink</convert>
+    </widget>
+    <eLabel text="SD" position="260,41" size="55,35" font="LCDIndication; 35" foregroundColor="LCDgray" backgroundColor="LCDbackground" transparent="1" halign="right" />
+    <widget source="session.CurrentService" render="FixedLabel" text="SD" position="260,41" size="55,35" font="LCDIndication; 35" foregroundColor="LCDcolor4" backgroundColor="LCDbackground" transparent="1" zPosition="3" halign="right">
+      <convert type="ServiceInfo">VideoWidth</convert>
+      <convert type="ValueRange">0,720</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <eLabel text="UHD" position="235,6" size="80,35" font="LCDIndication; 35" foregroundColor="LCDgray" backgroundColor="LCDbackground" transparent="1" halign="right" />
+    <widget source="session.CurrentService" render="FixedLabel" text="HD" position="260,6" size="55,35" font="LCDIndication; 35" foregroundColor="LCDcolor4" backgroundColor="LCDbackground" transparent="1" zPosition="3" halign="right">
+      <convert type="ServiceInfo">VideoWidth</convert>
+      <convert type="ValueRange">721,1980</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="FixedLabel" text="UHD" position="235,6" size="80,35" font="LCDIndication; 35" foregroundColor="LCDcolor4" backgroundColor="LCDbackground" transparent="1" zPosition="3" halign="right">
+      <convert type="ServiceInfo">VideoWidth</convert>
+      <convert type="ValueRange">1981,3840</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+  </screen>
+  <!--  ########## Templates Movie InfoBar Display ########## -->
+  <screen name="TemplatesMovieInfoBarDisplayName">
+    <panel name="TemplatesMovieInfoBarDisplayIndication" />
+  </screen>
+  <screen name="TemplatesMovieInfoBarDisplayClock">
+    <!-- Clock Layer -->
+    <panel name="TemplatesDisplayClock" />
+    <panel name="TemplatesMovieInfoBarDisplayIndication" />
+  </screen>
+  <screen name="TemplatesMovieInfoBarDisplayProgress">
+    <!-- Progress Layer -->
+    <panel name="TemplatesDisplayProgressLayer" />
+    <widget source="session.CurrentService" render="Progress" position="0,180" size="320,15" foregroundColor="LCDbackground4" transparent="1" zPosition="2">
+      <convert type="ServicePosition">Position</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="5,205" size="150,35" font="LCDIndication; 35" foregroundColor="LCDcolor4" halign="left" transparent="1">
+      <convert type="ServicePosition">Length</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="165,205" size="150,35" font="LCDIndication; 35" foregroundColor="LCDcolor4" halign="right" transparent="1">
+      <convert type="ServicePosition">Position</convert>
+    </widget>
+  </screen>
+  <screen name="TemplatesMovieInfoBarDisplayIndication">
+    <!-- Indication Layer -->
+    <eLabel text="SUB" position="6,41" size="80,35" font="LCDIndication; 35" foregroundColor="LCDgray" backgroundColor="LCDbackground" transparent="1" halign="left" />
+    <widget source="session.CurrentService" render="FixedLabel" text="SUB" position="6,41" size="80,35" font="LCDIndication; 35" foregroundColor="LCDcolor4" backgroundColor="LCDbackground" transparent="1" zPosition="3" halign="left">
+      <convert type="ServiceInfo">SubservicesAvailable</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <eLabel text="REC" position="6,6" size="80,35" font="LCDIndication; 35" foregroundColor="LCDgray" backgroundColor="LCDbackground" transparent="1" halign="left" />
+    <widget source="session.RecordState" render="FixedLabel" text="REC" position="6,6" size="80,35" font="LCDIndication; 35" foregroundColor="LCDred" backgroundColor="LCDbackground" transparent="1" zPosition="3" halign="left">
+      <convert type="ConditionalShowHide">Blink</convert>
+    </widget>
+    <eLabel text="SD" position="260,41" size="55,35" font="LCDIndication; 35" foregroundColor="LCDgray" backgroundColor="LCDbackground" transparent="1" halign="right" />
+    <widget source="session.CurrentService" render="FixedLabel" text="SD" position="260,41" size="55,35" font="LCDIndication; 35" foregroundColor="LCDcolor4" backgroundColor="LCDbackground" transparent="1" zPosition="3" halign="right">
+      <convert type="ServiceInfo">VideoWidth</convert>
+      <convert type="ValueRange">0,720</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <eLabel text="UHD" position="235,6" size="80,35" font="LCDIndication; 35" foregroundColor="LCDgray" backgroundColor="LCDbackground" transparent="1" halign="right" />
+    <widget source="session.CurrentService" render="FixedLabel" text="HD" position="260,6" size="55,35" font="LCDIndication; 35" foregroundColor="LCDcolor4" backgroundColor="LCDbackground" transparent="1" zPosition="3" halign="right">
+      <convert type="ServiceInfo">VideoWidth</convert>
+      <convert type="ValueRange">721,1980</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="FixedLabel" text="UHD" position="235,6" size="80,35" font="LCDIndication; 35" foregroundColor="LCDcolor4" backgroundColor="LCDbackground" transparent="1" zPosition="3" halign="right">
+      <convert type="ServiceInfo">VideoWidth</convert>
+      <convert type="ValueRange">1981,3840</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+  </screen>
+  <!--  ########## Templates Channel Selection Display ########## -->
+  <screen name="TemplatesChannelSelectionDisplayName">
+    <!-- Name Layer -->
+    <widget source="parent.ServiceEvent" render="Label" position="6,6" size="308,70" font="LCDTitles; 30" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+  </screen>
+  <screen name="TemplatesChannelSelectionDisplayPicon">
+    <!-- Picon Layer -->
+    <widget source="parent.ServiceEvent" render="Picon" position="90,0" size="140,85" zPosition="2" alphatest="blend">
+      <convert type="ServiceName">Reference</convert>
+    </widget>
+  </screen>
+  <screen name="TemplatesChannelSelectionDisplayClock">
+    <!-- Clock Layer -->
+    <panel name="TemplatesDisplayClock" />
+  </screen>
+  <screen name="TemplatesChannelSelectionDisplayProgress">
+    <!-- Progress Layer -->
+    <panel name="TemplatesDisplayProgressLayer" />
+    <widget source="parent.ServiceEvent" render="Progress" position="0,180" size="320,15" foregroundColor="LCDbackground4" transparent="1" zPosition="2">
+      <convert type="EventTime">Progress</convert>
+    </widget>
+    <eLabel text="-" position="102,205" size="16,35" font="LCDIndication; 35" foregroundColor="LCDcolor4" halign="center" transparent="1" />
+    <widget source="parent.ServiceEvent" render="Label" position="0,205" size="100,35" font="LCDIndication; 35" foregroundColor="LCDcolor4" halign="right" transparent="1">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="parent.ServiceEvent" render="Label" position="210,205" size="100,35" font="LCDIndication; 35" foregroundColor="LCDcolor4" halign="right" transparent="1">
+      <convert type="EventTime">Remaining</convert>
+      <convert type="RemainingToText">InMinutes</convert>
+    </widget>
+    <widget source="parent.ServiceEvent" render="Label" position="120,205" size="100,35" font="LCDIndication; 35" foregroundColor="LCDcolor4" halign="left" transparent="1">
+      <convert type="EventTime">EndTime</convert>
+      <convert type="ClockToText">Default</convert>
+    </widget>
+  </screen>
+  <!--  ########## Templates Radio Selection Display ########## -->
+  <screen name="TemplatesRadioSelectionDisplayName">
+    <!-- Name Layer -->
+    <widget source="session.CurrentService" render="Label" position="6,6" size="308,70" font="LCDTitles; 30" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+  </screen>
+  <screen name="TemplatesRadioSelectionDisplayClock">
+    <!-- Clock Layer -->
+    <panel name="TemplatesDisplayClock" />
+  </screen>
+  <screen name="TemplatesRadioSelectionDisplayProgress">
+    <!-- Progress Layer -->
+    <panel name="TemplatesDisplayProgressLayer" />
+    <widget source="parent.ServiceEvent" render="Progress" position="0,180" size="320,15" foregroundColor="LCDbackground4" transparent="1" zPosition="2">
+      <convert type="EventTime">Progress</convert>
+    </widget>
+    <eLabel text="-" position="102,205" size="16,35" font="LCDIndication; 35" foregroundColor="LCDcolor4" halign="center" transparent="1" />
+    <widget source="parent.ServiceEvent" render="Label" position="0,205" size="100,35" font="LCDIndication; 35" foregroundColor="LCDcolor4" halign="right" transparent="1">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="parent.ServiceEvent" render="Label" position="210,205" size="100,35" font="LCDIndication; 35" foregroundColor="LCDcolor4" halign="right" transparent="1">
+      <convert type="EventTime">Remaining</convert>
+      <convert type="RemainingToText">InMinutes</convert>
+    </widget>
+    <widget source="parent.ServiceEvent" render="Label" position="120,205" size="100,35" font="LCDIndication; 35" foregroundColor="LCDcolor4" halign="left" transparent="1">
+      <convert type="EventTime">EndTime</convert>
+      <convert type="ClockToText">Default</convert>
+    </widget>
+  </screen>
+  <!--  ########## Templates EPG Selection Display ########## -->
+  <screen name="TemplatesEPGSelectionDisplayName">
+    <!-- Name Layer -->
+    <widget source="parent.Service" render="Label" position="6,6" size="308,70" font="LCDTitles; 30" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+  </screen>
+  <screen name="TemplatesEPGSelectionDisplayPicon">
+    <!-- Picon Layer -->
+    <widget source="parent.Service" render="Picon" position="90,0" size="140,85" zPosition="2" alphatest="blend">
+      <convert type="ServiceName">Reference</convert>
+    </widget>
+  </screen>
+  <screen name="TemplatesEPGSelectionDisplayClock">
+    <!-- Clock Layer -->
+    <panel name="TemplatesDisplayClock" />
+  </screen>
+  <screen name="TemplatesEPGSelectionDisplayProgress">
+    <!-- Progress Layer -->
+    <panel name="TemplatesDisplayProgressLayer" />
+    <widget source="parent.Event" render="Progress" position="5,240" size="470,20" foregroundColor="LCDbackground4" transparent="1" zPosition="2">
+      <convert type="EventTime">Progress</convert>
+    </widget>
+    <eLabel text="-" position="160,270" size="20,50" font="LCDIndication; 50" foregroundColor="LCDcolor4" halign="center" transparent="1" />
+    <widget source="parent.Event" render="Label" position="0,270" size="150,50" font="LCDIndication; 50" foregroundColor="LCDcolor4" halign="right" transparent="1">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="parent.Event" render="Label" position="320,270" size="150,50" font="LCDIndication; 50" foregroundColor="LCDcolor4" halign="right" transparent="1">
+      <convert type="EventTime">Remaining</convert>
+      <convert type="RemainingToText">InMinutes</convert>
+    </widget>
+    <widget source="parent.Event" render="Label" position="190,270" size="150,50" font="LCDIndication; 50" foregroundColor="LCDcolor4" halign="left" transparent="1">
+      <convert type="EventTime">EndTime</convert>
+      <convert type="ClockToText">Default</convert>
+    </widget>
+  </screen>
+  <!--  ########## Templates Standby Display ########## -->
+  <screen name="TemplatesStandbyDisplayClockDefaut">
+    <!-- Clock Layer -->
+    <widget source="global.CurrentTime" render="Label" position="10,100" size="200,120" font="LCDIndication; 120" foregroundColor="LCDcolor1" halign="right" transparent="1">
+      <convert type="ClockToText">Format:%H</convert>
+    </widget>
+    <eLabel text=":" position="220,100" size="40,120" font="LCDIndication; 120" foregroundColor="LCDcolor1" halign="center" transparent="1" zPosition="-1" />
+    <widget source="global.CurrentTime" render="Label" position="270,100" size="200,120" font="LCDIndication; 120" foregroundColor="LCDcolor1" halign="left" transparent="1">
+      <convert type="ClockToText">Format:%M</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="10,30" size="460,40" font="LCDTitles; 35" foregroundColor="LCDcolor2" halign="center" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="10,250" size="460,40" font="LCDTitles; 35" foregroundColor="LCDcolor2" halign="center" transparent="1">
+      <convert type="ClockToText">Format:%d.%m.%Y</convert>
+    </widget>
+  </screen>
+  <screen name="TemplatesStandbyDisplayClockStyle">
+    <!-- Clock Layer -->
+    <widget source="global.CurrentTime" render="Label" position="10,100" size="200,120" font="LCDIndication; 120" foregroundColor="LCDcolor1" halign="right" transparent="1">
+      <convert type="ClockToText">Format:%H</convert>
+    </widget>
+    <eLabel text=":" position="220,100" size="40,120" font="LCDIndication; 120" foregroundColor="LCDgray" halign="center" transparent="1" zPosition="-1" />
+    <widget source="global.CurrentTime" render="FixedLabel" text=":" position="220,100" size="40,120" font="LCDIndication; 120" foregroundColor="LCDcolor1" halign="center" transparent="1">
+      <convert type="AlwaysTrue">
+      </convert>
+      <convert type="ConditionalShowHide">Blink</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="270,100" size="200,120" font="LCDIndication; 120" foregroundColor="LCDcolor1" halign="left" transparent="1">
+      <convert type="ClockToText">Format:%M</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="10,30" size="460,40" font="LCDTitles; 35" foregroundColor="LCDcolor2" halign="center" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="10,250" size="460,40" font="LCDTitles; 35" foregroundColor="LCDcolor2" halign="center" transparent="1">
+      <convert type="ClockToText">Format:%d.%m.%Y</convert>
+    </widget>
+  </screen>
+  <screen name="TemplatesStandbyDisplayWeather">
+    <!-- Clock Layer -->
+    <panel name="TemplatesDisplayClock" />
+    <!-- Weather Layer -->
+    <widget source="session.CurrentService" render="Label" position="10,95" size="460,80" font="LCDTitles; 40" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1">
+      <convert type="MSNWeather2">Location</convert>
+    </widget>
+    <widget source="session.CurrentService" render="PiconUni" path="CyberFHD/msnweather" position="10,185" size="128,128" zPosition="2" alphatest="blend">
+      <convert type="MSNWeather2">Picon</convert>
+    </widget>
+    <eLabel text="Temperature:" position="150,175" size="200,35" font="LCDGlobal; 30" foregroundColor="LCDcolor2" halign="left" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="350,175" size="120,35" font="LCDIndication; 35" foregroundColor="LCDcolor4" halign="right" transparent="1">
+      <convert type="MSNWeather2">Temp</convert>
+    </widget>
+    <eLabel text="Feelslike:" position="150,210" size="200,35" font="LCDGlobal; 30" foregroundColor="LCDcolor2" halign="left" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="350,210" size="120,35" font="LCDIndication; 35" foregroundColor="LCDcolor4" halign="right" transparent="1">
+      <convert type="MSNWeather2">Feelslike</convert>
+    </widget>
+    <eLabel text="Wind:" position="150,245" size="200,35" font="LCDGlobal; 30" foregroundColor="LCDcolor2" halign="left" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="250,245" size="220,35" font="LCDIndication; 35" foregroundColor="LCDcolor4" halign="right" transparent="1">
+      <convert type="MSNWeather2">Windspeed</convert>
+    </widget>
+    <eLabel text="Humidity:" position="150,280" size="200,35" font="LCDGlobal; 30" foregroundColor="LCDcolor2" halign="left" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="350,280" size="120,35" font="LCDIndication; 35" foregroundColor="LCDcolor4" halign="right" transparent="1">
+      <convert type="MSNWeather2">Humidity</convert>
+    </widget>
+  </screen>
+  <!-- # # # # # # # # # # Display Skins # # # # # # # # # #-->
+  <!-- ########## InfoBar Display ########## -->
+  <screen name="InfoBarSummary" position="0,0" size="320,240">
+    <panel name="TemplatesDisplayLayer" />
+    <panel name="TemplatesInfoBarDisplay" />
+    <widget source="session.Event_Now" render="Label" position="6,80" size="308,90" font="LCDGlobal; 26" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <panel name="TemplatesInfoBarDisplayProgress" />
+  </screen>
+  <!-- ########## InfoBar Movie Player ########## -->
+  <screen name="InfoBarMoviePlayerSummary" position="0,0" size="320,240">
+    <panel name="TemplatesDisplayLayer" />
+    <panel name="TemplatesMovieInfoBarDisplay" />
+    <widget source="session.CurrentService" render="Label" position="6,80" size="308,90" font="LCDGlobal; 26" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+    <panel name="TemplatesMovieInfoBarDisplayProgress" />
+  </screen>
+  <!-- ########## Channel Selection ########## -->
+  <!-- Channel Selection -->
+  <screen name="ChannelSelection_summary" position="0,0" size="320,240">
+    <panel name="TemplatesDisplayLayer" />
+    <panel name="TemplatesChannelSelectionDisplay" />
+    <widget source="parent.ServiceEvent" render="Label" position="6,80" size="308,90" font="LCDGlobal; 26" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <panel name="TemplatesChannelSelectionDisplayProgress" />
+  </screen>
+  <!-- Channel Context Menu -->
+  <screen name="ChannelContextMenuSummary" position="0,0" size="320,240">
+    <panel name="TemplatesDisplayLayer" />
+    <widget source="parent.Title" render="Label" position="6,6" size="308,70" font="LCDTitles;35" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1" />
+    <widget source="selected" render="Label" position="6,85" size="308,150" font="LCDGlobal; 26" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1" />
+  </screen>
+  <!-- ########## Radio Selection ########## -->
+  <screen name="ChannelSelectionRadio_summary" position="0,0" size="320,240">
+    <panel name="TemplatesDisplayLayer" />
+    <panel name="TemplatesRadioSelectionDisplay" />
+    <widget source="parent.ServiceEvent" render="Label" position="6,80" size="308,90" font="LCDGlobal; 26" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <panel name="TemplatesRadioSelectionDisplayProgress" />
+  </screen>
+  <!-- ########## Movie Selection ########## -->
+  <!-- Movie Selection -->
+  <screen name="MovieSelectionSummary" position="0,0" size="320,240">
+    <panel name="TemplatesDisplayLayer" />
+    <widget source="parent.Title" render="Label" position="6,6" size="308,70" font="LCDTitles;35" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1" />
+    <widget source="name" render="Label" position="6,85" size="308,150" font="LCDGlobal; 26" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1" />
+  </screen>
+  <!-- Movie Context Menu -->
+  <screen name="MovieContextMenuSummary" position="0,0" size="320,240">
+    <panel name="TemplatesDisplayLayer" />
+    <widget source="parent.Title" render="Label" position="6,6" size="308,70" font="LCDTitles;35" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1" />
+    <widget source="selected" render="Label" position="6,85" size="308,150" font="LCDGlobal; 26" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1" />
+  </screen>
+  <!-- ########## EPG Selection ########## -->
+  <!-- EPG Screens -->
+  <screen name="EPGSelection_summary" position="0,0" size="320,240">
+    <panel name="TemplatesDisplayLayer" />
+    <panel name="TemplatesEPGSelectionDisplay" />
+    <widget source="parent.Event" render="Label" position="6,80" size="308,90" font="LCDGlobal; 26" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <panel name="TemplatesEPGSelectionDisplayProgress" />
+  </screen>
+  <!-- Quick EPG -->
+  <screen name="QuickEPG_summary" position="0,0" size="320,240">
+    <panel name="TemplatesDisplayLayer" />
+    <panel name="TemplatesEPGSelectionDisplay" />
+    <widget source="parent.Event" render="Label" position="6,80" size="308,90" font="LCDGlobal; 26" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <panel name="TemplatesEPGSelectionDisplayProgress" />
+  </screen>
+  <!-- Graphical EPG -->
+  <screen name="GraphicalEPG_summary" position="0,0" size="320,240">
+    <panel name="TemplatesDisplayLayer" />
+    <panel name="TemplatesEPGSelectionDisplay" />
+    <widget source="parent.Event" render="Label" position="6,80" size="308,90" font="LCDGlobal; 26" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <panel name="TemplatesEPGSelectionDisplayProgress" />
+  </screen>
+  <!-- Graphical EPG PIG -->
+  <screen name="GraphicalEPGPIG_summary" position="0,0" size="320,240">
+    <panel name="TemplatesDisplayLayer" />
+    <panel name="TemplatesEPGSelectionDisplay" />
+    <widget source="parent.Event" render="Label" position="6,80" size="308,90" font="LCDGlobal; 26" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <panel name="TemplatesEPGSelectionDisplayProgress" />
+  </screen>
+  <!-- Graphical InfoBar EPG -->
+  <screen name="GraphicalInfoBarEPG_summary" position="0,0" size="320,240">
+    <panel name="TemplatesDisplayLayer" />
+    <panel name="TemplatesEPGSelectionDisplay" />
+    <widget source="parent.Event" render="Label" position="6,80" size="308,90" font="LCDGlobal; 26" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <panel name="TemplatesEPGSelectionDisplayProgress" />
+  </screen>
+  <!-- EPG Selection Multi -->
+  <screen name="EPGSelectionMulti_summary" position="0,0" size="320,240">
+    <panel name="TemplatesDisplayLayer" />
+    <panel name="TemplatesEPGSelectionDisplay" />
+    <widget source="parent.Event" render="Label" position="6,80" size="308,90" font="LCDGlobal; 26" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <panel name="TemplatesEPGSelectionDisplayProgress" />
+  </screen>
+  <!-- ########## Event View ########## -->
+  <!-- Event View -->
+  <screen name="EventView_summary" position="0,0" size="320,240">
+    <panel name="TemplatesDisplayLayer" />
+    <widget source="parent.Title" position="6,6" size="308,70" font="LCDTitles;35" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1" />
+    <widget source="parent.summary_description" render="Label" position="6,85" size="308,150" font="LCDGlobal; 26" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1" />
+  </screen>
+  <!-- Event View Simple -->
+  <screen name="EventViewSimple_summary" position="0,0" size="320,240">
+    <panel name="TemplatesDisplayLayer" />
+    <widget source="parent.Title" position="6,6" size="308,70" font="LCDTitles;35" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1" />
+    <widget source="parent.summary_description" render="Label" position="6,85" size="308,150" font="LCDGlobal; 26" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1" />
+  </screen>
+  <!-- ########## Menu ########## -->
+  <screen name="MenuSummary" position="0,0" size="320,240">
+    <panel name="TemplatesDisplayLayer" />
+    <widget source="parent.title" render="Label" position="6,6" size="308,70" font="LCDTitles;35" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1" />
+    <widget source="parent.menu" render="Label" position="6,85" size="308,150" font="LCDGlobal; 26" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1">
+      <convert type="StringListSelection" />
+    </widget>
+  </screen>
+  <!-- ########## Setup ########## -->
+  <screen name="SetupSummary" position="0,0" size="320,240">
+    <panel name="TemplatesDisplayLayer" />
+    <widget source="SetupTitle" render="Label" position="6,6" size="308,70" font="LCDTitles;35" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1" />
+    <widget source="SetupEntry" render="Label" position="6,85" size="308,70" font="LCDGlobal; 26" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1" />
+    <widget source="SetupValue" render="Label" position="6,165" size="308,70" font="LCDGlobal; 26" foregroundColor="LCDcolor3" halign="center" valign="center" transparent="1" />
+  </screen>
+  <!-- ########## Simple ########## -->
+  <screen name="SimpleSummary" position="0,0" size="320,240">
+    <panel name="TemplatesDisplayLayer" />
+    <widget source="SetupEntry" render="Label" position="6,6" size="308,228" font="LCDGlobal; 26" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1" />
+  </screen>
+  <!-- ########## About ########## -->
+  <screen name="AboutSummary" position="0,0" size="320,240">
+    <panel name="TemplatesDisplayLayer" />
+    <widget source="AboutText" render="Label" position="6,6" size="308,228" font="LCDGlobal; 18" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1" />
+  </screen>
+  <!-- ########## Plugin browser ########## -->
+  <screen name="PluginBrowserSummary" position="0,0" size="320,240">
+    <panel name="TemplatesDisplayLayer" />
+    <widget source="parent.Title" render="Label" position="6,6" size="308,70" font="LCDTitles;35" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1" />
+    <widget source="entry" render="Label" position="6,85" size="308,70" font="LCDGlobal; 26" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1" />
+    <widget source="desc" render="Label" position="6,165" size="308,70" font="LCDGlobal; 26" foregroundColor="LCDcolor3" halign="center" valign="center" transparent="1" />
+  </screen>
+  <!-- ########## Media Player ########## -->
+  <screen name="MediaPlayerLCDScreen" position="0,0" size="320,240">
+    <panel name="TemplatesDisplayLayer" />
+    <panel name="TemplatesDisplayClock" />
+    <widget name="text1" position="6,70" size="308,30" font="LCDGlobal; 26" foregroundColor="LCDcolor1" halign="left" transparent="1" />
+    <widget name="text3" position="6,105" size="308,30" font="LCDGlobal; 26" foregroundColor="LCDcolor2" halign="left" transparent="1" />
+    <widget name="text4" position="6,140" size="308,30" font="LCDGlobal; 26" foregroundColor="LCDcolor2" halign="left" transparent="1" />
+    <panel name="TemplatesMovieInfoBarDisplayProgress" />
+  </screen>
+  <!-- ########## Merlin Music Player ########## -->
+  <!-- Merlin Music Player LCD -->
+  <screen name="MerlinMusicPlayerLCDScreen" position="0,0" size="320,240">
+    <panel name="TemplatesDisplayLayer" />
+    <panel name="TemplatesDisplayClock" />
+    <widget name="text1" position="6,105" size="308,30" font="LCDGlobal; 26" foregroundColor="LCDcolor1" halign="left" transparent="1" />
+    <widget name="text4" position="6,140" size="308,30" font="LCDGlobal; 26" foregroundColor="LCDcolor2" halign="left" transparent="1" />
+    <panel name="TemplatesMovieInfoBarDisplayProgress" />
+  </screen>
+  <!-- Merlin Music Player LCD Text -->
+  <screen name="MerlinMusicPlayerLCDScreenText" position="0,0" size="320,240">
+    <panel name="TemplatesDisplayLayer" />
+    <panel name="TemplatesDisplayClock" />
+    <widget name="text3" position="6,70" size="308,30" font="LCDGlobal; 26" foregroundColor="LCDcolor2" halign="left" transparent="1" />
+    <widget name="text1" position="6,105" size="308,30" font="LCDGlobal; 26" foregroundColor="LCDcolor1" halign="left" transparent="1" />
+    <widget name="text4" position="6,140" size="308,30" font="LCDGlobal; 26" foregroundColor="LCDcolor2" halign="left" transparent="1" />
+    <panel name="TemplatesMovieInfoBarDisplayProgress" />
+  </screen>
+  <!-- ########## Choice Box ########## -->
+  <screen name="ChoiceBox_summary" position="0,0" size="320,240">
+    <panel name="TemplatesDisplayLayer" />
+    <widget source="parent.Title" render="Label" position="6,6" size="308,70" font="LCDTitles;35" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1" />
+    <widget source="parent.summary_selection" render="Label" position="6,85" size="308,150" font="LCDGlobal; 26" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1" />
+  </screen>
+  <!-- ########## Message Box ########## -->
+  <!-- Message Box -->
+  <screen name="MessageBox_summary" position="0,0" size="320,240">
+    <panel name="TemplatesDisplayLayer" />
+    <widget source="parent.Text" render="Label" position="6,6" size="308,70" font="LCDTitles;35" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1" />
+    <widget source="parent.selectedChoice" render="Label" position="6,85" size="308,150" font="LCDGlobal; 26" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1" />
+  </screen>
+  <!-- Message Box Simple -->
+  <screen name="MessageBoxSimple_summary" position="0,0" size="320,240">
+    <panel name="TemplatesDisplayLayer" />
+    <widget source="parent.Text" render="Label" position="6,6" size="308,70" font="LCDTitles;35" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1" />
+    <widget source="parent.selectedChoice" render="Label" position="6,85" size="308,150" font="LCDGlobal; 26" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1" />
+  </screen>
+  <!-- ########## Quick Menu ########## -->
+  <!-- Quick Menu -->
+  <screen name="QuickMenu_summary" position="0,0" size="320,240">
+    <panel name="TemplatesDisplayLayer" />
+    <widget source="parent.Title" render="Label" position="6,6" size="308,70" font="LCDTitles;35" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1" />
+    <widget source="parent.summary_description" render="Label" position="6,85" size="308,150" font="LCDGlobal; 26" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1" />
+  </screen>
+  <!-- Infopanel -->
+  <screen name="Infopanel_summary" position="0,0" size="320,240">
+    <panel name="TemplatesDisplayLayer" />
+    <widget source="parent.Title" render="Label" position="6,6" size="308,70" font="LCDTitles;32" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1" />
+    <widget source="parent.summary_description" render="Label" position="6,85" size="308,150" font="LCDGlobal; 26" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1" />
+  </screen>
+  <!-- ########## Softwaremanager ########## -->
+  <!-- Update Plugin -->
+  <screen name="UpdatePlugin_summary" position="0,0" size="320,240">
+    <panel name="TemplatesDisplayLayer" />
+    <widget source="parent.Title" render="Label" position="6,6" size="308,70" font="LCDTitles;35" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1" />
+    <widget source="parent.package" render="Label" position="6,85" size="308,70" font="LCDGlobal; 26" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1" />
+    <widget source="parent.status" render="Label" position="6,165" size="308,70" font="LCDGlobal; 26" foregroundColor="LCDcolor3" halign="center" valign="center" transparent="1" />
+  </screen>
+  <!-- Software Update -->
+  <screen name="SoftwareUpdateChanges_summary" position="0,0" size="320,240">
+    <panel name="TemplatesDisplayLayer" />
+    <widget source="parent.title_summary" render="Label" position="6,6" size="308,70" font="LCDTitles;35" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1" />
+    <widget source="parent.text_summary" render="Label" position="6,85" size="308,150" font="LCDGlobal; 26" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1" />
+  </screen>
+  <!-- Backup Selection -->
+  <screen name="BackupSelection_summary" position="0,0" size="320,240">
+    <panel name="TemplatesDisplayLayer" />
+    <widget source="parent.Title" render="Label" position="6,6" size="308,70" font="LCDTitles;35" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1" />
+    <widget source="parent.summary_description" render="Label" position="6,85" size="308,150" font="LCDGlobal; 26" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1" />
+  </screen>
+  <!-- Restore Screen -->
+  <screen name="RestoreScreen_summary" position="0,0" size="320,240">
+    <panel name="TemplatesDisplayLayer" />
+    <widget source="parent.Title" render="Label" position="6,6" size="308,70" font="LCDTitles;35" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1" />
+    <widget source="parent.summary_description" render="Label" position="6,85" size="308,150" font="LCDGlobal; 26" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1" />
+  </screen>
+  <!-- Installed Plugins -->
+  <screen name="installedPlugins_summary" position="0,0" size="320,240">
+    <panel name="TemplatesDisplayLayer" />
+    <widget source="parent.Title" render="Label" position="6,6" size="308,70" font="LCDTitles;35" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1" />
+    <widget source="parent.summary_description" render="Label" position="6,85" size="308,150" font="LCDGlobal; 26" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1" />
+  </screen>
+  <!-- Restore Plugins -->
+  <screen name="RestorePlugins_summary" position="0,0" size="320,240">
+    <panel name="TemplatesDisplayLayer" />
+    <widget source="parent.Title" render="Label" position="6,6" size="308,70" font="LCDTitles;35" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1" />
+    <widget source="parent.summary_description" render="Label" position="6,85" size="308,150" font="LCDGlobal; 26" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1" />
+  </screen>
+  <!-- Restart Network -->
+  <screen name="RestartNetwork_summary" position="0,0" size="320,240">
+    <panel name="TemplatesDisplayLayer" />
+    <widget source="parent.Title" render="Label" position="6,6" size="308,70" font="LCDTitles;35" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1" />
+    <widget source="parent.summary_description" render="Label" position="6,85" size="308,150" font="LCDGlobal; 26" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1" />
+  </screen>
+  <!-- ########## Service Scan ########## -->
+  <screen name="ServiceScanSummary" position="0,0" size="320,240">
+    <panel name="TemplatesDisplayLayer" />
+    <widget name="Title" position="6,6" size="308,70" font="LCDTitles;35" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1" />
+    <widget name="Service" position="6,85" size="308,90" font="LCDGlobal; 26" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1" />
+    <!-- Progress Layer -->
+    <panel name="TemplatesDisplayProgressLayer" />
+    <widget name="scan_progress" position="0,180" size="320,15" foregroundColor="LCDbackground4" transparent="1" zPosition="2" />
+  </screen>
+  <!-- ########## Standby ########## -->
+  <screen name="StandbySummary" position="0,0" size="320,240">
+    <panel name="TemplatesDisplayLayer" />
+    <panel name="TemplatesStandbyDisplay" />
+  </screen>
+  <!-- ########## Wizard ########## -->
+  <!-- Wizard -->
+  <screen name="WizardSummary" position="0,0" size="320,240">
+    <panel name="TemplatesDisplayLayer" />
+    <widget source="text" render="Label" position="6,6" size="308,70" font="LCDTitles;35" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1" />
+    <widget source="parent.list" render="Label" position="6,85" size="308,150" font="LCDGlobal; 26" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1">
+      <convert type="StringListSelection" />
+    </widget>
+  </screen>
+  <!-- Language Wizard -->
+  <screen name="LanguageWizardSummary" position="0,0" size="320,240">
+    <panel name="TemplatesDisplayLayer" />
+    <widget source="parent.summarytext" render="Label" position="6,6" size="308,70" font="LCDTitles;35" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1" />
+    <widget source="parent.summarylangname" render="Label" position="6,85" size="308,150" font="LCDGlobal; 26" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1" />
+  </screen>
+  <!-- Video Wizard -->
+  <screen name="VideoWizardSummary" position="0,0" size="320,240">
+    <panel name="TemplatesDisplayLayer" />
+    <widget name="text" render="Label" position="6,6" size="308,70" font="LCDTitles;35" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1" />
+    <widget source="parent.list" render="Label" position="6,85" size="308,150" font="LCDGlobal; 26" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1">
+      <convert type="StringListSelection" />
+    </widget>
+  </screen>
+</skin>

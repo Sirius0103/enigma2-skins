@@ -246,6 +246,13 @@ stylefullcolor = [
 	("0f0fff0", _("Honeydew")),
 	("0fffafa", _("Snow")),
 	("0ffffff", _("White"))]
+
+device = [
+	("uno4k", _("Uno4k")),
+#	("solo4k", _("Solo4k")),
+#	("ultimo4k", _("Ultimo4k"))]
+	("solo4k", _("Solo4k"))]
+
 fonts = [
 	("Roboto-Regular", _("Regular")),
 	("Roboto-Medium", _("Medium")),
@@ -291,6 +298,9 @@ else:
 		("TemplatesStandbyDisplayWeather", _("Weather"))]
 
 config.skin.cyberlcd = ConfigSubsection()
+
+config.skin.cyberlcd.device = ConfigSelection(default="Solo4k", choices = device)
+
 config.skin.cyberlcd.fonts = ConfigSelection(default="Roboto-Regular", choices = fonts)
 
 config.skin.cyberlcd.colorsetting = ConfigSelection(default="0", choices = colorsetting)
@@ -456,6 +466,9 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 		sep = "-"
 		char = 40
 		tab = " "*10
+		section = _("Devise")
+		list.append(getConfigListEntry(sep*(char-(len(section))/2) + tab + section + tab + sep*(char-(len(section))/2)))
+		list.append(getConfigListEntry(_("Your devise:"), config.skin.cyberlcd.device))
 		section = _("Fonts")
 		list.append(getConfigListEntry(sep*(char-(len(section))/2) + tab + section + tab + sep*(char-(len(section))/2)))
 		list.append(getConfigListEntry(_("Fonts:"), config.skin.cyberlcd.fonts))
@@ -587,6 +600,7 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 		try:
 	# user skin
 			skin_user = []
+			os.system("cp /usr/share/enigma2/CyberLCD/skin_%s.xml /usr/share/enigma2/CyberLCD/skin_default.xml" % (config.skin.cyberlcd.device.value))
 	# color`s
 			skin_user.append(["#50000000", "#" + config.skin.cyberlcd.backgroundtransparent.value + config.skin.cyberlcd.colorbackground1.value])
 			skin_user.append(["#5000ffff", "#" + config.skin.cyberlcd.foregroundtransparent.value + config.skin.cyberlcd.colorbackground4.value])
