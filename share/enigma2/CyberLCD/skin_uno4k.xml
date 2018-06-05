@@ -190,7 +190,7 @@
     <widget source="session.Event_Now" render="Progress" position="5,185" size="390,15" foregroundColor="LCDbackground4" transparent="1" zPosition="2">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <eLabel text="-" position="110,205" size="16,35" font="LCDIndication; 35" foregroundColor="LCDcolor4" halign="center" transparent="1" />
+    <eLabel text="-" position="115,205" size="16,35" font="LCDIndication; 35" foregroundColor="LCDcolor4" halign="center" transparent="1" />
     <widget source="session.Event_Now" render="Label" position="10,205" size="100,35" font="LCDIndication; 35" foregroundColor="LCDcolor4" halign="right" transparent="1">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Default</convert>
@@ -199,7 +199,7 @@
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
-    <widget source="session.Event_Now" render="Label" position="130,205" size="100,35" font="LCDIndication; 35" foregroundColor="LCDcolor4" halign="left" transparent="1">
+    <widget source="session.Event_Now" render="Label" position="135,205" size="100,35" font="LCDIndication; 35" foregroundColor="LCDcolor4" halign="left" transparent="1">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Default</convert>
     </widget>
@@ -307,7 +307,7 @@
     <widget source="parent.ServiceEvent" render="Progress" position="5,185" size="390,15" foregroundColor="LCDbackground4" transparent="1" zPosition="2">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <eLabel text="-" position="110,205" size="16,35" font="LCDIndication; 35" foregroundColor="LCDcolor4" halign="center" transparent="1" />
+    <eLabel text="-" position="115,205" size="16,35" font="LCDIndication; 35" foregroundColor="LCDcolor4" halign="center" transparent="1" />
     <widget source="parent.ServiceEvent" render="Label" position="10,205" size="100,35" font="LCDIndication; 35" foregroundColor="LCDcolor4" halign="right" transparent="1">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Default</convert>
@@ -316,7 +316,7 @@
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
-    <widget source="parent.ServiceEvent" render="Label" position="130,205" size="100,35" font="LCDIndication; 35" foregroundColor="LCDcolor4" halign="left" transparent="1">
+    <widget source="parent.ServiceEvent" render="Label" position="135,205" size="100,35" font="LCDIndication; 35" foregroundColor="LCDcolor4" halign="left" transparent="1">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Default</convert>
     </widget>
@@ -338,7 +338,7 @@
     <widget source="parent.ServiceEvent" render="Progress" position="5,185" size="390,15" foregroundColor="LCDbackground4" transparent="1" zPosition="2">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <eLabel text="-" position="110,205" size="16,35" font="LCDIndication; 35" foregroundColor="LCDcolor4" halign="center" transparent="1" />
+    <eLabel text="-" position="115,205" size="16,35" font="LCDIndication; 35" foregroundColor="LCDcolor4" halign="center" transparent="1" />
     <widget source="parent.ServiceEvent" render="Label" position="10,205" size="100,35" font="LCDIndication; 35" foregroundColor="LCDcolor4" halign="right" transparent="1">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Default</convert>
@@ -347,7 +347,7 @@
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
-    <widget source="parent.ServiceEvent" render="Label" position="130,205" size="100,35" font="LCDIndication; 35" foregroundColor="LCDcolor4" halign="left" transparent="1">
+    <widget source="parent.ServiceEvent" render="Label" position="135,205" size="100,35" font="LCDIndication; 35" foregroundColor="LCDcolor4" halign="left" transparent="1">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Default</convert>
     </widget>
@@ -375,7 +375,7 @@
     <widget source="parent.Event" render="Progress" position="5,185" size="390,15" foregroundColor="LCDbackground4" transparent="1" zPosition="2">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <eLabel text="-" position="110,205" size="16,35" font="LCDIndication; 35" foregroundColor="LCDcolor4" halign="center" transparent="1" />
+    <eLabel text="-" position="115,205" size="16,35" font="LCDIndication; 35" foregroundColor="LCDcolor4" halign="center" transparent="1" />
     <widget source="parent.Event" render="Label" position="10,205" size="100,35" font="LCDIndication; 35" foregroundColor="LCDcolor4" halign="right" transparent="1">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Default</convert>
@@ -384,7 +384,7 @@
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
-    <widget source="parent.Event" render="Label" position="130,205" size="100,35" font="LCDIndication; 35" foregroundColor="LCDcolor4" halign="left" transparent="1">
+    <widget source="parent.Event" render="Label" position="135,205" size="100,35" font="LCDIndication; 35" foregroundColor="LCDcolor4" halign="left" transparent="1">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Default</convert>
     </widget>
@@ -667,7 +667,7 @@
   <!-- Infopanel -->
   <screen name="Infopanel_summary" position="0,0" size="400,240">
     <panel name="TemplatesDisplayLayer" />
-    <widget source="parent.Title" render="Label" position="10,5" size="380,70" font="LCDTitles;32" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1" />
+    <widget source="parent.Title" render="Label" position="10,5" size="380,80" font="LCDTitles; 40" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1" />
     <widget source="parent.summary_description" render="Label" position="10,95" size="380,140" font="LCDGlobal; 30" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1" />
   </screen>
   <!-- ########## Softwaremanager ########## -->
