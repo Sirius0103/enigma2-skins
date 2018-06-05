@@ -56,26 +56,26 @@
   </screen>
   <screen name="TemplatesDisplayClockDefault">
     <!-- Clock Layer -->
-    <widget source="global.CurrentTime" render="Label" position="120,30" size="100,60" font="LCDIndication; 60" foregroundColor="LCDcolor1" halign="right" transparent="1">
+    <widget source="global.CurrentTime" render="Label" position="115,25" size="110,70" font="LCDIndication; 70" foregroundColor="LCDcolor1" halign="right" transparent="1">
       <convert type="ClockToText">Format:%H</convert>
     </widget>
-    <eLabel text=":" position="230,30" size="20,60" font="LCDIndication; 60" foregroundColor="LCDcolor1" halign="center" transparent="1" zPosition="-1" />
-    <widget source="global.CurrentTime" render="Label" position="260,30" size="100,60" font="LCDIndication; 60" foregroundColor="LCDcolor1" halign="left" transparent="1">
+    <eLabel text=":" position="230,25" size="20,70" font="LCDIndication; 70" foregroundColor="LCDcolor1" halign="center" transparent="1" zPosition="-1" />
+    <widget source="global.CurrentTime" render="Label" position="255,25" size="110,70" font="LCDIndication; 70" foregroundColor="LCDcolor1" halign="left" transparent="1">
       <convert type="ClockToText">Format:%M</convert>
     </widget>
   </screen>
   <screen name="TemplatesDisplayClockStyle">
     <!-- Clock Layer -->
-    <widget source="global.CurrentTime" render="Label" position="120,30" size="100,60" font="LCDIndication; 60" foregroundColor="LCDcolor1" halign="right" transparent="1">
+    <widget source="global.CurrentTime" render="Label" position="115,25" size="110,70" font="LCDIndication; 70" foregroundColor="LCDcolor1" halign="right" transparent="1">
       <convert type="ClockToText">Format:%H</convert>
     </widget>
-    <eLabel text=":" position="230,30" size="20,60" font="LCDIndication; 60" foregroundColor="LCDgray" halign="center" transparent="1" zPosition="-1" />
-    <widget source="global.CurrentTime" render="FixedLabel" text=":" position="230,30" size="20,60" font="LCDIndication; 60" foregroundColor="LCDcolor1" halign="center" transparent="1">
+    <eLabel text=":" position="230,25" size="20,70" font="LCDIndication; 70" foregroundColor="LCDgray" halign="center" transparent="1" zPosition="-1" />
+    <widget source="global.CurrentTime" render="FixedLabel" text=":" position="230,25" size="20,70" font="LCDIndication; 70" foregroundColor="LCDcolor1" halign="center" transparent="1">
       <convert type="AlwaysTrue">
       </convert>
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="260,30" size="100,60" font="LCDIndication; 60" foregroundColor="LCDcolor1" halign="left" transparent="1">
+    <widget source="global.CurrentTime" render="Label" position="255,25" size="110,70" font="LCDIndication; 70" foregroundColor="LCDcolor1" halign="left" transparent="1">
       <convert type="ClockToText">Format:%M</convert>
     </widget>
   </screen>

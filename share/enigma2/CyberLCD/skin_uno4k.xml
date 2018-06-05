@@ -56,33 +56,33 @@
   </screen>
   <screen name="TemplatesDisplayClockDefault">
     <!-- Clock Layer -->
-    <widget source="global.CurrentTime" render="Label" position="73,25" size="75,45" font="LCDIndication; 45" foregroundColor="LCDcolor1" halign="right" transparent="1">
+    <widget source="global.CurrentTime" render="Label" position="77,20" size="75,45" font="LCDIndication; 45" foregroundColor="LCDcolor1" halign="right" transparent="1">
       <convert type="ClockToText">Format:%H</convert>
     </widget>
-    <eLabel text=":" position="150,25" size="15,45" font="LCDIndication; 45" foregroundColor="LCDcolor1" halign="center" transparent="1" zPosition="-1" />
-    <widget source="global.CurrentTime" render="Label" position="167,25" size="75,45" font="LCDIndication; 45" foregroundColor="LCDcolor1" halign="left" transparent="1">
+    <eLabel text=":" position="155,20" size="15,45" font="LCDIndication; 45" foregroundColor="LCDcolor1" halign="center" transparent="1" zPosition="-1" />
+    <widget source="global.CurrentTime" render="Label" position="173,20" size="75,45" font="LCDIndication; 45" foregroundColor="LCDcolor1" halign="left" transparent="1">
       <convert type="ClockToText">Format:%M</convert>
     </widget>
   </screen>
   <screen name="TemplatesDisplayClockStyle">
     <!-- Clock Layer -->
-    <widget source="global.CurrentTime" render="Label" position="73,25" size="75,45" font="LCDIndication; 45" foregroundColor="LCDcolor1" halign="right" transparent="1">
+    <widget source="global.CurrentTime" render="Label" position="77,20" size="75,45" font="LCDIndication; 45" foregroundColor="LCDcolor1" halign="right" transparent="1">
       <convert type="ClockToText">Format:%H</convert>
     </widget>
-    <eLabel text=":" position="150,25" size="15,45" font="LCDIndication; 45" foregroundColor="LCDgray" halign="center" transparent="1" zPosition="-1" />
-    <widget source="global.CurrentTime" render="FixedLabel" text=":" position="150,25" size="15,45" font="LCDIndication; 45" foregroundColor="LCDcolor1" halign="center" transparent="1">
+    <eLabel text=":" position="155,20" size="15,45" font="LCDIndication; 45" foregroundColor="LCDgray" halign="center" transparent="1" zPosition="-1" />
+    <widget source="global.CurrentTime" render="FixedLabel" text=":" position="155,20" size="15,45" font="LCDIndication; 45" foregroundColor="LCDcolor1" halign="center" transparent="1">
       <convert type="AlwaysTrue">
       </convert>
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="167,25" size="75,45" font="LCDIndication; 45" foregroundColor="LCDcolor1" halign="left" transparent="1">
+    <widget source="global.CurrentTime" render="Label" position="173,20" size="75,45" font="LCDIndication; 45" foregroundColor="LCDcolor1" halign="left" transparent="1">
       <convert type="ClockToText">Format:%M</convert>
     </widget>
   </screen>
   <!--  ########## Templates Progress Layer ########## -->
   <screen name="TemplatesDisplayProgressLayerDefault">
     <!-- Templates Progress -->
-    <eLabel position="0,180" size="320,15" backgroundColor="LCDgray" zPosition="1" />
+    <eLabel position="5,180" size="310,15" backgroundColor="LCDgray" zPosition="1" />
   </screen>
   <screen name="TemplatesDisplayProgressLayerStandard">
     <!-- Progress Layer -->
@@ -92,7 +92,6 @@
     <!-- Progress Layer -->
     <panel name="TemplatesDisplayProgressLayerDefault" />
     <!-- Layer -->
-    <eLabel position="0,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
     <eLabel position="6,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
     <eLabel position="12,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
     <eLabel position="18,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
@@ -102,8 +101,8 @@
     <eLabel position="42,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
     <eLabel position="48,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
     <eLabel position="54,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
-    <!-- Layer -->
     <eLabel position="60,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
+    <!-- Layer -->
     <eLabel position="66,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
     <eLabel position="72,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
     <eLabel position="78,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
@@ -113,8 +112,8 @@
     <eLabel position="102,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
     <eLabel position="108,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
     <eLabel position="114,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
-    <!-- Layer -->
     <eLabel position="120,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
+    <!-- Layer -->
     <eLabel position="126,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
     <eLabel position="132,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
     <eLabel position="138,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
@@ -124,8 +123,8 @@
     <eLabel position="162,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
     <eLabel position="168,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
     <eLabel position="174,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
-    <!-- Layer -->
     <eLabel position="180,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
+    <!-- Layer -->
     <eLabel position="186,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
     <eLabel position="192,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
     <eLabel position="198,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
@@ -135,8 +134,8 @@
     <eLabel position="222,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
     <eLabel position="228,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
     <eLabel position="234,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
-    <!-- Layer -->
     <eLabel position="240,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
+    <!-- Layer -->
     <eLabel position="246,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
     <eLabel position="252,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
     <eLabel position="258,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
@@ -146,11 +145,10 @@
     <eLabel position="282,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
     <eLabel position="288,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
     <eLabel position="294,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
-    <!-- Layer -->
     <eLabel position="300,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
+    <!-- Layer -->
     <eLabel position="306,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
     <eLabel position="312,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
-    <eLabel position="318,180" size="3,15" backgroundColor="LCDbackground1" zPosition="3" />
   </screen>
   <!--  ########## Templates InfoBar Display ########## -->
   <screen name="TemplatesInfoBarDisplayName">
@@ -174,7 +172,7 @@
   <screen name="TemplatesInfoBarDisplayProgress">
     <!-- Progress Layer -->
     <panel name="TemplatesDisplayProgressLayer" />
-    <widget source="session.Event_Now" render="Progress" position="0,180" size="320,15" foregroundColor="LCDbackground4" transparent="1" zPosition="2">
+    <widget source="session.Event_Now" render="Progress" position="5,180" size="310,15" foregroundColor="LCDbackground4" transparent="1" zPosition="2">
       <convert type="EventTime">Progress</convert>
     </widget>
     <eLabel text="-" position="102,205" size="16,35" font="LCDIndication; 35" foregroundColor="LCDcolor4" halign="center" transparent="1" />
@@ -232,7 +230,7 @@
   <screen name="TemplatesMovieInfoBarDisplayProgress">
     <!-- Progress Layer -->
     <panel name="TemplatesDisplayProgressLayer" />
-    <widget source="session.CurrentService" render="Progress" position="0,180" size="320,15" foregroundColor="LCDbackground4" transparent="1" zPosition="2">
+    <widget source="session.CurrentService" render="Progress" position="5,180" size="310,15" foregroundColor="LCDbackground4" transparent="1" zPosition="2">
       <convert type="ServicePosition">Position</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="5,205" size="150,35" font="LCDIndication; 35" foregroundColor="LCDcolor4" halign="left" transparent="1">
@@ -291,7 +289,7 @@
   <screen name="TemplatesChannelSelectionDisplayProgress">
     <!-- Progress Layer -->
     <panel name="TemplatesDisplayProgressLayer" />
-    <widget source="parent.ServiceEvent" render="Progress" position="0,180" size="320,15" foregroundColor="LCDbackground4" transparent="1" zPosition="2">
+    <widget source="parent.ServiceEvent" render="Progress" position="5,180" size="310,15" foregroundColor="LCDbackground4" transparent="1" zPosition="2">
       <convert type="EventTime">Progress</convert>
     </widget>
     <eLabel text="-" position="102,205" size="16,35" font="LCDIndication; 35" foregroundColor="LCDcolor4" halign="center" transparent="1" />
@@ -322,7 +320,7 @@
   <screen name="TemplatesRadioSelectionDisplayProgress">
     <!-- Progress Layer -->
     <panel name="TemplatesDisplayProgressLayer" />
-    <widget source="parent.ServiceEvent" render="Progress" position="0,180" size="320,15" foregroundColor="LCDbackground4" transparent="1" zPosition="2">
+    <widget source="parent.ServiceEvent" render="Progress" position="5,180" size="310,15" foregroundColor="LCDbackground4" transparent="1" zPosition="2">
       <convert type="EventTime">Progress</convert>
     </widget>
     <eLabel text="-" position="102,205" size="16,35" font="LCDIndication; 35" foregroundColor="LCDcolor4" halign="center" transparent="1" />
@@ -708,7 +706,7 @@
     <widget name="Service" position="6,85" size="308,90" font="LCDGlobal; 26" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1" />
     <!-- Progress Layer -->
     <panel name="TemplatesDisplayProgressLayer" />
-    <widget name="scan_progress" position="0,180" size="320,15" foregroundColor="LCDbackground4" transparent="1" zPosition="2" />
+    <widget name="scan_progress" position="5,180" size="310,15" foregroundColor="LCDbackground4" transparent="1" zPosition="2" />
   </screen>
   <!-- ########## Standby ########## -->
   <screen name="StandbySummary" position="0,0" size="320,240">
