@@ -175,7 +175,7 @@
   <screen name="TemplatesInfoBarDisplayPicon">
     <panel name="TemplatesInfoBarDisplayIndication" />
     <!-- Picon Layer -->
-    <widget source="session.CurrentService" render="Picon" position="90,0" size="140,85" zPosition="2" alphatest="blend">
+    <widget source="session.CurrentService" render="Picon" position="135,0" size="140,85" zPosition="2" alphatest="blend">
       <convert type="ServiceName">Reference</convert>
     </widget>
   </screen>
@@ -293,7 +293,7 @@
   </screen>
   <screen name="TemplatesChannelSelectionDisplayPicon">
     <!-- Picon Layer -->
-    <widget source="parent.ServiceEvent" render="Picon" position="90,0" size="140,85" zPosition="2" alphatest="blend">
+    <widget source="parent.ServiceEvent" render="Picon" position="135,0" size="140,85" zPosition="2" alphatest="blend">
       <convert type="ServiceName">Reference</convert>
     </widget>
   </screen>
