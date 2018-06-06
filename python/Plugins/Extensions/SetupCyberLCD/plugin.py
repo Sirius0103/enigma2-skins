@@ -648,7 +648,7 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 			os.system("cp /tmp/version %sSetupCyberLCD/version" % (pluginpath))
 	# install plugin
 			os.system("cp /tmp/plugin.py %sSetupCyberLCD/plugin.py" % (pluginpath))
-			os.system("cp /tmp/plugin.py %sSetupCyberLCD/locale/ru/LC_MESSAGES/SetupCyberLCD.mo" % (pluginpath))
+			os.system("cp /tmp/SetupCyberLCD.mo %sSetupCyberLCD/locale/ru/LC_MESSAGES/SetupCyberLCD.mo" % (pluginpath))
 	# install skin
 			os.system("cp /tmp/skin_solo4k.xml %sCyberLCD/skin_solo4k.xml" % (skinpath))
 			os.system("cp /tmp/skin_uno4k.xml %sCyberLCD/skin_uno4k.xml" % (skinpath))
