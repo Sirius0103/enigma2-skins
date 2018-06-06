@@ -648,6 +648,7 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 			os.system("cp /tmp/version %sSetupCyberLCD/version" % (pluginpath))
 	# install plugin
 			os.system("cp /tmp/plugin.py %sSetupCyberLCD/plugin.py" % (pluginpath))
+			os.system("cp /tmp/plugin.py %sSetupCyberLCD/locale/ru/LC_MESSAGES/SetupCyberLCD.mo" % (pluginpath))
 	# install skin
 			os.system("cp /tmp/skin_solo4k.xml %sCyberLCD/skin_solo4k.xml" % (skinpath))
 			os.system("cp /tmp/skin_uno4k.xml %sCyberLCD/skin_uno4k.xml" % (skinpath))
@@ -666,29 +667,32 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 	def download(self):
 	# download plugin
 		gitfile01 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberLCD/plugin.py"
+		gitfile02 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberLCD/locale/ru/LC_MESSAGES/SetupCyberLCD.mo"
 	# download skin
-		gitfile02 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberLCD/skin_solo4k.xml"
-		gitfile03 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberLCD/skin_uno4k.xml"
-		gitfile04 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberLCD/skin_ultimo4k.xml"
+		gitfile03 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberLCD/skin_solo4k.xml"
+		gitfile04 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberLCD/skin_uno4k.xml"
+		gitfile05 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberLCD/skin_ultimo4k.xml"
 	# download converter
-		gitfile05 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/AlwaysTrue.py"
+		gitfile06 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/AlwaysTrue.py"
 	# download renderer
-		gitfile06 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/AnimatedWeatherPixmap.py"
-		gitfile07 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/PiconUni.py"
+		gitfile07 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/AnimatedWeatherPixmap.py"
+		gitfile08 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/PiconUni.py"
 
 		try:
 			urllib.urlretrieve (gitfile01, "/tmp/plugin.py")
-			urllib.urlretrieve (gitfile02, "/tmp/skin_solo4k.xml")
-			urllib.urlretrieve (gitfile03, "/tmp/skin_uno4k.xml")
-			urllib.urlretrieve (gitfile04, "/tmp/skin_ultimo4k.xml")
-			urllib.urlretrieve (gitfile05, "/tmp/AlwaysTrue.py")
-			urllib.urlretrieve (gitfile06, "/tmp/AnimatedWeatherPixmap.py")
-			urllib.urlretrieve (gitfile07, "/tmp/PiconUni.py")
+			urllib.urlretrieve (gitfile02, "/tmp/SetupCyberLCD.mo")
+			urllib.urlretrieve (gitfile03, "/tmp/skin_solo4k.xml")
+			urllib.urlretrieve (gitfile04, "/tmp/skin_uno4k.xml")
+			urllib.urlretrieve (gitfile05, "/tmp/skin_ultimo4k.xml")
+			urllib.urlretrieve (gitfile06, "/tmp/AlwaysTrue.py")
+			urllib.urlretrieve (gitfile07, "/tmp/AnimatedWeatherPixmap.py")
+			urllib.urlretrieve (gitfile08, "/tmp/PiconUni.py")
 		except:
 			pass
 
 		if fileExists("/tmp/version")\
 			and fileExists("/tmp/plugin.py")\
+			and fileExists("/tmp/SetupCyberLCD.mo")\
 			and fileExists("/tmp/skin_solo4k.xml")\
 			and fileExists("/tmp/skin_uno4k.xml")\
 			and fileExists("/tmp/skin_ultimo4k.xml")\
