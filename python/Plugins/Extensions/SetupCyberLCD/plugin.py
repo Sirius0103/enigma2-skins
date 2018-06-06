@@ -288,13 +288,15 @@ widgetepgselection = [
 	("TemplatesEPGSelectionDisplayClock", _("Clock"))]
 
 if not fileExists("/usr/lib/enigma2/python/Components/Converter/MSNWeather2.py")\
-	or not fileExists("/usr/lib/enigma2/python/Components/Renderer/PiconUni.py"):
+	or not fileExists("/usr/lib/enigma2/python/Components/Renderer/PiconUni.py")\
+	or not fileExists("/usr/lib/enigma2/python/Components/Renderer/AnimatedWeatherPixmap.py"):
 	widgetstandby = [
 		("TemplatesStandbyDisplayClock", _("Clock"))]
 else:
 	widgetstandby = [
 		("TemplatesStandbyDisplayClock", _("Clock")),
-		("TemplatesStandbyDisplayWeather", _("Weather MSN"))]
+		("TemplatesStandbyDisplayWeatherMSN", _("Weather MSN")),
+		("TemplatesStandbyDisplayWeatherMSNAnimated", _("Animated Weather MSN"))]
 
 config.skin.cyberlcd = ConfigSubsection()
 
@@ -647,11 +649,14 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 	# install plugin
 			os.system("cp /tmp/plugin.py %sSetupCyberLCD/plugin.py" % (pluginpath))
 	# install skin
-			os.system("cp /tmp/skin_default.xml %sCyberLCD/skin_default.xml" % (skinpath))
+			os.system("cp /tmp/skin_solo4k.xml %sCyberLCD/skin_solo4k.xml" % (skinpath))
+			os.system("cp /tmp/skin_uno4k.xml %sCyberLCD/skin_uno4k.xml" % (skinpath))
+			os.system("cp /tmp/skin_ultimo4k.xml %sCyberLCD/skin_ultimo4k.xml" % (skinpath))
 	# install converter
 			os.system("cp /tmp/AlwaysTrue.py %sConverter/AlwaysTrue.py" % (componentspath))
 			os.system("cp %sWeatherMSN/components/MSNWeather2.py %sConverter/MSNWeather2.py" % (pluginpath, componentspath))
 	# install renderer
+			os.system("cp /tmp/AnimatedWeatherPixmap.py %sRenderer/AnimatedWeatherPixmap.py" % (componentspath))
 			os.system("cp /tmp/PiconUni.py %sRenderer/PiconUni.py" % (componentspath))
 	# end
 		except:
@@ -662,24 +667,33 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 	# download plugin
 		gitfile01 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberLCD/plugin.py"
 	# download skin
-		gitfile02 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberLCD/skin_default.xml"
+		gitfile02 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberLCD/skin_solo4k.xml"
+		gitfile03 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberLCD/skin_uno4k.xml"
+		gitfile04 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberLCD/skin_ultimo4k.xml"
 	# download converter
-		gitfile03 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/AlwaysTrue.py"
+		gitfile05 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/AlwaysTrue.py"
 	# download renderer
-		gitfile04 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/PiconUni.py"
+		gitfile06 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/AnimatedWeatherPixmap.py"
+		gitfile07 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/PiconUni.py"
 
 		try:
 			urllib.urlretrieve (gitfile01, "/tmp/plugin.py")
-			urllib.urlretrieve (gitfile02, "/tmp/skin_default.xml")
-			urllib.urlretrieve (gitfile03, "/tmp/AlwaysTrue.py")
-			urllib.urlretrieve (gitfile04, "/tmp/PiconUni.py")
+			urllib.urlretrieve (gitfile02, "/tmp/skin_solo4k.xml")
+			urllib.urlretrieve (gitfile03, "/tmp/skin_uno4k.xml")
+			urllib.urlretrieve (gitfile04, "/tmp/skin_ultimo4k.xml")
+			urllib.urlretrieve (gitfile05, "/tmp/AlwaysTrue.py")
+			urllib.urlretrieve (gitfile06, "/tmp/AnimatedWeatherPixmap.py")
+			urllib.urlretrieve (gitfile07, "/tmp/PiconUni.py")
 		except:
 			pass
 
 		if fileExists("/tmp/version")\
 			and fileExists("/tmp/plugin.py")\
-			and fileExists("/tmp/skin_default.xml")\
+			and fileExists("/tmp/skin_solo4k.xml")\
+			and fileExists("/tmp/skin_uno4k.xml")\
+			and fileExists("/tmp/skin_ultimo4k.xml")\
 			and fileExists("/tmp/AlwaysTrue.py")\
+			and fileExists("/tmp/AnimatedWeatherPixmap.py")\
 			and fileExists("/tmp/PiconUni.py"):
 			self.install()
 
@@ -701,7 +715,7 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 		self.session.openWithCallback(self.restart, MessageBox,_("Do you want to restart the GUI now ?"), MessageBox.TYPE_YESNO)
 
 	def error(self):
-		os.system("cp /usr/share/enigma2/CyberLCD/skin_default.xml /etc/enigma2/skin_user.xml")
+		os.system("rm -f /etc/enigma2/skin_user.xml")
 		self.session.open(MessageBox, _("Error by processing !!!"), MessageBox.TYPE_ERROR)
 		self.restart()
 

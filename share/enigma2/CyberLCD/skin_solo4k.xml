@@ -407,7 +407,7 @@
       <convert type="ClockToText">Format:%d.%m.%Y</convert>
     </widget>
   </screen>
-  <screen name="TemplatesStandbyDisplayWeather">
+  <screen name="TemplatesStandbyDisplayWeatherMSN">
     <!-- Clock Layer -->
     <panel name="TemplatesDisplayClock" />
     <!-- Weather Layer -->
@@ -415,6 +415,33 @@
       <convert type="MSNWeather2">Location</convert>
     </widget>
     <widget source="session.CurrentService" render="PiconUni" path="CyberFHD/msnweather" position="10,185" size="128,128" zPosition="2" alphatest="blend">
+      <convert type="MSNWeather2">Picon</convert>
+    </widget>
+    <eLabel text="Temperature:" position="150,175" size="200,35" font="LCDGlobal; 30" foregroundColor="LCDcolor2" halign="left" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="350,175" size="120,35" font="LCDIndication; 35" foregroundColor="LCDcolor4" halign="right" transparent="1">
+      <convert type="MSNWeather2">Temp</convert>
+    </widget>
+    <eLabel text="Feelslike:" position="150,210" size="200,35" font="LCDGlobal; 30" foregroundColor="LCDcolor2" halign="left" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="350,210" size="120,35" font="LCDIndication; 35" foregroundColor="LCDcolor4" halign="right" transparent="1">
+      <convert type="MSNWeather2">Feelslike</convert>
+    </widget>
+    <eLabel text="Wind:" position="150,245" size="200,35" font="LCDGlobal; 30" foregroundColor="LCDcolor2" halign="left" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="250,245" size="220,35" font="LCDIndication; 35" foregroundColor="LCDcolor4" halign="right" transparent="1">
+      <convert type="MSNWeather2">Windspeed</convert>
+    </widget>
+    <eLabel text="Humidity:" position="150,280" size="200,35" font="LCDGlobal; 30" foregroundColor="LCDcolor2" halign="left" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="350,280" size="120,35" font="LCDIndication; 35" foregroundColor="LCDcolor4" halign="right" transparent="1">
+      <convert type="MSNWeather2">Humidity</convert>
+    </widget>
+  </screen>
+  <screen name="TemplatesStandbyDisplayWeatherMSNAnimated">
+    <!-- Clock Layer -->
+    <panel name="TemplatesDisplayClock" />
+    <!-- Weather Layer -->
+    <widget source="session.CurrentService" render="Label" position="10,95" size="460,80" font="LCDTitles; 40" foregroundColor="LCDcolor1" halign="center" valign="center" transparent="1">
+      <convert type="MSNWeather2">Location</convert>
+    </widget>
+    <widget source="session.CurrentService" render="AnimatedWeatherPixmap" path="/usr/share/enigma2/CyberFHD/msnweatheranimated" position="10,185" size="128,128" zPosition="2" alphatest="blend">
       <convert type="MSNWeather2">Picon</convert>
     </widget>
     <eLabel text="Temperature:" position="150,175" size="200,35" font="LCDGlobal; 30" foregroundColor="LCDcolor2" halign="left" transparent="1" />
