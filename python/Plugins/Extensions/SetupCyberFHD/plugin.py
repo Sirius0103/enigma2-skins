@@ -839,6 +839,7 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 			os.system("cp /tmp/version %sSetupCyberFHD/version" % (pluginpath))
 	# install plugin
 			os.system("cp /tmp/plugin.py %sSetupCyberFHD/plugin.py" % (pluginpath))
+			os.system("cp /tmp/SetupCyberFHD.mo %sSetupCyberFHD/locale/ru/LC_MESSAGES/SetupCyberFHD.mo" % (pluginpath))
 	# install skin
 			os.system("cp /tmp/skin.xml %sCyberFHD/skin.xml" % (skinpath))
 			os.system("cp /tmp/skin_default.xml %sCyberFHD/skin_default.xml" % (skinpath))
@@ -870,55 +871,58 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 	def download(self):
 	# download plugin
 		gitfile01 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberFHD/plugin.py"
+		gitfile02 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberFHD/locale/ru/LC_MESSAGES/SetupCyberFHD.mo"
 	# download skin
-		gitfile02 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberFHD/skin.xml"
-		gitfile03 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberFHD/skin_default.xml"
-		gitfile04 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberFHD/skin_templates.xml"
-		gitfile05 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberFHD/skin_templates_default.xml"
-		gitfile06 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberFHD/skin_extra.xml"
+		gitfile03 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberFHD/skin.xml"
+		gitfile04 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberFHD/skin_default.xml"
+		gitfile05 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberFHD/skin_templates.xml"
+		gitfile06 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberFHD/skin_templates_default.xml"
+		gitfile07 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberFHD/skin_extra.xml"
 	# download converter
-		gitfile07 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/AlwaysTrue.py"
-		gitfile08 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/AC3DownMixStatus.py"
-		gitfile09 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/CaidInfo2.py"
-		gitfile10 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/CamdInfo3.py"
-		gitfile11 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/EventName2.py"
-		gitfile12 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/FrontendInfo2.py"
-		gitfile13 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/ModuleControl.py"
-		gitfile14 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/ProgressDiskSpaceInfo.py"
-		gitfile15 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/ServiceInfoEX.py"
-		gitfile16 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/ServiceName2.py"
+		gitfile08 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/AlwaysTrue.py"
+		gitfile09 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/AC3DownMixStatus.py"
+		gitfile10 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/CaidInfo2.py"
+		gitfile11 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/CamdInfo3.py"
+		gitfile12 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/EventName2.py"
+		gitfile13 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/FrontendInfo2.py"
+		gitfile14 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/ModuleControl.py"
+		gitfile15 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/ProgressDiskSpaceInfo.py"
+		gitfile16 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/ServiceInfoEX.py"
+		gitfile17 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/ServiceName2.py"
 	# download renderer
-		gitfile17 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/AnimatedWeatherPixmap.py"
-		gitfile18 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/PiconUni.py"
-		gitfile19 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/RendVolumeText.py"
-		gitfile20 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/Watches.py"
+		gitfile18 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/AnimatedWeatherPixmap.py"
+		gitfile19 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/PiconUni.py"
+		gitfile20 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/RendVolumeText.py"
+		gitfile21 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/Watches.py"
 
 		try:
 			urllib.urlretrieve (gitfile01, "/tmp/plugin.py")
-			urllib.urlretrieve (gitfile02, "/tmp/skin.xml")
-			urllib.urlretrieve (gitfile03, "/tmp/skin_default.xml")
-			urllib.urlretrieve (gitfile04, "/tmp/skin_templates.xml")
+			urllib.urlretrieve (gitfile02, "/tmp/SetupCyberFHD.mo")
+			urllib.urlretrieve (gitfile03, "/tmp/skin.xml")
+			urllib.urlretrieve (gitfile04, "/tmp/skin_default.xml")
+			urllib.urlretrieve (gitfile06, "/tmp/skin_templates.xml")
 			urllib.urlretrieve (gitfile05, "/tmp/skin_templates_default.xml")
-			urllib.urlretrieve (gitfile06, "/tmp/skin_extra.xml")
-			urllib.urlretrieve (gitfile07, "/tmp/AlwaysTrue.py")
-			urllib.urlretrieve (gitfile08, "/tmp/AC3DownMixStatus.py")
-			urllib.urlretrieve (gitfile09, "/tmp/CaidInfo2.py")
-			urllib.urlretrieve (gitfile10, "/tmp/CamdInfo3.py")
-			urllib.urlretrieve (gitfile11, "/tmp/EventName2.py")
-			urllib.urlretrieve (gitfile12, "/tmp/FrontendInfo2.py")
-			urllib.urlretrieve (gitfile13, "/tmp/ModuleControl.py")
-			urllib.urlretrieve (gitfile14, "/tmp/ProgressDiskSpaceInfo.py")
-			urllib.urlretrieve (gitfile15, "/tmp/ServiceInfoEX.py")
-			urllib.urlretrieve (gitfile16, "/tmp/ServiceName2.py")
-			urllib.urlretrieve (gitfile17, "/tmp/AnimatedWeatherPixmap.py")
-			urllib.urlretrieve (gitfile18, "/tmp/PiconUni.py")
-			urllib.urlretrieve (gitfile19, "/tmp/RendVolumeText.py")
-			urllib.urlretrieve (gitfile20, "/tmp/Watches.py")
+			urllib.urlretrieve (gitfile07, "/tmp/skin_extra.xml")
+			urllib.urlretrieve (gitfile08, "/tmp/AlwaysTrue.py")
+			urllib.urlretrieve (gitfile09, "/tmp/AC3DownMixStatus.py")
+			urllib.urlretrieve (gitfile10, "/tmp/CaidInfo2.py")
+			urllib.urlretrieve (gitfile11, "/tmp/CamdInfo3.py")
+			urllib.urlretrieve (gitfile12, "/tmp/EventName2.py")
+			urllib.urlretrieve (gitfile13, "/tmp/FrontendInfo2.py")
+			urllib.urlretrieve (gitfile14, "/tmp/ModuleControl.py")
+			urllib.urlretrieve (gitfile15, "/tmp/ProgressDiskSpaceInfo.py")
+			urllib.urlretrieve (gitfile16, "/tmp/ServiceInfoEX.py")
+			urllib.urlretrieve (gitfile17, "/tmp/ServiceName2.py")
+			urllib.urlretrieve (gitfile18, "/tmp/AnimatedWeatherPixmap.py")
+			urllib.urlretrieve (gitfile19, "/tmp/PiconUni.py")
+			urllib.urlretrieve (gitfile20, "/tmp/RendVolumeText.py")
+			urllib.urlretrieve (gitfile21, "/tmp/Watches.py")
 		except:
 			pass
 
 		if fileExists("/tmp/version")\
 			and fileExists("/tmp/plugin.py")\
+			and fileExists("/tmp/SetupCyberFHD.mo")\
 			and fileExists("/tmp/skin.xml")\
 			and fileExists("/tmp/skin_default.xml")\
 			and fileExists("/tmp/skin_templates.xml")\
