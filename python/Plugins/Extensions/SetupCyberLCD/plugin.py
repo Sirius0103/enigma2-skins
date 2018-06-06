@@ -249,9 +249,8 @@ stylefullcolor = [
 
 device = [
 	("uno4k", _("Uno4k")),
-#	("solo4k", _("Solo4k")),
-#	("ultimo4k", _("Ultimo4k"))]
-	("solo4k", _("Solo4k"))]
+	("solo4k", _("Solo4k")),
+	("ultimo4k", _("Ultimo4k"))]
 
 fonts = [
 	("Roboto-Regular", _("Regular")),
@@ -295,7 +294,7 @@ if not fileExists("/usr/lib/enigma2/python/Components/Converter/MSNWeather2.py")
 else:
 	widgetstandby = [
 		("TemplatesStandbyDisplayClock", _("Clock")),
-		("TemplatesStandbyDisplayWeather", _("Weather"))]
+		("TemplatesStandbyDisplayWeather", _("Weather MSN"))]
 
 config.skin.cyberlcd = ConfigSubsection()
 

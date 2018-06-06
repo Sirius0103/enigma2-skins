@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Setup skin Skin CyberLCD\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-07-29 01:13+0100\n"
-"PO-Revision-Date: 2017-11-21 19:59+0300\n"
+"PO-Revision-Date: 2018-06-06 03:44+0300\n"
 "Last-Translator: Sirius <sirius.altech@gmail.com>\n"
 "Language-Team: sirius.al@rambler.ru\n"
 "MIME-Version: 1.0\n"
@@ -18,6 +18,9 @@ msgstr "Установки CyberLCD"
 
 msgid "Setup skin CyberLCD"
 msgstr "Настройка скина CyberLCD"
+
+msgid "Your devise:"
+msgstr "Ваше устройство:"
 
 msgid "Fonts:"
 msgstr "Шрифт:"

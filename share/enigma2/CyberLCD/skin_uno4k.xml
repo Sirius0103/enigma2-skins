@@ -399,10 +399,10 @@
     <widget source="global.CurrentTime" render="Label" position="220,80" size="140,80" font="LCDIndication; 80" foregroundColor="LCDcolor1" halign="left" transparent="1">
       <convert type="ClockToText">Format:%M</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="10,20" size="380,30" font="LCDTitles; 26" foregroundColor="LCDcolor2" halign="center" transparent="1">
+    <widget source="global.CurrentTime" render="Label" position="10,20" size="380,30" font="LCDTitles; 30" foregroundColor="LCDcolor2" halign="center" transparent="1">
       <convert type="ClockToText">Format:%A</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="10,190" size="380,30" font="LCDTitles; 26" foregroundColor="LCDcolor2" halign="center" transparent="1">
+    <widget source="global.CurrentTime" render="Label" position="10,190" size="380,30" font="LCDTitles; 30" foregroundColor="LCDcolor2" halign="center" transparent="1">
       <convert type="ClockToText">Format:%d.%m.%Y</convert>
     </widget>
   </screen>
@@ -420,10 +420,10 @@
     <widget source="global.CurrentTime" render="Label" position="220,80" size="140,80" font="LCDIndication; 80" foregroundColor="LCDcolor1" halign="left" transparent="1">
       <convert type="ClockToText">Format:%M</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="10,20" size="380,30" font="LCDTitles; 26" foregroundColor="LCDcolor2" halign="center" transparent="1">
+    <widget source="global.CurrentTime" render="Label" position="10,20" size="380,30" font="LCDTitles; 30" foregroundColor="LCDcolor2" halign="center" transparent="1">
       <convert type="ClockToText">Format:%A</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="10,190" size="380,30" font="LCDTitles; 26" foregroundColor="LCDcolor2" halign="center" transparent="1">
+    <widget source="global.CurrentTime" render="Label" position="10,190" size="380,30" font="LCDTitles; 30" foregroundColor="LCDcolor2" halign="center" transparent="1">
       <convert type="ClockToText">Format:%d.%m.%Y</convert>
     </widget>
   </screen>
@@ -597,7 +597,7 @@
   <!-- ########## Simple ########## -->
   <screen name="SimpleSummary" position="0,0" size="400,240">
     <panel name="TemplatesDisplayLayer" />
-    <widget source="SetupEntry" render="Label" position="10,5" size="380,228" font="LCDGlobal; 26" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1" />
+    <widget source="SetupEntry" render="Label" position="10,5" size="380,228" font="LCDGlobal; 30" foregroundColor="LCDcolor2" halign="center" valign="center" transparent="1" />
   </screen>
   <!-- ########## About ########## -->
   <screen name="AboutSummary" position="0,0" size="400,240">
@@ -615,9 +615,9 @@
   <screen name="MediaPlayerLCDScreen" position="0,0" size="400,240">
     <panel name="TemplatesDisplayLayer" />
     <panel name="TemplatesDisplayClock" />
-    <widget name="text1" position="10,70" size="380,30" font="LCDGlobal; 26" foregroundColor="LCDcolor1" halign="left" transparent="1" />
-    <widget name="text3" position="10,105" size="380,30" font="LCDGlobal; 26" foregroundColor="LCDcolor2" halign="left" transparent="1" />
-    <widget name="text4" position="10,140" size="380,30" font="LCDGlobal; 26" foregroundColor="LCDcolor2" halign="left" transparent="1" />
+    <widget name="text1" position="10,80" size="380,30" font="LCDGlobal; 30" foregroundColor="LCDcolor1" halign="left" transparent="1" />
+    <widget name="text3" position="10,115" size="380,30" font="LCDGlobal; 30" foregroundColor="LCDcolor2" halign="left" transparent="1" />
+    <widget name="text4" position="10,150" size="380,30" font="LCDGlobal; 30" foregroundColor="LCDcolor2" halign="left" transparent="1" />
     <panel name="TemplatesMovieInfoBarDisplayProgress" />
   </screen>
   <!-- ########## Merlin Music Player ########## -->
@@ -625,17 +625,17 @@
   <screen name="MerlinMusicPlayerLCDScreen" position="0,0" size="400,240">
     <panel name="TemplatesDisplayLayer" />
     <panel name="TemplatesDisplayClock" />
-    <widget name="text1" position="10,105" size="380,30" font="LCDGlobal; 26" foregroundColor="LCDcolor1" halign="left" transparent="1" />
-    <widget name="text4" position="10,140" size="380,30" font="LCDGlobal; 26" foregroundColor="LCDcolor2" halign="left" transparent="1" />
+    <widget name="text1" position="10,115" size="380,30" font="LCDGlobal; 30" foregroundColor="LCDcolor1" halign="left" transparent="1" />
+    <widget name="text4" position="10,150" size="380,30" font="LCDGlobal; 30" foregroundColor="LCDcolor2" halign="left" transparent="1" />
     <panel name="TemplatesMovieInfoBarDisplayProgress" />
   </screen>
   <!-- Merlin Music Player LCD Text -->
   <screen name="MerlinMusicPlayerLCDScreenText" position="0,0" size="400,240">
     <panel name="TemplatesDisplayLayer" />
     <panel name="TemplatesDisplayClock" />
-    <widget name="text3" position="10,70" size="380,30" font="LCDGlobal; 26" foregroundColor="LCDcolor2" halign="left" transparent="1" />
-    <widget name="text1" position="10,105" size="380,30" font="LCDGlobal; 26" foregroundColor="LCDcolor1" halign="left" transparent="1" />
-    <widget name="text4" position="10,140" size="380,30" font="LCDGlobal; 26" foregroundColor="LCDcolor2" halign="left" transparent="1" />
+    <widget name="text3" position="10,80" size="380,30" font="LCDGlobal; 30" foregroundColor="LCDcolor2" halign="left" transparent="1" />
+    <widget name="text1" position="10,115" size="380,30" font="LCDGlobal; 30" foregroundColor="LCDcolor1" halign="left" transparent="1" />
+    <widget name="text4" position="10,150" size="380,30" font="LCDGlobal; 30" foregroundColor="LCDcolor2" halign="left" transparent="1" />
     <panel name="TemplatesMovieInfoBarDisplayProgress" />
   </screen>
   <!-- ########## Choice Box ########## -->
