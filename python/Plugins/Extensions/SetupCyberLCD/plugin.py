@@ -734,7 +734,7 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 			self.session.open(TryQuitMainloop, 3)
 
 	def about(self):
-		self.session.open(MessageBox, _("Skin CyberLCD\nDeveloper: Sirius0103 \nHomepage: www.gisclub.tv \n\nDonate:\nWMZ  Z395874509364\nWME  E284580190260\nWMR  R213063691482\nWMU  U658742613505"), MessageBox.TYPE_INFO)
+		self.session.open(MessageBox, _("Skin CyberLCD\nDeveloper: Sirius0103 \nHomepage: www.gisclub.tv \nGithub: www.github.com/Sirius0103 \n\nDonate:\nVISA 4276 4000 5465 0552"), MessageBox.TYPE_INFO)
 
 def main(session, **kwargs):
 	session.open(SetupCyberLCD)
