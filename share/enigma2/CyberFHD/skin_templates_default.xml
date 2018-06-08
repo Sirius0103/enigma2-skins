@@ -4444,8 +4444,8 @@
   </screen>
   <screen name="TemplatesTitle">
   <!-- Templates Title -->
-    <widget source="Title" render="Label" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" zPosition="1" />
-    <widget source="title" render="Label" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" zPosition="2" />
+    <widget objectTypes="Title,StaticText" source="Title" render="Label" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" zPosition="1" />
+    <widget objectTypes="title,StaticText" source="title" render="Label" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" zPosition="2" />
   </screen>
   <screen name="TemplatesButtons">
     <panel name="TemplatesButtonsLayer" />
@@ -4940,28 +4940,28 @@
     <eLabel position="1110,565" size="725,275" backgroundColor="background2" zPosition="-10" />
   <!-- Templates Movie Selection Movie Info -->
     <widget source="Service" render="CoverTmbd" position="1110,165" size="250,365" zPosition="2" alphatest="on">
-      <convert type="MovieInfo">MovieName</convert>
+      <convert type="MovieInfo2">MovieName</convert>
     </widget>
     <widget source="Service" render="RatingTmbd" position="1125,520" zPosition="3" size="220,21" transparent="1" alphatest="on">
-      <convert type="MovieInfo">Ratingcount</convert>
+      <convert type="MovieInfo2">Ratingcount</convert>
     </widget>
     <widget source="Service" render="Label" position="1400,200" size="430,60" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" transparent="1">
-      <convert type="MovieInfo">Director</convert>
+      <convert type="MovieInfo2">Director</convert>
     </widget>
     <widget source="Service" render="Label" position="1400,260" size="430,170" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" transparent="1">
-      <convert type="MovieInfo">Actors</convert>
+      <convert type="MovieInfo2">Actors</convert>
     </widget>
     <widget source="Service" render="Label" position="1400,435" size="430,60" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" transparent="1">
-      <convert type="MovieInfo">Coutry</convert>
+      <convert type="MovieInfo2">Coutry</convert>
     </widget>
     <widget source="Service" render="Label" position="1400,495" size="430,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" transparent="1">
-      <convert type="MovieInfo">Year</convert>
+      <convert type="MovieInfo2">Year</convert>
     </widget>
     <widget source="Service" render="Label" position="1115,805" size="715,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" transparent="1">
-      <convert type="MovieInfo">Genre</convert>
+      <convert type="MovieInfo2">Genre</convert>
     </widget>
     <widget source="Service" render="Label" position="1115,570" size="715,240" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" transparent="1">
-      <convert type="MovieInfo">Description</convert>
+      <convert type="MovieInfo2">Description</convert>
     </widget>
   </screen>
 </skin>
