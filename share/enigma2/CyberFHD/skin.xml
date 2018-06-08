@@ -4592,6 +4592,40 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesButtons" />
     <panel name="TemplatesClock" />
   </screen>
+  <!-- ########## Full Backup ########## -->
+  <!-- Full Backup Config -->
+  <screen name="FullBackupConfig" position="0,0" size="1920,1080" title="FullBackup Configuration" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesMenu1000Layer" />
+    <panel name="TemplatesMenuLeftLayer" />
+    <eLabel text="b" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <panel name="TemplatesTitle" />
+    <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+    <widget name="status" position="340,925" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+    <widget name="statusbar" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+    <panel name="TemplatesButtonsRed" />
+    <panel name="TemplatesButtonsGreen" />
+    <panel name="TemplatesButtonsYellow" />
+    <panel name="TemplatesButtonsBlue" />
+    <panel name="TemplatesButtonsMenu" />
+    <panel name="TemplatesButtons" />
+    <panel name="TemplatesClock" />
+  </screen>
+  <!-- Search OMB file -->
+  <screen name="SearchOMBfile" position="0,0" size="1920,1080" title="Search OMB file" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesMenu1000Layer" />
+    <panel name="TemplatesMenuLeftLayer" />
+    <eLabel text="b" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <panel name="TemplatesTitle" />
+    <widget name="filelist" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+    <panel name="TemplatesButtonsRed" />
+    <panel name="TemplatesButtonsGreen" />
+    <panel name="TemplatesButtonsYellow" />
+    <widget source="curdir" render="Label" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+    <panel name="TemplatesButtons" />
+    <panel name="TemplatesClock" />
+  </screen>
   <!-- ########## FPGA Upgrade ########## -->
   <!-- FPGA Upgrade -->
   <screen name="FPGAUpgrade" position="0,0" size="1920,1080" title="FPGA Upgrade" flags="wfNoBorder" backgroundColor="transparent">
