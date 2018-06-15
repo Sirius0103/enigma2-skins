@@ -4260,21 +4260,19 @@
   <!--  ########## Templates InfoBar Media ########## -->
   <screen name="TemplatesInfoBarMediaCover">
     <panel name="TemplatesPiconLayer" />
-  <!-- Templates Media Cover -->
+    <!-- Templates Media Cover -->
     <eLabel text="v" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
   </screen>
-  <screen name="TemplatesInfoBarMediaCoverYes">
-  <!-- CaseBar Layer-->
+  <screen name="TemplatesInfoBarMediaCoverStyle">
+    <!-- CaseBar Layer-->
     <eLabel position="104,705" size="226,305" backgroundColor="background2" zPosition="-11" />
     <eLabel position="102,703" size="230,309" backgroundColor="background3" zPosition="-12" />
-  <!-- Templates Media Cover-->
+    <!-- Templates Media Cover-->
     <ePixmap position="110,710" size="214,295" pixmap="CyberFHD/case_video_1.png" alphatest="on" zPosition="1" />
     <ePixmap position="122,715" size="200,285" pixmap="CyberFHD/case_video_2.png" alphatest="blend" zPosition="3" />
-  <!--
-  <widget source="session.CurrentService" render="CoverTmbd" position="124,718" size="195,280" alphatest="on" zPosition="2">
-    <convert type="MovieInfo">MovieName</convert>
-  </widget>
--->
+    <widget source="session.CurrentService" render="MovieCover" position="124,718" size="195,280" alphatest="on" zPosition="2">
+      <convert type="MovieInfo2">MovieName</convert>
+    </widget>
   </screen>
   <screen name="TemplatesInfoBarMediaProgress">
   <!-- Templates Info Bar Media Progress-->
@@ -4374,14 +4372,17 @@
       <convert type="ServiceInfoEX">atype</convert>
     </widget>
   </screen>
-  <screen name="TemplatesInfoBarMediaInfo">
-  <!-- Layer Description -->
+  <screen name="TemplatesInfoBarMediaInfoPanel">
+    <!-- Templates Info Bar Tv Info -->
+  </screen>
+  <screen name="TemplatesInfoBarMediaInfoPanelStyle">
+    <!-- Layer Description -->
     <eLabel position="353,718" size="1567,144" backgroundColor="background3" zPosition="-14" />
     <eLabel position="355,720" size="1565,140" backgroundColor="background1" zPosition="-13" />
     <eLabel position="360,725" size="1560,130" backgroundColor="background2" zPosition="-12" />
-  <!-- Templates Info Bar Media Info-->
+    <!-- Templates Info Bar Media Info-->
     <widget source="session.CurrentService" render="Label" position="365,730" size="1450,120" font="Global; 25" foregroundColor="color3" backgroundColor="background2" halign="left" transparent="1">
-      <convert type="MovieInfo">FullDescription</convert>
+      <convert type="MovieInfo2">Description</convert>
     </widget>
   </screen>
   <!--  ########## Templates InfoBar Radio ########## -->
@@ -4927,7 +4928,7 @@
       <convert type="MovieInfo">MetaDescription</convert>
     </widget>
   </screen>
-  <screen name="TemplatesMovieSelectionDescriptionTMDB">
+  <screen name="TemplatesMovieSelectionDescriptionMovie">
     <panel name="TemplatesMenuRightLayer" />
   <!-- Movie Selection Movie Layer-->
     <eLabel position="1103,158" size="264,379" backgroundColor="background3" zPosition="-12" />
@@ -4939,10 +4940,10 @@
     <eLabel position="1105,560" size="735,285" backgroundColor="background1" zPosition="-11" />
     <eLabel position="1110,565" size="725,275" backgroundColor="background2" zPosition="-10" />
   <!-- Templates Movie Selection Movie Info -->
-    <widget source="Service" render="CoverTmbd" position="1110,165" size="250,365" zPosition="2" alphatest="on">
+    <widget source="Service" render="MovieCover" position="1110,165" size="250,365" zPosition="2" alphatest="on">
       <convert type="MovieInfo2">MovieName</convert>
     </widget>
-    <widget source="Service" render="RatingTmbd" position="1125,520" zPosition="3" size="220,21" transparent="1" alphatest="on">
+    <widget source="Service" render="MovieRating" position="1125,520" zPosition="3" size="220,21" transparent="1" alphatest="on">
       <convert type="MovieInfo2">Ratingcount</convert>
     </widget>
     <widget source="Service" render="Label" position="1400,200" size="430,60" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" transparent="1">

@@ -229,6 +229,8 @@
     <panel name="TemplatesInfoBarMediaCover" />
     <panel name="TemplatesInfoBarMediaProgress" />
     <panel name="TemplatesInfoBarMediaIndication" />
+    <panel name="TemplatesInfoBarMediaInfoPanel" />
+    <panel name="TemplatesInfoBarTvInfoWeather" />
     <!-- Others widget -->
     <widget source="session.CurrentService" render="Label" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" noWrap="1">
       <convert type="ServiceName">Name</convert>
@@ -244,6 +246,8 @@
     <panel name="TemplatesInfoBarMediaCover" />
     <panel name="TemplatesInfoBarMediaProgress" />
     <panel name="TemplatesInfoBarMediaIndication" />
+    <panel name="TemplatesInfoBarMediaInfoPanel" />
+    <panel name="TemplatesInfoBarTvInfoWeather" />
     <!-- Others widget -->
     <widget source="session.CurrentService" render="Label" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" noWrap="1">
       <convert type="ServiceName">Name</convert>
@@ -259,6 +263,8 @@
     <panel name="TemplatesInfoBarMediaCover" />
     <panel name="TemplatesInfoBarMediaProgress" />
     <panel name="TemplatesInfoBarMediaIndication" />
+    <panel name="TemplatesInfoBarMediaInfoPanel" />
+    <panel name="TemplatesInfoBarTvInfoWeather" />
     <!-- Others widget -->
     <widget source="session.CurrentService" render="Label" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" noWrap="1">
       <convert type="ServiceName">Name</convert>
@@ -4616,7 +4622,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenuLayer" />
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
-    <eLabel text="b" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+    <eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
     <panel name="TemplatesTitle" />
     <widget name="filelist" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <panel name="TemplatesButtonsRed" />

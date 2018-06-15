@@ -341,25 +341,41 @@ if not fileExists("/usr/lib/enigma2/python/Components/Converter/MSNWeather2.py")
 	or not fileExists("/usr/lib/enigma2/python/Components/Renderer/AnimatedWeatherPixmap.py"):
 	weatherpanelinfobar = [
 		("TemplatesInfoBarTvInfoWeatherDefault", _("No"))]
+	weatherpanelmovieinfobar = [
+		("TemplatesInfoBarTvInfoWeatherDefault", _("No"))]
 else:
 	weatherpanelinfobar = [
 		("TemplatesInfoBarTvInfoWeatherDefault", _("No")),
 		("TemplatesInfoBarTvInfoWeatherMSN", _("MSN")),
 		("TemplatesInfoBarTvInfoWeatherMSNAnimated", _("Animated MSN"))]
+	weatherpanelmovieinfobar = [
+		("TemplatesInfoBarTvInfoWeatherDefault", _("No")),
+		("TemplatesInfoBarTvInfoWeatherMSN", _("MSN")),
+		("TemplatesInfoBarTvInfoWeatherMSNAnimated", _("Animated MSN"))]
 
 if not fileExists("/usr/lib/enigma2/python/Components/Converter/MovieInfo2.py")\
-	or not fileExists("/usr/lib/enigma2/python/Components/Renderer/CoverTmbd.py")\
-	or not fileExists("/usr/lib/enigma2/python/Components/Renderer/RatingTmbd.py"):
+	or not fileExists("/usr/lib/enigma2/python/Components/Renderer/MovieCover.py")\
+	or not fileExists("/usr/lib/enigma2/python/Components/Renderer/MovieRating.py"):
+	covermovieinfobar = [
+		("TemplatesInfoBarMediaCoverDefault", _("No"))]
+	infopanelmovieinfobar = [
+		("TemplatesInfoBarMediaInfoPanelDefault", _("No"))]
 	panelmovieselection = [
 		("TemplatesMovieSelectionDescriptionDefault", _("No")),
 		("TemplatesMovieSelectionDescriptionShort", _("Short Description")),
 		("TemplatesMovieSelectionDescriptionMeta", _("Meta Description"))]
 else:
+	covermovieinfobar = [
+		("TemplatesInfoBarMediaCoverDefault", _("No")),
+		("TemplatesInfoBarMediaCoverStyle", _("Cover"))]
+	infopanelmovieinfobar = [
+		("TemplatesInfoBarMediaInfoPanelDefault", _("No")),
+		("TemplatesInfoBarMediaInfoPanelStyle", _("Description"))]
 	panelmovieselection = [
 		("TemplatesMovieSelectionDescriptionDefault", _("No")),
 		("TemplatesMovieSelectionDescriptionShort", _("Short Description")),
 		("TemplatesMovieSelectionDescriptionMeta", _("Meta Description")),
-		("TemplatesMovieSelectionDescriptionTMDB", _("TMDB Description"))]
+		("TemplatesMovieSelectionDescriptionMovie", _("Movie Description"))]
 
 config.skin.cyberfhd = ConfigSubsection()
 config.skin.cyberfhd.fonts = ConfigSelection(default="Roboto-Regular", choices = fonts)
@@ -401,6 +417,10 @@ config.skin.cyberfhd.cryptedpanelinfobar = ConfigSelection(default="TemplatesInf
 config.skin.cyberfhd.infopanelinfobar = ConfigSelection(default="TemplatesInfoBarTvInfoPanelDefault", choices = infopanelinfobar)
 config.skin.cyberfhd.cipanelinfobar = ConfigSelection(default="TemplatesInfoBarTvInfoPanelCIDefault", choices = cipanelinfobar)
 config.skin.cyberfhd.weatherpanelinfobar = ConfigSelection(default="TemplatesInfoBarTvInfoWeatherDefault", choices = weatherpanelinfobar)
+
+config.skin.cyberfhd.covermovieinfobar = ConfigSelection(default="TemplatesInfoBarMediaCoverDefault", choices = covermovieinfobar)
+config.skin.cyberfhd.infopanelmovieinfobar = ConfigSelection(default="TemplatesInfoBarMediaInfoPanelDefault", choices = infopanelmovieinfobar)
+config.skin.cyberfhd.weatherpanelmovieinfobar = ConfigSelection(default="TemplatesInfoBarTvInfoWeatherDefault", choices = weatherpanelmovieinfobar)
 
 config.skin.cyberfhd.progressmode = ConfigSelection(default="ProgressLayerStandard", choices = progressmode)
 config.skin.cyberfhd.scrollbarmode = ConfigSelection(default="showNever", choices = scrollbarmode)
@@ -599,6 +619,9 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 		list.append(getConfigListEntry(_("Weather panel in secondinfobar:"), config.skin.cyberfhd.weatherpanelinfobar))
 		section = _("Movie Infobar")
 		list.append(getConfigListEntry(sep*(char-(len(section))/2) + tab + section + tab + sep*(char-(len(section))/2)))
+		list.append(getConfigListEntry(_("Poster in movieinfobar:"), config.skin.cyberfhd.covermovieinfobar))
+		list.append(getConfigListEntry(_("Info panel in movieinfobar:"), config.skin.cyberfhd.infopanelmovieinfobar))
+		list.append(getConfigListEntry(_("Weather panel in movieinfobar:"), config.skin.cyberfhd.weatherpanelmovieinfobar))
 		section = _("Menu")
 		list.append(getConfigListEntry(sep*(char-(len(section))/2) + tab + section + tab + sep*(char-(len(section))/2)))
 		list.append(getConfigListEntry(_("Progress mode:"), config.skin.cyberfhd.progressmode))
@@ -807,6 +830,11 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 			skin_templates_user.append([config.skin.cyberfhd.cipanelinfobar.value, "TemplatesInfoBarTvInfoPanelCI"])
 	# weather panel
 			skin_templates_user.append([config.skin.cyberfhd.weatherpanelinfobar.value, "TemplatesInfoBarTvInfoWeather"])
+			skin_templates_user.append([config.skin.cyberfhd.weatherpanelmovieinfobar.value, "TemplatesInfoBarTvInfoWeather"])
+	# cover panel
+			skin_templates_user.append([config.skin.cyberfhd.covermovieinfobar.value, "TemplatesInfoBarMediaCover"])
+	# info panel
+			skin_templates_user.append([config.skin.cyberfhd.infopanelmovieinfobar.value, "TemplatesInfoBarMediaInfoPanel"])
 	# progress
 			skin_templates_user.append([config.skin.cyberfhd.progressmode.value, "ProgressLayer"])
 	# bouquet
