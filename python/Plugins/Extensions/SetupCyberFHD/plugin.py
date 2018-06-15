@@ -367,7 +367,7 @@ if not fileExists("/usr/lib/enigma2/python/Components/Converter/MovieInfo2.py")\
 else:
 	covermovieinfobar = [
 		("TemplatesInfoBarMediaCoverDefault", _("No")),
-		("TemplatesInfoBarMediaCoverStyle", _("Cover"))]
+		("TemplatesInfoBarMediaCoverStyle", _("Poster"))]
 	infopanelmovieinfobar = [
 		("TemplatesInfoBarMediaInfoPanelDefault", _("No")),
 		("TemplatesInfoBarMediaInfoPanelStyle", _("Description"))]
@@ -375,6 +375,7 @@ else:
 		("TemplatesMovieSelectionDescriptionDefault", _("No")),
 		("TemplatesMovieSelectionDescriptionShort", _("Short Description")),
 		("TemplatesMovieSelectionDescriptionMeta", _("Meta Description")),
+		("TemplatesMovieSelectionDescriptionFull", _("Full Description")),
 		("TemplatesMovieSelectionDescriptionMovie", _("Movie Description"))]
 
 config.skin.cyberfhd = ConfigSubsection()

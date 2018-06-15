@@ -4377,9 +4377,10 @@
   </screen>
   <screen name="TemplatesInfoBarMediaInfoPanelStyle">
     <!-- Layer Description -->
-    <eLabel position="353,718" size="1567,144" backgroundColor="background3" zPosition="-14" />
-    <eLabel position="355,720" size="1565,140" backgroundColor="background1" zPosition="-13" />
-    <eLabel position="360,725" size="1560,130" backgroundColor="background2" zPosition="-12" />
+    <eLabel position="353,718" size="1567,144" backgroundColor="background3" zPosition="-12" />
+    <eLabel position="355,720" size="1565,140" backgroundColor="background1" zPosition="-11" />
+    <eLabel position="360,725" size="1475,130" backgroundColor="background2" zPosition="-10" />
+    <eLabel position="1840,725" size="70,130" backgroundColor="background2" zPosition="-10" />
     <!-- Templates Info Bar Media Info-->
     <widget source="session.CurrentService" render="Label" position="365,730" size="1450,120" font="Global; 25" foregroundColor="color3" backgroundColor="background2" halign="left" transparent="1">
       <convert type="MovieInfo2">Description</convert>
@@ -4928,6 +4929,18 @@
       <convert type="MovieInfo">MetaDescription</convert>
     </widget>
   </screen>
+  <screen name="TemplatesMovieSelectionDescriptionFull">
+    <panel name="TemplatesMenuInfoLayer" />
+    <panel name="TemplatesMenuInfoRightLayer" />
+    <!-- Templates Movie Selection Movie Info -->
+    <eLabel text="File size:" position="1115,470" size="715,30" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <widget source="Service" render="Label" position="1530,470" size="300,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
+      <convert type="MovieInfo2">FileSize</convert>
+    </widget>
+    <widget source="Service" render="Label" position="1115,510" size="715,325" font="Global; 25" foregroundColor="color3" backgroundColor="background2" halign="left" valign="top" transparent="1">
+      <convert type="MovieInfo2">FullDescription</convert>
+    </widget>
+  </screen>
   <screen name="TemplatesMovieSelectionDescriptionMovie">
     <panel name="TemplatesMenuRightLayer" />
   <!-- Movie Selection Movie Layer-->
@@ -4944,7 +4957,7 @@
       <convert type="MovieInfo2">MovieName</convert>
     </widget>
     <widget source="Service" render="MovieRating" position="1125,520" zPosition="3" size="220,21" transparent="1" alphatest="on">
-      <convert type="MovieInfo2">Ratingcount</convert>
+      <convert type="MovieInfo2">Rating</convert>
     </widget>
     <widget source="Service" render="Label" position="1400,200" size="430,60" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" transparent="1">
       <convert type="MovieInfo2">Director</convert>
