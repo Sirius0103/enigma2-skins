@@ -4942,7 +4942,13 @@
     </widget>
   </screen>
   <screen name="TemplatesMovieSelectionDescriptionMovie">
-    <panel name="TemplatesMenuRightLayer" />
+    <!-- Layer Menu Info Right -->
+    <eLabel position="1840,188" size="80,349" backgroundColor="background3" zPosition="-12" />
+    <eLabel position="1840,190" size="80,345" backgroundColor="background1" zPosition="-11" />
+    <eLabel position="1840,195" size="70,335" backgroundColor="background2" zPosition="-10" />
+    <eLabel position="1840,558" size="80,289" backgroundColor="background3" zPosition="-12" />
+    <eLabel position="1840,560" size="80,285" backgroundColor="background1" zPosition="-11" />
+    <eLabel position="1840,565" size="70,275" backgroundColor="background2" zPosition="-10" />
   <!-- Movie Selection Movie Layer-->
     <eLabel position="1103,158" size="264,379" backgroundColor="background3" zPosition="-12" />
     <eLabel position="1105,160" size="260,375" backgroundColor="background1" zPosition="-11" />
