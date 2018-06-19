@@ -4271,7 +4271,7 @@
     <ePixmap position="110,710" size="214,295" pixmap="CyberFHD/case_video_1.png" alphatest="on" zPosition="1" />
     <ePixmap position="122,715" size="200,285" pixmap="CyberFHD/case_video_2.png" alphatest="blend" zPosition="3" />
     <widget source="session.CurrentService" render="MovieCover" position="124,718" size="195,280" alphatest="on" zPosition="2">
-      <convert type="ServiceName">Name</convert>
+      <convert type="MovieInfo2">CoverName</convert>
     </widget>
   </screen>
   <screen name="TemplatesInfoBarMediaProgress">
@@ -4954,7 +4954,7 @@
     <eLabel position="1110,565" size="725,275" backgroundColor="background2" zPosition="-10" />
   <!-- Templates Movie Selection Movie Info -->
     <widget source="Service" render="MovieCover" position="1110,165" size="250,365" zPosition="2" alphatest="on">
-      <convert type="MovieInfo2">MovieName</convert>
+      <convert type="MovieInfo2">CoverName</convert>
     </widget>
     <widget source="Service" render="MovieRating" position="1125,520" zPosition="3" size="220,21" transparent="1" alphatest="on">
       <convert type="MovieInfo2">Rating</convert>
