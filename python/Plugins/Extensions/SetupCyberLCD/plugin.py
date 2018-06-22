@@ -573,9 +573,8 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 			return ""
 
 	def infocom(self):
-		gitversion = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberLCD/version"
 		try:
-			urllib.urlretrieve (gitversion, "/tmp/version")
+			urllib.urlretrieve ("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberLCD/version","/tmp/version")
 		except:
 			pass
 
@@ -635,7 +634,7 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 
 			SearchReplaceWrite(skin_user, "/usr/share/enigma2/CyberLCD/skin_default.xml", "/etc/enigma2/skin_user.xml")
 		except:
-			self.error()
+			self.default()
 	# end
 		self.session.openWithCallback(self.restart, MessageBox,_("Do you want to restart the GUI now ?"), MessageBox.TYPE_YESNO)
 
@@ -643,8 +642,15 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 		skinpath = "/usr/share/enigma2/"
 		pluginpath = "/usr/lib/enigma2/python/Plugins/Extensions/"
 		componentspath = "/usr/lib/enigma2/python/Components/"
-
-		try:
+		if fileExists("/tmp/version")\
+			and fileExists("/tmp/plugin.py")\
+			and fileExists("/tmp/SetupCyberLCD.mo")\
+			and fileExists("/tmp/skin_solo4k.xml")\
+			and fileExists("/tmp/skin_uno4k.xml")\
+			and fileExists("/tmp/skin_ultimo4k.xml")\
+			and fileExists("/tmp/AlwaysTrue.py")\
+			and fileExists("/tmp/AnimatedWeatherPixmap.py")\
+			and fileExists("/tmp/PiconUni.py"):
 			os.system("cp /tmp/version %sSetupCyberLCD/version" % (pluginpath))
 	# install plugin
 			os.system("cp /tmp/plugin.py %sSetupCyberLCD/plugin.py" % (pluginpath))
@@ -660,46 +666,28 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 			os.system("cp /tmp/AnimatedWeatherPixmap.py %sRenderer/AnimatedWeatherPixmap.py" % (componentspath))
 			os.system("cp /tmp/PiconUni.py %sRenderer/PiconUni.py" % (componentspath))
 	# end
-		except:
-			self.error()
-		self.session.openWithCallback(self.restart, MessageBox,_("Do you want to restart the GUI now ?"), MessageBox.TYPE_YESNO)
+			self.session.openWithCallback(self.restart, MessageBox,_("Do you want to restart the GUI now ?"), MessageBox.TYPE_YESNO)
+		else:
+			self.default()
 
 	def download(self):
-	# download plugin
-		gitfile01 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberLCD/plugin.py"
-		gitfile02 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberLCD/locale/ru/LC_MESSAGES/SetupCyberLCD.mo"
-	# download skin
-		gitfile03 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberLCD/skin_solo4k.xml"
-		gitfile04 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberLCD/skin_uno4k.xml"
-		gitfile05 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberLCD/skin_ultimo4k.xml"
-	# download converter
-		gitfile06 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/AlwaysTrue.py"
-	# download renderer
-		gitfile07 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/AnimatedWeatherPixmap.py"
-		gitfile08 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/PiconUni.py"
-
 		try:
-			urllib.urlretrieve (gitfile01, "/tmp/plugin.py")
-			urllib.urlretrieve (gitfile02, "/tmp/SetupCyberLCD.mo")
-			urllib.urlretrieve (gitfile03, "/tmp/skin_solo4k.xml")
-			urllib.urlretrieve (gitfile04, "/tmp/skin_uno4k.xml")
-			urllib.urlretrieve (gitfile05, "/tmp/skin_ultimo4k.xml")
-			urllib.urlretrieve (gitfile06, "/tmp/AlwaysTrue.py")
-			urllib.urlretrieve (gitfile07, "/tmp/AnimatedWeatherPixmap.py")
-			urllib.urlretrieve (gitfile08, "/tmp/PiconUni.py")
+	# download plugin
+			urllib.urlretrieve ("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberLCD/plugin.py","/tmp/plugin.py")
+			urllib.urlretrieve ("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberLCD/locale/ru/LC_MESSAGES/SetupCyberLCD.mo","/tmp/SetupCyberLCD.mo")
+	# download skin
+			urllib.urlretrieve ("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberLCD/skin_solo4k.xml","/tmp/skin_solo4k.xml")
+			urllib.urlretrieve ("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberLCD/skin_uno4k.xml","/tmp/skin_uno4k.xml")
+			urllib.urlretrieve ("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberLCD/skin_ultimo4k.xml","/tmp/skin_ultimo4k.xml")
+	# download converter
+			urllib.urlretrieve ("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/AlwaysTrue.py","/tmp/AlwaysTrue.py")
+	# download renderer
+			urllib.urlretrieve ("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/AnimatedWeatherPixmap.py","/tmp/AnimatedWeatherPixmap.py")
+			urllib.urlretrieve ("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/PiconUni.py","/tmp/PiconUni.py")
+	# end
+			self.install()
 		except:
 			pass
-
-		if fileExists("/tmp/version")\
-			and fileExists("/tmp/plugin.py")\
-			and fileExists("/tmp/SetupCyberLCD.mo")\
-			and fileExists("/tmp/skin_solo4k.xml")\
-			and fileExists("/tmp/skin_uno4k.xml")\
-			and fileExists("/tmp/skin_ultimo4k.xml")\
-			and fileExists("/tmp/AlwaysTrue.py")\
-			and fileExists("/tmp/AnimatedWeatherPixmap.py")\
-			and fileExists("/tmp/PiconUni.py"):
-			self.install()
 
 	def setDefault(self, configItem):
 		configItem.setValue(configItem.default)
@@ -717,11 +705,6 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 				x[1].save()
 		os.system("rm -f /etc/enigma2/skin_user.xml")
 		self.session.openWithCallback(self.restart, MessageBox,_("Do you want to restart the GUI now ?"), MessageBox.TYPE_YESNO)
-
-	def error(self):
-		os.system("rm -f /etc/enigma2/skin_user.xml")
-		self.session.open(MessageBox, _("Error by processing !!!"), MessageBox.TYPE_ERROR)
-		self.restart()
 
 	def exit(self):
 		for x in self["config"].list:

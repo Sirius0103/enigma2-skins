@@ -367,7 +367,7 @@ if not fileExists("/usr/lib/enigma2/python/Components/Converter/MovieInfo2.py")\
 else:
 	covermovieinfobar = [
 		("TemplatesInfoBarMediaCoverDefault", _("No")),
-		("TemplatesInfoBarMediaCoverStyle", _("Poster"))]
+		("TemplatesInfoBarMediaCoverStyle", _("Yes"))]
 	infopanelmovieinfobar = [
 		("TemplatesInfoBarMediaInfoPanelDefault", _("No")),
 		("TemplatesInfoBarMediaInfoPanelStyle", _("Description"))]
@@ -747,9 +747,8 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 			return ""
 
 	def infocom(self):
-		gitversion = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberFHD/version"
 		try:
-			urllib.urlretrieve (gitversion, "/tmp/version")
+			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberFHD/version","/tmp/version")
 		except:
 			pass
 
@@ -763,10 +762,13 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 			or not fileExists("/usr/lib/enigma2/python/Components/Converter/EventName2.py")\
 			or not fileExists("/usr/lib/enigma2/python/Components/Converter/FrontendInfo2.py")\
 			or not fileExists("/usr/lib/enigma2/python/Components/Converter/ModuleControl.py")\
+			or not fileExists("/usr/lib/enigma2/python/Components/Converter/MovieInfo2.py")\
 			or not fileExists("/usr/lib/enigma2/python/Components/Converter/ProgressDiskSpaceInfo.py")\
 			or not fileExists("/usr/lib/enigma2/python/Components/Converter/ServiceInfoEX.py")\
 			or not fileExists("/usr/lib/enigma2/python/Components/Converter/ServiceName2.py")\
 			or not fileExists("/usr/lib/enigma2/python/Components/Renderer/AnimatedWeatherPixmap.py")\
+			or not fileExists("/usr/lib/enigma2/python/Components/Renderer/MovieCover.py")\
+			or not fileExists("/usr/lib/enigma2/python/Components/Renderer/MovieRating.py")\
 			or not fileExists("/usr/lib/enigma2/python/Components/Renderer/PiconUni.py")\
 			or not fileExists("/usr/lib/enigma2/python/Components/Renderer/RendVolumeText.py")\
 			or not fileExists("/usr/lib/enigma2/python/Components/Renderer/Watches.py"):
@@ -855,7 +857,7 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 			SearchReplaceWrite(skin_user, "/usr/share/enigma2/CyberFHD/skin_default.xml", "/usr/share/enigma2/CyberFHD/skin.xml")
 			SearchReplaceWrite(skin_templates_user, "/usr/share/enigma2/CyberFHD/skin_templates_default.xml", "/usr/share/enigma2/CyberFHD/skin_templates.xml")
 		except:
-			self.error()
+			self.default()
 	# end
 		self.session.openWithCallback(self.restart, MessageBox,_("Do you want to restart the GUI now ?"), MessageBox.TYPE_YESNO)
 
@@ -863,8 +865,31 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 		skinpath = "/usr/share/enigma2/"
 		pluginpath = "/usr/lib/enigma2/python/Plugins/Extensions/"
 		componentspath = "/usr/lib/enigma2/python/Components/"
-
-		try:
+		if fileExists ("/tmp/version"\
+			and "/tmp/plugin.py"\
+			and "/tmp/SetupCyberFHD.mo"\
+			and "/tmp/skin.xml"\
+			and "/tmp/skin_default.xml"\
+			and "/tmp/skin_templates.xml"\
+			and "/tmp/skin_templates_default.xml"\
+			and "/tmp/skin_extra.xml"\
+			and "/tmp/AlwaysTrue.py"\
+			and "/tmp/AC3DownMixStatus.py"\
+			and "/tmp/CaidInfo2.py"\
+			and "/tmp/CamdInfo3.py"\
+			and "/tmp/EventName2.py"\
+			and "/tmp/FrontendInfo2.py"\
+			and "/tmp/ModuleControl.py"\
+			and "/tmp/MovieInfo2.py"\
+			and "/tmp/ProgressDiskSpaceInfo.py"\
+			and "/tmp/ServiceInfoEX.py"\
+			and "/tmp/ServiceName2.py"\
+			and "/tmp/AnimatedWeatherPixmap.py"\
+			and "/tmp/MovieCover.py"\
+			and "/tmp/MovieRating.py"\
+			and "/tmp/PiconUni.py"\
+			and "/tmp/RendVolumeText.py"\
+			and "/tmp/Watches.py"):
 			os.system("cp /tmp/version %sSetupCyberFHD/version" % (pluginpath))
 	# install plugin
 			os.system("cp /tmp/plugin.py %sSetupCyberFHD/plugin.py" % (pluginpath))
@@ -883,97 +908,58 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 			os.system("cp /tmp/EventName2.py %sConverter/EventName2.py" % (componentspath))
 			os.system("cp /tmp/FrontendInfo2.py %sConverter/FrontendInfo2.py" % (componentspath))
 			os.system("cp /tmp/ModuleControl.py %sConverter/ModuleControl.py" % (componentspath))
+			os.system("cp /tmp/MovieInfo2.py %sConverter/MovieInfo2.py" % (componentspath))
 			os.system("cp /tmp/ProgressDiskSpaceInfo.py %sConverter/ProgressDiskSpaceInfo.py" % (componentspath))
 			os.system("cp /tmp/ServiceInfoEX.py %sConverter/ServiceInfoEX.py" % (componentspath))
 			os.system("cp /tmp/ServiceName2.py %sConverter/ServiceName2.py" % (componentspath))
 			os.system("cp %sWeatherMSN/components/MSNWeather2.py %sConverter/MSNWeather2.py" % (pluginpath, componentspath))
 	# install renderer
 			os.system("cp /tmp/AnimatedWeatherPixmap.py %sRenderer/AnimatedWeatherPixmap.py" % (componentspath))
+			os.system("cp /tmp/MovieCover.py %sRenderer/MovieCover.py" % (componentspath))
+			os.system("cp /tmp/MovieRating.py %sRenderer/MovieRating.py" % (componentspath))
 			os.system("cp /tmp/PiconUni.py %sRenderer/PiconUni.py" % (componentspath))
 			os.system("cp /tmp/RendVolumeText.py %sRenderer/RendVolumeText.py" % (componentspath))
 			os.system("cp /tmp/Watches.py %sRenderer/Watches.py" % (componentspath))
 	# end
-		except:
-			self.error()
-		self.session.openWithCallback(self.restart, MessageBox,_("Do you want to restart the GUI now ?"), MessageBox.TYPE_YESNO)
+			self.session.openWithCallback(self.restart, MessageBox,_("Do you want to restart the GUI now ?"), MessageBox.TYPE_YESNO)
+		else:
+			self.default()
 
 	def download(self):
-	# download plugin
-		gitfile01 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberFHD/plugin.py"
-		gitfile02 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberFHD/locale/ru/LC_MESSAGES/SetupCyberFHD.mo"
-	# download skin
-		gitfile03 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberFHD/skin.xml"
-		gitfile04 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberFHD/skin_default.xml"
-		gitfile05 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberFHD/skin_templates.xml"
-		gitfile06 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberFHD/skin_templates_default.xml"
-		gitfile07 = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberFHD/skin_extra.xml"
-	# download converter
-		gitfile08 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/AlwaysTrue.py"
-		gitfile09 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/AC3DownMixStatus.py"
-		gitfile10 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/CaidInfo2.py"
-		gitfile11 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/CamdInfo3.py"
-		gitfile12 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/EventName2.py"
-		gitfile13 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/FrontendInfo2.py"
-		gitfile14 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/ModuleControl.py"
-		gitfile15 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/ProgressDiskSpaceInfo.py"
-		gitfile16 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/ServiceInfoEX.py"
-		gitfile17 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/ServiceName2.py"
-	# download renderer
-		gitfile18 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/AnimatedWeatherPixmap.py"
-		gitfile19 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/PiconUni.py"
-		gitfile20 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/RendVolumeText.py"
-		gitfile21 = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/Watches.py"
-
 		try:
-			urllib.urlretrieve (gitfile01, "/tmp/plugin.py")
-			urllib.urlretrieve (gitfile02, "/tmp/SetupCyberFHD.mo")
-			urllib.urlretrieve (gitfile03, "/tmp/skin.xml")
-			urllib.urlretrieve (gitfile04, "/tmp/skin_default.xml")
-			urllib.urlretrieve (gitfile05, "/tmp/skin_templates.xml")
-			urllib.urlretrieve (gitfile06, "/tmp/skin_templates_default.xml")
-			urllib.urlretrieve (gitfile07, "/tmp/skin_extra.xml")
-			urllib.urlretrieve (gitfile08, "/tmp/AlwaysTrue.py")
-			urllib.urlretrieve (gitfile09, "/tmp/AC3DownMixStatus.py")
-			urllib.urlretrieve (gitfile10, "/tmp/CaidInfo2.py")
-			urllib.urlretrieve (gitfile11, "/tmp/CamdInfo3.py")
-			urllib.urlretrieve (gitfile12, "/tmp/EventName2.py")
-			urllib.urlretrieve (gitfile13, "/tmp/FrontendInfo2.py")
-			urllib.urlretrieve (gitfile14, "/tmp/ModuleControl.py")
-			urllib.urlretrieve (gitfile15, "/tmp/ProgressDiskSpaceInfo.py")
-			urllib.urlretrieve (gitfile16, "/tmp/ServiceInfoEX.py")
-			urllib.urlretrieve (gitfile17, "/tmp/ServiceName2.py")
-			urllib.urlretrieve (gitfile18, "/tmp/AnimatedWeatherPixmap.py")
-			urllib.urlretrieve (gitfile19, "/tmp/PiconUni.py")
-			urllib.urlretrieve (gitfile20, "/tmp/RendVolumeText.py")
-			urllib.urlretrieve (gitfile21, "/tmp/Watches.py")
+			gitpathskins = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/"
+			gitpathcomponents = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/"
+	# download plugin
+			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberFHD/plugin.py","/tmp/plugin.py")
+			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberFHD/locale/ru/LC_MESSAGES/SetupCyberFHD.mo","/tmp/SetupCyberFHD.mo")
+	# download skin
+			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberFHD/skin.xml","/tmp/skin.xml")
+			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberFHD/skin_default.xml","/tmp/skin_default.xml")
+			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberFHD/skin_templates.xml","/tmp/skin_templates.xml")
+			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberFHD/skin_templates_default.xml","/tmp/skin_templates_default.xml")
+			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberFHD/skin_extra.xml","/tmp/skin_extra.xml")
+	# download converter
+			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/AlwaysTrue.py","/tmp/AlwaysTrue.py")
+			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/AC3DownMixStatus.py","/tmp/AC3DownMixStatus.py")
+			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/CaidInfo2.py","/tmp/CaidInfo2.py")
+			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/CamdInfo3.py","/tmp/CamdInfo3.py")
+			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/EventName2.py","/tmp/EventName2.py")
+			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/FrontendInfo2.py","/tmp/FrontendInfo2.py")
+			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/ModuleControl.py","/tmp/ModuleControl.py")
+			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/MovieInfo2.py","/tmp/MovieInfo2.py")
+			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/ProgressDiskSpaceInfo.py","/tmp/ProgressDiskSpaceInfo.py")
+			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/ServiceInfoEX.py","/tmp/ServiceInfoEX.py")
+			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/ServiceName2.py","/tmp/ServiceName2.py")
+	# download renderer
+			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/AnimatedWeatherPixmap.py","/tmp/AnimatedWeatherPixmap.py")
+			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/MovieCover.py","/tmp/MovieCover.py")
+			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/MovieRating.py","/tmp/MovieRating.py")
+			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/RendVolumeText.py","/tmp/RendVolumeText.py")
+			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/Watches.py","/tmp/Watches.py")
+	# end
+			self.install()
 		except:
 			pass
-
-		if fileExists("/tmp/version")\
-			and fileExists("/tmp/plugin.py")\
-			and fileExists("/tmp/SetupCyberFHD.mo")\
-			and fileExists("/tmp/skin.xml")\
-			and fileExists("/tmp/skin_default.xml")\
-			and fileExists("/tmp/skin_templates.xml")\
-			and fileExists("/tmp/skin_templates_default.xml")\
-			and fileExists("/tmp/skin_extra.xml")\
-			and fileExists("/tmp/AlwaysTrue.py")\
-			and fileExists("/tmp/AC3DownMixStatus.py")\
-			and fileExists("/tmp/CaidInfo2.py")\
-			and fileExists("/tmp/CamdInfo3.py")\
-			and fileExists("/tmp/EventName2.py")\
-			and fileExists("/tmp/FrontendInfo2.py")\
-			and fileExists("/tmp/ModuleControl.py")\
-			and fileExists("/tmp/ProgressDiskSpaceInfo.py")\
-			and fileExists("/tmp/ServiceInfoEX.py")\
-			and fileExists("/tmp/ServiceName2.py")\
-			and fileExists("/tmp/AnimatedWeatherPixmap.py")\
-			and fileExists("/tmp/PiconUni.py")\
-			and fileExists("/tmp/RendVolumeText.py")\
-			and fileExists("/tmp/Watches.py"):
-			self.install()
-		else:
-			self.error()
 
 	def setDefault(self, configItem):
 		configItem.setValue(configItem.default)
@@ -985,17 +971,13 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 		self.createSkin()
 
 	def default(self):
+		os.system("cp /usr/share/enigma2/CyberFHD/skin_default.xml /usr/share/enigma2/CyberFHD/skin.xml")
+		os.system("cp /usr/share/enigma2/CyberFHD/skin_templates_default.xml /usr/share/enigma2/CyberFHD/skin_templates.xml")
 		for x in self["config"].list:
 			if len(x) > 1:
 				self.setDefault(x[1])
 				x[1].save()
 		self.createSkin()
-
-	def error(self):
-		os.system("cp /usr/share/enigma2/CyberFHD/skin_default.xml /usr/share/enigma2/CyberFHD/skin.xml")
-		os.system("cp /usr/share/enigma2/CyberFHD/skin_templates_default.xml /usr/share/enigma2/CyberFHD/skin_templates.xml")
-		self.session.open(MessageBox, _("Error by processing !!!"), MessageBox.TYPE_ERROR)
-		self.restart()
 
 	def exit(self):
 		for x in self["config"].list:
