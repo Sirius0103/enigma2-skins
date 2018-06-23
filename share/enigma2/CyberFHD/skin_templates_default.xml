@@ -4445,9 +4445,10 @@
     <widget name="turnSpeed" position="12,155" size="120,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="left" transparent="1" />
   </screen>
   <screen name="TemplatesTitle">
-  <!-- Templates Title -->
+    <!-- Templates Title -->
     <widget objectTypes="Title,StaticText" source="Title" render="Label" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" zPosition="1" />
-    <widget objectTypes="title,StaticText" source="title" render="Label" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" zPosition="2" />
+    <!--<widget objectTypes="title,StaticText" source="title" render="Label" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" zPosition="2" />-->
+    <widget objectTypes="screen_path,StaticText" source="screen_path" render="Label" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" zPosition="3" />
   </screen>
   <screen name="TemplatesButtons">
     <panel name="TemplatesButtonsLayer" />
@@ -4468,6 +4469,10 @@
   <screen name="TemplatesButtonsInfo">
   <!-- Templates Buttons Info -->
     <eLabel text="&gt;INFO&lt;" position="1365,100" size="120,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+  </screen>
+  <screen name="TemplatesButtons0">
+    <!-- Templates Buttons < 0 > -->
+    <eLabel text="&lt; 0 &gt;" position="1365,100" size="120,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
   </screen>
   <screen name="TemplatesButtonsOk">
   <!-- Templates Buttons Ok -->

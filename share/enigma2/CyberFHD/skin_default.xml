@@ -466,7 +466,7 @@
     <panel name="TemplatesMenu500Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="s" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Channellist menu" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="menu" position="90,200" size="480,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <panel name="TemplatesClock" />
   </screen>
@@ -476,7 +476,7 @@
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="T" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Select service to add..." position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="list" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <panel name="TemplatesButtonsRed" />
     <panel name="TemplatesButtonsGreen" />
@@ -630,7 +630,7 @@
     <panel name="TemplatesMenu500Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="s" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Movielist menu" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="menu" position="90,200" size="480,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <panel name="TemplatesClock" />
   </screen>
@@ -640,7 +640,7 @@
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="@" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Please select tag to filter..." position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="list" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget name="text" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
     <panel name="TemplatesClock" />
@@ -700,7 +700,7 @@
     <panel name="TemplatesMenuLayer" />
     <panel name="TemplatesMenu500Layer" />
     <panel name="TemplatesMenuLeftLayer" />
-    <eLabel text="Cutlist editor" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <eLabel text="V" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
     <widget source="cutlist" render="Listbox" position="90,200" size="480,600" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
       <convert type="TemplatedMultiContent">
@@ -729,7 +729,7 @@
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Movie Browser Configuration" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <panel name="TemplatesButtonsRed" />
     <panel name="TemplatesButtonsGreen" />
@@ -738,7 +738,7 @@
   </screen>
   <!-- ########## Main menu ########## -->
   <!-- Menu -->
-  <screen name="Menu" position="0,0" size="1920,1080" title=" " flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="Menu" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenuLayer" />
     <panel name="TemplatesMenu500Layer" />
     <panel name="TemplatesMenuLeftLayer" />
@@ -792,46 +792,6 @@
 			"itemHeight": 40
 			}
       </convert>
-    </widget>
-    <eLabel text="Memory Info" position="615,505" size="725,30" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
-    <panel name="TemplatesMemoryProgressLayer" />
-    <!-- Layer Memory Info -->
-    <eLabel position="603,493" size="1240,354" backgroundColor="background3" zPosition="-12" />
-    <eLabel position="605,495" size="1235,350" backgroundColor="background1" zPosition="-11" />
-    <eLabel position="610,540" size="1225,300" backgroundColor="background2" zPosition="-10" />
-    <!-- Layer Memory Info Right -->
-    <eLabel position="1840,493" size="80,354" backgroundColor="background3" zPosition="-12" />
-    <eLabel position="1840,495" size="80,350" backgroundColor="background1" zPosition="-11" />
-    <eLabel position="1840,540" size="70,300" backgroundColor="background2" zPosition="-10" />
-    <widget source="session.Event_Now" render="Progress" position="615,545" size="1215,50" foregroundColor="background4" backgroundColor="background4" transparent="1" zPosition="2">
-      <convert type="ProgressDiskSpaceInfo">FleshInfo</convert>
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="620,545" size="800,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="left" transparent="1" zPosition="5">
-      <convert type="ProgressDiskSpaceInfo">Flesh,Full</convert>
-    </widget>
-    <widget source="session.Event_Now" render="Progress" position="615,605" size="1215,50" foregroundColor="background4" backgroundColor="background4" transparent="1" zPosition="2">
-      <convert type="ProgressDiskSpaceInfo">MemTotal</convert>
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="620,605" size="800,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="left" transparent="1" zPosition="5">
-      <convert type="ProgressDiskSpaceInfo">MemTotal,Full</convert>
-    </widget>
-    <widget source="session.Event_Now" render="Progress" position="615,665" size="1215,50" foregroundColor="background4" backgroundColor="background4" transparent="1" zPosition="2">
-      <convert type="ProgressDiskSpaceInfo">SwapTotal</convert>
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="620,665" size="800,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="left" transparent="1" zPosition="5">
-      <convert type="ProgressDiskSpaceInfo">SwapTotal,Full</convert>
-    </widget>
-    <widget source="session.Event_Now" render="Progress" position="615,725" size="1215,50" foregroundColor="background4" backgroundColor="background4" transparent="1" zPosition="2">
-      <convert type="ProgressDiskSpaceInfo">UsbInfo</convert>
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="620,725" size="800,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="left" transparent="1" zPosition="5">
-      <convert type="ProgressDiskSpaceInfo">UsbInfo,Full</convert>
-    </widget>
-    <widget source="session.Event_Now" render="Progress" position="615,785" size="1215,50" foregroundColor="background4" backgroundColor="background4" transparent="1" zPosition="2">
-      <convert type="ProgressDiskSpaceInfo">HddInfo</convert>
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="620,785" size="800,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="left" transparent="1" zPosition="5">
-      <convert type="ProgressDiskSpaceInfo">HddInfo,Full</convert>
     </widget>
     <panel name="TemplatesButtonsRed" />
     <panel name="TemplatesButtonsGreen" />
@@ -1009,7 +969,7 @@
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Setup" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget name="description" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
     <panel name="TemplatesButtonsRed" />
@@ -1024,7 +984,7 @@
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="e" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Subtitle selection" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <panel name="TemplatesClock" />
   </screen>
@@ -1034,7 +994,7 @@
     <panel name="TemplatesMenu500Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="f" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Choose your Skin" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="SkinList" position="90,200" size="480,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget name="Preview" position="1060,380" size="280,210" alphatest="on" />
     <widget source="introduction" render="Label" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
@@ -1048,7 +1008,7 @@
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="VideoSetup" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget name="description" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
     <panel name="TemplatesButtonsRed" />
@@ -1063,7 +1023,7 @@
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="i" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="About" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="AboutScrollLabel" position="90,200" size="980,635" font="Global; 25" halign="center" foregroundColor="color2" backgroundColor="background1" transparent="1" />
     <panel name="TemplatesButtonsRed" />
     <panel name="TemplatesButtonsGreen" />
@@ -1078,7 +1038,7 @@
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="i" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Service" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="infolist" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <panel name="TemplatesButtonsRed" />
     <panel name="TemplatesButtonsGreen" />
@@ -1093,7 +1053,7 @@
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="i" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Service" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="infolist" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <panel name="TemplatesClock" />
   </screen> 
@@ -1103,7 +1063,7 @@
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="i" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Memory Info" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <eLabel position="579,200" size="2,635" backgroundColor="background3" zPosition="1" />
     <widget name="lmemtext" position="90,200" size="480,600" font="Console;25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" zPosition="1" />
     <widget name="lmemvalue" position="90,200" size="480,600" font="Console;25" foregroundColor="color2" backgroundColor="background1" halign="right" transparent="1" zPosition="2" />
@@ -1122,17 +1082,17 @@
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="i" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Latest Commits" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="AboutScrollLabel" position="90,200" size="980,635" font="Console;25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
     <panel name="TemplatesClock" />
   </screen>
   <!-- Translation Info -->
-  <screen name="TranslationInfo" position="0,0" size="1920,1080" title="Memory Info" flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="TranslationInfo" position="0,0" size="1920,1080" title="Translation" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenuLayer" />
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="i" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Translation" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget source="TranslatorName" render="Label" position="362,890" size="670,110" font="Global; 25" halign="center" backgroundColor="background1" transparent="1" />
     <widget source="TranslationInfo" render="Label" position="89,200" size="980,635" font="Global; 25" halign="center" backgroundColor="background1" transparent="1" />
     <panel name="TemplatesClock" />
@@ -1144,7 +1104,7 @@
     <panel name="TemplatesMenuLeftLayer" />
     <panel name="TemplatesMenuRightLayer" />
     <eLabel text="d" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Troubleshoot" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="AboutScrollLabel" position="90,200" size="1740,635" font="Console;25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
     <panel name="TemplatesClock" />
     <panel name="TemplatesButtonsRed" />
@@ -1238,12 +1198,12 @@
   </screen>
   <!-- ########## Help Menu ########## -->
   <!-- Help Menu -->
-  <screen name="HelpMenu" position="0,0" size="1920,1080" title="Menu" flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="HelpMenu" position="0,0" size="1920,1080" title="Help..." flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLayer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="I" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Help..." position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="list" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget name="rc" position="1459,335" size="154,500" zPosition="10" pixmaps="CyberFHD/rc.png,CyberFHD/rcold.png" alphatest="on" />
     <widget name="arrowdown" pixmap="CyberFHD/arrowdown.png" position="-100,-100" size="37,70" zPosition="11" alphatest="on" />
@@ -1261,7 +1221,7 @@
     <panel name="TemplatesMenuLeftLayer" />
     <panel name="TemplatesMenuRightLayer" />
     <eLabel text="d" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Command execution..." position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="text" position="90,200" size="1740,635" font="Console;25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
     <panel name="TemplatesClock" />
   </screen>
@@ -1462,7 +1422,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="@" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Choice Box" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="list" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget name="text" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
     <panel name="TemplatesClock" />
@@ -1473,7 +1433,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="@" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Location Box" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="text" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
     <eLabel position="90,200" size="980,40" backgroundColor="background2" zPosition="-1" />
     <eLabel text="&gt;" position="95,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
@@ -1496,7 +1456,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="@" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Input" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="text" position="90,200" size="980,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
     <widget name="input" position="90,240" size="980,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
     <panel name="TemplatesClock" />
@@ -1672,7 +1632,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="e" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="EPG Selection" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="list" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" setEventItemfont="Global; 25" setColWidths="60,160" setColGap="20" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <panel name="TemplatesMenuInfoLayer" />
     <panel name="TemplatesMenuInfoRightLayer" />
@@ -1703,7 +1663,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenuLeftLayer" />
     <panel name="TemplatesMenuRightLayer" />
     <eLabel text="e" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="EPG Selection Multi" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="list" position="90,200" size="1740,635" scrollbarMode="showNever" itemHeight="35" setEventItemfont="Global; 25" setEventTimefont="Global; 25" setColWidths="350,250" setTimeWidth="130" setColGap="20" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <panel name="TemplatesButtonsRed" />
     <panel name="TemplatesButtonsGreen" />
@@ -1757,7 +1717,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu500Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="s" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Eventview menu" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="menu" position="90,200" size="480,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <panel name="TemplatesButtonsRed" />
     <panel name="TemplatesButtonsGreen" />
@@ -1769,7 +1729,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="T" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Choose bouquet" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="menu" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <panel name="TemplatesClock" />
   </screen>
@@ -1779,7 +1739,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Time/Date Input" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget name="canceltext" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
     <widget name="oktext" position="1380,914" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
@@ -1792,7 +1752,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Electronic Program Guide Setup" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget name="canceltext" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
     <widget name="oktext" position="1380,914" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
@@ -1805,7 +1765,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="T" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Choose bouquet" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="menu" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <panel name="TemplatesClock" />
   </screen>
@@ -1816,7 +1776,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="e" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Electronic Program Guide" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="timeline_text" position="90,200" size="980,30" font="Global; 20" foregroundColor="color1" backgroundColor="background1" transparent="1" />
     <widget name="list" position="90,240" size="980,595" scrollbarMode="showNever" backgroundColor="background1" transparent="1" EntrybackgroundColor="background1" EventFontPadding="4" />
     <panel name="TemplatesMenuInfoLayer" />
@@ -1849,7 +1809,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenuLeftLayer" />
     <panel name="TemplatesMenuRightLayer" />
     <eLabel text="e" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Electronic Program Guide" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="timeline_text" position="90,200" size="1740,30" font="Global; 20" foregroundColor="color1" backgroundColor="background1" transparent="1" />
     <widget name="list" position="90,240" size="1740,595" scrollbarMode="showNever" backgroundColor="background1" transparent="1" EntrybackgroundColor="background1" EventFontPadding="4" />
     <panel name="TemplatesButtonsRed" />
@@ -1866,7 +1826,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
   <screen name="GraphicalInfoBarEPG" position="0,0" size="1920,1080" title="InfoBar EPG" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesInfoBarTvLayer" />
     <eLabel text="e" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Electronic Program Guide" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <panel name="TemplatesInfoBarTvProgress" />
     <panel name="TemplatesInfoBarTvIndication" />
     <!-- Description Layer -->
@@ -1905,7 +1865,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="e" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Electronic Program Guide" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="timeline_text" position="90,200" size="980,30" font="Global; 20" foregroundColor="color1" backgroundColor="background1" transparent="1" />
     <widget name="list" position="90,240" size="980,595" scrollbarMode="showNever" backgroundColor="background1" transparent="1" EntrybackgroundColor="background1" EventFontPadding="4" />
     <panel name="TemplatesMenuInfoLayer" />
@@ -1938,7 +1898,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenuLeftLayer" />
     <panel name="TemplatesMenuRightLayer" />
     <eLabel text="e" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Electronic Program Guide" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="timeline_text" position="90,200" size="1740,30" font="Global; 20" foregroundColor="color1" backgroundColor="background1" transparent="1" />
     <widget name="list" position="90,240" size="1740,595" scrollbarMode="showNever" backgroundColor="background1" transparent="1" EntrybackgroundColor="background1" EventFontPadding="4" />
     <panel name="TemplatesButtonsRed" />
@@ -1957,7 +1917,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu500Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="N" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Network Configuration..." position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="menulist" position="90,200" size="480,635" scrollbarMode="showNever" itemHeight="40" font="Global; 30" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget source="description" render="Label" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
     <panel name="TemplatesButtonsRed" />
@@ -1970,7 +1930,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="N" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Network Setup" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget source="Adaptertext" render="Label" position="1115,510" size="450,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" />
     <widget source="Adapter" render="Label" position="1480,510" size="350,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1" />
     <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
@@ -1999,7 +1959,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="N" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Nameserver Setup" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget source="introduction" render="Label" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
     <panel name="TemplatesButtonsRed" />
@@ -2014,7 +1974,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="N" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Select Network Adapter" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget source="list" render="Listbox" position="90,200" size="980,600" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
       <convert type="TemplatedMultiContent">
 			{"template": [
@@ -2041,7 +2001,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="n" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Network test..." position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="Adaptertext" position="90,200" size="450,35" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" />
     <widget name="Adapter" position="90,230" size="450,35" font="Global; 25" foregroundColors="#8c8c93,#f23d21,#1cff1c" backgroundColor="background1" halign="left" transparent="1" />
     <widget name="AdapterInfo_OK" position="1020,215" size="38,31" pixmap="CyberFHD/icons/lock_on.png" alphatest="on" zPosition="2" />
@@ -2088,7 +2048,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="N" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Network Browser" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget source="list" render="Listbox" position="90,200" size="980,600" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
       <convert type="TemplatedMultiContent">
 			{"template": [
@@ -2131,7 +2091,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="N" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="MountEdit" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget source="introduction" render="Label" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
     <widget name="VKeyIcon" pixmap="CyberFHD/menu/vkey_icon.png" position="1170,549" zPosition="10" size="60,48" transparent="1" alphatest="on" />
@@ -2146,7 +2106,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="N" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="MountManager" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget source="config" render="Listbox" position="90,200" size="980,635" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
       <convert type="TemplatedMultiContent">
 			{"template": [
@@ -2170,7 +2130,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="N" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="MountView" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <eLabel position="90,200" size="980,40" backgroundColor="background2" zPosition="-1" />
     <eLabel text="&gt;" position="95,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
     <widget source="legend2" render="Label" position="125,205" size="940,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
@@ -2201,7 +2161,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="N" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Scan IP" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <panel name="TemplatesButtonsRed" />
     <panel name="TemplatesButtonsGreen" />
@@ -2215,7 +2175,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="N" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="UserDialog" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget source="introduction" render="Label" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
     <widget name="VKeyIcon" pixmap="CyberFHD/menu/vkey_icon.png" position="1170,549" zPosition="10" size="60,48" transparent="1" alphatest="on" />
@@ -2230,7 +2190,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="N" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="UserManager" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget source="config" render="Listbox" position="90,200" size="980,600" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
       <convert type="TemplatedMultiContent">
 			{"template": [
@@ -2254,7 +2214,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="N" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Wireless Network Adapter Selection..." position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="menulist" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget source="description" render="Label" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
     <panel name="TemplatesButtonsRed" />
@@ -2268,7 +2228,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="N" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Wireless Network Setup Menu..." position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="menulist" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget source="description" render="Label" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
     <panel name="TemplatesButtonsRed" />
@@ -2282,7 +2242,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="N" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Wireless Network Configuration..." position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <eLabel text="Network Info" position="1115,470" size="715,30" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
     <panel name="TemplatesMenuInfoLayer" />
@@ -2301,7 +2261,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="N" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Wireless Network State" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <eLabel position="85,200" size="310,280" backgroundColor="background2" zPosition="-10" />
     <widget source="IFtext" render="Label" position="90,205" size="300,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
     <widget source="LabelBSSID" render="Label" position="90,245" size="300,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
@@ -2327,7 +2287,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="N" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Choose a Wireless Network" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget source="list" render="Listbox" position="90,200" size="980,600" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
       <convert type="TemplatedMultiContent">
 			{"template": [
@@ -2356,7 +2316,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="N" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Wireless Network AP Scan..." position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="menulist" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <eLabel text="Network Info" position="1115,470" size="715,30" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
     <panel name="TemplatesMenuInfoLayer" />
@@ -2380,7 +2340,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="N" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="MAC-address settings" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget source="introduction" render="Label" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
     <panel name="TemplatesButtonsRed" />
@@ -2752,13 +2712,14 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="P" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Plugin browser" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="list" position="90,200" size="980,600" scrollbarMode="showNever" itemHeight="60" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <panel name="TemplatesButtonsRed" />
     <panel name="TemplatesButtonsGreen" />
     <panel name="TemplatesButtonsYellow" />
     <panel name="TemplatesButtonsBlue" />
     <panel name="TemplatesButtonsMenu" />
+    <panel name="TemplatesButtons0" />
     <panel name="TemplatesButtons" />
     <panel name="TemplatesClock" />
   </screen>
@@ -3102,7 +3063,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="C" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <widget name="title" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="entries" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget name="subtitle" position="340,925" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
     <widget name="bottom" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
@@ -3114,7 +3075,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="C" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Common Interface" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="entries" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget name="text" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
     <panel name="TemplatesClock" />
@@ -3125,7 +3086,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="C" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="CI Assignment" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="CiList" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <panel name="TemplatesButtonsRed" />
     <panel name="TemplatesButtonsGreen" />
@@ -3138,7 +3099,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="C" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="CI Assignment" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <eLabel position="90,200" size="980,40" backgroundColor="background2" zPosition="-1" />
     <eLabel text="&gt;" position="95,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
     <widget source="CAidList_desc" render="Label" position="125,205" size="940,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
@@ -3161,7 +3122,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenuLayer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="C" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="CI Assignment" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <eLabel position="90,200" size="980,40" backgroundColor="background2" zPosition="-1" />
     <widget name="ServiceList_desc" position="95,205" size="970,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
     <widget name="ServiceList" position="90,245" size="980,565" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
@@ -3177,7 +3138,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="C" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="select CAId's" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="list" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <panel name="TemplatesButtonsRed" />
     <panel name="TemplatesButtonsGreen" />
@@ -3190,7 +3151,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="T" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Select provider to add..." position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="list" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget source="introduction" render="Label" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
     <panel name="TemplatesButtonsRed" />
@@ -3206,7 +3167,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="T" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Select service to add..." position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="list" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget source="introduction" render="Label" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
     <panel name="TemplatesButtonsRed" />
@@ -3237,7 +3198,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="t" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Timer Edit" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="description" position="90,200" size="980,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
     <widget name="lbegin" position="400,280" size="100,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
     <widget name="lend" position="400,320" size="100,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
@@ -3252,7 +3213,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="t" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Timer Editor" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="timerlist" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="60" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <panel name="TemplatesButtonsRed" />
     <panel name="TemplatesButtonsGreen" />
@@ -3267,7 +3228,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="t" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Timer entry" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget name="canceltext" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
     <widget name="oktext" position="1380,914" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
@@ -3282,7 +3243,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenuLeftLayer" />
     <panel name="TemplatesMenuRightLayer" />
     <eLabel text="t" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Timer log" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="loglist" position="90,200" size="1740,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget name="logentry" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
     <panel name="TemplatesButtonsRed" />
@@ -3298,7 +3259,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="t" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Timer sanity error" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="list" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget name="timer1" position="1381,319" size="320,225" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget name="timer2" position="1389,566" size="320,225" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
@@ -3315,7 +3276,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="t" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Timer selection" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="timerlist" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <panel name="TemplatesClock" />
   </screen>
@@ -3447,7 +3408,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="s" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Reception Settings" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <panel name="TemplatesClock" />
   </screen>
@@ -3457,7 +3418,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="s" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Choose Tuner" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget source="nimlist" render="Listbox" position="90,200" size="980,560" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
       <convert type="TemplatedMultiContent">
 			{"template": [
@@ -3477,7 +3438,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="±" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="select Slot" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="nimlist" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <panel name="TemplatesClock" />
   </screen>
@@ -3487,7 +3448,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="r" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Positioner setup..." position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="list" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <panel name="TemplatesSignalPositioner" />
     <panel name="TemplatesButtonsRed" />
@@ -3504,7 +3465,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="r" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Positioner setup..." position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="list" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <panel name="TemplatesSignalPositioner" />
     <panel name="TemplatesButtonsRed" />
@@ -3521,7 +3482,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Tune" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget name="introduction" render="Label" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
     <panel name="TemplatesClock" />
@@ -3533,7 +3494,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenuLeftLayer" />
     <panel name="TemplatesMenuRightLayer" />
     <eLabel text="±" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Positioner Setup Log" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="list" position="90,200" size="1740,635" font="Console;25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
     <widget name="key_red" render="Label" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
     <widget name="key_green" render="Label" position="1380,914" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
@@ -3562,7 +3523,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="s" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Satellite equipment setup" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <panel name="TemplatesClock" />
   </screen>
@@ -3572,7 +3533,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="±" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Satfinder" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget name="introduction" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
     <panel name="TemplatesSignalFinder" />
@@ -3587,7 +3548,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="±" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Service scan" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget name="introduction" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
     <panel name="TemplatesClock" />
@@ -3598,7 +3559,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="±" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Service scan" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <eLabel position="90,200" size="980,40" backgroundColor="background2" zPosition="-1" />
     <eLabel text="&gt;" position="95,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
     <widget name="header" position="125,205" size="940,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
@@ -3626,7 +3587,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="±" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Signal Finder" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="status" position="1430,575" size="400,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1" />
     <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget name="introduction" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
@@ -3642,7 +3603,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="±" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Signal Finder" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="status" position="1430,575" size="400,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1" />
     <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget name="introduction" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
@@ -3658,7 +3619,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu500Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="±" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Service scan" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget source="FrontendInfo" render="Pixmap" pixmap="CyberFHD/icons/scan-s.png" position="1775,920" size="64,64" alphatest="on">
       <convert type="FrontendInfo">TYPE</convert>
       <convert type="ValueRange">0,0</convert>
@@ -3700,7 +3661,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu500Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="±" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Transponders List" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="menu" position="90,200" size="480,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget name="introduction" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
     <panel name="TemplatesClock" />
@@ -3801,7 +3762,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="A" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="AC3 Lip Sync Setup" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget name="PluginInfo" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
     <panel name="TemplatesButtonsRed" />
@@ -3910,7 +3871,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <eLabel position="1205,850" size="615,180" backgroundColor="background1" zPosition="-11" />
     <eLabel position="1210,890" size="300,135" backgroundColor="background2" zPosition="-10" />
     <eLabel position="1515,890" size="300,135" backgroundColor="background2" zPosition="-10" />
-    <eLabel text="Bitrate viewer" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <eLabel text="Video" position="1210,855" size="300,30" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="center" transparent="1" />
     <eLabel text="Min:" position="1215,955" size="150,35" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
     <widget name="vmin" position="1345,955" size="160,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1" />
@@ -3939,7 +3900,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <eLabel position="1205,850" size="615,180" backgroundColor="background1" zPosition="-11" />
     <eLabel position="1210,890" size="300,135" backgroundColor="background2" zPosition="-10" />
     <eLabel position="1515,890" size="300,135" backgroundColor="background2" zPosition="-10" />
-    <eLabel text="Bitrate viewer" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <eLabel text="Video" position="1210,855" size="300,30" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="center" transparent="1" />
     <eLabel text="Min:" position="1215,955" size="150,35" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
     <widget name="vmin" position="1345,955" size="160,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1" />
@@ -3980,7 +3941,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="e" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Birthday Reminder" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <eLabel position="90,200" size="980,40" backgroundColor="background2" zPosition="-1" />
     <eLabel text="&gt;" position="95,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
     <widget name="name" position="125,205" size="295,30" font="Titles; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
@@ -4011,7 +3972,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Birthday Reminder Settings" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <panel name="TemplatesButtonsRed" />
     <panel name="TemplatesButtonsGreen" />
@@ -4026,7 +3987,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="e" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Edit birthday" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget name="error" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
     <panel name="TemplatesButtonsRed" />
@@ -4041,7 +4002,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="e" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Select a path for the birthday file" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="filelist" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget name="target" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
     <panel name="TemplatesButtonsRed" />
@@ -4196,7 +4157,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="V" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="DVD File Browser" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="filelist" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <panel name="TemplatesClock" />
   </screen>
@@ -4206,7 +4167,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="V" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Select a movie" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="list" position="90,200" size="980,635" scrollbarMode="showNever" selectionPixmap="CyberFHD/style/graysel.png" backgroundColor="background1" transparent="1" />
     <panel name="TemplatesMovieSelectionDescription" />
     <widget name="waitingtext" position="90,480" size="980,80" font="Global;25" foregroundColor="color1" backgroundColor="background1" halign="center" valign="center" transparent="1" zPosition="2" />
@@ -4225,7 +4186,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="V" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Collection settings" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget source="info" render="Label" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
     <panel name="TemplatesButtonsRed" />
@@ -4241,7 +4202,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="V" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="DVD File Browser" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="filelist" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <panel name="TemplatesButtonsRed" />
     <panel name="TemplatesButtonsGreen" />
@@ -4256,7 +4217,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="V" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="DVD media toolbox" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget source="info" render="Label" position="90,200" size="980,100" font="Global; 25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
     <widget name="details" position="90,310" size="980,525" font="Global; 25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
     <panel name="TemplatesButtonsRed" />
@@ -4271,7 +4232,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="V" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="DVD Tool" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget source="titles" render="Listbox" position="90,200" size="980,635" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
       <convert type="TemplatedMultiContent">
 			{"template": [
@@ -4300,7 +4261,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="V" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Properties of current title" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="thumbnail" position="90,200" size="260,160" alphatest="on" />
     <eLabel position="360,200" size="710,160" backgroundColor="background2" zPosition="-10" />
     <widget source="serviceinfo" render="Label" position="365,205" size="700,150" font="Global; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
@@ -4318,7 +4279,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="J" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Dream Explorer" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="filelist" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <eLabel text="Delete" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
     <eLabel text="Rename" position="1380,914" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
@@ -4335,7 +4296,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="J" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Select Copy/Move location..." position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="File" position="90,200" size="980,100" font="Global; 25" foregroundColor="color1" backgroundColor="background1" transparent="1" />
     <widget name="CPto" position="89,310" size="980,520" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <eLabel text="MOVE" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
@@ -4349,7 +4310,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="J" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Make a softlink..." position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="File" position="90,200" size="980,100" font="Global; 25" foregroundColor="color1" backgroundColor="background1" transparent="1" />
     <widget name="SLto" position="89,310" size="980,520" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <eLabel text="Set name" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
@@ -4364,7 +4325,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenuLeftLayer" />
     <panel name="TemplatesMenuRightLayer" />
     <eLabel text="J" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="File Explorer" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="filedata" position="90,200" size="1740,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <panel name="TemplatesClock" />
   </screen>
@@ -4529,7 +4490,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <widget name="buttonred" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
     <widget name="buttongreen" position="1380,914" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
     <eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Email Setup" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <panel name="TemplatesButtonsRed" />
     <panel name="TemplatesButtonsGreen" />
@@ -4545,7 +4506,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <widget name="buttonred" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
     <widget name="buttongreen" position="1380,914" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
     <eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Account Setup" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <panel name="TemplatesButtonsRed" />
     <panel name="TemplatesButtonsGreen" />
@@ -4562,7 +4523,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <widget name="buttongreen" position="1380,914" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
     <widget name="buttonyellow" position="1380,944" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
     <eLabel text="e" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Accounts list" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="accounts" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <panel name="TemplatesButtonsRed" />
     <panel name="TemplatesButtonsGreen" />
@@ -4578,7 +4539,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenuLeftLayer" />
     <panel name="TemplatesMenuRightLayer" />
     <eLabel text="e" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="view Email" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="from" position="90,200" size="1740,35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget name="date" position="90,235" size="1740,35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget name="subject" position="90,270" size="1740,35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
@@ -4597,7 +4558,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="e" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
     <eLabel position="579,200" size="2,635" backgroundColor="background3" zPosition="1" />
-    <eLabel text="Email" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="boxlist" position="90,200" size="490,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget name="messagelist" position="580,200" size="490,635" scrollbarMode="showNever" itemHeight="80" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget name="infolabel" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
@@ -4614,7 +4575,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenuRightLayer" />
     <eLabel text="J" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
     <eLabel position="959,200" size="2,635" backgroundColor="background3" zPosition="1" />
-    <eLabel text="Filebrowser" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="list_left" position="90,200" size="860,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget name="list_right" position="970,200" size="860,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <panel name="TemplatesButtonsRed" />
@@ -4631,7 +4592,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Filebrowser menu" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget name="buttonred" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
     <widget name="buttongreen" position="1380,914" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
@@ -4679,7 +4640,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="FPGA Upgrade" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget source="status" render="Label" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
     <widget name="file_list" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <panel name="TemplatesButtonsRed" />
@@ -4695,7 +4656,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Standbymode Fancontrol settings" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <panel name="TemplatesButtonsRed" />
     <panel name="TemplatesButtonsGreen" />
@@ -4708,7 +4669,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="s" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Standbymode Fancontrol settings" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <panel name="TemplatesButtonsRed" />
     <panel name="TemplatesButtonsGreen" />
@@ -4722,7 +4683,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="s" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Fan Control" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <eLabel position="90,585" size="485,250" backgroundColor="background2" zPosition="-10" />
     <widget source="SensorTempText0" render="Label" position="95,590" size="200,30" font="Global; 25" halign="left" foregroundColor="color2" backgroundColor="background2" transparent="1" />
@@ -5032,7 +4993,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="h" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Select HDD" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="hddlist" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <panel name="TemplatesClock" />
   </screen>
@@ -5042,7 +5003,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="h" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Harddisk" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="model" position="90,200" size="980,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
     <widget name="capacity" position="90,240" size="980,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
     <widget name="bus" position="90,280" size="980,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
@@ -5056,7 +5017,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="h" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Harddisk" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="wait" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <panel name="TemplatesClock" />
   </screen>
@@ -5176,7 +5137,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="k" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Select input device" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget source="list" render="Listbox" position="90,200" size="980,635" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
       <convert type="TemplatedMultiContent">
         <!-- device, description, devicepng, divpng -->
@@ -5203,7 +5164,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Input device setup" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget source="introduction" render="Label" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
     <panel name="TemplatesButtonsRed" />
@@ -5245,7 +5206,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="LED Brightness Setup" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget name="current_entry" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
     <panel name="TemplatesButtonsRed" />
@@ -5256,12 +5217,12 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
   </screen>
   <!-- ########## Kodi ########## -->
   <!-- Kodi -->
-  <screen name="KodiSetupScreen" position="0,0" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="KodiSetupScreen" position="0,0" size="1920,1080" title="Kodi Settings" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenuLayer" />
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Kodi Settings" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <panel name="TemplatesButtonsRed" />
     <panel name="TemplatesButtonsGreen" />
@@ -5339,30 +5300,30 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="M" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Merlin Music Player Lyrics" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="lyric_text" position="90,200" size="980,635" font="Console;25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
     <widget name="headertext" position="340,925" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
     <widget name="resulttext" position="340,955" size="1500,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
     <panel name="TemplatesClock" />
   </screen>
   <!-- Merlin Music Player Song List -->
-  <screen name="MerlinMusicPlayerSongList" position="0,0" size="1920,1080" title="Songlist" flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="MerlinMusicPlayerSongList" position="0,0" size="1920,1080" title="Merlin Music Player Song List" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenuLayer" />
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="M" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Merlin Music Player Song List" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="list" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget name="headertext" position="340,955" size="1500,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
     <panel name="TemplatesClock" />
   </screen>
   <!-- Merlin Music Player FileList -->
-  <screen name="MerlinMusicPlayerFileList" position="0,0" size="1920,1080" title="iDream" flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="MerlinMusicPlayerFileList" position="0,0" size="1920,1080" title="Merlin Music Player FileList" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenuLayer" />
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="M" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Merlin Music Player FileList" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="list" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget name="headertext" position="340,955" size="1500,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
     <panel name="TemplatesClock" />
@@ -5373,7 +5334,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Merlin Music Player Setup" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <panel name="TemplatesButtonsRed" />
     <panel name="TemplatesButtonsGreen" />
     <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
@@ -5564,7 +5525,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="g" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Change pin code" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <panel name="TemplatesClock" />
   </screen>
@@ -5574,7 +5535,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="g" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Parental control services Editor" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="servicelist" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <panel name="TemplatesClock" />
   </screen>
@@ -5584,19 +5545,19 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Parental control setup" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <panel name="TemplatesClock" />
   </screen>
   <!-- PinInput -->
-  <screen name="PinInput" position="0,0" size="1920,1080" title="PinInput" flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="PinInput" position="0,0" size="1920,1080" title="Pin code needed" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenuLayer" />
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="g" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
     <eLabel position="90,200" size="980,40" backgroundColor="background2" zPosition="-1" />
     <eLabel text="&gt;" position="95,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-    <eLabel text="Pin code needed" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <eLabel text="Enter pin" position="125,205" size="300,30" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget name="input" position="965,205" size="100,30" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget name="text" position="90,245" size="980,30" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
@@ -5631,7 +5592,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="F" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="PicturePlayer" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget source="label" render="Label" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
     <widget name="thn" position="1105,395" size="735,450" alphatest="on" />
     <widget name="filelist" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="50" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
@@ -5649,7 +5610,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="i" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Info" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget source="menu" render="Listbox" position="90,200" size="980,635" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
       <convert type="TemplatedMultiContent">
 		{"template": [
@@ -5669,7 +5630,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Settings" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <panel name="TemplatesButtonsRed" />
     <panel name="TemplatesButtonsGreen" />
@@ -5722,7 +5683,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="@" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
     <eLabel position="579,200" size="2,635" backgroundColor="background3" zPosition="1" />
-    <eLabel text="Quick Launch Menu" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="list" position="90,200" size="480,600" scrollbarMode="showNever" itemHeight="75" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget name="sublist" position="590,200" size="480,600" scrollbarMode="showNever" itemHeight="75" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget name="description" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
@@ -5738,7 +5699,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="i" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Devices" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget source="devicelist" render="Listbox" position="90,200" size="980,560" scrollbarMode="showNever" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
       <convert type="TemplatedMultiContent">
 			{"template": [
@@ -5760,7 +5721,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="@" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Info Panel" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="Mlist" position="90,200" size="980,600" scrollbarMode="showNever" itemHeight="75" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget name="label1" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
     <panel name="TemplatesClock" />
@@ -5781,7 +5742,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="h" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Mount Manager" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget source="list" render="Listbox" position="90,200" size="980,560" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
       <convert type="TemplatedMultiContent">
 			{"template": [
@@ -5808,7 +5769,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Mount Manager" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget name="Linconn" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
     <panel name="TemplatesButtonsRed" />
@@ -5822,7 +5783,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="t" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Cron Manager" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget source="list" render="Listbox" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
       <convert type="StringList" />
     </widget>
@@ -5845,7 +5806,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="t" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Cron Manager" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget source="list" render="Listbox" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
       <convert type="StringList" />
     </widget>
@@ -5868,7 +5829,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Cron Manager" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <panel name="TemplatesButtonsRed" />
     <panel name="TemplatesHelpWindow" />
@@ -5881,7 +5842,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="B" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Swap File Manager" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="autostart_off" position="340,925" size="32,32" pixmap="CyberFHD/icons/lock_off.png" alphatest="on" zPosition="1" />
     <widget name="autostart_on" position="340,925" size="32,32" pixmap="CyberFHD/icons/lock_on.png" alphatest="on" zPosition="2" />
     <eLabel position="90,200" size="980,40" backgroundColor="background2" zPosition="-1" />
@@ -5903,12 +5864,12 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesClock" />
   </screen>
   <!-- Sundtek Control Center -->
-  <screen name="SundtekControlCenter" position="0,0" size="1920,1080" title="SundtekControlCenter" flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="SundtekControlCenter" position="0,0" size="1920,1080" title="Sundtek Control Center" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenuLayer" />
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="A" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Sundtek Control Center" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="infos" position="340,895" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
     <widget name="bouquets" position="340,925" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
     <widget name="netservers" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
@@ -5921,12 +5882,12 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesClock" />
   </screen>
    <!-- Softcam Packages -->
-    <screen name="ShowSoftcamPackages" position="0,0" size="1920,1080" title="ShowSoftcamPackages" flags="wfNoBorder" backgroundColor="transparent">
+    <screen name="ShowSoftcamPackages" position="0,0" size="1920,1080" title="Install Softcams" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenuLayer" />
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="b" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Install Softcams" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget source="list" render="Listbox" position="90,200" size="980,600" scrollbarMode="showNever" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
     <convert type="TemplatedMultiContent">
 		{"template": [
@@ -6934,7 +6895,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
   <screen name="UserInterfacePositioner2" position="0,0" size="1920,1080" title="User Interface Positioner" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenuLayer" />
     <eLabel text="s" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Put a red area in the corner of the tv screen" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <eLabel position="679,343" size="561,2" backgroundColor="background3" zPosition="2" />
     <eLabel position="679,658" size="561,2" backgroundColor="background3" zPosition="2" />
     <eLabel text="Set visibility options" position="680,278" size="561,65" font="Global; 32" halign="center" valign="center" backgroundColor="background2" />
@@ -7041,7 +7002,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Recording paths" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="config" position="90,200" size="980,630" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <panel name="TemplatesButtonsRed" />
     <panel name="TemplatesButtonsGreen" />
@@ -7055,7 +7016,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="k" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Remote Control System Code Setting" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <panel name="TemplatesButtonsRed" />
     <panel name="TemplatesButtonsGreen" />
@@ -7441,7 +7402,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="N" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="OpenWebif Configuration" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="lab1" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
     <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <panel name="TemplatesButtonsRed" />
@@ -7456,7 +7417,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="VideoEnhancementSetup" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget source="introduction" render="Label" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
     <panel name="TemplatesButtonsRed" />
@@ -7472,7 +7433,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="VideoEnhancementPreview" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget source="introduction" render="Label" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
     <panel name="TemplatesButtonsRed" />
@@ -7487,12 +7448,12 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
   </screen>
   <!-- ########## Volume Adjustl ########## -->
   <!--Volume Adjust-->
-  <screen name="Volume_adjust" position="0,0" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="Volume_adjust" position="0,0" size="1920,1080" title="Volume Adjust" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenuLayer" />
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="A" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Volume Adjust" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <eLabel position="90,200" size="980,40" backgroundColor="background2" zPosition="-1" />
     <eLabel text="&gt;" position="95,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
     <widget name="ServiceList.desc" position="125,205" size="940,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
@@ -7506,12 +7467,12 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesClock" />
   </screen>
   <!-- Change volume -->
-  <screen name="Change_volume" position="0,0" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="Change_volume" position="0,0" size="1920,1080" title="Change Volume offset" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenuLayer" />
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Change Volume offset" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <panel name="TemplatesButtonsRed" />
     <panel name="TemplatesButtonsGreen" />
@@ -7520,12 +7481,12 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesClock" />
   </screen>
   <!-- Volume Config -->
-  <screen name="Volume_Config" position="0,0" size="1920,1080" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="Volume_Config" position="0,0" size="1920,1080" title="Volume Config" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenuLayer" />
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Volume Config" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <widget source="infotext" render="Label" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
     <panel name="TemplatesButtonsRed" />
@@ -7557,7 +7518,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <eLabel position="0,643" size="80,144" backgroundColor="background3" zPosition="-12" />
     <eLabel position="0,645" size="80,140" backgroundColor="background1" zPosition="-11" />
     <eLabel position="10,650" size="70,130" backgroundColor="background2" zPosition="-10" />
-    <eLabel text="YAMP Music Player" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <eLabel position="90,200" size="850,40" backgroundColor="background2" zPosition="-1" />
     <eLabel text="&gt;" position="95,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
     <widget name="leftContentTitle" position="125,205" size="810,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
@@ -7607,49 +7568,49 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesButtons" />
     <panel name="TemplatesClock" />
   </screen>
-  <!-- YampLyrics -->
+  <!-- Yamp Lyrics -->
   <screen name="YampLyricsScreen" position="0,0" size="1920,1080" title="YAMP Music Player Lyrics" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenuLayer" />
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="M" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="YAMP Music Player Lyrics" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="lyrics" position="90,200" size="980,635" font="Console;25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
     <panel name="TemplatesClock" />
   </screen>
-  <!-- YampDatabase -->
-  <screen name="YampDatabaseScreen" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+  <!-- Yamp Database -->
+  <screen name="YampDatabaseScreen" position="0,0" size="1920,1080" title="YAMP Music Player Lyrics" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenuLayer" />
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="M" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <widget name="title" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="message" position="90,200" size="980,635" font="Console;25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
     <panel name="TemplatesButtonsRed" />
     <panel name="TemplatesButtonsGreen" />
     <panel name="TemplatesButtons" />
     <panel name="TemplatesClock" />
   </screen>
-  <!-- YampConfig -->
+  <!-- Yamp Config -->
   <screen name="YampConfigScreen" position="0,0" size="1920,1080" title="YAMP Music Player Configuration" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenuLayer" />
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="YAMP Music Player Configuration" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <eLabel text="Cancel" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
     <eLabel text="Save" position="1380,914" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
     <panel name="TemplatesButtons" />
     <panel name="TemplatesClock" />
   </screen>
-  <!-- YampSelect -->
+  <!-- Yamp Select -->
   <screen name="YampSelectPath" position="0,0" size="1920,1080" title="Yamp Music Player - Select path" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="TemplatesMenuLayer" />
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <eLabel text="Yamp Music Player - Select path" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesTitle" />
     <widget name="target" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
     <widget name="filelist" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <eLabel text="Cancel" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
@@ -7823,7 +7784,6 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TemplatesMenu1000Layer" />
     <panel name="TemplatesMenuLeftLayer" />
     <eLabel text="s" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-    <panel name="TemplatesTitle" />
     <panel name="TemplatesTitle" />
     <widget source="menu" render="Listbox" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
     <convert type="StringList" />
