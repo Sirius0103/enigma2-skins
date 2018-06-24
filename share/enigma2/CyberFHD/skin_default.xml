@@ -793,6 +793,46 @@
 			}
       </convert>
     </widget>
+    <eLabel text="Memory Info" position="615,505" size="725,30" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+    <panel name="TemplatesMemoryProgressLayer" />
+    <!-- Layer Memory Info -->
+    <eLabel position="603,493" size="1240,354" backgroundColor="background3" zPosition="-12" />
+    <eLabel position="605,495" size="1235,350" backgroundColor="background1" zPosition="-11" />
+    <eLabel position="610,540" size="1225,300" backgroundColor="background2" zPosition="-10" />
+    <!-- Layer Memory Info Right -->
+    <eLabel position="1840,493" size="80,354" backgroundColor="background3" zPosition="-12" />
+    <eLabel position="1840,495" size="80,350" backgroundColor="background1" zPosition="-11" />
+    <eLabel position="1840,540" size="70,300" backgroundColor="background2" zPosition="-10" />
+    <widget source="session.Event_Now" render="Progress" position="615,545" size="1215,50" foregroundColor="background4" backgroundColor="background4" transparent="1" zPosition="2">
+      <convert type="ProgressDiskSpaceInfo">FleshInfo</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="620,545" size="800,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="left" transparent="1" zPosition="5">
+      <convert type="ProgressDiskSpaceInfo">Flesh,Full</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Progress" position="615,605" size="1215,50" foregroundColor="background4" backgroundColor="background4" transparent="1" zPosition="2">
+      <convert type="ProgressDiskSpaceInfo">MemTotal</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="620,605" size="800,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="left" transparent="1" zPosition="5">
+      <convert type="ProgressDiskSpaceInfo">MemTotal,Full</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Progress" position="615,665" size="1215,50" foregroundColor="background4" backgroundColor="background4" transparent="1" zPosition="2">
+      <convert type="ProgressDiskSpaceInfo">SwapTotal</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="620,665" size="800,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="left" transparent="1" zPosition="5">
+      <convert type="ProgressDiskSpaceInfo">SwapTotal,Full</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Progress" position="615,725" size="1215,50" foregroundColor="background4" backgroundColor="background4" transparent="1" zPosition="2">
+      <convert type="ProgressDiskSpaceInfo">UsbInfo</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="620,725" size="800,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="left" transparent="1" zPosition="5">
+      <convert type="ProgressDiskSpaceInfo">UsbInfo,Full</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Progress" position="615,785" size="1215,50" foregroundColor="background4" backgroundColor="background4" transparent="1" zPosition="2">
+      <convert type="ProgressDiskSpaceInfo">HddInfo</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="620,785" size="800,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="left" transparent="1" zPosition="5">
+      <convert type="ProgressDiskSpaceInfo">HddInfo,Full</convert>
+    </widget>
     <panel name="TemplatesButtonsRed" />
     <panel name="TemplatesButtonsGreen" />
     <panel name="TemplatesButtonsYellow" />
