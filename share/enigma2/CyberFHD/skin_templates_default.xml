@@ -91,12 +91,6 @@
     <panel name="TemplatesDownLayer1" />
     <panel name="TemplatesPiconLayer" />
   </screen>
-  <screen name="TemplatesMenuInfoLayer">
-  <!-- Menu Info Layer -->
-    <eLabel position="1103,458" size="739,389" backgroundColor="background3" zPosition="-12" />
-    <eLabel position="1105,460" size="735,385" backgroundColor="background1" zPosition="-11" />
-    <eLabel position="1110,505" size="725,335" backgroundColor="background2" zPosition="-10" />
-  </screen>
   <screen name="TemplatesInfoBarTvLayer">
   <!-- Info Bar Tv Layer -->
     <panel name="TemplatesUpLayer1" />
@@ -112,21 +106,6 @@
   <!-- Info Bar Media Layer -->
     <panel name="TemplatesUpLayer1" />
     <panel name="TemplatesDownLayer1" />
-  </screen>
-  <screen name="TemplatesMenu500Layer">
-  <!-- Menu500 Layer -->
-    <eLabel position="78,188" size="504,659" backgroundColor="background3" zPosition="-12" />
-    <eLabel position="80,190" size="500,655" backgroundColor="background1" zPosition="-11" />
-  </screen>
-  <screen name="TemplatesMenu1000Layer">
-  <!-- Menu1000 Layer -->
-    <eLabel position="78,188" size="1004,659" backgroundColor="background3" zPosition="-12" />
-    <eLabel position="80,190" size="1000,655" backgroundColor="background1" zPosition="-11" />
-  </screen>
-  <screen name="TemplatesMenu1800Layer">
-  <!-- Menu1700 Layer -->
-    <eLabel position="78,188" size="1764,659" backgroundColor="background3" zPosition="-12" />
-    <eLabel position="80,190" size="1760,655" backgroundColor="background1" zPosition="-11" />
   </screen>
   <screen name="TemplatesMenuLeftLayer">
   <!-- Layer Menu Left -->
@@ -161,6 +140,35 @@
     <eLabel position="1840,458" size="80,389" backgroundColor="background3" zPosition="-12" />
     <eLabel position="1840,460" size="80,385" backgroundColor="background1" zPosition="-11" />
     <eLabel position="1840,505" size="70,335" backgroundColor="background2" zPosition="-10" />
+  </screen>
+  <screen name="TemplatesMenu500Layer">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesMenuLeftLayer" />
+  <!-- Menu 500 Layer -->
+    <eLabel position="78,188" size="504,659" backgroundColor="background3" zPosition="-12" />
+    <eLabel position="80,190" size="500,655" backgroundColor="background1" zPosition="-11" />
+  </screen>
+  <screen name="TemplatesMenu1000Layer">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesMenuLeftLayer" />
+  <!-- Menu 1000 Layer -->
+    <eLabel position="78,188" size="1004,659" backgroundColor="background3" zPosition="-12" />
+    <eLabel position="80,190" size="1000,655" backgroundColor="background1" zPosition="-11" />
+  </screen>
+  <screen name="TemplatesMenu1800Layer">
+    <panel name="TemplatesMenuLayer" />
+    <panel name="TemplatesMenuLeftLayer" />
+    <panel name="TemplatesMenuRightLayer" />
+  <!-- Menu 1800 Layer -->
+    <eLabel position="78,188" size="1764,659" backgroundColor="background3" zPosition="-12" />
+    <eLabel position="80,190" size="1760,655" backgroundColor="background1" zPosition="-11" />
+  </screen>
+  <screen name="TemplatesMenuInfoLayer">
+    <panel name="TemplatesMenuInfoRightLayer" />
+  <!-- Menu Info Layer -->
+    <eLabel position="1103,458" size="739,389" backgroundColor="background3" zPosition="-12" />
+    <eLabel position="1105,460" size="735,385" backgroundColor="background1" zPosition="-11" />
+    <eLabel position="1110,505" size="725,335" backgroundColor="background2" zPosition="-10" />
   </screen>
   <!--  ########## Templates Progress Layer ########## -->
   <screen name="TemplatesMenuUpProgressLayerDefault">
@@ -4793,7 +4801,6 @@
   </screen>
   <screen name="TemplatesChannelSelectionTvInfoEPGNow">
     <panel name="TemplatesMenuInfoLayer" />
-    <panel name="TemplatesMenuInfoRightLayer" />
     <panel name="TemplatesChannelSelectionProgress" />
   <!-- Layer Channel Selection Tv Info-->
     <eLabel text="&gt;" position="1115,509" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
@@ -4806,7 +4813,6 @@
   </screen>
   <screen name="TemplatesChannelSelectionTvInfoEPGNxt">
     <panel name="TemplatesMenuInfoLayer" />
-    <panel name="TemplatesMenuInfoRightLayer" />
     <panel name="TemplatesChannelSelectionProgress" />
   <!-- Layer Channel Selection Tv Info-->
     <eLabel text="&gt;" position="1115,509" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
@@ -4826,7 +4832,6 @@
   </screen>
   <screen name="TemplatesChannelSelectionTvInfoEPGNowPrograms">
     <panel name="TemplatesMenuInfoLayer" />
-    <panel name="TemplatesMenuInfoRightLayer" />
     <panel name="TemplatesChannelSelectionProgress" />
   <!-- Layer Channel Selection Tv Info-->
     <eLabel text="&gt;" position="1115,509" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
@@ -4847,7 +4852,6 @@
   </screen>
   <screen name="TemplatesChannelSelectionTvInfoEPGPrograms">
     <panel name="TemplatesMenuInfoLayer" />
-    <panel name="TemplatesMenuInfoRightLayer" />
     <panel name="TemplatesChannelSelectionProgress" />
   <!-- Layer Channel Selection Tv Info-->
     <eLabel text="&gt;" position="1115,509" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
@@ -4912,7 +4916,6 @@
   </screen>
   <screen name="TemplatesMovieSelectionDescriptionShort">
     <panel name="TemplatesMenuInfoLayer" />
-    <panel name="TemplatesMenuInfoRightLayer" />
   <!-- Templates Movie Selection Movie Info -->
     <eLabel text="File size:" position="1115,470" size="715,30" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
     <widget source="Service" render="Label" position="1530,470" size="300,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
@@ -4924,7 +4927,6 @@
   </screen>
   <screen name="TemplatesMovieSelectionDescriptionMeta">
     <panel name="TemplatesMenuInfoLayer" />
-    <panel name="TemplatesMenuInfoRightLayer" />
   <!-- Templates Movie Selection Movie Info -->
     <eLabel text="File size:" position="1115,470" size="715,30" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
     <widget source="Service" render="Label" position="1530,470" size="300,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
@@ -4936,7 +4938,6 @@
   </screen>
   <screen name="TemplatesMovieSelectionDescriptionFull">
     <panel name="TemplatesMenuInfoLayer" />
-    <panel name="TemplatesMenuInfoRightLayer" />
     <!-- Templates Movie Selection Movie Info -->
     <eLabel text="File size:" position="1115,470" size="715,30" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
     <widget source="Service" render="Label" position="1530,470" size="300,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
