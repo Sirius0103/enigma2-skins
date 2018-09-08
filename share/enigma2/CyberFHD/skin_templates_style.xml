@@ -229,8 +229,8 @@
 	<screen name="TemplatesMenuMediaPlayerLayer">
 		<panel name="TemplatesMenuMediaLayer" />
 		<panel name="TemplatesMenuRightLayer" />
-		<panel name="TemplatesMenuRadioLeftCornerBackground2" />
-		<panel name="TemplatesMenuRadioLeftCornerBackground3" />
+		<panel name="TemplatesMenuMediaPlayerCornerBackground2" />
+		<panel name="TemplatesMenuMediaPlayerCornerBackground3" />
 		<!-- Media Menu Player Layer -->
 		<!-- Description Layer -->
 		<eLabel position="78,643" size="874,144" backgroundColor="background3" zPosition="-12" />
