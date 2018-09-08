@@ -255,6 +255,14 @@ fonts = [
 	("Roboto-MediumItalic", _("MediumItalic")),
 	("Roboto-BoldItalic", _("BoldItalic"))]
 
+cornerbackground2 = [
+	("CornerBackground2Standard", _("Standard")),
+	("CornerBackground2Improved", _("Improved"))]
+
+cornerbackground3 = [
+	("CornerBackground3Standard", _("Standard")),
+	("CornerBackground3Improved", _("Improved"))]
+
 progressmode = [
 	("ProgressLayerStandard", _("Standard")),
 	("ProgressLayerImproved", _("Improved"))]
@@ -288,7 +296,7 @@ if not fileExists("/usr/lib/enigma2/python/Components/Converter/CaidInfo2.py")\
 	numberchannel = [
 		("TemplatesInfoBarTvNumberDefault", _("No"))]
 	tunerpanelinfobar = [
-		("TemplatesInfoBarTvTunerYes", _("Yes")),
+		("TemplatesInfoBarTvTunerStyle", _("Yes")),
 		("TemplatesInfoBarTvTunerDigital", _("Digital"))]
 	cryptedpanelinfobar = [
 		("TemplatesInfoBarTvInfoCryptedDefault", _("No"))]
@@ -407,6 +415,9 @@ else:
 	config.skin.cyberfhd.colorforeground3 = ConfigSelection(default="0a9a9a9", choices = stylefullcolor)
 	config.skin.cyberfhd.colorforeground4 = ConfigSelection(default="000ffff", choices = stylefullcolor)
 	config.skin.cyberfhd.colorforeground5 = ConfigSelection(default="0ffffff", choices = stylefullcolor)
+
+config.skin.cyberfhd.cornerbackground2 = ConfigSelection(default="CornerBackground2Standard", choices = cornerbackground2)
+config.skin.cyberfhd.cornerbackground3 = ConfigSelection(default="CornerBackground3Standard", choices = cornerbackground3)
 
 config.skin.cyberfhd.backgroundtransparent = ConfigSelection(default="5", choices = styletransparent)
 config.skin.cyberfhd.foregroundtransparent = ConfigSelection(default="0", choices = styletransparent)
@@ -598,6 +609,10 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 		list.append(getConfigListEntry(_("Background 1 color:"), config.skin.cyberfhd.colorbackground1))
 		list.append(getConfigListEntry(_("Background 2 color:"), config.skin.cyberfhd.colorbackground2))
 		list.append(getConfigListEntry(_("Background 3 color:"), config.skin.cyberfhd.colorbackground3))
+
+		list.append(getConfigListEntry(_("Background 2 corner:"), config.skin.cyberfhd.cornerbackground2))
+		list.append(getConfigListEntry(_("Background 3 corner:"), config.skin.cyberfhd.cornerbackground3))
+
 		list.append(getConfigListEntry(_("Progress color:"), config.skin.cyberfhd.colorbackground4))
 		list.append(getConfigListEntry(_("Cursor color:"), config.skin.cyberfhd.colorbackground5))
 
@@ -817,6 +832,9 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 				skin_templates_user.append(["TemplatesInfoBarRadioIndicationStyle","TemplatesInfoBarRadioIndication"])
 	# fonts
 			skin_user.append(["Roboto-Regular", config.skin.cyberfhd.fonts.value])
+	# corner
+			skin_templates_user.append([config.skin.cyberfhd.cornerbackground2.value, "CornerBackground2"])
+			skin_templates_user.append([config.skin.cyberfhd.cornerbackground3.value, "CornerBackground3"])
 	# scrollbar
 			skin_user.append(["showNever", config.skin.cyberfhd.scrollbarmode.value])
 	# number channel
@@ -854,8 +872,8 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 	# description panel
 			skin_templates_user.append([config.skin.cyberfhd.panelmovieselection.value, "TemplatesMovieSelectionDescription"])
 
-			SearchReplaceWrite(skin_user, "/usr/share/enigma2/CyberFHD/skin_default.xml", "/usr/share/enigma2/CyberFHD/skin.xml")
-			SearchReplaceWrite(skin_templates_user, "/usr/share/enigma2/CyberFHD/skin_templates_default.xml", "/usr/share/enigma2/CyberFHD/skin_templates.xml")
+			SearchReplaceWrite(skin_user, "/usr/share/enigma2/CyberFHD/skin_style.xml", "/usr/share/enigma2/CyberFHD/skin.xml")
+			SearchReplaceWrite(skin_templates_user, "/usr/share/enigma2/CyberFHD/skin_templates_style.xml", "/usr/share/enigma2/CyberFHD/skin_templates.xml")
 		except:
 			self.default()
 	# end
@@ -869,9 +887,9 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 			and "/tmp/plugin.py"\
 			and "/tmp/SetupCyberFHD.mo"\
 			and "/tmp/skin.xml"\
-			and "/tmp/skin_default.xml"\
+			and "/tmp/skin_style.xml"\
 			and "/tmp/skin_templates.xml"\
-			and "/tmp/skin_templates_default.xml"\
+			and "/tmp/skin_templates_style.xml"\
 			and "/tmp/skin_extra.xml"\
 			and "/tmp/AlwaysTrue.py"\
 			and "/tmp/AC3DownMixStatus.py"\
@@ -896,9 +914,9 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 			os.system("cp /tmp/SetupCyberFHD.mo %sSetupCyberFHD/locale/ru/LC_MESSAGES/SetupCyberFHD.mo" % (pluginpath))
 	# install skin
 			os.system("cp /tmp/skin.xml %sCyberFHD/skin.xml" % (skinpath))
-			os.system("cp /tmp/skin_default.xml %sCyberFHD/skin_default.xml" % (skinpath))
+			os.system("cp /tmp/skin_style.xml %sCyberFHD/skin_style.xml" % (skinpath))
 			os.system("cp /tmp/skin_templates.xml %sCyberFHD/skin_templates.xml" % (skinpath))
-			os.system("cp /tmp/skin_templates_default.xml %sCyberFHD/skin_templates_default.xml" % (skinpath))
+			os.system("cp /tmp/skin_templates_style.xml %sCyberFHD/skin_templates_style.xml" % (skinpath))
 			os.system("cp /tmp/skin_extra.xml %sCyberFHD/skin_extra.xml" % (skinpath))
 	# install converter
 			os.system("cp /tmp/AlwaysTrue.py %sConverter/AlwaysTrue.py" % (componentspath))
@@ -934,9 +952,9 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberFHD/locale/ru/LC_MESSAGES/SetupCyberFHD.mo","/tmp/SetupCyberFHD.mo")
 	# download skin
 			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberFHD/skin.xml","/tmp/skin.xml")
-			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberFHD/skin_default.xml","/tmp/skin_default.xml")
+			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberFHD/skin_style.xml","/tmp/skin_style.xml")
 			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberFHD/skin_templates.xml","/tmp/skin_templates.xml")
-			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberFHD/skin_templates_default.xml","/tmp/skin_templates_default.xml")
+			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberFHD/skin_templates_style.xml","/tmp/skin_templates_style.xml")
 			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberFHD/skin_extra.xml","/tmp/skin_extra.xml")
 	# download converter
 			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/AlwaysTrue.py","/tmp/AlwaysTrue.py")
@@ -972,8 +990,8 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 		self.createSkin()
 
 	def default(self):
-		os.system("cp /usr/share/enigma2/CyberFHD/skin_default.xml /usr/share/enigma2/CyberFHD/skin.xml")
-		os.system("cp /usr/share/enigma2/CyberFHD/skin_templates_default.xml /usr/share/enigma2/CyberFHD/skin_templates.xml")
+		os.system("cp /usr/share/enigma2/CyberFHD/skin_style.xml /usr/share/enigma2/CyberFHD/skin.xml")
+		os.system("cp /usr/share/enigma2/CyberFHD/skin_templates_style.xml /usr/share/enigma2/CyberFHD/skin_templates.xml")
 		for x in self["config"].list:
 			if len(x) > 1:
 				self.setDefault(x[1])
