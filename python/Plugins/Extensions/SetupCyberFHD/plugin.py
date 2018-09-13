@@ -781,6 +781,7 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 			or not fileExists("/usr/lib/enigma2/python/Components/Converter/ProgressDiskSpaceInfo.py")\
 			or not fileExists("/usr/lib/enigma2/python/Components/Converter/ServiceInfoEX.py")\
 			or not fileExists("/usr/lib/enigma2/python/Components/Converter/ServiceName2.py")\
+			or not fileExists("/usr/lib/enigma2/python/Components/Converter/TunerBar.py")\
 			or not fileExists("/usr/lib/enigma2/python/Components/Renderer/AnimatedWeatherPixmap.py")\
 			or not fileExists("/usr/lib/enigma2/python/Components/Renderer/MovieCover.py")\
 			or not fileExists("/usr/lib/enigma2/python/Components/Renderer/MovieRating.py")\
@@ -902,6 +903,7 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 			and "/tmp/ProgressDiskSpaceInfo.py"\
 			and "/tmp/ServiceInfoEX.py"\
 			and "/tmp/ServiceName2.py"\
+			and "/tmp/TunerBar.py"\
 			and "/tmp/AnimatedWeatherPixmap.py"\
 			and "/tmp/MovieCover.py"\
 			and "/tmp/MovieRating.py"\
@@ -930,6 +932,7 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 			os.system("cp /tmp/ProgressDiskSpaceInfo.py %sConverter/ProgressDiskSpaceInfo.py" % (componentspath))
 			os.system("cp /tmp/ServiceInfoEX.py %sConverter/ServiceInfoEX.py" % (componentspath))
 			os.system("cp /tmp/ServiceName2.py %sConverter/ServiceName2.py" % (componentspath))
+			os.system("cp /tmp/TunerBar.py %sConverter/TunerBar.py" % (componentspath))
 			os.system("cp %sWeatherMSN/components/MSNWeather2.py %sConverter/MSNWeather2.py" % (pluginpath, componentspath))
 	# install renderer
 			os.system("cp /tmp/AnimatedWeatherPixmap.py %sRenderer/AnimatedWeatherPixmap.py" % (componentspath))
@@ -968,6 +971,7 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/ProgressDiskSpaceInfo.py","/tmp/ProgressDiskSpaceInfo.py")
 			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/ServiceInfoEX.py","/tmp/ServiceInfoEX.py")
 			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/ServiceName2.py","/tmp/ServiceName2.py")
+			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/TunerBar.py","/tmp/TunerBar.py")
 	# download renderer
 			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/AnimatedWeatherPixmap.py","/tmp/AnimatedWeatherPixmap.py")
 			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/MovieCover.py","/tmp/MovieCover.py")
