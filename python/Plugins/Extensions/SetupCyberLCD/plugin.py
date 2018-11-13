@@ -338,7 +338,7 @@ config.skin.cyberlcd.widgetradioselection = ConfigSelection(default="TemplatesRa
 
 config.skin.cyberlcd.widgetepgselection = ConfigSelection(default="TemplatesEPGSelectionDisplayName", choices = widgetepgselection)
 
-config.skin.cyberlcd.widgetstandby = ConfigSelection(default="TemplatesStandbyDisplayClockDefaut", choices = widgetstandby)
+config.skin.cyberlcd.widgetstandby = ConfigSelection(default="TemplatesStandbyDisplayClock", choices = widgetstandby)
 
 SKIN_CYBERLCD = """
 	<!-- Setup CyberLCD -->
