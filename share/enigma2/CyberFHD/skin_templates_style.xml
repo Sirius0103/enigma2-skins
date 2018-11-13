@@ -6075,6 +6075,23 @@
 			<convert type="MovieInfo2">Description</convert>
 		</widget>
 	</screen>
+	<screen name="TemplatesInfoBarMediaInfoWeatherDefault">
+		<!-- Templates Info Bar Tv Info -->
+	</screen>
+	<screen name="TemplatesInfoBarMediaInfoWeatherMSN">
+		<!-- Templates Info Bar Tv Info -->
+		<panel name="TemplatesInfoBarMediaInfoWeatherLayer" />
+		<widget source="session.CurrentService" render="PiconUni" path="CyberFHD/msnweather" position="1378,239" size="128,128" zPosition="2" alphatest="blend">
+			<convert type="MSNWeather2">Picon</convert>
+		</widget>
+	</screen>
+	<screen name="TemplatesInfoBarMediaInfoWeatherMSNAnimated">
+		<!-- Templates Info Bar Tv Info -->
+		<panel name="TemplatesInfoBarTvInfoWeatherLayer" />
+		<widget source="session.CurrentService" render="AnimatedWeatherPixmap" path="/usr/share/enigma2/CyberFHD/msnweatheranimated" position="1378,239" size="128,128" zPosition="2" alphatest="blend">
+			<convert type="MSNWeather2">Picon</convert>
+		</widget>
+	</screen>
 	<!--  ########## Templates InfoBar Radio ########## -->
 	<screen name="TemplatesInfoBarRadioIndicationDefaut">
 		<!-- Templates Radio Indication -->

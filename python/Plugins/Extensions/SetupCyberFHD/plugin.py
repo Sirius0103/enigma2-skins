@@ -350,16 +350,16 @@ if not fileExists("/usr/lib/enigma2/python/Components/Converter/MSNWeather2.py")
 	weatherpanelinfobar = [
 		("TemplatesInfoBarTvInfoWeatherDefault", _("No"))]
 	weatherpanelmovieinfobar = [
-		("TemplatesInfoBarTvInfoWeatherDefault", _("No"))]
+		("TemplatesInfoBarMediaInfoWeatherDefault", _("No"))]
 else:
 	weatherpanelinfobar = [
 		("TemplatesInfoBarTvInfoWeatherDefault", _("No")),
 		("TemplatesInfoBarTvInfoWeatherMSN", _("MSN")),
 		("TemplatesInfoBarTvInfoWeatherMSNAnimated", _("Animated MSN"))]
 	weatherpanelmovieinfobar = [
-		("TemplatesInfoBarTvInfoWeatherDefault", _("No")),
-		("TemplatesInfoBarTvInfoWeatherMSN", _("MSN")),
-		("TemplatesInfoBarTvInfoWeatherMSNAnimated", _("Animated MSN"))]
+		("TemplatesInfoBarMediaInfoWeatherDefault", _("No")),
+		("TemplatesInfoBarMediaInfoWeatherMSN", _("MSN")),
+		("TemplatesInfoBarMediaInfoWeatherMSNAnimated", _("Animated MSN"))]
 
 if not fileExists("/usr/lib/enigma2/python/Components/Converter/MovieInfo2.py")\
 	or not fileExists("/usr/lib/enigma2/python/Components/Renderer/MovieCover.py")\
@@ -432,7 +432,7 @@ config.skin.cyberfhd.weatherpanelinfobar = ConfigSelection(default="TemplatesInf
 
 config.skin.cyberfhd.covermovieinfobar = ConfigSelection(default="TemplatesInfoBarMediaCoverDefault", choices = covermovieinfobar)
 config.skin.cyberfhd.infopanelmovieinfobar = ConfigSelection(default="TemplatesInfoBarMediaInfoPanelDefault", choices = infopanelmovieinfobar)
-config.skin.cyberfhd.weatherpanelmovieinfobar = ConfigSelection(default="TemplatesInfoBarTvInfoWeatherDefault", choices = weatherpanelmovieinfobar)
+config.skin.cyberfhd.weatherpanelmovieinfobar = ConfigSelection(default="TemplatesInfoBarMediaInfoWeatherDefault", choices = weatherpanelmovieinfobar)
 
 config.skin.cyberfhd.progressmode = ConfigSelection(default="ProgressLayerStandard", choices = progressmode)
 config.skin.cyberfhd.scrollbarmode = ConfigSelection(default="showNever", choices = scrollbarmode)
@@ -852,7 +852,7 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 			skin_templates_user.append([config.skin.cyberfhd.cipanelinfobar.value, "TemplatesInfoBarTvInfoPanelCI"])
 	# weather panel
 			skin_templates_user.append([config.skin.cyberfhd.weatherpanelinfobar.value, "TemplatesInfoBarTvInfoWeather"])
-			skin_templates_user.append([config.skin.cyberfhd.weatherpanelmovieinfobar.value, "TemplatesInfoBarTvInfoWeather"])
+			skin_templates_user.append([config.skin.cyberfhd.weatherpanelmovieinfobar.value, "TemplatesInfoBarMediaInfoWeather"])
 	# cover panel
 			skin_templates_user.append([config.skin.cyberfhd.covermovieinfobar.value, "TemplatesInfoBarMediaCover"])
 	# info panel

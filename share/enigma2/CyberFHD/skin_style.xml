@@ -208,7 +208,7 @@
 		<panel name="TemplatesInfoBarMediaProgress" />
 		<panel name="TemplatesInfoBarMediaIndication" />
 		<panel name="TemplatesInfoBarMediaInfoPanel" />
-		<panel name="TemplatesInfoBarTvInfoWeather" />
+		<panel name="TemplatesInfoBarMediaInfoWeather" />
 		<!-- Others widget -->
 		<widget source="session.CurrentService" render="Label" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" noWrap="1">
 			<convert type="ServiceName">Name</convert>
@@ -225,7 +225,7 @@
 		<panel name="TemplatesInfoBarMediaProgress" />
 		<panel name="TemplatesInfoBarMediaIndication" />
 		<panel name="TemplatesInfoBarMediaInfoPanel" />
-		<panel name="TemplatesInfoBarTvInfoWeather" />
+		<panel name="TemplatesInfoBarMediaInfoWeather" />
 		<!-- Others widget -->
 		<widget source="session.CurrentService" render="Label" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" noWrap="1">
 			<convert type="ServiceName">Name</convert>
@@ -242,7 +242,7 @@
 		<panel name="TemplatesInfoBarMediaProgress" />
 		<panel name="TemplatesInfoBarMediaIndication" />
 		<panel name="TemplatesInfoBarMediaInfoPanel" />
-		<panel name="TemplatesInfoBarTvInfoWeather" />
+		<panel name="TemplatesInfoBarMediaInfoWeather" />
 		<!-- Others widget -->
 		<widget source="session.CurrentService" render="Label" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" noWrap="1">
 			<convert type="ServiceName">Name</convert>

@@ -1229,6 +1229,15 @@
 	<screen name="TemplatesInfoBarMediaInfoPanelStyle">
 		<!-- Templates Info Bar Media Info-->
 	</screen>
+	<screen name="TemplatesInfoBarMediaInfoWeather">
+		<!-- Templates Info Bar Tv Info -->
+	</screen>
+	<screen name="TemplatesInfoBarMediaInfoWeatherMSN">
+		<!-- Templates Info Bar Tv Info -->
+	</screen>
+	<screen name="TemplatesInfoBarMediaInfoWeatherMSNAnimated">
+		<!-- Templates Info Bar Tv Info -->
+	</screen>
 	<!--  ########## Templates InfoBar Radio ########## -->
 	<screen name="TemplatesInfoBarRadioIndication">
 		<!-- Templates Radio Indication -->
