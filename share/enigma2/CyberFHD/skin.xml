@@ -3117,6 +3117,14 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<widget name="introduction" render="Label" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
 		<panel name="TemplatesClock" />
 	</screen>
+	<!-- Rotor Nim Selection -->
+	<screen name="RotorNimSelection" position="fill" title="Select slot" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget name="nimlist" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<panel name="TemplatesClock" />
+	</screen>
 	<!-- Positioner Setup Log -->
 	<screen name="PositionerSetupLog" position="fill" title="Positioner Setup Log" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenu1800Layer" />
