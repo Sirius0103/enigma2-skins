@@ -4633,7 +4633,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 	</screen>
 	<!-- ########## IPTV Player ########## -->
 	<!-- E2iPlayer -->
-	<screen name="E2iPlayerWidget" position="0,0" size="1920,1080" title="E2iPlayer" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="E2iPlayerWidget" position="fill" title="E2iPlayer" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="T" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<eLabel text="E2iPlayer" position="80,96" size="1500,44" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
@@ -4661,7 +4661,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- E2iPlayer Article Rich Visualizer -->
-	<screen name="IPTVArticleRichVisualizer" position="0,0" size="1920,1080" title="Info..." flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="IPTVArticleRichVisualizer" position="fill" title="Info..." flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="i" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
@@ -4681,7 +4681,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- E2iPlayer Directory Selector -->
-	<screen name="IPTVDirectorySelectorWidget" position="0,0" size="1920,1080" title="Directory browser" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="IPTVDirectorySelectorWidget" position="fill" title="Directory browser" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="e" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
@@ -4694,7 +4694,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- E2iPlayer Favourites Main -->
-	<screen name="IPTVFavouritesMainWidget" position="0,0" size="1920,1080" title="Favourites manager" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="IPTVFavouritesMainWidget" position="fill" title="Favourites manager" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="e" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
@@ -4709,7 +4709,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- E2iPlayer Sub Downloader -->
-	<screen name="IPTVSubDownloaderWidget" position="0,0" size="1920,1080" title="Subtitles downloader" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="IPTVSubDownloaderWidget" position="fill" title="Subtitles downloader" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="b" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
@@ -4725,7 +4725,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- E2iPlayer Sub Simple Downloader -->
-	<screen name="IPTVSubSimpleDownloaderWidget" position="0,0" size="1920,1080" title="Subtitles downloader" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="IPTVSubSimpleDownloaderWidget" position="fill" title="Subtitles downloader" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="b" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
@@ -4740,7 +4740,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- E2iPlayer DM Widget -->
-	<screen name="IPTVDMWidget" position="0,0" size="1920,1080" title="IPTV Player download manager" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="IPTVDMWidget" position="fill" title="IPTV Player download manager" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="b" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
@@ -4757,7 +4757,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- E2iPlayer Setup Main -->
-	<screen name="IPTVSetupMainWidget" position="0,0" size="1920,1080" title="E2iPlayer setup" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="IPTVSetupMainWidget" position="fill" title="E2iPlayer setup" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="b" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
@@ -4771,7 +4771,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- E2iPlayer Config Menu -->
-	<screen name="ConfigMenu" position="0,0" size="1920,1080" title="IPTV Player - settings" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="ConfigMenu" position="fill" title="IPTV Player - settings" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
@@ -4784,7 +4784,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- E2iPlayer Config Ext Movie Player -->
-	<screen name="ConfigExtMoviePlayer" position="0,0" size="1920,1080" title="IPTV Player - settings" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="ConfigExtMoviePlayer" position="fill" title="IPTV Player - settings" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
@@ -4797,7 +4797,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- E2iPlayer Config Base -->
-	<screen name="ConfigBaseWidget" position="0,0" size="1920,1080" title="IPTV Player - settings" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="ConfigBaseWidget" position="fill" title="IPTV Player - settings" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
@@ -4810,7 +4810,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- E2iPlayer Config Groups Menu -->
-	<screen name="ConfigGroupsMenu" position="0,0" size="1920,1080" title="IPTV Player - settings" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="ConfigGroupsMenu" position="fill" title="IPTV Player - settings" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
@@ -4823,7 +4823,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- E2iPlayer Config Host Menu -->
-	<screen name="ConfigHostMenu" position="0,0" size="1920,1080" title="IPTV Player - settings" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="ConfigHostMenu" position="fill" title="IPTV Player - settings" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
@@ -4836,7 +4836,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- E2iPlayer Config Hosts Menu -->
-	<screen name="ConfigHostsMenu" position="0,0" size="1920,1080" title="IPTV Player - settings" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="ConfigHostsMenu" position="fill" title="IPTV Player - settings" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
@@ -4849,7 +4849,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- E2iPlayer Choice Box -->
-	<screen name="IPTVChoiceBoxWidget" position="0,0" size="1920,1080" title="Select option" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="IPTVChoiceBoxWidget" position="fill" title="Select option" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="e" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
@@ -4858,7 +4858,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- E2iPlayer Update Window -->
-	<screen name="IPTVUpdateWindow" position="0,0" size="1920,1080" title="E2iPlayer" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="IPTVUpdateWindow" position="fill" title="E2iPlayer" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="b" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
@@ -4868,7 +4868,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- E2iPlayer Pin -->
-	<screen name="IPTVPinWidget" position="0,0" size="1920,1080" title="E2iPlayer" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="IPTVPinWidget" position="fill" title="E2iPlayer" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="g" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
@@ -4925,7 +4925,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 	</screen>
 	<!-- ########## Ipk creator ########## -->
 	<!-- Ipkg Main -->
-	<screen name="IpkgMain" position="0,0" size="1920,1080" title="Ipk creator" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="IpkgMain" position="fill" title="Ipk creator" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
@@ -5087,7 +5087,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 	</screen>
 	<!-- ########## Meoboot ########## -->
 	<!-- mb Install Main -->
-		<screen name="mbInstallMain" position="0,0" size="1920,1080" title="Meoboot" flags="wfNoBorder" backgroundColor="transparent">
+		<screen name="mbInstallMain" position="fill" title="Meoboot" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="b" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
@@ -5108,7 +5108,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- My Upgrade -->
-	<screen name="MyUpgrade" position="0,0" size="1920,1080" title="Meoboot" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="MyUpgrade" position="fill" title="Meoboot" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="b" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
@@ -5116,7 +5116,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- mb Image Setup -->
-	<screen name="mbImageSetup" position="0,0" size="1920,1080" title="MeoBoot Image Install" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="mbImageSetup" position="fill" title="MeoBoot Image Install" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="b" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
@@ -5127,7 +5127,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- My Help -->
-	<screen name="MyHelp" position="0,0" size="1920,1080" title="Meoboot Help" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="MyHelp" position="fill" title="Meoboot Help" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="I" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
@@ -5135,7 +5135,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- Mystart -->
-	<screen name="Mystart" position="0,0" size="1920,1080" title="Meoboot" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="Mystart" position="fill" title="Meoboot" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="b" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
