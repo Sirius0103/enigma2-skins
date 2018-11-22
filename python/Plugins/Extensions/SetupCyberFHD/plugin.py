@@ -886,7 +886,8 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 		componentspath = "/usr/lib/enigma2/python/Components/"
 		if fileExists ("/tmp/version"\
 			and "/tmp/plugin.py"\
-			and "/tmp/SetupCyberFHD.mo"\
+			and "/tmp/ruSetupCyberFHD.mo"\
+			and "/tmp/deSetupCyberFHD.mo"\
 			and "/tmp/skin.xml"\
 			and "/tmp/skin_style.xml"\
 			and "/tmp/skin_templates.xml"\
@@ -913,7 +914,8 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 			os.system("cp /tmp/version %sSetupCyberFHD/version" % (pluginpath))
 	# install plugin
 			os.system("cp /tmp/plugin.py %sSetupCyberFHD/plugin.py" % (pluginpath))
-			os.system("cp /tmp/SetupCyberFHD.mo %sSetupCyberFHD/locale/ru/LC_MESSAGES/SetupCyberFHD.mo" % (pluginpath))
+			os.system("cp /tmp/ruSetupCyberFHD.mo %sSetupCyberFHD/locale/ru/LC_MESSAGES/SetupCyberFHD.mo" % (pluginpath))
+			os.system("cp /tmp/deSetupCyberFHD.mo %sSetupCyberFHD/locale/de/LC_MESSAGES/SetupCyberFHD.mo" % (pluginpath))
 	# install skin
 			os.system("cp /tmp/skin.xml %sCyberFHD/skin.xml" % (skinpath))
 			os.system("cp /tmp/skin_style.xml %sCyberFHD/skin_style.xml" % (skinpath))
@@ -952,7 +954,8 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 			gitpathcomponents = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/"
 	# download plugin
 			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberFHD/plugin.py","/tmp/plugin.py")
-			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberFHD/locale/ru/LC_MESSAGES/SetupCyberFHD.mo","/tmp/SetupCyberFHD.mo")
+			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberFHD/locale/ru/LC_MESSAGES/SetupCyberFHD.mo","/tmp/ruSetupCyberFHD.mo")
+			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberFHD/locale/de/LC_MESSAGES/SetupCyberFHD.mo","/tmp/deSetupCyberFHD.mo")
 	# download skin
 			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberFHD/skin.xml","/tmp/skin.xml")
 			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberFHD/skin_style.xml","/tmp/skin_style.xml")
