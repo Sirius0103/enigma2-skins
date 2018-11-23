@@ -5468,48 +5468,48 @@
 	<screen name="TemplatesInfoBarTvIndicationDefault">
 		<panel name="TemplatesDownLayer2" />
 		<!-- Templates Info Bar Tv Indication -->
-		<eLabel text="$" position="345,1002" size="35,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" zPosition="1" />
-		<widget source="session.CurrentService" render="FixedLabel" text="$" position="345,1002" size="35,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+		<eLabel text="$" position="345,1002" size="30,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" zPosition="1" />
+		<widget source="session.CurrentService" render="FixedLabel" text="$" position="345,1002" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
 			<convert type="ServiceInfo">IsCrypted</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<eLabel text="HbbTV" position="440,1002" size="100,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
-		<widget source="session.CurrentService" render="FixedLabel" text="HbbTV" position="440,1002" size="100,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+		<eLabel text="HbbTV" position="435,1002" size="100,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
+		<widget source="session.CurrentService" render="FixedLabel" text="HbbTV" position="435,1002" size="100,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
 			<convert type="ServiceInfo">HasHBBTV</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<eLabel text="TXT" position="720,1002" size="70,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
-		<widget source="session.CurrentService" render="FixedLabel" text="TXT" position="720,1002" size="70,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+		<eLabel text="TXT" position="701,1002" size="70,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
+		<widget source="session.CurrentService" render="FixedLabel" text="TXT" position="701,1002" size="70,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
 			<convert type="ServiceInfo">HasTelext</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<eLabel text="SUB" position="785,1002" size="70,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
-		<widget source="session.CurrentService" render="FixedLabel" text="SUB" position="785,1002" size="70,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+		<eLabel text="SUB" position="764,1002" size="70,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
+		<widget source="session.CurrentService" render="FixedLabel" text="SUB" position="764,1002" size="70,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
 			<convert type="ServiceInfo">SubservicesAvailable</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<eLabel text="REC" position="375,1002" size="70,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
-		<widget source="session.RecordState" render="FixedLabel" text="REC" position="375,1002" size="70,30" font="Indication; 30" foregroundColor="red" backgroundColor="background" transparent="1" zPosition="3">
+		<eLabel text="REC" position="372,1002" size="70,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
+		<widget source="session.RecordState" render="FixedLabel" text="REC" position="372,1002" size="70,30" font="Indication; 30" foregroundColor="red" backgroundColor="background" transparent="1" zPosition="3">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<eLabel text="16:9" position="645,1002" size="80,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
-		<widget source="session.CurrentService" render="FixedLabel" text="16:9" position="645,1002" size="80,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+		<eLabel text="16:9" position="632,1002" size="75,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
+		<widget source="session.CurrentService" render="FixedLabel" text="16:9" position="632,1002" size="75,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
 			<convert type="ServiceInfo">IsWidescreen</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<eLabel text="SD" position="600,1002" size="50,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
-		<widget source="session.CurrentService" render="FixedLabel" text="SD" position="600,1002" size="50,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+		<eLabel text="SD" position="529,1002" size="50,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
+		<widget source="session.CurrentService" render="FixedLabel" text="SD" position="529,1002" size="50,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
 			<convert type="ServiceInfo">VideoWidth</convert>
 			<convert type="ValueRange">0,720</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<eLabel text="UHD" position="535,1002" size="70,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
-		<widget source="session.CurrentService" render="FixedLabel" text="HD" position="553,1002" size="50,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+		<eLabel text="UHD" position="572,1002" size="70,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
+		<widget source="session.CurrentService" render="FixedLabel" text="HD" position="590,1002" size="50,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
 			<convert type="ServiceInfo">VideoWidth</convert>
 			<convert type="ValueRange">721,1980</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="FixedLabel" text="UHD" position="535,1002" size="70,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+		<widget source="session.CurrentService" render="FixedLabel" text="UHD" position="572,1002" size="70,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
 			<convert type="ServiceInfo">VideoWidth</convert>
 			<convert type="ValueRange">1981,3840</convert>
 			<convert type="ConditionalShowHide" />
@@ -5521,65 +5521,65 @@
 	<screen name="TemplatesInfoBarTvIndicationStyle">
 		<panel name="TemplatesDownLayer2" />
 		<!-- Templates Info Bar Tv Indication -->
-		<eLabel text="$" position="345,1002" size="35,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" zPosition="1" />
-		<widget source="session.CurrentService" render="FixedLabel" text="$" position="345,1002" size="35,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+		<eLabel text="$" position="345,1002" size="30,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" zPosition="1" />
+		<widget source="session.CurrentService" render="FixedLabel" text="$" position="345,1002" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
 			<convert type="ServiceInfo">IsCrypted</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<eLabel text="HbbTV" position="440,1002" size="100,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
-		<widget source="session.CurrentService" render="FixedLabel" text="HbbTV" position="440,1002" size="100,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+		<eLabel text="HbbTV" position="435,1002" size="100,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
+		<widget source="session.CurrentService" render="FixedLabel" text="HbbTV" position="435,1002" size="100,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
 			<convert type="ServiceInfo">HasHBBTV</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<eLabel text="TXT" position="825,1002" size="70,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
-		<widget source="session.CurrentService" render="FixedLabel" text="TXT" position="825,1002" size="70,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+		<eLabel text="TXT" position="701,1002" size="70,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
+		<widget source="session.CurrentService" render="FixedLabel" text="TXT" position="701,1002" size="70,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
 			<convert type="ServiceInfo">HasTelext</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<eLabel text="SUB" position="890,1002" size="70,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
-		<widget source="session.CurrentService" render="FixedLabel" text="SUB" position="890,1002" size="70,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+		<eLabel text="SUB" position="764,1002" size="70,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
+		<widget source="session.CurrentService" render="FixedLabel" text="SUB" position="764,1002" size="70,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
 			<convert type="ServiceInfo">SubservicesAvailable</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<eLabel text="REC" position="375,1002" size="70,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
-		<widget source="session.RecordState" render="FixedLabel" text="REC" position="375,1002" size="70,30" font="Indication; 30" foregroundColor="red" backgroundColor="background" transparent="1" zPosition="3">
+		<eLabel text="REC" position="372,1002" size="70,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
+		<widget source="session.RecordState" render="FixedLabel" text="REC" position="372,1002" size="70,30" font="Indication; 30" foregroundColor="red" backgroundColor="background" transparent="1" zPosition="3">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<eLabel text="16:9" position="645,1002" size="80,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
-		<widget source="session.CurrentService" render="FixedLabel" text="16:9" position="645,1002" size="80,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+		<eLabel text="16:9" position="632,1002" size="75,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
+		<widget source="session.CurrentService" render="FixedLabel" text="16:9" position="632,1002" size="75,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
 			<convert type="ServiceInfo">IsWidescreen</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<eLabel text="SD" position="600,1002" size="50,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
-		<widget source="session.CurrentService" render="FixedLabel" text="SD" position="600,1002" size="50,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+		<eLabel text="SD" position="529,1002" size="50,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
+		<widget source="session.CurrentService" render="FixedLabel" text="SD" position="529,1002" size="50,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
 			<convert type="ServiceInfo">VideoWidth</convert>
 			<convert type="ValueRange">0,720</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<eLabel text="UHD" position="535,1002" size="70,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
-		<widget source="session.CurrentService" render="FixedLabel" text="HD" position="553,1002" size="50,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+		<eLabel text="UHD" position="572,1002" size="70,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
+		<widget source="session.CurrentService" render="FixedLabel" text="HD" position="590,1002" size="50,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
 			<convert type="ServiceInfo">VideoWidth</convert>
 			<convert type="ValueRange">721,1980</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="FixedLabel" text="UHD" position="535,1002" size="70,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+		<widget source="session.CurrentService" render="FixedLabel" text="UHD" position="572,1002" size="70,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
 			<convert type="ServiceInfo">VideoWidth</convert>
 			<convert type="ValueRange">1981,3840</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<eLabel text="DMX" position="955,1002" size="70,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
-		<widget source="session.CurrentService" render="FixedLabel" text="DMX" position="955,1002" size="70,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+		<eLabel text="DMX" position="827,1002" size="70,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
+		<widget source="session.CurrentService" render="FixedLabel" text="DMX" position="827,1002" size="70,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
 			<convert type="AC3DownMixStatus" />
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Label" text="1920x1080p25" position="1125,1002" size="230,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3" halign="right">
-			<convert type="PliExtraInfo">ResolutionString</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" text="MPEG4" position="720,1002" size="110,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+		<widget source="session.CurrentService" render="Label" text="MPEG-VC" position="890,1002" size="140,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
 			<convert type="ServiceInfoEX">vtype</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" text="AC-3" position="1020,1002" size="120,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+		<widget source="session.CurrentService" render="Label" text="AC-3" position="1025,1002" size="120,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
 			<convert type="ServiceInfoEX">atype</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" text="1920x1080p25" position="1125,1002" size="230,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3" halign="right">
+			<convert type="PliExtraInfo">ResolutionString</convert>
 		</widget>
 	</screen>
 	<screen name="TemplatesInfoBarTvProgress">
@@ -5619,112 +5619,112 @@
 		<panel name="TemplatesUpLayer2" />
 		<!-- Crypted -->
 		<!-- betacrypt -->
-		<eLabel text="BETACRYPT" position="140,52" size="180,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
-		<widget source="session.CurrentService" render="FixedLabel" text="BETACRYPT" position="140,52" size="180,30" font="Indication; 30" foregroundColor="yellow" backgroundColor="background" transparent="1" zPosition="2">
+		<eLabel text="BETACRYPT" position="130,52" size="180,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
+		<widget source="session.CurrentService" render="FixedLabel" text="BETACRYPT" position="130,52" size="180,30" font="Indication; 30" foregroundColor="yellow" backgroundColor="background" transparent="1" zPosition="2">
 			<convert type="CaidInfo2">BetaCrypt</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="FixedLabel" text="BETACRYPT" position="140,52" size="180,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+		<widget source="session.CurrentService" render="FixedLabel" text="BETACRYPT" position="130,52" size="180,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
 			<convert type="CaidInfo2">BetaEcm</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<!-- irdeto crypt -->
-		<eLabel text="IRDETO" position="410,52" size="130,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
-		<widget source="session.CurrentService" render="FixedLabel" text="IRDETO" position="410,52" size="130,30" font="Indication; 30" foregroundColor="yellow" backgroundColor="background" transparent="1" zPosition="2">
+		<eLabel text="IRDETO" position="394,52" size="130,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
+		<widget source="session.CurrentService" render="FixedLabel" text="IRDETO" position="394,52" size="130,30" font="Indication; 30" foregroundColor="yellow" backgroundColor="background" transparent="1" zPosition="2">
 			<convert type="CaidInfo2">IrdCrypt</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="FixedLabel" text="IRDETO" position="410,52" size="130,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+		<widget source="session.CurrentService" render="FixedLabel" text="IRDETO" position="394,52" size="130,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
 			<convert type="CaidInfo2">IrdEcm</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<!-- conax crypt -->
-		<eLabel text="CONAX" position="310,52" size="110,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
-		<widget source="session.CurrentService" render="FixedLabel" text="CONAX" position="310,52" size="110,30" font="Indication; 30" foregroundColor="yellow" backgroundColor="background" transparent="1" zPosition="2">
+		<eLabel text="CONAX" position="298,52" size="110,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
+		<widget source="session.CurrentService" render="FixedLabel" text="CONAX" position="298,52" size="110,30" font="Indication; 30" foregroundColor="yellow" backgroundColor="background" transparent="1" zPosition="2">
 			<convert type="CaidInfo2">ConaxCrypt</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="FixedLabel" text="CONAX" position="310,52" size="110,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+		<widget source="session.CurrentService" render="FixedLabel" text="CONAX" position="298,52" size="110,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
 			<convert type="CaidInfo2">ConaxEcm</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<!-- seca crypt -->
-		<eLabel text="SECA" position="835,52" size="90,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
-		<widget source="session.CurrentService" render="FixedLabel" text="SECA" position="835,52" size="90,30" font="Indication; 30" foregroundColor="yellow" backgroundColor="background" transparent="1" zPosition="2">
+		<eLabel text="SECA" position="808,52" size="90,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
+		<widget source="session.CurrentService" render="FixedLabel" text="SECA" position="808,52" size="90,30" font="Indication; 30" foregroundColor="yellow" backgroundColor="background" transparent="1" zPosition="2">
 			<convert type="CaidInfo2">SecaCrypt</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="FixedLabel" text="SECA" position="835,52" size="90,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+		<widget source="session.CurrentService" render="FixedLabel" text="SECA" position="808,52" size="90,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
 			<convert type="CaidInfo2">SecaEcm</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<!-- viaccess crypt -->
-		<eLabel text="VIACCESS" position="530,52" size="170,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
-		<widget source="session.CurrentService" render="FixedLabel" text="VIACCESS" position="530,52" size="170,30" font="Indication; 30" foregroundColor="yellow" backgroundColor="background" transparent="1" zPosition="2">
+		<eLabel text="VIACCESS" position="508,52" size="170,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
+		<widget source="session.CurrentService" render="FixedLabel" text="VIACCESS" position="508,52" size="170,30" font="Indication; 30" foregroundColor="yellow" backgroundColor="background" transparent="1" zPosition="2">
 			<convert type="CaidInfo2">ViaCrypt</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="FixedLabel" text="VIACCESS" position="530,52" size="170,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+		<widget source="session.CurrentService" render="FixedLabel" text="VIACCESS" position="508,52" size="170,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
 			<convert type="CaidInfo2">ViaEcm</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<!-- dre crypt -->
-		<eLabel text="DRECRYPT" position="685,52" size="160,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
-		<widget source="session.CurrentService" render="FixedLabel" text="DRECRYPT" position="685,52" size="160,30" font="Indication; 30" foregroundColor="yellow" backgroundColor="background" transparent="1" zPosition="2">
+		<eLabel text="DRECRYPT" position="658,52" size="160,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
+		<widget source="session.CurrentService" render="FixedLabel" text="DRECRYPT" position="658,52" size="160,30" font="Indication; 30" foregroundColor="yellow" backgroundColor="background" transparent="1" zPosition="2">
 			<convert type="CaidInfo2">DreamCrypt</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="FixedLabel" text="DRECRYPT" position="685,52" size="160,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+		<widget source="session.CurrentService" render="FixedLabel" text="DRECRYPT" position="658,52" size="160,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
 			<convert type="CaidInfo2">DreamEcm</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<!-- cryptoworks crypt -->
-		<eLabel text="CRYPTOWORKS" position="1310,52" size="220,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
-		<widget source="session.CurrentService" render="FixedLabel" text="CRYPTOWORKS" position="1310,52" size="220,30" font="Indication; 30" foregroundColor="yellow" backgroundColor="background" transparent="1" zPosition="2">
+		<eLabel text="CRYPTOWORKS" position="1276,52" size="220,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
+		<widget source="session.CurrentService" render="FixedLabel" text="CRYPTOWORKS" position="1276,52" size="220,30" font="Indication; 30" foregroundColor="yellow" backgroundColor="background" transparent="1" zPosition="2">
 			<convert type="CaidInfo2">CrwCrypt</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="FixedLabel" text="CRYPTOWORKS" position="1310,52" size="220,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+		<widget source="session.CurrentService" render="FixedLabel" text="CRYPTOWORKS" position="1276,52" size="220,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
 			<convert type="CaidInfo2">CrwEcm</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<!-- nagra crypt -->
-		<eLabel text="NAGRAVISION" position="1105,52" size="220,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
-		<widget source="session.CurrentService" render="FixedLabel" text="NAGRAVISION" position="1105,52" size="220,30" font="Indication; 30" foregroundColor="yellow" backgroundColor="background" transparent="1" zPosition="2">
+		<eLabel text="NAGRAVISION" position="1072,52" size="220,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
+		<widget source="session.CurrentService" render="FixedLabel" text="NAGRAVISION" position="1072,52" size="220,30" font="Indication; 30" foregroundColor="yellow" backgroundColor="background" transparent="1" zPosition="2">
 			<convert type="CaidInfo2">NagraCrypt</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="FixedLabel" text="NAGRAVISION" position="1105,52" size="220,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+		<widget source="session.CurrentService" render="FixedLabel" text="NAGRAVISION" position="1072,52" size="220,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
 			<convert type="CaidInfo2">NagraEcm</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<!-- nds crypt -->
-		<eLabel text="VIDEOGUARD" position="915,52" size="200,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
-		<widget source="session.CurrentService" render="FixedLabel" text="VIDEOGUARD" position="915,52" size="200,30" font="Indication; 30" foregroundColor="yellow" backgroundColor="background" transparent="1" zPosition="2">
+		<eLabel text="VIDEOGUARD" position="886,52" size="200,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
+		<widget source="session.CurrentService" render="FixedLabel" text="VIDEOGUARD" position="886,52" size="200,30" font="Indication; 30" foregroundColor="yellow" backgroundColor="background" transparent="1" zPosition="2">
 			<convert type="CaidInfo2">NdsCrypt</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="FixedLabel" text="VIDEOGUARD" position="915,52" size="200,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+		<widget source="session.CurrentService" render="FixedLabel" text="VIDEOGUARD" position="886,52" size="200,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
 			<convert type="CaidInfo2">NdsEcm</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<!-- ex crypt -->
-		<eLabel text="EXSET" position="1515,52" size="110,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
-		<widget source="session.CurrentService" render="FixedLabel" text="EXSET" position="1515,52" size="110,30" font="Indication; 30" foregroundColor="yellow" backgroundColor="background" transparent="1" zPosition="2">
-			<convert type="CaidInfo2">ExsCrypt</convert>
+		<!-- pwu crypt -->
+		<eLabel text="POWERVU" position="1480,52" size="140,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
+		<widget source="session.CurrentService" render="FixedLabel" text="POWERVU" position="1480,52" size="140,30" font="Indication; 30" foregroundColor="yellow" backgroundColor="background" transparent="1" zPosition="2">
+			<convert type="CaidInfo2">PwuCrypt</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="FixedLabel" text="EXSET" position="1515,52" size="110,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
-			<convert type="CaidInfo2">ExsEcm</convert>
+		<widget source="session.CurrentService" render="FixedLabel" text="POWERVU" position="1480,52" size="140,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+			<convert type="CaidInfo2">PwuEcm</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<!-- biss crypt -->
-		<eLabel text="BISS" position="60,52" size="90,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
-		<widget source="session.CurrentService" render="FixedLabel" text="BISS" position="60,52" size="90,30" font="Indication; 30" foregroundColor="yellow" backgroundColor="background" transparent="1" zPosition="2">
+		<eLabel text="BISS" position="52,52" size="90,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
+		<widget source="session.CurrentService" render="FixedLabel" text="BISS" position="52,52" size="90,30" font="Indication; 30" foregroundColor="yellow" backgroundColor="background" transparent="1" zPosition="2">
 			<convert type="CaidInfo2">BisCrypt</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="FixedLabel" text="BISS" position="60,52" size="90,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+		<widget source="session.CurrentService" render="FixedLabel" text="BISS" position="52,52" size="90,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
 			<convert type="CaidInfo2">BisEcm</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
@@ -5989,29 +5989,29 @@
 	<screen name="TemplatesInfoBarMediaIndicationDefault">
 		<panel name="TemplatesDownLayer3" />
 		<!-- Templates Info Bar Media Indication-->
-		<eLabel text="SUB" position="755,1002" size="70,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
-		<widget source="session.CurrentService" render="FixedLabel" text="SUB" position="755,1002" size="70,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+		<eLabel text="SUB" position="741,1002" size="70,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
+		<widget source="session.CurrentService" render="FixedLabel" text="SUB" position="741,1002" size="70,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
 			<convert type="ServiceInfo">SubservicesAvailable</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<eLabel text="16:9" position="680,1002" size="80,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
-		<widget source="session.CurrentService" render="FixedLabel" text="16:9" position="680,1002" size="80,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+		<eLabel text="16:9" position="672,1002" size="80,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
+		<widget source="session.CurrentService" render="FixedLabel" text="16:9" position="672,1002" size="80,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
 			<convert type="ServiceInfo">IsWidescreen</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<eLabel text="SD" position="635,1002" size="50,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
-		<widget source="session.CurrentService" render="FixedLabel" text="SD" position="635,1002" size="50,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+		<eLabel text="SD" position="570,1002" size="50,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
+		<widget source="session.CurrentService" render="FixedLabel" text="SD" position="570,1002" size="50,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
 			<convert type="ServiceInfo">VideoWidth</convert>
 			<convert type="ValueRange">0,720</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<eLabel text="UHD" position="570,1002" size="70,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
-		<widget source="session.CurrentService" render="FixedLabel" text="HD" position="588,1002" size="50,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+		<eLabel text="UHD" position="612,1002" size="70,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
+		<widget source="session.CurrentService" render="FixedLabel" text="HD" position="630,1002" size="50,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
 			<convert type="ServiceInfo">VideoWidth</convert>
 			<convert type="ValueRange">721,1980</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="FixedLabel" text="UHD" position="570,1002" size="70,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+		<widget source="session.CurrentService" render="FixedLabel" text="UHD" position="612,1002" size="70,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
 			<convert type="ServiceInfo">VideoWidth</convert>
 			<convert type="ValueRange">1981,3840</convert>
 			<convert type="ConditionalShowHide" />
@@ -6023,45 +6023,45 @@
 	<screen name="TemplatesInfoBarMediaIndicationStyle">
 		<panel name="TemplatesDownLayer3" />
 		<!-- Templates Info Bar Media Indication-->
-		<eLabel text="SUB" position="855,1002" size="70,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
-		<widget source="session.CurrentService" render="FixedLabel" text="SUB" position="855,1002" size="70,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+		<eLabel text="SUB" position="741,1002" size="70,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
+		<widget source="session.CurrentService" render="FixedLabel" text="SUB" position="741,1002" size="70,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
 			<convert type="ServiceInfo">SubservicesAvailable</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<eLabel text="16:9" position="680,1002" size="80,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
-		<widget source="session.CurrentService" render="FixedLabel" text="16:9" position="680,1002" size="80,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+		<eLabel text="16:9" position="672,1002" size="80,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
+		<widget source="session.CurrentService" render="FixedLabel" text="16:9" position="672,1002" size="80,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
 			<convert type="ServiceInfo">IsWidescreen</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<eLabel text="SD" position="635,1002" size="50,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
-		<widget source="session.CurrentService" render="FixedLabel" text="SD" position="635,1002" size="50,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+		<eLabel text="SD" position="570,1002" size="50,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
+		<widget source="session.CurrentService" render="FixedLabel" text="SD" position="570,1002" size="50,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
 			<convert type="ServiceInfo">VideoWidth</convert>
 			<convert type="ValueRange">0,720</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<eLabel text="UHD" position="570,1002" size="70,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
-		<widget source="session.CurrentService" render="FixedLabel" text="HD" position="588,1002" size="50,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+		<eLabel text="UHD" position="612,1002" size="70,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
+		<widget source="session.CurrentService" render="FixedLabel" text="HD" position="630,1002" size="50,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
 			<convert type="ServiceInfo">VideoWidth</convert>
 			<convert type="ValueRange">721,1980</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="FixedLabel" text="UHD" position="570,1002" size="70,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+		<widget source="session.CurrentService" render="FixedLabel" text="UHD" position="612,1002" size="70,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
 			<convert type="ServiceInfo">VideoWidth</convert>
 			<convert type="ValueRange">1981,3840</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<eLabel text="DMX" position="920,1002" size="70,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
-		<widget source="session.CurrentService" render="FixedLabel" text="DMX" position="920,1002" size="70,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+		<eLabel text="DMX" position="804,1002" size="70,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
+		<widget source="session.CurrentService" render="FixedLabel" text="DMX" position="804,1002" size="70,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
 			<convert type="AC3DownMixStatus" />
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<widget source="session.CurrentService" render="Label" text="1920x1080p25" position="330,1002" size="230,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3" halign="right">
 			<convert type="PliExtraInfo">ResolutionString</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" text="MPEG4" position="755,1002" size="110,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+		<widget source="session.CurrentService" render="Label" text="MPEG-VC" position="867,1002" size="140,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
 			<convert type="ServiceInfoEX">vtype</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" text="AC-3" position="985,1002" size="500,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+		<widget source="session.CurrentService" render="Label" text="AC-3" position="1002,1002" size="500,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
 			<convert type="ServiceInfoEX">atype</convert>
 		</widget>
 	</screen>
@@ -6095,43 +6095,43 @@
 	<!--  ########## Templates InfoBar Radio ########## -->
 	<screen name="TemplatesInfoBarRadioIndicationDefaut">
 		<!-- Templates Radio Indication -->
-		<eLabel text="$" position="345,1002" size="35,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" zPosition="1" />
-		<widget source="session.CurrentService" render="FixedLabel" text="$" position="345,1002" size="35,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+		<eLabel text="$" position="345,1002" size="30,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" zPosition="1" />
+		<widget source="session.CurrentService" render="FixedLabel" text="$" position="345,1002" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
 			<convert type="ServiceInfo">IsCrypted</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<eLabel text="REC" position="375,1002" size="70,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
-		<widget source="session.RecordState" render="FixedLabel" text="REC" position="375,1002" size="70,30" font="Indication; 30" foregroundColor="red" backgroundColor="background" transparent="1" zPosition="3">
+		<eLabel text="REC" position="372,1002" size="70,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
+		<widget source="session.RecordState" render="FixedLabel" text="REC" position="372,1002" size="70,30" font="Indication; 30" foregroundColor="red" backgroundColor="background" transparent="1" zPosition="3">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<eLabel text="RDS" position="440,1002" size="70,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
-		<widget source="RdsDecoder" render="FixedLabel" text="RDS" position="440,1002" size="70,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+		<eLabel text="RDS" position="435,1002" size="70,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
+		<widget source="RdsDecoder" render="FixedLabel" text="RDS" position="435,1002" size="70,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
 			<convert type="RdsInfo">RasInteractiveAvailable</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 	</screen>
 	<screen name="TemplatesInfoBarRadioIndicationStyle">
 		<!-- Templates Radio Indication -->
-		<eLabel text="$" position="345,1002" size="35,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" zPosition="1" />
-		<widget source="session.CurrentService" render="FixedLabel" text="$" position="345,1002" size="35,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+		<eLabel text="$" position="345,1002" size="30,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" zPosition="1" />
+		<widget source="session.CurrentService" render="FixedLabel" text="$" position="345,1002" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
 			<convert type="ServiceInfo">IsCrypted</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<eLabel text="REC" position="375,1002" size="70,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
-		<widget source="session.RecordState" render="FixedLabel" text="REC" position="375,1002" size="70,30" font="Indication; 30" foregroundColor="red" backgroundColor="background" transparent="1" zPosition="3">
+		<eLabel text="REC" position="372,1002" size="70,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
+		<widget source="session.RecordState" render="FixedLabel" text="REC" position="372,1002" size="70,30" font="Indication; 30" foregroundColor="red" backgroundColor="background" transparent="1" zPosition="3">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<eLabel text="RDS" position="440,1002" size="70,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
-		<widget source="RdsDecoder" render="FixedLabel" text="RDS" position="440,1002" size="70,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+		<eLabel text="RDS" position="435,1002" size="70,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
+		<widget source="RdsDecoder" render="FixedLabel" text="RDS" position="435,1002" size="70,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
 			<convert type="RdsInfo">RasInteractiveAvailable</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<eLabel text="DMX" position="505,1002" size="70,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
-		<widget source="session.CurrentService" render="FixedLabel" text="DMX" position="505,1002" size="70,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+		<eLabel text="DMX" position="498,1002" size="70,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
+		<widget source="session.CurrentService" render="FixedLabel" text="DMX" position="498,1002" size="70,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
 			<convert type="AC3DownMixStatus" />
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Label" text="AC-3" position="570,1002" size="150,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+		<widget source="session.CurrentService" render="Label" text="AC-3" position="568,1002" size="150,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
 			<convert type="ServiceInfoEX">atype</convert>
 		</widget>
 	</screen>
