@@ -1336,7 +1336,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<eLabel text="k" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
 		<eLabel position="90,530" size="980,50" backgroundColor="background2" zPosition="-1" />
-		<widget name="header" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+		<widget name="prompt" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
 		<widget name="text" position="95,535" size="970,40" font="Global; 35" foregroundColor="color2" backgroundColor="background2" transparent="1" />
 		<eLabel position="510,590" size="560,245" backgroundColor="background3" zPosition="-2" />
 		<eLabel position="512,592" size="556,241" backgroundColor="background1" zPosition="-1" />
