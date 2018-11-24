@@ -5572,11 +5572,8 @@
 			<convert type="AC3DownMixStatus" />
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Label" text="MPEG-VC" position="890,1002" size="140,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
-			<convert type="ServiceInfoEX">vtype</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" text="AC-3" position="1025,1002" size="120,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
-			<convert type="ServiceInfoEX">atype</convert>
+		<widget source="session.CurrentService" render="Label" text="MPEG-VC/MPEG" position="890,1002" size="250,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+			<convert type="ServiceInfoEX">avtype</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" text="1920x1080p25" position="1125,1002" size="230,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3" halign="right">
 			<convert type="PliExtraInfo">ResolutionString</convert>
@@ -6058,11 +6055,8 @@
 		<widget source="session.CurrentService" render="Label" text="1920x1080p25" position="330,1002" size="230,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3" halign="right">
 			<convert type="PliExtraInfo">ResolutionString</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" text="MPEG-VC" position="867,1002" size="140,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
-			<convert type="ServiceInfoEX">vtype</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" text="AC-3" position="1002,1002" size="500,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
-			<convert type="ServiceInfoEX">atype</convert>
+		<widget source="session.CurrentService" render="Label" text="MPEG-VC/MPEG" position="867,1002" size="500,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+			<convert type="ServiceInfoEX">avtype</convert>
 		</widget>
 	</screen>
 	<screen name="TemplatesInfoBarMediaInfoPanelDefault">
