@@ -1765,6 +1765,8 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<widget name="Active3" position="790,250" size="340,30" backgroundColor="background5" zPosition="1" transparent="0" />
 		<widget name="Active4" position="1140,250" size="340,30" backgroundColor="background5" zPosition="1" transparent="0" />
 		<widget name="Active5" position="1490,250" size="340,30" backgroundColor="background5" zPosition="1" transparent="0" />
+		<!-- DO NOT CHANGE THIS LINE -->
+		<widget name="list" enableWrapAround="0" itemHeight="20" font="Regular;0" position="0,0" size="0,100" zPosition="-10"/>
 		<widget name="list1" position="90,290" size="340,550" scrollbarMode="showAlways" scrollbarSliderBorderWidth="1" scrollbarWidth="10" zPosition="1" transparent="0" 
 		scrollbarSliderForegroundColor="white" 
 		scrollbarSliderBorderColor="white" 
@@ -1894,13 +1896,15 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<widget source="Event" render="Label" position="125,205" size="940,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" transparent="1">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget name="lab1" position="90,480" size="980,80" font="Global;25" foregroundColor="color1" backgroundColor="background1" halign="center" valign="center" transparent="1" zPosition="2" />
+		<widget name="list" enableWrapAround="0" itemHeight="20" font="Regular;0" position="0,0" size="0,100" zPosition="-10"/>
 		<widget name="currCh1" position="90,250" size="320,30" font="Global; 20" foregroundColor="color2" backgroundColor="background1" halign="center" valign="center" transparent="1" zPosition="2" noWrap="1" />
 		<widget name="currCh2" position="420,250" size="320,30" font="Global; 20" foregroundColor="color2" backgroundColor="background1" halign="center" valign="center" transparent="1" zPosition="2" noWrap="1" />
 		<widget name="currCh3" position="748,250" size="320,30" font="Global; 20" foregroundColor="color2" backgroundColor="background1" halign="center" valign="center" transparent="1" zPosition="2" noWrap="1" />
 		<widget name="Active1" position="90,250" size="320,30" backgroundColor="background5" zPosition="1" transparent="0" />
 		<widget name="Active2" position="420,250" size="320,30" backgroundColor="background5" zPosition="1" transparent="0" />
 		<widget name="Active3" position="748,250" size="320,30" backgroundColor="background5" zPosition="1" transparent="0" />
+		<!-- DO NOT CHANGE THIS LINE -->
+		<widget name="list" enableWrapAround="0" itemHeight="20" font="Regular;0" position="0,0" size="0,100" zPosition="-10"/>
 		<widget name="list1" position="90,290" size="320,550" scrollbarMode="showAlways" scrollbarSliderBorderWidth="1" scrollbarWidth="10" zPosition="1" transparent="0" 
 		scrollbarSliderForegroundColor="white" 
 		scrollbarSliderBorderColor="white" 
