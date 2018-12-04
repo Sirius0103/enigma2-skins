@@ -638,7 +638,8 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 		componentspath = "/usr/lib/enigma2/python/Components/"
 		if fileExists("/tmp/version")\
 			and fileExists("/tmp/plugin.py")\
-			and fileExists("/tmp/SetupCyberLCD.mo")\
+			and fileExists("/tmp/ruSetupCyberLCD.mo")\
+			and fileExists("/tmp/deSetupCyberLCD.mo")\
 			and fileExists("/tmp/skin_solo4k.xml")\
 			and fileExists("/tmp/skin_uno4k.xml")\
 			and fileExists("/tmp/skin_ultimo4k.xml")\
@@ -648,7 +649,8 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 			os.system("cp /tmp/version %sSetupCyberLCD/version" % (pluginpath))
 	# install plugin
 			os.system("cp /tmp/plugin.py %sSetupCyberLCD/plugin.py" % (pluginpath))
-			os.system("cp /tmp/SetupCyberLCD.mo %sSetupCyberLCD/locale/ru/LC_MESSAGES/SetupCyberLCD.mo" % (pluginpath))
+			os.system("cp /tmp/ruSetupCyberLCD.mo %sSetupCyberLCD/locale/ru/LC_MESSAGES/SetupCyberLCD.mo" % (pluginpath))
+			os.system("cp /tmp/deSetupCyberLCD.mo %sSetupCyberLCD/locale/de/LC_MESSAGES/SetupCyberLCD.mo" % (pluginpath))
 	# install skin
 			os.system("cp /tmp/skin_solo4k.xml %sCyberLCD/skin_solo4k.xml" % (skinpath))
 			os.system("cp /tmp/skin_uno4k.xml %sCyberLCD/skin_uno4k.xml" % (skinpath))
@@ -668,7 +670,8 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 		try:
 	# download plugin
 			urllib.urlretrieve ("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberLCD/plugin.py","/tmp/plugin.py")
-			urllib.urlretrieve ("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberLCD/locale/ru/LC_MESSAGES/SetupCyberLCD.mo","/tmp/SetupCyberLCD.mo")
+			urllib.urlretrieve ("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberLCD/locale/ru/LC_MESSAGES/SetupCyberLCD.mo","/tmp/ruSetupCyberLCD.mo")
+			urllib.urlretrieve ("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberLCD/locale/de/LC_MESSAGES/SetupCyberLCD.mo","/tmp/deSetupCyberLCD.mo")
 	# download skin
 			urllib.urlretrieve ("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberLCD/skin_solo4k.xml","/tmp/skin_solo4k.xml")
 			urllib.urlretrieve ("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberLCD/skin_uno4k.xml","/tmp/skin_uno4k.xml")
