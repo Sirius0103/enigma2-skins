@@ -32,9 +32,7 @@ from Tools.LoadPixmap import LoadPixmap
 from skin import parseColor, parseFont
 from os import system, environ
 from enigma import addFont
-import urllib
-import gettext
-import os
+import os, gettext, urllib
 
 lang = language.getLanguage()
 environ["LANGUAGE"] = lang[:2]
@@ -583,14 +581,12 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 			or not fileExists("/usr/lib/enigma2/python/Components/Renderer/PiconUni.py"):
 			self["info_com"] = Label(_("No install components skin !!! \nPress blue button to install !!!"))
 		else:
-			list = ""
+			version = ""
 			try:
-				text = open(("/tmp/version"), "r").readlines()[3]
-				for line in text:
-					list += line
-				self["info_com"].setText(list)
-				text.close()
-				return list
+				for text in open("/tmp/version").readlines()[3]:
+					version += text
+				self["info_com"].setText(version)
+				return version
 			except:
 				return ""
 
