@@ -750,14 +750,12 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 
 	def infosk(self):
 		pluginpath = "/usr/lib/enigma2/python/Plugins/Extensions/"
-		list = ""
+		version = ""
 		try:
-			text = open(("%sSetupCyberFHD/version" % (pluginpath)), "r").readlines()[1]
-			for line in text:
-				list += line
-			self["info_sk"].setText(list)
-			text.close()
-			return list
+			for text in open("%sSetupCyberFHD/version" % (pluginpath)).readlines()[1]:
+				version += text
+			self["info_sk"].setText(version)
+			return version
 		except:
 			return ""
 

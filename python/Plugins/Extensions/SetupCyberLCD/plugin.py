@@ -561,14 +561,12 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 
 	def infosk(self):
 		pluginpath = "/usr/lib/enigma2/python/Plugins/Extensions/"
-		list = ""
+		version = ""
 		try:
-			text = open(("%sSetupCyberLCD/version" % (pluginpath)), "r").readlines()[1]
-			for line in text:
-				list += line
-			self["info_sk"].setText(list)
-			text.close()
-			return list
+			for text in open("%sSetupCyberLCD/version" % (pluginpath)).readlines()[1]:
+				version += text
+			self["info_sk"].setText(version)
+			return version
 		except:
 			return ""
 
