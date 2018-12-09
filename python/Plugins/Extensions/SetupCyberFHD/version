@@ -1,7 +1,8 @@
 Скин: CyberFHD
-Версия скина: 1.4-r1
+Версия скина: 1.4-r2
 
-Изменения: 02.12.2018 добавлены окна EPGvertical, EPGverticalPIG 23.11.2018 поправлено окно VirtualKeyBoard, добавлена кодировка PowerVU, убрана кодировка EXset в панели кодировок
+Изменения: 09.12.2018 добавлены окна LogManager, MultiBootStartupOPT, TmbdYTTrailerList, QuickEPG 02.12.2018 добавлены окна EPGvertical, EPGverticalPIG 
+23.11.2018 поправлено окно VirtualKeyBoard, добавлена кодировка PowerVU, убрана кодировка EXset в панели кодировок
 22.11.2018 добавлена немецкая локализация (danke maggy)
 18.11.2018 добавлено окно RotorNimSelection
 14.11.2018 поправлена работа на OpenPLi 7.xx

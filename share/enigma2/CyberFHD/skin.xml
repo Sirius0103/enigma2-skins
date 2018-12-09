@@ -1618,6 +1618,29 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- ********** OpenATV ********** -->
+	<!-- Quick EPG InfoBar -->
+	<screen name="QuickEPG" position="fill" title="InfoBar QuickEPG" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesInfoBarTvLayer" />
+		<eLabel text="e" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<panel name="TemplatesInfoBarTvProgress" />
+		<panel name="TemplatesInfoBarTvIndication" />
+		<!-- Description Layer -->
+		<eLabel position="0,513" size="1920,329" backgroundColor="background3" zPosition="-12" />
+		<eLabel position="0,515" size="1920,325" backgroundColor="background1" zPosition="-11" />
+		<eLabel position="85,555" size="1750,280" backgroundColor="background2" zPosition="-10" />
+		<eLabel position="10,555" size="70,280" backgroundColor="background2" zPosition="-10" />
+		<eLabel position="1840,555" size="70,280" backgroundColor="background2" zPosition="-10" />
+		<widget name="list" position="90,560" size="1740,270" scrollbarMode="showNever" backgroundColor="background1" transparent="1" EntrybackgroundColor="background1" EventFontPadding="4" />
+		<panel name="TemplatesButtonsRed" />
+		<panel name="TemplatesButtonsGreen" />
+		<panel name="TemplatesButtonsYellow" />
+		<panel name="TemplatesButtonsBlue" />
+		<panel name="TemplatesButtonsInfo" />
+		<panel name="TemplatesButtonsMenu" />
+		<panel name="TemplatesButtons" />
+		<panel name="TemplatesClock" />
+	</screen>
 	<!-- Graphical MultiEPG InfoBar -->
 	<screen name="GraphicalInfoBarEPG" position="fill" title="InfoBar EPG" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesInfoBarTvLayer" />
@@ -5186,6 +5209,48 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<panel name="TemplatesButtons" />
 		<panel name="TemplatesClock" />
 	</screen>
+	<!-- ########## Log Manager ########## -->
+	<!-- Log Manager -->
+	<screen name="LogManager" position="fill" size="1920,1080" title="Log Manager" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget name="list" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
+		<applet type="onLayoutFinish">
+			self["list"].instance.setItemHeight(30)
+		</applet>
+		</widget>
+		<panel name="TemplatesButtonsRed" />
+		<panel name="TemplatesButtonsGreen" />
+		<panel name="TemplatesButtonsYellow" />
+		<panel name="TemplatesButtonsBlue" />
+		<panel name="TemplatesButtons" />
+		<panel name="TemplatesClock" />
+	</screen>
+	<!-- Log Manager View Log -->
+	<screen name="LogManagerViewLog" position="fill" size="1920,1080" title="View Crashlog file" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenu1800Layer" />
+		<eLabel text="d" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget name="list" position="90,200" size="1740,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<eLabel text="Exit" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+		<panel name="TemplatesButtonsRed" />
+		<panel name="TemplatesButtons" />
+		<panel name="TemplatesClock" />
+	</screen>
+	<!-- Log Manager Fb -->
+	<screen name="LogManagerFb" position="fill" size="1920,1080" title="Log Manager Fb" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget name="list" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<panel name="TemplatesButtonsRed" />
+		<panel name="TemplatesButtonsGreen" />
+		<panel name="TemplatesButtonsYellow" />
+		<panel name="TemplatesButtonsBlue" />
+		<panel name="TemplatesButtons" />
+		<panel name="TemplatesClock" />
+	</screen>
 	<!-- ########## Kodi ########## -->
 	<!-- Kodi -->
 	<screen name="KodiSetupScreen" position="fill" title="Kodi Settings" flags="wfNoBorder" backgroundColor="transparent">
@@ -5419,6 +5484,26 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<eLabel text="i" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
 		<widget name="about" position="90,200" size="980,635" font="Global; 25" backgroundColor="background1" transparent="1" />
+		<panel name="TemplatesClock" />
+	</screen>
+	<!-- ********** OpenATV ********** -->
+	<!-- Multi Boot Startup OPT -->
+	<screen name="MultiBootStartupOPT" position="fill" title="MultiBoot STARTUP Selector" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="p" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<eLabel position="90,200" size="980,40" backgroundColor="background2" zPosition="-1" />
+		<eLabel text="&gt;" position="95,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+		<eLabel position="90,370" size="980,40" backgroundColor="background2" zPosition="-1" />
+		<eLabel text="&gt;" position="95,375" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+		<widget source="config" render="Label" position="125,205" size="945,150" font="Global; 30" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget source="options" render="Label" position="125,375" size="945,420" font="Global; 30" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget name="description" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
+		<eLabel text="Rename" position="1380,944" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+		<panel name="TemplatesButtonsRed" />
+		<panel name="TemplatesButtonsGreen" />
+		<panel name="TemplatesButtonsYellow" />
+		<panel name="TemplatesButtons" />
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- ########## Newcamd.list Editor ########## -->
@@ -7188,6 +7273,25 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
 		<widget name="list" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<panel name="TemplatesClock" />
+	</screen>
+	<!-- YTTrailer List -->
+	<screen name="TmbdYTTrailerList" position="fill" title="YT Trailer-List" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="V" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget source="list" render="Listbox" position="90,200" size="980,635" scrollbarMode="showNever" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryPixmapAlphaTest(pos=(0,0), size=(100,72), png=3), # Thumbnail
+					MultiContentEntryText(pos=(110,1), size=(500,70), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text=1)],
+					"fonts": [gFont("Global",20)],
+					"itemHeight": 72
+				}
+		</convert>
+		</widget>
+		<widget name="thumbnail" position="0,0" size="100,72" />
+		<panel name="TemplatesButtonsMenu" />
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- ########## OpenWebif ########## -->
