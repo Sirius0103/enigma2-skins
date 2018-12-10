@@ -18,6 +18,25 @@
 # You should have received a copy of the GNU General Public License
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 -->
+	<!-- ########## SkinLIB ########## -->
+	<!-- Down SkinLIB -->
+	<screen name="DownSkinLIB" position="fill" title="Download SkinLIB" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="¤" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget name="info_conv_l" position="90,200" size="320,600" font="Global; 20" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" />
+		<widget name="info_conv_r" position="420,200" size="320,600" font="Global; 20" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" />
+		<widget name="info_rend" position="750,200" size="320,600" font="Global; 20" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" />
+		<widget name="info_git" position="340,895" size="1000,60" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="top" transparent="1" />
+		<widget name="info_pl" position="340,960" size="1000,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="center" transparent="1" />
+		<eLabel text="&gt;INFO&lt;" position="1485,100" size="120,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+		<panel name="TemplatesButtonsRed" />
+		<panel name="TemplatesButtonsGreen" />
+		<panel name="TemplatesButtonsYellow" />
+		<panel name="TemplatesButtonsBlue" />
+		<panel name="TemplatesButtons" />
+		<panel name="TemplatesClock" />
+	</screen>
 	<!-- ########## AtileHD ########## -->
 	<!-- AtileHD Config -->
 	<screen name="AtileHD_Config" position="fill" title="AtileHD Setup" flags="wfNoBorder" backgroundColor="transparent">
