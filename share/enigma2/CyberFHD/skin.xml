@@ -3128,24 +3128,24 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="t" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
-		<widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="50" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget name="config" position="90,200" size="980,600" scrollbarMode="showNever" itemHeight="60" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
 		<widget name="description" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
 		<panel name="TemplatesButtonsRed" />
 		<panel name="TemplatesButtonsGreen" />
 		<panel name="TemplatesButtons" />
 		<panel name="TemplatesClock" />
 	</screen>
-	<!--  TimerEdit -->
+	<!--  Timer Edit -->
 	<screen name="TimerEdit" position="fill" title="Timer Edit" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="t" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
-		<widget name="description" position="90,200" size="980,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
-		<widget name="lbegin" position="400,280" size="100,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
-		<widget name="lend" position="400,320" size="100,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
-		<widget name="begin" position="510,278" size="100,30" font="Indication; 30" foregroundColor="color2" backgroundColor="background1" transparent="1" />
-		<widget name="end" position="510,318" size="100,30" font="Indication; 30" foregroundColor="color2" backgroundColor="background1" transparent="1" />
-		<widget name="apply" position="90,300" size="250,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
+		<widget name="description" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
+		<widget name="lbegin" position="400,200" size="100,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
+		<widget name="lend" position="400,240" size="100,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
+		<widget name="begin" position="510,200" size="100,30" font="Indication; 30" foregroundColor="color2" backgroundColor="background1" transparent="1" />
+		<widget name="end" position="510,240" size="100,30" font="Indication; 30" foregroundColor="color2" backgroundColor="background1" transparent="1" />
+		<widget name="apply" position="90,200" size="250,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- Timer Edit List -->
@@ -3153,7 +3153,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="t" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
-		<widget name="timerlist" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="50" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget name="timerlist" position="90,200" size="980,600" scrollbarMode="showNever" itemHeight="60" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
 		<panel name="TemplatesButtonsRed" />
 		<panel name="TemplatesButtonsGreen" />
 		<panel name="TemplatesButtonsYellow" />
@@ -3166,7 +3166,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="t" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
-		<widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget name="config" position="90,200" size="980,600" scrollbarMode="showNever" itemHeight="60" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
 		<widget name="canceltext" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
 		<widget name="oktext" position="1380,914" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
 		<panel name="TemplatesHelpWindow" />
@@ -3207,7 +3207,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="t" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
-		<widget name="timerlist" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="50" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget name="timerlist" position="90,200" size="980,600" scrollbarMode="showNever" itemHeight="60" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- Auto Timer -->
@@ -3215,7 +3215,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="t" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
-		<widget name="entries" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="50" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget name="entries" position="90,200" size="980,600" scrollbarMode="showNever" itemHeight="60" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
 		<panel name="TemplatesButtonsRed" />
 		<panel name="TemplatesButtonsGreen" />
 		<panel name="TemplatesButtonsYellow" />

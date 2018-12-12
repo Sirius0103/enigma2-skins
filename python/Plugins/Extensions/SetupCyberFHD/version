@@ -1,7 +1,8 @@
 Скин: CyberFHD
-Версия скина: 1.4-r2
+Версия скина: 1.4-r3
 
-Изменения: 09.12.2018 добавлены окна LogManager, MultiBootStartupOPT, TmbdYTTrailerList, QuickEPG 02.12.2018 добавлены окна EPGvertical, EPGverticalPIG 
+Изменения: 12.12.2018 добавлено окно DownSkinLIB поправлны окна Timer 09.12.2018 добавлены окна LogManager, MultiBootStartupOPT, TmbdYTTrailerList, QuickEPG 
+02.12.2018 добавлены окна EPGvertical, EPGverticalPIG 
 23.11.2018 поправлено окно VirtualKeyBoard, добавлена кодировка PowerVU, убрана кодировка EXset в панели кодировок
 22.11.2018 добавлена немецкая локализация (danke maggy)
 18.11.2018 добавлено окно RotorNimSelection
