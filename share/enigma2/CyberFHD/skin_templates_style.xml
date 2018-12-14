@@ -6206,13 +6206,50 @@
 		<widget objectTypes="blue_key,StaticText" source="blue_key" render="Label" position="1380,974" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="3" />
 		<widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" position="1380,974" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="4" />
 	</screen>
+	<screen name="TemplatesHelpWindow">
+		<!-- Templates Help Window -->
+		<widget name="HelpWindow" position="130,530" size="1,1" />
+	</screen>
+	<screen name="TemplatesClockDefault">
+		<panel name="TemplatesClockLayer" />
+		<!-- Templates Clock -->
+		<widget source="global.CurrentTime" render="Label" position="1615,95" size="90,50" font="Indication; 50" foregroundColor="color1" backgroundColor="background2" halign="right" transparent="1">
+			<convert type="ClockToText">Format:%H</convert>
+		</widget>
+		<eLabel text=":" position="1710,95" size="20,50" font="Indication; 50" foregroundColor="color1" backgroundColor="background" halign="center" transparent="1" zPosition="-1" />
+		<widget source="global.CurrentTime" render="Label" position="1735,95" size="90,50" font="Indication; 50" foregroundColor="color1" backgroundColor="background2" halign="left" transparent="1">
+			<convert type="ClockToText">Format:%M</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="1620,70" size="200,25" font="Titles; 20" foregroundColor="color2" backgroundColor="background2" halign="center" transparent="1">
+			<convert type="ClockToText">Format:%A</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="1620,140" size="200,25" font="Titles; 22" foregroundColor="color2" backgroundColor="background2" halign="center" transparent="1">
+			<convert type="ClockToText">Format:%d.%m.%Y</convert>
+		</widget>
+	</screen>
+	<screen name="TemplatesClockStyle">
+		<panel name="TemplatesClockLayer" />
+		<!-- Templates Clock -->
+		<widget source="global.CurrentTime" render="Label" position="1615,95" size="90,50" font="Indication; 50" foregroundColor="color1" backgroundColor="background2" halign="right" transparent="1">
+			<convert type="ClockToText">Format:%H</convert>
+		</widget>
+		<eLabel text=":" position="1710,95" size="20,50" font="Indication; 50" foregroundColor="gray" backgroundColor="background" halign="center" transparent="1" zPosition="-1" />
+		<widget source="global.CurrentTime" render="FixedLabel" text=":" position="1710,95" size="20,50" font="Indication; 50" foregroundColor="color1" backgroundColor="background2" halign="center" transparent="1">
+			<convert type="AlwaysTrue"></convert>
+			<convert type="ConditionalShowHide">Blink</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="1735,95" size="90,50" font="Indication; 50" foregroundColor="color1" backgroundColor="background2" halign="left" transparent="1">
+			<convert type="ClockToText">Format:%M</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="1620,70" size="200,25" font="Titles; 20" foregroundColor="color2" backgroundColor="background2" halign="center" transparent="1">
+			<convert type="ClockToText">Format:%A</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="1620,140" size="200,25" font="Titles; 22" foregroundColor="color2" backgroundColor="background2" halign="center" transparent="1">
+			<convert type="ClockToText">Format:%d.%m.%Y</convert>
+		</widget>
+	</screen>
 	<screen name="TemplatesMessageBox">
 		<!-- Templates Message Box -->
-		<widget source="Title" render="Label" position="10,10" size="700,70" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" transparent="1" />
-		<widget name="text" position="10,80" size="700,0" font="Global;25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-		<widget name="ErrorPixmap" text="!" position="0,10" size="220,180" font="Icons; 110" foregroundColor="background3" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<widget name="QuestionPixmap" text="?" position="0,10" size="220,180" font="Icons; 110" foregroundColor="background3" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<widget name="InfoPixmap" text="$" position="0,10" size="220,180" font="Icons; 110" foregroundColor="background3" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<widget name="list" position="0,180" size="700,350" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
 		<applet type="onLayoutFinish">
 # this should be factored out into some helper code,but currently demonstrates applets.
@@ -6353,47 +6390,21 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<widget name="fec_value" position="1475,625" size="350,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1" />
 		<widget name="status_bar" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
 	</screen>
-	<screen name="TemplatesHelpWindow">
-		<!-- Templates Help Window -->
-		<widget name="HelpWindow" position="130,530" size="1,1" />
-	</screen>
-	<screen name="TemplatesClockDefault">
-		<panel name="TemplatesClockLayer" />
-		<!-- Templates Clock -->
-		<widget source="global.CurrentTime" render="Label" position="1615,95" size="90,50" font="Indication; 50" foregroundColor="color1" backgroundColor="background2" halign="right" transparent="1">
-			<convert type="ClockToText">Format:%H</convert>
+	<screen name="TemplatesWizard">
+		<!-- Templates Wizard -->
+		<eLabel text="Welcome..." position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+		<eLabel position="90,200" size="980,40" backgroundColor="background2" zPosition="-1" />
+		<eLabel text="&gt;" position="95,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+		<eLabel text="Greeting" position="125,205" size="940,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+		<widget name="text" position="90,245" size="980,225" font="Global;22" backgroundColor="background1" halign="center" valign="center" transparent="1" />
+		<eLabel position="90,540" size="980,40" backgroundColor="background2" zPosition="-1" />
+		<eLabel text="&gt;" position="95,545" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+		<eLabel text="Config" position="125,545" size="940,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+		<widget name="config" position="90,585" size="980,225" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget source="list" render="Listbox" position="90,585" size="980,225" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
+			<convert type="StringList" />
 		</widget>
-		<eLabel text=":" position="1710,95" size="20,50" font="Indication; 50" foregroundColor="color1" backgroundColor="background" halign="center" transparent="1" zPosition="-1" />
-		<widget source="global.CurrentTime" render="Label" position="1735,95" size="90,50" font="Indication; 50" foregroundColor="color1" backgroundColor="background2" halign="left" transparent="1">
-			<convert type="ClockToText">Format:%M</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1620,70" size="200,25" font="Titles; 20" foregroundColor="color2" backgroundColor="background2" halign="center" transparent="1">
-			<convert type="ClockToText">Format:%A</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1620,140" size="200,25" font="Titles; 22" foregroundColor="color2" backgroundColor="background2" halign="center" transparent="1">
-			<convert type="ClockToText">Format:%d.%m.%Y</convert>
-		</widget>
-	</screen>
-	<screen name="TemplatesClockStyle">
-		<panel name="TemplatesClockLayer" />
-		<!-- Templates Clock -->
-		<widget source="global.CurrentTime" render="Label" position="1615,95" size="90,50" font="Indication; 50" foregroundColor="color1" backgroundColor="background2" halign="right" transparent="1">
-			<convert type="ClockToText">Format:%H</convert>
-		</widget>
-		<eLabel text=":" position="1710,95" size="20,50" font="Indication; 50" foregroundColor="gray" backgroundColor="background" halign="center" transparent="1" zPosition="-1" />
-		<widget source="global.CurrentTime" render="FixedLabel" text=":" position="1710,95" size="20,50" font="Indication; 50" foregroundColor="color1" backgroundColor="background2" halign="center" transparent="1">
-			<convert type="AlwaysTrue"></convert>
-			<convert type="ConditionalShowHide">Blink</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1735,95" size="90,50" font="Indication; 50" foregroundColor="color1" backgroundColor="background2" halign="left" transparent="1">
-			<convert type="ClockToText">Format:%M</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1620,70" size="200,25" font="Titles; 20" foregroundColor="color2" backgroundColor="background2" halign="center" transparent="1">
-			<convert type="ClockToText">Format:%A</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1620,140" size="200,25" font="Titles; 22" foregroundColor="color2" backgroundColor="background2" halign="center" transparent="1">
-			<convert type="ClockToText">Format:%d.%m.%Y</convert>
-		</widget>
+		<widget name="languagetext" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
 	</screen>
 	<!-- ########## Templates Channel Selection Tv ########## -->
 	<screen name="TemplatesChannelSelectionProgress">
