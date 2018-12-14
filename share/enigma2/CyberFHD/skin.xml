@@ -1070,171 +1070,19 @@
 	<!-- ########## Message ########## -->
 	<!-- Message Box -->
 	<screen name="MessageBox" position="0,100" size="1920,700" title="Message" flags="wfNoBorder" backgroundColor="background1" zPosition="99">
-		<widget source="Title" render="Label" position="10,10" size="700,70" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" transparent="1" />
-		<widget name="text" position="10,80" size="700,0" font="Global;25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-		<widget name="ErrorPixmap" text="!" position="0,10" size="220,180" font="Icons; 110" foregroundColor="background3" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<widget name="QuestionPixmap" text="?" position="0,10" size="220,180" font="Icons; 110" foregroundColor="background3" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<widget name="InfoPixmap" text="$" position="0,10" size="220,180" font="Icons; 110" foregroundColor="background3" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<widget name="list" position="0,180" size="700,350" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<applet type="onLayoutFinish">
-# this should be factored out into some helper code,but currently demonstrates applets.
-from enigma import eSize,ePoint, getDesktop
-#---
-offset_listposx = 10
-offset_listposy = 90
-offset_listwidth = 10
-offset_listheight = 40
-offset_textwidth = 170
-offset_textheight = 20
-min_width = 400
-min_height = 50
-#----
-deskwidth = getDesktop(0).size().width()
-deskheight = getDesktop(0).size().height()
-textsize = self["text"].getSize()
-textwidth = textsize[0] + offset_textwidth
-textheight = textsize[1] + offset_textheight
-
-listwidth = 0
-listheight = 0
-
-if self.list:
-	try:
-		for i in self.list:
-			if len(i[0]) &gt; listwidth:
-				listwidth = len(i[0])
-		listwidth = listwidth * offset_listwidth
-		listheight = len(self.list) * offset_listheight
-	except:
-		pass
-
-if (min_height &gt; textheight):
-	textheight = min_height
-if (min_width &gt; textwidth):
-	textwidth = min_width
-if (listheight &gt; 0):
-	offset = 21
-else:
-	offset = 13
-if (textwidth &gt; listwidth):
-	wsizex = textwidth + offset_listposx * 2
-else:
-	textwidth = listwidth - offset_listposx
-	wsizex = listwidth + offset_listposx
-
-wsizey = textheight + listheight + offset
-
-if ((wsizey + offset_listposy - offset_listposx) &gt; deskheight):
-	textheight = deskheight - listheight - offset - offset_listposy + offset_listposx
-	wsizey = textheight + listheight + offset
-
-if (wsizex &gt; deskwidth):
-	textwidth = deskwidth - offset_listposx * 2
-	listwidth = wsizex = deskwidth
-
-wsize = (wsizex,wsizey + offset_listposy - offset_listposx)
-
-# resize
-self.instance.resize(eSize(*wsize))
-
-# resize label
-textsize = (textwidth,textheight)
-self["text"].instance.resize(eSize(*textsize))
-
-# move list
-listsize = (wsizex - offset_listposx * 2,listheight)
-self["list"].instance.move(ePoint(offset_listposx,textheight + offset_listposy))
-self["list"].instance.resize(eSize(*listsize))
-
-# center window
-newwidth = wsize[0]
-newheight = wsize[1]
-self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight)/2))
-		</applet>
+		<panel name="TemplatesMessageBox" />
 	</screen>
-	<!-- MessageBoxSimple -->
+	<!-- Message Box Ext -->
+	<screen name="MessageBoxExt" position="0,100" size="1920,700" title="Message" flags="wfNoBorder" backgroundColor="background1" zPosition="99">
+		<panel name="TemplatesMessageBox" />
+	</screen>
+	<!-- Message Box Simple -->
 	<screen name="MessageBoxSimple" position="0,100" size="1920,700" title="Message" flags="wfNoBorder" backgroundColor="background1" zPosition="99">
-		<widget source="Title" render="Label" position="10,10" size="700,70" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" transparent="1" />
-		<widget name="text" position="10,80" size="700,0" font="Global;25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-		<widget name="ErrorPixmap" text="!" position="0,10" size="220,180" font="Icons; 110" foregroundColor="background3" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<widget name="QuestionPixmap" text="?" position="0,10" size="220,180" font="Icons; 110" foregroundColor="background3" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<widget name="InfoPixmap" text="$" position="0,10" size="220,180" font="Icons; 110" foregroundColor="background3" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<widget name="list" position="0,180" size="700,350" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<applet type="onLayoutFinish">
-# this should be factored out into some helper code,but currently demonstrates applets.
-from enigma import eSize,ePoint, getDesktop
-#---
-offset_listposx = 10
-offset_listposy = 90
-offset_listwidth = 10
-offset_listheight = 40
-offset_textwidth = 170
-offset_textheight = 20
-min_width = 400
-min_height = 50
-#----
-deskwidth = getDesktop(0).size().width()
-deskheight = getDesktop(0).size().height()
-textsize = self["text"].getSize()
-textwidth = textsize[0] + offset_textwidth
-textheight = textsize[1] + offset_textheight
-
-listwidth = 0
-listheight = 0
-
-if self.list:
-	try:
-		for i in self.list:
-			if len(i[0]) &gt; listwidth:
-				listwidth = len(i[0])
-		listwidth = listwidth * offset_listwidth
-		listheight = len(self.list) * offset_listheight
-	except:
-		pass
-
-if (min_height &gt; textheight):
-	textheight = min_height
-if (min_width &gt; textwidth):
-	textwidth = min_width
-if (listheight &gt; 0):
-	offset = 21
-else:
-	offset = 13
-if (textwidth &gt; listwidth):
-	wsizex = textwidth + offset_listposx * 2
-else:
-	textwidth = listwidth - offset_listposx
-	wsizex = listwidth + offset_listposx
-
-wsizey = textheight + listheight + offset
-
-if ((wsizey + offset_listposy - offset_listposx) &gt; deskheight):
-	textheight = deskheight - listheight - offset - offset_listposy + offset_listposx
-	wsizey = textheight + listheight + offset
-
-if (wsizex &gt; deskwidth):
-	textwidth = deskwidth - offset_listposx * 2
-	listwidth = wsizex = deskwidth
-
-wsize = (wsizex,wsizey + offset_listposy - offset_listposx)
-
-# resize
-self.instance.resize(eSize(*wsize))
-
-# resize label
-textsize = (textwidth,textheight)
-self["text"].instance.resize(eSize(*textsize))
-
-# move list
-listsize = (wsizex - offset_listposx * 2,listheight)
-self["list"].instance.move(ePoint(offset_listposx,textheight + offset_listposy))
-self["list"].instance.resize(eSize(*listsize))
-
-# center window
-newwidth = wsize[0]
-newheight = wsize[1]
-self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight)/2))
-		</applet>
+		<panel name="TemplatesMessageBox" />
+	</screen>
+	<!-- Remove Timer Question -->
+	<screen name="RemoveTimerQuestion" position="0,100" size="1920,700" title="Message" flags="wfNoBorder" backgroundColor="background1" zPosition="99">
+		<panel name="TemplatesMessageBox" />
 	</screen>
 	<!-- ########## Text ########## -->
 	<!-- Text Box -->
@@ -3135,6 +2983,18 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<panel name="TemplatesButtons" />
 		<panel name="TemplatesClock" />
 	</screen>
+	<!-- Timer Entry -->
+	<screen name="TimerEntry" position="fill" title="Timer entry" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="t" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget name="config" position="90,200" size="980,600" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget name="canceltext" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+		<widget name="oktext" position="1380,914" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+		<panel name="TemplatesHelpWindow" />
+		<panel name="TemplatesButtons" />
+		<panel name="TemplatesClock" />
+	</screen>
 	<!--  Timer Edit -->
 	<screen name="TimerEdit" position="fill" title="Timer Edit" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenu1000Layer" />
@@ -3158,18 +3018,6 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<panel name="TemplatesButtonsGreen" />
 		<panel name="TemplatesButtonsYellow" />
 		<panel name="TemplatesButtonsBlue" />
-		<panel name="TemplatesButtons" />
-		<panel name="TemplatesClock" />
-	</screen>
-	<!-- Timer Entry -->
-	<screen name="TimerEntry" position="fill" title="Timer entry" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="TemplatesMenu1000Layer" />
-		<eLabel text="t" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget name="config" position="90,200" size="980,600" scrollbarMode="showNever" itemHeight="60" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<widget name="canceltext" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-		<widget name="oktext" position="1380,914" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-		<panel name="TemplatesHelpWindow" />
 		<panel name="TemplatesButtons" />
 		<panel name="TemplatesClock" />
 	</screen>
@@ -3210,7 +3058,31 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<widget name="timerlist" position="90,200" size="980,600" scrollbarMode="showNever" itemHeight="60" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
 		<panel name="TemplatesClock" />
 	</screen>
-	<!-- Auto Timer -->
+	<!-- ********** OpenATV ********** -->
+	<!-- Auto Timer Preview -->
+	<screen name="AutoTimerPreview" position="0,0" size="1920,1080" title="Preview AutoTimer" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="t" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget source="timerlist" render="Listbox" position="90,200" size="980,600" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+						MultiContentEntryText(pos=(340, 5), size=(640,28), text = 3, font = 0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER),
+						MultiContentEntryText(pos=(5,35), size=(975,20), text = 0, font = 1, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER),
+						MultiContentEntryText(pos=(245,60), size=(735,20), text = 4, font = 1, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER),
+						MultiContentEntryText(pos=(5,5), size=(335,20), text = 2, font = 1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER),
+					],
+				"fonts": [gFont("Global", 25),gFont("Console", 20)],
+				"itemHeight": 80
+				}
+			</convert>
+		</widget>
+		<panel name="TemplatesButtonsRed" />
+		<panel name="TemplatesButtonsYellow" />
+		<panel name="TemplatesButtons" />
+		<panel name="TemplatesClock" />
+	</screen>
+	<!-- Auto Timer Overview -->
 	<screen name="AutoTimerOverview" position="fill" title="AutoTimer Overview" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="t" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
