@@ -327,10 +327,10 @@
 		<widget render="Label" source="audio" position="120,40" size="180,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" borderWidth="2" />
 	</screen>
 	<!-- Record Timer Question -->
-	<screen name="RecordTimerQuestion" position="78,188" size="504,659" title="RecordTimer" flags="wfNoBorder" backgroundColor="transparent" zPosition="98">
-		<eLabel position="0,0" size="504,659" backgroundColor="background3" zPosition="-12" />
-		<eLabel position="0,2" size="502,655" backgroundColor="background1" zPosition="-11" />
-		<widget name="list" position="12,12" size="480,600" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+	<screen name="RecordTimerQuestion" position="10,10" size="504,164" title="RecordTimer" flags="wfNoBorder" backgroundColor="transparent" zPosition="98">
+		<eLabel position="0,0" size="504,164" backgroundColor="background3" zPosition="-12" />
+		<eLabel position="2,2" size="500,160" backgroundColor="background1" zPosition="-11" />
+		<widget name="list" position="12,12" size="480,140" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
 	</screen>
 	<!-- Standby -->
 	<screen name="Standby" position="fill" title="Standby" flags="wfNoBorder" backgroundColor="transparent">
