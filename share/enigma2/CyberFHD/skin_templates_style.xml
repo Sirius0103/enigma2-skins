@@ -6129,7 +6129,7 @@
 			<convert type="ServiceInfoEX">atype</convert>
 		</widget>
 	</screen>
-	<!--  ########## Templates Menu ########## -->
+	<!-- ########## Templates Menu ########## -->
 	<screen name="TemplatesDish">
 		<!-- Layer Dish -->
 		<eLabel position="0,0" size="300,300" backgroundColor="background3" zPosition="-12" />
