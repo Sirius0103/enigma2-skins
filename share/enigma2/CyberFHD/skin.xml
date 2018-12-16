@@ -49,7 +49,6 @@
 		<parameter name="ServiceInfoRight" value="350,3,900,30" />
 		<parameter name="SelectionListDescr" value="40,3,900,30" />
 		<parameter name="SelectionListLock" value="5,5,30,30" />
-
 	</parameters>
 	<!-- ########## Colors ########## -->
 	<colors>
@@ -95,7 +94,6 @@
 		<alias name="SongList" font="Global" size="25" />
 		<alias name="SongListMulti" font="Global" size="25" />
 		<alias name="SelectionList" font="Global" size="25" />
-
 		<alias name="PluginBrowser0" font="Global" size="25" />
 		<alias name="PluginBrowser1" font="Console" size="20" />
 	</fonts>
@@ -2984,7 +2982,18 @@
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="t" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
-		<widget name="timerlist" position="90,200" size="980,600" scrollbarMode="showNever" itemHeight="60" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget name="timerlist" position="90,200" size="980,600"
+		scrollbarMode="showNever"
+		itemHeight="60"
+		rowSplit="30"
+		iconMargin="10"
+		satPosLeft="180"
+		setFont="Global; 22"
+		setEventNameFont="Global; 20"
+		setServiceNameFont="Global; 22"
+		backgroundColor="background1"
+		backgroundColorSelected="background5"
+		transparent="1" />
 		<panel name="TemplatesButtonsRed" />
 		<panel name="TemplatesButtonsGreen" />
 		<panel name="TemplatesButtonsYellow" />
@@ -3026,7 +3035,18 @@
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="t" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
-		<widget name="timerlist" position="90,200" size="980,600" scrollbarMode="showNever" itemHeight="60" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget name="timerlist" position="90,200" size="980,600"
+		scrollbarMode="showNever"
+		itemHeight="60"
+		rowSplit="30"
+		iconMargin="10"
+		satPosLeft="180"
+		setFont="Global; 22"
+		setEventNameFont="Global; 20"
+		setServiceNameFont="Global; 22"
+		backgroundColor="background1"
+		backgroundColorSelected="background5"
+		transparent="1" />
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- ********** OpenATV ********** -->
@@ -3058,7 +3078,19 @@
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="t" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
-		<widget name="entries" position="90,200" size="980,600" scrollbarMode="showNever" itemHeight="60" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget name="entries" position="90,200" size="980,600"
+		scrollbarMode="showNever"
+		itemHeight="60"
+		rowSplit1="30"
+		rowSplit2="30"
+		rowHeight="30"
+		iconMargin="10"
+		DayNameFont="Global; 22"
+		EventNameFont="Global; 20"
+		ServiceNameFont="Global; 22"
+		backgroundColor="background1"
+		backgroundColorSelected="background5"
+		transparent="1" />
 		<panel name="TemplatesButtonsRed" />
 		<panel name="TemplatesButtonsGreen" />
 		<panel name="TemplatesButtonsYellow" />
