@@ -3951,8 +3951,10 @@
 				}
 			</convert>
 		</widget>
-		<panel name="TemplatesMenuInfoLayer" />
-		<widget name="thumbnail" position="1172,515" size="600,320" transparent="1" alphatest="on" />
+		<eLabel position="1103,188" size="739,659" backgroundColor="background3" zPosition="-12" />
+		<eLabel position="1105,190" size="735,655" backgroundColor="background1" zPosition="-11" />
+		<panel name="TemplatesMenuRightLayer" />
+		<widget name="thumbnail" position="1115,200" size="715,635" alphatest="on" />
 		<panel name="TemplatesButtonsRed" />
 		<panel name="TemplatesButtonsGreen" />
 		<panel name="TemplatesButtons" />
