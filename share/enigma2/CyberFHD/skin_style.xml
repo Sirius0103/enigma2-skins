@@ -3935,6 +3935,29 @@
 		<panel name="TemplatesButtons" />
 		<panel name="TemplatesClock" />
 	</screen>
+	<!-- ########## Blu-ray player ########## -->
+	<!-- Bluray Main -->
+	<screen name="BlurayMain" position="fill" title="Blu-ray player" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="V" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget name="name" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
+		<widget source="list" render="Listbox" position="90,200" size="980,600" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{
+					"template": [MultiContentEntryText(pos=(10, 1), size=(900, 35), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=0)],
+					"fonts": [gFont("Global", 30)],
+					"itemHeight": 35
+				}
+			</convert>
+		</widget>
+		<panel name="TemplatesMenuInfoLayer" />
+		<widget name="thumbnail" position="1172,515" size="600,320" transparent="1" alphatest="on" />
+		<panel name="TemplatesButtonsRed" />
+		<panel name="TemplatesButtonsGreen" />
+		<panel name="TemplatesButtons" />
+		<panel name="TemplatesClock" />
+	</screen>
 	<!-- ########## Calendar ########## -->
 	<!-- Calendar -->
 	<screen name="Calendar" position="fill" title="Calendar" flags="wfNoBorder" backgroundColor="transparent">
