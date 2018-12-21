@@ -1,14 +1,14 @@
 Скин: CyberFHD
-Версия скина: 1.4-r4
+Версия скина: 1.4-r5
 
-Изменения: 20.12.2018 добавлено окно BlurayMain 15.12.2018 добавлены окна DownSkinLIB, RecordTimerQuestion, AutoTimerPreview, поправлены окна Timer 
-09.12.2018 добавлены окна LogManager, MultiBootStartupOPT, TmbdYTTrailerList, QuickEPG 
-02.12.2018 добавлены окна EPGvertical, EPGverticalPIG 
+Изменения: 21.12.2018 удалены окна E2iPlayer, DVD Burn 20.12.2018 добавлено окно BlurayMain
+15.12.2018 добавлены окна DownSkinLIB, RecordTimerQuestion, AutoTimerPreview, поправлены окна Timer
+09.12.2018 добавлены окна LogManager, MultiBootStartupOPT, TmbdYTTrailerList, QuickEPG
+02.12.2018 добавлены окна EPGvertical, EPGverticalPIG
 23.11.2018 поправлено окно VirtualKeyBoard, добавлена кодировка PowerVU, убрана кодировка EXset в панели кодировок
 22.11.2018 добавлена немецкая локализация (danke maggy)
 18.11.2018 добавлено окно RotorNimSelection
 14.11.2018 поправлена работа на OpenPLi 7.xx
-12.09.2018 исправления для IPTVPlayer
 09.09.2018 добавлены окна MeoBoot, Ipk creator, IPTVPlayer
 08.09.2018 добавлены настройки "Background 2 corner", "Background 3 corner" для многих окон
 27.06.2018 изменены TemplatesMenuLayer

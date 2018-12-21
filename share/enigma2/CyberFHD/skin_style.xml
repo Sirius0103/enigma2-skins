@@ -580,34 +580,6 @@
 		<widget name="text" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
 		<panel name="TemplatesClock" />
 	</screen>
-	<!-- Media Player -->
-	<screen name="MediaPlayer" position="fill" title="MediaPlayer" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="TemplatesMenuMediaPlayerLayer" />
-		<eLabel text="MediaPlayer" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
-		<eLabel position="90,200" size="850,40" backgroundColor="background2" zPosition="-1" />
-		<eLabel text="&gt;" position="95,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-		<eLabel text="F i l e l i s t" position="125,205" size="810,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
-		<widget name="filelist" position="90,245" size="850,350" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<eLabel position="980,200" size="850,40" backgroundColor="background2" zPosition="-1" />
-		<eLabel text="&gt;" position="985,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-		<eLabel text="P l a y l i s t" position="1015,205" size="810,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
-		<widget name="playlist" position="980,245" size="850,565" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<widget name="title" position="270,655" size="670,30" font="Global; 25" foregroundColor="color3" backgroundColor="background2" halign="left" transparent="1" />
-		<eLabel text="Track" position="90,655" size="180,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" />
-		<eLabel text="Artist" position="90,685" size="180,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
-		<widget name="artist" position="270,685" size="670,30" font="Global; 25" foregroundColor="color3" backgroundColor="background2" halign="left" transparent="1" />
-		<eLabel text="Album" position="90,715" size="180,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
-		<widget name="album" position="270,715" size="670,30" font="Global; 25" foregroundColor="color3" backgroundColor="background2" halign="left" transparent="1" />
-		<eLabel text="Year" position="90,745" size="180,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
-		<widget name="year" position="270,745" size="670,30" font="Global; 25" foregroundColor="color3" backgroundColor="background2" halign="left" transparent="1" />
-		<widget name="repeat" position="1755,895" size="50,30" pixmaps="CyberFHD/icons/repeat_off.png,CyberFHD/icons/repeat_on.png" transparent="1" alphatest="blend" />
-		<ePixmap position="100,805" size="225,200" pixmap="CyberFHD/case_jewel_1.png" alphatest="on" zPosition="1" />
-		<ePixmap position="100,805" size="225,200" pixmap="CyberFHD/case_jewel_2.png" alphatest="blend" zPosition="3" />
-		<widget name="coverArt" pixmap="CyberFHD/no_cover.png" position="125,805" size="200,200" alphatest="on" zPosition="2" />
-		<panel name="TemplatesInfoBarMediaProgress" />
-		<panel name="TemplatesButtonsMenu" />
-		<panel name="TemplatesClock" />
-	</screen>
 	<!-- Cut List Editor -->
 	<screen name="CutListEditor" position="fill" title="Cutlist editor" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenu500Layer" />
@@ -643,6 +615,44 @@
 		<panel name="TemplatesButtonsRed" />
 		<panel name="TemplatesButtonsGreen" />
 		<panel name="TemplatesButtons" />
+		<panel name="TemplatesClock" />
+	</screen>
+	<!-- ########## DVD ########## -->
+	<!-- DVD  File Browser -->
+	<screen name="FileBrowser" position="fill" title="DVD File Browser" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="V" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget name="filelist" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<panel name="TemplatesClock" />
+	</screen>
+	<!-- ########## Media Player ########## -->
+	<!-- Media Player -->
+	<screen name="MediaPlayer" position="fill" title="MediaPlayer" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenuMediaPlayerLayer" />
+		<eLabel text="MediaPlayer" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+		<eLabel position="90,200" size="850,40" backgroundColor="background2" zPosition="-1" />
+		<eLabel text="&gt;" position="95,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+		<eLabel text="F i l e l i s t" position="125,205" size="810,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+		<widget name="filelist" position="90,245" size="850,350" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<eLabel position="980,200" size="850,40" backgroundColor="background2" zPosition="-1" />
+		<eLabel text="&gt;" position="985,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+		<eLabel text="P l a y l i s t" position="1015,205" size="810,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+		<widget name="playlist" position="980,245" size="850,565" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget name="title" position="270,655" size="670,30" font="Global; 25" foregroundColor="color3" backgroundColor="background2" halign="left" transparent="1" />
+		<eLabel text="Track" position="90,655" size="180,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" />
+		<eLabel text="Artist" position="90,685" size="180,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+		<widget name="artist" position="270,685" size="670,30" font="Global; 25" foregroundColor="color3" backgroundColor="background2" halign="left" transparent="1" />
+		<eLabel text="Album" position="90,715" size="180,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+		<widget name="album" position="270,715" size="670,30" font="Global; 25" foregroundColor="color3" backgroundColor="background2" halign="left" transparent="1" />
+		<eLabel text="Year" position="90,745" size="180,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+		<widget name="year" position="270,745" size="670,30" font="Global; 25" foregroundColor="color3" backgroundColor="background2" halign="left" transparent="1" />
+		<widget name="repeat" position="1755,895" size="50,30" pixmaps="CyberFHD/icons/repeat_off.png,CyberFHD/icons/repeat_on.png" transparent="1" alphatest="blend" />
+		<ePixmap position="100,805" size="225,200" pixmap="CyberFHD/case_jewel_1.png" alphatest="on" zPosition="1" />
+		<ePixmap position="100,805" size="225,200" pixmap="CyberFHD/case_jewel_2.png" alphatest="blend" zPosition="3" />
+		<widget name="coverArt" pixmap="CyberFHD/no_cover.png" position="125,805" size="200,200" alphatest="on" zPosition="2" />
+		<panel name="TemplatesInfoBarMediaProgress" />
+		<panel name="TemplatesButtonsMenu" />
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- ########## Main menu ########## -->
@@ -4092,114 +4102,6 @@
 		<panel name="TemplatesButtons" />
 		<panel name="TemplatesClock" />
 	</screen>
-	<!-- ########## DVD ########## -->
-	<!-- DVD  File Browser -->
-	<screen name="FileBrowser" position="fill" title="DVD File Browser" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="TemplatesMenu1000Layer" />
-		<eLabel text="V" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget name="filelist" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<panel name="TemplatesClock" />
-	</screen>
-	<!-- DVD Burn-DVDMovieSelection -->
-	<screen name="DVDMovieSelection" position="fill" title="Select a movie" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="TemplatesMenu1000Layer" />
-		<eLabel text="V" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget name="list" position="90,200" size="980,635" scrollbarMode="showNever" selectionPixmap="CyberFHD/style/graysel.png" backgroundColor="background1" transparent="1" />
-		<panel name="TemplatesMovieSelectionDescription" />
-		<widget name="waitingtext" position="90,480" size="980,80" font="Global;25" foregroundColor="color1" backgroundColor="background1" halign="center" valign="center" transparent="1" zPosition="2" />
-		<widget name="freeDiskSpace" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
-		<panel name="TemplatesButtonsRed" />
-		<panel name="TemplatesButtonsGreen" />
-		<panel name="TemplatesButtonsYellow" />
-		<panel name="TemplatesButtonsInfo" />
-		<panel name="TemplatesButtonsMenu" />
-		<panel name="TemplatesButtons" />
-		<panel name="TemplatesClock" />
-	</screen>
-	<!-- DVD Burn - Project Settings -->
-	<screen name="ProjectSettings" position="fill" title="Collection settings" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="TemplatesMenu1000Layer" />
-		<eLabel text="V" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<widget source="info" render="Label" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
-		<panel name="TemplatesButtonsRed" />
-		<panel name="TemplatesButtonsGreen" />
-		<panel name="TemplatesButtonsYellow" />
-		<panel name="TemplatesButtonsBlue" />
-		<panel name="TemplatesButtons" />
-		<panel name="TemplatesClock" />
-	</screen>
-	<!-- DVD Burn - FileBrowser -->
-	<screen name="FileBrowser_DVDPlayer" position="fill" title="DVD File Browser" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="TemplatesMenu1000Layer" />
-		<eLabel text="V" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget name="filelist" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<panel name="TemplatesButtonsRed" />
-		<panel name="TemplatesButtonsGreen" />
-		<panel name="TemplatesButtonsYellow" />
-		<panel name="TemplatesButtonsBlue" />
-		<panel name="TemplatesButtons" />
-		<panel name="TemplatesClock" />
-	</screen>
-	<!-- DVD Burn- DVD Toolbox -->
-	<screen name="DVDToolbox" position="fill" title="DVD media toolbox" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="TemplatesMenu1000Layer" />
-		<eLabel text="V" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget source="info" render="Label" position="90,200" size="980,100" font="Global; 25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
-		<widget name="details" position="90,310" size="980,525" font="Global; 25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
-		<panel name="TemplatesButtonsRed" />
-		<panel name="TemplatesButtonsGreen" />
-		<panel name="TemplatesButtonsBlue" />
-		<panel name="TemplatesButtons" />
-		<panel name="TemplatesClock" />
-	</screen>
-	<!-- DVD Burn-Title List -->
-	<screen name="TitleList" position="fill" title="DVD Tool" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="TemplatesMenu1000Layer" />
-		<eLabel text="V" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget source="titles" render="Listbox" position="90,200" size="980,635" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-					MultiContentEntryText(pos = (0, 0), size = (360, 25), font = 0, flags = RT_HALIGN_LEFT, text = 1), # index 1 Title,
-					MultiContentEntryText(pos = (0, 20), size = (360, 20), font = 1, flags = RT_HALIGN_LEFT, text = 2), # index 2 description,
-					MultiContentEntryText(pos = (366, 6), size = (152, 25), font = 1, flags = RT_HALIGN_RIGHT, text = 3), # index 3 channel,
-					MultiContentEntryText(pos = (366, 20), size = (102, 20), font = 1, flags = RT_HALIGN_RIGHT, text = 4), # index 4 begin time,
-					MultiContentEntryText(pos = (470, 20), size = (48, 20), font = 1, flags = RT_HALIGN_RIGHT, text = 5), # index 5 duration,
-					],
-				"fonts": [gFont("Global", 25), gFont("Global", 20)],
-				"itemHeight": 35
-				}
-			</convert>
-		</widget>
-		<panel name="TemplatesButtonsRed" />
-		<panel name="TemplatesButtonsGreen" />
-		<panel name="TemplatesButtonsYellow" />
-		<panel name="TemplatesButtonsBlue" />
-		<panel name="TemplatesButtonsMenu" />
-		<panel name="TemplatesButtons" />
-		<panel name="TemplatesClock" />
-	</screen>
-	<!-- DVD Burn-TitleProperties -->
-	<screen name="TitleProperties" position="fill" title="Properties of current title" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="TemplatesMenu1000Layer" />
-		<eLabel text="V" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget name="thumbnail" position="90,200" size="260,160" alphatest="on" />
-		<eLabel position="360,200" size="710,160" backgroundColor="background2" zPosition="-10" />
-		<widget source="serviceinfo" render="Label" position="365,205" size="700,150" font="Global; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-		<widget name="config" position="90,370" size="980,465" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<panel name="TemplatesButtonsRed" />
-		<panel name="TemplatesButtonsGreen" />
-		<panel name="TemplatesButtonsBlue" />
-		<panel name="TemplatesButtons" />
-		<panel name="TemplatesClock" />
-	</screen>
 	<!-- ########## Dream Explorer ########## -->
 	<!-- DreamExplorerII -->
 	<screen name="DreamExplorerII" position="fill" title="Dream-Explorer" flags="wfNoBorder" backgroundColor="transparent">
@@ -4949,258 +4851,6 @@
 		<panel name="TemplatesButtonsBlue" />
 		<panel name="TemplatesButtonsMenu" />
 		<panel name="TemplatesButtons" />
-		<panel name="TemplatesClock" />
-	</screen>
-	<!-- ########## IPTV Player ########## -->
-	<!-- E2iPlayer -->
-	<screen name="E2iPlayerWidget" position="fill" title="E2iPlayer" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="TemplatesMenu1000Layer" />
-		<eLabel text="T" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<eLabel text="E2iPlayer" position="80,96" size="1500,44" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
-		<widget name="list" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<widget name="spinner" position="550,540" size="16,16" alphatest="on" zPosition="3" />
-		<widget name="spinner_1" position="550,540" size="16,16" alphatest="on" zPosition="2" />
-		<widget name="spinner_2" position="566,540" size="16,16" alphatest="on" zPosition="2" />
-		<widget name="spinner_3" position="582,540" size="16,16" alphatest="on" zPosition="2" />
-		<widget name="spinner_4" position="598,540" size="16,16" alphatest="on" zPosition="2" />
-		<eLabel position="1103,158" size="374,284" backgroundColor="background3" zPosition="-12" />
-		<eLabel position="1105,160" size="370,280" backgroundColor="background1" zPosition="-11" />
-		<widget name="headertext" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
-		<widget name="statustext" position="90,480" size="980,80" font="Global;25" foregroundColor="color1" backgroundColor="background1" halign="center" valign="center" transparent="1" zPosition="2" />
-		<widget name="cover" position="1110,165" size="360,270" alphatest="on" />
-		<panel name="TemplatesMenuInfoLayer" />
-		<widget name="console" position="1115,510" size="715,325" font="Global; 25" foregroundColor="color3" backgroundColor="background2" halign="left" valign="top" transparent="1" />
-		<widget name="sequencer" position="90,90" size="1740,900" font="Global;160" halign="center" valign="center" transparent="1" backgroundColor="background1" />
-		<widget name="key_green_ext" position="1380,914" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="2" />
-		<panel name="TemplatesButtonsRed" />
-		<panel name="TemplatesButtonsGreen" />
-		<panel name="TemplatesButtonsYellow" />
-		<panel name="TemplatesButtonsBlue" />
-		<panel name="TemplatesButtonsInfo" />
-		<panel name="TemplatesButtons" />
-		<panel name="TemplatesClock" />
-	</screen>
-	<!-- E2iPlayer Article Rich Visualizer -->
-	<screen name="IPTVArticleRichVisualizer" position="fill" title="Info..." flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="TemplatesMenu1000Layer" />
-		<eLabel text="i" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<eLabel position="90,200" size="980,40" backgroundColor="background2" zPosition="-1" />
-		<eLabel text="&gt;" position="95,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-		<widget name="title" position="125,205" size="940,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-		<eLabel position="1103,188" size="739,659" backgroundColor="background3" zPosition="-12" />
-		<eLabel position="1105,190" size="735,655" backgroundColor="background1" zPosition="-11" />
-		<panel name="TemplatesMenuRightLayer" />
-		<widget name="cover" position="1115,200" size="715,635" alphatest="on" />
-		<widget name="text" position="90,245" size="980,600" scrollbarMode="showOnDemand" font="Global; 25" halign="left" valign="top" backgroundColor="background1" transparent="1" />
-		<widget name="spinner" position="550,540" size="16,16" alphatest="on" zPosition="3" />
-		<widget name="spinner_1" position="550,540" size="16,16" alphatest="on" zPosition="2" />
-		<widget name="spinner_2" position="566,540" size="16,16" alphatest="on" zPosition="2" />
-		<widget name="spinner_3" position="582,540" size="16,16" alphatest="on" zPosition="2" />
-		<widget name="spinner_4" position="598,540" size="16,16" alphatest="on" zPosition="2" />
-		<panel name="TemplatesClock" />
-	</screen>
-	<!-- E2iPlayer Directory Selector -->
-	<screen name="IPTVDirectorySelectorWidget" position="fill" title="Directory browser" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="TemplatesMenu1000Layer" />
-		<eLabel text="e" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget name="list" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<widget name="curr_dir" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
-		<panel name="TemplatesButtonsRed" />
-		<panel name="TemplatesButtonsGreen" />
-		<panel name="TemplatesButtonsBlue" />
-		<panel name="TemplatesButtons" />
-		<panel name="TemplatesClock" />
-	</screen>
-	<!-- E2iPlayer Favourites Main -->
-	<screen name="IPTVFavouritesMainWidget" position="fill" title="Favourites manager" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="TemplatesMenu1000Layer" />
-		<eLabel text="e" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<eLabel position="90,200" size="980,40" backgroundColor="background2" zPosition="-1" />
-		<eLabel text="&gt;" position="95,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-		<widget name="title" position="125,205" size="940,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-		<widget name="list" position="90,245" size="980,600" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<widget name="label_red" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-		<widget name="label_green" position="1380,914" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-		<widget name="label_yellow" position="1380,944" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-		<panel name="TemplatesButtons" />
-		<panel name="TemplatesClock" />
-	</screen>
-	<!-- E2iPlayer Sub Downloader -->
-	<screen name="IPTVSubDownloaderWidget" position="fill" title="Subtitles downloader" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="TemplatesMenu1000Layer" />
-		<eLabel text="b" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<eLabel position="90,200" size="980,40" backgroundColor="background2" zPosition="-1" />
-		<eLabel text="&gt;" position="95,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-		<widget name="title" position="125,205" size="940,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-		<widget name="list" position="90,245" size="980,600" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<widget name="console" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
-		<eLabel text="Cancel" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-		<eLabel text="Apply" position="1380,914" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-		<eLabel text="Move" position="1380,944" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-		<panel name="TemplatesButtons" />
-		<panel name="TemplatesClock" />
-	</screen>
-	<!-- E2iPlayer Sub Simple Downloader -->
-	<screen name="IPTVSubSimpleDownloaderWidget" position="fill" title="Subtitles downloader" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="TemplatesMenu1000Layer" />
-		<eLabel text="b" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<eLabel position="90,200" size="980,40" backgroundColor="background2" zPosition="-1" />
-		<eLabel text="&gt;" position="95,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-		<widget name="title" position="125,205" size="940,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-		<widget name="list" position="90,245" size="980,600" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<widget name="console" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
-		<eLabel text="Cancel" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-		<eLabel text="Apply" position="1380,914" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-		<panel name="TemplatesButtons" />
-		<panel name="TemplatesClock" />
-	</screen>
-	<!-- E2iPlayer DM Widget -->
-	<screen name="IPTVDMWidget" position="fill" title="IPTV Player download manager" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="TemplatesMenu1000Layer" />
-		<eLabel text="b" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<eLabel position="90,200" size="980,40" backgroundColor="background2" zPosition="-1" />
-		<eLabel text="&gt;" position="95,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-		<widget name="title" position="125,205" size="940,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-		<widget name="list" position="90,245" size="980,560" scrollbarMode="showNever" itemHeight="70" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<widget name="console" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
-		<panel name="TemplatesButtonsRed" />
-		<panel name="TemplatesButtonsGreen" />
-		<panel name="TemplatesButtonsYellow" />
-		<panel name="TemplatesButtonsBlue" />
-		<panel name="TemplatesButtons" />
-		<panel name="TemplatesClock" />
-	</screen>
-	<!-- E2iPlayer Setup Main -->
-	<screen name="IPTVSetupMainWidget" position="fill" title="E2iPlayer setup" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="TemplatesMenu1000Layer" />
-		<eLabel text="b" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget name="sub_title" position="90,200" size="980,200" font="Global; 25" backgroundColor="background1" transparent="1" />
-		<widget name="info_field" position="90,405" size="980,435" font="Global; 25" backgroundColor="background1" transparent="1" />
-		<widget name="spinner" position="550,540" size="16,16" alphatest="on" zPosition="3" />
-		<widget name="spinner_1" position="550,540" size="16,16" alphatest="on" zPosition="2" />
-		<widget name="spinner_2" position="566,540" size="16,16" alphatest="on" zPosition="2" />
-		<widget name="spinner_3" position="582,540" size="16,16" alphatest="on" zPosition="2" />
-		<widget name="spinner_4" position="598,540" size="16,16" alphatest="on" zPosition="2" />
-		<panel name="TemplatesClock" />
-	</screen>
-	<!-- E2iPlayer Config Menu -->
-	<screen name="ConfigMenu" position="fill" title="IPTV Player - settings" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="TemplatesMenu1000Layer" />
-		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<panel name="TemplatesButtonsRed" />
-		<panel name="TemplatesButtonsGreen" />
-		<panel name="TemplatesButtonsYellow" />
-		<panel name="TemplatesButtonsBlue" />
-		<panel name="TemplatesButtons" />
-		<panel name="TemplatesClock" />
-	</screen>
-	<!-- E2iPlayer Config Ext Movie Player -->
-	<screen name="ConfigExtMoviePlayer" position="fill" title="IPTV Player - settings" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="TemplatesMenu1000Layer" />
-		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<panel name="TemplatesButtonsRed" />
-		<panel name="TemplatesButtonsGreen" />
-		<panel name="TemplatesButtonsYellow" />
-		<panel name="TemplatesButtonsBlue" />
-		<panel name="TemplatesButtons" />
-		<panel name="TemplatesClock" />
-	</screen>
-	<!-- E2iPlayer Config Base -->
-	<screen name="ConfigBaseWidget" position="fill" title="IPTV Player - settings" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="TemplatesMenu1000Layer" />
-		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<panel name="TemplatesButtonsRed" />
-		<panel name="TemplatesButtonsGreen" />
-		<panel name="TemplatesButtonsYellow" />
-		<panel name="TemplatesButtonsBlue" />
-		<panel name="TemplatesButtons" />
-		<panel name="TemplatesClock" />
-	</screen>
-	<!-- E2iPlayer Config Groups Menu -->
-	<screen name="ConfigGroupsMenu" position="fill" title="IPTV Player - settings" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="TemplatesMenu1000Layer" />
-		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<panel name="TemplatesButtonsRed" />
-		<panel name="TemplatesButtonsGreen" />
-		<panel name="TemplatesButtonsYellow" />
-		<panel name="TemplatesButtonsBlue" />
-		<panel name="TemplatesButtons" />
-		<panel name="TemplatesClock" />
-	</screen>
-	<!-- E2iPlayer Config Host Menu -->
-	<screen name="ConfigHostMenu" position="fill" title="IPTV Player - settings" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="TemplatesMenu1000Layer" />
-		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<panel name="TemplatesButtonsRed" />
-		<panel name="TemplatesButtonsGreen" />
-		<panel name="TemplatesButtonsYellow" />
-		<panel name="TemplatesButtonsBlue" />
-		<panel name="TemplatesButtons" />
-		<panel name="TemplatesClock" />
-	</screen>
-	<!-- E2iPlayer Config Hosts Menu -->
-	<screen name="ConfigHostsMenu" position="fill" title="IPTV Player - settings" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="TemplatesMenu1000Layer" />
-		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<panel name="TemplatesButtonsRed" />
-		<panel name="TemplatesButtonsGreen" />
-		<panel name="TemplatesButtonsYellow" />
-		<panel name="TemplatesButtonsBlue" />
-		<panel name="TemplatesButtons" />
-		<panel name="TemplatesClock" />
-	</screen>
-	<!-- E2iPlayer Choice Box -->
-	<screen name="IPTVChoiceBoxWidget" position="fill" title="Select option" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="TemplatesMenu1000Layer" />
-		<eLabel text="e" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget name="list" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<widget name="title" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
-		<panel name="TemplatesClock" />
-	</screen>
-	<!-- E2iPlayer Update Window -->
-	<screen name="IPTVUpdateWindow" position="fill" title="E2iPlayer" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="TemplatesMenu1000Layer" />
-		<eLabel text="b" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget name="list" position="90,200" size="980,600" scrollbarMode="showNever" itemHeight="75" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="2" enableWrapAround="1" />
-		<widget name="sub_title" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
-		<widget name="console" position="310,515" size="540,80" valign="center" halign="center" font="Global; 25" transparent="0" foregroundColor="color3" backgroundColor="background1" zPosition="2" />
-		<panel name="TemplatesClock" />
-	</screen>
-	<!-- E2iPlayer Pin -->
-	<screen name="IPTVPinWidget" position="fill" title="E2iPlayer" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="TemplatesMenu1000Layer" />
-		<eLabel text="g" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<eLabel position="90,200" size="980,40" backgroundColor="background2" zPosition="-1" />
-		<eLabel text="&gt;" position="95,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-		<widget name="titel" position="125,205" size="940,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-		<widget name="cover_0" zPosition="4" position="370,300" size="60,60" alphatest="on" />
-		<widget name="cover_1" zPosition="4" position="490,300" size="60,60" alphatest="on" />
-		<widget name="cover_2" zPosition="4" position="610,300" size="60,60" alphatest="on" />
-		<widget name="cover_3" zPosition="4" position="730,300" size="60,60" alphatest="on" />
-		<ePixmap position="530,410" size="100,100" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IPTVPlayer/icons/Pin/lock.png" alphatest="blend" />
-		<panel name="TemplatesHelpWindow" />
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- ########## Input Device ########## -->
