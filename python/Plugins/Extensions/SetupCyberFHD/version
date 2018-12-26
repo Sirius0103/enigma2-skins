@@ -1,7 +1,7 @@
 Скин: CyberFHD
 Версия скина: 1.4-r5
 
-Изменения: 21.12.2018 добавлен <include filename="skin_user.xml" />, удалены окна E2iPlayer, DVD Burn 20.12.2018 добавлено окно BlurayMain
+Изменения: 21.12.2018 добавлен <include filename="skin_the_user.xml" />, удалены окна E2iPlayer, DVD Burn 20.12.2018 добавлено окно BlurayMain
 15.12.2018 добавлены окна DownSkinLIB, RecordTimerQuestion, AutoTimerPreview, поправлены окна Timer
 09.12.2018 добавлены окна LogManager, MultiBootStartupOPT, TmbdYTTrailerList, QuickEPG
 02.12.2018 добавлены окна EPGvertical, EPGverticalPIG
