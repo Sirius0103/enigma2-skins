@@ -1054,7 +1054,7 @@
 			<convert type="ValueRange">1981,3840</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Label" text="1920x1080p25" position="1125,1002" size="230,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3" halign="right">
+		<widget source="session.CurrentService" render="Label" text="1920x1080p25" position="1055,1002" size="300,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3" halign="right">
 			<convert type="PliExtraInfo">ResolutionString</convert>
 		</widget>
 	</screen>

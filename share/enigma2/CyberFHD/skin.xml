@@ -138,6 +138,7 @@
 	<!-- ########## Templates Skins ########## -->
 	<include filename="skin_templates.xml" />
 	<include filename="skin_extra.xml" />
+	<include filename="skin_the_user.xml" />
 	<!-- # # # # # # # # # # Infobar # # # # # # # # # # -->
 	<!-- ########## InfoBar ########## -->
 	<screen name="InfoBar" position="fill" title="InfoBar" flags="wfNoBorder" backgroundColor="transparent">
