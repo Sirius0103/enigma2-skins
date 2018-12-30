@@ -247,7 +247,7 @@ stylefullcolor = [
 
 device = [
 	("uno4k", _("Uno4k")),
-	("solo4k", _("Solo4k")),
+	("solo4k", _("Duo4k/Solo4k")),
 	("ultimo4k", _("Ultimo4k"))]
 
 fonts = [
@@ -298,7 +298,7 @@ else:
 
 config.skin.cyberlcd = ConfigSubsection()
 
-config.skin.cyberlcd.device = ConfigSelection(default="Solo4k", choices = device)
+config.skin.cyberlcd.device = ConfigSelection(default="Duo4k/Solo4k", choices = device)
 
 config.skin.cyberlcd.fonts = ConfigSelection(default="Roboto-Regular", choices = fonts)
 
@@ -594,7 +594,6 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 		try:
 	# user skin
 			skin_user = []
-			os.system("cp /usr/share/enigma2/CyberLCD/skin_%s.xml /usr/share/enigma2/CyberLCD/skin_default.xml" % (config.skin.cyberlcd.device.value))
 	# color`s
 			skin_user.append(["#50000000", "#" + config.skin.cyberlcd.backgroundtransparent.value + config.skin.cyberlcd.colorbackground1.value])
 			skin_user.append(["#5000ffff", "#" + config.skin.cyberlcd.foregroundtransparent.value + config.skin.cyberlcd.colorbackground4.value])
@@ -652,6 +651,7 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 			os.system("cp /tmp/ruSetupCyberLCD.mo %sSetupCyberLCD/locale/ru/LC_MESSAGES/SetupCyberLCD.mo" % (pluginpath))
 			os.system("cp /tmp/deSetupCyberLCD.mo %sSetupCyberLCD/locale/de/LC_MESSAGES/SetupCyberLCD.mo" % (pluginpath))
 	# install skin
+			os.system("cp /tmp/skin_default.xml %sCyberLCD/skin_default.xml" % (skinpath))
 			os.system("cp /tmp/skin_solo4k.xml %sCyberLCD/skin_solo4k.xml" % (skinpath))
 			os.system("cp /tmp/skin_uno4k.xml %sCyberLCD/skin_uno4k.xml" % (skinpath))
 			os.system("cp /tmp/skin_ultimo4k.xml %sCyberLCD/skin_ultimo4k.xml" % (skinpath))
@@ -673,6 +673,7 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 			urllib.urlretrieve ("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberLCD/locale/ru/LC_MESSAGES/SetupCyberLCD.mo","/tmp/ruSetupCyberLCD.mo")
 			urllib.urlretrieve ("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberLCD/locale/de/LC_MESSAGES/SetupCyberLCD.mo","/tmp/deSetupCyberLCD.mo")
 	# download skin
+			urllib.urlretrieve ("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberLCD/skin_default.xml","/tmp/skin_default.xml")
 			urllib.urlretrieve ("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberLCD/skin_solo4k.xml","/tmp/skin_solo4k.xml")
 			urllib.urlretrieve ("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberLCD/skin_uno4k.xml","/tmp/skin_uno4k.xml")
 			urllib.urlretrieve ("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberLCD/skin_ultimo4k.xml","/tmp/skin_ultimo4k.xml")
@@ -693,6 +694,7 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 		for x in self["config"].list:
 			if len(x) > 1:
 				x[1].save()
+		os.system("cp /usr/share/enigma2/CyberLCD/skin_%s.xml /usr/share/enigma2/CyberLCD/skin_default.xml" % (config.skin.cyberlcd.device.value))
 		self.createSkin()
 
 	def default(self):
