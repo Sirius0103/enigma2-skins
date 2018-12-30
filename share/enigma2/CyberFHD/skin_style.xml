@@ -3395,6 +3395,7 @@
 		<eLabel text="s" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
 		<widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget name="description" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
 		<panel name="TemplatesButtonsRed" />
 		<panel name="TemplatesButtonsGreen" />
 		<panel name="TemplatesButtonsYellow" />

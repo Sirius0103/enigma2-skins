@@ -6540,7 +6540,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<panel name="TemplatesMenuInfoChannelLayer" />
 		<!-- Templates Channel Selection Tv Channel Info -->
 		<eLabel text="Channel Info" position="1110,195" size="725,30" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
-		<eLabel text="Satellite:" position="1115,235" size="200,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+		<eLabel text="Sender:" position="1115,235" size="200,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
 		<widget source="ServiceEvent" render="Label" position="1260,235" size="570,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
 			<convert type="ServiceName2">%S</convert>
 		</widget>
