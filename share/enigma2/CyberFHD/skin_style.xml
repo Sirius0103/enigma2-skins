@@ -389,7 +389,7 @@
 		<panel name="TemplatesUpLayer1" />
 		<panel name="TemplatesVolumeProgressLayer" />
 		<widget name="Volume" position="220,100" size="1350,30" foregroundColor="color4" backgroundColor="color5" transparent="1" zPosition="2" />
-		<widget source="global.CurrentTime" render="RendVolumeText" position="60,94" size="120,50" font="Indication; 50" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1" />
+		<widget source="global.CurrentTime" render="RendVolumeTextP" position="60,94" size="120,50" font="Indication; 50" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1" />
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- ########## Channel selection - Tv ##########-->
@@ -1266,9 +1266,9 @@
 		<eLabel position="90,530" size="980,50" backgroundColor="background2" zPosition="-1" />
 		<widget name="prompt" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
 		<widget name="text" position="95,535" size="970,40" font="Global; 35" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-		<eLabel position="510,590" size="560,245" backgroundColor="background3" zPosition="-2" />
-		<eLabel position="512,592" size="556,241" backgroundColor="background1" zPosition="-1" />
-		<widget name="list" position="520,600" size="540,225" selectionDisabled="1" backgroundColor="background2" />
+		<eLabel position="420,590" size="650,245" backgroundColor="background3" zPosition="-2" />
+		<eLabel position="422,592" size="646,241" backgroundColor="background1" zPosition="-1" />
+		<widget name="list" position="430,600" size="630,225" selectionDisabled="1" backgroundColor="background2" />
 		<eLabel text="Delete" render="Label" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
 		<eLabel text="OK" render="Label" position="1380,914" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
 		<panel name="TemplatesButtons" />
@@ -1327,19 +1327,7 @@
 		<eLabel text="e" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
 		<widget name="list" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" setEventItemfont="Global; 25" setColWidths="60,160" setColGap="20" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<panel name="TemplatesMenuInfoLayer" />
-		<widget source="Event" render="Label" position="1115,470" size="715,30" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" noWrap="1">
-			<convert type="EventName">Name</convert>
-		</widget>
-		<widget source="Event" render="Label" position="1115,510" size="715,290" font="Global; 25" foregroundColor="color3" backgroundColor="background2" halign="left" valign="top" transparent="1">
-			<convert type="EventName">FullDescription</convert>
-		</widget>
-		<widget source="Event" render="Label" position="1115,805" size="715,30" font="Global; 25" foregroundColor="color3" backgroundColor="background2" halign="left" valign="top" transparent="1">
-			<convert type="EventName">Genre</convert>
-		</widget>
-		<widget source="Event" render="Label" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1">
-			<convert type="EventName">Rating</convert>
-		</widget>
+		<panel name="TemplatesEPGInfo" />
 		<panel name="TemplatesButtonsRed" />
 		<panel name="TemplatesButtonsGreen" />
 		<panel name="TemplatesButtonsYellow" />
@@ -1452,19 +1440,7 @@
 		<panel name="TemplatesTitle" />
 		<widget name="timeline_text" position="90,200" size="980,30" font="Global; 20" foregroundColor="color1" backgroundColor="background1" transparent="1" />
 		<widget name="list" position="90,240" size="980,595" scrollbarMode="showNever" backgroundColor="background1" transparent="1" EntrybackgroundColor="background1" EventFontPadding="4" />
-		<panel name="TemplatesMenuInfoLayer" />
-		<widget source="Event" render="Label" position="1115,470" size="715,30" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" noWrap="1">
-			<convert type="EventName">Name</convert>
-		</widget>
-		<widget source="Event" render="Label" position="1115,510" size="715,290" font="Global; 25" foregroundColor="color3" backgroundColor="background2" halign="left" valign="top" transparent="1">
-			<convert type="EventName">FullDescription</convert>
-		</widget>
-		<widget source="Event" render="Label" position="1115,805" size="715,30" font="Global; 25" foregroundColor="color3" backgroundColor="background2" halign="left" valign="top" transparent="1">
-			<convert type="EventName">Genre</convert>
-		</widget>
-		<widget source="Event" render="Label" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1">
-			<convert type="EventName">Rating</convert>
-		</widget>
+		<panel name="TemplatesEPGInfo" />
 		<panel name="TemplatesButtonsRed" />
 		<panel name="TemplatesButtonsGreen" />
 		<panel name="TemplatesButtonsYellow" />
@@ -1558,19 +1534,7 @@
 		<panel name="TemplatesTitle" />
 		<widget name="timeline_text" position="90,200" size="980,30" font="Global; 20" foregroundColor="color1" backgroundColor="background1" transparent="1" />
 		<widget name="list" position="90,240" size="980,595" scrollbarMode="showNever" backgroundColor="background1" transparent="1" EntrybackgroundColor="background1" EventFontPadding="4" />
-		<panel name="TemplatesMenuInfoLayer" />
-		<widget source="Event" render="Label" position="1115,470" size="715,30" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" noWrap="1">
-			<convert type="EventName">Name</convert>
-		</widget>
-		<widget source="Event" render="Label" position="1115,510" size="715,290" font="Global; 25" foregroundColor="color3" backgroundColor="background2" halign="left" valign="top" transparent="1">
-			<convert type="EventName">FullDescription</convert>
-		</widget>
-		<widget source="Event" render="Label" position="1115,805" size="715,30" font="Global; 25" foregroundColor="color3" backgroundColor="background2" halign="left" valign="top" transparent="1">
-			<convert type="EventName">Genre</convert>
-		</widget>
-		<widget source="Event" render="Label" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1">
-			<convert type="EventName">Rating</convert>
-		</widget>
+		<panel name="TemplatesEPGInfo" />
 		<panel name="TemplatesButtonsRed" />
 		<panel name="TemplatesButtonsGreen" />
 		<panel name="TemplatesButtonsYellow" />
@@ -1965,19 +1929,7 @@
 			EntryBorderColor="background3"
 			TimeFontVertical="Global; 20"
 			EventFontVertical="Global; 20" />
-		<panel name="TemplatesMenuInfoLayer" />
-		<widget source="Event" render="Label" position="1115,470" size="715,30" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" noWrap="1">
-			<convert type="EventName">Name</convert>
-		</widget>
-		<widget source="Event" render="Label" position="1115,510" size="715,290" font="Global; 25" foregroundColor="color3" backgroundColor="background2" halign="left" valign="top" transparent="1">
-			<convert type="EventName">FullDescription</convert>
-		</widget>
-		<widget source="Event" render="Label" position="1115,805" size="715,30" font="Global; 25" foregroundColor="color3" backgroundColor="background2" halign="left" valign="top" transparent="1">
-			<convert type="EventName">Genre</convert>
-		</widget>
-		<widget source="Event" render="Label" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1">
-			<convert type="EventName">Rating</convert>
-		</widget>
+		<panel name="TemplatesEPGInfo" />
 		<panel name="TemplatesButtonsRed" />
 		<panel name="TemplatesButtonsGreen" />
 		<panel name="TemplatesButtonsYellow" />
@@ -7516,7 +7468,7 @@
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel position="1103,188" size="739,659" backgroundColor="background3" zPosition="-12" />
 		<eLabel position="1105,190" size="735,655" backgroundColor="background1" zPosition="-11" />
-		<eLabel position="1110,650" size="725,190" backgroundColor="background2" zPosition="-10" />
+		<eLabel position="1110,620" size="725,220" backgroundColor="background2" zPosition="-10" />
 		<panel name="TemplatesMenuRightLayer" />
 		<eLabel text="W" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
@@ -7527,30 +7479,40 @@
 		<widget source="locationtxt" render="Label" position="340,895" size="300,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
 		<widget source="latitudetxt" render="Label" position="640,925" size="150,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
 		<widget source="longitudetxt" render="Label" position="340,925" size="150,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
-		<widget source="temperaturetxt" render="Label" position="1125,305" size="300,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" transparent="1" />
-		<widget source="feelsliketxt" render="Label" position="1520,305" size="300,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="right" transparent="1" />
-		<widget source="humiditytxt" render="Label" position="1115,715" size="300,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" />
-		<widget source="windtxt" render="Label" position="1115,745" size="300,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" />
+		<widget source="temperaturetxt" render="Label" position="1125,275" size="300,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" transparent="1" />
+		<widget source="feelsliketxt" render="Label" position="1520,275" size="300,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="right" transparent="1" />
+		<widget source="humiditytxt" render="Label" position="1115,625" size="300,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" />
+		<widget source="windtxt" render="Label" position="1115,655" size="300,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" />
 		<widget source="pointtxt" render="Label" position="340,955" size="300,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
 		<widget source="location" render="Label" position="640,895" size="500,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
 		<widget source="latitude" render="Label" position="790,925" size="150,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
 		<widget source="longitude" render="Label" position="490,925" size="150,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
 		<widget source="observationtime" render="Label" position="1680,925" size="150,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="right" transparent="1" />
 		<widget source="observationpoint" render="Label" position="640,955" size="500,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
-		<widget source="attribution" render="Label" position="1329,955" size="500,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="right" transparent="1" />
-		<widget source="temperature" render="Label" position="1145,345" size="200,60" font="Global; 50" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
-		<widget source="feelslike" render="Label" position="1600,345" size="200,60" font="Global; 50" foregroundColor="color1" backgroundColor="background1" halign="right" transparent="1" />
-		<widget source="skytext" render="Label" position="1110,610" size="725,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="center" transparent="1" />
-		<widget source="humidity" render="Label" position="1530,715" size="300,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="right" transparent="1" />
-		<widget source="wind" render="Label" position="1530,745" size="300,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="right" transparent="1" />
-		<widget name="pic" position="1345,335" size="256,256" zPosition="2" alphatest="blend" />
-		<widget source="temperaturetxt" render="Label" position="1115,685" size="300,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" />
-		<widget source="preciptxt" render="Label" position="1115,775" size="300,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" />
+		<widget source="attribution" render="Label" position="1330,955" size="500,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="right" transparent="1" />
+		<widget source="temperature" render="Label" position="1145,330" size="200,60" font="Global; 50" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+		<widget source="feelslike" render="Label" position="1600,330" size="200,60" font="Global; 50" foregroundColor="color1" backgroundColor="background1" halign="right" transparent="1" />
+		<widget source="skytext" render="Label" position="1110,430" size="725,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="center" transparent="1" />
+		<widget source="humidity" render="Label" position="1530,625" size="300,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="right" transparent="1" />
+		<widget source="wind" render="Label" position="1530,655" size="300,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="right" transparent="1" />
+		<widget name="pic" position="1409,300" size="128,128" zPosition="2" alphatest="blend" />
+		<widget source="sunrisetxt" render="Label" position="1115,745" size="300,30" font="Global; 25" halign="left" foregroundColor="color2" backgroundColor="background1" transparent="1" />
+		<widget source="sunsettxt" render="Label" position="1115,775" size="300,30" font="Global; 25" halign="left" foregroundColor="color2" backgroundColor="background1" transparent="1" />
+		<widget source="solsticetxt" render="Label" position="1115,805" size="300,30" font="Global; 25" halign="left" foregroundColor="color2" backgroundColor="background1" transparent="1" />
+		<widget source="moonrisetxt" render="Label" position="1115,685" size="300,30" font="Global; 25" halign="left" foregroundColor="color2" backgroundColor="background1" transparent="1" />
+		<widget source="moonsettxt" render="Label" position="1115,715" size="300,30" font="Global; 25" halign="left" foregroundColor="color2" backgroundColor="background1" transparent="1" />
+		<widget source="yulianday" render="Label" position="1530,895" size="300,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="right" transparent="1" />
+		<widget source="sunrise" render="Label" position="1530,745" size="300,30" font="Global; 25" halign="right" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+		<widget source="sunset" render="Label" position="1530,775" size="300,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="right" transparent="1" />
+		<widget source="solstice" render="Label" position="1530,805" size="300,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="right" transparent="1" />
+		<widget source="moonrise" render="Label" position="1530,685" size="300,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="right" transparent="1" />
+		<widget source="moonset" render="Label" position="1530,715" size="300,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="right" transparent="1" />
+		<widget source="moondist" render="Label" position="1555,510" size="250,40" font="Global; 35" foregroundColor="color1" backgroundColor="background1" halign="right" transparent="1" />
+		<widget source="moonlight" render="Label" position="1145,490" size="200,60" font="Global; 50" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+		<widget source="moonphase" render="Label" position="1110,580" size="725,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="center" transparent="1" />
+		<widget name="picmoon" position="1430,480" size="90,90" zPosition="2" alphatest="blend" />
 		<widget source="daytxt" render="Label" position="1110,230" size="300,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" transparent="1" />
 		<widget source="datetxt" render="Label" position="1110,200" size="300,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" transparent="1" />
-		<widget source="temperature1" render="Label" position="1530,685" size="300,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="right" transparent="1" />
-		<widget source="skytext1" render="Label" position="1115,805" size="715,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="right" transparent="1" />
-		<widget source="precip1" render="Label" position="1530,775" size="300,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="right" transparent="1" />
 		<widget source="date1" render="Label" position="1535,200" size="300,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="right" transparent="1" />
 		<widget source="day1" render="Label" position="1535,230" size="300,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="right" transparent="1" />
 		<widget source="temperaturetxt" render="Label" position="250,260" size="500,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" />

@@ -140,7 +140,10 @@
 		<eLabel position="10,555" size="70,120" backgroundColor="background2" zPosition="-10" />
 		<eLabel position="10,715" size="70,120" backgroundColor="background2" zPosition="-10" />
 	</screen>
-	<screen name="TemplatesInfoBarWeatherLayer">
+	<screen name="TemplatesInfoBarWeatherLeftLayer">
+		<!-- Info Bar Weather Layer -->
+	</screen>
+	<screen name="TemplatesInfoBarWeatherRightLayer">
 		<!-- Info Bar Weather Layer -->
 	</screen>
 	<screen name="TemplatesMenuLayer">
@@ -1146,16 +1149,22 @@
 	<screen name="TemplatesInfoBarTvInfoPanelPID">
 		<!-- Templates Info Bar Tv Info -->
 	</screen>
-	<screen name="TemplatesInfoBarTvInfoWeatherLayer">
-		<!-- MSN Weather Layer -->
+	<screen name="TemplatesInfoBarTvInfoWeatherLeftLayer">
+		<!-- Templates Info Bar Tv Info -->
 	</screen>
-	<screen name="TemplatesInfoBarTvInfoWeather">
+	<screen name="TemplatesInfoBarTvInfoWeatherRightLayer">
 		<!-- Templates Info Bar Tv Info -->
 	</screen>
 	<screen name="TemplatesInfoBarTvInfoWeatherMSN">
 		<!-- Templates Info Bar Tv Info -->
 	</screen>
 	<screen name="TemplatesInfoBarTvInfoWeatherMSNAnimated">
+		<!-- Templates Info Bar Tv Info -->
+	</screen>
+	<screen name="TemplatesInfoBarTvInfoWeatherMSNMoon">
+		<!-- Templates Info Bar Tv Info -->
+	</screen>
+	<screen name="TemplatesInfoBarTvInfoWeatherMSNAnimatedMoon">
 		<!-- Templates Info Bar Tv Info -->
 	</screen>
 	<!--  ########## Templates InfoBar Media ########## -->
@@ -1236,6 +1245,12 @@
 		<!-- Templates Info Bar Media Info -->
 	</screen>
 	<screen name="TemplatesInfoBarMediaInfoWeatherMSNAnimated">
+		<!-- Templates Info Bar Media Info -->
+	</screen>
+	<screen name="TemplatesInfoBarMediaInfoWeatherMSNMoon">
+		<!-- Templates Info Bar Media Info -->
+	</screen>
+	<screen name="TemplatesInfoBarMediaInfoWeatherMSNAnimatedMoon">
 		<!-- Templates Info Bar Media Info -->
 	</screen>
 	<!--  ########## Templates InfoBar Radio ########## -->
@@ -1359,6 +1374,22 @@
 	</screen>
 	<screen name="TemplatesClockStyle">
 		<!-- Templates Clock -->
+	</screen>
+	<screen name="TemplatesEPGInfo">
+		<panel name="TemplatesMenuInfoLayer" />
+		<!-- Templates EPG Info -->
+		<widget source="Event" render="Label" position="1115,470" size="715,30" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" noWrap="1">
+		  <convert type="EventName">Name</convert>
+		</widget>
+		<widget source="Event" render="Label" position="1115,510" size="715,290" font="Global; 25" foregroundColor="color3" backgroundColor="background2" halign="left" valign="top" transparent="1">
+		  <convert type="EventName">FullDescription</convert>
+		</widget>
+		<widget source="Event" render="Label" position="1115,805" size="715,30" font="Global; 25" foregroundColor="color3" backgroundColor="background2" halign="left" valign="top" transparent="1">
+		  <convert type="EventName">Genre</convert>
+		</widget>
+		<widget source="Event" render="Label" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1">
+		  <convert type="EventName">Rating</convert>
+		</widget>
 	</screen>
 	<screen name="TemplatesMessageBox">
 		<!-- Templates Message Box -->

@@ -353,11 +353,15 @@ else:
 	weatherpanelinfobar = [
 		("TemplatesInfoBarTvInfoWeatherDefault", _("No")),
 		("TemplatesInfoBarTvInfoWeatherMSN", _("MSN")),
-		("TemplatesInfoBarTvInfoWeatherMSNAnimated", _("Animated MSN"))]
+		("TemplatesInfoBarTvInfoWeatherMSNAnimated", _("Animated MSN")),
+		("TemplatesInfoBarTvInfoWeatherMSNMoon", _("MSN & Moon")),
+		("TemplatesInfoBarTvInfoWeatherMSNAnimatedMoon", _("Animated MSN & Moon"))]
 	weatherpanelmovieinfobar = [
 		("TemplatesInfoBarMediaInfoWeatherDefault", _("No")),
 		("TemplatesInfoBarMediaInfoWeatherMSN", _("MSN")),
-		("TemplatesInfoBarMediaInfoWeatherMSNAnimated", _("Animated MSN"))]
+		("TemplatesInfoBarMediaInfoWeatherMSNAnimated", _("Animated MSN")),
+		("TemplatesInfoBarMediaInfoWeatherMSNMoon", _("MSN & Moon")),
+		("TemplatesInfoBarMediaInfoWeatherMSNAnimatedMoon", _("Animated MSN & Moon"))]
 
 if not fileExists("/usr/lib/enigma2/python/Components/Converter/MovieInfo2.py")\
 	or not fileExists("/usr/lib/enigma2/python/Components/Renderer/MovieCover.py")\
@@ -782,7 +786,7 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 			or not fileExists("/usr/lib/enigma2/python/Components/Renderer/MovieCover.py")\
 			or not fileExists("/usr/lib/enigma2/python/Components/Renderer/MovieRating.py")\
 			or not fileExists("/usr/lib/enigma2/python/Components/Renderer/PiconUni.py")\
-			or not fileExists("/usr/lib/enigma2/python/Components/Renderer/RendVolumeText.py")\
+			or not fileExists("/usr/lib/enigma2/python/Components/Renderer/RendVolumeTextP.py")\
 			or not fileExists("/usr/lib/enigma2/python/Components/Renderer/Watches.py"):
 			self["info_com"] = Label(_("No install components skin !!! \nPress blue button to install !!!"))
 		else:
@@ -903,7 +907,7 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 			and "/tmp/MovieCover.py"\
 			and "/tmp/MovieRating.py"\
 			and "/tmp/PiconUni.py"\
-			and "/tmp/RendVolumeText.py"\
+			and "/tmp/RendVolumeTextP.py"\
 			and "/tmp/Watches.py"):
 			os.system("cp /tmp/version %sSetupCyberFHD/version" % (pluginpath))
 	# install plugin
@@ -935,7 +939,7 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 			os.system("cp /tmp/MovieCover.py %sRenderer/MovieCover.py" % (componentspath))
 			os.system("cp /tmp/MovieRating.py %sRenderer/MovieRating.py" % (componentspath))
 			os.system("cp /tmp/PiconUni.py %sRenderer/PiconUni.py" % (componentspath))
-			os.system("cp /tmp/RendVolumeText.py %sRenderer/RendVolumeText.py" % (componentspath))
+			os.system("cp /tmp/RendVolumeTextP.py %sRenderer/RendVolumeTextP.py" % (componentspath))
 			os.system("cp /tmp/Watches.py %sRenderer/Watches.py" % (componentspath))
 	# end
 			self.session.openWithCallback(self.restart, MessageBox,_("Do you want to restart the GUI now ?"), MessageBox.TYPE_YESNO)
@@ -944,8 +948,6 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 
 	def download(self):
 		try:
-			gitpathskins = "https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/"
-			gitpathcomponents = "https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/"
 	# download plugin
 			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberFHD/plugin.py","/tmp/plugin.py")
 			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberFHD/locale/ru/LC_MESSAGES/SetupCyberFHD.mo","/tmp/ruSetupCyberFHD.mo")
@@ -974,7 +976,7 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/MovieCover.py","/tmp/MovieCover.py")
 			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/MovieRating.py","/tmp/MovieRating.py")
 			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/PiconUni.py","/tmp/PiconUni.py")
-			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/RendVolumeText.py","/tmp/RendVolumeText.py")
+			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/RendVolumeTextP.py","/tmp/RendVolumeTextP.py")
 			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/Watches.py","/tmp/Watches.py")
 	# end
 			self.install()
