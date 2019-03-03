@@ -298,7 +298,7 @@ else:
 
 config.skin.cyberlcd = ConfigSubsection()
 
-config.skin.cyberlcd.device = ConfigSelection(default="Duo4k/Solo4k", choices = device)
+config.skin.cyberlcd.device = ConfigSelection(default="solo4k", choices = device)
 
 config.skin.cyberlcd.fonts = ConfigSelection(default="Roboto-Regular", choices = fonts)
 
