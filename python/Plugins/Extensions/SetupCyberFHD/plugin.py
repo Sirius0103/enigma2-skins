@@ -344,7 +344,8 @@ else:
 
 if not fileExists("/usr/lib/enigma2/python/Components/Converter/MSNWeather2.py")\
 	or not fileExists("/usr/lib/enigma2/python/Components/Renderer/PiconUni.py")\
-	or not fileExists("/usr/lib/enigma2/python/Components/Renderer/AnimatedWeatherPixmap.py"):
+	or not fileExists("/usr/lib/enigma2/python/Components/Renderer/AnimatedWeatherPixmap.py")\
+	or not fileExists("/usr/lib/enigma2/python/Components/Renderer/AnimatedMoonPixmap.py"):
 	weatherpanelinfobar = [
 		("TemplatesInfoBarTvInfoWeatherDefault", _("No"))]
 	weatherpanelmovieinfobar = [
@@ -783,6 +784,7 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 			or not fileExists("/usr/lib/enigma2/python/Components/Converter/ServiceName2.py")\
 			or not fileExists("/usr/lib/enigma2/python/Components/Converter/TunerBar.py")\
 			or not fileExists("/usr/lib/enigma2/python/Components/Renderer/AnimatedWeatherPixmap.py")\
+			or not fileExists("/usr/lib/enigma2/python/Components/Renderer/AnimatedMoonPixmap.py")\
 			or not fileExists("/usr/lib/enigma2/python/Components/Renderer/MovieCover.py")\
 			or not fileExists("/usr/lib/enigma2/python/Components/Renderer/MovieRating.py")\
 			or not fileExists("/usr/lib/enigma2/python/Components/Renderer/PiconUni.py")\
@@ -904,6 +906,7 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 			and "/tmp/ServiceName2.py"\
 			and "/tmp/TunerBar.py"\
 			and "/tmp/AnimatedWeatherPixmap.py"\
+			and "/tmp/AnimatedMoonPixmap.py"\
 			and "/tmp/MovieCover.py"\
 			and "/tmp/MovieRating.py"\
 			and "/tmp/PiconUni.py"\
@@ -936,6 +939,7 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 			os.system("cp %sWeatherMSN/components/MSNWeather2.py %sConverter/MSNWeather2.py" % (pluginpath, componentspath))
 	# install renderer
 			os.system("cp /tmp/AnimatedWeatherPixmap.py %sRenderer/AnimatedWeatherPixmap.py" % (componentspath))
+			os.system("cp /tmp/AnimatedMoonPixmap.py %sRenderer/AnimatedMoonPixmap.py" % (componentspath))
 			os.system("cp /tmp/MovieCover.py %sRenderer/MovieCover.py" % (componentspath))
 			os.system("cp /tmp/MovieRating.py %sRenderer/MovieRating.py" % (componentspath))
 			os.system("cp /tmp/PiconUni.py %sRenderer/PiconUni.py" % (componentspath))
@@ -973,6 +977,7 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/TunerBar.py","/tmp/TunerBar.py")
 	# download renderer
 			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/AnimatedWeatherPixmap.py","/tmp/AnimatedWeatherPixmap.py")
+			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/AnimatedMoonPixmap.py","/tmp/AnimatedMoonPixmap.py")
 			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/MovieCover.py","/tmp/MovieCover.py")
 			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/MovieRating.py","/tmp/MovieRating.py")
 			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/PiconUni.py","/tmp/PiconUni.py")

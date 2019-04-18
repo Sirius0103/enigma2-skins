@@ -5641,7 +5641,7 @@
 		<widget source="session.CurrentService" render="Label" text="MPEG-VC/MPEG" position="890,1002" size="250,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
 			<convert type="ServiceInfoEX">avtype</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" text="1920x1080p25" position="1125,1002" size="230,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3" halign="right">
+		<widget source="session.CurrentService" render="Label" text="1920x1080p25" position="1055,1002" size="300,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3" halign="right">
 			<convert type="PliExtraInfo">ResolutionString</convert>
 		</widget>
 	</screen>
@@ -5998,9 +5998,6 @@
 		<widget source="session.CurrentService" render="Label" position="225,330" size="180,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1">
 			<convert type="MSNWeather2">Moondist</convert>
 		</widget>
-		<widget source="session.CurrentService" render="PiconUni" path="CyberFHD/msnweathermoon" position="435,255" size="90,90" zPosition="2" alphatest="blend">
-			<convert type="MSNWeather2">PiconMoon</convert>
-		</widget>
 	</screen>
 	<screen name="TemplatesInfoBarTvInfoWeatherRightLayer">
 		<panel name="TemplatesInfoBarWeatherRightLayer" />
@@ -6046,6 +6043,9 @@
 		<!-- Templates Info Bar Tv Info -->
 		<panel name="TemplatesInfoBarTvInfoWeatherLeftLayer" />
 		<panel name="TemplatesInfoBarTvInfoWeatherRightLayer" />
+		<widget source="session.CurrentService" render="PiconUni" path="CyberFHD/msnweathermoon" position="435,255" size="90,90" zPosition="2" alphatest="blend">
+			<convert type="MSNWeather2">PiconMoon</convert>
+		</widget>
 		<widget source="session.CurrentService" render="PiconUni" path="CyberFHD/msnweather" position="1378,239" size="128,128" zPosition="2" alphatest="blend">
 			<convert type="MSNWeather2">Picon</convert>
 		</widget>
@@ -6054,6 +6054,9 @@
 		<!-- Templates Info Bar Tv Info -->
 		<panel name="TemplatesInfoBarTvInfoWeatherLeftLayer" />
 		<panel name="TemplatesInfoBarTvInfoWeatherRightLayer" />
+		<widget source="session.CurrentService" render="AnimatedMoonPixmap" path="/usr/share/enigma2/CyberFHD/msnweathermoonanimated" position="435,255" size="90,90" zPosition="2" alphatest="blend">
+			<convert type="MSNWeather2">PiconMoon</convert>
+		</widget>
 		<widget source="session.CurrentService" render="AnimatedWeatherPixmap" path="/usr/share/enigma2/CyberFHD/msnweatheranimated" position="1378,239" size="128,128" zPosition="2" alphatest="blend">
 			<convert type="MSNWeather2">Picon</convert>
 		</widget>
@@ -6199,6 +6202,9 @@
 		<!-- Templates Info Bar Tv Info -->
 		<panel name="TemplatesInfoBarTvInfoWeatherLeftLayer" />
 		<panel name="TemplatesInfoBarTvInfoWeatherRightLayer" />
+		<widget source="session.CurrentService" render="PiconUni" path="CyberFHD/msnweathermoon" position="435,255" size="90,90" zPosition="2" alphatest="blend">
+			<convert type="MSNWeather2">PiconMoon</convert>
+		</widget>
 		<widget source="session.CurrentService" render="PiconUni" path="CyberFHD/msnweather" position="1378,239" size="128,128" zPosition="2" alphatest="blend">
 			<convert type="MSNWeather2">Picon</convert>
 		</widget>
@@ -6207,6 +6213,9 @@
 		<!-- Templates Info Bar Tv Info -->
 		<panel name="TemplatesInfoBarTvInfoWeatherLeftLayer" />
 		<panel name="TemplatesInfoBarTvInfoWeatherRightLayer" />
+		<widget source="session.CurrentService" render="AnimatedMoonPixmap" path="/usr/share/enigma2/CyberFHD/msnweathermoonanimated" position="435,255" size="90,90" zPosition="2" alphatest="blend">
+			<convert type="MSNWeather2">PiconMoon</convert>
+		</widget>
 		<widget source="session.CurrentService" render="AnimatedWeatherPixmap" path="/usr/share/enigma2/CyberFHD/msnweatheranimated" position="1378,239" size="128,128" zPosition="2" alphatest="blend">
 			<convert type="MSNWeather2">Picon</convert>
 		</widget>
