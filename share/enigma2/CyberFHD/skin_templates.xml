@@ -956,7 +956,7 @@
 	<screen name="TemplatesInfoBarTvPicon">
 		<panel name="TemplatesPiconLayer" />
 		<!-- Templates Info Bar Tv Picon -->
-		<widget source="session.CurrentService" render="Picon" position="105,874" size="220,132" zPosition="2" alphatest="blend">
+		<widget source="session.CurrentService" render="Picon" position="105,874" size="220,132" zPosition="2" alphatest="on">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 	</screen>
@@ -1280,7 +1280,7 @@
 		<eLabel position="0,0" size="300,300" backgroundColor="background3" zPosition="-12" />
 		<eLabel position="2,2" size="296,296" backgroundColor="background1" zPosition="-11" />
 		<eLabel position="7,193" size="286,100" backgroundColor="background2" zPosition="-10" />
-		<widget name="Dishpixmap" pixmap="CyberFHD/dish.png" position="75,15" size="150,150" zPosition="12" alphatest="blend" />
+		<widget name="Dishpixmap" pixmap="CyberFHD/dish.png" position="75,15" size="150,150" zPosition="12" alphatest="on" />
 		<eLabel name="From" position="12,228" size="100,30" text="From:" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
 		<widget name="posFrom" position="188,228" size="100,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1" />
 		<eLabel name="Goto" position="12,258" size="100,30" text="Goto:" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />

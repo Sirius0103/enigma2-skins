@@ -1,7 +1,9 @@
 Скин: CyberFHD
-Версия скина: 1.5-r1
+Версия скина: 1.5-r2
 
-Изменения: 22.02.2019 добавлена настройка "MSN & Moon", "Animated MSN & Moon", поправлено окно VirtualKeyBoard, Volume, WeatherMSN, добавлено TemplatesEPGInfo 30.12.2018 Изменено имя Satellite на Sender в ChannelSelection, поправлено окно NimSetup
+Изменения: 02.01.2020 поправлены окна VirtualKeyBoard, LanguageSelection, FlashOnline, ImageBackup, добавлены окна Animmain, Iconmain, SignalFinderMultistreamT2MI, Blindscan, SatBlindscanState, SatBlindscanState2, MultiBootSelector, MultiBootWizard, NetworkPassword, FileCommander
+22.02.2019 добавлена настройка "MSN & Moon", "Animated MSN & Moon", поправлено окно VirtualKeyBoard, Volume, WeatherMSN, добавлено TemplatesEPGInfo
+30.12.2018 Изменено имя Satellite на Sender в ChannelSelection, поправлено окно NimSetup
 21.12.2018 добавлен "skin_the_user.xml", удалены окна E2iPlayer, DVD Burn
 20.12.2018 добавлено окно BlurayMain
 15.12.2018 добавлены окна DownSkinLIB, RecordTimerQuestion, AutoTimerPreview, поправлены окна Timer
