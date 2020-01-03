@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-  <!-- # # # # # # # # # # CyberLCD # # # # # # # # # # -->
-  <!--
+<!-- # # # # # # # # # # CyberLCD # # # # # # # # # # -->
+<!--
 # Skin - LCD
 # Developer - Sirius
 # Homepage - http://www.gisclub.Tv
@@ -17,7 +17,6 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
-  -->
+-->
 <skin>
-
 </skin>

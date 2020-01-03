@@ -625,7 +625,7 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 	# widget standby
 			skin_user.append([config.skin.cyberlcd.widgetstandby.value, "TemplatesStandbyDisplay"])
 
-			SearchReplaceWrite(skin_user, "/usr/share/enigma2/CyberLCD/skin_default.xml", "/etc/enigma2/skin_user.xml")
+			SearchReplaceWrite(skin_user, "/usr/share/enigma2/CyberLCD/skin_lcd.xml", "/etc/enigma2/skin_user.xml")
 		except:
 			self.default()
 	# end
@@ -651,7 +651,7 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 			os.system("cp /tmp/ruSetupCyberLCD.mo %sSetupCyberLCD/locale/ru/LC_MESSAGES/SetupCyberLCD.mo" % (pluginpath))
 			os.system("cp /tmp/deSetupCyberLCD.mo %sSetupCyberLCD/locale/de/LC_MESSAGES/SetupCyberLCD.mo" % (pluginpath))
 	# install skin
-			os.system("cp /tmp/skin_default.xml %sCyberLCD/skin_default.xml" % (skinpath))
+			os.system("cp /tmp/skin_lcd.xml %sCyberLCD/skin_lcd.xml" % (skinpath))
 			os.system("cp /tmp/skin_solo4k.xml %sCyberLCD/skin_solo4k.xml" % (skinpath))
 			os.system("cp /tmp/skin_uno4k.xml %sCyberLCD/skin_uno4k.xml" % (skinpath))
 			os.system("cp /tmp/skin_ultimo4k.xml %sCyberLCD/skin_ultimo4k.xml" % (skinpath))
@@ -673,7 +673,7 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 			urllib.urlretrieve ("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberLCD/locale/ru/LC_MESSAGES/SetupCyberLCD.mo","/tmp/ruSetupCyberLCD.mo")
 			urllib.urlretrieve ("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberLCD/locale/de/LC_MESSAGES/SetupCyberLCD.mo","/tmp/deSetupCyberLCD.mo")
 	# download skin
-			urllib.urlretrieve ("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberLCD/skin_default.xml","/tmp/skin_default.xml")
+			urllib.urlretrieve ("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberLCD/skin_lcd.xml","/tmp/skin_lcd.xml")
 			urllib.urlretrieve ("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberLCD/skin_solo4k.xml","/tmp/skin_solo4k.xml")
 			urllib.urlretrieve ("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberLCD/skin_uno4k.xml","/tmp/skin_uno4k.xml")
 			urllib.urlretrieve ("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberLCD/skin_ultimo4k.xml","/tmp/skin_ultimo4k.xml")
@@ -694,7 +694,7 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 		for x in self["config"].list:
 			if len(x) > 1:
 				x[1].save()
-		os.system("cp /usr/share/enigma2/CyberLCD/skin_%s.xml /usr/share/enigma2/CyberLCD/skin_default.xml" % (config.skin.cyberlcd.device.value))
+		os.system("cp /usr/share/enigma2/CyberLCD/skin_%s.xml /usr/share/enigma2/CyberLCD/skin_lcd.xml" % (config.skin.cyberlcd.device.value))
 		self.createSkin()
 
 	def default(self):
@@ -716,7 +716,7 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 			self.session.open(TryQuitMainloop, 3)
 
 	def about(self):
-		self.session.open(MessageBox, _("Skin CyberLCD\nDeveloper: Sirius0103 \nHomepage: www.gisclub.tv \nGithub: www.github.com/Sirius0103 \n\nDonate:\nVISA 4276 4000 5465 0552"), MessageBox.TYPE_INFO)
+		self.session.open(MessageBox, _("Skin CyberLCD\nDeveloper: Sirius0103 \nHomepage: www.gisclub.tv \nGithub: www.github.com/Sirius0103 \n\nDonate: \nR460680746216 \nZ395874509364 \nE284580190260"), MessageBox.TYPE_INFO)
 
 def main(session, **kwargs):
 	session.open(SetupCyberLCD)
