@@ -1017,7 +1017,7 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 			self.session.open(TryQuitMainloop, 3)
 
 	def about(self):
-		self.session.open(MessageBox, _("Skin CyberFHD\nDeveloper: Sirius0103 \nHomepage: www.gisclub.tv \nGithub: www.github.com/Sirius0103 \n\nDonate:\nVISA 4276 4000 5465 0552"), MessageBox.TYPE_INFO)
+		self.session.open(MessageBox, _("Skin CyberFHD\nDeveloper: Sirius0103 \nHomepage: www.gisclub.tv \nGithub: www.github.com/Sirius0103 \n\nDonate: \nR460680746216 \nZ395874509364 \nE284580190260"), MessageBox.TYPE_INFO)
 
 def main(session, **kwargs):
 	session.open(SetupCyberFHD)
