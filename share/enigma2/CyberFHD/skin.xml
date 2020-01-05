@@ -1336,7 +1336,7 @@
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- ########## EPG ########## -->
-	<!--  EPG Selection -->
+	<!-- EPG Selection -->
 	<screen name="EPGSelection" position="fill" title="EPG Selection" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="e" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
@@ -1366,7 +1366,7 @@
 		<panel name="TemplatesButtons" />
 		<panel name="TemplatesClock" />
 	</screen>
-	<!--  Event View -->
+	<!-- Event View -->
 	<screen name="EventView" position="fill" title="EventView" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="e" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
@@ -3042,7 +3042,7 @@
 		<panel name="TemplatesButtons" />
 		<panel name="TemplatesClock" />
 	</screen>
-	<!--  Timer Edit -->
+	<!-- Timer Edit -->
 	<screen name="TimerEdit" position="fill" title="Timer Edit" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="t" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
@@ -3389,7 +3389,7 @@
 		<widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
 		<panel name="TemplatesClock" />
 	</screen>
-	<!--  Satfinder -->
+	<!-- Satfinder -->
 	<screen name="Satfinder" position="fill" title="Satfinder" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="±" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
@@ -5481,7 +5481,7 @@
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- ########## Parental Control ########## -->
-	<!--  Parental Control Change Pin -->
+	<!-- Parental Control Change Pin -->
 	<screen name="ParentalControlChangePin" position="fill" title="Change pin code" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="g" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
@@ -7199,8 +7199,21 @@
 		<panel name="TemplatesButtons" />
 		<panel name="TemplatesClock" />
 	</screen>
+	<!-- ########## Slow Zap ########## -->
+	<!-- SlowZap for CI+ -->
+	<screen name="SlowZapOpenSetup" position="fill" title="Advanced zap setup" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="C" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget name="config" position="90,200" size="980,635" scrollbarMode="showOnDemand" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget name="help" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
+		<widget name="cancel" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+		<widget name="ok" position="1380,914" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+		<panel name="TemplatesButtons" />
+		<panel name="TemplatesClock" />
+	</screen>
 	<!-- ########## Video Enhancement ##########-->
-	<!--  Video Enhancement Setup -->
+	<!-- Video Enhancement Setup -->
 	<screen name="VideoEnhancementSetup" position="fill" title="VideoEnhancementSetup" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
@@ -7214,7 +7227,7 @@
 		<panel name="TemplatesButtons" />
 		<panel name="TemplatesClock" />
 	</screen>
-	<!--  Video Enhancement Preview -->
+	<!-- Video Enhancement Preview -->
 	<screen name="VideoEnhancementPreview" position="fill" title="VideoEnhancementPreview" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />

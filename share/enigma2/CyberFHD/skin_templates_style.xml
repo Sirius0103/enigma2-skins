@@ -19,7 +19,7 @@
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 -->
 <!-- # # # # # # # # # # Templates # # # # # # # # # # -->
-	<!--  ########## Templates Layer ########## -->
+	<!-- ########## Templates Layer ########## -->
 	<screen name="TemplatesUpLayer1">
 		<!-- Up Layer 1 -->
 		<eLabel position="0,88" size="1920,54" backgroundColor="background3" zPosition="-14" />
@@ -178,7 +178,7 @@
 	</screen>
 	<screen name="TemplatesInfoBarEPGNowLayer">
 		<panel name="TemplatesInfoBarEPGNowCornerBackground2" />
-		<!--  Info Bar Description Layer -->
+		<!-- Info Bar Description Layer -->
 		<eLabel position="0,513" size="1352,329" backgroundColor="background3" zPosition="-12" />
 		<eLabel position="0,515" size="1350,325" backgroundColor="background1" zPosition="-11" />
 		<eLabel position="85,555" size="1260,280" backgroundColor="background2" zPosition="-10" />
@@ -186,7 +186,7 @@
 	</screen>
 	<screen name="TemplatesInfoBarEPGNxtLayer">
 		<panel name="TemplatesInfoBarEPGNxtCornerBackground2" />
-		<!--  Info Bar Description Layer -->
+		<!-- Info Bar Description Layer -->
 		<eLabel position="0,513" size="1352,329" backgroundColor="background3" zPosition="-12" />
 		<eLabel position="0,515" size="1350,325" backgroundColor="background1" zPosition="-11" />
 		<eLabel position="85,555" size="1260,120" backgroundColor="background2" zPosition="-10" />
@@ -470,7 +470,7 @@
 		<eLabel position="1235,530" size="600,130" backgroundColor="background2" zPosition="-10" />
 		<eLabel position="1235,670" size="600,170" backgroundColor="background2" zPosition="-10" />
 	</screen>
-	<!--  ########## Templates Corner Layer ########## -->
+	<!-- ########## Templates Corner Layer ########## -->
 	<screen name="TemplatesClockCornerBackground3Standard">
 		<!-- Layer -->
 	</screen>
@@ -1987,7 +1987,7 @@
 		<eLabel position="1831,838" size="4,1" backgroundColor="background1" zPosition="-8" />
 		<eLabel position="1830,839" size="5,1" backgroundColor="background1" zPosition="-8" />
 	</screen>
-	<!--  ########## Templates Progress Layer ########## -->
+	<!-- ########## Templates Progress Layer ########## -->
 	<screen name="TemplatesMenuUpProgressLayerDefault">
 		<!-- Progress Layer -->
 		<eLabel position="340,905" size="1500,15" backgroundColor="gray" zPosition="1" />
@@ -5397,7 +5397,7 @@
 		<eLabel position="1565,100" size="3,30" backgroundColor="background1" zPosition="3" />
 		<eLabel position="1570,100" size="3,30" backgroundColor="background1" zPosition="3" />
 	</screen>
-	<!--  ########## Templates InfoBar Tv ########## -->
+	<!-- ########## Templates InfoBar Tv ########## -->
 	<screen name="TemplatesInfoBarTvNumberDefault">
 		<!-- Templates Info Bar Tv Name -->
 		<widget source="session.CurrentService" render="Label" position="80,96" size="1360,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1">
@@ -6061,7 +6061,7 @@
 			<convert type="MSNWeather2">Picon</convert>
 		</widget>
 	</screen>
-	<!--  ########## Templates InfoBar Media ########## -->
+	<!-- ########## Templates InfoBar Media ########## -->
 	<screen name="TemplatesInfoBarMediaCoverDefault">
 		<panel name="TemplatesPiconLayer" />
 		<!-- Templates Media Cover -->
@@ -6220,7 +6220,7 @@
 			<convert type="MSNWeather2">Picon</convert>
 		</widget>
 	</screen>
-	<!--  ########## Templates InfoBar Radio ########## -->
+	<!-- ########## Templates InfoBar Radio ########## -->
 	<screen name="TemplatesInfoBarRadioIndicationDefaut">
 		<!-- Templates Radio Indication -->
 		<eLabel text="$" position="345,1002" size="30,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" zPosition="1" />
@@ -6773,7 +6773,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 			<convert type="EventName2">NextEventListWithOutTime</convert>
 		</widget>
 	</screen>
-	<!--  ########## Templates Channel Selection Radio ########## -->
+	<!-- ########## Templates Channel Selection Radio ########## -->
 	<screen name="TemplatesChannelSelectionRadioBouquetDefault">
 		<!-- Templates Channel Selection Radio Bouquet-->
 		<widget name="list" 
@@ -6817,7 +6817,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		backgroundColorSelected="background5" 
 		transparent="1" />
 	</screen>
-	<!--  ########## Templates Movie Selection ########## -->
+	<!-- ########## Templates Movie Selection ########## -->
 	<screen name="TemplatesMovieSelectionDescriptionDefault">
 		<!-- Templates MovieSelectionInfoMovie-->
 	</screen>
