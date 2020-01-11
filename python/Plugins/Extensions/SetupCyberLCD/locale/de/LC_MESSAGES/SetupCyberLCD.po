@@ -1,0 +1,114 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Setup skin Skin CyberLCD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-07-29 01:13+0100\n"
+"PO-Revision-Date: 2020-01-03 22:29+0300\n"
+"Last-Translator: Sirius <sirius.altech@gmail.com>\n"
+"Language-Team: sirius.al@rambler.ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"Language: de_DE\n"
+"X-Generator: Poedit 1.8.6\n"
+
+msgid "Setup CyberLCD"
+msgstr "Setup CyberLCD"
+
+msgid "Setup skin CyberLCD"
+msgstr "Setup skin CyberLCD"
+
+msgid "Your devise:"
+msgstr "Dein Gerät:"
+
+msgid "Fonts:"
+msgstr "Fonts:"
+
+msgid "Color setting:"
+msgstr "Farb Einstellung:"
+
+msgid "Background color:"
+msgstr "Hintergrundfarbe:"
+
+msgid "Progress color:"
+msgstr "Fortschrittsbarfarbe:"
+
+msgid "Title text color:"
+msgstr "Titeltextfarbe:"
+
+msgid "Main text color:"
+msgstr "Haupttextfarbe:"
+
+msgid "Additional text color:"
+msgstr "Zusätzliche Textfarbe:"
+
+msgid "Indication text color:"
+msgstr "Anzeigetextfarbe:"
+
+msgid "Background transparent:"
+msgstr "Hintergrund transparent:"
+
+msgid "Text transparent:"
+msgstr "Text Transparent:"
+
+msgid "Progress mode:"
+msgstr "Fortschrittsbarmodus:"
+
+msgid "Widget in infobar:"
+msgstr "Widget in der Infobar:"
+
+msgid "Widget in movieinfobar:"
+msgstr "Widget in Movieinfobar:"
+
+msgid "Widget in channel selection:"
+msgstr "Widget in der Kanalauswahl:"
+
+msgid "Widget in radio selection:"
+msgstr "Widget in der Radioauswahl:"
+
+msgid "Widget in EPG selection:"
+msgstr "Widget in der EPG-Auswahl:"
+
+msgid "Widget in standby:"
+msgstr "Widget im Standby:"
+
+msgid ""
+"No install components skin !!! \n"
+"Press blue button to install !!!"
+msgstr ""
+"Keine Hautkomponenten installieren !!!\n"
+"Zum Installieren die blaue Taste drücken !!!"
+
+msgid "Do you want to restart the GUI now ?"
+msgstr "Möchten Sie die GUI jetzt neu starten?"
+
+msgid "Error by processing !!!"
+msgstr "Fehler bei der Verarbeitung !!!"
+
+msgid "Default"
+msgstr "Default"
+
+msgid "Update CyberLCD"
+msgstr "Update CyberLCD"
+
+msgid ""
+"Skin CyberLCD\n"
+"Developer: Sirius0103 \n"
+"Homepage: www.gisclub.tv \n"
+"Github: www.github.com/Sirius0103 \n"
+"\n"
+"Donate: \n"
+"R460680746216 \n"
+"Z395874509364 \n"
+"E284580190260"
+msgstr ""
+"Skin CyberLCD\n"
+"Developer: Sirius0103 \n"
+"Homepage: www.gisclub.tv \n"
+"Github: www.github.com/Sirius0103 \n"
+"\n"
+"Donate: \n"
+"R460680746216 \n"
+"Z395874509364 \n"
+"E284580190260"

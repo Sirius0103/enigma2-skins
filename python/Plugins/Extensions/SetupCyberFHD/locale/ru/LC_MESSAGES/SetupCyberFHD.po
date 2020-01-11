@@ -1,0 +1,162 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Setup skin Skin CyberFHD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-07-29 01:13+0100\n"
+"PO-Revision-Date: 2020-01-03 22:44+0300\n"
+"Last-Translator: Sirius <sirius.altech@gmail.com>\n"
+"Language-Team: sirius.altech@gmail.com\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"Language: ru_RU\n"
+"X-Generator: Poedit 1.8.6\n"
+
+msgid "Setup CyberFHD"
+msgstr "Установки CyberFHD"
+
+msgid "Setup skin CyberFHD"
+msgstr "Настройка скина CyberFHD"
+
+msgid "Fonts:"
+msgstr "Шрифт:"
+
+msgid "Color setting:"
+msgstr "Настройки цветов:"
+
+msgid "Background 1 color:"
+msgstr "Цвет фона 1:"
+
+msgid "Background 2 color:"
+msgstr "Цвет фона 2:"
+
+msgid "Background 3 color:"
+msgstr "Цвет фона 3:"
+
+msgid "Background 2 corner:"
+msgstr "Уголок фона 2:"
+
+msgid "Background 3 corner:"
+msgstr "Уголок фона 3:"
+
+msgid "Progress color:"
+msgstr "Цвет прогресса:"
+
+msgid "Cursor color:"
+msgstr "Цвет курсора:"
+
+msgid "Title text color:"
+msgstr "Цвет текста заголовка:"
+
+msgid "Main text color:"
+msgstr "Цвет основного текста:"
+
+msgid "Additional text color:"
+msgstr "Цвет дополнительного текста:"
+
+msgid "Indication text color:"
+msgstr "Цвет текста индикации:"
+
+msgid "Icon`s color:"
+msgstr "Цвет иконок:"
+
+msgid "Background transparent:"
+msgstr "Прозрачность фона:"
+
+msgid "Text transparent:"
+msgstr "Прозрачность текста:"
+
+msgid "Channel number in infobar:"
+msgstr "Номер канала в инфобаре:"
+
+msgid "Tuner panel in infobar:"
+msgstr "Панель тюнера в инфобаре:"
+
+msgid "EPG panel in secondinfobar:"
+msgstr "Панель EPG во втором инфобаре:"
+
+msgid "Crypted panel in secondinfobar:"
+msgstr "Панель кодировок во втором инфобаре:"
+
+msgid "Info panel in secondinfobar:"
+msgstr "Панель дополнительной информации во втором инфобаре:"
+
+msgid "Show CI in info panel:"
+msgstr "Показать CI в панели дополнительной информации:"
+
+msgid "Weather panel in secondinfobar:"
+msgstr "Панель погоды во втором инфобаре:"
+
+msgid "Poster in movieinfobar:"
+msgstr "Постер в инфобаре медиаплеера:"
+
+msgid "Info panel in movieinfobar:"
+msgstr "Панель информации в инфобаре медиаплеера:"
+
+msgid "Weather panel in movieinfobar:"
+msgstr "Панель погоды в инфобаре медиаплеера:"
+
+msgid "Progress mode:"
+msgstr "Выбор стиля прогресса:"
+
+msgid "Scrollbar in menu:"
+msgstr "Показать скролл в меню:"
+
+msgid "Userbouquet name in channel selection:"
+msgstr "Название букета в селекторе каналов:"
+
+msgid "Picon panel in channel selection:"
+msgstr "Панель пиконов в селекторе каналов:"
+
+msgid "Channel info panel in channel selection:"
+msgstr "Панель информации о канале в селекторе каналов:"
+
+msgid "EPG panel in channel selection:"
+msgstr "Панель EPG в селекторе каналов:"
+
+msgid "Userbouquet name in radio channel selection:"
+msgstr "Название букета в селекторе каналов радио:"
+
+msgid "Description panel in movie selection:"
+msgstr "Панель описания в селекторе записей:"
+
+msgid ""
+"No install components skin !!! \n"
+"Press blue button to install !!!"
+msgstr ""
+"Не установлены компоненты скина !!! \n"
+"Нажмите синюю кнопку для установки !!!"
+
+msgid "Do you want to restart the GUI now ?"
+msgstr "Вы хотите перезапустить GUI сейчас ?"
+
+msgid "Error by processing !!!"
+msgstr "Ошибка при обработке !!!"
+
+msgid "Default"
+msgstr "По умолчанию"
+
+msgid "Update CyberFHD"
+msgstr "Обновить CyberFHD"
+
+msgid ""
+"Skin CyberFHD\n"
+"Developer: Sirius0103 \n"
+"Homepage: www.gisclub.tv \n"
+"Github: www.github.com/Sirius0103 \n"
+"\n"
+"Donate: \n"
+"R460680746216 \n"
+"Z395874509364 \n"
+"E284580190260"
+msgstr ""
+"Скин CyberFHD\n"
+"Разработчик: Sirius0103 \n"
+"Homepage: www.gisclub.tv \n"
+"Github: www.github.com/Sirius0103 \n"
+"\n"
+"Поблагодарить: \n"
+"R460680746216 \n"
+"Z395874509364 \n"
+"E284580190260"
