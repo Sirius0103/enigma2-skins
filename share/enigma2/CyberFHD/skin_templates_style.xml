@@ -6271,9 +6271,9 @@
 		<eLabel position="7,193" size="286,100" backgroundColor="background2" zPosition="-10" />
 		<widget name="Dishpixmap" pixmap="CyberFHD/dish.png" position="75,15" size="150,150" zPosition="12" alphatest="on" />
 		<eLabel name="From" position="12,228" size="100,30" text="From:" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
-		<widget name="posFrom" position="188,228" size="100,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1" />
+		<widget name="posFrom" position="113,228" size="175,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1" />
 		<eLabel name="Goto" position="12,258" size="100,30" text="Goto:" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
-		<widget name="posGoto" position="188,258" size="100,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1" />
+		<widget name="posGoto" position="113,258" size="175,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1" />
 		<widget name="tunerName" position="12,198" size="276,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
 		<widget name="turnTime" position="188,155" size="100,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1" />
 		<widget name="turnSpeed" position="12,155" size="120,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="left" transparent="1" />
@@ -6555,6 +6555,11 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 			<convert type="StringList" />
 		</widget>
 		<widget name="languagetext" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+		<widget name="rc" position="1643,260" size="154,500" pixmaps="skin_default/rc.png,skin_default/rcold.png" />
+		<widget name="arrowdown" pixmap="skin_default/arrowdown.png" position="0,0" size="55,105" zPosition="11" alphatest="on" />
+		<widget name="arrowdown2" pixmap="skin_default/arrowdown.png" position="0,0" size="55,105" zPosition="11" alphatest="on" />
+		<widget name="arrowup" pixmap="skin_default/arrowup.png" position="0,0" size="55,105" zPosition="11" alphatest="on" />
+		<widget name="arrowup2" pixmap="skin_default/arrowup.png" position="0,0" size="55,105" zPosition="11" alphatest="on" />
 	</screen>
 	<!-- ########## Templates Channel Selection Tv ########## -->
 	<screen name="TemplatesChannelSelectionProgress">

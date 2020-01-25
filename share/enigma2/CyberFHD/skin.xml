@@ -1335,6 +1335,40 @@
 		<panel name="TemplatesButtons" />
 		<panel name="TemplatesClock" />
 	</screen>
+	<!-- VideoWizard -->
+	<screen name="VideoWizard" position="fill" title="Welcome..." flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<eLabel text="Welcome..." position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+		<panel name="TemplatesWizard" />
+		<panel name="TemplatesButtons" />
+		<panel name="TemplatesClock" />
+	</screen>
+	<!-- LanguageWizard -->
+	<screen name="LanguageWizard" position="fill" title="Welcome..." flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenu500Layer" />
+		<eLabel text="L" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget source="languages" render="Listbox" position="90,200" size="480,600" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+						MultiContentEntryText(pos = (150, 10), size = (390, 40), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the language name,
+						MultiContentEntryPixmapAlphaTest(pos = (30, 10), size = (60, 40), png = 2), # index 2 is the pixmap
+					],
+				 "fonts": [gFont("Global", 30)],
+				 "itemHeight": 60
+				}
+			</convert>
+		</widget>
+		<widget name="text" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
+		<widget name="rc" position="1643,260" size="154,500" pixmaps="skin_default/rc.png,skin_default/rcold.png" />
+		<widget name="arrowdown" pixmap="skin_default/arrowdown.png" position="0,0" size="55,105" zPosition="11" alphatest="on" />
+		<widget name="arrowdown2" pixmap="skin_default/arrowdown.png" position="0,0" size="55,105" zPosition="11" alphatest="on" />
+		<widget name="arrowup" pixmap="skin_default/arrowup.png" position="0,0" size="55,105" zPosition="11" alphatest="on" />
+		<widget name="arrowup2" pixmap="skin_default/arrowup.png" position="0,0" size="55,105" zPosition="11" alphatest="on" />
+		<panel name="TemplatesButtons" />
+		<panel name="TemplatesClock" />
+	</screen>
 	<!-- ########## EPG ########## -->
 	<!-- EPG Selection -->
 	<screen name="EPGSelection" position="fill" title="EPG Selection" flags="wfNoBorder" backgroundColor="transparent">
