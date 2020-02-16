@@ -5792,6 +5792,151 @@
 			<convert type="ConditionalShowHide" />
 		</widget>
 	</screen>
+	<screen name="TemplatesInfoBarTvInfoCryptedImproved">
+		<!-- Templates Info Bar Tv Crypted -->
+		<panel name="TemplatesUpLayer2" />
+		<!-- Crypted -->
+		<!-- betacrypt -->
+		<eLabel text="BET" position="140,52" size="70,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
+		<widget source="session.CurrentService" render="FixedLabel" text="BET" position="140,52" size="70,30" font="Indication; 30" foregroundColor="yellow" backgroundColor="background" transparent="1" zPosition="2">
+			<convert type="CaidInfo2">BetaCrypt</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="FixedLabel" text="BET" position="140,52" size="70,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+			<convert type="CaidInfo2">BetaEcm</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<!-- irdeto crypt -->
+		<eLabel text="IRD" position="260,52" size="70,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
+		<widget source="session.CurrentService" render="FixedLabel" text="IRD" position="260,52" size="70,30" font="Indication; 30" foregroundColor="yellow" backgroundColor="background" transparent="1" zPosition="2">
+			<convert type="CaidInfo2">IrdCrypt</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="FixedLabel" text="IRD" position="260,52" size="70,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+			<convert type="CaidInfo2">IrdEcm</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<!-- conax crypt -->
+		<eLabel text="CON" position="200,52" size="70,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
+		<widget source="session.CurrentService" render="FixedLabel" text="CON" position="200,52" size="70,30" font="Indication; 30" foregroundColor="yellow" backgroundColor="background" transparent="1" zPosition="2">
+			<convert type="CaidInfo2">ConaxCrypt</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="FixedLabel" text="CON" position="200,52" size="70,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+			<convert type="CaidInfo2">ConaxEcm</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<!-- seca crypt -->
+		<eLabel text="SEC" position="440,52" size="70,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
+		<widget source="session.CurrentService" render="FixedLabel" text="SEC" position="440,52" size="70,30" font="Indication; 30" foregroundColor="yellow" backgroundColor="background" transparent="1" zPosition="2">
+			<convert type="CaidInfo2">SecaCrypt</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="FixedLabel" text="SEC" position="440,52" size="70,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+			<convert type="CaidInfo2">SecaEcm</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<!-- viaccess crypt -->
+		<eLabel text="VIA" position="320,52" size="70,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
+		<widget source="session.CurrentService" render="FixedLabel" text="VIA" position="320,52" size="70,30" font="Indication; 30" foregroundColor="yellow" backgroundColor="background" transparent="1" zPosition="2">
+			<convert type="CaidInfo2">ViaCrypt</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="FixedLabel" text="VIA" position="320,52" size="70,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+			<convert type="CaidInfo2">ViaEcm</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<!-- dre crypt -->
+		<eLabel text="DRE" position="380,52" size="70,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
+		<widget source="session.CurrentService" render="FixedLabel" text="DRE" position="380,52" size="70,30" font="Indication; 30" foregroundColor="yellow" backgroundColor="background" transparent="1" zPosition="2">
+			<convert type="CaidInfo2">DreamCrypt</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="FixedLabel" text="DRE" position="380,52" size="70,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+			<convert type="CaidInfo2">DreamEcm</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<!-- cryptoworks crypt -->
+		<eLabel text="CRW" position="560,52" size="70,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
+		<widget source="session.CurrentService" render="FixedLabel" text="CRW" position="560,52" size="70,30" font="Indication; 30" foregroundColor="yellow" backgroundColor="background" transparent="1" zPosition="2">
+			<convert type="CaidInfo2">CrwCrypt</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="FixedLabel" text="CRW" position="560,52" size="70,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+			<convert type="CaidInfo2">CrwEcm</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<!-- nagra crypt -->
+		<eLabel text="NAG" position="620,52" size="70,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
+		<widget source="session.CurrentService" render="FixedLabel" text="NAG" position="620,52" size="70,30" font="Indication; 30" foregroundColor="yellow" backgroundColor="background" transparent="1" zPosition="2">
+			<convert type="CaidInfo2">NagraCrypt</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="FixedLabel" text="NAG" position="620,52" size="70,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+			<convert type="CaidInfo2">NagraEcm</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<!-- nds crypt -->
+		<eLabel text="NDS" position="500,52" size="70,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
+		<widget source="session.CurrentService" render="FixedLabel" text="NDS" position="500,52" size="70,30" font="Indication; 30" foregroundColor="yellow" backgroundColor="background" transparent="1" zPosition="2">
+			<convert type="CaidInfo2">NdsCrypt</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="FixedLabel" text="NDS" position="500,52" size="70,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+			<convert type="CaidInfo2">NdsEcm</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<!-- exset crypt -->
+		<eLabel text="EXS" position="740,52" size="70,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
+		<widget source="session.CurrentService" render="FixedLabel" text="EXS" position="740,52" size="70,30" font="Indication; 30" foregroundColor="yellow" backgroundColor="background" transparent="1" zPosition="2">
+			<convert type="CaidInfo2">ExsCrypt</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="FixedLabel" text="EXS" position="740,52" size="70,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+			<convert type="CaidInfo2">ExsEcm</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<!-- pwu crypt -->
+		<eLabel text="PWU" position="800,52" size="70,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
+		<widget source="session.CurrentService" render="FixedLabel" text="PWU" position="800,52" size="70,30" font="Indication; 30" foregroundColor="yellow" backgroundColor="background" transparent="1" zPosition="2">
+			<convert type="CaidInfo2">PwuCrypt</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="FixedLabel" text="PWU" position="800,52" size="70,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+			<convert type="CaidInfo2">PwuEcm</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<!-- tandberg crypt -->
+		<eLabel text="TAN" position="860,52" size="70,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
+		<widget source="session.CurrentService" render="FixedLabel" text="TAN" position="860,52" size="70,30" font="Indication; 30" foregroundColor="yellow" backgroundColor="background" transparent="1" zPosition="2">
+			<convert type="CaidInfo2">TanCrypt</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="FixedLabel" text="TAN" position="860,52" size="70,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+			<convert type="CaidInfo2">TanEcm</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<!-- verimatrix crypt -->
+		<eLabel text="VRM" position="680,52" size="70,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
+		<widget source="session.CurrentService" render="FixedLabel" text="VRM" position="680,52" size="70,30" font="Indication; 30" foregroundColor="yellow" backgroundColor="background" transparent="1" zPosition="2">
+			<convert type="CaidInfo2">VrmCrypt</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="FixedLabel" text="VRM" position="680,52" size="70,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+			<convert type="CaidInfo2">VrmEcm</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<!-- biss crypt -->
+		<eLabel text="BISS" position="60,52" size="90,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
+		<widget source="session.CurrentService" render="FixedLabel" text="BISS" position="60,52" size="90,30" font="Indication; 30" foregroundColor="yellow" backgroundColor="background" transparent="1" zPosition="2">
+			<convert type="CaidInfo2">BisCrypt</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="FixedLabel" text="BISS" position="60,52" size="90,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+			<convert type="CaidInfo2">BisEcm</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+	</screen>
 	<screen name="TemplatesInfoBarTvInfoEPGDefault">
 		<!-- Templates Info Bar Tv Info -->
 	</screen>

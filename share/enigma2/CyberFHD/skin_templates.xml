@@ -1099,6 +1099,9 @@
 	<screen name="TemplatesInfoBarTvInfoCryptedStyle">
 		<!-- Templates Info Bar Tv Crypted -->
 	</screen>
+	<screen name="TemplatesInfoBarTvInfoCryptedImproved">
+		<!-- Templates Info Bar Tv Crypted -->
+	</screen>
 	<screen name="TemplatesInfoBarTvInfoEPG">
 		<!-- Templates Info Bar Tv Info -->
 	</screen>

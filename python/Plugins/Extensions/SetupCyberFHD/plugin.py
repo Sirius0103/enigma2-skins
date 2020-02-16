@@ -320,7 +320,8 @@ else:
 		("TemplatesInfoBarTvTunerAnalog", _("Analog"))]
 	cryptedpanelinfobar = [
 		("TemplatesInfoBarTvInfoCryptedDefault", _("No")),
-		("TemplatesInfoBarTvInfoCryptedStyle", _("Yes"))]
+		("TemplatesInfoBarTvInfoCryptedStyle", _("Style")),
+		("TemplatesInfoBarTvInfoCryptedImproved", _("Improved"))]
 	infopanelinfobar = [
 		("TemplatesInfoBarTvInfoPanelDefault", _("No")),
 		("TemplatesInfoBarTvInfoPanelNIM", _("NIM")),

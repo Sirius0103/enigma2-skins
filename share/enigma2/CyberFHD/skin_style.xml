@@ -940,6 +940,7 @@
 		<widget name="Preview" position="1060,380" size="280,210" alphatest="on" />
 		<widget source="introduction" render="Label" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
 		<panel name="TemplatesButtonsRed" />
+		<panel name="TemplatesButtonsGreen" />
 		<panel name="TemplatesButtons" />
 		<panel name="TemplatesClock" />
 	</screen>
@@ -7253,13 +7254,24 @@
 		<panel name="TemplatesButtonsMenu" />
 		<panel name="TemplatesClock" />
 	</screen>
-	<!-- ########## OpenWebif ########## -->
+	<!-- ########## Open Webif ########## -->
 	<!-- OpenWebif Config -->
 	<screen name="OpenWebifConfig" position="fill" title="OpenWebif Configuration" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="N" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
 		<widget name="lab1" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+		<widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<panel name="TemplatesButtonsRed" />
+		<panel name="TemplatesButtonsGreen" />
+		<panel name="TemplatesButtons" />
+		<panel name="TemplatesClock" />
+	</screen>
+	<!-- ########## OSD 3D Setup ########## -->
+	<screen name="OSD3DSetupScreen" position="fill" title="OpenWebif Configuration" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
 		<widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
 		<panel name="TemplatesButtonsRed" />
 		<panel name="TemplatesButtonsGreen" />
@@ -7762,21 +7774,20 @@
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel position="1103,188" size="739,659" backgroundColor="background3" zPosition="-12" />
 		<eLabel position="1105,190" size="735,655" backgroundColor="background1" zPosition="-11" />
-		<eLabel position="1110,620" size="725,220" backgroundColor="background2" zPosition="-10" />
+		<eLabel position="1110,535" size="725,300" backgroundColor="background2" zPosition="-10" />
 		<panel name="TemplatesMenuRightLayer" />
 		<eLabel text="W" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
 		<eLabel position="90,355" size="980,2" backgroundColor="background3" zPosition="1" />
 		<eLabel position="90,515" size="980,2" backgroundColor="background3" zPosition="1" />
 		<eLabel position="90,675" size="980,2" backgroundColor="background3" zPosition="1" />
-		<eLabel position="1115,265" size="715,2" backgroundColor="background3" zPosition="1" />
 		<widget source="locationtxt" render="Label" position="340,895" size="300,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
 		<widget source="latitudetxt" render="Label" position="640,925" size="150,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
 		<widget source="longitudetxt" render="Label" position="340,925" size="150,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
-		<widget source="temperaturetxt" render="Label" position="1125,275" size="300,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" transparent="1" />
-		<widget source="feelsliketxt" render="Label" position="1520,275" size="300,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="right" transparent="1" />
-		<widget source="humiditytxt" render="Label" position="1115,625" size="300,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" />
-		<widget source="windtxt" render="Label" position="1115,655" size="300,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" />
+		<widget source="temperaturetxt" render="Label" position="1280,260" size="300,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" />
+		<widget source="feelsliketxt" render="Label" position="1280,290" size="300,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" />
+		<widget source="humiditytxt" render="Label" position="1280,320" size="300,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" />
+		<widget source="windtxt" render="Label" position="1280,350" size="300,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" />
 		<widget source="pointtxt" render="Label" position="340,955" size="300,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
 		<widget source="location" render="Label" position="640,895" size="500,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
 		<widget source="latitude" render="Label" position="790,925" size="150,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
@@ -7784,31 +7795,71 @@
 		<widget source="observationtime" render="Label" position="1680,925" size="150,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="right" transparent="1" />
 		<widget source="observationpoint" render="Label" position="640,955" size="500,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
 		<widget source="attribution" render="Label" position="1330,955" size="500,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="right" transparent="1" />
-		<widget source="temperature" render="Label" position="1145,330" size="200,60" font="Global; 50" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
-		<widget source="feelslike" render="Label" position="1600,330" size="200,60" font="Global; 50" foregroundColor="color1" backgroundColor="background1" halign="right" transparent="1" />
-		<widget source="skytext" render="Label" position="1110,430" size="725,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="center" transparent="1" />
-		<widget source="humidity" render="Label" position="1530,625" size="300,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="right" transparent="1" />
-		<widget source="wind" render="Label" position="1530,655" size="300,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="right" transparent="1" />
-		<widget name="pic" position="1409,300" size="128,128" zPosition="2" alphatest="on" />
-		<widget source="sunrisetxt" render="Label" position="1115,745" size="300,30" font="Global; 25" halign="left" foregroundColor="color2" backgroundColor="background1" transparent="1" />
-		<widget source="sunsettxt" render="Label" position="1115,775" size="300,30" font="Global; 25" halign="left" foregroundColor="color2" backgroundColor="background1" transparent="1" />
-		<widget source="solsticetxt" render="Label" position="1115,805" size="300,30" font="Global; 25" halign="left" foregroundColor="color2" backgroundColor="background1" transparent="1" />
-		<widget source="moonrisetxt" render="Label" position="1115,685" size="300,30" font="Global; 25" halign="left" foregroundColor="color2" backgroundColor="background1" transparent="1" />
-		<widget source="moonsettxt" render="Label" position="1115,715" size="300,30" font="Global; 25" halign="left" foregroundColor="color2" backgroundColor="background1" transparent="1" />
+		<widget source="temperature" render="Label" position="1530,260" size="300,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="right" transparent="1" />
+		<widget source="feelslike" render="Label" position="1530,290" size="300,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="right" transparent="1" />
+		<widget source="skytext" render="Label" position="1115,380" size="715,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="right" transparent="1" />
+		<widget source="humidity" render="Label" position="1530,320" size="300,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="right" transparent="1" />
+		<widget source="wind" render="Label" position="1530,350" size="300,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="right" transparent="1" />
+		<widget name="pic" position="1130,220" size="128,128" zPosition="2" alphatest="on" />
 		<widget source="yulianday" render="Label" position="1530,895" size="300,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="right" transparent="1" />
-		<widget source="sunrise" render="Label" position="1530,745" size="300,30" font="Global; 25" halign="right" foregroundColor="color3" backgroundColor="background1" transparent="1" />
-		<widget source="sunset" render="Label" position="1530,775" size="300,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="right" transparent="1" />
-		<widget source="solstice" render="Label" position="1530,805" size="300,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="right" transparent="1" />
-		<widget source="moonrise" render="Label" position="1530,685" size="300,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="right" transparent="1" />
-		<widget source="moonset" render="Label" position="1530,715" size="300,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="right" transparent="1" />
-		<widget source="moondist" render="Label" position="1555,510" size="250,40" font="Global; 35" foregroundColor="color1" backgroundColor="background1" halign="right" transparent="1" />
-		<widget source="moonlight" render="Label" position="1145,490" size="200,60" font="Global; 50" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
-		<widget source="moonphase" render="Label" position="1110,580" size="725,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="center" transparent="1" />
-		<widget name="picmoon" position="1430,480" size="90,90" zPosition="2" alphatest="on" />
-		<widget source="daytxt" render="Label" position="1110,230" size="300,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" transparent="1" />
-		<widget source="datetxt" render="Label" position="1110,200" size="300,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" transparent="1" />
-		<widget source="date1" render="Label" position="1535,200" size="300,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="right" transparent="1" />
-		<widget source="day1" render="Label" position="1535,230" size="300,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="right" transparent="1" />
+		<widget source="risetxt" render="Label" position="1235,535" size="170,30" font="Regular; 25" foregroundColor="color2" backgroundColor="background2" halign="center" transparent="1" />
+		<widget source="settxt" render="Label" position="1380,535" size="170,30" font="Regular; 25" foregroundColor="color2" backgroundColor="background2" halign="center" transparent="1" />
+		<widget source="culminationtxt" render="Label" position="1525,535" size="170,30" font="Regular; 25" foregroundColor="color2" backgroundColor="background2" halign="center" transparent="1" />
+		<widget source="azimuthtxt" render="Label" position="1675,535" size="170,30" font="Regular; 25" foregroundColor="color2" backgroundColor="background2" halign="center" transparent="1" />
+		<widget source="suntxt" render="Label" position="1115,565" size="200,30" font="Regular; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+		<widget source="moontxt" render="Label" position="1115,805" size="200,30" font="Regular; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+		<widget source="mercurytxt" render="Label" position="1115,595" size="200,30" font="Regular; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+		<widget source="venustxt" render="Label" position="1115,625" size="200,30" font="Regular; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+		<widget source="marstxt" render="Label" position="1115,655" size="200,30" font="Regular; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+		<widget source="jupitertxt" render="Label" position="1115,685" size="200,30" font="Regular; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+		<widget source="saturntxt" render="Label" position="1115,715" size="200,30" font="Regular; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+		<widget source="uranustxt" render="Label" position="1115,745" size="200,30" font="Regular; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+		<widget source="neptunetxt" render="Label" position="1115,775" size="200,30" font="Regular; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+		<widget source="moonlighttxt" render="Label" position="1280,440" size="350,30" font="Regular; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+		<widget source="moondisttxt" render="Label" position="1280,470" size="350,30" font="Regular; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+		<widget source="sunrise" render="Label" position="1245,565" size="150,30" font="Regular; 25" foregroundColor="color3" backgroundColor="background2" halign="center" transparent="1" />
+		<widget source="sunset" render="Label" position="1390,565" size="150,30" font="Regular; 25" foregroundColor="color3" backgroundColor="background2" halign="center" transparent="1" />
+		<widget source="sunculmination" render="Label" position="1535,565" size="150,30" font="Regular; 25" foregroundColor="color3" backgroundColor="background2" halign="center" transparent="1" />
+		<widget source="mercuryrise" render="Label" position="1245,595" size="150,30" font="Regular; 25" foregroundColor="color3" backgroundColor="background2" halign="center" transparent="1" />
+		<widget source="mercuryset" render="Label" position="1390,595" size="150,30" font="Regular; 25" foregroundColor="color3" backgroundColor="background2" halign="center" transparent="1" />
+		<widget source="mercuryculmination" render="Label" position="1535,595" size="150,30" font="Regular; 25" foregroundColor="color3" backgroundColor="background2" halign="center" transparent="1" />
+		<widget source="mercuryazimuth" render="Label" position="1680,595" size="150,30" font="Regular; 25" foregroundColor="color3" backgroundColor="background2" halign="center" transparent="1" />
+		<widget source="venusset" render="Label" position="1390,625" size="150,30" font="Regular; 25" foregroundColor="color3" backgroundColor="background2" halign="center" transparent="1" />
+		<widget source="venusrise" render="Label" position="1245,625" size="150,30" font="Regular; 25" foregroundColor="color3" backgroundColor="background2" halign="center" transparent="1" />
+		<widget source="venusculmination" render="Label" position="1535,625" size="150,30" font="Regular; 25" foregroundColor="color3" backgroundColor="background2" halign="center" transparent="1" />
+		<widget source="venusazimuth" render="Label" position="1680,625" size="150,30" font="Regular; 25" foregroundColor="color3" backgroundColor="background2" halign="center" transparent="1" />
+		<widget source="marsrise" render="Label" position="1245,655" size="150,30" font="Regular; 25" foregroundColor="color3" backgroundColor="background2" halign="center" transparent="1" />
+		<widget source="marsset" render="Label" position="1390,655" size="150,30" font="Regular; 25" foregroundColor="color3" backgroundColor="background2" halign="center" transparent="1" />
+		<widget source="marsculmination" render="Label" position="1535,655" size="150,30" font="Regular; 25" foregroundColor="color3" backgroundColor="background2" halign="center" transparent="1" />
+		<widget source="marsazimuth" render="Label" position="1680,655" size="150,30" font="Regular; 25" foregroundColor="color3" backgroundColor="background2" halign="center" transparent="1" />
+		<widget source="jupiterrise" render="Label" position="1245,685" size="150,30" font="Regular; 25" foregroundColor="color3" backgroundColor="background2" halign="center" transparent="1" />
+		<widget source="jupiterset" render="Label" position="1390,685" size="150,30" font="Regular; 25" foregroundColor="color3" backgroundColor="background2" halign="center" transparent="1" />
+		<widget source="jupiterculmination" render="Label" position="1535,685" size="150,30" font="Regular; 25" foregroundColor="color3" backgroundColor="background2" halign="center" transparent="1" />
+		<widget source="jupiterazimuth" render="Label" position="1680,685" size="150,30" font="Regular; 25" foregroundColor="color3" backgroundColor="background2" halign="center" transparent="1" />
+		<widget source="saturnrise" render="Label" position="1245,715" size="150,30" font="Regular; 25" foregroundColor="color3" backgroundColor="background2" halign="center" transparent="1" />
+		<widget source="saturnset" render="Label" position="1390,715" size="150,30" font="Regular; 25" foregroundColor="color3" backgroundColor="background2" halign="center" transparent="1" />
+		<widget source="saturnculmination" render="Label" position="1535,715" size="150,30" font="Regular; 25" foregroundColor="color3" backgroundColor="background2" halign="center" transparent="1" />
+		<widget source="saturnazimuth" render="Label" position="1680,715" size="150,30" font="Regular; 25" foregroundColor="color3" backgroundColor="background2" halign="center" transparent="1" />
+		<widget source="uranusrise" render="Label" position="1245,745" size="150,30" font="Regular; 25" foregroundColor="color3" backgroundColor="background2" halign="center" transparent="1" />
+		<widget source="uranusset" render="Label" position="1390,745" size="150,30" font="Regular; 25" foregroundColor="color3" backgroundColor="background2" halign="center" transparent="1" />
+		<widget source="uranusculmination" render="Label" position="1535,745" size="150,30" font="Regular; 25" foregroundColor="color3" backgroundColor="background2" halign="center" transparent="1" />
+		<widget source="uranusazimuth" render="Label" position="1680,745" size="150,30" font="Regular; 25" foregroundColor="color3" backgroundColor="background2" halign="center" transparent="1" />
+		<widget source="neptunerise" render="Label" position="1245,775" size="150,30" font="Regular; 25" foregroundColor="color3" backgroundColor="background2" halign="center" transparent="1" />
+		<widget source="neptuneset" render="Label" position="1390,775" size="150,30" font="Regular; 25" foregroundColor="color3" backgroundColor="background2" halign="center" transparent="1" />
+		<widget source="neptuneculmination" render="Label" position="1535,775" size="150,30" font="Regular; 25" foregroundColor="color3" backgroundColor="background2" halign="center" transparent="1" />
+		<widget source="neptuneazimuth" render="Label" position="1680,775" size="150,30" font="Regular; 25" foregroundColor="color3" backgroundColor="background2" halign="center" transparent="1" />
+		<widget source="moonrise" render="Label" position="1245,805" size="150,30" font="Regular; 25" foregroundColor="color3" backgroundColor="background2" halign="center" transparent="1" />
+		<widget source="moonset" render="Label" position="1390,805" size="150,30" font="Regular; 25" foregroundColor="color3" backgroundColor="background2" halign="center" transparent="1" />
+		<widget source="moonculmination" render="Label" position="1535,805" size="150,30" font="Regular; 25" foregroundColor="color3" backgroundColor="background2" halign="center" transparent="1" />
+		<widget source="moonazimuth" render="Label" position="1680,805" size="150,30" font="Regular; 25" foregroundColor="color3" backgroundColor="background2" halign="center" transparent="1" />
+		<widget source="moondist" render="Label" position="1530,470" size="300,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="right" transparent="1" />
+		<widget source="moonlight" render="Label" position="1530,440" size="300,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="right" transparent="1" />
+		<widget source="moonphase" render="Label" position="1115,500" size="715,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="right" transparent="1" />
+		<widget name="picmoon" position="1150,410" size="90,90" zPosition="2" alphatest="on" />
+		<widget source="daytxt" render="Label" position="1280,230" size="300,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" />
+		<widget source="datetxt" render="Label" position="1280,200" size="300,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" />
+		<widget source="date1" render="Label" position="1530,200" size="300,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="right" transparent="1" />
+		<widget source="day1" render="Label" position="1530,230" size="300,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="right" transparent="1" />
 		<widget source="temperaturetxt" render="Label" position="250,260" size="500,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" />
 		<widget source="preciptxt" render="Label" position="250,290" size="500,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" />
 		<widget source="daytxt" render="Label" position="250,230" size="500,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" />
