@@ -691,13 +691,13 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 			self.session.open(MessageBox,(_("Download failed, check your internet connection !!!")), MessageBox.TYPE_INFO, timeout = 10)
 
 	def downloadFinished(self, result):
-		print "[SetupCyberFHD] Download finished"
+		print "[SetupCyberLCD] Download finished"
 		self.notdata = False
 		self.parse_weather_data()
 
 	def downloadFailed(self, result):
 		self.notdata = True
-		print "[SetupCyberFHD] Download failed!"
+		print "[SetupCyberLCD] Download failed!"
 
 	def setDefault(self, configItem):
 		configItem.setValue(configItem.default)
