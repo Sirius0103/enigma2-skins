@@ -678,7 +678,7 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 	# end
 			self.session.openWithCallback(self.restart, MessageBox,_("Do you want to restart the GUI now ?"), MessageBox.TYPE_YESNO)
 		else:
-			self.default()
+			self.download()
 
 	def download(self):
 		try:
