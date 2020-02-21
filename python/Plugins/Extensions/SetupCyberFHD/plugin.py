@@ -757,14 +757,14 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 		self.infosk()
 
 	def version(self):
-		downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberFHD/version","/tmp/version").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
+		downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberFHD/version","/tmp/version").addCallback(self.versionFinished).addErrback(self.versionFailed)
 
-	def downloadFinished(self, result):
+	def versionFinished(self, result):
 		print "[SetupCyberFHD] Download finished"
 		self.notdata = False
 		self.infocom()
 
-	def downloadFailed(self, result):
+	def versionFailed(self, result):
 		self.notdata = True
 		print "[SetupCyberFHD] Download failed!"
 
@@ -968,36 +968,36 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 	def download(self):
 		try:
 	# download plugin
-			downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberFHD/plugin.py","/tmp/plugin.py").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
-			downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberFHD/locale/ru/LC_MESSAGES/SetupCyberFHD.mo","/tmp/ruSetupCyberFHD.mo").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
-			downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberFHD/locale/de/LC_MESSAGES/SetupCyberFHD.mo","/tmp/deSetupCyberFHD.mo").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
+			downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberFHD/plugin.py","/tmp/plugin.py")
+			downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberFHD/locale/ru/LC_MESSAGES/SetupCyberFHD.mo","/tmp/ruSetupCyberFHD.mo")
+			downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberFHD/locale/de/LC_MESSAGES/SetupCyberFHD.mo","/tmp/deSetupCyberFHD.mo")
 	# download skin
-			downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberFHD/skin.xml","/tmp/skin.xml").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
-			downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberFHD/skin_style.xml","/tmp/skin_style.xml").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
-			downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberFHD/skin_templates.xml","/tmp/skin_templates.xml").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
-			downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberFHD/skin_templates_style.xml","/tmp/skin_templates_style.xml").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
-			downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberFHD/skin_extra.xml","/tmp/skin_extra.xml").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
+			downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberFHD/skin.xml","/tmp/skin.xml")
+			downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberFHD/skin_style.xml","/tmp/skin_style.xml")
+			downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberFHD/skin_templates.xml","/tmp/skin_templates.xml")
+			downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberFHD/skin_templates_style.xml","/tmp/skin_templates_style.xml")
+			downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberFHD/skin_extra.xml","/tmp/skin_extra.xml")
 	# download converter
-			downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/AlwaysTrue.py","/tmp/AlwaysTrue.py").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
-			downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/AC3DownMixStatus.py","/tmp/AC3DownMixStatus.py").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
-			downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/CaidInfo2.py","/tmp/CaidInfo2.py").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
-			downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/CamdInfo3.py","/tmp/CamdInfo3.py").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
-			downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/EventName2.py","/tmp/EventName2.py").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
-			downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/FrontendInfo2.py","/tmp/FrontendInfo2.py").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
-			downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/ModuleControl.py","/tmp/ModuleControl.py").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
-			downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/MovieInfo2.py","/tmp/MovieInfo2.py").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
-			downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/ProgressDiskSpaceInfo.py","/tmp/ProgressDiskSpaceInfo.py").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
-			downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/ServiceInfoEX.py","/tmp/ServiceInfoEX.py").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
-			downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/ServiceName2.py","/tmp/ServiceName2.py").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
-			downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/TunerBar.py","/tmp/TunerBar.py").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
+			downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/AlwaysTrue.py","/tmp/AlwaysTrue.py")
+			downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/AC3DownMixStatus.py","/tmp/AC3DownMixStatus.py")
+			downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/CaidInfo2.py","/tmp/CaidInfo2.py")
+			downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/CamdInfo3.py","/tmp/CamdInfo3.py")
+			downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/EventName2.py","/tmp/EventName2.py")
+			downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/FrontendInfo2.py","/tmp/FrontendInfo2.py")
+			downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/ModuleControl.py","/tmp/ModuleControl.py")
+			downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/MovieInfo2.py","/tmp/MovieInfo2.py")
+			downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/ProgressDiskSpaceInfo.py","/tmp/ProgressDiskSpaceInfo.py")
+			downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/ServiceInfoEX.py","/tmp/ServiceInfoEX.py")
+			downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/ServiceName2.py","/tmp/ServiceName2.py")
+			downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/TunerBar.py","/tmp/TunerBar.py")
 	# download renderer
-			downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/AnimatedWeatherPixmap.py","/tmp/AnimatedWeatherPixmap.py").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
-			downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/AnimatedMoonPixmap.py","/tmp/AnimatedMoonPixmap.py").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
-			downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/MovieCover.py","/tmp/MovieCover.py").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
-			downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/MovieRating.py","/tmp/MovieRating.py").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
-			downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/PiconUni.py","/tmp/PiconUni.py").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
-			downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/RendVolumeTextP.py","/tmp/RendVolumeTextP.py").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
-			downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/Watches.py","/tmp/Watches.py").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
+			downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/AnimatedWeatherPixmap.py","/tmp/AnimatedWeatherPixmap.py")
+			downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/AnimatedMoonPixmap.py","/tmp/AnimatedMoonPixmap.py")
+			downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/MovieCover.py","/tmp/MovieCover.py")
+			downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/MovieRating.py","/tmp/MovieRating.py")
+			downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/PiconUni.py","/tmp/PiconUni.py")
+			downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/RendVolumeTextP.py","/tmp/RendVolumeTextP.py")
+			downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/Watches.py","/tmp/Watches.py")
 	# end
 			self.install()
 		except:
