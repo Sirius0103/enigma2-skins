@@ -17,7 +17,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 
-import urllib2
+import urllib
 import os, gettext
 from Plugins.Plugin import PluginDescriptor
 from Screens.Screen import Screen
@@ -31,9 +31,8 @@ from Components.ConfigList import ConfigListScreen
 from Components.config import config, ConfigYesNo, ConfigSubsection, getConfigListEntry, ConfigSelection
 from Tools.Directories import fileExists, resolveFilename, SCOPE_PLUGINS, SCOPE_SKIN_IMAGE, SCOPE_LANGUAGE
 from Tools.LoadPixmap import LoadPixmap
-from urllib2 import Request, urlopen, URLError, HTTPError
-from twisted.web.client import downloadPage
 from skin import parseColor, parseFont
+from urllib import urlretrieve
 from os import system, environ
 from enigma import addFont
 
@@ -458,7 +457,6 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 		self["info_sk"] = Label(_(" "))
 		self["info_com"] = Label(_(" "))
 
-		self.notdata = False
 		self.onLayoutFinish.append(self.previewSkin)
 
 	def list(self):
@@ -558,26 +556,12 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 		self["fgcolor4a"].setText(_(self.fgtext))
 		self["fgcolor4a"].instance.setForegroundColor(parseColor(self.fgColor4))
 
-		self.version_data()
+		self.version()
 		self.infosk()
 
 	def version(self):
-		downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberLCD/version","/tmp/version").addCallback(self.versionFinished).addErrback(self.versionFailed)
-
-	def versionFinished(self, result):
-		print "[SetupCyberLCD] Download finished"
-		self.notdata = False
+		urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberLCD/version","/tmp/version")
 		self.infocom()
-
-	def versionFailed(self, result):
-		self.notdata = True
-		print "[SetupCyberLCD] Download failed!"
-
-	def version_data(self):
-		if not os.path.exists("/tmp/version") or self.notdata:
-			self.version()
-		else:
-			self.infocom()
 
 	def infocom(self):
 		version = ""
@@ -683,19 +667,19 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 	def download(self):
 		try:
 	# download plugin
-			downloadPage ("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberLCD/plugin.py","/tmp/plugin.py")
-			downloadPage ("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberLCD/locale/ru/LC_MESSAGES/SetupCyberLCD.mo","/tmp/ruSetupCyberLCD.mo")
-			downloadPage ("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberLCD/locale/de/LC_MESSAGES/SetupCyberLCD.mo","/tmp/deSetupCyberLCD.mo")
+			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberLCD/plugin.py","/tmp/plugin.py")
+			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberLCD/locale/ru/LC_MESSAGES/SetupCyberLCD.mo","/tmp/ruSetupCyberLCD.mo")
+			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberLCD/locale/de/LC_MESSAGES/SetupCyberLCD.mo","/tmp/deSetupCyberLCD.mo")
 	# download skin
-			downloadPage ("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberLCD/skin_lcd.xml","/tmp/skin_lcd.xml")
-			downloadPage ("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberLCD/skin_solo4k.xml","/tmp/skin_solo4k.xml")
-			downloadPage ("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberLCD/skin_uno4k.xml","/tmp/skin_uno4k.xml")
-			downloadPage ("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberLCD/skin_ultimo4k.xml","/tmp/skin_ultimo4k.xml")
+			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberLCD/skin_lcd.xml","/tmp/skin_lcd.xml")
+			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberLCD/skin_solo4k.xml","/tmp/skin_solo4k.xml")
+			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberLCD/skin_uno4k.xml","/tmp/skin_uno4k.xml")
+			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberLCD/skin_ultimo4k.xml","/tmp/skin_ultimo4k.xml")
 	# download converter
-			downloadPage ("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/AlwaysTrue.py","/tmp/AlwaysTrue.py")
+			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/AlwaysTrue.py","/tmp/AlwaysTrue.py")
 	# download renderer
-			downloadPage ("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/AnimatedWeatherPixmap.py","/tmp/AnimatedWeatherPixmap.py")
-			downloadPage ("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/PiconUni.py","/tmp/PiconUni.py")
+			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/AnimatedWeatherPixmap.py","/tmp/AnimatedWeatherPixmap.py")
+			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Renderer/PiconUni.py","/tmp/PiconUni.py")
 	# end
 			self.install()
 		except:
@@ -720,14 +704,12 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 		self.session.openWithCallback(self.restart, MessageBox,_("Do you want to restart the GUI now ?"), MessageBox.TYPE_YESNO)
 
 	def exit(self):
-		os.system("rm -f /tmp/version")
 		for x in self["config"].list:
 			if len(x) > 1:
 				x[1].cancel()
 		self.close()
 
 	def restart(self, answer):
-		os.system("rm -f /tmp/version")
 		if answer is True:
 			self.session.open(TryQuitMainloop, 3)
 
