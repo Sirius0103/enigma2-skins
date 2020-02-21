@@ -596,9 +596,8 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 		self["info_sk"] = Label(_(" "))
 		self["info_com"] = Label(_(" "))
 
-		self.infosk()
 		self.infocom()
-
+		self.infosk()
 		self.onLayoutFinish.append(self.previewSkin)
 
 	def list(self):
