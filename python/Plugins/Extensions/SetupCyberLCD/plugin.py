@@ -458,8 +458,7 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 		self["info_sk"] = Label(_(" "))
 		self["info_com"] = Label(_(" "))
 
-		self.infocom()
-		self.infosk()
+		self.notdata = False
 		self.onLayoutFinish.append(self.previewSkin)
 
 	def list(self):
@@ -559,6 +558,41 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 		self["fgcolor4a"].setText(_(self.fgtext))
 		self["fgcolor4a"].instance.setForegroundColor(parseColor(self.fgColor4))
 
+		self.version_data()
+		self.infosk()
+
+	def version(self):
+		downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberLCD/version","/tmp/version").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
+
+	def downloadFinished(self, result):
+		print "[SetupCyberLCD] Download finished"
+		self.notdata = False
+		self.infocom()
+
+	def downloadFailed(self, result):
+		self.notdata = True
+		print "[SetupCyberLCD] Download failed!"
+
+	def version_data(self):
+		if not os.path.exists("/tmp/version") or self.notdata:
+			self.version()
+		else:
+			self.infocom()
+
+	def infocom(self):
+		version = ""
+		if fileExists("/usr/lib/enigma2/python/Plugins/Extensions/WeatherMSN/plugin.pyo")\
+			and not fileExists("/usr/lib/enigma2/python/Components/Converter/MSNWeather2.py"):
+			self["info_com"] = Label(_("No install components skin !!! \nPress blue button to install !!!"))
+		elif not fileExists("/usr/lib/enigma2/python/Components/Converter/AlwaysTrue.py")\
+			or not fileExists("/usr/lib/enigma2/python/Components/Renderer/PiconUni.py"):
+			self["info_com"] = Label(_("No install components skin !!! \nPress blue button to install !!!"))
+		else:
+			for text in open("/tmp/version").readlines()[3]:
+				version += text
+			self["info_com"].setText(version)
+			return version
+
 	def infosk(self):
 		pluginpath = "/usr/lib/enigma2/python/Plugins/Extensions/"
 		version = ""
@@ -569,28 +603,6 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 			return version
 		except:
 			return ""
-
-	def infocom(self):
-		try:
-			downloadPage ("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberLCD/version","/tmp/version").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
-		except:
-			pass
-
-		if fileExists("/usr/lib/enigma2/python/Plugins/Extensions/WeatherMSN/plugin.pyo")\
-			and not fileExists("/usr/lib/enigma2/python/Components/Converter/MSNWeather2.py"):
-			self["info_com"] = Label(_("No install components skin !!! \nPress blue button to install !!!"))
-		elif not fileExists("/usr/lib/enigma2/python/Components/Converter/AlwaysTrue.py")\
-			or not fileExists("/usr/lib/enigma2/python/Components/Renderer/PiconUni.py"):
-			self["info_com"] = Label(_("No install components skin !!! \nPress blue button to install !!!"))
-		else:
-			version = ""
-			try:
-				for text in open("/tmp/version").readlines()[3]:
-					version += text
-				self["info_com"].setText(version)
-				return version
-			except:
-				return ""
 
 	def createSkin(self):
 		try:
@@ -689,15 +701,6 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 		except:
 			self.session.open(MessageBox,(_("Download failed, check your internet connection !!!")), MessageBox.TYPE_INFO, timeout = 10)
 
-	def downloadFinished(self, result):
-		print "[SetupCyberLCD] Download finished"
-		self.notdata = False
-		self.parse_weather_data()
-
-	def downloadFailed(self, result):
-		self.notdata = True
-		print "[SetupCyberLCD] Download failed!"
-
 	def setDefault(self, configItem):
 		configItem.setValue(configItem.default)
 
@@ -717,12 +720,14 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 		self.session.openWithCallback(self.restart, MessageBox,_("Do you want to restart the GUI now ?"), MessageBox.TYPE_YESNO)
 
 	def exit(self):
+		os.system("rm -f /tmp/version")
 		for x in self["config"].list:
 			if len(x) > 1:
 				x[1].cancel()
 		self.close()
 
 	def restart(self, answer):
+		os.system("rm -f /tmp/version")
 		if answer is True:
 			self.session.open(TryQuitMainloop, 3)
 

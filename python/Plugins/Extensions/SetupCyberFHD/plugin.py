@@ -596,8 +596,7 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 		self["info_sk"] = Label(_(" "))
 		self["info_com"] = Label(_(" "))
 
-		self.infocom()
-		self.infosk()
+		self.notdata = False
 		self.onLayoutFinish.append(self.previewSkin)
 
 	def list(self):
@@ -754,23 +753,29 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 		self["fgcolor5a"].setText(_(self.fglogo))
 		self["fgcolor5a"].instance.setForegroundColor(parseColor(self.fgColor5))
 
-	def infosk(self):
-		pluginpath = "/usr/lib/enigma2/python/Plugins/Extensions/"
-		version = ""
-		try:
-			for text in open("%sSetupCyberFHD/version" % (pluginpath)).readlines()[1]:
-				version += text
-			self["info_sk"].setText(version)
-			return version
-		except:
-			return ""
+		self.version_data()
+		self.infosk()
+
+	def version(self):
+		downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberFHD/version","/tmp/version").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
+
+	def downloadFinished(self, result):
+		print "[SetupCyberFHD] Download finished"
+		self.notdata = False
+		self.infocom()
+
+	def downloadFailed(self, result):
+		self.notdata = True
+		print "[SetupCyberFHD] Download failed!"
+
+	def version_data(self):
+		if not os.path.exists("/tmp/version") or self.notdata:
+			self.version()
+		else:
+			self.infocom()
 
 	def infocom(self):
-		try:
-			downloadPage("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberFHD/version","/tmp/version").addCallback(self.downloadFinished).addErrback(self.downloadFailed)
-		except:
-			pass
-
+		version = ""
 		if fileExists("/usr/lib/enigma2/python/Plugins/Extensions/WeatherMSN/plugin.pyo")\
 			and not fileExists("/usr/lib/enigma2/python/Components/Converter/MSNWeather2.py"):
 			self["info_com"] = Label(_("No install components skin !!! \nPress blue button to install !!!"))
@@ -795,14 +800,21 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 			or not fileExists("/usr/lib/enigma2/python/Components/Renderer/Watches.py"):
 			self["info_com"] = Label(_("No install components skin !!! \nPress blue button to install !!!"))
 		else:
-			version = ""
-			try:
-				for text in open("/tmp/version").readlines()[3]:
-					version += text
-				self["info_com"].setText(version)
-				return version
-			except:
-				return ""
+			for text in open("/tmp/version").readlines()[3]:
+				version += text
+			self["info_com"].setText(version)
+			return version
+
+	def infosk(self):
+		pluginpath = "/usr/lib/enigma2/python/Plugins/Extensions/"
+		version = ""
+		try:
+			for text in open("%sSetupCyberFHD/version" % (pluginpath)).readlines()[1]:
+				version += text
+			self["info_sk"].setText(version)
+			return version
+		except:
+			return ""
 
 	def createSkin(self):
 		try:
@@ -991,15 +1003,6 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 		except:
 			self.session.open(MessageBox,(_("Download failed, check your internet connection !!!")), MessageBox.TYPE_INFO, timeout = 10)
 
-	def downloadFinished(self, result):
-		print "[SetupCyberFHD] Download finished"
-		self.notdata = False
-		self.parse_weather_data()
-
-	def downloadFailed(self, result):
-		self.notdata = True
-		print "[SetupCyberFHD] Download failed!"
-
 	def setDefault(self, configItem):
 		configItem.setValue(configItem.default)
 
@@ -1017,12 +1020,14 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 		self.createSkin()
 
 	def exit(self):
+		os.system("rm -f /tmp/version")
 		for x in self["config"].list:
 			if len(x) > 1:
 				x[1].cancel()
 		self.close()
 
 	def restart(self, answer):
+		os.system("rm -f /tmp/version")
 		if answer is True:
 			config.skin.primary_skin.value = "CyberFHD/skin.xml"
 			config.skin.primary_skin.save()
