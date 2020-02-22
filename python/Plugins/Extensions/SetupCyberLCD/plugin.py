@@ -31,8 +31,8 @@ from Components.ConfigList import ConfigListScreen
 from Components.config import config, ConfigYesNo, ConfigSubsection, getConfigListEntry, ConfigSelection
 from Tools.Directories import fileExists, resolveFilename, SCOPE_PLUGINS, SCOPE_SKIN_IMAGE, SCOPE_LANGUAGE
 from Tools.LoadPixmap import LoadPixmap
+from urllib import urlopen, urlretrieve
 from skin import parseColor, parseFont
-from urllib import urlretrieve
 from os import system, environ
 from enigma import addFont
 
@@ -560,8 +560,11 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 		self.infosk()
 
 	def version(self):
-		urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberLCD/version","/tmp/version")
-		self.infocom()
+		try:
+			urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/python/Plugins/Extensions/SetupCyberLCD/version","/tmp/version")
+			self.infocom()
+		except:
+			pass
 
 	def infocom(self):
 		version = ""
@@ -662,7 +665,7 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 	# end
 			self.session.openWithCallback(self.restart, MessageBox,_("Do you want to restart the GUI now ?"), MessageBox.TYPE_YESNO)
 		else:
-			self.download()
+			self.session.open(MessageBox,(_("Download failed, check your internet connection !!!")), MessageBox.TYPE_INFO, timeout = 10)
 
 	def download(self):
 		try:
