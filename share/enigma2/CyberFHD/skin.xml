@@ -890,8 +890,20 @@
 		<panel name="TemplatesMenu500Layer" />
 		<eLabel text="f" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
-		<widget name="SkinList" position="90,200" size="480,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<widget name="Preview" position="1060,380" size="280,210" alphatest="on" />
+		<widget source="skins" render="Listbox" position="90,420" size="480,420" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+						MultiContentEntryText(pos = (10,5), size = (460,25), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1),
+						MultiContentEntryText(pos = (20,35), size = (450,25), font = 1, flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = 2)
+					],
+				 "fonts": [gFont("Global", 25),gFont("Console", 20)],
+				 "itemHeight": 60
+				}
+			</convert>
+		</widget>
+		<widget name="SkinList" position="90,420" size="480,420" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<!--<widget name="preview" position="190,200" size="280,210" alphatest="on" />-->
+		<widget name="Preview" position="190,200" size="280,210" alphatest="on" />
 		<widget source="introduction" render="Label" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
 		<panel name="TemplatesButtonsRed" />
 		<panel name="TemplatesButtonsGreen" />
@@ -3679,7 +3691,7 @@
 	</screen>
 	<!-- ########## Animation Setup ########## -->
 	<!-- Animation Setup -->
-	<screen name="AnimationSetupScreen" position="fill" title="Animation Setup" backgroundColor="transparent">
+	<screen name="AnimationSetupScreen" position="fill" title="Animation Setup" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="s" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
@@ -3693,7 +3705,7 @@
 		<panel name="TemplatesClock" />
 	</screen>
 	<!--Animation Config -->
-	<screen name="AnimationSetupConfig" position="fill" title="Animation Settings" backgroundColor="transparent">
+	<screen name="AnimationSetupConfig" position="fill" title="Animation Settings" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
@@ -4351,6 +4363,7 @@
 		<widget name="infolabel" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
 		<panel name="TemplatesButtonsRed" />
 		<panel name="TemplatesButtonsGreen" />
+		<panel name="TemplatesButtons" />
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- ########## Filebrowser ########## -->
