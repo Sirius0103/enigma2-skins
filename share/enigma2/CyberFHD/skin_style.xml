@@ -53,7 +53,7 @@
 		<parameter name="VirtualKeyBoardAlignment" value="0,0" />
 		<parameter name="VirtualKeyBoardPadding" value="7,7" />
 		<parameter name="VirtualKeyBoardShiftColors" value="white,white,cyan,yellow" />
-
+		<parameter name="FrontendInfoColors" value="color4,yellow,gray" />
 	</parameters>
 	<!-- ########## Colors ########## -->
 	<colors>
