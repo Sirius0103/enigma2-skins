@@ -1,7 +1,8 @@
 Скин: CyberFHD
-Версия скина: 1.5-r4
+Версия скина: 1.5-r5
 
-Изменения: 20.02.2020 изменены окна "Style" и "Improved" в "Crypted panel in secondinfobar:" 15.02.2020 добавлено окно OSD3DSetupScreen, поправлено окно WeatherMSN, добавлена настройка в "Crypted panel in secondinfobar:"
+Изменения: 05.03.2020 добавлены окна AutoBouquetsMaker, изменены окна "Style" и "Improved" в "Crypted panel in secondinfobar:"
+15.02.2020 добавлено окно OSD3DSetupScreen, поправлено окно WeatherMSN, добавлена настройка в "Crypted panel in secondinfobar:"
 25.01.2020 поправлены окна Dish добавлены окна VideoWizard, LanguageWizard
 02.01.2020 поправлены окна VirtualKeyBoard, LanguageSelection, FlashOnline, ImageBackup, добавлены окна Animmain, Iconmain, SignalFinderMultistreamT2MI, Blindscan, SatBlindscanState, SatBlindscanState2, MultiBootSelector, MultiBootWizard, NetworkPassword, FileCommander
 22.02.2019 добавлена настройка "MSN & Moon", "Animated MSN & Moon", поправлено окно VirtualKeyBoard, Volume, WeatherMSN, добавлено TemplatesEPGInfo
@@ -32,10 +33,3 @@
 21.05.2018 поправлены Title, добавлены окна PluginManagerHelp, TextBox
 20.05.2018 поправлено окно IpkgInstaller
 15.05.2018 переработан плагин управления скином (спасибо Vasiliks), добавлены окна AtileHD, исправлено окно EPGImport
-06.12.2017 правка панелей NIM, ECM, PID, размеров виджетов индикации
-05.12.2017 поправлены окна WlanScanAp, WlanConfig, размер виджетов заголовков
-29.11.2017 добавлена настройка панели дополнительной информации ECM+CI в инфобаре
-28.11.2017 добавлены окна Streaming Clients, Flash Online
-27.11.2017 добавлены окна Oscam Info, Simple RSS, Email Client
-25.11.2017 поправлены окна Dish, WlanConfig, AnimationSetupScreen, Wizard и других
-21.11.2017 добавлена информация о версии скина и изменениях на гите

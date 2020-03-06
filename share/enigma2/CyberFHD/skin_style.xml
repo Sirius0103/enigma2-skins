@@ -3817,6 +3817,103 @@
 		<panel name="TemplatesButtons" />
 		<panel name="TemplatesClock" />
 	</screen>
+	<!-- ########## Auto Bouquets Maker ########## -->
+	<!-- E2m3u2b Menu -->
+	<screen name="AutoBouquetsMaker_Menu" position="fill" title="" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="T" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget source="list" render="Listbox" position="90,200" size="980,600" scrollbarMode="showNever" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"template":
+					[
+					MultiContentEntryPixmapAlphaTest(pos=(4, 4), size=(32, 32), png=0),
+					MultiContentEntryText(pos=(50, 0), size=(900, 40), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=1),
+					],
+					"fonts": [gFont("Global", 30)],
+					"itemHeight": 40
+				}
+			</convert>
+		</widget>
+		<panel name="TemplatesButtonsRed" />
+		<panel name="TemplatesButtonsGreen" />
+		<panel name="TemplatesButtons" />
+		<panel name="TemplatesClock" />
+	</screen>
+	<!-- E2m3u2b Config -->
+	<screen name="AutoBouquetsMaker_Setup" position="fill" title="" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget name="description" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
+		<panel name="TemplatesButtonsRed" />
+		<panel name="TemplatesButtonsGreen" />
+		<panel name="TemplatesButtons" />
+		<panel name="TemplatesClock" />
+	</screen>
+	<!-- E2m3u2b Providers -->
+	<screen name="AutoBouquetsMaker_HideSections" position="fill" title="" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="T" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget source="list" render="Listbox" position="90,200" size="980,600" scrollbarMode="showNever" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"template":
+					[
+					MultiContentEntryPixmapAlphaTest(pos=(4, 4), size=(32, 32), png=0),
+					MultiContentEntryText(pos=(50, 0), size=(400, 40), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=1),
+					MultiContentEntryText(pos=(450, 0), size=(400, 40), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=2),
+					],
+					"fonts": [gFont("Global", 30)],
+					"itemHeight": 40
+				}
+			</convert>
+		</widget>
+		<widget name="pleasewait" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
+		<panel name="TemplatesButtonsRed" />
+		<panel name="TemplatesButtonsGreen" />
+		<panel name="TemplatesButtons" />
+		<panel name="TemplatesClock" />
+	</screen>
+	<!-- E2m3u2b Providers Config -->
+	<screen name="AutoBouquetsMaker_ProvidersSetup" position="fill" title="" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget name="description" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
+		<widget name="pleasewait" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
+		<panel name="TemplatesButtonsRed" />
+		<panel name="TemplatesButtonsGreen" />
+		<panel name="TemplatesButtonsYellow" />
+		<panel name="TemplatesButtonsBlue" />
+		<panel name="TemplatesButtons" />
+		<panel name="TemplatesClock" />
+	</screen>
+	<!-- E2m3u2b Log -->
+	<screen name="AutoBouquetsMaker_Log" position="fill" title="" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenu1800Layer" />
+		<eLabel text="d" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget name="list" position="90,200" size="1740,635" font="Console;25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
+		<panel name="TemplatesButtonsRed" />
+		<panel name="TemplatesButtonsGreen" />
+		<panel name="TemplatesButtonsBlue" />
+		<panel name="TemplatesButtons" />
+		<panel name="TemplatesClock" />
+	</screen>
+	<!-- E2m3u2b About -->
+	<screen name="AutoBouquetsMaker_About" position="fill" title="" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="i" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget name="about" conditional="about" position="90,200" size="980,635" font="Console;25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" />
+		<widget name="oealogo" conditional="oealogo" position="880,680" size="176,142" alphatest="on" />
+		<panel name="TemplatesButtonsRed" />
+		<panel name="TemplatesButtons" />
+		<panel name="TemplatesClock" />
+	</screen>
 	<!-- ########## Backup Suite ########## -->
 	<!-- Backup Suite -->
 	<screen name="BackupStart" position="fill" title="Backup Suite" flags="wfNoBorder" backgroundColor="transparent">
@@ -5561,6 +5658,30 @@
 		<widget name="output" position="90,200" size="1740,635" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
 		<panel name="TemplatesClock" />
 	</screen>
+	<!-- ########## Open Webif ########## -->
+	<!-- OpenWebif Config -->
+	<screen name="OpenWebifConfig" position="fill" title="OpenWebif Configuration" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="N" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget name="lab1" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+		<widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<panel name="TemplatesButtonsRed" />
+		<panel name="TemplatesButtonsGreen" />
+		<panel name="TemplatesButtons" />
+		<panel name="TemplatesClock" />
+	</screen>
+	<!-- ########## OSD 3D Setup ########## -->
+	<screen name="OSD3DSetupScreen" position="fill" title="OpenWebif Configuration" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<panel name="TemplatesButtonsRed" />
+		<panel name="TemplatesButtonsGreen" />
+		<panel name="TemplatesButtons" />
+		<panel name="TemplatesClock" />
+	</screen>
 	<!-- ########## Parental Control ########## -->
 	<!-- Parental Control Change Pin -->
 	<screen name="ParentalControlChangePin" position="fill" title="Change pin code" flags="wfNoBorder" backgroundColor="transparent">
@@ -7064,17 +7185,16 @@
 		<panel name="TemplatesButtons" />
 		<panel name="TemplatesClock" />
 	</screen>
-	<!-- ########## SystemTime ########## -->
-	<!-- SystemTime SetupScreen -->
-	<screen name="SystemTimeSetupScreen" position="fill" title="System Time" flags="wfNoBorder" backgroundColor="transparent">
+	<!-- ########## Slow Zap ########## -->
+	<!-- SlowZap for CI+ -->
+	<screen name="SlowZapOpenSetup" position="fill" title="Advanced zap setup" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenu1000Layer" />
-		<eLabel text="t" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<eLabel text="C" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
-		<widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<panel name="TemplatesButtonsRed" />
-		<panel name="TemplatesButtonsGreen" />
-		<panel name="TemplatesButtonsYellow" />
-		<panel name="TemplatesButtonsBlue" />
+		<widget name="config" position="90,200" size="980,635" scrollbarMode="showOnDemand" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget name="help" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
+		<widget name="cancel" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+		<widget name="ok" position="1380,914" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
 		<panel name="TemplatesButtons" />
 		<panel name="TemplatesClock" />
 	</screen>
@@ -7110,6 +7230,20 @@
 		<panel name="TemplatesButtons" />
 		<panel name="TemplatesClock" />
 	</screen>-->
+	<!-- ########## System Time ########## -->
+	<!-- System Time Setup -->
+	<screen name="SystemTimeSetupScreen" position="fill" title="System Time" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="t" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<panel name="TemplatesButtonsRed" />
+		<panel name="TemplatesButtonsGreen" />
+		<panel name="TemplatesButtonsYellow" />
+		<panel name="TemplatesButtonsBlue" />
+		<panel name="TemplatesButtons" />
+		<panel name="TemplatesClock" />
+	</screen>
 	<!-- ########## Time Off ########## -->
 	<!-- Timeoff -->
 	<screen name="timeoff" position="fill" title="Set time to stanby/wakeup" flags="wfNoBorder" backgroundColor="transparent">
@@ -7265,43 +7399,6 @@
 		</widget>
 		<widget name="thumbnail" position="0,0" size="100,72" />
 		<panel name="TemplatesButtonsMenu" />
-		<panel name="TemplatesClock" />
-	</screen>
-	<!-- ########## Open Webif ########## -->
-	<!-- OpenWebif Config -->
-	<screen name="OpenWebifConfig" position="fill" title="OpenWebif Configuration" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="TemplatesMenu1000Layer" />
-		<eLabel text="N" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget name="lab1" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
-		<widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<panel name="TemplatesButtonsRed" />
-		<panel name="TemplatesButtonsGreen" />
-		<panel name="TemplatesButtons" />
-		<panel name="TemplatesClock" />
-	</screen>
-	<!-- ########## OSD 3D Setup ########## -->
-	<screen name="OSD3DSetupScreen" position="fill" title="OpenWebif Configuration" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="TemplatesMenu1000Layer" />
-		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<panel name="TemplatesButtonsRed" />
-		<panel name="TemplatesButtonsGreen" />
-		<panel name="TemplatesButtons" />
-		<panel name="TemplatesClock" />
-	</screen>
-	<!-- ########## Slow Zap ########## -->
-	<!-- SlowZap for CI+ -->
-	<screen name="SlowZapOpenSetup" position="fill" title="Advanced zap setup" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="TemplatesMenu1000Layer" />
-		<eLabel text="C" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget name="config" position="90,200" size="980,635" scrollbarMode="showOnDemand" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<widget name="help" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
-		<widget name="cancel" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-		<widget name="ok" position="1380,914" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-		<panel name="TemplatesButtons" />
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- ########## Video Enhancement ##########-->

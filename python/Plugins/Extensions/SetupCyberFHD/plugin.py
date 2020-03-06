@@ -61,7 +61,7 @@ def SearchReplaceWrite(skinPartSearchAndReplace, source, target):
 		for item in skinPartSearchAndReplace:
 			skinLine = skinLine.replace(item[0], item[1])
 		outFile.writelines(skinLine)
-	outFile.close()  
+	outFile.close()
 
 colorsetting = [
 	("0", _("Standart")),
