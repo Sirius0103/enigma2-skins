@@ -457,6 +457,8 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 		self["info_sk"] = Label(_(" "))
 		self["info_com"] = Label(_(" "))
 
+		self.version()
+		self.infosk()
 		self.onLayoutFinish.append(self.previewSkin)
 
 	def list(self):
@@ -555,9 +557,6 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 	# Indication
 		self["fgcolor4a"].setText(_(self.fgtext))
 		self["fgcolor4a"].instance.setForegroundColor(parseColor(self.fgColor4))
-
-		self.version()
-		self.infosk()
 
 	def version(self):
 		try:

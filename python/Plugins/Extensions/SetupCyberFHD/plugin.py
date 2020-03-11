@@ -595,6 +595,8 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 		self["info_sk"] = Label(_(" "))
 		self["info_com"] = Label(_(" "))
 
+		self.version()
+		self.infosk()
 		self.onLayoutFinish.append(self.previewSkin)
 
 	def list(self):
@@ -750,9 +752,6 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 	# Icon
 		self["fgcolor5a"].setText(_(self.fglogo))
 		self["fgcolor5a"].instance.setForegroundColor(parseColor(self.fgColor5))
-
-		self.version()
-		self.infosk()
 
 	def version(self):
 		try:
