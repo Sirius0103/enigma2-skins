@@ -936,6 +936,8 @@
 		<panel name="TemplatesMenu500Layer" />
 		<eLabel text="f" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
+		<eLabel position="90,410" size="480,2" backgroundColor="background3" zPosition="1" />
+		<!--new-->
 		<widget source="skins" render="Listbox" position="90,420" size="480,420" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
@@ -947,9 +949,10 @@
 				}
 			</convert>
 		</widget>
+		<widget name="preview" position="190,195" size="280,210" alphatest="on" />
+		<!--old-->
 		<widget name="SkinList" position="90,420" size="480,420" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<!--<widget name="preview" position="190,200" size="280,210" alphatest="on" />-->
-		<widget name="Preview" position="190,200" size="280,210" alphatest="on" />
+		<widget name="Preview" position="190,195" size="280,210" alphatest="on" />
 		<widget source="introduction" render="Label" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
 		<panel name="TemplatesButtonsRed" />
 		<panel name="TemplatesButtonsGreen" />
@@ -2864,15 +2867,15 @@
 		<eLabel position="90,200" size="980,40" backgroundColor="background2" zPosition="-1" />
 		<eLabel text="&gt;" position="95,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
 		<eLabel text="Option 1" position="125,205" size="940,30" font="Titles; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-		<widget name="info-hdd" position="90,240" size="980,225" font="Global; 25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
-		<eLabel position="90,370" size="980,40" backgroundColor="background2" zPosition="-1" />
-		<eLabel text="&gt;" position="95,375" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-		<eLabel text="Option 2" position="125,375" size="940,30" font="Titles; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-		<widget name="info-usb" position="90,410" size="980,225" font="Global; 25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
-		<eLabel position="90,540" size="980,40" backgroundColor="background2" zPosition="-1" />
-		<eLabel text="&gt;" position="95,545" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-		<eLabel text="MultiBoot" position="125,545" size="940,30" font="Titles; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-		<widget name="info-multi" position="90,580" size="980,225" font="Global; 25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
+		<widget name="info-hdd" position="90,245" size="980,115" font="Global; 25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
+		<eLabel position="90,360" size="980,40" backgroundColor="background2" zPosition="-1" />
+		<eLabel text="&gt;" position="95,365" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+		<eLabel text="Option 2" position="125,365" size="940,30" font="Titles; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+		<widget name="info-usb" position="90,405" size="980,115" font="Global; 25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
+		<eLabel position="90,520" size="980,40" backgroundColor="background2" zPosition="-1" />
+		<eLabel text="&gt;" position="95,525" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+		<eLabel text="MultiBoot" position="125,525" size="940,30" font="Titles; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+		<widget name="info-multi" position="90,565" size="980,275" font="Global; 25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
 		<widget name="description" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
 		<panel name="TemplatesButtonsRed" />
 		<panel name="TemplatesButtonsGreen" />
@@ -2930,11 +2933,11 @@
 		<eLabel position="90,200" size="980,40" backgroundColor="background2" zPosition="-1" />
 		<eLabel text="&gt;" position="95,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
 		<eLabel text="Option 1" position="125,205" size="940,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-		<widget name="info-online" position="90,240" size="980,130" font="Global; 25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
-		<eLabel position="90,370" size="980,40" backgroundColor="background2" zPosition="-1" />
-		<eLabel text="&gt;" position="95,375" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-		<eLabel text="Option 2" position="125,375" size="940,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-		<widget name="info-local" position="90,410" size="980,225" font="Global; 25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
+		<widget name="info-online" position="90,245" size="980,275" font="Global; 25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
+		<eLabel position="90,520" size="980,40" backgroundColor="background2" zPosition="-1" />
+		<eLabel text="&gt;" position="95,525" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+		<eLabel text="Option 2" position="125,525" size="940,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+		<widget name="info-local" position="90,565" size="980,275" font="Global; 25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
 		<widget name="description" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
 		<panel name="TemplatesButtonsRed" />
 		<panel name="TemplatesButtonsGreen" />
@@ -2975,11 +2978,11 @@
 		<eLabel position="90,200" size="980,40" backgroundColor="background2" zPosition="-1" />
 		<eLabel text="&gt;" position="95,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
 		<widget source="Title" render="Label" position="125,205" size="940,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-		<eLabel position="90,645" size="980,40" backgroundColor="background2" zPosition="-1" />
-		<eLabel text="&gt;" position="95,650" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-		<eLabel text="Infos" position="125,650" size="940,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-		<widget name="config" position="125,245" size="945,385" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background2" backgroundColorSelected="background5" transparent="1" />
-		<widget source="options" render="Label" position="125,690" size="945,150" font="Global; 25" backgroundColor="background2" backgroundColorSelected="background5" transparent="1" foregroundColor="color2" />
+		<eLabel position="90,520" size="980,40" backgroundColor="background2" zPosition="-1" />
+		<eLabel text="&gt;" position="95,525" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+		<eLabel text="Infos" position="125,525" size="940,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+		<widget name="config" position="90,245" size="980,275" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background2" backgroundColorSelected="background5" transparent="1" />
+		<widget source="options" render="Label" position="90,565" size="980,275" font="Global; 25" backgroundColor="background2" backgroundColorSelected="background5" transparent="1" foregroundColor="color2" />
 		<widget source="description" render="Label" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
 		<panel name="TemplatesButtonsRed" />
 		<panel name="TemplatesButtonsGreen" />
@@ -2994,11 +2997,11 @@
 		<eLabel position="90,200" size="980,40" backgroundColor="background2" zPosition="-1" />
 		<eLabel text="&gt;" position="95,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
 		<widget source="Title" render="Label" position="125,205" size="940,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-		<eLabel position="90,645" size="980,40" backgroundColor="background2" zPosition="-1" />
-		<eLabel text="&gt;" position="95,650" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-		<eLabel text="Infos" position="125,650" size="940,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-		<widget name="config" position="125,245" size="945,385" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background2" backgroundColorSelected="background5" transparent="1" />
-		<widget source="options" render="Label" position="125,690" size="945,150" font="Global; 25" backgroundColor="background2" backgroundColorSelected="background5" transparent="1" foregroundColor="color2" />
+		<eLabel position="90,520" size="980,40" backgroundColor="background2" zPosition="-1" />
+		<eLabel text="&gt;" position="95,525" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+		<eLabel text="Infos" position="125,525" size="940,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+		<widget name="config" position="90,245" size="980,275" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background2" backgroundColorSelected="background5" transparent="1" />
+		<widget source="options" render="Label" position="90,565" size="980,275" font="Global; 25" backgroundColor="background2" backgroundColorSelected="background5" transparent="1" foregroundColor="color2" />
 		<widget source="description" render="Label" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
 		<panel name="TemplatesButtonsRed" />
 		<panel name="TemplatesButtonsGreen" />
@@ -3192,8 +3195,8 @@
 		<eLabel text="t" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
 		<widget name="list" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<widget name="timer1" position="1381,319" size="320,225" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<widget name="timer2" position="1389,566" size="320,225" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget name="timer1" position="1380,320" size="320,225" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget name="timer2" position="1380,560" size="320,225" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
 		<panel name="TemplatesButtonsRed" />
 		<panel name="TemplatesButtonsGreen" />
 		<panel name="TemplatesButtonsYellow" />
@@ -5498,11 +5501,11 @@
 		<eLabel position="90,200" size="980,40" backgroundColor="background2" zPosition="-1" />
 		<eLabel text="&gt;" position="95,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
 		<widget name="label1" position="125,205" size="940,30" font="Titles; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-		<eLabel position="90,370" size="980,40" backgroundColor="background2" zPosition="-1" />
-		<eLabel text="&gt;" position="95,375" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-		<widget name="label2" position="90,245" size="980,90" font="Global; 25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
-		<widget name="nextboot" position="125,375" size="940,30" font="Titles; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-		<widget source="list" render="Listbox" position="90,420" size="980,420" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
+		<eLabel position="90,520" size="980,40" backgroundColor="background2" zPosition="-1" />
+		<eLabel text="&gt;" position="95,525" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+		<widget name="label2" position="90,245" size="980,275" font="Global; 25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
+		<widget name="nextboot" position="125,525" size="940,30" font="Titles; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+		<widget source="list" render="Listbox" position="90,565" size="980,275" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
 			<convert type="StringList" />
 		</widget>
 		<widget name="key_ok" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
@@ -5547,10 +5550,12 @@
 		<panel name="TemplatesTitle" />
 		<eLabel position="90,200" size="980,40" backgroundColor="background2" zPosition="-1" />
 		<eLabel text="&gt;" position="95,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-		<eLabel position="90,370" size="980,40" backgroundColor="background2" zPosition="-1" />
-		<eLabel text="&gt;" position="95,375" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-		<widget source="config" render="Label" position="125,205" size="945,150" font="Global; 30" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<widget source="options" render="Label" position="125,375" size="945,420" font="Global; 30" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget source="Title" render="Label" position="125,205" size="940,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+		<eLabel position="90,520" size="980,40" backgroundColor="background2" zPosition="-1" />
+		<eLabel text="&gt;" position="95,525" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+		<eLabel text="Infos" position="125,525" size="940,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+		<widget source="config" render="Label" position="90,245" size="980,275" font="Global; 30" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget source="options" render="Label" position="90,565" size="980,275" font="Global; 30" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
 		<widget name="description" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
 		<eLabel text="Rename" position="1380,944" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
 		<panel name="TemplatesButtonsRed" />
