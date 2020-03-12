@@ -7930,8 +7930,8 @@
 		<widget source="saturntxt" render="Label" position="1115,715" size="200,30" font="Regular; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
 		<widget source="uranustxt" render="Label" position="1115,745" size="200,30" font="Regular; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
 		<widget source="neptunetxt" render="Label" position="1115,775" size="200,30" font="Regular; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
-		<widget source="moonlighttxt" render="Label" position="1280,440" size="350,30" font="Regular; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
-		<widget source="moondisttxt" render="Label" position="1280,470" size="350,30" font="Regular; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+		<widget source="moonlighttxt" render="Label" position="1280,440" size="350,30" font="Regular; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" />
+		<widget source="moondisttxt" render="Label" position="1280,470" size="350,30" font="Regular; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" />
 		<widget source="sunrise" render="Label" position="1245,565" size="150,30" font="Regular; 25" foregroundColor="color3" backgroundColor="background2" halign="center" transparent="1" />
 		<widget source="sunset" render="Label" position="1390,565" size="150,30" font="Regular; 25" foregroundColor="color3" backgroundColor="background2" halign="center" transparent="1" />
 		<widget source="sunculmination" render="Label" position="1535,565" size="150,30" font="Regular; 25" foregroundColor="color3" backgroundColor="background2" halign="center" transparent="1" />

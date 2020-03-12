@@ -5497,7 +5497,7 @@
 		<widget source="session.FrontendStatus" render="Watches" position="1620,880" size="200,200" foregroundColor="color4" borderColor="black" zPosition="-2" alphatest="on">
 			<convert type="FrontendInfo2">AGC_ANALOG</convert>
 		</widget>
-		<widget source="session.FrontendInfo" render="Label" position="1575,880" size="45,90" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" valign="top" transparent="1" zPosition="5">
+		<widget source="session.FrontendInfo" render="Label" position="1570,880" size="55,90" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" valign="top" transparent="1" zPosition="5">
 			<convert type="FrontendInfo">STRING</convert>
 		</widget>
 	</screen>
