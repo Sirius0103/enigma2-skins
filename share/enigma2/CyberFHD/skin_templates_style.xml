@@ -325,14 +325,14 @@
 		<eLabel position="880,188" size="80,659" backgroundColor="background3" zPosition="-12" />
 		<eLabel position="880,190" size="80,655" backgroundColor="background1" zPosition="-11" />
 		<eLabel position="880,200" size="70,635" backgroundColor="background2" zPosition="-10" />
-		<eLabel text="C" position="880,205" size="70,70" font="Titles; 70" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="-9" />
-		<eLabel text="Y" position="880,275" size="70,70" font="Titles; 70" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="-9" />
-		<eLabel text="B" position="880,345" size="70,70" font="Titles; 70" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="-9" />
-		<eLabel text="E" position="880,415" size="70,70" font="Titles; 70" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="-9" />
-		<eLabel text="R" position="880,485" size="70,70" font="Titles; 70" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="-9" />
-		<eLabel text="F" position="880,625" size="70,70" font="Titles; 70" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="-9" />
-		<eLabel text="H" position="880,695" size="70,70" font="Titles; 70" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="-9" />
-		<eLabel text="D" position="880,765" size="70,70" font="Titles; 70" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="-9" />
+		<eLabel text="C " position="880,205" size="70,70" font="Titles; 70" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="-9" />
+		<eLabel text="Y " position="880,275" size="70,70" font="Titles; 70" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="-9" />
+		<eLabel text="B " position="880,345" size="70,70" font="Titles; 70" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="-9" />
+		<eLabel text="E " position="880,415" size="70,70" font="Titles; 70" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="-9" />
+		<eLabel text="R " position="880,485" size="70,70" font="Titles; 70" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="-9" />
+		<eLabel text="F " position="880,625" size="70,70" font="Titles; 70" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="-9" />
+		<eLabel text="H " position="880,695" size="70,70" font="Titles; 70" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="-9" />
+		<eLabel text="D " position="880,765" size="70,70" font="Titles; 70" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="-9" />
 		<!-- Buttons Layer -->
 		<eLabel position="408,867" size="454,146" backgroundColor="background3" zPosition="-12" />
 		<eLabel position="410,869" size="450,142" backgroundColor="background1" zPosition="-11" />
@@ -347,14 +347,14 @@
 		<eLabel position="0,188" size="80,659" backgroundColor="background3" zPosition="-12" />
 		<eLabel position="0,190" size="80,655" backgroundColor="background1" zPosition="-11" />
 		<eLabel position="10,200" size="70,635" backgroundColor="background2" zPosition="-10" />
-		<eLabel text="C" position="10,205" size="70,70" font="Titles; 70" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="-9" />
-		<eLabel text="Y" position="10,275" size="70,70" font="Titles; 70" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="-9" />
-		<eLabel text="B" position="10,345" size="70,70" font="Titles; 70" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="-9" />
-		<eLabel text="E" position="10,415" size="70,70" font="Titles; 70" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="-9" />
-		<eLabel text="R" position="10,485" size="70,70" font="Titles; 70" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="-9" />
-		<eLabel text="F" position="10,625" size="70,70" font="Titles; 70" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="-9" />
-		<eLabel text="H" position="10,695" size="70,70" font="Titles; 70" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="-9" />
-		<eLabel text="D" position="10,765" size="70,70" font="Titles; 70" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="-9" />
+		<eLabel text="C " position="10,205" size="70,70" font="Titles; 70" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="-9" />
+		<eLabel text="Y " position="10,275" size="70,70" font="Titles; 70" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="-9" />
+		<eLabel text="B " position="10,345" size="70,70" font="Titles; 70" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="-9" />
+		<eLabel text="E " position="10,415" size="70,70" font="Titles; 70" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="-9" />
+		<eLabel text="R " position="10,485" size="70,70" font="Titles; 70" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="-9" />
+		<eLabel text="F " position="10,625" size="70,70" font="Titles; 70" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="-9" />
+		<eLabel text="H " position="10,695" size="70,70" font="Titles; 70" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="-9" />
+		<eLabel text="D " position="10,765" size="70,70" font="Titles; 70" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="-9" />
 	</screen>
 	<screen name="TemplatesMenuRightLayer">
 		<panel name="TemplatesMenuRightCornerBackground2" />
@@ -362,14 +362,14 @@
 		<eLabel position="1840,188" size="80,659" backgroundColor="background3" zPosition="-12" />
 		<eLabel position="1840,190" size="80,655" backgroundColor="background1" zPosition="-11" />
 		<eLabel position="1840,200" size="70,635" backgroundColor="background2" zPosition="-10" />
-		<eLabel text="C" position="1840,205" size="70,70" font="Titles; 70" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="-9" />
-		<eLabel text="Y" position="1840,275" size="70,70" font="Titles; 70" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="-9" />
-		<eLabel text="B" position="1840,345" size="70,70" font="Titles; 70" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="-9" />
-		<eLabel text="E" position="1840,415" size="70,70" font="Titles; 70" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="-9" />
-		<eLabel text="R" position="1840,485" size="70,70" font="Titles; 70" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="-9" />
-		<eLabel text="F" position="1840,625" size="70,70" font="Titles; 70" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="-9" />
-		<eLabel text="H" position="1840,695" size="70,70" font="Titles; 70" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="-9" />
-		<eLabel text="D" position="1840,765" size="70,70" font="Titles; 70" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="-9" />
+		<eLabel text="C " position="1840,205" size="70,70" font="Titles; 70" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="-9" />
+		<eLabel text="Y " position="1840,275" size="70,70" font="Titles; 70" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="-9" />
+		<eLabel text="B " position="1840,345" size="70,70" font="Titles; 70" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="-9" />
+		<eLabel text="E " position="1840,415" size="70,70" font="Titles; 70" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="-9" />
+		<eLabel text="R " position="1840,485" size="70,70" font="Titles; 70" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="-9" />
+		<eLabel text="F " position="1840,625" size="70,70" font="Titles; 70" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="-9" />
+		<eLabel text="H " position="1840,695" size="70,70" font="Titles; 70" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="-9" />
+		<eLabel text="D " position="1840,765" size="70,70" font="Titles; 70" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="-9" />
 	</screen>
 	<screen name="TemplatesMenu500Layer">
 		<panel name="TemplatesMenuLayer" />
