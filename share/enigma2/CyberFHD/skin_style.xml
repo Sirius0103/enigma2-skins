@@ -4253,6 +4253,142 @@
 		<panel name="TemplatesButtons" />
 		<panel name="TemplatesClock" />
 	</screen>
+	<!-- ########## Cross EPG ########## -->
+	<!-- Cross EPG Menu -->
+	<screen name="CrossEPG_Menu" position="fill" title="CrossEPG" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="e" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget source="list" render="Listbox" position="90,200" size="980,600" scrollbarMode="showNever" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
+			<convert type="TemplatedMultiContent">
+					{"template":
+						[
+						MultiContentEntryPixmapAlphaTest(pos=(4, 4), size=(32, 32), png=0),
+						MultiContentEntryText(pos=(50, 0), size=(900, 40), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=1),
+						],
+						"fonts": [gFont("Global", 30)],
+						"itemHeight": 40
+					}
+			</convert>
+		</widget>
+		<panel name="TemplatesButtonsRed" />
+		<panel name="TemplatesButtonsGreen" />
+		<panel name="TemplatesButtonsYellow" />
+		<panel name="TemplatesButtonsBlue" />
+		<panel name="TemplatesButtons" />
+		<panel name="TemplatesClock" />
+	</screen>
+	<!-- Cross EPG Downloader -->
+	<screen name="downloader" position="fill" title="" flags="wfNoBorder" backgroundColor="transparent" zPosition="1">
+		<panel name="TemplatesMenuLayer" />
+		<eLabel text="b" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<panel name="TemplatesMenuUpProgressLayer" />
+		<widget name="progress" position="340,905" size="1500,15" foregroundColor="background4" backgroundColor="background4" transparent="1" zPosition="2" />
+		<widget name="action" render="Label" position="340,925" size="1500,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+		<widget name="status" render="Label" position="340,955" size="1500,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+		<panel name="TemplatesClock" />
+	</screen>
+	<!-- Cross EPG Setup -->
+	<screen name="CrossEPG_Setup" position="fill" title="CrossEPG Setup" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget name="information" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
+		<panel name="TemplatesButtonsRed" />
+		<panel name="TemplatesButtonsGreen" />
+		<panel name="TemplatesButtonsYellow" />
+		<panel name="TemplatesButtonsBlue" />
+		<panel name="TemplatesButtons" />
+		<panel name="TemplatesClock" />
+	</screen>
+	<!-- Cross EPG Providers -->
+	<screen name="CrossEPG_Providers" position="fill" title="CrossEPG - Providers" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="e" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget source="list" render="Listbox" position="90,200" size="980,600" scrollbarMode="showNever" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
+			<convert type="TemplatedMultiContent">
+					{"template":
+						[
+						MultiContentEntryText(pos=(10, 0), size=(900, 40), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=0),
+						MultiContentEntryPixmapAlphaTest(pos=(910, 4), size=(32, 32), png=1),
+						],
+						"fonts": [gFont("Global", 30)],
+						"itemHeight": 40
+					}
+			</convert>
+		</widget>
+		<panel name="TemplatesButtonsRed" />
+		<panel name="TemplatesButtonsGreen" />
+		<panel name="TemplatesButtonsYellow" />
+		<panel name="TemplatesButtonsBlue" />
+		<panel name="TemplatesButtons" />
+		<panel name="TemplatesClock" />
+	</screen>
+	<!-- Cross EPG Ordering -->
+	<screen name="CrossEPG_Ordering" position="fill" title="CrossEPG - Ordering" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="e" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget source="list" render="Listbox" position="90,200" size="980,600" scrollbarMode="showNever" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
+			<convert type="TemplatedMultiContent">
+					{"template":
+						[
+						MultiContentEntryText(pos=(10, 0), size=(900, 40), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=0),
+						MultiContentEntryPixmapAlphaTest(pos=(910, 4), size=(32, 32), png=1),
+						],
+						"fonts": [gFont("Global", 30)],
+						"itemHeight": 40
+					}
+			</convert>
+		</widget>
+		<panel name="TemplatesButtonsRed" />
+		<panel name="TemplatesButtonsGreen" />
+		<panel name="TemplatesButtonsYellow" />
+		<panel name="TemplatesButtonsBlue" />
+		<panel name="TemplatesButtons" />
+		<panel name="TemplatesClock" />
+	</screen>
+	<!-- Cross EPG Info -->
+	<screen name="CrossEPG_Info" position="fill" title="CrossEPG - Info" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="i" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget name="version" position="90,200" size="980,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
+		<widget name="create" position="90,240" size="980,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
+		<widget name="last_update" position="90,280" size="980,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
+		<widget name="headersdb_size" position="90,320" size="980,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
+		<widget name="descriptorsdb_size" position="90,360" size="980,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
+		<widget name="indexesdb_size" position="90,400" size="980,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
+		<widget name="aliasesdb_size" position="90,440" size="980,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
+		<widget name="total_size" position="90,480" size="980,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
+		<widget name="channels_count" position="90,520" size="980,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
+		<widget name="events_count" position="90,560" size="980,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
+		<widget name="hashes_count" position="90,600" size="980,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
+		<panel name="TemplatesButtonsRed" />
+		<panel name="TemplatesButtonsGreen" />
+		<panel name="TemplatesButtonsYellow" />
+		<panel name="TemplatesButtonsBlue" />
+		<panel name="TemplatesButtons" />
+		<panel name="TemplatesClock" />
+	</screen>
+	<!-- Cross EPG About -->
+	<screen name="CrossEPG_About" position="fill" title="CrossEPG - About" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="i" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget name="about" conditional="about" position="90,200" size="980,635" font="Console;25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" />
+		<widget name="rytec_pix" position="990,740" size="70,70" alphatest="on" />
+		<widget name="krkadoni_pix" position="990,810" size="70,22" alphatest="on" />
+		<panel name="TemplatesButtonsRed" />
+		<panel name="TemplatesButtonsGreen" />
+		<panel name="TemplatesButtonsYellow" />
+		<panel name="TemplatesButtonsBlue" />
+		<panel name="TemplatesButtons" />
+		<panel name="TemplatesClock" />
+	</screen>
 	<!-- ########## Dream Explorer ########## -->
 	<!-- DreamExplorerII -->
 	<screen name="DreamExplorerII" position="fill" title="Dream-Explorer" flags="wfNoBorder" backgroundColor="transparent">

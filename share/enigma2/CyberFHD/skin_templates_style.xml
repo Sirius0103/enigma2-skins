@@ -6501,7 +6501,7 @@
 		<!-- Templates Title -->
 		<widget objectTypes="Title,StaticText" source="Title" render="Label" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" zPosition="1" />
 		<!--<widget objectTypes="title,StaticText" source="title" render="Label" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" zPosition="2" />-->
-		<widget objectTypes="screen_path,StaticText" source="screen_path" render="Label" position="80,52" size="1500,30" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" zPosition="3" />
+		<widget objectTypes="screen_path,StaticText" source="screen_path" render="Label" position="80,52" size="1500,30" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" borderWidth="2" zPosition="3" />
 	</screen>
 	<screen name="TemplatesButtons">
 		<panel name="TemplatesButtonsLayer" />
