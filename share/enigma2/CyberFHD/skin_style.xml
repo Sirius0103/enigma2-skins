@@ -306,7 +306,7 @@
 	</screen>
 	<!-- Quit State -->
 	<screen name="QuitMainloopScreen" position="fill" flags="wfNoBorder" backgroundColor="background">
-		<eLabel text="¡" position="860,400" size="220,180" font="Icons; 110" foregroundColor="background3" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<eLabel text="¡" position="860,420" size="220,180" font="Icons; 110" foregroundColor="background3" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<widget name="text" position="0,700" size="1920,200" font="Global; 50" foregroundColor="color2" backgroundColor="background1" halign="center" valign="center" transparent="1" />
 		<eLabel text="Skin Cyber FHD" position="0,150" size="1920,100" font="Titles; 100" foregroundColor="color2" backgroundColor="background1" halign="center" valign="center" transparent="1" />
 	</screen>
@@ -5248,7 +5248,8 @@
 		<widget name="model" position="90,200" size="980,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
 		<widget name="capacity" position="90,240" size="980,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
 		<widget name="bus" position="90,280" size="980,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
-		<widget name="initializetext" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+		<panel name="TemplatesButtonsRed" />
+		<panel name="TemplatesButtonsGreen" />
 		<panel name="TemplatesButtons" />
 		<panel name="TemplatesClock" />
 	</screen>
@@ -5587,82 +5588,6 @@
 		<widget name="coverArt" pixmap="CyberFHD/no_cover.png" position="123,810" size="200,200" alphatest="on" zPosition="2" />
 		<widget name="display" size="1000,30" font="Global; 25" halign="left" valign="top" foregroundColor="color3" backgroundColor="background1" transparent="1" position="120,1010" />
 	</screen>
-	<!-- ########## Meoboot ########## -->
-	<!-- mb Install Main -->
-		<screen name="mbInstallMain" position="fill" title="Meoboot" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="TemplatesMenu1000Layer" />
-		<eLabel text="b" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<eLabel position="90,200" size="980,40" backgroundColor="background2" zPosition="-1" />
-		<eLabel text="&gt;" position="95,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-		<eLabel text="Greeting" position="125,205" size="940,30" font="Titles; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-		<widget name="lab1" position="90,245" size="980,170" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" halign="center" transparent="1" />
-		<eLabel position="90,540" size="980,40" backgroundColor="background2" zPosition="-1" />
-		<eLabel text="&gt;" position="95,545" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-		<eLabel text="Config" position="125,545" size="940,30" font="Titles; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-		<widget name="lab2" position="90,585" size="980,35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" halign="center" transparent="1" />
-		<widget source="list" render="Listbox" position="90,620" size="980,190" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
-		<convert type="StringList" />
-		</widget>
-		<panel name="TemplatesButtonsRed" />
-		<panel name="TemplatesButtonsGreen" />
-		<panel name="TemplatesButtons" />
-		<panel name="TemplatesClock" />
-	</screen>
-	<!-- My Upgrade -->
-	<screen name="MyUpgrade" position="fill" title="Meoboot" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="TemplatesMenu1000Layer" />
-		<eLabel text="b" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget name="lab1" position="90,200" size="980,300" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<panel name="TemplatesClock" />
-	</screen>
-	<!-- mb Image Setup -->
-	<screen name="mbImageSetup" position="fill" title="MeoBoot Image Install" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="TemplatesMenu1000Layer" />
-		<eLabel text="b" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<panel name="TemplatesButtonsRed" />
-		<panel name="TemplatesHelpWindow" />
-		<panel name="TemplatesButtons" />
-		<panel name="TemplatesClock" />
-	</screen>
-	<!-- My Help -->
-	<screen name="MyHelp" position="fill" title="Meoboot Help" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="TemplatesMenu1000Layer" />
-		<eLabel text="I" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget name="lab1" position="90,200" size="980,635" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<panel name="TemplatesClock" />
-	</screen>
-	<!-- Mystart -->
-	<screen name="Mystart" position="fill" title="Meoboot" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="TemplatesMenu1000Layer" />
-		<eLabel text="b" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<eLabel position="90,200" size="980,40" backgroundColor="background2" zPosition="-1" />
-		<eLabel text="&gt;" position="95,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-		<eLabel text="Greeting" position="125,205" size="940,30" font="Titles; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-		<widget name="lab1" position="90,245" size="980,35" font="Global; 25" halign="center" valign="center" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<widget name="lab2" position="90,280" size="980,35" font="Global; 25" halign="center" valign="center" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<widget name="lab3" position="540,315" size="80,80" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<widget name="lab4" position="90,395" size="980,35" font="Global; 25" halign="center" valign="center" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<widget name="lab5" position="90,430" size="980,35" font="Global; 25" halign="center" valign="center" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<eLabel position="90,540" size="980,40" backgroundColor="background2" zPosition="-1" />
-		<eLabel text="&gt;" position="95,545" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-		<eLabel text="MultiBoot STARTUP Selector" position="125,545" size="940,30" font="Titles; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-		<widget source="list" render="Listbox" position="90,585" size="980,225" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
-		<convert type="StringList" />
-		</widget>
-		<panel name="TemplatesButtonsRed" />
-		<panel name="TemplatesButtonsGreen" />
-		<panel name="TemplatesButtonsYellow" />
-		<panel name="TemplatesButtonsBlue" />
-		<panel name="TemplatesButtonsMenu" />
-		<panel name="TemplatesButtons" />
-		<panel name="TemplatesClock" />
-	</screen>
 	<!-- ########## Multiboot ########## -->
 	<!-- OMB Manager List -->
 	<screen name="OMBManagerList" position="fill" title="openMultiboot Manager" flags="wfNoBorder" backgroundColor="transparent">
@@ -5732,6 +5657,216 @@
 		<panel name="TemplatesButtonsRed" />
 		<panel name="TemplatesButtonsGreen" />
 		<panel name="TemplatesButtonsYellow" />
+		<panel name="TemplatesButtons" />
+		<panel name="TemplatesClock" />
+	</screen>
+	<!-- ########## NeoBoot ########## -->
+	<!-- NeoBoot Installation -->
+	<screen name="NeoBootInstallation" position="fill" title="NeoBoot" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="b" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<ePixmap position="90,200" size="530,330" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/NeoBoot/images/matrix.png" />
+		<widget name="label1" position="340,895" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+		<widget name="label2" position="630,200" size="440,330" font="Global; 25" halign="center" valign="center" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+		<widget name="label3" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+		<widget name="config" position="90,540" size="980,300" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<panel name="TemplatesButtonsRed" />
+		<panel name="TemplatesButtonsGreen" />
+		<panel name="TemplatesButtonsYellow" />
+		<panel name="TemplatesButtonsBlue" />
+		<panel name="TemplatesButtons" />
+		<panel name="TemplatesClock" />
+	</screen>
+	<!-- NeoBoot Manager Device -->
+	<screen name="ManagerDevice" position="fill" title="Mount Manager" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="h" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget source="list" render="Listbox" position="90,200" size="980,600" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"template":
+						[
+						MultiContentEntryText(pos = (150, 15), size = (800, 25), flags = RT_VALIGN_TOP, font=0, text = 0),
+						MultiContentEntryText(pos = (180, 65), size = (800, 100), font=1, flags = RT_VALIGN_TOP, text = 1),
+						MultiContentEntryPixmapAlphaBlend(pos = (5, 5), size = (130, 130,), png = 2),
+						],
+					"fonts": [gFont("Global", 25),gFont("Console", 20)],
+					"itemHeight": 140
+				}
+			</convert>
+		</widget>
+		<widget name="lab1" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+		<panel name="TemplatesButtonsRed" />
+		<panel name="TemplatesButtonsGreen" />
+		<panel name="TemplatesButtonsYellow" />
+		<panel name="TemplatesButtonsBlue" />
+		<panel name="TemplatesButtons" />
+		<panel name="TemplatesClock" />
+	</screen>
+	<!-- NeoBoot Devices Conf -->
+	<screen name="DevicesConf" position="fill" title="Choose where to mount your devices to:" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget name="Linconn" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+		<panel name="TemplatesButtonsRed" />
+		<panel name="TemplatesButtonsGreen" />
+		<panel name="TemplatesButtons" />
+		<panel name="TemplatesClock" />
+	</screen>
+	<!-- NeoBoot Disk Label -->
+	<screen name="SetDiskLabel" position="fill" title="Set Disk Label" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="h" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/NeoBoot/files/buttons/k_left.png" position="740,215" size="40,40" alphatest="on" />
+		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/NeoBoot/files/buttons/k_right.png" position="1020,215" size="40,40" alphatest="on" />
+		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/NeoBoot/files/buttons/k_up.png" position="740,315" size="40,40" alphatest="on" />
+		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/NeoBoot/files/buttons/k_down.png" position="1020,315" size="40,40" alphatest="on" />
+		<widget name="infoTXT" position="90,220" size="500,30" font="Global; 25" halign="left" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+		<widget name="devlist" position="800,220" size="200,30" font="Global; 25" halign="left" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+		<widget name="labelname" position="90,270" size="500,30" font="Global; 25" halign="left" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+		<widget name="disklabel" position="800,270" size="200,30" font="Global; 25" halign="left" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+		<widget name="labeltoset" position="90,320" size="500,30" font="Global; 25" halign="left" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+		<widget name="listlabel" position="800,320" size="200,30" font="Global; 25" halign="left" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+		<panel name="TemplatesButtonsRed" />
+		<panel name="TemplatesButtonsGreen" />
+		<panel name="TemplatesButtonsYellow" />
+		<panel name="TemplatesButtonsBlue" />
+		<panel name="TemplatesButtons" />
+		<panel name="TemplatesClock" />
+	</screen>
+	<!-- NeoBoot Image Choose -->
+	<screen name="NeoBootImageChoose" position="fill" title="NeoBoot  Multi-image" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="b" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<eLabel position="90,200" size="980,40" backgroundColor="background2" zPosition="-1" />
+		<eLabel position="90,615" size="980,220" backgroundColor="background2" zPosition="-1" />
+		<eLabel text="&gt;" position="95,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+		<eLabel text="&gt;" position="235,620" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+		<widget name="label1" position="125,205" size="940,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+		<widget name="label2" position="235,650" size="500,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+		<widget name="label3" position="565,770" size="500,60" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="center" transparent="1" />
+		<widget name="label4" position="235,680" size="500,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+		<widget name="label5" position="565,650" size="500,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="right" transparent="1" />
+		<widget name="label6" position="565,680" size="500,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="right" transparent="1" />
+		<widget name="label7" position="565,710" size="500,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="right" transparent="1" />
+		<widget name="label8" position="235,710" size="500,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+		<widget name="label9" position="620,925" size="720,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+		<widget name="label10" position="620,955" size="720,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+		<widget name="label13" position="340,955" size="300,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+		<widget name="label14" position="340,925" size="300,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+		<widget name="label15" position="235,740" size="500,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" halign="left" />
+		<widget name="label19" position="265,620" size="800,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+		<widget name="config" position="90,245" size="980,350" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget name="device_icon" position="95,660" size="130,130" alphatest="on" zPosition="2" />
+		<widget name="progreso" position="535,747" size="530,15" borderWidth="1" zPosition="3" />
+		<!-- Buttons Layer -->
+		<eLabel position="1368,747" size="454,266" backgroundColor="background3" zPosition="-12" />
+		<eLabel position="1370,749" size="450,262" backgroundColor="background1" zPosition="-11" />
+		<eLabel position="1375,755" size="390,250" backgroundColor="background2" zPosition="-10" />
+		<!-- Templates Buttons -->
+		<ePixmap pixmap="CyberFHD/buttons/key_1.png" position="1792,764" size="22,22" alphatest="on" />
+		<ePixmap pixmap="CyberFHD/buttons/key_2.png" position="1792,794" size="22,22" alphatest="on" />
+		<ePixmap pixmap="CyberFHD/buttons/key_3.png" position="1792,824" size="22,22" alphatest="on" />
+		<ePixmap pixmap="CyberFHD/buttons/key_4.png" position="1792,854" size="22,22" alphatest="on" />
+		<ePixmap pixmap="CyberFHD/buttons/button_key_red.png" position="1773,885" size="40,20" alphatest="on" />
+		<ePixmap pixmap="CyberFHD/buttons/button_key_green.png" position="1773,915" size="40,20" alphatest="on" />
+		<ePixmap pixmap="CyberFHD/buttons/button_key_yellow.png" position="1773,945" size="40,20" alphatest="on" />
+		<ePixmap pixmap="CyberFHD/buttons/button_key_blue.png" position="1773,975" size="40,20" alphatest="on" />
+		<widget name="key_1" position="1380,764" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="1" />
+		<widget name="key_2" position="1380,794" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="1" />
+		<widget name="key_3" position="1380,824" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="1" />
+		<widget name="key_red" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="1" />
+		<widget name="key_green" position="1380,914" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="1" />
+		<widget name="key_yellow" position="1380,944" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="1" />
+		<widget name="key_blue" position="1380,974" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="1" />
+		<panel name="TemplatesButtonsMenu" />
+		<panel name="TemplatesClock" />
+	</screen>
+	<!-- NeoBoot Install Image -->
+	<screen name="InstallImage" position="fill" title="NeoBoot - Installation" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget text="NeoBoot opcje dla instalowanego obrazu" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+		<widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<panel name="TemplatesButtonsRed" />
+		<panel name="TemplatesButtonsGreen" />
+		<panel name="TemplatesButtonsYellow" />
+		<panel name="TemplatesButtonsBlue" />
+		<panel name="TemplatesHelpWindow" />
+		<panel name="TemplatesButtons" />
+		<panel name="TemplatesClock" />
+	</screen>
+	<!-- NeoBoot Tools -->
+	<screen name="MBTools" position="fill" title="Narzedzia NeoBoota" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="s" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget source="list" render="Listbox" position="90,200" size="980,600" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"template":
+						[
+						MultiContentEntryText(pos = (50, 0), size = (900, 40), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
+						MultiContentEntryPixmapAlphaTest(pos = (2, 2), size = (35, 35), png = 1),
+						],
+					"fonts": [gFont("Global", 25)],
+					"itemHeight": 40
+				}
+			</convert>
+		</widget>
+	</screen>
+	<!-- NeoBoot Upgrade -->
+	<screen name="MyUpgrade" position="fill" title="Tools Neoboot" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="s" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget source="list" render="Listbox" position="90,200" size="980,600" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"template":
+						[
+						MultiContentEntryText(pos = (50, 0), size = (900, 40), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
+						MultiContentEntryPixmapAlphaTest(pos = (2, 2), size = (35, 35), png = 1),
+						],
+					"fonts": [gFont("Global", 25)],
+					"itemHeight": 40
+				}
+			</convert>
+		</widget>
+	<eLabel text="EXIT - Zrezygnuj" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+	</screen>
+	<!-- NeoBoot Upgrade 2 -->
+	<screen name="MyUpgrade2" position="fill" title="NeoBoot" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="i" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget text="INFORMACJE NeoBoot" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+		<widget name="lab1" position="90,200" size="980,635" font="Console;25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" />
+		<panel name="TemplatesClock" />
+	</screen>
+	<!-- NeoBoot Help -->
+	<screen name="MyHelp" position="fill" title="NeoBoot" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="I" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget text="INFORMACJE NeoBoot" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+		<widget name="lab1" position="90,200" size="980,635" font="Console;25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" />
+		<panel name="TemplatesButtonsRed" />
+		<panel name="TemplatesButtons" />
+		<panel name="TemplatesClock" />
+	</screen>
+	<!-- NeoBootOpis -->
+	<screen name="Opis" position="fill" title="NeoBoot" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="i" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget text="INFORMACJE NeoBoot" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+		<widget name="lab1" position="90,200" size="980,635" font="Console;25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" />
+		<panel name="TemplatesButtonsRed" />
 		<panel name="TemplatesButtons" />
 		<panel name="TemplatesClock" />
 	</screen>
