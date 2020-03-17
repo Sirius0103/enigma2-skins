@@ -30,11 +30,7 @@
 		<widget name="info_git" position="340,895" size="1000,60" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="top" transparent="1" />
 		<widget name="info_pl" position="340,960" size="1000,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="center" transparent="1" />
 		<eLabel text="&gt;INFO&lt;" position="1485,100" size="120,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-		<panel name="TemplatesButtonsRed" />
-		<panel name="TemplatesButtonsGreen" />
-		<panel name="TemplatesButtonsYellow" />
-		<panel name="TemplatesButtonsBlue" />
-		<panel name="TemplatesButtons" />
+		<panel name="TemplatesButtonsKey" />
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- ########## AtileHD ########## -->
@@ -44,11 +40,7 @@
 		<eLabel text="s" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
 		<widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<panel name="TemplatesButtonsRedName" />
-		<panel name="TemplatesButtonsGreenName" />
-		<panel name="TemplatesButtonsYellowName" />
-		<panel name="TemplatesButtonsBlueName" />
-		<panel name="TemplatesButtons" />
+		<panel name="TemplatesButtonsKey" />
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- AtileHD Screens -->
@@ -66,9 +58,7 @@
 			}
 		</convert>
 		</widget>
-		<panel name="TemplatesButtonsRed" />
-		<panel name="TemplatesButtonsGreen" />
-		<panel name="TemplatesButtons" />
+		<panel name="TemplatesButtonsKey" />
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- ########## CyberFHD ########## -->
@@ -108,11 +98,7 @@
 		<widget name="fgcolor4a" position="1520,413" size="300,25" font="Indication; 25" halign="right" backgroundColor="background" transparent="1" />
 		<widget name="fgcolor5a" position="1525,685" size="300,50" font="Titles; 30" halign="left" backgroundColor="background" transparent="1" />
 		<eLabel text="&gt;INFO&lt;" position="1485,100" size="120,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-		<panel name="TemplatesButtonsRed" />
-		<panel name="TemplatesButtonsGreen" />
-		<panel name="TemplatesButtonsYellow" />
-		<panel name="TemplatesButtonsBlue" />
-		<panel name="TemplatesButtons" />
+		<panel name="TemplatesButtonsKey" />
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- ########## CyberLCD ########## -->
@@ -139,11 +125,7 @@
 		<widget name="fgcolor3a" position="1120,710" size="700,25" font="Global; 25" halign="center" backgroundColor="background" transparent="1" />
 		<widget name="fgcolor4a" position="1120,775" size="700,35" font="Indication; 35" halign="center" backgroundColor="background" transparent="1" />
 		<eLabel text="&gt;INFO&lt;" position="1485,100" size="120,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-		<panel name="TemplatesButtonsRed" />
-		<panel name="TemplatesButtonsGreen" />
-		<panel name="TemplatesButtonsYellow" />
-		<panel name="TemplatesButtonsBlue" />
-		<panel name="TemplatesButtons" />
+		<panel name="TemplatesButtonsKey" />
 		<panel name="TemplatesClock" />
 	</screen>
 </skin>

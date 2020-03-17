@@ -6531,6 +6531,14 @@
 		<!-- Templates Buttons Ok -->
 		<eLabel text="&gt;OK&lt;" position="1245,100" size="120,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
 	</screen>
+	<screen name="TemplatesButtonsKey">
+		<!-- Templates Buttons -->
+		<panel name="TemplatesButtons" />
+		<panel name="TemplatesButtonsRed" />
+		<panel name="TemplatesButtonsGreen" />
+		<panel name="TemplatesButtonsYellow" />
+		<panel name="TemplatesButtonsBlue" />
+	</screen>
 	<screen name="TemplatesButtonsRed">
 		<!-- Templates Buttons Red -->
 		<widget objectTypes="red,Label,Button" name="red" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="1" />
