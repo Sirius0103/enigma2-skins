@@ -5060,10 +5060,7 @@
 		<widget name="config" position="90,245" size="980,350" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
 		<widget name="device_icon" position="95,660" size="130,130" alphatest="on" zPosition="2" />
 		<widget name="progreso" position="535,747" size="530,15" borderWidth="1" zPosition="3" />
-		<!-- Buttons Layer -->
-		<eLabel position="1368,747" size="454,266" backgroundColor="background3" zPosition="-12" />
-		<eLabel position="1370,749" size="450,262" backgroundColor="background1" zPosition="-11" />
-		<eLabel position="1375,755" size="390,250" backgroundColor="background2" zPosition="-10" />
+		<panel name="TemplatesButtonsBigLayer" />
 		<!-- Templates Buttons -->
 		<ePixmap pixmap="CyberFHD/buttons/key_1.png" position="1792,764" size="22,22" alphatest="on" />
 		<ePixmap pixmap="CyberFHD/buttons/key_2.png" position="1792,794" size="22,22" alphatest="on" />
@@ -5092,6 +5089,25 @@
 		<widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
 		<panel name="TemplatesHelpWindow" />
 		<panel name="TemplatesButtonsKey" />
+		<panel name="TemplatesClock" />
+	</screen>
+	<!-- NeoBoot Start Image -->
+	<screen name="StartImage" position="fill" title="NeoBoot - Start" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="b" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<ePixmap position="90,200" size="530,330" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/NeoBoot/images/matrix.png" />
+		<widget source="list" render="Listbox" position="90,540" size="980,280" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
+			<convert type="TemplatedMultiContent">
+					{"template": [
+							MultiContentEntryText(pos = (50, 0), size = (900, 40), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
+							MultiContentEntryPixmapAlphaTest(pos = (2, 2), size = (35, 35), png = 1)],
+							"fonts": [gFont("Global", 25)],
+							"itemHeight": 40}
+			</convert>
+		</widget>
+		<widget name="label1" position="340,895" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+		<widget name="label2" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- NeoBoot Tools -->

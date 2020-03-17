@@ -88,6 +88,12 @@
 		<eLabel position="1370,869" size="450,142" backgroundColor="background1" zPosition="-11" />
 		<eLabel position="1375,875" size="390,130" backgroundColor="background2" zPosition="-10" />
 	</screen>
+	<screen name="TemplatesButtonsBigLayer">
+		<!-- Buttons Layer -->
+		<eLabel position="1368,747" size="454,266" backgroundColor="background3" zPosition="-12" />
+		<eLabel position="1370,749" size="450,262" backgroundColor="background1" zPosition="-11" />
+		<eLabel position="1375,755" size="390,250" backgroundColor="background2" zPosition="-10" />
+	</screen>
 	<screen name="TemplatesInfoBarTvLayer">
 		<!-- Info Bar Tv Layer -->
 		<panel name="TemplatesUpLayer1" />
