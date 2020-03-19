@@ -820,7 +820,7 @@
 	<screen name="TemplatesSelectorNew">
 		<!--Selector New-->
 		<widget name="preview" position="190,195" size="280,210" alphatest="on" />
-		<widget source="skins" render="Listbox" position="90,420" size="480,420" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
+		<widget source="skins" render="Listbox" position="90,420" size="480,400" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryText(pos = (10,2), size = (300,40), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1),
