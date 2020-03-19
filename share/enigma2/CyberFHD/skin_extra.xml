@@ -52,10 +52,9 @@
 		<convert type="TemplatedMultiContent">
 			{"template": [
 				MultiContentEntryText(pos=(10,2), size=(320, 35), text = 1, backcolor = MultiContentTemplateColor(3)),
-				MultiContentEntryText(pos=(330,2), size=(150, 35), text = 2, flags = RT_HALIGN_CENTER, backcolor = MultiContentTemplateColor(3)) ],
-			"fonts": [gFont("Global", 25)],
-			"itemHeight": 35
-			}
+				MultiContentEntryText(pos=(330,2), size=(150, 35), text = 2, flags = RT_HALIGN_CENTER, backcolor = MultiContentTemplateColor(3))],
+				"fonts": [gFont("Global", 25)],
+				"itemHeight": 35}
 		</convert>
 		</widget>
 		<panel name="TemplatesButtonsKey" />

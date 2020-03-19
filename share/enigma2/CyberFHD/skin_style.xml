@@ -856,26 +856,33 @@
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- Skin Selector -->
+	<screen name="TemplatesSelectorOld">
+		<!--Selector Old-->
+		<widget name="SkinList" position="90,420" size="480,420" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget name="Preview" position="190,195" size="280,210" alphatest="on" />
+		<widget source="introduction" render="Label" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+	</screen>
+	<screen name="TemplatesSelectorNew">
+		<!--Selector New-->
+		<widget name="preview" position="190,195" size="280,210" alphatest="on" />
+		<widget source="skins" render="Listbox" position="90,420" size="480,420" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryText(pos = (10,5), size = (300,25), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1),
+					MultiContentEntryText(pos = (150,5), size = (300,25), font = 1, flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = 2)],
+					"fonts": [gFont("Global", 30),gFont("Global", 30)],
+					"itemHeight": 40}
+			</convert>
+		</widget>
+		<widget source="description" render="Label" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+	</screen>
 	<screen name="SkinSelector" position="fill" title="Choose your Skin" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenu500Layer" />
 		<eLabel text="f" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
 		<eLabel position="90,410" size="480,2" backgroundColor="background3" zPosition="1" />
-		<!--new-->
-		<widget source="skins" render="Listbox" position="90,420" size="480,420" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-					MultiContentEntryText(pos = (10,5), size = (460,25), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1),
-					MultiContentEntryText(pos = (20,35), size = (450,25), font = 1, flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = 2)],
-					"fonts": [gFont("Global", 25),gFont("Console", 20)],
-					"itemHeight": 60}
-			</convert>
-		</widget>
-		<widget name="preview" position="190,195" size="280,210" alphatest="on" />
-		<!--old-->
-		<widget name="SkinList" position="90,420" size="480,420" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<widget name="Preview" position="190,195" size="280,210" alphatest="on" />
-		<widget source="introduction" render="Label" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+		<panel name="TemplatesSelectorOld" />
+		<panel name="TemplatesSelectorNew" />
 		<panel name="TemplatesButtonsKey" />
 		<panel name="TemplatesClock" />
 	</screen>
@@ -6546,29 +6553,26 @@
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- ########## Streaming Clients ########## -->
+	<screen name="TemplatesStreamingInfoPLi">
+		<widget name="menu" position="90,245" size="980,590" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget name="info" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
+	</screen>
+	<screen name="TemplatesStreamingInfoATV">
+		<widget name="ScrollLabel" position="125,205" size="940,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+		<widget name="ScrollLabel2" position="90,245" size="980,590" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background2" backgroundColorSelected="background5" transparent="1" foregroundColor="color2" />
+	</screen>
 	<!-- Streaming Clients Info -->
 	<screen name="StreamingClientsInfo" position="fill" title="Streaming clients info" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="i" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
-		<widget name="menu" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<widget name="info" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
+		<eLabel position="90,200" size="980,40" backgroundColor="background2" zPosition="-1" />
+		<eLabel text="&gt;" position="95,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+		<panel name="TemplatesStreamingInfoPLi" />
+		<panel name="TemplatesStreamingInfoATV" />
 		<panel name="TemplatesButtonsKey" />
 		<panel name="TemplatesClock" />
 	</screen>
-	<!-- ********** OpenATV ********** -->
-	<!-- Streaming Clients Info -->
-	<!--<screen name="StreamingClientsInfo" position="fill" title="Streaming clients info" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="TemplatesMenu1000Layer" />
-		<eLabel text="i" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<eLabel position="90,200" size="980,40" backgroundColor="background2" zPosition="-1" />
-		<widget name="ScrollLabel" position="125,205" size="940,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-		<eLabel text="&gt;" position="95,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-		<widget name="ScrollLabel2" position="90,245" size="980,590" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background2" backgroundColorSelected="background5" transparent="1" foregroundColor="color2" />
-		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
-	</screen>-->
 	<!-- ########## System Time ########## -->
 	<!-- System Time Setup -->
 	<screen name="SystemTimeSetupScreen" position="fill" title="System Time" flags="wfNoBorder" backgroundColor="transparent">
@@ -6742,7 +6746,7 @@
 	<!-- ########## Video Finetune ##########-->
 	<!-- Video Finetune -->
 	<screen name="VideoFinetune" position="fill" backgroundColor="background1">
-		<widget source="Canvas" render="Canvas" position="fill" />
+		<widget source="Canvas" render="Canvas" position="0,0" size="1920,1080" />
 	</screen>
 	<!-- ########## Volume Adjustl ########## -->
 	<!--Volume Adjust-->
