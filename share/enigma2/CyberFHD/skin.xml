@@ -4291,9 +4291,7 @@
 		<widget name="list_left_head" position="90,200" size="980,40" font="Global; 25" backgroundColor="background2" transparent="1" foregroundColor="color1" />
 		<widget name="list_left" position="90,245" size="980,385" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background2" backgroundColorSelected="background5" transparent="1" foregroundColor="color2" />
 		<widget name="unpacking" position="90,645" size="980,40" font="Global; 25" backgroundColor="background2" transparent="1" foregroundColor="color1" />
-		<panel name="TemplatesButtonsRed" />
-		<panel name="TemplatesButtonsGreen" />
-		<panel name="TemplatesButtons" />
+		<panel name="TemplatesButtonsKey" />
 		<panel name="TemplatesClock" />
 	</screen>
 	<screen name="ArchiverMenuScreen" position="0,0" size="1920,1080" title="Archiver Menu Screen" flags="wfNoBorder" backgroundColor="transparent">
