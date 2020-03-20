@@ -813,29 +813,29 @@
 	<!-- Skin Selector -->
 	<screen name="TemplatesSelectorOld">
 		<!--Selector Old-->
-		<widget name="SkinList" position="90,420" size="480,420" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<widget name="Preview" position="190,195" size="280,210" alphatest="on" />
+		<widget name="Preview" position="90,195" size="280,210" alphatest="on" />
+		<widget name="SkinList" position="90,420" size="980,420" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
 		<widget source="introduction" render="Label" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
 	</screen>
 	<screen name="TemplatesSelectorNew">
 		<!--Selector New-->
-		<widget name="preview" position="190,195" size="280,210" alphatest="on" />
-		<widget source="skins" render="Listbox" position="90,420" size="480,400" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
+		<widget name="preview" position="90,195" size="280,210" alphatest="on" />
+		<widget source="skins" render="Listbox" position="90,420" size="980,420" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (10,2), size = (300,40), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1),
-					MultiContentEntryText(pos = (150,2), size = (300,40), font = 1, flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = 2)],
-					"fonts": [gFont("Global", 30),gFont("Global", 30)],
-					"itemHeight": 40}
+					MultiContentEntryText(pos = (10,0), size = (600,35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1),
+					MultiContentEntryText(pos = (550,0), size = (400,35), font = 1, flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = 2)],
+					"fonts": [gFont("Global", 25),gFont("Global", 25)],
+					"itemHeight": 35}
 			</convert>
 		</widget>
 		<widget source="description" render="Label" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
 	</screen>
 	<screen name="SkinSelector" position="fill" title="Choose your Skin" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="TemplatesMenu500Layer" />
+		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="f" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
-		<eLabel position="90,410" size="480,2" backgroundColor="background3" zPosition="1" />
+		<eLabel position="90,410" size="980,2" backgroundColor="background3" zPosition="1" />
 		<panel name="TemplatesSelectorOld" />
 		<panel name="TemplatesSelectorNew" />
 		<panel name="TemplatesButtonsKey" />
@@ -2511,6 +2511,16 @@
 		<panel name="TemplatesButtonsKey" />
 		<panel name="TemplatesClock" />
 	</screen>
+	<!-- OPKG Installer -->
+	<screen name="OpkgInstaller" position="fill" title="Install extensions" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="H" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget name="list" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget source="introduction" render="Label" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+		<panel name="TemplatesButtonsKey" />
+		<panel name="TemplatesClock" />
+	</screen>
 	<!-- IPKG Installer -->
 	<screen name="IpkgInstaller" position="fill" title="Install extensions" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenu1000Layer" />
@@ -3747,6 +3757,37 @@
 		<panel name="TemplatesButtonsKey" />
 		<panel name="TemplatesClock" />
 	</screen>
+	<!-- ########## ChromiumOS ########## -->
+	<!-- ChromiumOS Start -->
+	<screen name="ChromiumOSWindow" position="0,0" size="1920,1080" title="Start ChromiumOS" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="N" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget name="startdesc" position="340,895" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+		<widget name="settingdesc" position="340,925" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+		<widget name="helpdesc" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+		<panel name="TemplatesHelpWindow" />
+		<panel name="TemplatesButtonsKey" />
+		<panel name="TemplatesClock" />
+	</screen>
+	<!-- ChromiumOS Settings -->
+	<screen name="ChromiumOSSettings" position="0,0" size="1920,1080" title="ChromiumOS Settings" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<panel name="TemplatesButtonsKey" />
+		<panel name="TemplatesClock" />
+	</screen>
+	<!-- ChromiumOS Help -->
+	<screen name="ChromiumOSHelpWindow" position="0,0" size="1920,1080" title="ChromiumOS Help" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenuLayer" />
+		<eLabel text="I" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<panel name="TemplatesButtonsKey" />
+		<panel name="TemplatesClock" />
+	</screen>
 	<!-- ########## Cross EPG ########## -->
 	<!-- Cross EPG Menu -->
 	<screen name="CrossEPG_Menu" position="fill" title="CrossEPG" flags="wfNoBorder" backgroundColor="transparent">
@@ -4811,6 +4852,16 @@
 	</screen>
 	<!-- MediaInfo Setup -->
 	<screen name="mediaInfoSetup" position="fill" title="MediaInfo Setup" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<panel name="TemplatesButtonsKey" />
+		<panel name="TemplatesClock" />
+	</screen>
+	<!-- ########## MiniTV ########## -->
+	<!-- MiniTV Setup -->
+	<screen name="MiniTVSetup" position="0,0" size="1920,1080" title="MiniTV Setup" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
@@ -6540,6 +6591,224 @@
 		<panel name="TemplatesButtonsKey" />
 		<panel name="TemplatesClock" />
 	</screen>
+	<!-- ########## Subtitles Search ########## -->
+	<!-- SubsSupport Settings -->
+	<screen name="SubsSupportSettings" position="0,0" size="1920,1080" title="SubsSupport settings" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="s" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget source="menuList" render="Listbox" position="90,200" size="980,630" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"templates":
+					{"default": (35, [
+						MultiContentEntryText(pos=(10, 0), size=(940, 35), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text=0)
+						], True, "showOnDemand")},
+						"fonts": [gFont("Global", 25)],
+						"itemHeight": 35}
+			</convert>
+		</widget>
+		<panel name="TemplatesClock" />
+	</screen>
+	<!-- SubsSearch Search -->
+	<screen name="SubsSearch" position="0,0" size="1920,1080" title="Subtitles search" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="e" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget source="search_info" render="Listbox" position="90,200" size="980,300" zPosition="3" scrollbarMode="showNever" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"templates":
+					{"default": (35, [
+						MultiContentEntryText(pos = (10,0), size = (300,35), font = 0, flags = RT_HALIGN_LEFT, text = 0), # langname,
+						MultiContentEntryText(pos = (330,0), size = (620,35), font = 0, flags = RT_HALIGN_LEFT, text = 1)
+						], False, "showNever")},
+						"fonts": [gFont("Global", 25)],
+						"itemHeight":35,}
+			</convert>
+		</widget>
+		<eLabel position="90,505" size="980,40" backgroundColor="background2" zPosition="-1" />
+		<widget source="header_country" render="Label" position="95,510" size="200,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+		<widget source="header_release" render="Label" position="285,510" size="200,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+		<widget source="header_provider" render="Label" position="815,510" size="200,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+		<widget source="header_sync" render="Label" position="1005,510" size="30,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+		<widget source="subtitles" render="Listbox" position="90,550" size="980,290" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"templates":
+					{"default": (35, [
+						MultiContentEntryPixmapAlphaBlend(pos = (0,0), size = (35,35), png=0), # key,
+						MultiContentEntryText(pos = (40,0), size = (150,35), font = 0, flags = RT_HALIGN_LEFT, text = 1), # language,
+						MultiContentEntryText(pos = (200,0), size = (590,35), font = 0, flags = RT_HALIGN_LEFT, text = 2), # filename,
+						MultiContentEntryText(pos = (800,0), size = (110,35), font = 0, flags = RT_HALIGN_LEFT, text = 3), # size,
+						MultiContentEntryPixmapAlphaBlend(pos = (915,0), size = (35,35), png=4), # syncPng,
+						], True, "showOnDemand")},
+						"fonts": [gFont("Global", 25), gFont("Global", 15)],
+						"itemHeight": 35}
+			</convert>
+		</widget>
+		<widget name="loadmessage" position="90,550" size="980,290" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<widget name="errormessage" position="90,550" size="980,290" font="Global; 25" foregroundColor="red" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesButtonsMenu" />
+		<panel name="TemplatesButtonsKey" />
+		<panel name="TemplatesClock" />
+	</screen>
+	<!-- SubsMenu -->
+	<screen name="SubsMenu" position="0,0" size="1920,1080" title="Currently choosed subtitles" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget name="title_label" position="90,205" size="980,30" font="Global; 25" valign="center" halign="left" foregroundColor="color2" backgroundColor="background1" transparent="1" />
+		<widget name="subfile_label" position="90,240" size="980,30" font="Global; 25" valign="center" halign="left" foregroundColor="color2" backgroundColor="background1" transparent="1" />
+		<widget name="subfile_list" position="90,275" size="980,30" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget name="menu_list" position="90,310" size="980,480" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget name="copyright" position="90,805" size="980,30" font="Global; 25" valign="center" halign="left" foregroundColor="color2" backgroundColor="background1" transparent="1" />
+	</screen>
+	<!-- SubsChooser -->
+	<screen name="SubsChooser" position="0,0" size="1920,1080" title="Choose Subtitles" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="@" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget name="file_list" position="90,200" size="980,490" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget name="menu_list" position="90,735" size="980,100" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+	</screen>
+	<!-- SubsSearch Settings -->
+	<screen name="SubsSearchSettings" position="0,0" size="1920,1080" title="Subtitles search settings" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="e" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget name="config" position="90,200" size="980,280" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<eLabel position="90,505" size="980,40" backgroundColor="background2" zPosition="-1" />
+		<widget source="header_name" render="Label" position="95,510" size="250,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+		<widget source="header_lang" render="Label" position="385,510" size="250,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+		<widget source="header_state" render="Label" position="785,510" size="250,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="right" transparent="1" />
+		<widget source="providers" render="Listbox" position="90,550" size="980,280" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"templates":
+					{"default": (35, [
+						MultiContentEntryText(pos = (10,0), size = (280,35), font = 0, flags = RT_HALIGN_LEFT, text = 0), # name,
+						MultiContentEntryText(pos = (300,0), size = (500,35), font = 0, flags = RT_HALIGN_LEFT, text = 1), # lang,
+						MultiContentEntryText(pos = (750,0), size = (200,35), font = 0, flags = RT_HALIGN_RIGHT, text = 2) # enabled,
+					], True, "showOnDemand"),
+					"notselected": (35, [
+						MultiContentEntryText(pos = (10,0), size = (280,35), font = 0, flags = RT_HALIGN_LEFT, text = 0), # name,
+						MultiContentEntryText(pos = (300,0), size = (500,35), font = 0, flags = RT_HALIGN_LEFT, text = 1), # lang,
+						MultiContentEntryText(pos = (750,0), size = (200,35), font = 0, flags = RT_HALIGN_RIGHT, text = 2) # enabled,
+						], False, "showOnDemand")},
+						"fonts": [gFont("Global", 25)],
+						"itemHeight": 35}
+			</convert>
+		</widget>
+		<panel name="TemplatesButtonsKey" />
+		<panel name="TemplatesClock" />
+	</screen>
+	<!-- SubsSearch Context -->
+	<screen name="SubsSearchContextMenu" position="340,895" size="1000,90" title="Subtitles context" flags="wfNoBorder" backgroundColor="background1" zPosition="99">
+		<widget source="context_menu" render="Listbox" position="0,0" size="1000,70" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background1" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"templates":
+					{"default": (35, [
+						MultiContentEntryText(pos = (10,0), size = (940,35), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0), # langname,
+						], True, "showOnDemand")},
+						"fonts": [gFont("Global", 25)],
+						"itemHeight":35}
+			</convert>
+		</widget>
+	</screen>
+	<!-- SubsSearch Params -->
+	<screen name="SubsSearchParamsMenu" position="0,0" size="1920,1080" title="Source title" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget source="sourceTitleInfo" render="Label" position="340,925" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+		<widget source="sourceTitle" render="Label" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+		<panel name="TemplatesClock" />
+	</screen>
+	<!-- SubsSearch Download -->
+	<screen name="SubsSearchDownloadOptions" position="0,0" size="1920,1080" title="Download subtitles" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget source="fname" render="Label" position="340,925" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+		<widget source="dpath" render="Label" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+		<panel name="TemplatesButtonsKey" />
+		<panel name="TemplatesClock" />
+	</screen>
+	<!-- SubsSearch Embedded -->
+	<screen name="SubsEmbeddedSelection" position="0,0" size="1920,1080" title="Choose subtitles" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget source="streams" render="Listbox" position="90,200" size="980,630" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"templates":
+					{"default": (35, [
+						MultiContentEntryText(pos = (10, 0), size = (50, 35),  font = 0, flags = RT_HALIGN_LEFT, text = 1), # key,
+						MultiContentEntryText(pos = (70, 0), size = (100, 35),  font = 0, flags = RT_HALIGN_LEFT, text = 2), # number,
+						MultiContentEntryText(pos = (180, 0), size = (500, 35), font = 0, flags = RT_HALIGN_LEFT, text = 3), # description,
+						MultiContentEntryText(pos = (690, 0), size = (200, 35), font = 0, flags = RT_HALIGN_LEFT, text = 4), # language,
+						], True, "showNever")},
+						"fonts": [gFont("Regular", 30)],
+						"itemHeight": 35}
+			</convert>
+		</widget>
+	</screen>
+	<!-- SubsDownloadedSelection -->
+	<screen name="SubsDownloadedSelection" position="0,0" size="1920,1080" title="Downloaded Subtitles" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="e" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<eLabel position="90,200" size="980,40" backgroundColor="background2" zPosition="-1" />
+		<widget source="header_name" render="Label" position="95,205" size="200,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+		<widget source="header_provider" render="Label" position="565,205" size="200,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
+		<widget source="header_date" render="Label" position="835,205" size="200,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="right" transparent="1" />
+		<widget source="subtitles" render="Listbox" position="90,245" size="980,600" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"templates":
+					{"default": (60, [
+						MultiContentEntryPixmapAlphaBlend(pos = (5, 15), size = (30, 30), png=0), # key,
+						MultiContentEntryText(pos = (45, 0), size = (500, 60), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text=1), # name,
+						MultiContentEntryText(pos = (555, 0), size = (240, 60), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2), # provider,
+						MultiContentEntryText(pos = (805, 0), size = (145, 60), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 3), # date,
+						], True, "showOnDemand")},
+						"fonts": [gFont("Global", 25)],
+						"itemHeight": 60}
+			</convert>
+		</widget>
+		<widget source="entries_sum" render="Label" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+		<panel name="TemplatesButtonsInfo" />
+		<panel name="TemplatesButtonsKey" />
+		<panel name="TemplatesClock" />
+	</screen>
+	<!-- SubsSearch BaseMenuScreen -->
+	<screen name="TemplatesBaseMenuScreen">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<panel name="TemplatesButtonsKey" />
+		<panel name="TemplatesClock" />
+	</screen>
+	<screen name="SubsSetupExternal" position="0,0" size="1920,1080" title="" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesBaseMenuScreen" />
+	</screen>
+	<screen name="SubsSetupMainMisc" position="0,0" size="1920,1080" title="" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesBaseMenuScreen" />
+	</screen>
+	<screen name="SubsSetupEmbedded" position="0,0" size="1920,1080" title="" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesBaseMenuScreen" />
+	</screen>
+	<screen name="SubsSetupGeneral" position="0,0" size="1920,1080" title="" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesBaseMenuScreen" />
+	</screen>
+	<screen name="SubsDownloadedSubtitlesMenu" position="0,0" size="1920,1080" title="" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesBaseMenuScreen" />
+	</screen>
+	<screen name="SubsSearchProviderMenu" position="0,0" size="1920,1080" title="" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesBaseMenuScreen" />
+	</screen>
+	<screen name="SubsSetupDVBPlayer" position="0,0" size="1920,1080" title="" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesBaseMenuScreen" />
+	</screen>
 	<!-- ########## System Time ########## -->
 	<!-- System Time Setup -->
 	<screen name="SystemTimeSetupScreen" position="fill" title="System Time" flags="wfNoBorder" backgroundColor="transparent">
@@ -7122,27 +7391,27 @@
 		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
 		<widget name="config" position="90,200" size="980,515" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<widget source="profiles" render="Listbox" position="90,715" size="980,120" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
+		<widget source="profiles" render="Listbox" position="90,725" size="980,105" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"templates":
-					{"default": (45, [
-						MultiContentEntryText(pos=(50, 0), size=(600, 40), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text=1),
-						MultiContentEntryText(pos=(650, 0), size=(300, 40), font=1, flags=RT_HALIGN_RIGHT|RT_VALIGN_CENTER|RT_WRAP, text=2),
+					{"default": (35, [
+						MultiContentEntryText(pos=(50, 0), size=(600, 35), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text=1),
+						MultiContentEntryText(pos=(650, 0), size=(300, 35), font=1, flags=RT_HALIGN_RIGHT|RT_VALIGN_CENTER|RT_WRAP, text=2),
 						MultiContentEntryPixmapAlphaTest(pos=(10, 8), size=(25, 25), png=3),
 					], True, "showOnDemand"),
-					"notselected": (40, [
-						MultiContentEntryText(pos=(50, 0), size=(600, 40), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text=1),
-						MultiContentEntryText(pos=(650, 0), size=(300, 40), font=1, flags=RT_HALIGN_RIGHT|RT_VALIGN_CENTER|RT_WRAP, text=2),
+					"notselected": (35, [
+						MultiContentEntryText(pos=(50, 0), size=(600, 35), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text=1),
+						MultiContentEntryText(pos=(650, 0), size=(300, 35), font=1, flags=RT_HALIGN_RIGHT|RT_VALIGN_CENTER|RT_WRAP, text=2),
 						MultiContentEntryPixmapAlphaTest(pos=(10, 8), size=(25, 25), png=3),
 					], False, "showOnDemand")},
 					"fonts": [gFont("Global",25), gFont("Global",25)],
-					"itemHeight": 40,
+					"itemHeight": 35,
 					"scrollbarMode": "showOnDemand",}
 			</convert>
 		</widget>
 		<panel name="TemplatesButtonsKey" />
 		<panel name="TemplatesClock" />
-  </screen>
+	</screen>
 	<!-- VCS Profile -->
 	<screen name="VcsProfileSetup" position="fill" title="" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenu1000Layer" />
