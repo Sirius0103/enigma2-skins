@@ -4340,7 +4340,7 @@
 		<panel name="TemplatesButtonsKey" />
 		<panel name="TemplatesClock" />
 	</screen>
-	<screen name="ArchiverMenuScreen" position="0,0" size="1920,1080" title="Archiver Menu Screen" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="ArchiverMenuScreen" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="TemplatesArchiverMenuScreen" />
 	</screen>
 	<screen name="ArchiverInfoScreen" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
