@@ -4717,52 +4717,34 @@
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- ########## Hotkey ########## -->
-	<!-- ********** OpenPLi ********** -->
-	<!-- Hotkey Setup -->
-	<screen name="HotkeySetup" position="fill" title="Input" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="TemplatesHotkeySetup">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="k" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<eLabel position="579,200" size="2,635" backgroundColor="background3" zPosition="1" />
 		<panel name="TemplatesTitle" />
 		<widget name="list" position="90,200" size="480,600" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
 		<widget name="choosen" position="590,200" size="480,600" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget name="description" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
 		<panel name="TemplatesButtonsKey" />
 		<panel name="TemplatesClock" />
 	</screen>
+	<!-- ********** OpenPLi ********** -->
+	<!-- Hotkey Setup -->
+	<screen name="HotkeySetup" position="fill" title="Input" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesHotkeySetup" />
+	  </screen>
 	<!-- Hotkey Setup Select -->
 	<screen name="HotkeySetupSelect" position="fill" title="Input" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="TemplatesMenu1000Layer" />
-		<eLabel text="k" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<eLabel position="579,200" size="2,635" backgroundColor="background3" zPosition="1" />
-		<panel name="TemplatesTitle" />
-		<widget name="list" position="90,200" size="480,600" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<widget name="choosen" position="590,200" size="480,600" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
+		<panel name="TemplatesHotkeySetup" />
 	</screen>
 	<!-- ********** OpenATV ********** -->
 	<!-- Hotkey Setup -->
 	<screen name="ButtonSetup" position="fill" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="TemplatesMenu1000Layer" />
-		<eLabel text="k" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<eLabel position="579,200" size="2,635" backgroundColor="background3" zPosition="1" />
-		<panel name="TemplatesTitle" />
-		<widget name="list" position="90,200" size="480,600" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<widget name="choosen" position="590,200" size="480,600" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<widget name="description" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
-		<panel name="TemplatesClock" />
+		<panel name="TemplatesHotkeySetup" />
 	</screen>
 	<!-- Button Setup Select -->
 	<screen name="ButtonSetupSelect" position="fill" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="TemplatesMenu1000Layer" />
-		<eLabel text="k" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<eLabel position="579,200" size="2,635" backgroundColor="background3" zPosition="1" />
-		<panel name="TemplatesTitle" />
-		<widget name="list" position="90,200" size="480,600" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<widget name="choosen" position="590,200" size="480,600" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<widget name="description" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
-		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
+		<panel name="TemplatesHotkeySetup" />
 	</screen>
 	<!-- ########## IMDB ########## -->
 	<!-- IMDB -->
