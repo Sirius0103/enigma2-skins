@@ -1208,6 +1208,27 @@
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- ########## Wizard ########## -->
+	<screen name="TemplatesWizard">
+		<!-- Templates Wizard -->
+		<eLabel text="Welcome..." position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+		<eLabel position="90,200" size="980,40" backgroundColor="background2" zPosition="-1" />
+		<eLabel text="&gt;" position="95,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+		<eLabel text="Greeting" position="125,205" size="940,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+		<widget name="text" position="90,245" size="980,275" font="Global;22" backgroundColor="background1" halign="center" valign="center" transparent="1" />
+		<eLabel position="90,520" size="980,40" backgroundColor="background2" zPosition="-1" />
+		<eLabel text="&gt;" position="95,525" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+		<eLabel text="Config" position="125,525" size="940,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+		<widget name="config" position="90,565" size="980,275" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget source="list" render="Listbox" position="90,565" size="980,275" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
+			<convert type="StringList" />
+		</widget>
+		<widget name="languagetext" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+		<widget name="rc" position="1643,260" size="154,500" pixmaps="skin_default/rc.png,skin_default/rcold.png" />
+		<widget name="arrowdown" pixmap="skin_default/arrowdown.png" position="0,0" size="55,105" zPosition="11" alphatest="on" />
+		<widget name="arrowdown2" pixmap="skin_default/arrowdown.png" position="0,0" size="55,105" zPosition="11" alphatest="on" />
+		<widget name="arrowup" pixmap="skin_default/arrowup.png" position="0,0" size="55,105" zPosition="11" alphatest="on" />
+		<widget name="arrowup2" pixmap="skin_default/arrowup.png" position="0,0" size="55,105" zPosition="11" alphatest="on" />
+	</screen>
 	<!-- Start Wizard -->
 	<screen name="StartWizard" position="fill" title="Welcome..." flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenu1000Layer" />
@@ -3759,7 +3780,7 @@
 	</screen>
 	<!-- ########## ChromiumOS ########## -->
 	<!-- ChromiumOS Start -->
-	<screen name="ChromiumOSWindow" position="0,0" size="1920,1080" title="Start ChromiumOS" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="ChromiumOSWindow" position="fill" title="Start ChromiumOS" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="N" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
@@ -3772,7 +3793,7 @@
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- ChromiumOS Settings -->
-	<screen name="ChromiumOSSettings" position="0,0" size="1920,1080" title="ChromiumOS Settings" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="ChromiumOSSettings" position="fill" title="ChromiumOS Settings" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
@@ -3781,7 +3802,7 @@
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- ChromiumOS Help -->
-	<screen name="ChromiumOSHelpWindow" position="0,0" size="1920,1080" title="ChromiumOS Help" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="ChromiumOSHelpWindow" position="fill" title="ChromiumOS Help" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenuLayer" />
 		<eLabel text="I" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
@@ -4135,7 +4156,7 @@
 	</screen>
 	<!-- ########## File Commander ########## -->
 	<!-- File Commander Screen -->
-	<screen name="FileCommanderScreen" position="fill" title=" " flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="FileCommanderScreen" position="fill" title="" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenuLayer" />
 		<panel name="TemplatesMenu1800Layer" />
 		<panel name="TemplatesMenuLeftLayer" />
@@ -4263,36 +4284,41 @@
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- Archiver Menu Screen -->
-	<screen name="ArchiverMenuScreen" position="fill" title="Archiver Menu Screen" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="TemplatesArchiverMenuScreen">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
 		<widget name="list_left_head" position="90,200" size="980,40" font="Global; 25" backgroundColor="background2" transparent="1" foregroundColor="color1" />
 		<widget name="list_left" position="90,245" size="980,385" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background2" backgroundColorSelected="background5" transparent="1" foregroundColor="color2" />
 		<widget name="unpacking" position="90,645" size="980,40" font="Global; 25" backgroundColor="background2" transparent="1" foregroundColor="color1" />
-		<panel name="TemplatesButtonsKey" />
+		<panel name="TemplatesButtonsRed" />
+		<panel name="TemplatesButtonsGreen" />
+		<panel name="TemplatesButtons" />
 		<panel name="TemplatesClock" />
 	</screen>
+	<screen name="ArchiverMenuScreen" position="0,0" size="1920,1080" title="Archiver Menu Screen" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesArchiverMenuScreen" />
+	</screen>
 	<screen name="ArchiverInfoScreen" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="ArchiverMenuScreen"/>
+		<panel name="TemplatesArchiverMenuScreen" />
 	</screen>
 	<screen name="RarMenuScreen" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="ArchiverMenuScreen"/>
+		<panel name="TemplatesArchiverMenuScreen" />
 	</screen>
 	<screen name="UnzipMenuScreen" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="ArchiverMenuScreen"/>
+		<panel name="TemplatesArchiverMenuScreen" />
 	</screen>
 	<screen name="TarMenuScreen" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="ArchiverMenuScreen"/>
+		<panel name="TemplatesArchiverMenuScreen" />
 	</screen>
 	<screen name="ipkMenuScreen" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="ArchiverMenuScreen"/>
+		<panel name="TemplatesArchiverMenuScreen" />
 	</screen>
 	<screen name="GunzipMenuScreen" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="ArchiverMenuScreen"/>
+		<panel name="TemplatesArchiverMenuScreen" />
 	</screen>
 	<screen name="UnpackInfoScreen" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="ArchiverInfoScreen"/>
+		<panel name="TemplatesArchiverInfoScreen" />
 	</screen>
 	<!-- ########## Full Backup ########## -->
 	<!-- Full Backup Config -->
@@ -4861,7 +4887,7 @@
 	</screen>
 	<!-- ########## MiniTV ########## -->
 	<!-- MiniTV Setup -->
-	<screen name="MiniTVSetup" position="0,0" size="1920,1080" title="MiniTV Setup" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="MiniTVSetup" position="fill" title="MiniTV Setup" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
@@ -6593,7 +6619,7 @@
 	</screen>
 	<!-- ########## Subtitles Search ########## -->
 	<!-- SubsSupport Settings -->
-	<screen name="SubsSupportSettings" position="0,0" size="1920,1080" title="SubsSupport settings" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="SubsSupportSettings" position="fill" title="SubsSupport settings" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="s" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
@@ -6601,8 +6627,8 @@
 			<convert type="TemplatedMultiContent">
 				{"templates":
 					{"default": (35, [
-						MultiContentEntryText(pos=(10, 0), size=(940, 35), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text=0)
-						], True, "showOnDemand")},
+						MultiContentEntryText(pos=(10, 0), size=(940, 35), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text=0)],
+						True, "showOnDemand")},
 						"fonts": [gFont("Global", 25)],
 						"itemHeight": 35}
 			</convert>
@@ -6610,7 +6636,7 @@
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- SubsSearch Search -->
-	<screen name="SubsSearch" position="0,0" size="1920,1080" title="Subtitles search" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="SubsSearch" position="fill" title="Subtitles search" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="e" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
@@ -6619,8 +6645,8 @@
 				{"templates":
 					{"default": (35, [
 						MultiContentEntryText(pos = (10,0), size = (300,35), font = 0, flags = RT_HALIGN_LEFT, text = 0), # langname,
-						MultiContentEntryText(pos = (330,0), size = (620,35), font = 0, flags = RT_HALIGN_LEFT, text = 1)
-						], False, "showNever")},
+						MultiContentEntryText(pos = (330,0), size = (620,35), font = 0, flags = RT_HALIGN_LEFT, text = 1)],
+						False, "showNever")},
 						"fonts": [gFont("Global", 25)],
 						"itemHeight":35,}
 			</convert>
@@ -6638,8 +6664,8 @@
 						MultiContentEntryText(pos = (40,0), size = (150,35), font = 0, flags = RT_HALIGN_LEFT, text = 1), # language,
 						MultiContentEntryText(pos = (200,0), size = (590,35), font = 0, flags = RT_HALIGN_LEFT, text = 2), # filename,
 						MultiContentEntryText(pos = (800,0), size = (110,35), font = 0, flags = RT_HALIGN_LEFT, text = 3), # size,
-						MultiContentEntryPixmapAlphaBlend(pos = (915,0), size = (35,35), png=4), # syncPng,
-						], True, "showOnDemand")},
+						MultiContentEntryPixmapAlphaBlend(pos = (915,0), size = (35,35), png=4)], # syncPng,
+						True, "showOnDemand")},
 						"fonts": [gFont("Global", 25), gFont("Global", 15)],
 						"itemHeight": 35}
 			</convert>
@@ -6651,7 +6677,7 @@
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- SubsMenu -->
-	<screen name="SubsMenu" position="0,0" size="1920,1080" title="Currently choosed subtitles" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="SubsMenu" position="fill" title="Currently choosed subtitles" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
@@ -6662,7 +6688,7 @@
 		<widget name="copyright" position="90,805" size="980,30" font="Global; 25" valign="center" halign="left" foregroundColor="color2" backgroundColor="background1" transparent="1" />
 	</screen>
 	<!-- SubsChooser -->
-	<screen name="SubsChooser" position="0,0" size="1920,1080" title="Choose Subtitles" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="SubsChooser" position="fill" title="Choose Subtitles" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="@" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
@@ -6670,7 +6696,7 @@
 		<widget name="menu_list" position="90,735" size="980,100" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
 	</screen>
 	<!-- SubsSearch Settings -->
-	<screen name="SubsSearchSettings" position="0,0" size="1920,1080" title="Subtitles search settings" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="SubsSearchSettings" position="fill" title="Subtitles search settings" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="e" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
@@ -6685,15 +6711,15 @@
 					{"default": (35, [
 						MultiContentEntryText(pos = (10,0), size = (280,35), font = 0, flags = RT_HALIGN_LEFT, text = 0), # name,
 						MultiContentEntryText(pos = (300,0), size = (500,35), font = 0, flags = RT_HALIGN_LEFT, text = 1), # lang,
-						MultiContentEntryText(pos = (750,0), size = (200,35), font = 0, flags = RT_HALIGN_RIGHT, text = 2) # enabled,
-					], True, "showOnDemand"),
+						MultiContentEntryText(pos = (750,0), size = (200,35), font = 0, flags = RT_HALIGN_RIGHT, text = 2)], # enabled,
+					True, "showOnDemand"),
 					"notselected": (35, [
 						MultiContentEntryText(pos = (10,0), size = (280,35), font = 0, flags = RT_HALIGN_LEFT, text = 0), # name,
 						MultiContentEntryText(pos = (300,0), size = (500,35), font = 0, flags = RT_HALIGN_LEFT, text = 1), # lang,
-						MultiContentEntryText(pos = (750,0), size = (200,35), font = 0, flags = RT_HALIGN_RIGHT, text = 2) # enabled,
-						], False, "showOnDemand")},
-						"fonts": [gFont("Global", 25)],
-						"itemHeight": 35}
+						MultiContentEntryText(pos = (750,0), size = (200,35), font = 0, flags = RT_HALIGN_RIGHT, text = 2)], # enabled,
+					False, "showOnDemand")},
+					"fonts": [gFont("Global", 25)],
+					"itemHeight": 35}
 			</convert>
 		</widget>
 		<panel name="TemplatesButtonsKey" />
@@ -6705,15 +6731,15 @@
 			<convert type="TemplatedMultiContent">
 				{"templates":
 					{"default": (35, [
-						MultiContentEntryText(pos = (10,0), size = (940,35), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0), # langname,
-						], True, "showOnDemand")},
+						MultiContentEntryText(pos = (10,0), size = (940,35), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0)], # langname,
+						True, "showOnDemand")},
 						"fonts": [gFont("Global", 25)],
 						"itemHeight":35}
 			</convert>
 		</widget>
 	</screen>
 	<!-- SubsSearch Params -->
-	<screen name="SubsSearchParamsMenu" position="0,0" size="1920,1080" title="Source title" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="SubsSearchParamsMenu" position="fill" title="Source title" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
@@ -6723,7 +6749,7 @@
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- SubsSearch Download -->
-	<screen name="SubsSearchDownloadOptions" position="0,0" size="1920,1080" title="Download subtitles" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="SubsSearchDownloadOptions" position="fill" title="Download subtitles" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
@@ -6734,7 +6760,7 @@
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- SubsSearch Embedded -->
-	<screen name="SubsEmbeddedSelection" position="0,0" size="1920,1080" title="Choose subtitles" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="SubsEmbeddedSelection" position="fill" title="Choose subtitles" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
@@ -6745,15 +6771,15 @@
 						MultiContentEntryText(pos = (10, 0), size = (50, 35),  font = 0, flags = RT_HALIGN_LEFT, text = 1), # key,
 						MultiContentEntryText(pos = (70, 0), size = (100, 35),  font = 0, flags = RT_HALIGN_LEFT, text = 2), # number,
 						MultiContentEntryText(pos = (180, 0), size = (500, 35), font = 0, flags = RT_HALIGN_LEFT, text = 3), # description,
-						MultiContentEntryText(pos = (690, 0), size = (200, 35), font = 0, flags = RT_HALIGN_LEFT, text = 4), # language,
-						], True, "showNever")},
+						MultiContentEntryText(pos = (690, 0), size = (200, 35), font = 0, flags = RT_HALIGN_LEFT, text = 4)], # language,
+						True, "showNever")},
 						"fonts": [gFont("Regular", 30)],
 						"itemHeight": 35}
 			</convert>
 		</widget>
 	</screen>
 	<!-- SubsDownloadedSelection -->
-	<screen name="SubsDownloadedSelection" position="0,0" size="1920,1080" title="Downloaded Subtitles" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="SubsDownloadedSelection" position="fill" title="Downloaded Subtitles" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="e" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
@@ -6768,8 +6794,8 @@
 						MultiContentEntryPixmapAlphaBlend(pos = (5, 15), size = (30, 30), png=0), # key,
 						MultiContentEntryText(pos = (45, 0), size = (500, 60), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text=1), # name,
 						MultiContentEntryText(pos = (555, 0), size = (240, 60), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2), # provider,
-						MultiContentEntryText(pos = (805, 0), size = (145, 60), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 3), # date,
-						], True, "showOnDemand")},
+						MultiContentEntryText(pos = (805, 0), size = (145, 60), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 3)], # date,
+						True, "showOnDemand")},
 						"fonts": [gFont("Global", 25)],
 						"itemHeight": 60}
 			</convert>
@@ -6788,25 +6814,25 @@
 		<panel name="TemplatesButtonsKey" />
 		<panel name="TemplatesClock" />
 	</screen>
-	<screen name="SubsSetupExternal" position="0,0" size="1920,1080" title="" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="SubsSetupExternal" position="fill" title="" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesBaseMenuScreen" />
 	</screen>
-	<screen name="SubsSetupMainMisc" position="0,0" size="1920,1080" title="" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="SubsSetupMainMisc" position="fill" title="" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesBaseMenuScreen" />
 	</screen>
-	<screen name="SubsSetupEmbedded" position="0,0" size="1920,1080" title="" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="SubsSetupEmbedded" position="fill" title="" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesBaseMenuScreen" />
 	</screen>
-	<screen name="SubsSetupGeneral" position="0,0" size="1920,1080" title="" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="SubsSetupGeneral" position="fill" title="" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesBaseMenuScreen" />
 	</screen>
-	<screen name="SubsDownloadedSubtitlesMenu" position="0,0" size="1920,1080" title="" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="SubsDownloadedSubtitlesMenu" position="fill" title="" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesBaseMenuScreen" />
 	</screen>
-	<screen name="SubsSearchProviderMenu" position="0,0" size="1920,1080" title="" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="SubsSearchProviderMenu" position="fill" title="" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesBaseMenuScreen" />
 	</screen>
-	<screen name="SubsSetupDVBPlayer" position="0,0" size="1920,1080" title="" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="SubsSetupDVBPlayer" position="fill" title="" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesBaseMenuScreen" />
 	</screen>
 	<!-- ########## System Time ########## -->
