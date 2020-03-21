@@ -6538,18 +6538,19 @@
 		<widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
 		<panel name="TemplatesMenuInfoLayer" />
 		<eLabel text="ECM Info" position="1115,470" size="715,30" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
-		<widget name="ecminfo" position="1115,510" size="715,330" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="left" valign="top" transparent="1" />
 		<panel name="TemplatesButtonsKey" />
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- Softcam Setup PLi -->
 	<screen name="SoftcamSetup" position="fill" title="Softcam Setup" flags="wfNoBorder" backgroundColor="transparent">
+		<widget name="info" position="1115,510" size="715,330" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="left" valign="top" transparent="1" />
 		<panel name="TemplatesSoftcamSetup" />
 	</screen>
 	<!-- Softcam Panel ATV -->
 	<screen name="SoftcamPanel" position="fill" title="Softcam Panel" flags="wfNoBorder" backgroundColor="transparent">
 		<widget name="actifcam" position="340,925" size="1000,25" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" transparent="1" />
 		<widget name="actifcam2" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+		<widget name="ecminfo" position="1115,510" size="715,330" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="left" valign="top" transparent="1" />
 		<panel name="TemplatesSoftcamSetup" />
 	</screen>
 	<!-- ########## Slow Zap ########## -->
