@@ -4682,21 +4682,19 @@
 		<panel name="TemplatesButtonsKey" />
 		<panel name="TemplatesClock" />
 	</screen>
-	<!-- ********** OpenPLi ********** -->
-	<!-- Hotkey Setup -->
+	<!-- Hotkey Setup PLi -->
 	<screen name="HotkeySetup" position="fill" title="Input" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesHotkeySetup" />
 	  </screen>
-	<!-- Hotkey Setup Select -->
+	<!-- Hotkey Setup Select PLi -->
 	<screen name="HotkeySetupSelect" position="fill" title="Input" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesHotkeySetup" />
 	</screen>
-	<!-- ********** OpenATV ********** -->
-	<!-- Hotkey Setup -->
+	<!-- Hotkey Setup ATV -->
 	<screen name="ButtonSetup" position="fill" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesHotkeySetup" />
 	</screen>
-	<!-- Button Setup Select -->
+	<!-- Button Setup Select ATV -->
 	<screen name="ButtonSetupSelect" position="fill" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesHotkeySetup" />
 	</screen>
@@ -6533,33 +6531,26 @@
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- ########## Softcam Panel ########## -->
-	<!-- ********** OpenPLi ********** -->
-	<!-- Softcam Setup -->
-	<screen name="SoftcamSetup" position="fill" title="Softcam Setup" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="TemplatesSoftcamSetup">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="c" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
 		<widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<panel name="TemplatesMenuInfoLayer" />
-		<eLabel text="ECM Info" position="1115,470" size="715,30" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
-		<widget name="info" position="1115,510" size="715,330" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="left" valign="top" transparent="1" />
-		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
-	</screen>
-	<!-- ********** OpenATV ********** -->
-	<!-- Softcam Panel -->
-	<screen name="SoftcamPanel" position="fill" title="Softcam Panel" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="TemplatesMenu1000Layer" />
-		<eLabel text="c" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<widget name="actifcam" position="340,925" size="1000,25" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" transparent="1" />
-		<widget name="actifcam2" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
 		<panel name="TemplatesMenuInfoLayer" />
 		<eLabel text="ECM Info" position="1115,470" size="715,30" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
 		<widget name="ecminfo" position="1115,510" size="715,330" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="left" valign="top" transparent="1" />
 		<panel name="TemplatesButtonsKey" />
 		<panel name="TemplatesClock" />
+	</screen>
+	<!-- Softcam Setup PLi -->
+	<screen name="SoftcamSetup" position="fill" title="Softcam Setup" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesSoftcamSetup" />
+	</screen>
+	<!-- Softcam Panel ATV -->
+	<screen name="SoftcamPanel" position="fill" title="Softcam Panel" flags="wfNoBorder" backgroundColor="transparent">
+		<widget name="actifcam" position="340,925" size="1000,25" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" transparent="1" />
+		<widget name="actifcam2" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+		<panel name="TemplatesSoftcamSetup" />
 	</screen>
 	<!-- ########## Slow Zap ########## -->
 	<!-- SlowZap for CI+ -->
