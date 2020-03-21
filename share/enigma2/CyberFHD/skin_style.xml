@@ -4294,7 +4294,7 @@
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- v Editor Screen -->
-	<screen name="vEditorScreen" position="fill" title=" " flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="vEditorScreen" position="fill" title="" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="J" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
@@ -4340,28 +4340,28 @@
 		<panel name="TemplatesButtonsKey" />
 		<panel name="TemplatesClock" />
 	</screen>
-	<screen name="ArchiverMenuScreen" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
+	<screen name="ArchiverMenuScreen" position="fill" title="" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="TemplatesArchiverMenuScreen" />
 	</screen>
-	<screen name="ArchiverInfoScreen" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
+	<screen name="ArchiverInfoScreen" position="fill" title="" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="TemplatesArchiverMenuScreen" />
 	</screen>
-	<screen name="RarMenuScreen" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
+	<screen name="RarMenuScreen" position="fill" title="" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="TemplatesArchiverMenuScreen" />
 	</screen>
-	<screen name="UnzipMenuScreen" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
+	<screen name="UnzipMenuScreen" position="fill" title="" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="TemplatesArchiverMenuScreen" />
 	</screen>
-	<screen name="TarMenuScreen" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
+	<screen name="TarMenuScreen" position="fill" title="" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="TemplatesArchiverMenuScreen" />
 	</screen>
-	<screen name="ipkMenuScreen" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
+	<screen name="ipkMenuScreen" position="fill" title="" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="TemplatesArchiverMenuScreen" />
 	</screen>
-	<screen name="GunzipMenuScreen" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
+	<screen name="GunzipMenuScreen" position="fill" title="" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="TemplatesArchiverMenuScreen" />
 	</screen>
-	<screen name="UnpackInfoScreen" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
+	<screen name="UnpackInfoScreen" position="fill" title="" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="TemplatesArchiverInfoScreen" />
 	</screen>
 	<!-- ########## Full Backup ########## -->
