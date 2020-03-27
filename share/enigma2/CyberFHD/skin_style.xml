@@ -256,8 +256,8 @@
 		<widget source="session.CurrentService" render="PositionGauge" position="360,935" size="1450,15" transparent="1" zPosition="4">
 			<convert type="ServicePosition">Gauge</convert>
 		</widget>
-		<widget name="audioLabel" position="1390,1002" size="200,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3" halign="right" />
-		<widget name="subtitleLabel" position="1610,1002" size="200,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3" halign="right" />
+		<widget name="audioLabel" position="1390,1002" size="200,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1" zPosition="3" />
+		<widget name="subtitleLabel" position="1610,1002" size="200,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1" zPosition="3" />
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- # # # # # # # # # # Statebar # # # # # # # # # #-->
@@ -1041,13 +1041,13 @@
 		<panel name="TemplatesMenuLayer" />
 		<widget objectTypes="Title,StaticText" name="title" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" zPosition="1" />
 		<eLabel text="¤" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<widget source="label1" render="Label" position="90,188" size="300,150" zPosition="2" font="Global; 34" halign="center" valign="center" backgroundColor="background" transparent="1" />
-		<widget source="label2" render="Label" position="450,188" size="300,150" zPosition="2" font="Global; 34" halign="center" valign="center" backgroundColor="background" transparent="1" />
-		<widget source="label3" render="Label" position="810,188" size="300,150" zPosition="2" font="Global; 36" halign="center" valign="center" foregroundColor="yellow" backgroundColor="background" transparent="1" />
-		<eLabel position="810,188" size="300,150" backgroundColor="background3" zPosition="-14" font="Global; 16" />
-		<eLabel position="812,190" size="296,146" backgroundColor="background1" zPosition="-13" font="Global; 16" />
-		<widget source="label4" render="Label" position="1170,188" size="300,150" zPosition="2" font="Global; 34" halign="center" valign="center" backgroundColor="background" transparent="1" />
-		<widget source="label5" render="Label" position="1530,188" size="300,150" zPosition="2" font="Global; 34" halign="center" valign="center" backgroundColor="background" transparent="1" />
+		<eLabel position="810,707" size="300,150" backgroundColor="background3" zPosition="-14" font="Global; 16" />
+		<eLabel position="812,709" size="296,146" backgroundColor="background1" zPosition="-13" font="Global; 16" />
+		<widget source="label1" render="Label" position="90,707" size="300,150" zPosition="2" font="Global; 34" halign="center" valign="center" backgroundColor="background" transparent="1" />
+		<widget source="label2" render="Label" position="450,707" size="300,150" zPosition="2" font="Global; 34" halign="center" valign="center" backgroundColor="background" transparent="1" />
+		<widget source="label3" render="Label" position="810,707" size="300,150" zPosition="2" font="Global; 36" halign="center" valign="center" foregroundColor="yellow" backgroundColor="background" transparent="1" />
+		<widget source="label4" render="Label" position="1170,707" size="300,150" zPosition="2" font="Global; 34" halign="center" valign="center" backgroundColor="background" transparent="1" />
+		<widget source="label5" render="Label" position="1530,707" size="300,150" zPosition="2" font="Global; 34" halign="center" valign="center" backgroundColor="background" transparent="1" />
 		<panel name="TemplatesMenuLeftLayer" />
 		<panel name="TemplatesMenuRightLayer" />
 		<panel name="TemplatesClock" />
@@ -1057,30 +1057,30 @@
 		<panel name="TemplatesMenuLayer" />
 		<widget objectTypes="Title,StaticText" name="title" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" zPosition="1" />
 		<eLabel text="¤" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<widget source="label1" render="Label" position="90,188" size="280,140" zPosition="2" font="Global;33" halign="center" valign="center" backgroundColor="background" transparent="1" />
-		<widget source="label1s" render="Label" position="90,188" size="280,140" font="Global;35" zPosition="2" halign="center" valign="center" foregroundColor="yellow" backgroundColor="background" transparent="1" />
-		<eLabel position="90,188" size="280,140" backgroundColor="background3" zPosition="-14" />
-		<eLabel position="92,190" size="276,136" backgroundColor="background1" zPosition="-13" />
-		<widget source="label2" render="Label" position="382,188" size="280,140" zPosition="2" font="Global;33" halign="center" valign="center" backgroundColor="background" transparent="1" />
-		<widget source="label2s" render="Label" position="382,188" size="280,140" font="Global;35" zPosition="2" halign="center" valign="center" foregroundColor="yellow" backgroundColor="background" transparent="1" />
-		<eLabel position="382,188" size="280,140" backgroundColor="background3" zPosition="-14" />
-		<eLabel position="384,190" size="276,136" backgroundColor="background1" zPosition="-13" />
-		<widget source="label3" render="Label" position="674,188" size="280,140" zPosition="2" font="Global;33" halign="center" valign="center" backgroundColor="background" transparent="1" />
-		<widget source="label3s" render="Label" position="674,188" size="280,140" font="Global;35" zPosition="2" halign="center" valign="center" foregroundColor="yellow" backgroundColor="background" transparent="1" />
-		<eLabel position="674,188" size="280,140" backgroundColor="background3" zPosition="-14" />
-		<eLabel position="676,190" size="276,136" backgroundColor="background1" zPosition="-13" />
-		<widget source="label4" render="Label" position="966,188" size="280,140" zPosition="2" font="Global;33" halign="center" valign="center" backgroundColor="background" transparent="1" />
-		<widget source="label4s" render="Label" position="966,188" size="280,140" font="Global;35" zPosition="2" halign="center" valign="center" foregroundColor="yellow" backgroundColor="background" transparent="1" />
-		<eLabel position="966,188" size="280,140" backgroundColor="background3" zPosition="-14" />
-		<eLabel position="968,190" size="276,136" backgroundColor="background1" zPosition="-13" />
-		<widget source="label5" render="Label" position="1258,188" size="280,140" zPosition="2" font="Global;33" halign="center" valign="center" backgroundColor="background" transparent="1" />
-		<widget source="label5s" render="Label" position="1258,188" size="280,140" font="Global;35" zPosition="2" halign="center" valign="center" foregroundColor="yellow" backgroundColor="background" transparent="1" />
-		<eLabel position="1258,188" size="280,140" backgroundColor="background3" zPosition="-14" />
-		<eLabel position="1260,190" size="276,136" backgroundColor="background1" zPosition="-13" />
-		<widget source="label6" render="Label" position="1550,188" size="280,140" zPosition="2" font="Global;33" halign="center" valign="center" backgroundColor="background" transparent="1" />
-		<widget source="label6s" render="Label" position="1550,188" size="280,140" font="Global;35" zPosition="2" halign="center" valign="center" foregroundColor="yellow" backgroundColor="background" transparent="1" />
-		<eLabel position="1550,188" size="280,140" backgroundColor="background3" zPosition="-14" />
-		<eLabel position="1552,190" size="276,136" backgroundColor="background1" zPosition="-13" />
+		<widget source="label1" render="Label" position="90,707" size="280,140" zPosition="2" font="Global;33" halign="center" valign="center" backgroundColor="background" transparent="1" />
+		<widget source="label1s" render="Label" position="90,707" size="280,140" font="Global;35" zPosition="2" halign="center" valign="center" foregroundColor="yellow" backgroundColor="background" transparent="1" />
+		<eLabel position="90,707" size="280,140" backgroundColor="background3" zPosition="-14" />
+		<eLabel position="92,709" size="276,136" backgroundColor="background1" zPosition="-13" />
+		<widget source="label2" render="Label" position="382,707" size="280,140" zPosition="2" font="Global;33" halign="center" valign="center" backgroundColor="background" transparent="1" />
+		<widget source="label2s" render="Label" position="382,707" size="280,140" font="Global;35" zPosition="2" halign="center" valign="center" foregroundColor="yellow" backgroundColor="background" transparent="1" />
+		<eLabel position="382,707" size="280,140" backgroundColor="background3" zPosition="-14" />
+		<eLabel position="384,709" size="276,136" backgroundColor="background1" zPosition="-13" />
+		<widget source="label3" render="Label" position="674,707" size="280,140" zPosition="2" font="Global;33" halign="center" valign="center" backgroundColor="background" transparent="1" />
+		<widget source="label3s" render="Label" position="674,707" size="280,140" font="Global;35" zPosition="2" halign="center" valign="center" foregroundColor="yellow" backgroundColor="background" transparent="1" />
+		<eLabel position="674,707" size="280,140" backgroundColor="background3" zPosition="-14" />
+		<eLabel position="676,709" size="276,136" backgroundColor="background1" zPosition="-13" />
+		<widget source="label4" render="Label" position="966,707" size="280,140" zPosition="2" font="Global;33" halign="center" valign="center" backgroundColor="background" transparent="1" />
+		<widget source="label4s" render="Label" position="966,707" size="280,140" font="Global;35" zPosition="2" halign="center" valign="center" foregroundColor="yellow" backgroundColor="background" transparent="1" />
+		<eLabel position="966,707" size="280,140" backgroundColor="background3" zPosition="-14" />
+		<eLabel position="968,709" size="276,136" backgroundColor="background1" zPosition="-13" />
+		<widget source="label5" render="Label" position="1258,707" size="280,140" zPosition="2" font="Global;33" halign="center" valign="center" backgroundColor="background" transparent="1" />
+		<widget source="label5s" render="Label" position="1258,707" size="280,140" font="Global;35" zPosition="2" halign="center" valign="center" foregroundColor="yellow" backgroundColor="background" transparent="1" />
+		<eLabel position="1258,707" size="280,140" backgroundColor="background3" zPosition="-14" />
+		<eLabel position="1260,709" size="276,136" backgroundColor="background1" zPosition="-13" />
+		<widget source="label6" render="Label" position="1550,707" size="280,140" zPosition="2" font="Global;33" halign="center" valign="center" backgroundColor="background" transparent="1" />
+		<widget source="label6s" render="Label" position="1550,707" size="280,140" font="Global;35" zPosition="2" halign="center" valign="center" foregroundColor="yellow" backgroundColor="background" transparent="1" />
+		<eLabel position="1550,707" size="280,140" backgroundColor="background3" zPosition="-14" />
+		<eLabel position="1552,709" size="276,136" backgroundColor="background1" zPosition="-13" />
 		<panel name="TemplatesMenuLeftLayer" />
 		<panel name="TemplatesMenuRightLayer" />
 		<panel name="TemplatesClock" />
@@ -1110,41 +1110,105 @@
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- ########## Message ########## -->
-	<!-- Message Box -->
-	<screen name="MessageBox" position="0,100" size="1920,700" title="Message" flags="wfNoBorder" backgroundColor="background1" zPosition="99">
+	<!-- Templates Message  -->
+	<screen name="TemplatesMessage">
 		<widget source="Title" render="Label" position="10,10" size="700,70" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" transparent="1" />
 		<widget name="text" position="10,80" size="700,0" font="Global;25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
 		<widget name="ErrorPixmap" text="!" position="0,10" size="220,180" font="Icons; 110" foregroundColor="background3" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<widget name="QuestionPixmap" text="?" position="0,10" size="220,180" font="Icons; 110" foregroundColor="background3" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<widget name="InfoPixmap" text="$" position="0,10" size="220,180" font="Icons; 110" foregroundColor="background3" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesMessageBox" />
+		<widget name="list" position="0,180" size="700,350" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<applet type="onLayoutFinish">
+# this should be factored out into some helper code,but currently demonstrates applets.
+from enigma import eSize,ePoint, getDesktop
+#---
+offset_listposx = 10
+offset_listposy = 90
+offset_listwidth = 10
+offset_listheight = 40
+offset_textwidth = 170
+offset_textheight = 20
+min_width = 400
+min_height = 50
+#----
+deskwidth = getDesktop(0).size().width()
+deskheight = getDesktop(0).size().height()
+textsize = self["text"].getSize()
+textwidth = textsize[0] + offset_textwidth
+textheight = textsize[1] + offset_textheight
+
+listwidth = 0
+listheight = 0
+
+if self.list:
+	try:
+		for i in self.list:
+			if len(i[0]) &gt; listwidth:
+				listwidth = len(i[0])
+		listwidth = listwidth * offset_listwidth
+		listheight = len(self.list) * offset_listheight
+	except:
+		pass
+
+if (min_height &gt; textheight):
+	textheight = min_height
+if (min_width &gt; textwidth):
+	textwidth = min_width
+if (listheight &gt; 0):
+	offset = 21
+else:
+	offset = 13
+if (textwidth &gt; listwidth):
+	wsizex = textwidth + offset_listposx * 2
+else:
+	textwidth = listwidth - offset_listposx
+	wsizex = listwidth + offset_listposx
+
+wsizey = textheight + listheight + offset
+
+if ((wsizey + offset_listposy - offset_listposx) &gt; deskheight):
+	textheight = deskheight - listheight - offset - offset_listposy + offset_listposx
+	wsizey = textheight + listheight + offset
+
+if (wsizex &gt; deskwidth):
+	textwidth = deskwidth - offset_listposx * 2
+	listwidth = wsizex = deskwidth
+
+wsize = (wsizex,wsizey + offset_listposy - offset_listposx)
+
+# resize
+self.instance.resize(eSize(*wsize))
+
+# resize label
+textsize = (textwidth,textheight)
+self["text"].instance.resize(eSize(*textsize))
+
+# move list
+listsize = (wsizex - offset_listposx * 2,listheight)
+self["list"].instance.move(ePoint(offset_listposx,textheight + offset_listposy))
+self["list"].instance.resize(eSize(*listsize))
+
+# center window
+newwidth = wsize[0]
+newheight = wsize[1]
+self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight)/2))
+		</applet>
+	</screen>
+	<!-- Message Box -->
+	<screen name="MessageBox" position="0,100" size="1920,700" title="Message" flags="wfNoBorder" backgroundColor="background1" zPosition="99">
+		<panel name="TemplatesMessage" />
 	</screen>
 	<!-- Message Box Ext -->
 	<screen name="MessageBoxExt" position="0,100" size="1920,700" title="Message" flags="wfNoBorder" backgroundColor="background1" zPosition="99">
-		<widget source="Title" render="Label" position="10,10" size="700,70" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" transparent="1" />
-		<widget name="text" position="10,80" size="700,0" font="Global;25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-		<widget name="ErrorPixmap" text="!" position="0,10" size="220,180" font="Icons; 110" foregroundColor="background3" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<widget name="QuestionPixmap" text="?" position="0,10" size="220,180" font="Icons; 110" foregroundColor="background3" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<widget name="InfoPixmap" text="$" position="0,10" size="220,180" font="Icons; 110" foregroundColor="background3" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesMessageBox" />
+		<panel name="TemplatesMessage" />
 	</screen>
 	<!-- Message Box Simple -->
 	<screen name="MessageBoxSimple" position="0,100" size="1920,700" title="Message" flags="wfNoBorder" backgroundColor="background1" zPosition="99">
-		<widget source="Title" render="Label" position="10,10" size="700,70" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" transparent="1" />
-		<widget name="text" position="10,80" size="700,0" font="Global;25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-		<widget name="ErrorPixmap" text="!" position="0,10" size="220,180" font="Icons; 110" foregroundColor="background3" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<widget name="QuestionPixmap" text="?" position="0,10" size="220,180" font="Icons; 110" foregroundColor="background3" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<widget name="InfoPixmap" text="$" position="0,10" size="220,180" font="Icons; 110" foregroundColor="background3" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesMessageBox" />
+		<panel name="TemplatesMessage" />
 	</screen>
 	<!-- Remove Timer Question -->
 	<screen name="RemoveTimerQuestion" position="0,100" size="1920,700" title="Message" flags="wfNoBorder" backgroundColor="background1" zPosition="99">
-		<widget source="Title" render="Label" position="10,10" size="700,70" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" transparent="1" />
-		<widget name="text" position="10,80" size="700,0" font="Global;25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-		<widget name="ErrorPixmap" text="!" position="0,10" size="220,180" font="Icons; 110" foregroundColor="background3" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<widget name="QuestionPixmap" text="?" position="0,10" size="220,180" font="Icons; 110" foregroundColor="background3" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<widget name="InfoPixmap" text="$" position="0,10" size="220,180" font="Icons; 110" foregroundColor="background3" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesMessageBox" />
+		<panel name="TemplatesMessage" />
 	</screen>
 	<!-- ########## Text ########## -->
 	<!-- Text Box -->
@@ -1253,8 +1317,10 @@
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- ########## Wizard ########## -->
+	<!-- Templates Wizard -->
 	<screen name="TemplatesWizard">
-		<!-- Templates Wizard -->
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<eLabel text="Welcome..." position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
 		<eLabel position="90,200" size="980,40" backgroundColor="background2" zPosition="-1" />
 		<eLabel text="&gt;" position="95,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
@@ -1273,60 +1339,32 @@
 		<widget name="arrowdown2" pixmap="skin_default/arrowdown.png" position="0,0" size="55,105" zPosition="11" alphatest="on" />
 		<widget name="arrowup" pixmap="skin_default/arrowup.png" position="0,0" size="55,105" zPosition="11" alphatest="on" />
 		<widget name="arrowup2" pixmap="skin_default/arrowup.png" position="0,0" size="55,105" zPosition="11" alphatest="on" />
+		<panel name="TemplatesButtons" />
+		<panel name="TemplatesClock" />
 	</screen>
 	<!-- Start Wizard -->
 	<screen name="StartWizard" position="fill" title="Welcome..." flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="TemplatesMenu1000Layer" />
-		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<eLabel text="Welcome..." position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
 		<panel name="TemplatesWizard" />
-		<panel name="TemplatesButtons" />
-		<panel name="TemplatesClock" />
 	</screen>
 	<!-- Default Wizard -->
 	<screen name="DefaultWizard" position="fill" title="Welcome..." flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="TemplatesMenu1000Layer" />
-		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<eLabel text="Welcome..." position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
 		<panel name="TemplatesWizard" />
-		<panel name="TemplatesButtons" />
-		<panel name="TemplatesClock" />
 	</screen>
 	<!-- Image Wizard -->
 	<screen name="ImageWizard" position="fill" title="Welcome..." flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="TemplatesMenu1000Layer" />
-		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<eLabel text="Welcome..." position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
 		<panel name="TemplatesWizard" />
-		<panel name="TemplatesButtons" />
-		<panel name="TemplatesClock" />
 	</screen>
 	<!-- Network Wizard -->
 	<screen name="NetworkWizard" position="fill" title="Welcome..." flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="TemplatesMenu1000Layer" />
-		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<eLabel text="Welcome..." position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
 		<panel name="TemplatesWizard" />
-		<panel name="TemplatesButtons" />
-		<panel name="TemplatesClock" />
 	</screen>
 	<!-- Timer Wizard -->
 	<screen name="AutoTimerWizard" position="fill" title="Welcome..." flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="TemplatesMenu1000Layer" />
-		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<eLabel text="Welcome..." position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
 		<panel name="TemplatesWizard" />
-		<panel name="TemplatesButtons" />
-		<panel name="TemplatesClock" />
 	</screen>
 	<!-- Video Wizard -->
 	<screen name="VideoWizard" position="fill" title="Welcome..." flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="TemplatesMenu1000Layer" />
-		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<eLabel text="Welcome..." position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
 		<panel name="TemplatesWizard" />
-		<panel name="TemplatesButtons" />
-		<panel name="TemplatesClock" />
 	</screen>
 	<!-- Language Wizard -->
 	<screen name="LanguageWizard" position="fill" title="Welcome..." flags="wfNoBorder" backgroundColor="transparent">
@@ -2126,25 +2164,37 @@
 		<panel name="TemplatesButtonsKey" />
 		<panel name="TemplatesClock" />
 	</screen>
-	<!-- Network Samba -->
-	<screen name="NetworkSamba" position="fill" title="Samba Setup" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="TemplatesMenuLayer" />
+	<!-- Network MiniDLNA Setup -->
+	<screen name="NetworkMiniDLNA" position="fill" title="MiniDLNA Setup" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="n" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
-		<widget name="lab1" position="340,925" size="150,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
-		<widget name="labactive" position="500,925" size="200,30" font="Global; 25" halign="left" valign="top" foregroundColor="color3" backgroundColor="background1" zPosition="2" />
-		<widget name="lab2" position="340,955" size="150,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
-		<widget name="labstop" position="500,955" size="200,30" font="Global;25" halign="left" valign="top" foregroundColor="color3" backgroundColor="background1" zPosition="1" />
-		<widget name="labrun" position="500,955" size="200,30" font="Global;25" halign="left" valign="top" foregroundColor="color3" backgroundColor="background1" zPosition="2" />
+		<widget name="autostart" position="90,205" size="200,30" font="Global; 25" valign="center" halign="left" foregroundColor="color2" backgroundColor="background1" transparent="1" />
+		<widget name="labdisabled" position="300,205" size="200,30" font="Global;25" valign="center" halign="center" backgroundColor="red" zPosition="1" />
+		<widget name="labactive" position="300,205" size="200,30" font="Global;22" valign="center" halign="center" backgroundColor="green" zPosition="2" />
+		<widget name="status" position="90,245" size="200,30" font="Global; 25" valign="center" halign="left" foregroundColor="color2" backgroundColor="background1" transparent="1" />
+		<widget name="labstop" position="300,245" size="200,30" font="Global;25" valign="center" halign="center" backgroundColor="red" zPosition="1" />
+		<widget name="labrun" position="300,245" size="200,30" font="Global;25" valign="center" halign="center" backgroundColor="green" zPosition="2" />
+		<widget name="username" position="90,285" size="250,30" font="Global;25" valign="center" halign="left" foregroundColor="color2" backgroundColor="background1" transparent="1" />
+		<widget name="labuser" position="350,284" size="150,30" font="Global;25" valign="center" foregroundColor="color2" backgroundColor="background1" transparent="1" />
+		<widget name="iface" position="90,325" size="250,30" font="Global;25" valign="center" halign="left" foregroundColor="color2" backgroundColor="background1" transparent="1" />
+		<widget name="labiface" position="350,325" size="350,30" font="Global;25" valign="center" foregroundColor="color2" backgroundColor="background1" transparent="1" />
+		<widget name="port" position="90,365" size="250,30" font="Global;25" valign="center" halign="left" foregroundColor="color2" backgroundColor="background1" transparent="1" />
+		<widget name="labport" position="350,365" size="350,30" font="Global;25" valign="center" foregroundColor="color2" backgroundColor="background1" transparent="1" />
+		<widget name="serialno" position="90,405" size="250,30" font="Global;25" valign="center" halign="left" foregroundColor="color2" backgroundColor="background1" transparent="1" />
+		<widget name="labserialno" position="350,405" size="350,30" font="Global;25" valign="center" foregroundColor="color2" backgroundColor="background1" transparent="1" />
+		<widget name="sharedir" position="90,445" size="250,30" font="Global;25" valign="center" halign="left" foregroundColor="color2" backgroundColor="background1" transparent="1" />
+		<widget name="labsharedir" position="350,445" size="350,30" font="Global;25" valign="center" foregroundColor="color2" backgroundColor="background1" transparent="1" />
+		<widget name="inotify" position="130,485" size="300,30" font="Global;25" valign="center" halign="left" foregroundColor="color2" backgroundColor="background1" transparent="1" />
+		<widget name="inotifyactive" position="90,485" zPosition="1" pixmap="CyberFHD/icons/lock_on.png" size="32,32" alphatest="on" />
+		<widget name="inotifyinactive" position="90,485" zPosition="2" pixmap="CyberFHD/icons/lock_off.png" size="32,32" alphatest="on" />
+		<widget name="tivo" position="130,565" size="300,30" font="Global;25" valign="center" halign="left" foregroundColor="color2" backgroundColor="background1" transparent="1" />
+		<widget name="tivoactive" position="90,565" zPosition="1" pixmap="CyberFHD/icons/lock_on.png" size="32,32" alphatest="on" />
+		<widget name="tivoinactive" position="90,565" zPosition="2" pixmap="CyberFHD/icons/lock_off.png" size="32,32" alphatest="on" />
+		<widget name="dlna" position="130,525" size="300,30" font="Global;25" valign="center" halign="left" foregroundColor="color2" backgroundColor="background1" transparent="1" />
+		<widget name="dlnaactive" position="90,525" zPosition="1" pixmap="CyberFHD/icons/lock_on.png" size="32,32" alphatest="on" />
+		<widget name="dlnainactive" position="90,525" zPosition="2" pixmap="CyberFHD/icons/lock_off.png" size="32,32" alphatest="on" />
 		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
-	</screen>
-	<!-- Network Samba Log -->
-	<screen name="NetworkSambaLog" position="fill" title="Samba Log" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="TemplatesMenu1800Layer" />
-		<eLabel text="n" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget name="infotext" position="90,200" size="1740,635" font="Console;25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- Network Inadyn -->
@@ -2180,146 +2230,6 @@
 		<panel name="TemplatesTitle" />
 		<widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
 		<panel name="TemplatesHelpWindow" />
-		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
-	</screen>
-	<!-- Network Inadyn Log -->
-	<screen name="NetworkInadynLog" position="fill" title="Inadyn Log" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="TemplatesMenu1800Layer" />
-		<eLabel text="n" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget name="infotext" position="90,200" size="1740,635" font="Console;25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
-		<panel name="TemplatesClock" />
-	</screen>
-	<!-- Network uShare Setup -->
-	<screen name="NetworkuShareSetup" position="fill" title="uShare Setup" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="TemplatesMenu1000Layer" />
-		<eLabel text="n" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<panel name="TemplatesHelpWindow" />
-		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
-	</screen>
-	<!-- Network uShare Selection -->
-	<screen name="uShareSelection" position="fill" title="uShare Setup" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="TemplatesMenuLayer" />
-		<panel name="TemplatesMenu1000Layer" />
-		<panel name="TemplatesMenuLeftLayer" />
-		<eLabel text="n" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget name="checkList" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
-	</screen>
-	<!-- Network NFS Setup -->
-	<screen name="NetworkNfs" position="fill" title="NFS Setup" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="TemplatesMenuLayer" />
-		<eLabel text="n" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget name="lab1" position="340,925" size="150,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
-		<widget name="labactive" position="500,925" size="200,30" font="Global; 25" halign="left" valign="top" foregroundColor="color3" backgroundColor="background1" zPosition="2" />
-		<widget name="lab2" position="340,955" size="150,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
-		<widget name="labstop" position="500,955" size="200,30" font="Global;25" halign="left" valign="top" foregroundColor="color3" backgroundColor="background1" zPosition="1" />
-		<widget name="labrun" position="500,955" size="200,30" font="Global;25" halign="left" valign="top" foregroundColor="color3" backgroundColor="background1" zPosition="2" />
-		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
-	</screen>
-	<!-- Network Telnet Setup -->
-	<screen name="NetworkTelnet" position="fill" title="Telnet Setup" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="TemplatesMenuLayer" />
-		<eLabel text="n" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget name="lab1" position="340,925" size="150,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
-		<widget name="labactive" position="500,925" size="200,30" font="Global; 25" halign="left" valign="top" foregroundColor="color3" backgroundColor="background1" zPosition="2" />
-		<widget name="lab2" position="340,955" size="150,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
-		<widget name="labstop" position="500,955" size="200,30" font="Global;25" halign="left" valign="top" foregroundColor="color3" backgroundColor="background1" zPosition="1" />
-		<widget name="labrun" position="500,955" size="200,30" font="Global;25" halign="left" valign="top" foregroundColor="color3" backgroundColor="background1" zPosition="2" />
-		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
-	</screen>
-	<!-- Network FTP Setup -->
-	<screen name="NetworkFtp" position="fill" title="FTP Setup" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="TemplatesMenuLayer" />
-		<eLabel text="n" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget name="lab1" position="340,925" size="150,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
-		<widget name="labactive" position="500,925" size="200,30" font="Global; 25" halign="left" valign="top" foregroundColor="color3" backgroundColor="background1" zPosition="2" />
-		<widget name="lab2" position="340,955" size="150,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
-		<widget name="labstop" position="500,955" size="200,30" font="Global;25" halign="left" valign="top" foregroundColor="color3" backgroundColor="background1" zPosition="1" />
-		<widget name="labrun" position="500,955" size="200,30" font="Global;25" halign="left" valign="top" foregroundColor="color3" backgroundColor="background1" zPosition="2" />
-		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
-	</screen>
-	<!-- Network OpenVpn Setup -->
-	<screen name="NetworkOpenvpn" position="fill" title="OpenVpn Setup" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="TemplatesMenuLayer" />
-		<eLabel text="n" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget name="lab1" position="340,925" size="150,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
-		<widget name="labactive" position="500,925" size="200,30" font="Global; 25" halign="left" valign="top" foregroundColor="color3" backgroundColor="background1" zPosition="2" />
-		<widget name="lab2" position="340,955" size="150,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
-		<widget name="labstop" position="500,955" size="200,30" font="Global;25" halign="left" valign="top" foregroundColor="color3" backgroundColor="background1" zPosition="1" />
-		<widget name="labrun" position="500,955" size="200,30" font="Global;25" halign="left" valign="top" foregroundColor="color3" backgroundColor="background1" zPosition="2" />
-		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
-	</screen>
-	<!-- Network SABnzbd Setup -->
-	<screen name="NetworkSABnzbd" position="fill" title="SABnzbd Setup" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="TemplatesMenuLayer" />
-		<eLabel text="n" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget name="lab1" position="340,925" size="150,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
-		<widget name="labactive" position="500,925" size="200,30" font="Global; 25" halign="left" valign="top" foregroundColor="color3" backgroundColor="background1" zPosition="2" />
-		<widget name="lab2" position="340,955" size="150,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
-		<widget name="labstop" position="500,955" size="200,30" font="Global;25" halign="left" valign="top" foregroundColor="color3" backgroundColor="background1" zPosition="1" />
-		<widget name="labrun" position="500,955" size="200,30" font="Global;25" halign="left" valign="top" foregroundColor="color3" backgroundColor="background1" zPosition="2" />
-		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
-	</screen>
-	<!-- Network AFP Setup -->
-	<screen name="NetworkAfp" position="fill" title="AFP Setup" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="TemplatesMenuLayer" />
-		<eLabel text="n" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget name="lab1" position="340,925" size="150,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
-		<widget name="labactive" position="500,925" size="200,30" font="Global; 25" halign="left" valign="top" foregroundColor="color3" backgroundColor="background1" zPosition="2" />
-		<widget name="lab2" position="340,955" size="150,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
-		<widget name="labstop" position="500,955" size="200,30" font="Global;25" halign="left" valign="top" foregroundColor="color3" backgroundColor="background1" zPosition="1" />
-		<widget name="labrun" position="500,955" size="200,30" font="Global;25" halign="left" valign="top" foregroundColor="color3" backgroundColor="background1" zPosition="2" />
-		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
-	</screen>
-	<!-- Network MiniDLNA Setup -->
-	<screen name="NetworkMiniDLNA" position="fill" title="MiniDLNA Setup" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="TemplatesMenu1000Layer" />
-		<eLabel text="n" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget name="autostart" position="90,205" size="200,30" font="Global; 25" valign="center" halign="left" foregroundColor="color2" backgroundColor="background1" transparent="1" />
-		<widget name="labdisabled" position="300,205" size="200,30" font="Global;25" valign="center" halign="center" backgroundColor="red" zPosition="1" />
-		<widget name="labactive" position="300,205" size="200,30" font="Global;22" valign="center" halign="center" backgroundColor="green" zPosition="2" />
-		<widget name="status" position="90,245" size="200,30" font="Global; 25" valign="center" halign="left" foregroundColor="color2" backgroundColor="background1" transparent="1" />
-		<widget name="labstop" position="300,245" size="200,30" font="Global;25" valign="center" halign="center" backgroundColor="red" zPosition="1" />
-		<widget name="labrun" position="300,245" size="200,30" font="Global;25" valign="center" halign="center" backgroundColor="green" zPosition="2" />
-		<widget name="username" position="90,285" size="250,30" font="Global;25" valign="center" halign="left" foregroundColor="color2" backgroundColor="background1" transparent="1" />
-		<widget name="labuser" position="350,284" size="150,30" font="Global;25" valign="center" foregroundColor="color2" backgroundColor="background1" transparent="1" />
-		<widget name="iface" position="90,325" size="250,30" font="Global;25" valign="center" halign="left" foregroundColor="color2" backgroundColor="background1" transparent="1" />
-		<widget name="labiface" position="350,325" size="350,30" font="Global;25" valign="center" foregroundColor="color2" backgroundColor="background1" transparent="1" />
-		<widget name="port" position="90,365" size="250,30" font="Global;25" valign="center" halign="left" foregroundColor="color2" backgroundColor="background1" transparent="1" />
-		<widget name="labport" position="350,365" size="350,30" font="Global;25" valign="center" foregroundColor="color2" backgroundColor="background1" transparent="1" />
-		<widget name="serialno" position="90,405" size="250,30" font="Global;25" valign="center" halign="left" foregroundColor="color2" backgroundColor="background1" transparent="1" />
-		<widget name="labserialno" position="350,405" size="350,30" font="Global;25" valign="center" foregroundColor="color2" backgroundColor="background1" transparent="1" />
-		<widget name="sharedir" position="90,445" size="250,30" font="Global;25" valign="center" halign="left" foregroundColor="color2" backgroundColor="background1" transparent="1" />
-		<widget name="labsharedir" position="350,445" size="350,30" font="Global;25" valign="center" foregroundColor="color2" backgroundColor="background1" transparent="1" />
-		<widget name="inotify" position="130,485" size="300,30" font="Global;25" valign="center" halign="left" foregroundColor="color2" backgroundColor="background1" transparent="1" />
-		<widget name="inotifyactive" position="90,485" zPosition="1" pixmap="CyberFHD/icons/lock_on.png" size="32,32" alphatest="on" />
-		<widget name="inotifyinactive" position="90,485" zPosition="2" pixmap="CyberFHD/icons/lock_off.png" size="32,32" alphatest="on" />
-		<widget name="tivo" position="130,565" size="300,30" font="Global;25" valign="center" halign="left" foregroundColor="color2" backgroundColor="background1" transparent="1" />
-		<widget name="tivoactive" position="90,565" zPosition="1" pixmap="CyberFHD/icons/lock_on.png" size="32,32" alphatest="on" />
-		<widget name="tivoinactive" position="90,565" zPosition="2" pixmap="CyberFHD/icons/lock_off.png" size="32,32" alphatest="on" />
-		<widget name="dlna" position="130,525" size="300,30" font="Global;25" valign="center" halign="left" foregroundColor="color2" backgroundColor="background1" transparent="1" />
-		<widget name="dlnaactive" position="90,525" zPosition="1" pixmap="CyberFHD/icons/lock_on.png" size="32,32" alphatest="on" />
-		<widget name="dlnainactive" position="90,525" zPosition="2" pixmap="CyberFHD/icons/lock_off.png" size="32,32" alphatest="on" />
 		<panel name="TemplatesButtonsKey" />
 		<panel name="TemplatesClock" />
 	</screen>
@@ -2359,6 +2269,27 @@
 		<panel name="TemplatesButtonsKey" />
 		<panel name="TemplatesClock" />
 	</screen>
+	<!-- Network uShare Setup -->
+	<screen name="NetworkuShareSetup" position="fill" title="uShare Setup" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="n" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<panel name="TemplatesHelpWindow" />
+		<panel name="TemplatesButtonsKey" />
+		<panel name="TemplatesClock" />
+	</screen>
+	<!-- Network uShare Selection -->
+	<screen name="uShareSelection" position="fill" title="uShare Setup" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesMenuLayer" />
+		<panel name="TemplatesMenu1000Layer" />
+		<panel name="TemplatesMenuLeftLayer" />
+		<eLabel text="n" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget name="checkList" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<panel name="TemplatesButtonsKey" />
+		<panel name="TemplatesClock" />
+	</screen>
 	<!-- Network Password -->
 	<screen name="NetworkPassword" position="fill" title="NetworkPassword" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="TemplatesMenu1000Layer" />
@@ -2369,6 +2300,63 @@
 		<panel name="TemplatesHelpWindow" />
 		<panel name="TemplatesButtonsKey" />
 		<panel name="TemplatesClock" />
+	</screen>
+	<!-- Templates Network Setup -->
+	<screen name="TemplatesNetworkSetup">
+		<panel name="TemplatesMenuLayer" />
+		<eLabel text="n" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget name="lab1" position="340,925" size="150,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+		<widget name="labactive" position="500,925" size="200,30" font="Global; 25" halign="left" valign="top" foregroundColor="color3" backgroundColor="background1" zPosition="2" />
+		<widget name="lab2" position="340,955" size="150,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+		<widget name="labstop" position="500,955" size="200,30" font="Global;25" halign="left" valign="top" foregroundColor="color3" backgroundColor="background1" zPosition="1" />
+		<widget name="labrun" position="500,955" size="200,30" font="Global;25" halign="left" valign="top" foregroundColor="color3" backgroundColor="background1" zPosition="2" />
+		<panel name="TemplatesButtonsKey" />
+		<panel name="TemplatesClock" />
+	</screen>
+	<!-- Network Samba Setup-->
+	<screen name="NetworkSamba" position="fill" title="Samba Setup" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesNetworkSetup" />
+	</screen>
+	<!-- Network NFS Setup -->
+	<screen name="NetworkNfs" position="fill" title="NFS Setup" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesNetworkSetup" />
+	</screen>
+	<!-- Network Telnet Setup -->
+	<screen name="NetworkTelnet" position="fill" title="Telnet Setup" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesNetworkSetup" />
+	</screen>
+	<!-- Network FTP Setup -->
+	<screen name="NetworkFtp" position="fill" title="FTP Setup" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesNetworkSetup" />
+	</screen>
+	<!-- Network OpenVpn Setup -->
+	<screen name="NetworkOpenvpn" position="fill" title="OpenVpn Setup" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesNetworkSetup" />
+	</screen>
+	<!-- Network SABnzbd Setup -->
+	<screen name="NetworkSABnzbd" position="fill" title="SABnzbd Setup" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesNetworkSetup" />
+	</screen>
+	<!-- Network AFP Setup -->
+	<screen name="NetworkAfp" position="fill" title="AFP Setup" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesNetworkSetup" />
+	</screen>
+	<!-- Templates Network Log -->
+	<screen name="TemplatesNetworkLog">
+		<panel name="TemplatesMenu1800Layer" />
+		<eLabel text="n" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget name="infotext" position="90,200" size="1740,635" font="Console;25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
+		<panel name="TemplatesClock" />
+	</screen>
+	<!-- Network Samba Log -->
+	<screen name="NetworkSambaLog" position="fill" title="Samba Log" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesNetworkLog" />
+	</screen>
+	<!-- Network Inadyn Log -->
+	<screen name="NetworkInadynLog" position="fill" title="Inadyn Log" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="TemplatesNetworkLog" />
 	</screen>
 	<!-- ########## Softwaremanager ########## -->
 	<!--Software Manager Setup -->
@@ -2434,6 +2422,7 @@
 		<widget name="list" position="90,200" size="980,600" scrollbarMode="showNever" itemHeight="60" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
 		<panel name="TemplatesButtonsMenu" />
 		<panel name="TemplatesButtonsKey" />
+		<panel name="TemplatesButtons0" />
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- Plugin Download Browser -->
@@ -6675,7 +6664,7 @@
 						"itemHeight": 35}
 			</convert>
 		</widget>
-		<widget name="loadmessage" position="90,550" size="980,290" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<widget name="loadmessage" position="90,550" size="980,290" font="Global; 25" foregroundColor="color3" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<widget name="errormessage" position="90,550" size="980,290" font="Global; 25" foregroundColor="red" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesButtonsMenu" />
 		<panel name="TemplatesButtonsKey" />
