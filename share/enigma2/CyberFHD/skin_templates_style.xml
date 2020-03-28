@@ -6640,11 +6640,11 @@
 	<screen name="TemplatesClockDefault">
 		<panel name="TemplatesClockLayer" />
 		<!-- Templates Clock -->
-		<widget source="global.CurrentTime" render="Label" position="1615,95" size="90,50" font="Indication; 50" foregroundColor="color1" backgroundColor="background2" halign="right" transparent="1">
+		<widget source="global.CurrentTime" render="Label" position="1615,95" size="90,50" font="Indication; 50" foregroundColor="color1" backgroundColor="background" halign="right" transparent="1">
 			<convert type="ClockToText">Format:%H</convert>
 		</widget>
 		<eLabel text=":" position="1710,95" size="20,50" font="Indication; 50" foregroundColor="color1" backgroundColor="background" halign="center" transparent="1" zPosition="-1" />
-		<widget source="global.CurrentTime" render="Label" position="1735,95" size="90,50" font="Indication; 50" foregroundColor="color1" backgroundColor="background2" halign="left" transparent="1">
+		<widget source="global.CurrentTime" render="Label" position="1735,95" size="90,50" font="Indication; 50" foregroundColor="color1" backgroundColor="background" halign="left" transparent="1">
 			<convert type="ClockToText">Format:%M</convert>
 		</widget>
 		<widget source="global.CurrentTime" render="Label" position="1620,70" size="200,25" font="Titles; 20" foregroundColor="color2" backgroundColor="background2" halign="center" transparent="1">
@@ -6657,15 +6657,15 @@
 	<screen name="TemplatesClockStyle">
 		<panel name="TemplatesClockLayer" />
 		<!-- Templates Clock -->
-		<widget source="global.CurrentTime" render="Label" position="1615,95" size="90,50" font="Indication; 50" foregroundColor="color1" backgroundColor="background2" halign="right" transparent="1">
+		<widget source="global.CurrentTime" render="Label" position="1615,95" size="90,50" font="Indication; 50" foregroundColor="color1" backgroundColor="background" halign="right" transparent="1">
 			<convert type="ClockToText">Format:%H</convert>
 		</widget>
 		<eLabel text=":" position="1710,95" size="20,50" font="Indication; 50" foregroundColor="gray" backgroundColor="background" halign="center" transparent="1" zPosition="-1" />
-		<widget source="global.CurrentTime" render="FixedLabel" text=":" position="1710,95" size="20,50" font="Indication; 50" foregroundColor="color1" backgroundColor="background2" halign="center" transparent="1">
+		<widget source="global.CurrentTime" render="FixedLabel" text=":" position="1710,95" size="20,50" font="Indication; 50" foregroundColor="color1" backgroundColor="background" halign="center" transparent="1">
 			<convert type="AlwaysTrue"></convert>
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1735,95" size="90,50" font="Indication; 50" foregroundColor="color1" backgroundColor="background2" halign="left" transparent="1">
+		<widget source="global.CurrentTime" render="Label" position="1735,95" size="90,50" font="Indication; 50" foregroundColor="color1" backgroundColor="background" halign="left" transparent="1">
 			<convert type="ClockToText">Format:%M</convert>
 		</widget>
 		<widget source="global.CurrentTime" render="Label" position="1620,70" size="200,25" font="Titles; 20" foregroundColor="color2" backgroundColor="background2" halign="center" transparent="1">
