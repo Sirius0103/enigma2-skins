@@ -6464,6 +6464,223 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<panel name="TemplatesButtonsKey" />
 		<panel name="TemplatesClock" />
 	</screen>
+	<!-- ########## Seasondream ########## -->
+	<!-- PlayerNG -->
+	<screen name="PlayerNG" position="fill" title="PlayerNG" backgroundColor="transparent" flags="wfNoBorder">
+		<widget name="movie_image" position="122,718" size="195,280" alphatest="on" zPosition="2" />
+		<widget name="movie_image_landscape" position="122,858" size="195,140" alphatest="on" zPosition="2" />
+		<panel name="TemplatesInfoBarMediaLayer" />
+		<panel name="TemplatesInfoBarMediaProgress" />
+		<panel name="TemplatesInfoBarMediaIndication" />
+		<panel name="TemplatesInfoBarMediaInfoWeather" />
+		<panel name="TemplatesCoverLayer" />
+		<!-- Templates Media Cover-->
+		<ePixmap position="108,711" size="214,295" pixmap="CyberFHD/case_video_1.png" alphatest="on" zPosition="1" />
+		<ePixmap position="120,716" size="200,285" pixmap="CyberFHD/case_video_2.png" alphatest="on" zPosition="3" />
+		<!-- Others widget -->
+		<widget source="session.CurrentService" render="Label" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" noWrap="1">
+			<convert type="ServiceName">Name</convert>
+		</widget>
+		<widget source="session.CurrentService" render="PositionGauge" position="360,935" size="1450,15" transparent="1" zPosition="4">
+			<convert type="ServicePosition">Gauge</convert>
+		</widget>
+		<panel name="TemplatesClock" />
+	</screen>
+	<!-- PlayerNG IPTV -->
+	<screen name="PlayerNGIPTV" position="fill" title="PlayerNGIPTV" backgroundColor="transparent" flags="wfNoBorder">
+		<widget name="movie_image" position="166,875" size="100,132" alphatest="on" zPosition="2" />
+		<widget name="movie_image_landscape" position="105,874" size="220,132" alphatest="on" zPosition="2" />
+		<panel name="TemplatesInfoBarMediaLayer" />
+		<panel name="TemplatesInfoBarMediaIndication" />
+		<panel name="TemplatesInfoBarMediaInfoWeather" />
+		<panel name="TemplatesPiconLayer" />
+		<!-- Others widget -->
+		<widget source="session.CurrentService" render="Label" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" noWrap="1">
+			<convert type="ServiceName">Name</convert>
+		</widget>
+		<widget source="current_event" render="Label" position="355,900" size="80,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1">
+			<convert type="EventTime">StartTime</convert>
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget source="current_event" render="Label" position="435,900" size="1270,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1">
+			<convert type="EventName">Name</convert>
+		</widget>
+		<widget source="current_event" render="Label" position="1705,900" size="100,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="right" transparent="1">
+			<convert type="EventTime">EndTime</convert>
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<panel name="TemplatesInfoBarMediaProgressLayer" />
+		<widget source="current_event" render="Progress" position="355,935" size="1450,15" foregroundColor="background4" backgroundColor="background4" transparent="1" zPosition="2">
+			<convert type="EventTime">Progress</convert>
+		</widget>
+		<widget source="next_event" render="Label" position="355,955" size="80,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" transparent="1">
+			<convert type="EventTime">StartTime</convert>
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget source="next_event" render="Label" position="435,955" size="1270,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" transparent="1">
+			<convert type="EventName">Name</convert>
+		</widget>
+		<widget source="next_event" render="Label" position="1705,955" size="100,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="right" transparent="1">
+			<convert type="EventTime">EndTime</convert>
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<panel name="TemplatesClock" />
+	</screen>
+	<!-- PlayerNG Radio -->
+	<screen name="PlayerNGRadio" position="fill" title="PlayerNGRadio" backgroundColor="transparent" flags="wfNoBorder">
+		<widget name="movie_image" position="166,875" size="100,132" alphatest="on" zPosition="2" />
+		<widget name="movie_image_landscape" position="105,874" size="220,132" alphatest="on" zPosition="2" />
+		<panel name="TemplatesInfoBarMediaLayer" />
+		<panel name="TemplatesInfoBarMediaInfoWeather" />
+		<panel name="TemplatesDownLayer3" />
+		<panel name="TemplatesPiconLayer" />
+		<!-- Others widget -->
+		<widget source="session.CurrentService" render="Label" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" noWrap="1">
+			<convert type="ServiceName">Name</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="355,900" size="1450,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1">
+			<convert type="ServiceName">Name</convert>
+		</widget>
+	</screen>
+	<!-- Playerinfoscreen -->
+	<screen name="Playerinfoscreen" position="560,450" size="800,250" title="Playerinfoscreen" backgroundColor="background1" flags="wfNoBorder">
+		<widget name="list" position="15,60" size="770,175" font="Global; 25" sizeText="770,35" sizeStatusText="320,35" positionText="10,0" positionStatusText="400,0" positionIcon="700,0" itemHeight="35" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<eLabel position="15,10" size="770,40" text="Настройки A/V" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="center" transparent="1" noWrap="1" />
+	</screen>
+	<!-- SeasondreamNG -->
+	<screen name="SeasondreamNG" position="fill" title="Seasondream" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="TemplatesMenu1800Layer" />
+		<eLabel text="V" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<eLabel position="90,430" size="1740,2" backgroundColor="background3" zPosition="1" />
+		<eLabel position="90,200" size="1740,220" backgroundColor="black" zPosition="-1" />
+		<widget name="spinner" position="1710,200" size="120,20" transparent="1" alphatest="off" scale="on" />
+		<widget name="menu_text" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="right" transparent="1" zPosition="1" />
+		<widget name="confirmation_pos" position="1780,200" size="48,48" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SeasondreamNG/skins/default/fhd/confirmation_pos.png" transparent="1" alphatest="on" />
+		<widget name="confirmation_neg" position="1780,200" size="48,48" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SeasondreamNG/skins/default/fhd/confirmation_neg.png" transparent="1" alphatest="on" />
+		<widget name="menu_list" position="30,200" size="1550,220" itemHeight="220" imageSize="264,192" itemCount="5" jobsPerPage="4" itemsPerPage="17" selectionDisabled="1" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget name="submenu_list_1" position="620,445" size="730,390" font="Global; 25" sizeText="730,35" itemHeight="35" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget name="submenu_list_2" position="1360,445" size="470,390" font="Global; 25" sizeText="570,35" itemHeight="35" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget name="submenu_list_3" position="620,445" size="730,390" font="Global; 25" sizeText="725,35" positionText="10,0" positionStatusText="500,0" sizeStatusText="225,35" positionIcon="680,-5" sizeIcon="45,45" itemHeight="35" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget name="suggestion_list" position="1260,445" size="570,390" font="Global; 25" sizeText="580,35" itemHeight="35" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget name="keyboard_text" position="90,445" size="1000,40" font="Global; 35" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+		<widget name="keyboard_list" sizeIcon="0,68" position="90,495" size="957,340" font="Global;35" itemHeight="68" selectionDisabled="1" backgroundColor="black" transparent="1" />
+		<widget name="movie_image_suggestion" position="95,490" size="240,350" alphatest="on" zPosition="1" />
+		<widget name="movie_info_suggestion" position="350,530" size="700,300" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+		<widget name="movie_rating_suggestion_bg" position="350,495" size="220,21" pixmap="/usr/share/enigma2/CyberFHD/starsbar/0.png" transparent="1" alphatest="on" zPosition="5" />
+		<widget name="movie_rating_suggestion" position="350,495" size="220,21" pixmap="/usr/share/enigma2/CyberFHD/starsbar/10.png" transparent="1" alphatest="on" zPosition="6" />
+		<widget name="message_box_text" position="90,445" size="1740,390" font="Global; 25" foregroundColor="color3" backgroundColor="background1" valign="center" halign="center" transparent="1" />
+		<widget name="settings_help_text" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
+		<widget name="button_red_text" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="1" />
+		<widget name="button_green_text" pposition="1380,914" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="1" position="1380,914" />
+		<widget name="button_yellow_text" position="1380,944" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="1" />
+		<widget name="button_blue_text" position="1380,974" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="1" />
+		<panel name="TemplatesButtons" />
+		<panel name="TemplatesClock" />
+	</screen>
+	<!-- Detailscreen -->
+	<screen name="Detailscreen" position="fill" title="Detailscreen" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="TemplatesMenu1800Layer" />
+		<eLabel text="V" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<widget name="spinner" position="1710,200" size="120,20" transparent="1" alphatest="off" scale="on" />
+		<widget name="frame_title" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" zPosition="1" />
+		<widget name="confirmation_pos" position="1780,200" size="48,48" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SeasondreamNG/skins/default/fhd/confirmation_pos.png" transparent="1" alphatest="on" />
+		<widget name="confirmation_neg" position="1780,200" size="48,48" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SeasondreamNG/skins/default/fhd/confirmation_neg.png" transparent="1" alphatest="on" />
+		<widget name="category_list" position="90,200" size="600,635" font="Global; 25" itemHeight="35" positionText="10,5" sizeText="550,35" positionIcon="560,0" sizeIcon="35,35" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget name="selector_list" position="340,895" size="1020,70" font="Global; 25" itemHeight="35" positionText="10,0" sizeText="1000,35" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget name="movie_list" position="90,200" size="600,635" font="Global; 25" itemHeight="35" positionText="10,0" sizeText="550,35" sizeFileText="560,35" positionFileText="50,0" positionFileIcon="5,5" sizeFileIcon="35,35" positionIcon="560,0" sizeIcon="35,35" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget name="play_list" position="90,200" size="600,635" font="Global; 25" itemHeight="35" positionText="10,0" sizeText="550,35" positionIcon="560,0" sizeIcon="35,35" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget name="epg_list" position="700,200" size="1130,635" font="Global; 25" itemHeight="35" positionTime="10,0" positionText="180,0" sizeTime="190,35" sizeText="950,35" positionProgressbar="10,60" sizeProgressbar="100,10" positionIcon="690,8" sizeIcon="36,36" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget name="movie_image" position="700,200" size="285,398" alphatest="on" zPosition="1" />
+		<widget name="movie_title" position="995,200" size="835,35" font="Global; 25" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+		<widget name="movie_info" position="995,240" size="835,360" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" />
+		<widget source="movie_description" render="Label" position="700,605" size="1130,235" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" transparent="1" />
+		<widget name="movie_image_landscape" position="700,200" size="398,285" alphatest="on" zPosition="1" />
+		<widget name="movie_title_landscape" position="1110,200" size="720,35" font="Global; 25" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" zPosition="3" />
+		<widget name="like_img" position="1110,250" size="48,48" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SeasondreamNG/skins/default/fhd/like.png" alphatest="on" />
+		<widget name="like_value" position="1170,260" size="300,35" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" zPosition="10" />
+		<widget name="dislike_img" position="1110,310" size="48,48" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SeasondreamNG/skins/default/fhd/dislike.png" alphatest="on" />
+		<widget name="dislike_value" position="1170,320" size="300,35" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" zPosition="10" />
+		<widget name="views_img" position="1110,370" size="48,48" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SeasondreamNG/skins/default/fhd/views.png" alphatest="on" />
+		<widget name="views_value" position="1170,380" size="300,35" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" zPosition="10" />
+		<widget name="rating_imdb_title" position="995,525" size="300,35" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" zPosition="10" />
+		<widget name="rating_imdb_bg" position="995,570" size="220,21" pixmap="/usr/share/enigma2/CyberFHD/starsbar/0.png" transparent="1" alphatest="on" zPosition="5" />
+		<widget name="rating_imdb" position="995,570" size="220,21" pixmap="/usr/share/enigma2/CyberFHD/starsbar/10.png" transparent="1" alphatest="on" zPosition="6" />
+		<widget name="rating_imdb_value" position="1235,565" size="100,35" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" zPosition="10" />
+		<widget name="rating_kp_title" position="1375,525" size="300,35" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" zPosition="10" />
+		<widget name="rating_kp_bg" position="1375,570" size="220,21" pixmap="/usr/share/enigma2/CyberFHD/starsbar/0.png" transparent="1" alphatest="on" zPosition="5" />
+		<widget name="rating_kp" position="1375,570" size="220,21" pixmap="/usr/share/enigma2/CyberFHD/starsbar/10.png" transparent="1" alphatest="on" zPosition="6" />
+		<widget name="rating_kp_value" position="1615,565" size="100,35" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" zPosition="10" />
+		<widget name="message_box_text" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
+		<widget name="button_red_text" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="1" />
+		<widget name="button_green_text" pposition="1380,914" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="1" position="1380,914" />
+		<widget name="button_yellow_text" position="1380,944" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="1" />
+		<widget name="button_blue_text" position="1380,974" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="1" />
+		<eLabel text="&lt; 0 &gt;" position="1505,100" size="100,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+		<panel name="TemplatesButtons" />
+		<panel name="TemplatesClock" />
+	</screen>
+	<!-- Jobscreen -->
+	<screen name="Jobscreen" position="fill" title="Jobscreen" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="TemplatesMenu1800Layer" />
+		<eLabel text="b" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<widget name="spinner" position="1710,200" size="120,20" transparent="1" alphatest="off" scale="on" />
+		<widget name="frame_title" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" zPosition="1" />
+		<widget name="confirmation_pos" position="1780,200" size="48,48" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SeasondreamNG/skins/default/fhd/confirmation_pos.png" transparent="1" alphatest="on" />
+		<widget name="confirmation_neg" position="1780,200" size="48,48" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SeasondreamNG/skins/default/fhd/confirmation_neg.png" transparent="1" alphatest="on" />
+		<widget name="download_list" position="90,200" size="1740,630" font="Global; 25" itemHeight="210" positionCover="10,5" sizeCover="130,200" positionText="160,5" sizeText="1550,200" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget name="message_box_text" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
+		<widget name="button_red_text" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="1" />
+		<widget name="button_green_text" pposition="1380,914" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="1" position="1380,914" />
+		<widget name="button_yellow_text" position="1380,944" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="1" />
+		<widget name="button_blue_text" position="1380,974" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="1" />
+		<panel name="TemplatesButtons" />
+		<panel name="TemplatesClock" />
+	</screen>
+	<!-- Messagescreen -->
+	<screen name="Messagescreen" position="fill" title="Messagescreen" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="TemplatesMenu1800Layer" />
+		<eLabel text="e" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<widget name="frame_title" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" zPosition="1" />
+		<widget name="text" position="90,200" size="1740,635" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" />
+		<panel name="TemplatesClock" />
+	</screen>
+	<!-- Choosehomedirscreen -->
+	<screen name="Choosehomedirscreen" position="fill" title="Choosehomedirscreen" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="TemplatesMenu1800Layer" />
+		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<eLabel position="90,430" size="1740,2" backgroundColor="background3" zPosition="1" />
+		<widget name="frame_title" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" zPosition="1" />
+		<widget name="text" position="90,200" size="1740,220" font="Global; 25" foregroundColor="color3" backgroundColor="background1" valign="center" halign="center" transparent="1" />
+		<widget name="keyboard_text" position="90,445" size="1000,40" font="Global; 35" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+		<widget name="keyboard_list" sizeIcon="0,68" position="90,495" size="957,340" font="Global;35" itemHeight="68" selectionDisabled="1" backgroundColor="black" transparent="1" />
+		<widget name="suggestion_list" position="1100,445" size="730,390" font="Global; 25" sizeText="730,35" itemHeight="35" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget name="button_red_text" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="1" />
+		<widget name="button_green_text" pposition="1380,914" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="1" position="1380,914" />
+		<widget name="button_yellow_text" position="1380,944" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="1" />
+		<widget name="button_blue_text" position="1380,974" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="1" />
+		<panel name="TemplatesButtons" />
+		<panel name="TemplatesClock" />
+	</screen>
+	<!-- Parentcontrolscreen -->
+	<screen name="Parentcontrolscreen" position="fill" title="Parentcontrolscreen" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="TemplatesMenu1800Layer" />
+		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<eLabel position="90,430" size="1740,2" backgroundColor="background3" zPosition="1" />
+		<widget name="frame_title" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" zPosition="1" />
+		<widget name="confirmation_pos" position="1780,200" size="48,48" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SeasondreamNG/skins/default/fhd/confirmation_pos.png" transparent="1" alphatest="on" />
+		<widget name="confirmation_neg" position="1780,200" size="48,48" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SeasondreamNG/skins/default/fhd/confirmation_neg.png" transparent="1" alphatest="on" />
+		<widget name="text" position="90,200" size="1740,220" font="Global; 25" foregroundColor="color3" backgroundColor="background1" valign="center" halign="center" transparent="1" />
+		<widget name="keyboard_text" position="90,445" size="1000,40" font="Global; 35" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+		<widget name="keyboard_list" sizeIcon="0,68" position="90,495" size="957,340" font="Global;35" itemHeight="68" selectionDisabled="1" backgroundColor="black" transparent="1" />
+		<widget name="suggestion_list" position="1100,445" size="730,390" font="Global; 25" sizeText="730,35" itemHeight="35" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget name="button_red_text" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="1" />
+		<widget name="button_green_text" pposition="1380,914" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="1" position="1380,914" />
+		<widget name="button_yellow_text" position="1380,944" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="1" />
+		<widget name="button_blue_text" position="1380,974" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="1" />
+		<panel name="TemplatesButtons" />
+		<panel name="TemplatesClock" />
+	</screen>
 	<!-- ########## SHOUTcast ########## -->
 	<!-- SHOUTcast Widget -->
 	<screen name="SHOUTcastWidget" position="fill" title="SHOUTcast" backgroundColor="transparent" flags="wfNoBorder">
