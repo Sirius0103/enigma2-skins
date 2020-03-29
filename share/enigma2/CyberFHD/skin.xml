@@ -6509,9 +6509,8 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		</widget>
 	</screen>
 	<!-- Playerinfoscreen -->
-	<screen name="Playerinfoscreen" position="560,450" size="800,250" title="Playerinfoscreen" backgroundColor="background1" flags="wfNoBorder">
-		<widget name="list" position="15,60" size="770,175" font="Global; 25" sizeText="770,35" sizeStatusText="320,35" positionText="10,0" positionStatusText="400,0" positionIcon="700,0" itemHeight="35" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<eLabel position="15,10" size="770,40" text="Настройки A/V" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="center" transparent="1" noWrap="1" />
+	<screen name="Playerinfoscreen" position="560,450" size="800,100" title="Playerinfoscreen" backgroundColor="background1" flags="wfNoBorder">
+		<widget name="list" position="15,15" size="770,70" font="Global; 25" sizeText="770,35" sizeStatusText="320,35" positionText="10,0" positionStatusText="400,0" positionIcon="700,0" itemHeight="35" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
 	</screen>
 	<!-- SeasondreamNG -->
 	<screen name="SeasondreamNG" position="fill" title="Seasondream" backgroundColor="transparent" flags="wfNoBorder">
