@@ -20,7 +20,7 @@
 -->
 	<!-- ########## SkinLIB ########## -->
 	<!-- Down SkinLIB -->
-	<screen name="DownSkinLIB" position="fill" title="Download SkinLIB" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="DownSkinLIB" position="fill" title="Download SkinLIB" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="¤" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
@@ -35,11 +35,11 @@
 	</screen>
 	<!-- ########## AtileHD ########## -->
 	<!-- AtileHD Config -->
-	<screen name="AtileHD_Config" position="fill" title="AtileHD Setup" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="AtileHD_Config" position="fill" title="AtileHD Setup" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="s" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
-		<widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget name="config" position="90,200" size="980,630" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
 		<panel name="TemplatesButtonsKey" />
 		<panel name="TemplatesClock" />
 	</screen>
@@ -62,11 +62,11 @@
 	</screen>
 	<!-- ########## CyberFHD ########## -->
 	<!-- Setup CyberFHD -->
-	<screen name="SetupCyberFHD" position="fill" title="Setup CyberFHD" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="SetupCyberFHD" position="fill" title="Setup CyberFHD" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="¤" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
-		<widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget name="config" position="90,200" size="980,630" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
 		<widget name="info_com" position="340,895" size="1000,60" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="top" transparent="1" />
 		<widget name="info_sk" position="340,960" size="1000,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="center" transparent="1" />
 		<!-- Layer Preview -->
@@ -102,11 +102,11 @@
 	</screen>
 	<!-- ########## CyberLCD ########## -->
 	<!-- Setup CyberLCD -->
-	<screen name="SetupCyberLCD" position="fill" title="Setup CyberLCD" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="SetupCyberLCD" position="fill" title="Setup CyberLCD" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="¤" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
-		<widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget name="config" position="90,200" size="980,630" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
 		<widget name="info_com" position="340,895" size="1000,60" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="top" transparent="1" />
 		<widget name="info_sk" position="340,960" size="1000,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="center" transparent="1" />
 		<!-- Layer Preview -->
