@@ -28,6 +28,7 @@
 		<parameter name="ChoicelistName" value="40,3,900,30" />
 		<parameter name="ChoicelistDash" value="5,5,900,30" />
 		<parameter name="ChoicelistIcon" value="5,5,30,30" />
+		<parameter name="ConfigListSeperator" value="400" />
 		<parameter name="FileListName" value="40,3,900,30" />
 		<parameter name="FileListIcon" value="5,5,30,30" />
 		<parameter name="FileListMultiName" value="75,3,900,30" />
@@ -7326,7 +7327,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<panel name="TemplatesButtons" />
 		<panel name="TemplatesClock" />
 	</screen>
-	<!-- ########## You Tube ########## -->
+	<!-- ########## You Tube TV ########## -->
 	<!-- You Tube Window-->
 	<screen name="YoutubeTVWindow" position="fill" title="You Tube Window" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="TemplatesMenuLayer" />
