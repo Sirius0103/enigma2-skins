@@ -595,12 +595,12 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 	# user skin
 			skin_user = []
 	# color`s
-			skin_user.append(["#_000000_", "#" + config.skin.cyberlcd.backgroundtransparent.value + config.skin.cyberlcd.colorbackground1.value])
-			skin_user.append(["#_000fff_", "#" + config.skin.cyberlcd.foregroundtransparent.value + config.skin.cyberlcd.colorbackground4.value])
-			skin_user.append(["#_0ffd700", "#" + config.skin.cyberlcd.foregroundtransparent.value + config.skin.cyberlcd.colorforeground1.value])
-			skin_user.append(["#_0f5f5f5", "#" + config.skin.cyberlcd.foregroundtransparent.value + config.skin.cyberlcd.colorforeground2.value])
-			skin_user.append(["#_0a9a9a9", "#" + config.skin.cyberlcd.foregroundtransparent.value + config.skin.cyberlcd.colorforeground3.value])
-			skin_user.append(["#_000ffff", "#" + config.skin.cyberlcd.foregroundtransparent.value + config.skin.cyberlcd.colorforeground4.value])
+			skin_user.append(["#_0101010", "#" + config.skin.cyberlcd.backgroundtransparent.value + config.skin.cyberlcd.colorbackground1.value])
+			skin_user.append(["#_0404040", "#" + config.skin.cyberlcd.foregroundtransparent.value + config.skin.cyberlcd.colorbackground4.value])
+			skin_user.append(["#_0606060", "#" + config.skin.cyberlcd.foregroundtransparent.value + config.skin.cyberlcd.colorforeground1.value])
+			skin_user.append(["#_0707070", "#" + config.skin.cyberlcd.foregroundtransparent.value + config.skin.cyberlcd.colorforeground2.value])
+			skin_user.append(["#_0808080", "#" + config.skin.cyberlcd.foregroundtransparent.value + config.skin.cyberlcd.colorforeground3.value])
+			skin_user.append(["#_0909090", "#" + config.skin.cyberlcd.foregroundtransparent.value + config.skin.cyberlcd.colorforeground4.value])
 	# clock
 			if not fileExists("/usr/lib/enigma2/python/Components/Converter/AlwaysTrue.py"):
 				skin_user.append(["TemplatesDisplayClockDefault","TemplatesDisplayClock"])

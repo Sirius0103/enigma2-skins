@@ -60,19 +60,19 @@
 	<colors>
 		<color name="aqua" value="#0000ffff" />
 		<color name="background" value="#00000000" />
-		<color name="background1" value="#_000000_" />
-		<color name="background2" value="#_069696_" />
-		<color name="background3" value="#_0fffff_" />
-		<color name="background4" value="#_000fff_" />
-		<color name="background5" value="#_069696_" />
+		<color name="background1" value="#_0101010" />
+		<color name="background2" value="#_0202020" />
+		<color name="background3" value="#_0303030" />
+		<color name="background4" value="#_0404040" />
+		<color name="background5" value="#_0505050" />
 		<color name="black" value="#00000000" />
 		<color name="blue" value="#000000ff" />
 		<color name="color" value="#00ffffff" />
-		<color name="color1" value="#_0ffd700" />
-		<color name="color2" value="#_0f5f5f5" />
-		<color name="color3" value="#_0a9a9a9" />
-		<color name="color4" value="#_000ffff" />
-		<color name="color5" value="#_0ffffff" />
+		<color name="color1" value="#_0606060" />
+		<color name="color2" value="#_0707070" />
+		<color name="color3" value="#_0808080" />
+		<color name="color4" value="#_0909090" />
+		<color name="color5" value="#_0000000" />
 		<color name="gray" value="#00808080" />
 		<color name="green" value="#00008000" />
 		<color name="red" value="#00ff0000" />
