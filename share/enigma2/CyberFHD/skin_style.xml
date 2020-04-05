@@ -60,11 +60,11 @@
 	<colors>
 		<color name="aqua" value="#0000ffff" />
 		<color name="background" value="#00000000" />
-		<color name="background1" value="#_0000000" />
-		<color name="background2" value="#_0696969" />
-		<color name="background3" value="#_0ffffff" />
-		<color name="background4" value="#_000ffff" />
-		<color name="background5" value="#_0696969" />
+		<color name="background1" value="#_000000_" />
+		<color name="background2" value="#_069696_" />
+		<color name="background3" value="#_0fffff_" />
+		<color name="background4" value="#_000fff_" />
+		<color name="background5" value="#_069696_" />
 		<color name="black" value="#00000000" />
 		<color name="blue" value="#000000ff" />
 		<color name="color" value="#00ffffff" />
