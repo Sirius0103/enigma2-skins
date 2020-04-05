@@ -356,14 +356,14 @@ SKIN_CYBERLCD = """
 		<eLabel position="0,188" size="80,659" backgroundColor="#50ffffff" zPosition="-12" />
 		<eLabel position="0,190" size="80,655" backgroundColor="#50000000" zPosition="-11" />
 		<eLabel position="10,200" size="70,635" backgroundColor="#50696969" zPosition="-10" />
-		<eLabel text="C" position="10,205" size="70,70" font="SkinTitles; 70" foregroundColor="color5" backgroundColor="#50696969" halign="center" valign="center" transparent="1" zPosition="-9" />
-		<eLabel text="Y" position="10,275" size="70,70" font="SkinTitles; 70" foregroundColor="color5" backgroundColor="#50696969" halign="center" valign="center" transparent="1" zPosition="-9" />
-		<eLabel text="B" position="10,345" size="70,70" font="SkinTitles; 70" foregroundColor="color5" backgroundColor="#50696969" halign="center" valign="center" transparent="1" zPosition="-9" />
-		<eLabel text="E" position="10,415" size="70,70" font="SkinTitles; 70" foregroundColor="color5" backgroundColor="#50696969" halign="center" valign="center" transparent="1" zPosition="-9" />
-		<eLabel text="R" position="10,485" size="70,70" font="SkinTitles; 70" foregroundColor="color5" backgroundColor="#50696969" halign="center" valign="center" transparent="1" zPosition="-9" />
-		<eLabel text="L" position="10,625" size="70,70" font="SkinTitles; 70" foregroundColor="color5" backgroundColor="#50696969" halign="center" valign="center" transparent="1" zPosition="-9" />
-		<eLabel text="C" position="10,695" size="70,70" font="SkinTitles; 70" foregroundColor="color5" backgroundColor="#50696969" halign="center" valign="center" transparent="1" zPosition="-9" />
-		<eLabel text="D" position="10,765" size="70,70" font="SkinTitles; 70" foregroundColor="color5" backgroundColor="#50696969" halign="center" valign="center" transparent="1" zPosition="-9" />
+		<eLabel text="C " position="10,205" size="70,70" font="SkinTitles; 70" foregroundColor="color5" backgroundColor="#50696969" halign="center" valign="center" transparent="1" zPosition="-9" />
+		<eLabel text="Y " position="10,275" size="70,70" font="SkinTitles; 70" foregroundColor="color5" backgroundColor="#50696969" halign="center" valign="center" transparent="1" zPosition="-9" />
+		<eLabel text="B " position="10,345" size="70,70" font="SkinTitles; 70" foregroundColor="color5" backgroundColor="#50696969" halign="center" valign="center" transparent="1" zPosition="-9" />
+		<eLabel text="E " position="10,415" size="70,70" font="SkinTitles; 70" foregroundColor="color5" backgroundColor="#50696969" halign="center" valign="center" transparent="1" zPosition="-9" />
+		<eLabel text="R " position="10,485" size="70,70" font="SkinTitles; 70" foregroundColor="color5" backgroundColor="#50696969" halign="center" valign="center" transparent="1" zPosition="-9" />
+		<eLabel text="L " position="10,625" size="70,70" font="SkinTitles; 70" foregroundColor="color5" backgroundColor="#50696969" halign="center" valign="center" transparent="1" zPosition="-9" />
+		<eLabel text="C " position="10,695" size="70,70" font="SkinTitles; 70" foregroundColor="color5" backgroundColor="#50696969" halign="center" valign="center" transparent="1" zPosition="-9" />
+		<eLabel text="D " position="10,765" size="70,70" font="SkinTitles; 70" foregroundColor="color5" backgroundColor="#50696969" halign="center" valign="center" transparent="1" zPosition="-9" />
 		<widget source="Title" render="Label" position="80,96" size="1500,44" font="SkinTitles; 40" foregroundColor="#10ffd700" backgroundColor="#50000000" halign="left" transparent="1" />
 		<widget name="config" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="35" font="SkinGlobal; 25" backgroundColor="#50000000" backgroundColorSelected="#50696969" transparent="1" />
 		<widget name="info_com" position="340,895" size="1000,60" font="SkinGlobal; 25" foregroundColor="#10a9a9a9" backgroundColor="#50000000" halign="left" valign="top" transparent="1" />
@@ -595,12 +595,12 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 	# user skin
 			skin_user = []
 	# color`s
-			skin_user.append(["#50000000", "#" + config.skin.cyberlcd.backgroundtransparent.value + config.skin.cyberlcd.colorbackground1.value])
-			skin_user.append(["#5000ffff", "#" + config.skin.cyberlcd.foregroundtransparent.value + config.skin.cyberlcd.colorbackground4.value])
-			skin_user.append(["#10ffd700", "#" + config.skin.cyberlcd.foregroundtransparent.value + config.skin.cyberlcd.colorforeground1.value])
-			skin_user.append(["#10f5f5f5", "#" + config.skin.cyberlcd.foregroundtransparent.value + config.skin.cyberlcd.colorforeground2.value])
-			skin_user.append(["#10a9a9a9", "#" + config.skin.cyberlcd.foregroundtransparent.value + config.skin.cyberlcd.colorforeground3.value])
-			skin_user.append(["#1000ffff", "#" + config.skin.cyberlcd.foregroundtransparent.value + config.skin.cyberlcd.colorforeground4.value])
+			skin_user.append(["#_000000_", "#" + config.skin.cyberlcd.backgroundtransparent.value + config.skin.cyberlcd.colorbackground1.value])
+			skin_user.append(["#_000fff_", "#" + config.skin.cyberlcd.foregroundtransparent.value + config.skin.cyberlcd.colorbackground4.value])
+			skin_user.append(["#_0ffd700", "#" + config.skin.cyberlcd.foregroundtransparent.value + config.skin.cyberlcd.colorforeground1.value])
+			skin_user.append(["#_0f5f5f5", "#" + config.skin.cyberlcd.foregroundtransparent.value + config.skin.cyberlcd.colorforeground2.value])
+			skin_user.append(["#_0a9a9a9", "#" + config.skin.cyberlcd.foregroundtransparent.value + config.skin.cyberlcd.colorforeground3.value])
+			skin_user.append(["#_000ffff", "#" + config.skin.cyberlcd.foregroundtransparent.value + config.skin.cyberlcd.colorforeground4.value])
 	# clock
 			if not fileExists("/usr/lib/enigma2/python/Components/Converter/AlwaysTrue.py"):
 				skin_user.append(["TemplatesDisplayClockDefault","TemplatesDisplayClock"])

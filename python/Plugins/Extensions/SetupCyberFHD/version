@@ -1,11 +1,11 @@
 Скин: CyberFHD
-Версия скина: 1.5-r7
+Версия скина: 1.5-r8
 
-Изменения: 20.03.2020 добавлены окна ChromiumOS, Subtitles Search, NeoBoot, VCS, OpkgInstaller, изменены SkinSelector, TemplatesButtons
+Изменения: xx.04.2020 добавлены окна Seasondream 20.03.2020 добавлены окна ChromiumOS, Subtitles Search, NeoBoot, VCS, OpkgInstaller, изменены SkinSelector, TemplatesButtons
 15.03.2020 добавлены окна CrossEPG, AutoBouquetsMaker, VPS, AutomaticVolumeAdjustment, поправлены окна FlashOnline, ImageBackup, Blindscan
 15.02.2020 добавлено окно OSD3DSetupScreen, поправлено окно WeatherMSN, добавлена настройка в "Crypted panel in secondinfobar:"
 25.01.2020 поправлены окна Dish добавлены окна VideoWizard, LanguageWizard
-02.01.2020 поправлены окна VirtualKeyBoard, LanguageSelection, FlashOnline, ImageBackup, добавлены окна Animmain, Iconmain, SignalFinderMultistreamT2MI, Blindscan, SatBlindscanState, SatBlindscanState2, MultiBootSelector, MultiBootWizard, NetworkPassword, FileCommander
+02.01.2020 поправлены окна VirtualKeyBoard, LanguageSelection, FlashOnline, ImageBackup, добавлены окна Animmain, Iconmain, SignalFinderMultistreamT2MI, Blindscan, MultiBootSelector, MultiBootWizard, NetworkPassword, FileCommander
 22.02.2019 добавлена настройка "MSN & Moon", "Animated MSN & Moon", поправлено окно VirtualKeyBoard, Volume, WeatherMSN, добавлено TemplatesEPGInfo
 30.12.2018 Изменено имя Satellite на Sender в ChannelSelection, поправлено окно NimSetup
 21.12.2018 добавлен "skin_the_user.xml", удалены окна E2iPlayer, DVD Burn

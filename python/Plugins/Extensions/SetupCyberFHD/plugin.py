@@ -807,16 +807,16 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 	# user skin
 			skin_user = skin_templates_user = []
 	# color`s
-			skin_user.append(["#50000000", "#" + config.skin.cyberfhd.backgroundtransparent.value + config.skin.cyberfhd.colorbackground1.value])
-			skin_user.append(["#50696969", "#" + config.skin.cyberfhd.backgroundtransparent.value + config.skin.cyberfhd.colorbackground2.value])
-			skin_user.append(["#50ffffff", "#" + config.skin.cyberfhd.backgroundtransparent.value + config.skin.cyberfhd.colorbackground3.value])
-			skin_user.append(["#5000ffff", "#" + config.skin.cyberfhd.foregroundtransparent.value + config.skin.cyberfhd.colorbackground4.value])
-			skin_user.append(["#60696969", "#" + config.skin.cyberfhd.backgroundtransparent.value + config.skin.cyberfhd.colorbackground5.value])
-			skin_user.append(["#10ffd700", "#" + config.skin.cyberfhd.foregroundtransparent.value + config.skin.cyberfhd.colorforeground1.value])
-			skin_user.append(["#10f5f5f5", "#" + config.skin.cyberfhd.foregroundtransparent.value + config.skin.cyberfhd.colorforeground2.value])
-			skin_user.append(["#10a9a9a9", "#" + config.skin.cyberfhd.foregroundtransparent.value + config.skin.cyberfhd.colorforeground3.value])
-			skin_user.append(["#1000ffff", "#" + config.skin.cyberfhd.foregroundtransparent.value + config.skin.cyberfhd.colorforeground4.value])
-			skin_user.append(["#10ffffff", "#" + config.skin.cyberfhd.backgroundtransparent.value + config.skin.cyberfhd.colorforeground5.value])
+			skin_user.append(["#_0000000", "#" + config.skin.cyberfhd.backgroundtransparent.value + config.skin.cyberfhd.colorbackground1.value])
+			skin_user.append(["#_0696969", "#" + config.skin.cyberfhd.backgroundtransparent.value + config.skin.cyberfhd.colorbackground2.value])
+			skin_user.append(["#_0ffffff", "#" + config.skin.cyberfhd.backgroundtransparent.value + config.skin.cyberfhd.colorbackground3.value])
+			skin_user.append(["#_000ffff", "#" + config.skin.cyberfhd.foregroundtransparent.value + config.skin.cyberfhd.colorbackground4.value])
+			skin_user.append(["#_0696969", "#" + config.skin.cyberfhd.backgroundtransparent.value + config.skin.cyberfhd.colorbackground5.value])
+			skin_user.append(["#_0ffd700", "#" + config.skin.cyberfhd.foregroundtransparent.value + config.skin.cyberfhd.colorforeground1.value])
+			skin_user.append(["#_0f5f5f5", "#" + config.skin.cyberfhd.foregroundtransparent.value + config.skin.cyberfhd.colorforeground2.value])
+			skin_user.append(["#_0a9a9a9", "#" + config.skin.cyberfhd.foregroundtransparent.value + config.skin.cyberfhd.colorforeground3.value])
+			skin_user.append(["#_000ffff", "#" + config.skin.cyberfhd.foregroundtransparent.value + config.skin.cyberfhd.colorforeground4.value])
+			skin_user.append(["#_0ffffff", "#" + config.skin.cyberfhd.backgroundtransparent.value + config.skin.cyberfhd.colorforeground5.value])
 	# clock
 			if not fileExists("/usr/lib/enigma2/python/Components/Converter/AlwaysTrue.py"):
 				skin_templates_user.append(["TemplatesClockDefault","TemplatesClock"])
