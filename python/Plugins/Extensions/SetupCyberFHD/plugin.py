@@ -807,11 +807,11 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 	# user skin
 			skin_user = skin_templates_user = []
 	# color`s
-			skin_user.append(["#_0000000", "#" + config.skin.cyberfhd.backgroundtransparent.value + config.skin.cyberfhd.colorbackground1.value])
-			skin_user.append(["#_0696969", "#" + config.skin.cyberfhd.backgroundtransparent.value + config.skin.cyberfhd.colorbackground2.value])
-			skin_user.append(["#_0ffffff", "#" + config.skin.cyberfhd.backgroundtransparent.value + config.skin.cyberfhd.colorbackground3.value])
-			skin_user.append(["#_000ffff", "#" + config.skin.cyberfhd.foregroundtransparent.value + config.skin.cyberfhd.colorbackground4.value])
-			skin_user.append(["#_0696969", "#" + config.skin.cyberfhd.backgroundtransparent.value + config.skin.cyberfhd.colorbackground5.value])
+			skin_user.append(["#_000000_", "#" + config.skin.cyberfhd.backgroundtransparent.value + config.skin.cyberfhd.colorbackground1.value])
+			skin_user.append(["#_069696_", "#" + config.skin.cyberfhd.backgroundtransparent.value + config.skin.cyberfhd.colorbackground2.value])
+			skin_user.append(["#_0fffff_", "#" + config.skin.cyberfhd.backgroundtransparent.value + config.skin.cyberfhd.colorbackground3.value])
+			skin_user.append(["#_000fff_", "#" + config.skin.cyberfhd.foregroundtransparent.value + config.skin.cyberfhd.colorbackground4.value])
+			skin_user.append(["#_069696_", "#" + config.skin.cyberfhd.backgroundtransparent.value + config.skin.cyberfhd.colorbackground5.value])
 			skin_user.append(["#_0ffd700", "#" + config.skin.cyberfhd.foregroundtransparent.value + config.skin.cyberfhd.colorforeground1.value])
 			skin_user.append(["#_0f5f5f5", "#" + config.skin.cyberfhd.foregroundtransparent.value + config.skin.cyberfhd.colorforeground2.value])
 			skin_user.append(["#_0a9a9a9", "#" + config.skin.cyberfhd.foregroundtransparent.value + config.skin.cyberfhd.colorforeground3.value])
