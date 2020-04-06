@@ -363,18 +363,18 @@
 			<convert type="TemplatedMultiContent">
 				{"templates":
 					{"default": (35, [
-						MultiContentEntryText(pos = (10, 2),   size = (50, 30),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # key,
-						MultiContentEntryText(pos = (80, 2),  size = (50, 30),  font = 0, flags = RT_HALIGN_LEFT,  text = 2), # number,
-						MultiContentEntryText(pos = (150, 2), size = (350, 30),  font = 0, flags = RT_HALIGN_LEFT,  text = 3), # description,
-						MultiContentEntryText(pos = (500, 2), size = (350, 30), font = 0, flags = RT_HALIGN_LEFT,  text = 4), # language,
-						MultiContentEntryText(pos = (800, 2), size = (150, 30),  font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
+						MultiContentEntryText(pos = (10, 0), size = (50, 35), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1), # key,
+						MultiContentEntryText(pos = (80, 0), size = (50, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 2), # number,
+						MultiContentEntryText(pos = (150, 0), size = (350, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3), # description,
+						MultiContentEntryText(pos = (500, 0), size = (350, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 4), # language,
+						MultiContentEntryText(pos = (800, 0), size = (150, 35), font = 1, flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = 5), # selection,
 					], True, "showNever"),
 					"notselected": (35, [
-						MultiContentEntryText(pos = (10, 2),   size = (50, 30),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # key,
-						MultiContentEntryText(pos = (80, 2),  size = (50, 30),  font = 0, flags = RT_HALIGN_LEFT,  text = 2), # number,
-						MultiContentEntryText(pos = (150, 2), size = (350, 30),  font = 0, flags = RT_HALIGN_LEFT,  text = 3), # description,
-						MultiContentEntryText(pos = (500, 2), size = (350, 30), font = 0, flags = RT_HALIGN_LEFT,  text = 4), # language,
-						MultiContentEntryText(pos = (800, 2), size = (150, 30),  font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
+						MultiContentEntryText(pos = (10, 0), size = (50, 35), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1), # key,
+						MultiContentEntryText(pos = (80, 0), size = (50, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 2), # number,
+						MultiContentEntryText(pos = (150, 0), size = (350, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3), # description,
+						MultiContentEntryText(pos = (500, 0), size = (350, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 4), # language,
+						MultiContentEntryText(pos = (800, 0), size = (150, 35), font = 1, flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = 5), # selection,
 					], False, "showNever")},
 					"fonts": [gFont("Global", 25), gFont("Global", 25)],
 					"itemHeight": 35}
@@ -497,23 +497,23 @@
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="Movie Selection" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
 		<eLabel text="V" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<widget name="list" position="90,200" size="980,635" 
-			scrollbarMode="showNever" 
-			itemHeights="100,75,35" 
-			fontSizesOriginal="25,20,20" 
-			fontSizesCompact="25,20" 
-			fontSizesMinimal="25,20" 
-			partIconeShiftMinimal="5" 
-			partIconeShiftCompact="3" 
-			partIconeShiftOriginal="3" 
-			pbarShift="15" 
-			pbarHeight="20" 
-			spaceRight="3" 
-			iconsWidth="35" 
-			spaceIconeText="5" 
-			trashShift="3" 
-			dirShift="3" 
-			backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget name="list" position="90,200" size="980,635" scrollbarMode="showNever" transparent="1"
+			itemHeights="100,75,35"
+			fontSizesOriginal="25,20,20"
+			fontSizesCompact="25,20"
+			fontSizesMinimal="25,20"
+			partIconeShiftMinimal="5"
+			partIconeShiftCompact="3"
+			partIconeShiftOriginal="3"
+			pbarShift="15"
+			pbarHeight="20"
+			spaceRight="3"
+			iconsWidth="35"
+			spaceIconeText="5"
+			trashShift="3"
+			dirShift="3"
+			backgroundColor="background1"
+			backgroundColorSelected="background5" />
 		<panel name="TemplatesMovieSelectionDescription" />
 		<widget name="waitingtext" position="90,480" size="980,80" font="Global;25" foregroundColor="color1" backgroundColor="background1" halign="center" valign="center" transparent="1" zPosition="2" />
 		<widget name="freeDiskSpace" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
@@ -527,23 +527,23 @@
 		<panel name="TemplatesMenu1800Layer" />
 		<eLabel text="Movie Selection" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
 		<eLabel text="V" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<widget name="list" position="90,200" size="1740,635" 
-			scrollbarMode="showNever" 
-			itemHeights="100,75,35" 
-			fontSizesOriginal="25,20,20" 
-			fontSizesCompact="25,20" 
-			fontSizesMinimal="25,20" 
-			partIconeShiftMinimal="5" 
-			partIconeShiftCompact="3" 
-			partIconeShiftOriginal="3" 
-			pbarShift="15" 
-			pbarHeight="20" 
-			spaceRight="3" 
-			iconsWidth="35" 
-			spaceIconeText="5" 
-			trashShift="3" 
-			dirShift="3" 
-			backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget name="list" position="90,200" size="1740,635" scrollbarMode="showNever" transparent="1"
+			itemHeights="100,75,35"
+			fontSizesOriginal="25,20,20"
+			fontSizesCompact="25,20"
+			fontSizesMinimal="25,20"
+			partIconeShiftMinimal="5"
+			partIconeShiftCompact="3"
+			partIconeShiftOriginal="3"
+			pbarShift="15"
+			pbarHeight="20"
+			spaceRight="3"
+			iconsWidth="35"
+			spaceIconeText="5"
+			trashShift="3"
+			dirShift="3"
+			backgroundColor="background1"
+			backgroundColorSelected="background5" />
 		<widget name="waitingtext" position="90,480" size="1740,80" font="Global;25" foregroundColor="color1" backgroundColor="background1" halign="center" valign="center" transparent="1" zPosition="2" />
 		<widget name="freeDiskSpace" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
 		<panel name="TemplatesButtonsInfo" />
@@ -576,8 +576,8 @@
 		<widget source="cutlist" render="Listbox" position="90,200" size="480,630" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos=(10,2), size=(320, 35), text = 1, backcolor = MultiContentTemplateColor(3)),
-					MultiContentEntryText(pos=(330,2), size=(150, 35), text = 2, flags = RT_HALIGN_CENTER, backcolor = MultiContentTemplateColor(3))],
+					MultiContentEntryText(pos=(10, 0), size=(320, 35), text = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, backcolor = MultiContentTemplateColor(3)),
+					MultiContentEntryText(pos=(330, 0), size=(150, 35), text = 2, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, backcolor = MultiContentTemplateColor(3))],
 					"fonts": [gFont("Global", 25)],
 					"itemHeight": 35}
 			</convert>
@@ -659,7 +659,7 @@
 		<widget source="menu" render="Listbox" position="90,200" size="480,600" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (10, 2), size = (650, 40), flags = RT_HALIGN_LEFT, text = 0)],
+					MultiContentEntryText(pos = (10, 0), size = (650, 40), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0)],
 					"fonts": [gFont("Global", 30)],
 					"itemHeight": 40}
 			</convert>
@@ -675,7 +675,7 @@
 		<widget source="menu" render="Listbox" position="90,200" size="480,600" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (10, 2), size = (650, 40), flags = RT_HALIGN_LEFT, text = 0)],
+					MultiContentEntryText(pos = (10, 0), size = (650, 40), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0)],
 					"fonts": [gFont("Global", 30)],
 					"itemHeight": 40}
 			</convert>
@@ -731,7 +731,7 @@
 		<widget source="menu" render="Listbox" position="90,200" size="480,600" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (10, 2), size = (650, 40), flags = RT_HALIGN_LEFT, text = 0)],
+					MultiContentEntryText(pos = (10, 0), size = (650, 40), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0)],
 					"fonts": [gFont("Global", 30)],
 					"itemHeight": 40}
 			</convert>
@@ -747,7 +747,7 @@
 		<widget source="menu" render="Listbox" position="90,200" size="480,600" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (10, 2), size = (650, 40), flags = RT_HALIGN_LEFT, text = 0)],
+					MultiContentEntryText(pos = (10, 0), size = (650, 40), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0)],
 					"fonts": [gFont("Global", 30)],
 					"itemHeight": 40}
 			</convert>
@@ -763,7 +763,7 @@
 		<widget source="menu" render="Listbox" position="90,200" size="480,600" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (10, 2), size = (650, 40), flags = RT_HALIGN_LEFT, text = 0)],
+					MultiContentEntryText(pos = (10, 0), size = (650, 40), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0)],
 					"fonts": [gFont("Global", 30)],
 					"itemHeight": 40}
 			</convert>
@@ -779,7 +779,7 @@
 		<widget source="menu" render="Listbox" position="90,200" size="480,600" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (10, 2), size = (650, 40), flags = RT_HALIGN_LEFT, text = 0)],
+					MultiContentEntryText(pos = (10, 0), size = (650, 40), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0)],
 					"fonts": [gFont("Global", 30)],
 					"itemHeight": 40}
 			</convert>
@@ -795,7 +795,7 @@
 		<widget source="menu" render="Listbox" position="90,200" size="480,600" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" enableWrapAround="1" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (10, 2), size = (650, 40), flags = RT_HALIGN_LEFT, text = 0)],
+					MultiContentEntryText(pos = (10, 0), size = (650, 40), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0)],
 					"fonts": [gFont("Global", 30)],
 					"itemHeight": 40}
 			</convert>
@@ -811,7 +811,7 @@
 		<widget source="menu" render="Listbox" position="90,200" size="480,600" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (10, 2), size = (650, 40), flags = RT_HALIGN_LEFT, text = 0)],
+					MultiContentEntryText(pos = (10, 0), size = (650, 40), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0)],
 					"fonts": [gFont("Global", 30)],
 					"itemHeight": 40}
 			</convert>
@@ -827,7 +827,7 @@
 		<widget source="languages" render="Listbox" position="90,200" size="480,600" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (150, 10), size = (390, 40), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the language name,
+					MultiContentEntryText(pos = (120, 10), size = (330, 40), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1), # index 1 is the language name,
 					MultiContentEntryPixmapAlphaTest(pos = (30, 10), size = (60, 40), png = 2)], # index 2 is the pixmap
 					"fonts": [gFont("Global", 30)],
 					"itemHeight": 60}
@@ -868,9 +868,9 @@
 		<widget source="skins" render="Listbox" position="90,420" size="980,420" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (10,0), size = (600,35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1),
-					MultiContentEntryText(pos = (550,0), size = (400,35), font = 1, flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = 2)],
-					"fonts": [gFont("Global", 25),gFont("Global", 25)],
+					MultiContentEntryText(pos = (10, 0), size = (600, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1),
+					MultiContentEntryText(pos = (550, 0), size = (400, 35), font = 1, flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = 2)],
+					"fonts": [gFont("Global", 25), gFont("Global", 25)],
 					"itemHeight": 35}
 			</convert>
 		</widget>
@@ -1374,8 +1374,8 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<widget source="languages" render="Listbox" position="90,200" size="480,600" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-						MultiContentEntryText(pos = (150, 10), size = (390, 40), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the language name,
-						MultiContentEntryPixmapAlphaTest(pos = (30, 10), size = (60, 40), png = 2)], # index 2 is the pixmap
+					MultiContentEntryText(pos = (120, 10), size = (330, 40), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1), # index 1 is the language name,
+					MultiContentEntryPixmapAlphaTest(pos = (30, 10), size = (60, 40), png = 2)], # index 2 is the pixmap
 					"fonts": [gFont("Global", 30)],
 					"itemHeight": 60}
 			</convert>
@@ -1615,115 +1615,115 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<widget name="Active5" position="1490,250" size="340,30" backgroundColor="background5" zPosition="1" transparent="0" />
 		<!-- DO NOT CHANGE THIS LINE -->
 		<widget name="list" enableWrapAround="0" itemHeight="20" font="Regular;0" position="0,0" size="0,100" zPosition="-10"/>
-		<widget name="list1" position="90,290" size="340,550" scrollbarMode="showAlways" scrollbarSliderBorderWidth="1" scrollbarWidth="10" zPosition="1" transparent="0" 
-		scrollbarSliderForegroundColor="white" 
-		scrollbarSliderBorderColor="white" 
-		TimeForegroundColor="color1" 
-		TimeBackgroundColor="background2" 
-		PrimeTimeForegroundColor="color1" 
-		PrimeTimeBackgroundColor="background2" 
-		EntryForegroundColor="color2" 
-		EntryBackgroundColor="background1" 
-		EntryForegroundColorSelected="color1" 
-		EntryBackgroundColorSelected="background2" 
-		EntryForegroundColorNow="color2" 
-		EntryBackgroundColorNow="background1" 
-		EntryForegroundColorNowSelected="color1" 
-		EntryBackgroundColorNowSelected="background2" 
-		EntryForegroundColorPast="color2" 
-		EntryBackgroundColorPast="background1" 
-		EntryForegroundColorPastSelected="color1" 
-		EntryBackgroundColorPastSelected="background2" 
-		EntryBorderColor="background3" 
-		TimeFontVertical="Global; 20" 
+		<widget name="list1" position="90,290" size="340,550" scrollbarMode="showAlways" scrollbarSliderBorderWidth="1" scrollbarWidth="10" zPosition="1" transparent="0"
+		scrollbarSliderForegroundColor="white"
+		scrollbarSliderBorderColor="white"
+		TimeForegroundColor="color1"
+		TimeBackgroundColor="background2"
+		PrimeTimeForegroundColor="color1"
+		PrimeTimeBackgroundColor="background2"
+		EntryForegroundColor="color2"
+		EntryBackgroundColor="background1"
+		EntryForegroundColorSelected="color1"
+		EntryBackgroundColorSelected="background2"
+		EntryForegroundColorNow="color2"
+		EntryBackgroundColorNow="background1"
+		EntryForegroundColorNowSelected="color1"
+		EntryBackgroundColorNowSelected="background2"
+		EntryForegroundColorPast="color2"
+		EntryBackgroundColorPast="background1"
+		EntryForegroundColorPastSelected="color1"
+		EntryBackgroundColorPastSelected="background2"
+		EntryBorderColor="background3"
+		TimeFontVertical="Global; 20"
 		EventFontVertical="Global; 20" />
-		<widget name="list2" position="440,290" size="340,550" scrollbarMode="showAlways" scrollbarSliderBorderWidth="1" scrollbarWidth="10" zPosition="1" transparent="0" 
-		scrollbarSliderForegroundColor="white" 
-		scrollbarSliderBorderColor="white" 
-		TimeForegroundColor="color1" 
-		TimeBackgroundColor="background2" 
-		PrimeTimeForegroundColor="color1" 
-		PrimeTimeBackgroundColor="background2" 
-		EntryForegroundColor="color2" 
-		EntryBackgroundColor="background1" 
-		EntryForegroundColorSelected="color1" 
-		EntryBackgroundColorSelected="background2" 
-		EntryForegroundColorNow="color2" 
-		EntryBackgroundColorNow="background1" 
-		EntryForegroundColorNowSelected="color1" 
-		EntryBackgroundColorNowSelected="background2" 
-		EntryForegroundColorPast="color2" 
-		EntryBackgroundColorPast="background1" 
-		EntryForegroundColorPastSelected="color1" 
-		EntryBackgroundColorPastSelected="background2" 
-		EntryBorderColor="background3" 
-		TimeFontVertical="Global; 20" 
+		<widget name="list2" position="440,290" size="340,550" scrollbarMode="showAlways" scrollbarSliderBorderWidth="1" scrollbarWidth="10" zPosition="1" transparent="0"
+		scrollbarSliderForegroundColor="white"
+		scrollbarSliderBorderColor="white"
+		TimeForegroundColor="color1"
+		TimeBackgroundColor="background2"
+		PrimeTimeForegroundColor="color1"
+		PrimeTimeBackgroundColor="background2"
+		EntryForegroundColor="color2"
+		EntryBackgroundColor="background1"
+		EntryForegroundColorSelected="color1"
+		EntryBackgroundColorSelected="background2"
+		EntryForegroundColorNow="color2"
+		EntryBackgroundColorNow="background1"
+		EntryForegroundColorNowSelected="color1"
+		EntryBackgroundColorNowSelected="background2"
+		EntryForegroundColorPast="color2"
+		EntryBackgroundColorPast="background1"
+		EntryForegroundColorPastSelected="color1"
+		EntryBackgroundColorPastSelected="background2"
+		EntryBorderColor="background3"
+		TimeFontVertical="Global; 20"
 		EventFontVertical="Global; 20" />
-		<widget name="list3" position="790,290" size="340,550" scrollbarMode="showAlways" scrollbarSliderBorderWidth="1" scrollbarWidth="10" zPosition="1" transparent="0" 
-		scrollbarSliderForegroundColor="white" 
-		scrollbarSliderBorderColor="white" 
-		TimeForegroundColor="color1" 
-		TimeBackgroundColor="background2" 
-		PrimeTimeForegroundColor="color1" 
-		PrimeTimeBackgroundColor="background2" 
-		EntryForegroundColor="color2" 
-		EntryBackgroundColor="background1" 
-		EntryForegroundColorSelected="color1" 
-		EntryBackgroundColorSelected="background2" 
-		EntryForegroundColorNow="color2" 
-		EntryBackgroundColorNow="background1" 
-		EntryForegroundColorNowSelected="color1" 
-		EntryBackgroundColorNowSelected="background2" 
-		EntryForegroundColorPast="color2" 
-		EntryBackgroundColorPast="background1" 
-		EntryForegroundColorPastSelected="color1" 
-		EntryBackgroundColorPastSelected="background2" 
-		EntryBorderColor="background3" 
-		TimeFontVertical="Global; 20" 
+		<widget name="list3" position="790,290" size="340,550" scrollbarMode="showAlways" scrollbarSliderBorderWidth="1" scrollbarWidth="10" zPosition="1" transparent="0"
+		scrollbarSliderForegroundColor="white"
+		scrollbarSliderBorderColor="white"
+		TimeForegroundColor="color1"
+		TimeBackgroundColor="background2"
+		PrimeTimeForegroundColor="color1"
+		PrimeTimeBackgroundColor="background2"
+		EntryForegroundColor="color2"
+		EntryBackgroundColor="background1"
+		EntryForegroundColorSelected="color1"
+		EntryBackgroundColorSelected="background2"
+		EntryForegroundColorNow="color2"
+		EntryBackgroundColorNow="background1"
+		EntryForegroundColorNowSelected="color1"
+		EntryBackgroundColorNowSelected="background2"
+		EntryForegroundColorPast="color2"
+		EntryBackgroundColorPast="background1"
+		EntryForegroundColorPastSelected="color1"
+		EntryBackgroundColorPastSelected="background2"
+		EntryBorderColor="background3"
+		TimeFontVertical="Global; 20"
 		EventFontVertical="Global; 20" />
-		<widget name="list4" position="1140,290" size="340,550" scrollbarMode="showAlways" scrollbarSliderBorderWidth="1" scrollbarWidth="10" zPosition="1" transparent="0" 
-		scrollbarSliderForegroundColor="white" 
-		scrollbarSliderBorderColor="white" 
-		TimeForegroundColor="color1" 
-		TimeBackgroundColor="background2" 
-		PrimeTimeForegroundColor="color1" 
-		PrimeTimeBackgroundColor="background2" 
-		EntryForegroundColor="color2" 
-		EntryBackgroundColor="background1" 
-		EntryForegroundColorSelected="color1" 
-		EntryBackgroundColorSelected="background2" 
-		EntryForegroundColorNow="color2" 
-		EntryBackgroundColorNow="background1" 
-		EntryForegroundColorNowSelected="color1" 
-		EntryBackgroundColorNowSelected="background2" 
-		EntryForegroundColorPast="color2" 
-		EntryBackgroundColorPast="background1" 
-		EntryForegroundColorPastSelected="color1" 
-		EntryBackgroundColorPastSelected="background2" 
-		EntryBorderColor="background3" 
-		TimeFontVertical="Global; 20" 
+		<widget name="list4" position="1140,290" size="340,550" scrollbarMode="showAlways" scrollbarSliderBorderWidth="1" scrollbarWidth="10" zPosition="1" transparent="0"
+		scrollbarSliderForegroundColor="white"
+		scrollbarSliderBorderColor="white"
+		TimeForegroundColor="color1"
+		TimeBackgroundColor="background2"
+		PrimeTimeForegroundColor="color1"
+		PrimeTimeBackgroundColor="background2"
+		EntryForegroundColor="color2"
+		EntryBackgroundColor="background1"
+		EntryForegroundColorSelected="color1"
+		EntryBackgroundColorSelected="background2"
+		EntryForegroundColorNow="color2"
+		EntryBackgroundColorNow="background1"
+		EntryForegroundColorNowSelected="color1"
+		EntryBackgroundColorNowSelected="background2"
+		EntryForegroundColorPast="color2"
+		EntryBackgroundColorPast="background1"
+		EntryForegroundColorPastSelected="color1"
+		EntryBackgroundColorPastSelected="background2"
+		EntryBorderColor="background3"
+		TimeFontVertical="Global; 20"
 		EventFontVertical="Global; 20" />
-		<widget name="list5" position="1490,290" size="340,550" scrollbarMode="showAlways" scrollbarSliderBorderWidth="1" scrollbarWidth="10" zPosition="1" transparent="0" 
-		scrollbarSliderForegroundColor="white" 
-		scrollbarSliderBorderColor="white" 
-		TimeForegroundColor="color1" 
-		TimeBackgroundColor="background2" 
-		PrimeTimeForegroundColor="color1" 
-		PrimeTimeBackgroundColor="background2" 
-		EntryForegroundColor="color2" 
-		EntryBackgroundColor="background1" 
-		EntryForegroundColorSelected="color1" 
-		EntryBackgroundColorSelected="background2" 
-		EntryForegroundColorNow="color2" 
-		EntryBackgroundColorNow="background1" 
-		EntryForegroundColorNowSelected="color1" 
-		EntryBackgroundColorNowSelected="background2" 
-		EntryForegroundColorPast="color2" 
-		EntryBackgroundColorPast="background1" 
-		EntryForegroundColorPastSelected="color1" 
-		EntryBackgroundColorPastSelected="background2" 
-		EntryBorderColor="background3" 
-		TimeFontVertical="Global; 20" 
+		<widget name="list5" position="1490,290" size="340,550" scrollbarMode="showAlways" scrollbarSliderBorderWidth="1" scrollbarWidth="10" zPosition="1" transparent="0"
+		scrollbarSliderForegroundColor="white"
+		scrollbarSliderBorderColor="white"
+		TimeForegroundColor="color1"
+		TimeBackgroundColor="background2"
+		PrimeTimeForegroundColor="color1"
+		PrimeTimeBackgroundColor="background2"
+		EntryForegroundColor="color2"
+		EntryBackgroundColor="background1"
+		EntryForegroundColorSelected="color1"
+		EntryBackgroundColorSelected="background2"
+		EntryForegroundColorNow="color2"
+		EntryBackgroundColorNow="background1"
+		EntryForegroundColorNowSelected="color1"
+		EntryBackgroundColorNowSelected="background2"
+		EntryForegroundColorPast="color2"
+		EntryBackgroundColorPast="background1"
+		EntryForegroundColorPastSelected="color1"
+		EntryBackgroundColorPastSelected="background2"
+		EntryBorderColor="background3"
+		TimeFontVertical="Global; 20"
 		EventFontVertical="Global; 20" />
 		<panel name="TemplatesButtonsInfo" />
 		<panel name="TemplatesButtonsMenu" />
@@ -1874,11 +1874,11 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<widget source="list" render="Listbox" position="90,200" size="980,600" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (80, 5), size = (900, 28), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1), # index 1 is the interfacename
-					MultiContentEntryText(pos = (90, 35), size = (900, 20), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_BOTTOM, text = 2), # index 2 is the description
-					MultiContentEntryPixmapAlphaTest(pos = (10, 3), size = (54, 54), png = 3), # index 3 is the interface pixmap
+					MultiContentEntryText(pos = (80, 0), size = (900, 30), font= 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1), # index 1 is the interfacename
+					MultiContentEntryText(pos = (90, 30), size = (900, 30), font= 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 2), # index 2 is the description
+					MultiContentEntryPixmapAlphaTest(pos = (10, 3), size = (55, 55), png = 3), # index 3 is the interface pixmap
 					MultiContentEntryPixmapAlphaTest(pos = (70, 35), size = (15, 15), png = 4)], # index 4 is the default pixmap
-					"fonts": [gFont("Global", 25),gFont("Console", 20)],
+					"fonts": [gFont("Global", 25), gFont("Console", 20)],
 					"itemHeight": 60}
 			</convert>
 		</widget>
@@ -1937,12 +1937,12 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryPixmapAlphaTest(pos = (10, 5), size = (48, 48), png = 1), # index 1 is the expandable/expanded/verticalline icon
-					MultiContentEntryText(pos = (80, 20), size = (900, 35), font=2, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the Hostname
-					MultiContentEntryText(pos = (160, 5), size = (800, 25), font=0, flags = RT_HALIGN_LEFT, text = 3), # index 3 is the sharename
-					MultiContentEntryText(pos = (170, 35), size = (800, 25), font=1, flags = RT_HALIGN_LEFT, text = 4), # index 4 is the sharedescription
+					MultiContentEntryText(pos = (80, 15), size = (900, 35), font= 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 2), # index 2 is the Hostname
+					MultiContentEntryText(pos = (160, 0), size = (800, 35), font= 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3), # index 3 is the sharename
+					MultiContentEntryText(pos = (170, 35), size = (790, 25), font= 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 4), # index 4 is the sharedescription
 					MultiContentEntryPixmapAlphaTest(pos = (65, 5), size = (48, 48), png = 5), # index 5 is the nfs/cifs icon
 					MultiContentEntryPixmapAlphaTest(pos = (110, 5), size = (48, 48), png = 6)], # index 6 is the isMounted icon
-					"fonts": [gFont("Global", 25),gFont("Console", 20),gFont("Global", 25)],
+					"fonts": [gFont("Global", 25), gFont("Console", 20)],
 					"itemHeight": 60}
 			</convert>
 		</widget>
@@ -1980,10 +1980,10 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<widget source="config" render="Listbox" position="90,200" size="980,635" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (80, 5), size = (900, 28), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 2 is the Menu Titel
-					MultiContentEntryText(pos = (90, 35), size = (900, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 3 is the Description
-					MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3)], # index 4 is the pixmap
-					"fonts": [gFont("Global", 25),gFont("Console", 20)],
+					MultiContentEntryText(pos = (80, 0), size = (900, 35), font=0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0), # index 2 is the Menu Titel
+					MultiContentEntryText(pos = (90, 35), size = (900, 25), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 2), # index 3 is the Description
+					MultiContentEntryPixmapAlphaTest(pos = (10, 5), size = (48, 48), png = 3)], # index 4 is the pixmap
+					"fonts": [gFont("Global", 25), gFont("Console", 20)],
 					"itemHeight": 60}
 			</convert>
 		</widget>
@@ -2002,13 +2002,13 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<widget source="config" render="Listbox" position="90,245" size="980,540" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryPixmapAlphaTest(pos = (10,5),size = (48,48),png = 0),# index 0 is the isMounted pixmap
-					MultiContentEntryText(pos = (80,5),size = (650,25),font=0,flags = RT_HALIGN_LEFT,text = 1),# index 1 is the sharename
-					MultiContentEntryText(pos = (670,20),size = (300,25),font=1,flags = RT_HALIGN_LEFT,text = 2),# index 2 is the IPdescription
-					MultiContentEntryText(pos = (90,35),size = (800,25),font=1,flags = RT_HALIGN_LEFT,text = 3),# index 3 is the DIRdescription
-					MultiContentEntryPixmapAlphaTest(pos = (890,15),size = (48,48),png = 4),# index 4 is the activepng pixmap
-					MultiContentEntryPixmapAlphaTest(pos = (920,5),size = (48,48),png = 5)],# index 4 is the mounttype pixmap
-					"fonts": [gFont("Global",25),gFont("Console",20)],
+					MultiContentEntryPixmapAlphaTest(pos = (10, 5), size = (48, 48),png = 0), # index 0 is the isMounted pixmap
+					MultiContentEntryText(pos = (80, 0), size = (580, 35), font=0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1), # index 1 is the sharename
+					MultiContentEntryText(pos = (90, 35), size = (570, 25), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3), # index 3 is the DIRdescription
+					MultiContentEntryText(pos = (670, 20), size = (220, 25), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 2), # index 2 is the IPdescription
+					MultiContentEntryPixmapAlphaTest(pos = (890, 15), size = (48, 48),png = 4), # index 4 is the activepng pixmap
+					MultiContentEntryPixmapAlphaTest(pos = (920, 5), size = (48, 48),png = 5)], # index 4 is the mounttype pixmap
+					"fonts": [gFont("Global",25), gFont("Console",20)],
 					"itemHeight": 60}
 			</convert>
 		</widget>
@@ -2045,7 +2045,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<widget source="config" render="Listbox" position="90,200" size="980,600" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (80, 7), size = (900, 50), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+					MultiContentEntryText(pos = (80, 5), size = (870, 50), font=0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0), # index 0 is the name
 					MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3)], # index 4 is the status pixmap
 					"fonts": [gFont("Global", 40)],
 					"itemHeight": 60}
@@ -2122,13 +2122,13 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<widget source="list" render="Listbox" position="90,200" size="980,600" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (0, 0), size = (550, 30), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the essid
-					MultiContentEntryText(pos = (0, 30), size = (656, 20), font=1, flags = RT_HALIGN_LEFT, text = 5), # index 5 is the interface
-					MultiContentEntryText(pos = (656, 30), size = (656, 20), font=1, flags = RT_HALIGN_LEFT, text = 4), # index 0 is the encryption
-					MultiContentEntryText(pos = (350, 0), size = (200, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 0 is the signal
-					MultiContentEntryText(pos = (350, 30), size = (200, 20), font=1, flags = RT_HALIGN_LEFT, text = 3), # index 0 is the maxrate
-					MultiContentEntryPixmapAlphaTest(pos = (0, 52), size = (550, 2), png = 6)], # index 6 is the div pixmap
-					"fonts": [gFont("Global", 28),gFont("Global", 18)],
+					MultiContentEntryText(pos = (10, 0), size = (480, 60), font=0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0), # index 0 is the essid
+					MultiContentEntryText(pos = (500, 5), size = (200, 25), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 2), # index 0 is the signal
+					MultiContentEntryText(pos = (500, 35), size = (200, 25), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3), # index 0 is the maxrate
+					MultiContentEntryText(pos = (750, 5), size = (200, 25), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 4), # index 0 is the encryption
+					MultiContentEntryText(pos = (750, 35), size = (200, 25), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 5), # index 5 is the interface
+					MultiContentEntryPixmapAlphaTest(pos = (0, 58), size = (980, 2), png = 6)], # index 6 is the div pixmap
+					"fonts": [gFont("Global", 25), gFont("Console", 20)],
 					"itemHeight": 60}
 			</convert>
 		</widget>
@@ -2377,10 +2377,10 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<widget source="list" render="Listbox" position="90,200" size="980,600" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (10, 5), size = (900, 25), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-					MultiContentEntryText(pos = (20, 35), size = (850, 25), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
+					MultiContentEntryText(pos = (10, 0), size = (880, 35), font= 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0), # index 0 is the name
+					MultiContentEntryText(pos = (20, 35), size = (870, 25), font= 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 2), # index 2 is the description
 					MultiContentEntryPixmapAlphaTest(pos = (900, 5), size = (48, 48), png = 4)], # index 4 is the status pixmap
-					"fonts": [gFont("Global", 25),gFont("Console", 20)],
+					"fonts": [gFont("Global", 25), gFont("Console", 20)],
 					"itemHeight": 60}
 			</convert>
 		</widget>
@@ -2397,7 +2397,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<widget source="menu" render="Listbox" position="90,200" size="980,635" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (10, 2), size = (980, 40), flags = RT_HALIGN_LEFT, text = 1)], # index 0 is the MenuText,
+					MultiContentEntryText(pos = (10, 0), size = (950, 40), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1)], # index 0 is the MenuText,
 					"fonts": [gFont("Global", 30)],
 					"itemHeight": 40}
 			</convert>
@@ -2405,8 +2405,8 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<widget source="menu" render="Listbox" position="340,895" size="1000,90" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background1" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (10, 2), size = (1000, 90), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text = 2)], # index 0 is the MenuText,
-					"fonts": [gFont("Global", 25)],
+					MultiContentEntryText(pos = (10, 0), size = (1000, 90), flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2)], # index 0 is the MenuText,
+					"fonts": [gFont("Console", 20)],
 					"itemHeight": 90}
 			</convert>
 		</widget>
@@ -2443,13 +2443,13 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 			<convert type="TemplatedMultiContent">
 				{"templates":
 					{"default": (60,[
-						MultiContentEntryText(pos = (10, 5), size = (900, 25), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-						MultiContentEntryText(pos = (20, 35), size = (850, 25), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
+						MultiContentEntryText(pos = (10, 0), size = (880, 35), font= 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0), # index 0 is the name
+						MultiContentEntryText(pos = (20, 35), size = (870, 25), font= 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 2), # index 2 is the description
 						MultiContentEntryPixmapAlphaTest(pos = (900, 5), size = (48, 48), png = 5)]), # index 5 is the status pixmap
 					"category": (60,[
-						MultiContentEntryText(pos = (10, 5), size = (900, 25), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-						MultiContentEntryText(pos = (20, 35), size = (850, 25), font=2, flags = RT_HALIGN_LEFT, text = 1)])}, # index 1 is the description
-					"fonts": [gFont("Global", 25),gFont("Console", 20),gFont("Console", 20)],
+						MultiContentEntryText(pos = (10, 0), size = (880, 35), font= 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0), # index 0 is the name
+						MultiContentEntryText(pos = (20, 35), size = (870, 25), font= 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1)])}, # index 1 is the description
+					"fonts": [gFont("Global", 25), gFont("Console", 20)],
 					"itemHeight": 60}
 			</convert>
 		</widget>
@@ -2465,10 +2465,10 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<widget source="list" render="Listbox" position="90,200" size="980,600" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (80, 5), size = (900, 25), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-					MultiContentEntryText(pos = (90, 35), size = (850, 25), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the state
+					MultiContentEntryText(pos = (80, 0), size = (880, 35), font= 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0), # index 0 is the name
+					MultiContentEntryText(pos = (90, 35), size = (870, 25), font= 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1), # index 1 is the state
 					MultiContentEntryPixmapAlphaTest(pos = (10, 5), size = (48, 48), png = 2)], # index 2 is the status pixmap
-					"fonts": [gFont("Global", 25),gFont("Global", 20)],
+					"fonts": [gFont("Global", 25), gFont("Global", 20)],
 					"itemHeight": 60}
 			</convert>
 		</widget>
@@ -2484,10 +2484,10 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<widget source="list" render="Listbox" position="90,200" size="980,600" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (80, 5), size = (900, 25), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-					MultiContentEntryText(pos = (90, 35), size = (850, 25), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the state
+					MultiContentEntryText(pos = (80, 0), size = (880, 35), font= 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0), # index 0 is the name
+					MultiContentEntryText(pos = (90, 35), size = (870, 25), font= 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1), # index 1 is the state
 					MultiContentEntryPixmapAlphaTest(pos = (10, 5), size = (48, 48), png = 2)], # index 2 is the status pixmap
-					"fonts": [gFont("Global", 25),gFont("Global", 20)],
+					"fonts": [gFont("Global", 25), gFont("Global", 20)],
 					"itemHeight": 60}
 			</convert>
 		</widget>
@@ -2558,10 +2558,10 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<widget source="list" render="Listbox" position="90,200" size="980,600" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (10, 5), size = (900, 25), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-					MultiContentEntryText(pos = (20, 35), size = (850, 25), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
+					MultiContentEntryText(pos = (10, 0), size = (880, 35), font= 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0), # index 0 is the name
+					MultiContentEntryText(pos = (20, 35), size = (870, 25), font= 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 2), # index 2 is the description
 					MultiContentEntryPixmapAlphaTest(pos = (900, 5), size = (48, 48), png = 4)], # index 4 is the status pixmap
-					"fonts": [gFont("Global", 25),gFont("Console", 20)],
+					"fonts": [gFont("Global", 25), gFont("Console", 20)],
 					"itemHeight": 60}
 			</convert>
 		</widget>
@@ -2841,8 +2841,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="t" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
-		<widget name="timerlist" position="90,200" size="980,600"
-		scrollbarMode="showNever"
+		<widget name="timerlist" position="90,200" size="980,600" scrollbarMode="showNever" transparent="1"
 		itemHeight="60"
 		rowSplit="30"
 		iconMargin="10"
@@ -2851,8 +2850,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		setEventNameFont="Global; 20"
 		setServiceNameFont="Global; 22"
 		backgroundColor="background1"
-		backgroundColorSelected="background5"
-		transparent="1" />
+		backgroundColorSelected="background5" />
 		<panel name="TemplatesButtonsKey" />
 		<panel name="TemplatesClock" />
 	</screen>
@@ -2882,8 +2880,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="t" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
-		<widget name="timerlist" position="90,200" size="980,600"
-		scrollbarMode="showNever"
+		<widget name="timerlist" position="90,200" size="980,600" scrollbarMode="showNever" transparent="1"
 		itemHeight="60"
 		rowSplit="30"
 		iconMargin="10"
@@ -2892,8 +2889,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		setEventNameFont="Global; 20"
 		setServiceNameFont="Global; 22"
 		backgroundColor="background1"
-		backgroundColorSelected="background5"
-		transparent="1" />
+		backgroundColorSelected="background5" />
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- ********** OpenATV ********** -->
@@ -2905,11 +2901,11 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<widget source="timerlist" render="Listbox" position="90,200" size="980,600" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos=(340, 5), size=(640,28), text = 3, font = 0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER),
-					MultiContentEntryText(pos=(5,35), size=(975,20), text = 0, font = 1, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER),
-					MultiContentEntryText(pos=(245,60), size=(735,20), text = 4, font = 1, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER),
-					MultiContentEntryText(pos=(5,5), size=(335,20), text = 2, font = 1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER)],
-					"fonts": [gFont("Global", 25),gFont("Console", 20)],
+					MultiContentEntryText(pos=(340, 5), size=(640, 28), font = 0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER), text = 3,
+					MultiContentEntryText(pos=(5, 35), size=(975, 20), font = 1, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER), text = 0,
+					MultiContentEntryText(pos=(245, 60), size=(735, 20), font = 1, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER), text = 4,
+					MultiContentEntryText(pos=(5, 5), size=(335, 20), font = 1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER)], text = 2,
+					"fonts": [gFont("Global", 25), gFont("Console", 20)],
 					"itemHeight": 80}
 			</convert>
 		</widget>
@@ -2921,8 +2917,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="t" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
-		<widget name="entries" position="90,200" size="980,600"
-		scrollbarMode="showNever"
+		<widget name="entries" position="90,200" size="980,600" scrollbarMode="showNever" transparent="1"
 		itemHeight="60"
 		rowSplit1="30"
 		rowSplit2="30"
@@ -2932,8 +2927,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		EventNameFont="Global; 20"
 		ServiceNameFont="Global; 22"
 		backgroundColor="background1"
-		backgroundColorSelected="background5"
-		transparent="1" />
+		backgroundColorSelected="background5" />
 		<panel name="TemplatesButtonsMenu" />
 		<panel name="TemplatesButtonsKey" />
 		<panel name="TemplatesClock" />
@@ -3022,8 +3016,8 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<widget source="nimlist" render="Listbox" position="90,200" size="980,560" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (10, 5), size = (950, 50), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the nim name,
-					MultiContentEntryText(pos = (120, 35), size = (950, 50), font = 1, flags = RT_HALIGN_LEFT, text = 2)], # index 2 is a description of the nim settings,
+					MultiContentEntryText(pos = (10, 0), size = (950, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1), # index 1 is the nim name,
+					MultiContentEntryText(pos = (120, 35), size = (950, 45), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2)], # index 2 is a description of the nim settings,
 					"fonts": [gFont("Global", 25), gFont("Console", 20)],
 					"itemHeight": 80}
 			</convert>
@@ -3258,7 +3252,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<widget source="list" render="Listbox" position="90,200" size="980,630" scrollbarMode="showOnDemand" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos=(10, 1), size=(900, 35), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=0)],
+					MultiContentEntryText(pos=(10, 0), size=(950, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0)],
 					"fonts": [gFont("Global", 30)
 					"itemHeight": 35}
 			</convert>
@@ -3279,8 +3273,8 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<widget source="list" render="Listbox" position="90,200" size="980,630" scrollbarMode="showOnDemand" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos=(10, 1), size=(900, 35), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=0)],
-					"fonts": [gFont("Global", 30)],
+					MultiContentEntryText(pos=(10, 0), size=(950, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0)],
+					"fonts": [gFont("Global", 30)
 					"itemHeight": 35}
 			</convert>
 		</widget>
@@ -3417,7 +3411,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 				{"template": [
 					MultiContentEntryText(pos = (70, 5), size = (900, 40), font=0, flags = RT_HALIGN_LEFT, text = 0),
 					MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (50, 40), png = 1), 
-					MultiContentEntryText(pos=(15, 35), size=(40, 15), font=1, flags=RT_HALIGN_CENTER, text=2)],
+					MultiContentEntryText(pos=(15, 35), size=(40, 15), font=1, flags = RT_HALIGN_CENTER, text=2)],
 					"fonts": [gFont("Global", 25),gFont("Console", 12)],
 					"itemHeight": 60}
 			</convert>
@@ -3447,8 +3441,8 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<widget source="list" render="Listbox" position="90,200" size="980,600" scrollbarMode="showNever" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryPixmapAlphaTest(pos=(4, 4), size=(32, 32), png=0),
-					MultiContentEntryText(pos=(50, 0), size=(900, 40), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=1)],
+					MultiContentEntryPixmapAlphaTest(pos=(4, 4), size=(32, 32), png = 0),
+					MultiContentEntryText(pos=(50, 0), size=(900, 40), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1)],
 					"fonts": [gFont("Global", 30)],
 					"itemHeight": 40}
 			</convert>
@@ -3474,9 +3468,9 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<widget source="list" render="Listbox" position="90,200" size="980,600" scrollbarMode="showNever" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryPixmapAlphaTest(pos=(4, 4), size=(32, 32), png=0),
-					MultiContentEntryText(pos=(50, 0), size=(400, 40), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=1),
-					MultiContentEntryText(pos=(450, 0), size=(400, 40), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=2)],
+					MultiContentEntryPixmapAlphaTest(pos=(4, 4), size=(32, 32), png = 0),
+					MultiContentEntryText(pos=(50, 0), size=(400, 40), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1),
+					MultiContentEntryText(pos=(450, 0), size=(400, 40), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 2)],
 					"fonts": [gFont("Global", 30)],
 					"itemHeight": 40}
 			</convert>
@@ -3632,9 +3626,9 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<widget source="list" render="Listbox" position="90,245" size="980,500" scrollbarMode="showOnDemand" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (0, 0), size = (295, 25), font=0, flags = RT_HALIGN_LEFT, text = 0),
-					MultiContentEntryText(pos = (615, 0), size = (165, 25), font=0, flags = RT_HALIGN_RIGHT, text = 1),
-					MultiContentEntryText(pos = (780, 0), size = (200, 25), font=0, flags = RT_HALIGN_RIGHT, text = 2)],
+					MultiContentEntryText(pos = (10, 0), size = (295, 25), font = 0, flags = RT_HALIGN_LEFT, text = 0),
+					MultiContentEntryText(pos = (615, 0), size = (165, 25), font = 0, flags = RT_HALIGN_RIGHT, text = 1),
+					MultiContentEntryText(pos = (780, 0), size = (200, 25), font = 0, flags = RT_HALIGN_RIGHT, text = 2)],
 					"fonts": [gFont("Global", 25)],
 					"itemHeight": 35}
 			</convert>
@@ -3683,7 +3677,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<widget source="list" render="Listbox" position="90,200" size="980,600" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos=(10, 1), size=(900, 35), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=0)],
+					MultiContentEntryText(pos=(10, 0), size=(900, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0)],
 					"fonts": [gFont("Global", 30)],
 					"itemHeight": 35}
 			</convert>
@@ -3853,8 +3847,8 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<widget source="list" render="Listbox" position="90,200" size="980,600" scrollbarMode="showNever" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
 			<convert type="TemplatedMultiContent">
 					{"template": [
-						MultiContentEntryPixmapAlphaTest(pos=(4, 4), size=(32, 32), png=0),
-						MultiContentEntryText(pos=(50, 0), size=(900, 40), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=1)],
+						MultiContentEntryPixmapAlphaTest(pos=(4, 4), size=(32, 32), png = 0),
+						MultiContentEntryText(pos=(50, 0), size=(900, 40), font=0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1)],
 						"fonts": [gFont("Global", 30)],
 						"itemHeight": 40}
 			</convert>
@@ -3891,8 +3885,8 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<widget source="list" render="Listbox" position="90,200" size="980,600" scrollbarMode="showNever" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
 			<convert type="TemplatedMultiContent">
 					{"template": [
-						MultiContentEntryText(pos=(10, 0), size=(900, 40), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=0),
-						MultiContentEntryPixmapAlphaTest(pos=(910, 4), size=(32, 32), png=1)],
+						MultiContentEntryText(pos=(10, 0), size=(900, 40), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
+						MultiContentEntryPixmapAlphaTest(pos=(910, 4), size=(32, 32), png = 1)],
 						"fonts": [gFont("Global", 30)],
 						"itemHeight": 40}
 			</convert>
@@ -3908,8 +3902,8 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<widget source="list" render="Listbox" position="90,200" size="980,600" scrollbarMode="showNever" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
 			<convert type="TemplatedMultiContent">
 					{"template": [
-						MultiContentEntryText(pos=(10, 0), size=(900, 40), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=0),
-						MultiContentEntryPixmapAlphaTest(pos=(910, 4), size=(32, 32), png=1)],
+						MultiContentEntryText(pos=(10, 0), size=(900, 40), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
+						MultiContentEntryPixmapAlphaTest(pos=(910, 4), size=(32, 32), png = 1)],
 						"fonts": [gFont("Global", 30)],
 						"itemHeight": 40}
 			</convert>
@@ -4014,14 +4008,14 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="s" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
-		<widget source="list" render="Listbox" position="90,200" size="980,590" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
+		<widget source="list" render="Listbox" position="90,200" size="980,630" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (10, 5), size = (420, 23), font = 0, flags = RT_HALIGN_LEFT, text = 0),
-					MultiContentEntryText(pos = (50, 25), size = (380, 20), font = 1, flags = RT_HALIGN_LEFT, text = 1),
-					MultiContentEntryText(pos = (100, 47), size = (400, 17), font = 2, flags = RT_HALIGN_LEFT, text = 2)],
-					"fonts": [gFont("Global", 25), gFont("Global", 20), gFont("Console", 20)],
-					"itemHeight": 65}
+					MultiContentEntryText(pos = (10, 35), size = (500, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
+					MultiContentEntryText(pos = (10, 0), size = (500, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1),
+					MultiContentEntryText(pos = (500, 35), size = (450, 35), font = 1, flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = 2)],
+					"fonts": [gFont("Global", 25), gFont("Console", 20)],
+					"itemHeight": 70}
 			</convert>
 		</widget>
 		<panel name="TemplatesButtonsKey" />
@@ -4084,8 +4078,8 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<widget source="menu" render="Listbox" position="90,200" size="980,600" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (10, 5), size = (900, 25), font=0, flags = RT_HALIGN_LEFT, text = 0)], # index 2 is the Menu Titel
-					"fonts": [gFont("Global", 25),gFont("Console", 20)],
+					MultiContentEntryText(pos = (10, 0), size = (900, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0)], # index 2 is the Menu Titel
+					"fonts": [gFont("Global", 25)],
 					"itemHeight": 35}
 			</convert>
 		</widget>
@@ -4604,10 +4598,10 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<widget source="Titel2" render="Label" position="125,205" size="940,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
 		<eLabel position="90,200" size="980,40" backgroundColor="background2" zPosition="-1" />
 		<eLabel text="&gt;" position="95,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-		<widget name="MainList" position="90,245" size="980,590" 
-			enableWrapAround="1" 
-			scrollbarMode="showNever" 
-			itemHeight="120" 
+		<widget name="MainList" position="90,245" size="980,590"
+			enableWrapAround="1"
+			scrollbarMode="showNever"
+			itemHeight="120"
 			setTime="15,50,90,35"
 			setPict="105,15,105,105"
 			setPictScale="1"
@@ -4778,8 +4772,8 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryPixmapAlphaTest(pos = (10, 5), size = (48, 48), png = 2), # index 3 is the interface pixmap
-					MultiContentEntryText(pos = (80, 15), size = (900, 30), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text = 1)], # index 1 is the interfacename
-					"fonts": [gFont("Global", 25),gFont("Console", 20)],
+					MultiContentEntryText(pos = (80, 15), size = (870, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER | RT_WRAP, text = 1)], # index 1 is the interfacename
+					"fonts": [gFont("Global", 25)],
 					"itemHeight": 60}
 			</convert>
 		</widget>
@@ -4787,7 +4781,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<panel name="TemplatesButtonsKey" />
 		<panel name="TemplatesClock" />
 	</screen>
-	  <!-- Input Device Setup -->
+	<!-- Input Device Setup -->
 	<screen name="InputDeviceSetup" position="fill" title="Input device setup" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
@@ -5877,7 +5871,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<widget source="menu" render="Listbox" position="90,200" size="980,600" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (10, 5), size = (900, 25), font=0, flags = RT_HALIGN_LEFT, text = 0)], # index 2 is the Menu Titel
+					MultiContentEntryText(pos = (10, 0), size = (900, 35), font=0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0)], # index 2 is the Menu Titel
 					"fonts": [gFont("Global", 25),gFont("Console", 20)],
 					"itemHeight": 35}
 			</convert>
@@ -5893,7 +5887,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<widget source="menu" render="Listbox" position="90,200" size="980,600" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (10, 5), size = (900, 25), font=0, flags = RT_HALIGN_LEFT, text = 0)], # index 2 is the Menu Titel
+					MultiContentEntryText(pos = (10, 0), size = (900, 35), font=0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0)], # index 2 is the Menu Titel
 					"fonts": [gFont("Global", 25),gFont("Console", 20)],
 					"itemHeight": 35}
 			</convert>
@@ -6036,7 +6030,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<widget source="menu" render="Listbox" position="90,200" size="980,600" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (10, 5), size = (900, 25), font=0, flags = RT_HALIGN_LEFT, text = 0)], # index 2 is the Menu Titel
+					MultiContentEntryText(pos = (10, 0), size = (900, 35), font=0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0)], # index 2 is the Menu Titel
 					"fonts": [gFont("Global", 25),gFont("Console", 20)],
 					"itemHeight": 35}
 			</convert>
@@ -6061,7 +6055,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<widget source="menu" render="Listbox" position="90,200" size="980,600" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (10, 5), size = (900, 25), font=0, flags = RT_HALIGN_LEFT, text = 0)], # index 2 is the Menu Titel
+					MultiContentEntryText(pos = (10, 0), size = (900, 35), font=0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0)], # index 2 is the Menu Titel
 					"fonts": [gFont("Global", 25),gFont("Console", 20)],
 					"itemHeight": 35}
 			</convert>
@@ -6850,7 +6844,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 			<convert type="TemplatedMultiContent">
 				{"templates":
 					{"default": (35, [
-						MultiContentEntryText(pos=(10, 0), size=(940, 35), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text=0)],
+						MultiContentEntryText(pos=(10, 0), size=(940, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER | RT_WRAP, text = 0)],
 						True, "showOnDemand")},
 						"fonts": [gFont("Global", 25)],
 						"itemHeight": 35}
@@ -6867,8 +6861,8 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 			<convert type="TemplatedMultiContent">
 				{"templates":
 					{"default": (35, [
-						MultiContentEntryText(pos = (10,0), size = (300,35), font = 0, flags = RT_HALIGN_LEFT, text = 0), # langname,
-						MultiContentEntryText(pos = (330,0), size = (620,35), font = 0, flags = RT_HALIGN_LEFT, text = 1)],
+						MultiContentEntryText(pos = (10, 0), size = (300, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0), # langname,
+						MultiContentEntryText(pos = (330, 0), size = (620, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1)],
 						False, "showNever")},
 						"fonts": [gFont("Global", 25)],
 						"itemHeight":35,}
@@ -6883,11 +6877,11 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 			<convert type="TemplatedMultiContent">
 				{"templates":
 					{"default": (35, [
-						MultiContentEntryPixmapAlphaBlend(pos = (0,0), size = (35,35), png=0), # key,
-						MultiContentEntryText(pos = (40,0), size = (150,35), font = 0, flags = RT_HALIGN_LEFT, text = 1), # language,
-						MultiContentEntryText(pos = (200,0), size = (590,35), font = 0, flags = RT_HALIGN_LEFT, text = 2), # filename,
-						MultiContentEntryText(pos = (800,0), size = (110,35), font = 0, flags = RT_HALIGN_LEFT, text = 3), # size,
-						MultiContentEntryPixmapAlphaBlend(pos = (915,0), size = (35,35), png=4)], # syncPng,
+						MultiContentEntryPixmapAlphaBlend(pos = (0, 0), size = (35, 35), png=0), # key,
+						MultiContentEntryText(pos = (40, 0), size = (150, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1), # language,
+						MultiContentEntryText(pos = (200, 0), size = (590, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 2), # filename,
+						MultiContentEntryText(pos = (800, 0), size = (110, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3), # size,
+						MultiContentEntryPixmapAlphaBlend(pos = (915, 0), size = (35, 35), png=4)], # syncPng,
 						True, "showOnDemand")},
 						"fonts": [gFont("Global", 25), gFont("Global", 15)],
 						"itemHeight": 35}
@@ -6932,14 +6926,14 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 			<convert type="TemplatedMultiContent">
 				{"templates":
 					{"default": (35, [
-						MultiContentEntryText(pos = (10,0), size = (280,35), font = 0, flags = RT_HALIGN_LEFT, text = 0), # name,
-						MultiContentEntryText(pos = (300,0), size = (500,35), font = 0, flags = RT_HALIGN_LEFT, text = 1), # lang,
-						MultiContentEntryText(pos = (750,0), size = (200,35), font = 0, flags = RT_HALIGN_RIGHT, text = 2)], # enabled,
+						MultiContentEntryText(pos = (10, 0), size = (280, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0), # name,
+						MultiContentEntryText(pos = (300, 0), size = (500, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1), # lang,
+						MultiContentEntryText(pos = (750, 0), size = (200, 35), font = 0, flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = 2)], # enabled,
 					True, "showOnDemand"),
 					"notselected": (35, [
-						MultiContentEntryText(pos = (10,0), size = (280,35), font = 0, flags = RT_HALIGN_LEFT, text = 0), # name,
-						MultiContentEntryText(pos = (300,0), size = (500,35), font = 0, flags = RT_HALIGN_LEFT, text = 1), # lang,
-						MultiContentEntryText(pos = (750,0), size = (200,35), font = 0, flags = RT_HALIGN_RIGHT, text = 2)], # enabled,
+						MultiContentEntryText(pos = (10, 0), size = (280, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0), # name,
+						MultiContentEntryText(pos = (300, 0), size = (500, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1), # lang,
+						MultiContentEntryText(pos = (750, 0), size = (200, 35), font = 0, flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = 2)], # enabled,
 					False, "showOnDemand")},
 					"fonts": [gFont("Global", 25)],
 					"itemHeight": 35}
@@ -6954,7 +6948,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 			<convert type="TemplatedMultiContent">
 				{"templates":
 					{"default": (35, [
-						MultiContentEntryText(pos = (10,0), size = (940,35), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0)], # langname,
+						MultiContentEntryText(pos = (10, 0), size = (940, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0)], # langname,
 						True, "showOnDemand")},
 						"fonts": [gFont("Global", 25)],
 						"itemHeight":35}
@@ -6991,10 +6985,10 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 			<convert type="TemplatedMultiContent">
 				{"templates":
 					{"default": (35, [
-						MultiContentEntryText(pos = (10, 0), size = (50, 35),  font = 0, flags = RT_HALIGN_LEFT, text = 1), # key,
-						MultiContentEntryText(pos = (70, 0), size = (100, 35),  font = 0, flags = RT_HALIGN_LEFT, text = 2), # number,
-						MultiContentEntryText(pos = (180, 0), size = (500, 35), font = 0, flags = RT_HALIGN_LEFT, text = 3), # description,
-						MultiContentEntryText(pos = (690, 0), size = (200, 35), font = 0, flags = RT_HALIGN_LEFT, text = 4)], # language,
+						MultiContentEntryText(pos = (10, 0), size = (50, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1), # key,
+						MultiContentEntryText(pos = (70, 0), size = (100, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 2), # number,
+						MultiContentEntryText(pos = (180, 0), size = (500, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3), # description,
+						MultiContentEntryText(pos = (690, 0), size = (200, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 4)], # language,
 						True, "showNever")},
 						"fonts": [gFont("Regular", 30)],
 						"itemHeight": 35}
@@ -7014,10 +7008,10 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 			<convert type="TemplatedMultiContent">
 				{"templates":
 					{"default": (60, [
-						MultiContentEntryPixmapAlphaBlend(pos = (5, 15), size = (30, 30), png=0), # key,
-						MultiContentEntryText(pos = (45, 0), size = (500, 60), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text=1), # name,
-						MultiContentEntryText(pos = (555, 0), size = (240, 60), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2), # provider,
-						MultiContentEntryText(pos = (805, 0), size = (145, 60), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 3)], # date,
+						MultiContentEntryPixmapAlphaBlend(pos = (5, 15), size = (30, 30), png = 0), # key,
+						MultiContentEntryText(pos = (45, 0), size = (500, 60), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER | RT_WRAP, text = 1), # name,
+						MultiContentEntryText(pos = (555, 0), size = (240, 60), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 2), # provider,
+						MultiContentEntryText(pos = (805, 0), size = (145, 60), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3)], # date,
 						True, "showOnDemand")},
 						"fonts": [gFont("Global", 25)],
 						"itemHeight": 60}
@@ -7204,8 +7198,8 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<widget source="list" render="Listbox" position="90,200" size="980,635" scrollbarMode="showNever" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryPixmapAlphaTest(pos=(0,0), size=(100,72), png=3), # Thumbnail
-					MultiContentEntryText(pos=(110,1), size=(500,70), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text=1)],
+					MultiContentEntryPixmapAlphaTest(pos=(0, 0), size=(100, 72), png=3), # Thumbnail
+					MultiContentEntryText(pos=(110, 1), size=(500, 70), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text=1)],
 					"fonts": [gFont("Global",20)],
 					"itemHeight": 72}
 			</convert>
@@ -7388,11 +7382,11 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<widget source="list" render="Listbox" position="90,200" size="980,550" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryPixmapAlphaTest(pos=(5,1), size=(150,108), png=2), # Thumbnail
-					MultiContentEntryText(pos=(170,5), size=(800,70), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text=3), # Title
-					MultiContentEntryText(pos=(190, 75), size=(300,25), font=1, flags=RT_HALIGN_LEFT, text=4), # Views
-					MultiContentEntryText(pos=(550,75), size=(300,25), font=1, flags=RT_HALIGN_LEFT, text=5)], # Duration
-					"fonts": [gFont("Global", 25),gFont("Console", 20)],
+					MultiContentEntryPixmapAlphaTest(pos=(5, 1), size=(150, 108), png = 2), # Thumbnail
+					MultiContentEntryText(pos=(170, 5), size=(800, 70), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER | RT_WRAP, text = 3), # Title
+					MultiContentEntryText(pos=(190, 75), size=(300, 25), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 4), # Views
+					MultiContentEntryText(pos=(590, 75), size=(300, 25), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 5)], # Duration
+					"fonts": [gFont("Global", 25), gFont("Console", 20)],
 					"itemHeight": 110}
 			</convert>
 		</widget>
@@ -7414,7 +7408,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<widget source="list" render="Listbox" position="90,245" size="980,280" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos=(10,3), size=(900,35), font=0, flags=RT_HALIGN_LEFT, text=0)],
+					MultiContentEntryText(pos=(10, 0), size=(900, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0)],
 					"fonts": [gFont("Global",25)],
 					"itemHeight": 35}
 			</convert>
@@ -7432,11 +7426,11 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<widget source="list" render="Listbox" position="90,200" size="980,630" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos=(10,3), size=(480,35), font=0, flags=RT_HALIGN_LEFT, text=1), # Title
-					MultiContentEntryText(pos=(500,3), size=(150,35), font=0, flags=RT_HALIGN_RIGHT, text=2), # State
-					MultiContentEntryProgress(pos=(670,5), size=(200,25), percent=-3), # Progress
-					MultiContentEntryText(pos=(890,3), size=(80,35), font=1, flags=RT_HALIGN_LEFT, text=4)], # Percentage
-					"fonts": [gFont("Global", 25),gFont("Global", 25)],
+					MultiContentEntryText(pos=(10, 0), size=(480, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1), # Title
+					MultiContentEntryText(pos=(500, 0), size=(150, 35), font = 0, flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = 2), # State
+					MultiContentEntryProgress(pos=(670, 5), size=(200, 25), percent=-3), # Progress
+					MultiContentEntryText(pos=(890, 0), size=(80, 35), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 4)], # Percentage
+					"fonts": [gFont("Global", 25), gFont("Global", 25)],
 					"itemHeight": 35}
 			</convert>
 		</widget>
@@ -7501,7 +7495,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<widget source="menu" render="Listbox" position="90,200" size="480,600" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (10, 2), size = (650, 40), flags = RT_HALIGN_LEFT, text = 0)],
+					MultiContentEntryText(pos = (10, 0), size = (650, 40), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0)],
 					"fonts": [gFont("Global", 30)],
 					"itemHeight": 40}
 			</convert>
@@ -7652,14 +7646,14 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 			<convert type="TemplatedMultiContent">
 				{"templates":
 					{"default": (35, [
-						MultiContentEntryText(pos=(50, 0), size=(600, 35), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text=1),
-						MultiContentEntryText(pos=(650, 0), size=(300, 35), font=1, flags=RT_HALIGN_RIGHT|RT_VALIGN_CENTER|RT_WRAP, text=2),
-						MultiContentEntryPixmapAlphaTest(pos=(10, 8), size=(25, 25), png=3),
+						MultiContentEntryText(pos=(50, 0), size=(600, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER | RT_WRAP, text = 1),
+						MultiContentEntryText(pos=(650, 0), size=(300, 35), font = 1, flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER | RT_WRAP, text = 2),
+						MultiContentEntryPixmapAlphaTest(pos=(10, 8), size=(25, 25), png = 3),
 					], True, "showOnDemand"),
 					"notselected": (35, [
-						MultiContentEntryText(pos=(50, 0), size=(600, 35), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text=1),
-						MultiContentEntryText(pos=(650, 0), size=(300, 35), font=1, flags=RT_HALIGN_RIGHT|RT_VALIGN_CENTER|RT_WRAP, text=2),
-						MultiContentEntryPixmapAlphaTest(pos=(10, 8), size=(25, 25), png=3),
+						MultiContentEntryText(pos=(50, 0), size=(600, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER | RT_WRAP, text = 1),
+						MultiContentEntryText(pos=(650, 0), size=(300, 35), font = 1, flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER | RT_WRAP, text = 2),
+						MultiContentEntryPixmapAlphaTest(pos=(10, 8), size=(25, 25), png = 3),
 					], False, "showOnDemand")},
 					"fonts": [gFont("Global",25), gFont("Global",25)],
 					"itemHeight": 35,

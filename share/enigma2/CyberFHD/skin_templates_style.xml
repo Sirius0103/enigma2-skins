@@ -6773,23 +6773,20 @@
 		<panel name="TemplatesMenu1000Layer" />
 		<panel name="TemplatesMenuLeftLayer" />
 		<!-- Templates Channel Selection Tv Bouquet-->
-		<widget name="list" 
-		position="90,200" size="980,635"
-		scrollbarMode="showNever" 
-		serviceItemHeight="35" 
-		serviceNumberFont="Global; 25" 
-		serviceNameFont="Global; 25" 
-		serviceInfoFont="Global; 25" 
-		colorServiceDescription="color3" 
-		colorServiceDescriptionSelected="color1" 
-		foregroundColorServiceNotAvail="gray" 
-		colorEventProgressbar="background4" 
-		colorEventProgressbarBorder="background3" 
-		colorEventProgressbarSelected="color1" 
-		colorEventProgressbarBorderSelected="background3" 
-		backgroundColor="background1" 
-		backgroundColorSelected="background5" 
-		transparent="1" />
+		<widget name="list" position="90,200" size="980,635" scrollbarMode="showNever" transparent="1"
+		serviceItemHeight="35"
+		serviceNumberFont="Global; 25"
+		serviceNameFont="Global; 25"
+		serviceInfoFont="Global; 25"
+		colorServiceDescription="color3"
+		colorServiceDescriptionSelected="color1"
+		foregroundColorServiceNotAvail="gray"
+		colorEventProgressbar="background4"
+		colorEventProgressbarBorder="background3"
+		colorEventProgressbarSelected="color1"
+		colorEventProgressbarBorderSelected="background3"
+		backgroundColor="background1"
+		backgroundColorSelected="background5" />
 	</screen>
 	<screen name="TemplatesChannelSelectionTvBouquetStyle">
 		<panel name="TemplatesMenu1000Layer" />
@@ -6798,46 +6795,40 @@
 		<eLabel position="90,200" size="980,40" backgroundColor="background2" zPosition="-1" />
 		<eLabel text="&gt;" position="95,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
 		<widget source="Title" render="Label" position="125,205" size="940,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
-		<widget name="list" 
-		position="90,245" size="980,600" 
-		scrollbarMode="showNever" 
-		serviceItemHeight="35" 
-		serviceNumberFont="Global; 25" 
-		serviceNameFont="Global; 25" 
-		serviceInfoFont="Global; 25" 
-		colorServiceDescription="color3" 
-		colorServiceDescriptionSelected="color1" 
-		foregroundColorServiceNotAvail="gray" 
-		colorEventProgressbar="background4" 
-		colorEventProgressbarBorder="background3" 
-		colorEventProgressbarSelected="color1" 
-		colorEventProgressbarBorderSelected="background3" 
-		backgroundColor="background1" 
-		backgroundColorSelected="background5" 
-		transparent="1" />
+		<widget name="list" position="90,245" size="980,600" scrollbarMode="showNever" transparent="1"
+		serviceItemHeight="35"
+		serviceNumberFont="Global; 25"
+		serviceNameFont="Global; 25"
+		serviceInfoFont="Global; 25"
+		colorServiceDescription="color3"
+		colorServiceDescriptionSelected="color1"
+		foregroundColorServiceNotAvail="gray"
+		colorEventProgressbar="background4"
+		colorEventProgressbarBorder="background3"
+		colorEventProgressbarSelected="color1"
+		colorEventProgressbarBorderSelected="background3"
+		backgroundColor="background1"
+		backgroundColorSelected="background5" />
 	</screen>
 	<screen name="TemplatesChannelSelectionTvBouquetDefaultFull">
 		<panel name="TemplatesMenu1800Layer" />
 		<panel name="TemplatesMenuLeftLayer" />
 		<panel name="TemplatesMenuRightLayer" />
 		<!-- Templates Channel Selection Tv Bouquet-->
-		<widget name="list" 
-		position="90,200" size="1740,635" 
-		scrollbarMode="showNever" 
-		serviceItemHeight="35" 
-		serviceNumberFont="Global; 25" 
-		serviceNameFont="Global; 25" 
-		serviceInfoFont="Global; 25" 
-		colorServiceDescription="color3" 
-		colorServiceDescriptionSelected="color1" 
-		foregroundColorServiceNotAvail="gray" 
-		colorEventProgressbar="background4" 
-		colorEventProgressbarBorder="background3" 
-		colorEventProgressbarSelected="color1" 
-		colorEventProgressbarBorderSelected="background3" 
-		backgroundColor="background1" 
-		backgroundColorSelected="background5" 
-		transparent="1" />
+		<widget name="list" position="90,200" size="1740,635" scrollbarMode="showNever" transparent="1"
+		serviceItemHeight="35"
+		serviceNumberFont="Global; 25"
+		serviceNameFont="Global; 25"
+		serviceInfoFont="Global; 25"
+		colorServiceDescription="color3"
+		colorServiceDescriptionSelected="color1"
+		foregroundColorServiceNotAvail="gray"
+		colorEventProgressbar="background4"
+		colorEventProgressbarBorder="background3"
+		colorEventProgressbarSelected="color1"
+		colorEventProgressbarBorderSelected="background3"
+		backgroundColor="background1"
+		backgroundColorSelected="background5" />
 	</screen>
 	<screen name="TemplatesChannelSelectionTvBouquetStyleFull">
 		<panel name="TemplatesMenu1800Layer" />
@@ -6847,23 +6838,20 @@
 		<eLabel position="90,200" size="1740,40" backgroundColor="background2" zPosition="-1" />
 		<eLabel text="&gt;" position="95,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
 		<widget source="Title" render="Label" position="125,205" size="1700,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
-		<widget name="list" 
-		position="90,245" size="1740,600" 
-		scrollbarMode="showNever" 
-		serviceItemHeight="35" 
-		serviceNumberFont="Global; 25" 
-		serviceNameFont="Global; 25" 
-		serviceInfoFont="Global; 25" 
-		colorServiceDescription="color3" 
-		colorServiceDescriptionSelected="color1" 
-		foregroundColorServiceNotAvail="gray" 
-		colorEventProgressbar="background4" 
-		colorEventProgressbarBorder="background3" 
-		colorEventProgressbarSelected="color1" 
-		colorEventProgressbarBorderSelected="background3" 
-		backgroundColor="background1" 
-		backgroundColorSelected="background5" 
-		transparent="1" />
+		<widget name="list" position="90,245" size="1740,600" scrollbarMode="showNever" transparent="1"
+		serviceItemHeight="35"
+		serviceNumberFont="Global; 25"
+		serviceNameFont="Global; 25"
+		serviceInfoFont="Global; 25"
+		colorServiceDescription="color3"
+		colorServiceDescriptionSelected="color1"
+		foregroundColorServiceNotAvail="gray"
+		colorEventProgressbar="background4"
+		colorEventProgressbarBorder="background3"
+		colorEventProgressbarSelected="color1"
+		colorEventProgressbarBorderSelected="background3"
+		backgroundColor="background1"
+		backgroundColorSelected="background5" />
 	</screen>
 	<screen name="TemplatesChannelSelectionTvPiconDefault">
 		<!-- Layer Channel Selection Tv Info -->
@@ -6974,46 +6962,40 @@
 	<!-- ########## Templates Channel Selection Radio ########## -->
 	<screen name="TemplatesChannelSelectionRadioBouquetDefault">
 		<!-- Templates Channel Selection Radio Bouquet-->
-		<widget name="list" 
-		position="20,200" size="850,635" 
-		scrollbarMode="showNever" 
-		serviceItemHeight="35" 
-		serviceNumberFont="Global; 25" 
-		serviceNameFont="Global; 25" 
-		serviceInfoFont="Global; 25" 
-		colorServiceDescription="color3" 
-		colorServiceDescriptionSelected="color1" 
-		foregroundColorServiceNotAvail="gray" 
-		colorEventProgressbar="background4" 
-		colorEventProgressbarBorder="background3" 
-		colorEventProgressbarSelected="color1" 
-		colorEventProgressbarBorderSelected="background3" 
-		backgroundColor="background1" 
-		backgroundColorSelected="background5" 
-		transparent="1" />
+		<widget name="list" position="20,200" size="850,635" scrollbarMode="showNever" transparent="1"
+		serviceItemHeight="35"
+		serviceNumberFont="Global; 25"
+		serviceNameFont="Global; 25"
+		serviceInfoFont="Global; 25"
+		colorServiceDescription="color3"
+		colorServiceDescriptionSelected="color1"
+		foregroundColorServiceNotAvail="gray"
+		colorEventProgressbar="background4"
+		colorEventProgressbarBorder="background3"
+		colorEventProgressbarSelected="color1"
+		colorEventProgressbarBorderSelected="background3"
+		backgroundColor="background1"
+		backgroundColorSelected="background5" />
 	</screen>
 	<screen name="TemplatesChannelSelectionRadioBouquetStyle">
 		<!-- Templates Channel Selection Radio Bouquet-->
 		<eLabel position="20,200" size="850,40" backgroundColor="background2" zPosition="-1" />
 		<eLabel text="&gt;" position="25,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
 		<widget source="Title" render="Label" position="55,205" size="810,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
-		<widget name="list" 
-		position="20,245" size="850,600" 
-		scrollbarMode="showNever" 
-		serviceItemHeight="35" 
-		serviceNumberFont="Global; 25" 
-		serviceNameFont="Global; 25" 
-		serviceInfoFont="Global; 25" 
-		colorServiceDescription="color3" 
-		colorServiceDescriptionSelected="color1" 
-		foregroundColorServiceNotAvail="gray" 
-		colorEventProgressbar="background4" 
-		colorEventProgressbarBorder="background3" 
-		colorEventProgressbarSelected="color1" 
-		colorEventProgressbarBorderSelected="background3" 
-		backgroundColor="background1" 
-		backgroundColorSelected="background5" 
-		transparent="1" />
+		<widget name="list" position="20,245" size="850,600" scrollbarMode="showNever" transparent="1"
+		serviceItemHeight="35"
+		serviceNumberFont="Global; 25"
+		serviceNameFont="Global; 25"
+		serviceInfoFont="Global; 25"
+		colorServiceDescription="color3"
+		colorServiceDescriptionSelected="color1"
+		foregroundColorServiceNotAvail="gray"
+		colorEventProgressbar="background4"
+		colorEventProgressbarBorder="background3"
+		colorEventProgressbarSelected="color1"
+		colorEventProgressbarBorderSelected="background3"
+		backgroundColor="background1"
+		backgroundColorSelected="background5" />
 	</screen>
 	<!-- ########## Templates Movie Selection ########## -->
 	<screen name="TemplatesMovieSelectionDescriptionDefault">
