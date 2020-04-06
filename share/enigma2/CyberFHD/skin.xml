@@ -7379,7 +7379,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<widget source="list" render="Listbox" position="90,245" size="980,280" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos=(10,5), size=(900,35), font=0, flags=RT_HALIGN_LEFT, text=0)],
+					MultiContentEntryText(pos=(10,3), size=(900,35), font=0, flags=RT_HALIGN_LEFT, text=0)],
 					"fonts": [gFont("Global",25)],
 					"itemHeight": 35}
 			</convert>
@@ -7397,12 +7397,12 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<widget source="list" render="Listbox" position="90,200" size="980,630" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos=(10,1), size=(330,22), font=0, flags=RT_HALIGN_LEFT, text=1), # Title
-					MultiContentEntryText(pos=(490,1), size=(150,22), font=0, flags=RT_HALIGN_RIGHT, text=2), # State
-					MultiContentEntryProgress(pos=(650,4), size=(230,22), percent=-3), # Progress
-					MultiContentEntryText(pos=(890,1), size=(80,22), font=1, flags=RT_HALIGN_LEFT, text=4)], # Percentage
-					"fonts": [gFont("Global", 25),gFont("Console", 20)],
-					"itemHeight": 30}
+					MultiContentEntryText(pos=(10,3), size=(480,35), font=0, flags=RT_HALIGN_LEFT, text=1), # Title
+					MultiContentEntryText(pos=(500,3), size=(150,35), font=0, flags=RT_HALIGN_RIGHT, text=2), # State
+					MultiContentEntryProgress(pos=(670,5), size=(200,25), percent=-3), # Progress
+					MultiContentEntryText(pos=(890,3), size=(80,35), font=1, flags=RT_HALIGN_LEFT, text=4)], # Percentage
+					"fonts": [gFont("Global", 25),gFont("Global", 25)],
+					"itemHeight": 35}
 			</convert>
 		</widget>
 		<panel name="TemplatesButtonsKey" />
