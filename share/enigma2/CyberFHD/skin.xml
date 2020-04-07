@@ -2314,16 +2314,6 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<panel name="TemplatesNetworkLog" />
 	</screen>
 	<!-- ########## Softwaremanager ########## -->
-	<!--Software Manager Setup -->
-	<screen name="SoftwareManagerSetup" position="fill" title="SoftwareManager setup" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="TemplatesMenu1000Layer" />
-		<eLabel text="H" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget name="config" position="90,200" size="980,630" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<widget source="introduction" render="Label" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
-		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
-	</screen>
 	<!--Software Panel -->
 	<screen name="SoftwarePanel" position="fill" title="Software Update" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="TemplatesMenu1000Layer" />
@@ -2344,6 +2334,33 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<panel name="TemplatesButtonsKey" />
 		<panel name="TemplatesClock" />
 	</screen>
+	<!--Software Manager Setup -->
+	<screen name="SoftwareManagerSetup" position="fill" title="SoftwareManager setup" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="H" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget name="config" position="90,200" size="980,630" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget source="introduction" render="Label" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+		<panel name="TemplatesButtonsKey" />
+		<panel name="TemplatesClock" />
+	</screen>
+	<!--Software Manager Info -->
+	<screen name="SoftwareManagerInfo" position="fill" title="SoftwareManager information" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="H" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget source="list" render="Listbox" position="90,200" size="980,630" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryText(pos = (10, 0), size = (950, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0)], # index 0 is the name,
+					"fonts": [gFont("Global", 25)],
+					"itemHeight": 35}
+			</convert>
+		</widget>
+		<widget source="introduction" render="Label" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+		<panel name="TemplatesButtonsKey" />
+		<panel name="TemplatesClock" />
+	</screen>
 	<!--Update Plugin Menu -->
 	<screen name="UpdatePluginMenu" position="fill" title="Softwaremanager" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="TemplatesMenu1000Layer" />
@@ -2352,7 +2369,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<widget source="menu" render="Listbox" position="90,200" size="980,635" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (10, 0), size = (950, 40), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1)], # index 0 is the MenuText,
+					MultiContentEntryText(pos = (10, 0), size = (950, 40), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1)], # index 0 is the MenuText,
 					"fonts": [gFont("Global", 30)],
 					"itemHeight": 40}
 			</convert>
@@ -2460,50 +2477,6 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<panel name="TemplatesButtonsKey" />
 		<panel name="TemplatesClock" />
 	</screen>
-	<!-- Update Plugin -->
-	<screen name="UpdatePlugin" position="fill" title="Software update" backgroundColor="transparent" flags="wfNoBorder" zPosition="1">
-		<panel name="TemplatesMenuLayer" />
-		<eLabel text="b" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<panel name="TemplatesMenuUpProgressLayer" />
-		<widget name="slider" position="340,905" size="1500,15" foregroundColor="background4" backgroundColor="background4" transparent="1" zPosition="2" />
-		<panel name="TemplatesMenuDownProgressLayer" />
-		<widget name="activityslider" position="340,935" size="1500,15" foregroundColor="background4" backgroundColor="background4" transparent="1" zPosition="2" />
-		<widget source="package" render="Label" position="340,955" size="1500,30" font="Global; 25" halign="right" foregroundColor="color3" backgroundColor="background1" transparent="1" />
-		<widget source="status" render="Label" position="340,955" size="1500,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
-		<panel name="TemplatesClock" />
-	</screen>
-	<!-- IPKG -->
-	<screen name="Ipkg" position="fill" title="Installing Software..." backgroundColor="transparent" flags="wfNoBorder" zPosition="1">
-		<panel name="TemplatesMenuLayer" />
-		<eLabel text="b" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<panel name="TemplatesMenuUpProgressLayer" />
-		<widget name="slider" position="340,905" size="1500,15" foregroundColor="background4" backgroundColor="background4" transparent="1" zPosition="2" />
-		<panel name="TemplatesMenuDownProgressLayer" />
-		<widget name="activityslider" position="340,935" size="1500,15" foregroundColor="background4" backgroundColor="background4" transparent="1" zPosition="2" />
-		<widget name="package" render="Label" position="340,955" size="1500,30" font="Global; 25" halign="right" foregroundColor="color3" backgroundColor="background1" transparent="1" />
-		<widget name="status" render="Label" position="340,955" size="1500,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
-		<panel name="TemplatesClock" />
-	</screen>
-	<!-- IPKG Menu -->
-	<screen name="IPKGMenu" position="fill" title="Select IPKG source" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="TemplatesMenu1000Layer" />
-		<eLabel text="H" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget name="filelist" position="90,200" size="980,630" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
-	</screen>
-	<!-- IPKG Source -->
-	<screen name="IPKGSource" position="fill" title="IPKG source" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="TemplatesMenu1000Layer" />
-		<eLabel text="H" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget name="text" position="90,200" size="980,630" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
-	</screen>
 	<!-- Packet Manager -->
 	<screen name="PacketManager" position="fill" title="IPKG upgrade" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="TemplatesMenu1000Layer" />
@@ -2522,8 +2495,76 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<panel name="TemplatesButtonsKey" />
 		<panel name="TemplatesClock" />
 	</screen>
-	<!-- OPKG Installer -->
-	<screen name="OpkgInstaller" position="fill" title="Install extensions" backgroundColor="transparent" flags="wfNoBorder">
+	<!-- Update Plugin -->
+	<screen name="UpdatePlugin" position="fill" title="Software update" backgroundColor="transparent" flags="wfNoBorder" zPosition="1">
+		<panel name="TemplatesMenuLayer" />
+		<eLabel text="b" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<panel name="TemplatesMenuUpProgressLayer" />
+		<widget name="slider" position="340,905" size="1500,15" foregroundColor="background4" backgroundColor="background4" transparent="1" zPosition="2" />
+		<panel name="TemplatesMenuDownProgressLayer" />
+		<widget name="activityslider" position="340,935" size="1500,15" foregroundColor="background4" backgroundColor="background4" transparent="1" zPosition="2" />
+		<widget source="package" render="Label" position="340,955" size="1500,30" font="Global; 25" halign="right" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+		<widget source="status" render="Label" position="340,955" size="1500,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+		<panel name="TemplatesClock" />
+	</screen>
+	<!-- Templates IPKG/OPKG -->
+	<screen name="TemplatesIPKGOPKG">
+		<panel name="TemplatesMenuLayer" />
+		<eLabel text="b" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<panel name="TemplatesMenuUpProgressLayer" />
+		<widget name="slider" position="340,905" size="1500,15" foregroundColor="background4" backgroundColor="background4" transparent="1" zPosition="2" />
+		<panel name="TemplatesMenuDownProgressLayer" />
+		<widget name="activityslider" position="340,935" size="1500,15" foregroundColor="background4" backgroundColor="background4" transparent="1" zPosition="2" />
+		<widget name="package" render="Label" position="340,955" size="1500,30" font="Global; 25" halign="right" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+		<widget name="status" render="Label" position="340,955" size="1500,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+		<panel name="TemplatesClock" />
+	</screen>
+	<!-- IPKG -->
+	<screen name="Ipkg" position="fill" title="Installing Software..." backgroundColor="transparent" flags="wfNoBorder" zPosition="1">
+		<panel name="TemplatesIPKGOPKG" />
+	</screen>
+	<!-- OPKG -->
+	<screen name="Opkg" position="fill" title="Installing Software..." backgroundColor="transparent" flags="wfNoBorder" zPosition="1">
+		<panel name="TemplatesIPKGOPKG" />
+	</screen>
+	<!-- Templates IPKG/OPKG Menu -->
+	<screen name="TemplatesIPKGOPKGMenu">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="H" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget name="filelist" position="90,200" size="980,630" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<panel name="TemplatesButtonsKey" />
+		<panel name="TemplatesClock" />
+	</screen>
+	<!-- IPKG Menu -->
+	<screen name="IPKGMenu" position="fill" title="Select update source to edit" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="TemplatesIPKGOPKGMenu" />
+	</screen>
+	<!-- OPKG Menu -->
+	<screen name="OPKGMenu" position="fill" title="Select update source to edit" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="TemplatesIPKGOPKGMenu" />
+	</screen>
+	<!-- Templates IPKG/OPKG Source -->
+	<screen name="TemplatesIPKGOPKGSource">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="H" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget name="text" position="90,200" size="980,630" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<panel name="TemplatesButtonsKey" />
+		<panel name="TemplatesClock" />
+	</screen>
+	<!-- IPKG Source -->
+	<screen name="IPKGSource" position="fill" title="Edit update source url" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="TemplatesIPKGOPKGSource" />
+	</screen>
+	<!-- OPKG Source -->
+	<screen name="OPKGSource" position="fill" title="Edit update source url" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="TemplatesIPKGOPKGSource" />
+	</screen>
+	<!-- Templates IPKG/OPKG Installer -->
+	<screen name="TemplatesIPKGOPKGInstaller">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="H" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
@@ -2534,13 +2575,11 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 	</screen>
 	<!-- IPKG Installer -->
 	<screen name="IpkgInstaller" position="fill" title="Install extensions" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="TemplatesMenu1000Layer" />
-		<eLabel text="H" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget name="list" position="90,200" size="980,630" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<widget source="introduction" render="Label" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
-		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
+		<panel name="TemplatesIPKGOPKGInstaller" />
+	</screen>
+	<!-- OPKG Installer -->
+	<screen name="OpkgInstaller" position="fill" title="Install extensions" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="TemplatesIPKGOPKGInstaller" />
 	</screen>
 	<!-- Select Image -->
 	<screen name="SelectImage" position="fill" title="SelectImage" backgroundColor="transparent" flags="wfNoBorder">
@@ -2617,8 +2656,8 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<panel name="TemplatesButtonsKey" />
 		<panel name="TemplatesClock" />
 	</screen>
-	<!-- Image Backup -->
-	<screen name="ImageBackup" position="fill" title="Image Backup" backgroundColor="transparent" flags="wfNoBorder">
+	<!-- Templates Multi Boot -->
+	<screen name="TemplatesMultiBootMenu">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="b" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
@@ -2633,40 +2672,18 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<widget source="description" render="Label" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
 		<panel name="TemplatesButtonsKey" />
 		<panel name="TemplatesClock" />
+	</screen>
+	<!-- Image Backup -->
+	<screen name="ImageBackup" position="fill" title="Image Backup" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="TemplatesMultiBootMenu" />
 	</screen>
 	<!-- Multi Boot Selector -->
 	<screen name="MultiBootSelector" position="fill" title="Multiboot Image Selector" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="TemplatesMenu1000Layer" />
-		<eLabel text="b" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<eLabel position="90,200" size="980,40" backgroundColor="background2" zPosition="-1" />
-		<eLabel text="&gt;" position="95,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-		<widget source="Title" render="Label" position="125,205" size="940,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-		<eLabel position="90,520" size="980,40" backgroundColor="background2" zPosition="-1" />
-		<eLabel text="&gt;" position="95,525" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-		<eLabel text="Infos" position="125,525" size="940,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-		<widget name="config" position="90,245" size="980,275" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<widget source="options" render="Label" position="90,565" size="980,275" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" foregroundColor="color2" />
-		<widget source="description" render="Label" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
-		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
+		<panel name="TemplatesMultiBootMenu" />
 	</screen>
 	<!-- Multi Boot Wizard -->
 	<screen name="MultiBootWizard" position="fill" title="MultiBoot Image Manager" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="TemplatesMenu1000Layer" />
-		<eLabel text="b" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<eLabel position="90,200" size="980,40" backgroundColor="background2" zPosition="-1" />
-		<eLabel text="&gt;" position="95,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-		<widget source="Title" render="Label" position="125,205" size="940,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-		<eLabel position="90,520" size="980,40" backgroundColor="background2" zPosition="-1" />
-		<eLabel text="&gt;" position="95,525" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-		<eLabel text="Infos" position="125,525" size="940,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-		<widget name="config" position="90,245" size="980,275" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<widget source="options" render="Label" position="90,565" size="980,275" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" foregroundColor="color2" />
-		<widget source="description" render="Label" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
-		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
+		<panel name="TemplatesMultiBootMenu" />
 	</screen>
 	<!-- ########## Common Interface ########## -->
 	<!-- MMI Dialog -->
@@ -4125,6 +4142,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<widget name="list_right" position="970,200" size="860,630" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
 		<panel name="TemplatesButtonsMenu" />
 		<panel name="TemplatesButtonsKey" />
+		<panel name="TemplatesButtons0" />
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- Filebrowser menu -->
@@ -4147,39 +4165,42 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<panel name="TemplatesMenuRightLayer" />
 		<eLabel text="J" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
-		<eLabel position="90,200" size="861,40" backgroundColor="background2" zPosition="-1" />
-		<widget name="list_left_head1" position="90,200" size="861,40" font="Global; 25" valign="center" backgroundColor="background2" transparent="1" foregroundColor="color2" />
-		<widget name="sort_left" position="90,245" size="150,40" font="Regular; 25" halign="left" backgroundColor="background1" transparent="1" foregroundColor="color1" />
-		<widget source="list_left_head2" render="Listbox" position="90,245" size="861,40" backgroundColor="background1" foregroundColor="color1" selectionDisabled="1" transparent="1">
+		<eLabel position="90,200" size="860,40" backgroundColor="background2" zPosition="-1" />
+		<eLabel text="&gt;" position="95,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+		<widget name="list_left_head1" position="125,200" size="825,35" font="Global; 25" foregroundColor="color2" backgroundColor="background2" valign="center" transparent="1" />
+		<widget name="sort_left" position="90,245" size="150,35" font="Regular; 25" halign="left" backgroundColor="background1" transparent="1" foregroundColor="color1" />
+		<widget source="list_left_head2" render="Listbox" position="90,245" size="860,35" backgroundColor="background1" foregroundColor="color1" selectionDisabled="1" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (210, 0), size = (120, 45), font = 0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is a symbolic mode
-					MultiContentEntryText(pos = (330, 0), size = (150, 45), font = 0, flags = RT_HALIGN_RIGHT, text = 11), # index 11 is the scaled size
-					MultiContentEntryText(pos = (480, 0), size = (360, 45), font = 0, flags = RT_HALIGN_RIGHT, text = 13)], # index 13 is the modification time
+					MultiContentEntryText(pos = (210, 0), size = (120, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1), # index 1 is a symbolic mode
+					MultiContentEntryText(pos = (330, 0), size = (150, 35), font = 0, flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = 11), # index 11 is the scaled size
+					MultiContentEntryText(pos = (480, 0), size = (360, 35), font = 0, flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = 13)], # index 13 is the modification time
 					"fonts": [gFont("Global", 25)],
-					"itemHeight": 45,
+					"itemHeight": 35,
 					"selectionEnabled": False}
 			</convert>
 		</widget>
-		<widget name="list_left" position="90,290" size="861,525" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" foregroundColor="color2" transparent="1" />
+		<widget name="list_left" position="90,290" size="860,525" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" foregroundColor="color2" transparent="1" />
 		<eLabel position="960,200" size="2,635" backgroundColor="background3" zPosition="1" />
-		<eLabel position="971,200" size="861,40" backgroundColor="background2" zPosition="-1" />
-		<widget name="list_right_head1" position="971,200" size="861,40" font="Global; 25" valign="center" backgroundColor="background2" transparent="1" foregroundColor="color2" />
-		<widget name="sort_right" position="971,245" size="150,40" font="Regular; 25" halign="left" backgroundColor="background1" transparent="1" foregroundColor="color1" />
-		<widget source="list_right_head2" render="Listbox" position="971,245" size="861,40" backgroundColor="background1" foregroundColor="color1" selectionDisabled="1" transparent="1">
+		<eLabel position="970,200" size="860,40" backgroundColor="background2" zPosition="-1" />
+		<eLabel text="&gt;" position="975,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+		<widget name="list_right_head1" position="1005,200" size="825,35" font="Global; 25" foregroundColor="color2" backgroundColor="background2" valign="center" transparent="1" />
+		<widget name="sort_right" position="970,245" size="150,35" font="Regular; 25" halign="left" backgroundColor="background1" transparent="1" foregroundColor="color1" />
+		<widget source="list_right_head2" render="Listbox" position="970,245" size="860,35" backgroundColor="background1" foregroundColor="color1" selectionDisabled="1" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (210, 0), size = (120, 45), font = 0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is a symbolic mode
-					MultiContentEntryText(pos = (330, 0), size = (150, 45), font = 0, flags = RT_HALIGN_RIGHT, text = 11), # index 11 is the scaled size
-					MultiContentEntryText(pos = (480, 0), size = (360, 45), font = 0, flags = RT_HALIGN_RIGHT, text = 13)], # index 13 is the modification time
+					MultiContentEntryText(pos = (210, 0), size = (120, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1), # index 1 is a symbolic mode
+					MultiContentEntryText(pos = (330, 0), size = (150, 35), font = 0, flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = 11), # index 11 is the scaled size
+					MultiContentEntryText(pos = (480, 0), size = (360, 35), font = 0, flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = 13)], # index 13 is the modification time
 					"fonts": [gFont("Global", 25)],
-					"itemHeight": 45,
+					"itemHeight": 35,
 					"selectionEnabled": False}
 			</convert>
 		</widget>
-		<widget name="list_right" position="971,290" size="861,525" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" foregroundColor="color2" transparent="1" />
-		<eLabel text="MENU" position="1485,100" size="120,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+		<widget name="list_right" position="970,290" size="860,525" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" foregroundColor="color2" transparent="1" />
+		<panel name="TemplatesButtonsMenu" />
 		<panel name="TemplatesButtonsKey" />
+		<panel name="TemplatesButtons0" />
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- File Commander Screen -->
@@ -4206,16 +4227,16 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<eLabel position="90,200" size="980,40" backgroundColor="background2" zPosition="-1" />
 		<widget name="filename" position="125,205" size="940,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
 		<eLabel text="&gt;" position="95,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-		<widget source="list" render="Listbox" position="90,245" size="980,590" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
+		<widget source="list" render="Listbox" position="90,245" size="980,595" scrollbarMode="showNever" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					# 0   100 200 300 400 500
 					# |   |   |   |   |   |
 					# 00000000 1111111111111
-					MultiContentEntryText(pos = (0, 0), size = (300, 45), font = 0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is a label
-					MultiContentEntryText(pos = (320, 0), size = (380, 45), font = 0, flags = RT_HALIGN_LEFT, text = 1)], # index 1 is the information
+					MultiContentEntryText(pos = (10, 0), size = (300, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0), # index 0 is a label
+					MultiContentEntryText(pos = (320, 0), size = (380, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1)], # index 1 is the information
 					"fonts": [gFont("Global", 25)],
-					"itemHeight": 45,
+					"itemHeight": 35,
 					"selectionEnabled": False}
 			</convert>
 		</widget>
@@ -4239,32 +4260,33 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="J" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
-		<widget name="list_head" position="90,200" size="980,30" font="Global; 25" backgroundColorSelected="background5" foregroundColor="color2" backgroundColor="background1" transparent="1" />
-		<widget name="filedata" position="90,235" size="980,605" scrollbarMode="showNever" itemHeight="35" font="Global; 25" foregroundColor="color2" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<eLabel position="90,200" size="980,40" backgroundColor="background2" zPosition="-1" />
+		<eLabel text="&gt;" position="95,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+		<widget name="list_head" position="125,205" size="940,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" valign="center" transparent="1" />
+		<widget name="filedata" position="90,245" size="980,595" scrollbarMode="showNever" itemHeight="35" font="Global; 25" foregroundColor="color2" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
 		<panel name="TemplatesButtonsKey" />
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- Image Viewer -->
 	<screen name="ImageViewer" position="fill" backgroundColor="transparent" flags="wfNoBorder">
-		<eLabel position="0,0" zPosition="0" size="1920,1080" backgroundColor="background2" foregroundColor="color2" />
-		<widget name="image" position="0,0" size="1920,1080" zPosition="1" alphatest="on" foregroundColor="color2" backgroundColor="background2" font="Global; 16" />
-		<widget name="status" position="9,7" size="20,20" zPosition="2" pixmap="/usr/share/enigma2/skin_default/icons/record.png" alphatest="on" />
-		<widget name="icon" position="29,5" size="20,20" zPosition="2" pixmap="/usr/share/enigma2/skin_default/icons/ico_mp_play.png" alphatest="on" />
-		<widget source="message" render="Label" position="54,0" size="1200,30" font="Global; 25" halign="left" foregroundColor="color2" backgroundColor="background2" zPosition="2" noWrap="1" transparent="1" />
+		<eLabel position="0,0" size="1920,1080" backgroundColor="background1" zPosition="-99" />
+		<widget name="image" position="0,0" size="1920,1080" font="Global; 16" foregroundColor="color2" backgroundColor="background2" alphatest="on" />
+		<widget name="status" position="10,15" size="20,20" zPosition="2" pixmap="/usr/share/enigma2/skin_default/icons/record.png" alphatest="on" />
+		<widget name="icon" position="30,15" size="20,20" zPosition="2" pixmap="/usr/share/enigma2/skin_default/icons/ico_mp_play.png" alphatest="on" />
+		<widget source="message" render="Label" position="60,10" size="1200,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" noWrap="1" zPosition="2" />
 	</screen>
 	<!-- Task List Screen -->
 	<screen name="TaskListScreen" position="fill" title="Task list" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="e" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget source="tasklist" render="Listbox" position="90,200" size="980,635" scrollbarMode="showNever" itemHeight="80" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
+		<widget source="tasklist" render="Listbox" position="90,200" size="980,560" scrollbarMode="showNever" itemHeight="80" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (5, 1), size = (1200, 40), font=1, flags = RT_HALIGN_LEFT, text = 1), # name
-					MultiContentEntryText(pos = (5, 40), size = (1200, 35), font=1, flags = RT_HALIGN_LEFT, text = 2), # state
+					MultiContentEntryText(pos = (10, 0), size = (950, 35), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1), # name
+					MultiContentEntryText(pos = (10, 40), size = (950, 35), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 2), # state
 					MultiContentEntryProgress(pos = (260, 40), size = (400, 20), percent = -3), # progress
-					MultiContentEntryText(pos = (560, 35), size = (100, 45), font=1, flags = RT_HALIGN_RIGHT, text = 4)], # percentage
-					"fonts": [gFont("Global", 32),gFont("Global", 28)],
+					MultiContentEntryText(pos = (560, 40), size = (100, 45), font = 1, flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = 4)], # percentage
+					"fonts": [gFont("Global", 30),gFont("Console", 25)],
 					"itemHeight": 80}
 			</convert>
 		</widget>
@@ -4276,9 +4298,11 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
-		<widget name="list_left_head" position="90,200" size="980,40" font="Global; 25" foregroundColor="color1" backgroundColor="background1" transparent="1" />
-		<widget name="list_left" position="90,245" size="980,385" scrollbarMode="showNever" itemHeight="35" font="Global; 25" foregroundColor="color2" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<widget name="unpacking" position="90,645" size="980,40" font="Global; 25" backgroundColor="background2" transparent="1" foregroundColor="color1" />
+		<eLabel position="90,200" size="980,40" backgroundColor="background2" zPosition="-1" />
+		<eLabel text="&gt;" position="95,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+		<widget name="list_left_head" position="125,200" size="940,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" valign="center" transparent="1" />
+		<widget name="list_left" position="90,245" size="980,525" scrollbarMode="showNever" itemHeight="35" font="Global; 25" foregroundColor="color2" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget name="unpacking" position="90,795" size="980,40" font="Global; 25" backgroundColor="background2" transparent="1" foregroundColor="color1" />
 		<panel name="TemplatesButtonsKey" />
 		<panel name="TemplatesClock" />
 	</screen>
@@ -5378,8 +5402,8 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<widget source="menu" render="Listbox" position="90,200" size="980,635" scrollbarMode="showNever" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (5, 7), size = (450, 35), flags = RT_HALIGN_LEFT, text = 0),
-					MultiContentEntryText(pos = (460, 7), size = (500, 35), flags = RT_HALIGN_LEFT, text = 1)],
+					MultiContentEntryText(pos = (10, 0), size = (380, 35), font= 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
+					MultiContentEntryText(pos = (400, 0), size = (550, 35), font= 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1)],
 					"fonts": [gFont("Global", 25)],
 					"itemHeight": 35}
 			</convert>
