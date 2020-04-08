@@ -1490,7 +1490,11 @@
 		<panel name="TemplatesMenu1000Layer" />
 		<panel name="TemplatesMenuLeftLayer" />
 		<!-- Templates Channel Selection Tv Bouquet-->
-		<widget name="list" position="90,200" size="980,635" scrollbarMode="showNever" transparent="1"
+		<widget name="list" position="90,200" size="980,635" transparent="1"
+		scrollbarMode="showNever"
+		scrollbarWidth="10"
+		scrollbarSliderForegroundColor="background4"
+		scrollbarSliderBorderColor="background3"
 		serviceItemHeight="35"
 		serviceNumberFont="Global; 25"
 		serviceNameFont="Global; 25"
@@ -1513,7 +1517,11 @@
 		<panel name="TemplatesMenuLeftLayer" />
 		<panel name="TemplatesMenuRightLayer" />
 		<!-- Templates Channel Selection Tv Bouquet-->
-		<widget name="list" position="90,200" size="1740,635" scrollbarMode="showNever" transparent="1"
+		<widget name="list" position="90,200" size="1740,635" transparent="1"
+		scrollbarMode="showNever"
+		scrollbarWidth="10"
+		scrollbarSliderForegroundColor="background4"
+		scrollbarSliderBorderColor="background3"
 		serviceItemHeight="35"
 		serviceNumberFont="Global; 25"
 		serviceNameFont="Global; 25"
@@ -1570,7 +1578,11 @@
 	<!-- ########## Templates Channel Selection Radio ########## -->
 	<screen name="TemplatesChannelSelectionRadioBouquet">
 		<!-- Templates Channel Selection Radio Bouquet-->
-		<widget name="list" position="20,200" size="850,635" scrollbarMode="showNever" transparent="1"
+		<widget name="list" position="20,200" size="850,635" transparent="1"
+		scrollbarMode="showNever"
+		scrollbarWidth="10"
+		scrollbarSliderForegroundColor="background4"
+		scrollbarSliderBorderColor="background3"
 		serviceItemHeight="35"
 		serviceNumberFont="Global; 25"
 		serviceNameFont="Global; 25"
