@@ -907,6 +907,15 @@
 		<panel name="TemplatesButtonsKey" />
 		<panel name="TemplatesClock" />
 	</screen>
+	<!-- Geolocation Info -->
+	<screen name="Geolocation" position="fill" title="Geolocation" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="i" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget name="AboutScrollLabel" position="90,200" size="980,635" font="Global; 25" halign="center" foregroundColor="color2" backgroundColor="background1" transparent="1" />
+		<panel name="TemplatesButtonsKey" />
+		<panel name="TemplatesClock" />
+	</screen>
 	<!-- Service Info -->
 	<screen name="ServiceInfo" position="fill" title="Serviceinfo" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="TemplatesMenu1000Layer" />
