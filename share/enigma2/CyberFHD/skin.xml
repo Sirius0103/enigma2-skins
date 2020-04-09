@@ -3197,32 +3197,6 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<panel name="TemplatesButtons" />
 		<panel name="TemplatesClock" />
 	</screen>
-	<!-- Templates Signal Finder Setup -->
-	<screen name="TemplatesSignalFinderSetup">
-		<panel name="TemplatesMenu1000Layer" />
-		<eLabel text="±" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget name="status" position="1430,575" size="400,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1" />
-		<widget name="config" position="90,200" size="980,630" scrollbarMode="showNever" scrollbarWidth="10" scrollbarSliderForegroundColor="background4" scrollbarSliderBorderColor="background3" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
-		<widget name="introduction" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
-		<panel name="TemplatesSignalFinder" />
-		<widget name="Cancel" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-		<widget name="Scan" position="1380,914" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-		<panel name="TemplatesButtons" />
-		<panel name="TemplatesClock" />
-	</screen>
-	<!-- Signal Finder -->
-	<screen name="SignalFinder" position="fill" title="Signal Finder" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="TemplatesSignalFinderSetup" />
-	</screen>
-	<!-- Signal Finder Multistream -->
-	<screen name="SignalFinderMultistream" position="fill" title="Signal Finder" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="TemplatesSignalFinderSetup" />
-	</screen>
-	<!-- Signal Finder Multistream T2MI-->
-	<screen name="SignalFinderMultistreamT2MI" position="fill" title="Signal Finder" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="TemplatesSignalFinderSetup" />
-	</screen>
 	<!-- Service Scan -->
 	<screen name="ServiceScan" position="fill" title="Service scan" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="TemplatesMenu500Layer" />
@@ -3263,6 +3237,32 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<widget name="servicelist" position="90,200" size="480,630" scrollbarMode="showNever" scrollbarWidth="10" scrollbarSliderForegroundColor="background4" scrollbarSliderBorderColor="background3" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
 		<panel name="TemplatesClock" />
 	</screen>
+	<!-- Templates Signal Finder Setup -->
+	<screen name="TemplatesSignalFinderSetup">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="±" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget name="status" position="1430,575" size="400,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1" />
+		<widget name="config" position="90,200" size="980,630" scrollbarMode="showNever" scrollbarWidth="10" scrollbarSliderForegroundColor="background4" scrollbarSliderBorderColor="background3" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget name="introduction" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+		<panel name="TemplatesSignalFinder" />
+		<widget name="Cancel" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+		<widget name="Scan" position="1380,914" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+		<panel name="TemplatesButtons" />
+		<panel name="TemplatesClock" />
+	</screen>
+	<!-- Signal Finder -->
+	<screen name="SignalFinder" position="fill" title="Signal Finder" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="TemplatesSignalFinderSetup" />
+	</screen>
+	<!-- Signal Finder Multistream -->
+	<screen name="SignalFinderMultistream" position="fill" title="Signal Finder" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="TemplatesSignalFinderSetup" />
+	</screen>
+	<!-- Signal Finder Multistream T2MI-->
+	<screen name="SignalFinderMultistreamT2MI" position="fill" title="Signal Finder" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="TemplatesSignalFinderSetup" />
+	</screen>
 	<!-- Blind Scan -->
 	<screen name="Blindscan" position="fill" title="Blindscan" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="TemplatesMenu1000Layer" />
@@ -3274,8 +3274,8 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<panel name="TemplatesButtonsKey" />
 		<panel name="TemplatesClock" />
 	</screen>
-	<!-- Blind Scan State -->
-	<screen name="SatBlindscanState" position="fill" title="Satellite Blindscan" backgroundColor="transparent" flags="wfNoBorder">
+	<!-- Templates Blind Scan State -->
+	<screen name="TemplatesSatBlindscanState">
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="±" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
@@ -3295,26 +3295,13 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<panel name="TemplatesButtons" />
 		<panel name="TemplatesClock" />
 	</screen>
+	<!-- Blind Scan State -->
+	<screen name="SatBlindscanState" position="fill" title="Satellite Blindscan" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="TemplatesSatBlindscanState" />
+	</screen>
 	<!-- Blind Scan State 2 -->
 	<screen name="SatBlindscanState2" position="fill" title="Satellite Blindscan" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="TemplatesMenu1000Layer" />
-		<eLabel text="±" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget source="list" render="Listbox" position="90,200" size="980,630" scrollbarMode="showOnDemand" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-					MultiContentEntryText(pos=(10, 0), size=(950, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0)],
-					"fonts": [gFont("Global", 30)
-					"itemHeight": 35}
-			</convert>
-		</widget>
-		<widget name="text" position="340,895" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
-		<widget name="progress" position="340,925" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
-		<widget name="post_action" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
-		<eLabel text="Cancel" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-		<eLabel text="Change" position="1380,914" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-		<panel name="TemplatesButtons" />
-		<panel name="TemplatesClock" />
+		<panel name="TemplatesSatBlindscanState" />
 	</screen>
 	<!-- Cable Scan -->
 	<screen name="CableScanScreen" position="fill" title="Cable Scan" backgroundColor="transparent" flags="wfNoBorder">
@@ -3540,8 +3527,8 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- ########## Bitrate Viewer ########## -->
-	<!-- Bitrate Viewer -->
-	<screen name="BitrateViewer" position="fill" title="Bitrate viewer" backgroundColor="transparent" flags="wfNoBorder">
+	<!-- Templates Bitrate Viewer -->
+	<screen name="TemplatesBitrateViewer">
 		<panel name="TemplatesMenuLayer" />
 		<eLabel text="U" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<eLabel position="1203,848" size="619,184" backgroundColor="background3" zPosition="-12" />
@@ -3569,34 +3556,13 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<widget name="acur" position="1650,895" size="160,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1" />
 		<panel name="TemplatesClock" />
 	</screen>
+	<!-- Bitrate Viewer -->
+	<screen name="BitrateViewer" position="fill" title="Bitrate viewer" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="TemplatesBitrateViewer" />
+	</screen>
 	<!-- Bitrate Viewer Extra -->
 	<screen name="BitrateViewerExtra" position="fill" title="Bitrate viewer" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="TemplatesMenuLayer" />
-		<eLabel text="U" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<eLabel position="1203,848" size="619,184" backgroundColor="background3" zPosition="-12" />
-		<eLabel position="1205,850" size="615,180" backgroundColor="background1" zPosition="-11" />
-		<eLabel position="1210,890" size="300,135" backgroundColor="background2" zPosition="-10" />
-		<eLabel position="1515,890" size="300,135" backgroundColor="background2" zPosition="-10" />
-		<panel name="TemplatesTitle" />
-		<eLabel text="Video" position="1210,855" size="300,30" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="center" transparent="1" />
-		<eLabel text="Min:" position="1215,955" size="150,35" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
-		<widget name="vmin" position="1345,955" size="160,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1" />
-		<eLabel text="Max:" position="1215,925" size="150,35" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
-		<widget name="vmax" position="1345,925" size="160,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1" />
-		<eLabel text="Average:" position="1215,985" size="150,35" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
-		<widget name="vavg" position="1345,985" size="160,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1" />
-		<eLabel text="Current:" position="1215,895" size="150,35" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
-		<widget name="vcur" position="1345,895" size="160,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1" />
-		<eLabel text="Audio" position="1515,855" size="300,30" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="center" transparent="1" />
-		<eLabel text="Max:" position="1520,925" size="150,35" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
-		<widget name="amax" position="1650,925" size="160,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1" />
-		<eLabel text="Min:" position="1520,955" size="150,35" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
-		<widget name="amin" position="1650,955" size="160,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1" />
-		<eLabel text="Average:" position="1520,985" size="150,35" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
-		<widget name="aavg" position="1650,985" size="160,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1" />
-		<eLabel text="Current:" position="1520,895" size="150,35" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
-		<widget name="acur" position="1650,895" size="160,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1" />
-		<panel name="TemplatesClock" />
+		<panel name="TemplatesBitrateViewer" />
 	</screen>
 	<!-- Bitrate Viewer Setup -->
 	<screen name="BitrateViewerSetup" position="fill" title="BitrateViewerSetup" backgroundColor="transparent" flags="wfNoBorder">
@@ -4786,7 +4752,10 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<eLabel text="&gt;" position="95,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
 		<widget name="MainList" position="90,245" size="980,590"
 			enableWrapAround="1"
-			scrollbarMode="showNever" scrollbarWidth="10" scrollbarSliderForegroundColor="background4" scrollbarSliderBorderColor="background3"
+			scrollbarMode="showNever"
+			scrollbarWidth="10"
+			scrollbarSliderForegroundColor="background4"
+			scrollbarSliderBorderColor="background3"
 			itemHeight="120"
 			setTime="15,50,90,35"
 			setPict="105,15,105,105"
