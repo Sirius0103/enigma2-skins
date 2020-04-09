@@ -3054,8 +3054,9 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<panel name="TemplatesTitle" />
 		<widget name="list" position="90,200" size="980,630" scrollbarMode="showNever" scrollbarWidth="10" scrollbarSliderForegroundColor="background4" scrollbarSliderBorderColor="background3" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
 		<!-- Templates Signal Positioner -->
-		<eLabel text="Tuner Info" position="1115,495" size="325,30" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+		<panel name="TemplatesMenuInfoSignalPositionerLayer" />
 		<panel name="TemplatesSignalPositionerProgressLayer" />
+		<eLabel text="Tuner Info" position="1115,495" size="325,30" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
 		<eLabel text="SNR:" position="1110,737" size="120,30" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="center" transparent="1" />
 		<widget name="snr_db" position="1675,680" size="150,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1" zPosition="5" />
 		<widget name="snr_bar" position="1240,725" size="590,50" foregroundColor="background4" backgroundColor="background4" transparent="1" zPosition="2" />
