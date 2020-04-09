@@ -6730,30 +6730,6 @@
 			<convert type="ConditionalShowHide">Invert</convert>
 		</widget>
 	</screen>
-	<screen name="TemplatesSignalPositioner">
-		<panel name="TemplatesMenuInfoSignalPositionerLayer" />
-		<!-- Templates Signal Positioner -->
-		<eLabel text="Tuner Info" position="1115,495" size="325,30" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
-		<panel name="TemplatesSignalPositionerProgressLayer" />
-		<eLabel text="SNR:" position="1110,737" size="120,30" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="center" transparent="1" />
-		<widget name="snr_db" position="1675,680" size="150,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1" zPosition="5" />
-		<widget name="snr_bar" position="1240,725" size="590,50" foregroundColor="background4" backgroundColor="background4" transparent="1" zPosition="2" />
-		<widget name="snr_percentage" position="1245,725" size="150,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="left" transparent="1" zPosition="5" />
-		<eLabel text="BER:" position="1110,797" size="120,30" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="center" transparent="1" />
-		<widget name="ber_bar" position="1240,785" size="590,50" foregroundColor="background4" backgroundColor="background4" transparent="1" zPosition="2" />
-		<widget name="ber_value" position="1245,785" size="150,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="left" transparent="1" zPosition="5" />
-		<eLabel text="Lock" position="1111,677" size="120,30" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="center" transparent="1" />
-		<widget name="lock_state" position="1245,677" size="200,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
-		<eLabel text="Frequency:" position="1245,535" size="200,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
-		<widget name="frequency_value" position="1475,535" size="350,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1" />
-		<eLabel text="Polarisation:" position="1245,565" size="200,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
-		<widget name="polarisation" position="1475,565" size="350,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1" />
-		<eLabel text="Symbolrate:" position="1245,595" size="200,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
-		<widget name="symbolrate_value" position="1475,595" size="350,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1" />
-		<eLabel text="FEC:" position="1245,625" size="200,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" halign="left" transparent="1" />
-		<widget name="fec_value" position="1475,625" size="350,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1" />
-		<widget name="status_bar" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
-	</screen>
 	<!-- ########## Templates Channel Selection Tv ########## -->
 	<screen name="TemplatesChannelSelectionProgress">
 		<panel name="TemplatesChannelSelectionProgressLayer" />
