@@ -4468,9 +4468,9 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<eLabel position="90,200" size="980,40" backgroundColor="background2" zPosition="-1" />
 		<eLabel text="&gt;" position="95,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
 		<widget name="text" position="125,205" size="940,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-		<eLabel position="90,370" size="980,40" backgroundColor="background2" zPosition="-1" />
-		<eLabel text="&gt;" position="95,375" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-		<widget name="input" position="125,375" size="940,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
+		<eLabel position="90,300" size="980,40" backgroundColor="background2" zPosition="-1" />
+		<eLabel text="&gt;" position="95,305" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
+		<widget name="input" position="125,305" size="940,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- v Editor Screen -->
@@ -6870,13 +6870,13 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<panel name="TemplatesTitle" />
 		<eLabel position="90,200" size="1740,40" backgroundColor="background2" zPosition="-1" />
 		<eLabel text="&gt;" position="95,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
-		<widget name="headertext" position="125,205" size="1700,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+		<widget name="headertext" position="125,205" size="1700,30" font="Global; 25" halign="left" foregroundColor="color2" backgroundColor="background2" transparent="1" />
 		<ePixmap position="1707,202" size="120,38" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SHOUTcast/shoutcast-logo1-fs8.png" alphatest="on" />
 		<widget name="cover" position="100,255" size="285,398" transparent="1" alphatest="on" />
-		<widget name="list" position="405,245" size="1425,595" scrollbarMode="showNever" scrollbarWidth="10" scrollbarSliderForegroundColor="background4" scrollbarSliderBorderColor="background3" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" zPosition="2" />
-		<widget name="statustext" position="405,450" size="1425,180" font="Global; 25" halign="center" valign="center" transparent="1" zPosition="4" backgroundColor="background1" />
+		<widget name="list" position="405,245" size="1425,595" scrollbarMode="showNever" scrollbarWidth="10" scrollbarSliderForegroundColor="background4" scrollbarSliderBorderColor="background3" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget name="statustext" position="405,450" size="1425,180" font="Global; 25" foregroundColor="color1" backgroundColor="background1" halign="center" valign="center" transparent="1" zPosition="2" />
 		<eLabel position="90,670" size="310,165" backgroundColor="background2" zPosition="-10" />
-		<widget name="console" position="95,675" size="300,155" foregroundColor="color3" font="Global; 25" halign="center" valign="center" transparent="1" zPosition="4" backgroundColor="background1" shadowOffset="-1,-1" />
+		<widget name="console" position="95,675" size="300,155" font="Global; 25" foregroundColor="color3" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<widget name="titel" position="340,925" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
 		<widget name="station" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
 		<panel name="TemplatesButtonsMenu" />
@@ -6982,7 +6982,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 	</screen>
 	<!-- Softcam Panel ATV -->
 	<screen name="SoftcamPanel" position="fill" title="Softcam Panel" backgroundColor="transparent" flags="wfNoBorder">
-		<widget name="actifcam" position="340,925" size="1000,25" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" transparent="1" />
+		<widget name="actifcam" position="340,925" size="1000,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" transparent="1" />
 		<widget name="actifcam2" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
 		<widget name="ecminfo" position="1115,510" size="715,330" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="left" valign="top" transparent="1" />
 		<panel name="TemplatesSoftcamSetup" />
@@ -7637,7 +7637,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<panel name="TemplatesMenuLayer" />
 		<eLabel text="Y" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
-		<widget name="infomation" position="340,895" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
+		<widget name="infomation" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1" />
 		<panel name="TemplatesButtonsKey" />
 		<panel name="TemplatesClock" />
 	</screen>
@@ -7722,11 +7722,11 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<widget name="pic" position="90,200" size="320,180" transparent="1" alphatest="on" />
 		<eLabel position="85,390" size="330,180" backgroundColor="background2" zPosition="-10" />
 		<widget name="description" position="420,200" size="650,635" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" transparent="1" />
-		<widget name="views" position="90,395" size="320,30" font="Global; 25" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
-		<widget name="duration" position="90,430" size="320,30" font="Global; 25" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
-		<widget name="likes" position="90,465" size="320,30" font="Global; 25" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
-		<widget name="dislikes" position="90,500" size="320,30" font="Global; 25" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
-		<widget name="published" position="90,535" size="320,30" font="Global; 25" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
+		<widget name="views" position="90,395" size="320,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" />
+		<widget name="duration" position="90,430" size="320,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" />
+		<widget name="likes" position="90,465" size="320,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" />
+		<widget name="dislikes" position="90,500" size="320,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" />
+		<widget name="published" position="90,535" size="320,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" />
 		<panel name="TemplatesButtonsKey" />
 		<panel name="TemplatesClock" />
 	</screen>
