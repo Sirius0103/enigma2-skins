@@ -281,6 +281,10 @@
 		<eLabel position="2,2" size="296,296" backgroundColor="background1" zPosition="-11" />
 		<eLabel text="¡" position="40,65" size="220,180" font="Icons; 110" foregroundColor="background3" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 	</screen>
+	<!-- Buffer Indicator -->
+	<screen name="BufferIndicator" position="40,20" size="300,50" title="Buffer" backgroundColor="transparent" flags="wfNoBorder" zPosition="98">
+		<widget name="status" position="10,5" size="250,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" borderWidth="2" />
+	</screen>
 	<!-- NumberZap -->
 	<screen name="NumberZap" position="0,0" size="1920,170" title="Channel" backgroundColor="transparent" flags="wfNoBorder" zPosition="98">
 		<panel name="TemplatesUpLayer1" />
