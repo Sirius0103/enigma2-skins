@@ -3,7 +3,7 @@
 <!--
 # Skin - CyberFHD
 # Developer - Sirius
-# Homepage - http://www.gisclub.Tv
+# Homepage - https://github.com/Sirius0103
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -53,7 +53,7 @@
 		<parameter name="VirtualKeyBoard" value="68,68" />
 		<parameter name="VirtualKeyBoardAlignment" value="0,0" />
 		<parameter name="VirtualKeyBoardPadding" value="7,7" />
-		<parameter name="VirtualKeyBoardShiftColors" value="white,white,cyan,yellow" />
+		<parameter name="VirtualKeyBoardShiftColors" value="white,white,color4,yellow" />
 		<parameter name="FrontendInfoColors" value="color4,yellow,gray" />
 	</parameters>
 	<!-- ########## Colors ########## -->
