@@ -1342,31 +1342,31 @@
 	</screen>
 	<screen name="TemplatesButtonsRed">
 		<!-- Templates Buttons Red -->
-		<widget objectTypes="red,Label,Button" name="red" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="1" />
-		<widget objectTypes="key_red,Label,Button" name="key_red" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="2" />
-		<widget objectTypes="red_key,StaticText" source="red_key" render="Label" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="3" />
-		<widget objectTypes="key_red,StaticText" source="key_red" render="Label" position="1380,884" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="4" />
+		<widget objectTypes="red,Label,Button" name="red" position="1380,884" size="380,22" font="Titles; 22" foregroundColor="color2" backgroundColor="background2" halign="right" valign="center" transparent="1" zPosition="1" />
+		<widget objectTypes="key_red,Label,Button" name="key_red" position="1380,884" size="380,22" font="Titles; 22" foregroundColor="color2" backgroundColor="background2" halign="right" valign="center" transparent="1" zPosition="2" />
+		<widget objectTypes="red_key,StaticText" source="red_key" render="Label" position="1380,884" size="380,22" font="Titles; 22" foregroundColor="color2" backgroundColor="background2" halign="right" valign="center" transparent="1" zPosition="3" />
+		<widget objectTypes="key_red,StaticText" source="key_red" render="Label" position="1380,884" size="380,22" font="Titles; 22" foregroundColor="color2" backgroundColor="background2" halign="right" valign="center" transparent="1" zPosition="4" />
 	</screen>
 	<screen name="TemplatesButtonsGreen">
 		<!-- Templates Buttons Green -->
-		<widget objectTypes="green,Label,Button" name="green" position="1380,914" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="1" />
-		<widget objectTypes="key_green,Label,Button" name="key_green" position="1380,914" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="2" />
-		<widget objectTypes="green_key,StaticText" source="green_key" render="Label" position="1380,914" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="3" />
-		<widget objectTypes="key_green,StaticText" source="key_green" render="Label" position="1380,914" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="4" />
+		<widget objectTypes="green,Label,Button" name="green" position="1380,914" size="380,22" font="Titles; 22" foregroundColor="color2" backgroundColor="background2" halign="right" valign="center" transparent="1" zPosition="1" />
+		<widget objectTypes="key_green,Label,Button" name="key_green" position="1380,914" size="380,22" font="Titles; 22" foregroundColor="color2" backgroundColor="background2" halign="right" valign="center" transparent="1" zPosition="2" />
+		<widget objectTypes="green_key,StaticText" source="green_key" render="Label" position="1380,914" size="380,22" font="Titles; 22" foregroundColor="color2" backgroundColor="background2" halign="right" valign="center" transparent="1" zPosition="3" />
+		<widget objectTypes="key_green,StaticText" source="key_green" render="Label" position="1380,914" size="380,22" font="Titles; 22" foregroundColor="color2" backgroundColor="background2" halign="right" valign="center" transparent="1" zPosition="4" />
 	</screen>
 	<screen name="TemplatesButtonsYellow">
 		<!-- Templates Buttons Yellow -->
-		<widget objectTypes="yellow,Label,Button" name="yellow" position="1380,944" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="1" />
-		<widget objectTypes="key_yellow,Label,Button" name="key_yellow" position="1380,944" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="2" />
-		<widget objectTypes="yellow_key,StaticText" source="yellow_key" render="Label" position="1380,944" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="3" />
-		<widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Label" position="1380,944" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="4" />
+		<widget objectTypes="yellow,Label,Button" name="yellow" position="1380,944" size="380,22" font="Titles; 22" foregroundColor="color2" backgroundColor="background2" halign="right" valign="center" transparent="1" zPosition="1" />
+		<widget objectTypes="key_yellow,Label,Button" name="key_yellow" position="1380,944" size="380,22" font="Titles; 22" foregroundColor="color2" backgroundColor="background2" halign="right" valign="center" transparent="1" zPosition="2" />
+		<widget objectTypes="yellow_key,StaticText" source="yellow_key" render="Label" position="1380,944" size="380,22" font="Titles; 22" foregroundColor="color2" backgroundColor="background2" halign="right" valign="center" transparent="1" zPosition="3" />
+		<widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Label" position="1380,944" size="380,22" font="Titles; 22" foregroundColor="color2" backgroundColor="background2" halign="right" valign="center" transparent="1" zPosition="4" />
 	</screen>
 	<screen name="TemplatesButtonsBlue">
 		<!-- Templates Buttons Blue -->
-		<widget objectTypes="blue,Label,Button" name="blue" position="1380,974" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="1" />
-		<widget objectTypes="key_blue,Label,Button" name="key_blue" position="1380,974" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="2" />
-		<widget objectTypes="blue_key,StaticText" source="blue_key" render="Label" position="1380,974" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="3" />
-		<widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" position="1380,974" size="380,22" font="Titles; 22" halign="right" valign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="4" />
+		<widget objectTypes="blue,Label,Button" name="blue" position="1380,974" size="380,22" font="Titles; 22" foregroundColor="color2" backgroundColor="background2" halign="right" valign="center" transparent="1" zPosition="1" />
+		<widget objectTypes="key_blue,Label,Button" name="key_blue" position="1380,974" size="380,22" font="Titles; 22" foregroundColor="color2" backgroundColor="background2" halign="right" valign="center" transparent="1" zPosition="2" />
+		<widget objectTypes="blue_key,StaticText" source="blue_key" render="Label" position="1380,974" size="380,22" font="Titles; 22" foregroundColor="color2" backgroundColor="background2" halign="right" valign="center" transparent="1" zPosition="3" />
+		<widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" position="1380,974" size="380,22" font="Titles; 22" foregroundColor="color2" backgroundColor="background2" halign="right" valign="center" transparent="1" zPosition="4" />
 	</screen>
 	<screen name="TemplatesHelpWindow">
 		<!-- Templates Help Window -->
@@ -1404,7 +1404,7 @@
 		<widget source="Event" render="Label" position="1115,805" size="715,30" font="Global; 25" foregroundColor="color3" backgroundColor="background2" halign="left" valign="top" transparent="1">
 		  <convert type="EventName">Genre</convert>
 		</widget>
-		<widget source="Event" render="Label" position="340,955" size="1000,30" font="Global; 25" halign="left" foregroundColor="color3" backgroundColor="background1" transparent="1">
+		<widget source="Event" render="Label" position="340,955" size="1000,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" transparent="1">
 		  <convert type="EventName">Rating</convert>
 		</widget>
 	</screen>
