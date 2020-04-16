@@ -4517,7 +4517,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 					MultiContentEntryText(pos = (10, 40), size = (950, 35), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 2), # state
 					MultiContentEntryProgress(pos = (260, 40), size = (400, 20), percent = -3), # progress
 					MultiContentEntryText(pos = (560, 40), size = (100, 45), font = 1, flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = 4)], # percentage
-					"fonts": [gFont("Global", 30),gFont("Console", 25)],
+					"fonts": [gFont("Global", 30), gFont("Console", 25)],
 					"itemHeight": 80}
 			</convert>
 		</widget>
@@ -4824,10 +4824,10 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 			setWindPictScale="1"
 			setWind="410,25,150,35"
 			setWindUnits="410,65,150,35"
-			text1pos = "550,2,500,30"
-			text2pos = "550,30,500,30"
-			text3pos = "550,55,500,30"
-			text4pos = "550,80,500,30"
+			text1Pos="550,2,500,30"
+			text2Pos="550,30,500,30"
+			text3Pos="550,55,500,30"
+			text4Pos="550,80,500,30"
 			backgroundColor="background1" transparent="1" />
 		<eLabel text="OK =" position="340,895" size="120,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" transparent="1" />
 		<eLabel text="EPG =" position="340,925" size="120,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" transparent="1" />
@@ -5957,7 +5957,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 					MultiContentEntryText(pos = (70, 0), size = (880, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0), # index 2 is the Menu Titel
 					MultiContentEntryText(pos = (80, 35), size = (870, 25), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1), # index 3 is the Description
 					MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (50, 40), png = 2)], # index 4 is the pixmap
-					"fonts": [gFont("Global", 25),gFont("Console", 20)],
+					"fonts": [gFont("Global", 25), gFont("Console", 20)],
 					"itemHeight": 60}
 			</convert>
 		</widget>
@@ -6015,7 +6015,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 					MultiContentEntryText(pos = (70, 0), size = (880, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0), # index 2 is the Menu Titel
 					MultiContentEntryText(pos = (80, 35), size = (870, 25), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1), # index 3 is the Description
 					MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (50, 40), png = 2)], # index 4 is the pixmap
-					"fonts": [gFont("Global", 25),gFont("Console", 20)],
+					"fonts": [gFont("Global", 25), gFont("Console", 20)],
 					"itemHeight": 60}
 			</convert>
 		</widget>
@@ -6128,7 +6128,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 					MultiContentEntryText(pos = (70, 0), size = (880, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0), # index 2 is the Menu Titel
 					MultiContentEntryText(pos = (80, 35), size = (870, 25), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 2), # index 3 is the Description
 					MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (50, 40), png = 2)], # index 4 is the pixmap
-					"fonts": [gFont("Global", 25),gFont("Console", 20)],
+					"fonts": [gFont("Global", 25), gFont("Console", 20)],
 					"itemHeight": 60}
 			</convert>
 		</widget>
@@ -6146,7 +6146,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 					MultiContentEntryText(pos = (70, 0), size = (880, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0), # index 2 is the Menu Titel
 					MultiContentEntryText(pos = (80, 35), size = (870, 25), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1), # index 3 is the Description
 					MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (50, 40), png = 2)], # index 4 is the pixmap
-					"fonts": [gFont("Global", 25),gFont("Console", 20)],
+					"fonts": [gFont("Global", 25), gFont("Console", 20)],
 					"itemHeight": 60}
 			</convert>
 		</widget>
@@ -6164,7 +6164,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 					MultiContentEntryText(pos = (70, 0), size = (880, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0), # index 2 is the Menu Titel
 					MultiContentEntryText(pos = (80, 35), size = (870, 25), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1), # index 3 is the Description
 					MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (50, 40), png = 2)], # index 4 is the pixmap
-					"fonts": [gFont("Global", 25),gFont("Console", 20)],
+					"fonts": [gFont("Global", 25), gFont("Console", 20)],
 					"itemHeight": 60}
 			</convert>
 		</widget>
@@ -6200,7 +6200,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 					MultiContentEntryText(pos = (70, 0), size = (880, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0), # index 2 is the Menu Titel
 					MultiContentEntryText(pos = (80, 35), size = (870, 25), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1), # index 3 is the Description
 					MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (50, 40), png = 2)], # index 4 is the pixmap
-					"fonts": [gFont("Global", 25),gFont("Console", 20)],
+					"fonts": [gFont("Global", 25), gFont("Console", 20)],
 					"itemHeight": 60}
 			</convert>
 		</widget>
@@ -6218,7 +6218,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 					MultiContentEntryText(pos = (70, 0), size = (880, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0), # index 2 is the Menu Titel
 					MultiContentEntryText(pos = (80, 35), size = (870, 25), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1), # index 3 is the Description
 					MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (50, 40), png = 2)], # index 4 is the pixmap
-					"fonts": [gFont("Global", 25),gFont("Console", 20)],
+					"fonts": [gFont("Global", 25), gFont("Console", 20)],
 					"itemHeight": 60}
 			</convert>
 		</widget>
@@ -6317,7 +6317,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 					MultiContentEntryText(pos = (70, 0), size = (880, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0), # index 2 is the Menu Titel
 					MultiContentEntryText(pos = (80, 35), size = (870, 25), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1), # index 3 is the Description
 					MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (50, 40), png = 2)], # index 4 is the pixmap
-					"fonts": [gFont("Global", 25),gFont("Console", 20)],
+					"fonts": [gFont("Global", 25), gFont("Console", 20)],
 					"itemHeight": 60}
 			</convert>
 		</widget>
@@ -6399,7 +6399,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 					MultiContentEntryText(pos = (70, 0), size = (880, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0), # index 2 is the Menu Titel
 					MultiContentEntryText(pos = (80, 35), size = (870, 25), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1), # index 3 is the Description
 					MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (50, 40), png = 2)], # index 4 is the pixmap
-					"fonts": [gFont("Global", 25),gFont("Console", 20)],
+					"fonts": [gFont("Global", 25), gFont("Console", 20)],
 					"itemHeight": 60}
 			</convert>
 		</widget>
@@ -6436,7 +6436,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 					MultiContentEntryText(pos = (70, 0), size = (880, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0), # index 2 is the Menu Titel
 					MultiContentEntryText(pos = (80, 35), size = (870, 25), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1), # index 3 is the Description
 					MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (50, 40), png = 2)], # index 4 is the pixmap
-					"fonts": [gFont("Global", 25),gFont("Console", 20)],
+					"fonts": [gFont("Global", 25), gFont("Console", 20)],
 					"itemHeight": 60}
 			</convert>
 		</widget>
@@ -6454,7 +6454,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 					MultiContentEntryText(pos = (70, 0), size = (880, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0), # index 2 is the Menu Titel
 					MultiContentEntryText(pos = (80, 35), size = (870, 25), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1), # index 3 is the Description
 					MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (50, 40), png = 2)], # index 4 is the pixmap
-					"fonts": [gFont("Global", 25),gFont("Console", 20)],
+					"fonts": [gFont("Global", 25), gFont("Console", 20)],
 					"itemHeight": 60}
 			</convert>
 		</widget>
@@ -6472,7 +6472,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 					MultiContentEntryText(pos = (70, 0), size = (880, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0), # index 2 is the Menu Titel
 					MultiContentEntryText(pos = (80, 35), size = (870, 25), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1), # index 3 is the Description
 					MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (50, 40), png = 2)], # index 4 is the pixmap
-					"fonts": [gFont("Global", 25),gFont("Console", 20)],
+					"fonts": [gFont("Global", 25), gFont("Console", 20)],
 					"itemHeight": 60}
 			</convert>
 		</widget>
@@ -6490,7 +6490,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 					MultiContentEntryText(pos = (70, 0), size = (880, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0), # index 2 is the Menu Titel
 					MultiContentEntryText(pos = (80, 35), size = (870, 25), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1), # index 3 is the Description
 					MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (50, 40), png = 2)], # index 4 is the pixmap
-					"fonts": [gFont("Global", 25),gFont("Console", 20)],
+					"fonts": [gFont("Global", 25), gFont("Console", 20)],
 					"itemHeight": 60}
 			</convert>
 		</widget>
@@ -6518,7 +6518,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 					MultiContentEntryText(pos = (70, 0), size = (880, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0), # index 2 is the Menu Titel
 					MultiContentEntryText(pos = (80, 35), size = (870, 25), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1), # index 3 is the Description
 					MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (50, 40), png = 2)], # index 4 is the pixmap
-					"fonts": [gFont("Global", 25),gFont("Console", 20)],
+					"fonts": [gFont("Global", 25), gFont("Console", 20)],
 					"itemHeight": 60}
 			</convert>
 		</widget>
