@@ -1016,50 +1016,50 @@
 		<panel name="TemplatesButtons" />
 		<panel name="TemplatesClock" />
 	</screen>
-	<!-- ########## Horizontal menu ##########-->
-	<!-- Anim main -->
+	<!-- ########## Horizontal Menu ##########-->
+	<!-- Anim Main -->
 	<screen name="Animmain" position="fill" title="Main menu" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="TemplatesMenuLayer" />
-		<widget objectTypes="Title,StaticText" name="title" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" zPosition="1" />
+		<panel name="TemplatesTitle" />
 		<eLabel text="¤" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<eLabel position="810,707" size="300,150" backgroundColor="background3" zPosition="-14" font="Global; 16" />
-		<eLabel position="812,709" size="296,146" backgroundColor="background1" zPosition="-13" font="Global; 16" />
-		<widget source="label1" render="Label" position="90,707" size="300,150" zPosition="2" font="Global; 34" halign="center" valign="center" backgroundColor="background" transparent="1" />
-		<widget source="label2" render="Label" position="450,707" size="300,150" zPosition="2" font="Global; 34" halign="center" valign="center" backgroundColor="background" transparent="1" />
-		<widget source="label3" render="Label" position="810,707" size="300,150" zPosition="2" font="Global; 36" halign="center" valign="center" foregroundColor="yellow" backgroundColor="background" transparent="1" />
-		<widget source="label4" render="Label" position="1170,707" size="300,150" zPosition="2" font="Global; 34" halign="center" valign="center" backgroundColor="background" transparent="1" />
-		<widget source="label5" render="Label" position="1530,707" size="300,150" zPosition="2" font="Global; 34" halign="center" valign="center" backgroundColor="background" transparent="1" />
+		<eLabel position="810,707" size="300,150" backgroundColor="background3" zPosition="-14" />
+		<eLabel position="812,709" size="296,146" backgroundColor="background1" zPosition="-13" />
+		<widget source="label1" render="Label" position="90,707" size="300,150" font="Global; 34" foregroundColor="color2" backgroundColor="background" halign="center" valign="center" transparent="1" />
+		<widget source="label2" render="Label" position="450,707" size="300,150" font="Global; 34" foregroundColor="color2" backgroundColor="background" halign="center" valign="center" transparent="1" />
+		<widget source="label3" render="Label" position="810,707" size="300,150" font="Global; 36" foregroundColor="color1" backgroundColor="background" halign="center" valign="center" transparent="1" />
+		<widget source="label4" render="Label" position="1170,707" size="300,150" font="Global; 34" foregroundColor="color2" backgroundColor="background" halign="center" valign="center" transparent="1" />
+		<widget source="label5" render="Label" position="1530,707" size="300,150" font="Global; 34" foregroundColor="color2" backgroundColor="background" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesMenuLeftLayer" />
 		<panel name="TemplatesMenuRightLayer" />
 		<panel name="TemplatesClock" />
 	</screen>
-	<!-- Icon main -->
+	<!-- Icon Main -->
 	<screen name="Iconmain" position="fill" title="Main menu" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="TemplatesMenuLayer" />
-		<widget objectTypes="Title,StaticText" name="title" position="80,96" size="1500,40" font="Titles; 40" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" zPosition="1" />
+		<panel name="TemplatesTitle" />
 		<eLabel text="¤" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<widget source="label1" render="Label" position="90,707" size="280,140" zPosition="2" font="Global;33" halign="center" valign="center" backgroundColor="background" transparent="1" />
-		<widget source="label1s" render="Label" position="90,707" size="280,140" font="Global;35" zPosition="2" halign="center" valign="center" foregroundColor="yellow" backgroundColor="background" transparent="1" />
+		<widget source="label1" render="Label" position="90,707" size="280,140" font="Global;33" foregroundColor="color2" backgroundColor="background" halign="center" valign="center" transparent="1" />
+		<widget source="label1s" render="Label" position="90,707" size="280,140" font="Global;35" foregroundColor="color1" backgroundColor="background" halign="center" valign="center" transparent="1" />
 		<eLabel position="90,707" size="280,140" backgroundColor="background3" zPosition="-14" />
 		<eLabel position="92,709" size="276,136" backgroundColor="background1" zPosition="-13" />
-		<widget source="label2" render="Label" position="382,707" size="280,140" zPosition="2" font="Global;33" halign="center" valign="center" backgroundColor="background" transparent="1" />
-		<widget source="label2s" render="Label" position="382,707" size="280,140" font="Global;35" zPosition="2" halign="center" valign="center" foregroundColor="yellow" backgroundColor="background" transparent="1" />
+		<widget source="label2" render="Label" position="382,707" size="280,140" font="Global;33" foregroundColor="color2" backgroundColor="background" halign="center" valign="center" transparent="1" />
+		<widget source="label2s" render="Label" position="382,707" size="280,140" font="Global;35" foregroundColor="color1" backgroundColor="background" halign="center" valign="center" transparent="1" />
 		<eLabel position="382,707" size="280,140" backgroundColor="background3" zPosition="-14" />
 		<eLabel position="384,709" size="276,136" backgroundColor="background1" zPosition="-13" />
-		<widget source="label3" render="Label" position="674,707" size="280,140" zPosition="2" font="Global;33" halign="center" valign="center" backgroundColor="background" transparent="1" />
-		<widget source="label3s" render="Label" position="674,707" size="280,140" font="Global;35" zPosition="2" halign="center" valign="center" foregroundColor="yellow" backgroundColor="background" transparent="1" />
+		<widget source="label3" render="Label" position="674,707" size="280,140" font="Global;33" foregroundColor="color2" backgroundColor="background" halign="center" valign="center" transparent="1" />
+		<widget source="label3s" render="Label" position="674,707" size="280,140" font="Global;35" foregroundColor="color1" backgroundColor="background" halign="center" valign="center" transparent="1" />
 		<eLabel position="674,707" size="280,140" backgroundColor="background3" zPosition="-14" />
 		<eLabel position="676,709" size="276,136" backgroundColor="background1" zPosition="-13" />
-		<widget source="label4" render="Label" position="966,707" size="280,140" zPosition="2" font="Global;33" halign="center" valign="center" backgroundColor="background" transparent="1" />
-		<widget source="label4s" render="Label" position="966,707" size="280,140" font="Global;35" zPosition="2" halign="center" valign="center" foregroundColor="yellow" backgroundColor="background" transparent="1" />
+		<widget source="label4" render="Label" position="966,707" size="280,140" font="Global;33" foregroundColor="color2" backgroundColor="background" halign="center" valign="center" transparent="1" />
+		<widget source="label4s" render="Label" position="966,707" size="280,140" font="Global;35" foregroundColor="color1" backgroundColor="background" halign="center" valign="center" transparent="1" />
 		<eLabel position="966,707" size="280,140" backgroundColor="background3" zPosition="-14" />
 		<eLabel position="968,709" size="276,136" backgroundColor="background1" zPosition="-13" />
-		<widget source="label5" render="Label" position="1258,707" size="280,140" zPosition="2" font="Global;33" halign="center" valign="center" backgroundColor="background" transparent="1" />
-		<widget source="label5s" render="Label" position="1258,707" size="280,140" font="Global;35" zPosition="2" halign="center" valign="center" foregroundColor="yellow" backgroundColor="background" transparent="1" />
+		<widget source="label5" render="Label" position="1258,707" size="280,140" font="Global;33" foregroundColor="color2" backgroundColor="background" halign="center" valign="center" transparent="1" />
+		<widget source="label5s" render="Label" position="1258,707" size="280,140" font="Global;35" foregroundColor="color1" backgroundColor="background" halign="center" valign="center" transparent="1" />
 		<eLabel position="1258,707" size="280,140" backgroundColor="background3" zPosition="-14" />
 		<eLabel position="1260,709" size="276,136" backgroundColor="background1" zPosition="-13" />
-		<widget source="label6" render="Label" position="1550,707" size="280,140" zPosition="2" font="Global;33" halign="center" valign="center" backgroundColor="background" transparent="1" />
-		<widget source="label6s" render="Label" position="1550,707" size="280,140" font="Global;35" zPosition="2" halign="center" valign="center" foregroundColor="yellow" backgroundColor="background" transparent="1" />
+		<widget source="label6" render="Label" position="1550,707" size="280,140" font="Global;33" foregroundColor="color2" backgroundColor="background" halign="center" valign="center" transparent="1" />
+		<widget source="label6s" render="Label" position="1550,707" size="280,140" font="Global;35" foregroundColor="color1" backgroundColor="background" halign="center" valign="center" transparent="1" />
 		<eLabel position="1550,707" size="280,140" backgroundColor="background3" zPosition="-14" />
 		<eLabel position="1552,709" size="276,136" backgroundColor="background1" zPosition="-13" />
 		<panel name="TemplatesMenuLeftLayer" />
