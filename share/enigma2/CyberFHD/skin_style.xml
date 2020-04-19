@@ -5786,10 +5786,9 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- ########## E Panel ########## -->
-	<!-- E-Panel for OpenPli -->
-	<screen name="easyPanel2" position="fill" title="Easy Panel for Pli" backgroundColor="transparent" flags="wfNoBorder">
+	<!-- Templates E-Panel Setup 1 -->
+	<screen name="TemplatesPanelSetup1">
 		<panel name="TemplatesMenu1000Layer" />
-		<eLabel text="@" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
 		<widget source="menu" render="Listbox" position="90,200" size="980,600" backgroundColor="background1" backgroundColorSelected="background5" scrollbarMode="showNever" scrollbarWidth="10" scrollbarSliderForegroundColor="background4" scrollbarSliderBorderColor="background3" transparent="1">
 			<convert type="TemplatedMultiContent">
@@ -5801,18 +5800,83 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 					"itemHeight": 60}
 			</convert>
 		</widget>
-		<eLabel text="&gt;INFO&lt;" position="1485,100" size="120,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
 		<panel name="TemplatesButtonsKey" />
 		<panel name="TemplatesClock" />
 	</screen>
-	<!-- E-Panel config -->
-	<screen name="ConfigExtentions2" position="fill" title="E-Panel Menu/Extensionmenu config" backgroundColor="transparent" flags="wfNoBorder">
+	<!-- Templates E-Panel Setup 2 -->
+	<screen name="TemplatesPanelSetup2">
 		<panel name="TemplatesMenu1000Layer" />
-		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget source="menu" render="Listbox" position="90,200" size="980,600" backgroundColor="background1" backgroundColorSelected="background5" scrollbarMode="showNever" scrollbarWidth="10" scrollbarSliderForegroundColor="background4" scrollbarSliderBorderColor="background3" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryText(pos = (70, 0), size = (880, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0), # index 2 is the Menu Titel
+					MultiContentEntryText(pos = (80, 35), size = (870, 25), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1), # index 3 is the Description
+					MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (50, 40), png = 2)], # index 4 is the pixmap
+					"fonts": [gFont("Global", 25), gFont("Console", 20)],
+					"itemHeight": 60}
+			</convert>
+		</widget>
+		<panel name="TemplatesButtonsKey" />
+		<panel name="TemplatesClock" />
+	</screen>
+	<!-- Templates E-Panel Setup 3 -->
+	<screen name="TemplatesPanelSetup3">
+		<panel name="TemplatesMenu1000Layer" />
+		<panel name="TemplatesTitle" />
+		<widget source="menu" render="Listbox" position="90,200" size="980,600" backgroundColor="background1" backgroundColorSelected="background5" scrollbarMode="showNever" scrollbarWidth="10" scrollbarSliderForegroundColor="background4" scrollbarSliderBorderColor="background3" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryText(pos = (70, 0), size = (880, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0), # index 2 is the Menu Titel
+					MultiContentEntryText(pos = (80, 35), size = (870, 25), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 2), # index 3 is the Description
+					MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (50, 40), png = 2)], # index 4 is the pixmap
+					"fonts": [gFont("Global", 25), gFont("Console", 20)],
+					"itemHeight": 60}
+			</convert>
+		</widget>
+		<panel name="TemplatesButtonsKey" />
+		<panel name="TemplatesClock" />
+	</screen>
+	<!-- Templates E-Panel Setup 4 -->
+	<screen name="TemplatesPanelSetup4">
+		<panel name="TemplatesMenu1000Layer" />
+		<panel name="TemplatesTitle" />
+		<widget source="menu" render="Listbox" position="90,200" size="980,600" backgroundColor="background1" backgroundColorSelected="background5" scrollbarMode="showNever" scrollbarWidth="10" scrollbarSliderForegroundColor="background4" scrollbarSliderBorderColor="background3" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryText(pos = (10, 0), size = (900, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0)], # index 2 is the Menu Titel
+					"fonts": [gFont("Global", 25)],
+					"itemHeight": 35}
+			</convert>
+		</widget>
+		<panel name="TemplatesButtonsKey" />
+		<panel name="TemplatesClock" />
+	</screen>
+	<!-- Templates E-Panel Config -->
+	<screen name="TemplatesPanelConfig">
+		<panel name="TemplatesMenu1000Layer" />
 		<panel name="TemplatesTitle" />
 		<widget name="config" position="90,200" size="980,630" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" scrollbarMode="showNever" scrollbarWidth="10" scrollbarSliderForegroundColor="background4" scrollbarSliderBorderColor="background3" transparent="1" />
 		<panel name="TemplatesButtonsKey" />
 		<panel name="TemplatesClock" />
+	</screen>
+	<!-- Log Screen -->
+	<screen name="TemplatesPanelLog">
+		<panel name="TemplatesMenu1800Layer" />
+		<panel name="TemplatesTitle" />
+		<widget name="text" position="90,200" size="1740,635" font="Console;25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
+		<panel name="TemplatesButtonsKey" />
+		<panel name="TemplatesClock" />
+	</screen>
+	<!-- E-Panel for OpenPli -->
+	<screen name="easyPanel2" position="fill" title="Easy Panel for Pli" backgroundColor="transparent" flags="wfNoBorder">
+		<eLabel text="@" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesPanelSetup1" />
+	</screen>
+	<!-- E-Panel config -->
+	<screen name="ConfigExtentions2" position="fill" title="E-Panel Menu/Extensionmenu config" backgroundColor="transparent" flags="wfNoBorder">
+		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesPanelConfig" />
 	</screen>
 	<!-- E-Panel info -->
 	<screen name="epanelinfo" position="fill" title="E - Panel for OpenPli" backgroundColor="transparent" flags="wfNoBorder">
@@ -5857,417 +5921,156 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 	</screen>
 	<!-- Softcam Panel -->
 	<screen name="SoftcamPanel2" position="fill" title="Softcam/Cardserver Panel" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="c" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget source="menu" render="Listbox" position="90,200" size="980,600" backgroundColor="background1" backgroundColorSelected="background5" scrollbarMode="showNever" scrollbarWidth="10" scrollbarSliderForegroundColor="background4" scrollbarSliderBorderColor="background3" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-					MultiContentEntryText(pos = (120, 0), size = (830, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0), # index 2 is the Menu Titel
-					MultiContentEntryText(pos = (130, 35), size = (820, 25), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 2), # index 3 is the Description
-					MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (100, 40), png = 3)], # index 4 is the pixmap
-					"fonts": [gFont("Global", 25), gFont("Console", 20)],
-					"itemHeight": 60}
-			</convert>
-		</widget>
-		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
+		<panel name="TemplatesPanelSetup1" />
 	</screen>
 	<!-- Select SoftCam or CardServer -->
 	<screen name="emuSel5" position="fill" title="Select SoftCam or CardServer" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="c" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget source="menu" render="Listbox" position="90,200" size="980,600" backgroundColor="background1" backgroundColorSelected="background5" scrollbarMode="showNever" scrollbarWidth="10" scrollbarSliderForegroundColor="background4" scrollbarSliderBorderColor="background3" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-					MultiContentEntryText(pos = (70, 0), size = (880, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0), # index 2 is the Menu Titel
-					MultiContentEntryText(pos = (80, 35), size = (870, 25), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1), # index 3 is the Description
-					MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (50, 40), png = 2)], # index 4 is the pixmap
-					"fonts": [gFont("Global", 25), gFont("Console", 20)],
-					"itemHeight": 60}
-			</convert>
-		</widget>
 		<widget source="inmemory" render="Label" position="340,955" size="1000,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" transparent="1" />
 		<panel name="TemplatesMenuInfoLayer" />
 		<eLabel text="ECM Info" position="1115,470" size="715,30" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
 		<widget name="text" position="1115,510" size="715,330" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="left" valign="top" transparent="1" />
-		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
+		<panel name="TemplatesPanelSetup2" />
 	</screen>
 	<!-- SoftCam.Key Updater -->
 	<screen name="SoftcamUpd2" position="fill" title="SoftCam.Key Updater" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="c" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget name="config" position="90,200" size="980,630" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" scrollbarMode="showNever" scrollbarWidth="10" scrollbarSliderForegroundColor="background4" scrollbarSliderBorderColor="background3" transparent="1" />
-		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
+		<panel name="TemplatesPanelConfig" />
 	</screen>
 	<!-- Changelog -->
 	<screen name="ChangelogScreen" position="fill" title="Changelog" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="TemplatesMenu1800Layer" />
 		<eLabel text="d" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget name="text" position="90,200" size="1740,635" font="Console;25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
-		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
+		<panel name="TemplatesPanelLog" />
 	</screen>
 	<!-- IPKTools Screen -->
 	<screen name="IPKToolsScreen2" position="fill" title="IPK Tools" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="b" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget source="menu" render="Listbox" position="90,200" size="980,600" backgroundColor="background1" backgroundColorSelected="background5" scrollbarMode="showNever" scrollbarWidth="10" scrollbarSliderForegroundColor="background4" scrollbarSliderBorderColor="background3" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-					MultiContentEntryText(pos = (120, 0), size = (830, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0), # index 2 is the Menu Titel
-					MultiContentEntryText(pos = (130, 35), size = (820, 25), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 2), # index 3 is the Description
-					MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (100, 40), png = 3)], # index 4 is the pixmap
-					"fonts": [gFont("Global", 25), gFont("Console", 20)],
-					"itemHeight": 60}
-			</convert>
-		</widget>
-		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
+		<panel name="TemplatesPanelSetup1" />
 	</screen>
 	<!-- Install All -->
 	<screen name="InstallAll4" position="fill" title="Select install files" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="b" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget source="menu" render="Listbox" position="90,200" size="980,600" backgroundColor="background1" backgroundColorSelected="background5" scrollbarMode="showNever" scrollbarWidth="10" scrollbarSliderForegroundColor="background4" scrollbarSliderBorderColor="background3" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-					MultiContentEntryText(pos = (70, 0), size = (880, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0), # index 2 is the Menu Titel
-					MultiContentEntryText(pos = (80, 35), size = (870, 25), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1), # index 3 is the Description
-					MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (50, 40), png = 2)], # index 4 is the pixmap
-					"fonts": [gFont("Global", 25), gFont("Console", 20)],
-					"itemHeight": 60}
-			</convert>
-		</widget>
-		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
+		<panel name="TemplatesPanelSetup2" />
 	</screen>
 	<!-- Service Tools -->
 	<screen name="ToolsScreen2" position="fill" title="Service Tools" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget source="menu" render="Listbox" position="90,200" size="980,600" backgroundColor="background1" backgroundColorSelected="background5" scrollbarMode="showNever" scrollbarWidth="10" scrollbarSliderForegroundColor="background4" scrollbarSliderBorderColor="background3" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-					MultiContentEntryText(pos = (120, 0), size = (830, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0), # index 2 is the Menu Titel
-					MultiContentEntryText(pos = (130, 35), size = (820, 25), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 2), # index 3 is the Description
-					MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (100, 40), png = 3)], # index 4 is the pixmap
-					"fonts": [gFont("Global", 25), gFont("Console", 20)],
-					"itemHeight": 60}
-			</convert>
-		</widget>
-		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
+		<panel name="TemplatesPanelSetup1" />
 	</screen>
 	<!-- System Screen -->
 	<screen name="SystemScreen" position="fill" title="System Tools" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget source="menu" render="Listbox" position="90,200" size="980,600" backgroundColor="background1" backgroundColorSelected="background5" scrollbarMode="showNever" scrollbarWidth="10" scrollbarSliderForegroundColor="background4" scrollbarSliderBorderColor="background3" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-					MultiContentEntryText(pos = (120, 0), size = (830, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0), # index 2 is the Menu Titel
-					MultiContentEntryText(pos = (130, 35), size = (820, 25), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 2), # index 3 is the Description
-					MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (100, 40), png = 3)], # index 4 is the pixmap
-					"fonts": [gFont("Global", 25), gFont("Console", 20)],
-					"itemHeight": 60}
-			</convert>
-		</widget>
-		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
+		<panel name="TemplatesPanelSetup1" />
 	</screen>
 	<!-- System Screen 2-->
 	<screen name="System2Screen" position="fill" title="System Tools" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget source="menu" render="Listbox" position="90,200" size="980,600" backgroundColor="background1" backgroundColorSelected="background5" scrollbarMode="showNever" scrollbarWidth="10" scrollbarSliderForegroundColor="background4" scrollbarSliderBorderColor="background3" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-					MultiContentEntryText(pos = (120, 0), size = (830, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0), # index 2 is the Menu Titel
-					MultiContentEntryText(pos = (130, 35), size = (820, 25), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 2), # index 3 is the Description
-					MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (100, 40), png = 3)], # index 4 is the pixmap
-					"fonts": [gFont("Global", 25), gFont("Console", 20)],
-					"itemHeight": 60}
-			</convert>
-		</widget>
-		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
+		<panel name="TemplatesPanelSetup1" />
 	</screen>
 	<!-- Service Manager -->
 	<screen name="ServiceMan" position="fill" title="Service Manager" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="s" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget source="menu" render="Listbox" position="90,200" size="980,600" backgroundColor="background1" backgroundColorSelected="background5" scrollbarMode="showNever" scrollbarWidth="10" scrollbarSliderForegroundColor="background4" scrollbarSliderBorderColor="background3" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-					MultiContentEntryText(pos = (10, 0), size = (900, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0)], # index 2 is the Menu Titel
-					"fonts": [gFont("Global", 25)],
-					"itemHeight": 35}
-			</convert>
-		</widget>
-		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
+		<panel name="TemplatesPanelSetup4" />
 	</screen>
 	<!-- CtronTab Manager -->
 	<screen name="CrontabMan" position="fill" title="CtronTab Manager" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="s" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget source="menu" render="Listbox" position="90,200" size="980,600" backgroundColor="background1" backgroundColorSelected="background5" scrollbarMode="showNever" scrollbarWidth="10" scrollbarSliderForegroundColor="background4" scrollbarSliderBorderColor="background3" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-					MultiContentEntryText(pos = (10, 0), size = (900, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0)], # index 2 is the Menu Titel
-					"fonts": [gFont("Global", 25)],
-					"itemHeight": 35}
-			</convert>
-		</widget>
-		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
+		<panel name="TemplatesPanelSetup4" />
 	</screen>
 	<!-- CtronTab Add -->
 	<screen name="CrontabManAdd" position="fill" title="add tabs" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="s" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget name="config" position="90,200" size="980,630" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" scrollbarMode="showNever" scrollbarWidth="10" scrollbarSliderForegroundColor="background4" scrollbarSliderBorderColor="background3" transparent="1" />
-		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
+		<panel name="TemplatesPanelConfig" />
 	</screen>
 	<!-- Swap Screen -->
 	<screen name="SwapScreen" position="fill" title="Swap on USB/HDD" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="s" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget source="menu" render="Listbox" position="90,200" size="980,600" backgroundColor="background1" backgroundColorSelected="background5" scrollbarMode="showNever" scrollbarWidth="10" scrollbarSliderForegroundColor="background4" scrollbarSliderBorderColor="background3" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-					MultiContentEntryText(pos = (70, 0), size = (880, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0), # index 2 is the Menu Titel
-					MultiContentEntryText(pos = (80, 35), size = (870, 25), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 2), # index 3 is the Description
-					MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (50, 40), png = 2)], # index 4 is the pixmap
-					"fonts": [gFont("Global", 25), gFont("Console", 20)],
-					"itemHeight": 60}
-			</convert>
-		</widget>
-		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
+		<panel name="TemplatesPanelSetup3" />
 	</screen>
 	<!-- Swap Screen2 -->
 	<screen name="SwapScreen2" position="fill" title="Swap on USB/HDD" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="s" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget source="menu" render="Listbox" position="90,200" size="980,600" backgroundColor="background1" backgroundColorSelected="background5" scrollbarMode="showNever" scrollbarWidth="10" scrollbarSliderForegroundColor="background4" scrollbarSliderBorderColor="background3" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-					MultiContentEntryText(pos = (70, 0), size = (880, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0), # index 2 is the Menu Titel
-					MultiContentEntryText(pos = (80, 35), size = (870, 25), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1), # index 3 is the Description
-					MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (50, 40), png = 2)], # index 4 is the pixmap
-					"fonts": [gFont("Global", 25), gFont("Console", 20)],
-					"itemHeight": 60}
-			</convert>
-		</widget>
-		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
+		<panel name="TemplatesPanelSetup2" />
 	</screen>
 	<!-- Usb Screen -->
 	<screen name="UsbScreen" position="fill" title="Unmount USB devices" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="s" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget source="menu" render="Listbox" position="90,200" size="980,600" backgroundColor="background1" backgroundColorSelected="background5" scrollbarMode="showNever" scrollbarWidth="10" scrollbarSliderForegroundColor="background4" scrollbarSliderBorderColor="background3" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-					MultiContentEntryText(pos = (70, 0), size = (880, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0), # index 2 is the Menu Titel
-					MultiContentEntryText(pos = (80, 35), size = (870, 25), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1), # index 3 is the Description
-					MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (50, 40), png = 2)], # index 4 is the pixmap
-					"fonts": [gFont("Global", 25), gFont("Console", 20)],
-					"itemHeight": 60}
-			</convert>
-		</widget>
-		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
+		<panel name="TemplatesPanelSetup2" />
 	</screen>
 	<!-- NTP Screen -->
 	<screen name="NTPScreen" position="fill" title="NtpTime Updater" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="s" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget name="config" position="90,200" size="980,630" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" scrollbarMode="showNever" scrollbarWidth="10" scrollbarSliderForegroundColor="background4" scrollbarSliderBorderColor="background3" transparent="1" />
-		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
+		<panel name="TemplatesPanelConfig" />
 	</screen>
 	<!-- Manual Time -->
 	<screen name="ManualSetTime" position="fill" title="NtpTime Updater" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="s" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget name="config" position="90,200" size="980,630" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" scrollbarMode="showNever" scrollbarWidth="10" scrollbarSliderForegroundColor="background4" scrollbarSliderBorderColor="background3" transparent="1" />
-		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
+		<panel name="TemplatesPanelConfig" />
 	</screen>
 	<!-- Kernel Screen -->
 	<screen name="KernelScreen" position="fill" title="Kernel Modules Manager" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="s" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget source="menu" render="Listbox" position="90,200" size="980,600" backgroundColor="background1" backgroundColorSelected="background5" scrollbarMode="showNever" scrollbarWidth="10" scrollbarSliderForegroundColor="background4" scrollbarSliderBorderColor="background3" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-					MultiContentEntryText(pos = (70, 0), size = (880, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0), # index 2 is the Menu Titel
-					MultiContentEntryText(pos = (80, 35), size = (870, 25), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1), # index 3 is the Description
-					MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (50, 40), png = 2)], # index 4 is the pixmap
-					"fonts": [gFont("Global", 25), gFont("Console", 20)],
-					"itemHeight": 60}
-			</convert>
-		</widget>
-		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
+		<panel name="TemplatesPanelSetup2" />
 	</screen>
 	<!-- lsmod Screen -->
 	<screen name="lsmodScreen" position="fill" title="Kernel Drivers in Memory" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="s" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget source="menu" render="Listbox" position="90,200" size="980,600" backgroundColor="background1" backgroundColorSelected="background5" scrollbarMode="showNever" scrollbarWidth="10" scrollbarSliderForegroundColor="background4" scrollbarSliderBorderColor="background3" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-					MultiContentEntryText(pos = (70, 0), size = (880, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0), # index 2 is the Menu Titel
-					MultiContentEntryText(pos = (80, 35), size = (870, 25), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1), # index 3 is the Description
-					MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (50, 40), png = 2)], # index 4 is the pixmap
-					"fonts": [gFont("Global", 25), gFont("Console", 20)],
-					"itemHeight": 60}
-			</convert>
-		</widget>
-		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
+		<panel name="TemplatesPanelSetup2" />
 	</screen>
 	<!-- EPG Down -->
 	<screen name="epgdna" position="fill" title="EPG Download" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="s" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget name="config" position="90,200" size="980,630" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" scrollbarMode="showNever" scrollbarWidth="10" scrollbarSliderForegroundColor="background4" scrollbarSliderBorderColor="background3" transparent="1" />
 		<widget source="lastupdate" render="Label" position="340,955" size="1000,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" transparent="1" />
-		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
+		<panel name="TemplatesPanelConfig" />
 	</screen>
 	<!-- Onid Man -->
 	<screen name="onidMan" position="fill" title="blacklist.onid Manager - %s" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="s" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget source="menu" render="Listbox" position="90,200" size="980,600" backgroundColor="background1" backgroundColorSelected="background5" scrollbarMode="showNever" scrollbarWidth="10" scrollbarSliderForegroundColor="background4" scrollbarSliderBorderColor="background3" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-					MultiContentEntryText(pos = (10, 0), size = (900, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0)], # index 2 is the Menu Titel
-					"fonts": [gFont("Global", 25)],
-					"itemHeight": 35}
-			</convert>
-		</widget>
-		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
+		<panel name="TemplatesPanelSetup4" />
 	</screen>
 	<!-- Onid Man Add -->
 	<screen name="onidManAdd" position="fill" title="add onid - %s" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="s" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget name="config" position="90,200" size="980,630" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" scrollbarMode="showNever" scrollbarWidth="10" scrollbarSliderForegroundColor="background4" scrollbarSliderBorderColor="background3" transparent="1" />
-		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
+		<panel name="TemplatesPanelConfig" />
 	</screen>
 	<!-- Hosts Screen -->
 	<screen name="HostsScreen" position="fill" title="/etc/hosts editor" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="s" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget source="menu" render="Listbox" position="90,200" size="980,600" backgroundColor="background1" backgroundColorSelected="background5" scrollbarMode="showNever" scrollbarWidth="10" scrollbarSliderForegroundColor="background4" scrollbarSliderBorderColor="background3" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-					MultiContentEntryText(pos = (10, 0), size = (900, 35), font=0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0)], # index 2 is the Menu Titel
-					"fonts": [gFont("Global", 25)],
-					"itemHeight": 35}
-			</convert>
-		</widget>
-		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
+		<panel name="TemplatesPanelSetup4" />
 	</screen>
 	<!-- Drop Screen -->
 	<screen name="DropScreen" position="fill" title="Cache Flush" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="s" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget name="config" position="90,200" size="980,630" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" scrollbarMode="showNever" scrollbarWidth="10" scrollbarSliderForegroundColor="background4" scrollbarSliderBorderColor="background3" transparent="1" />
 		<widget source="MemoryLabel" render="Label" position="340,895" size="150,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" transparent="1" />
 		<widget source="memTotal" render="Label" position="340,955" size="1000,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" transparent="1" />
 		<widget source="bufCache" render="Label" position="340,925" size="1000,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" transparent="1" />
-		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
+		<panel name="TemplatesPanelConfig" />
 	</screen>
 	<!-- DDNS Screen -->
 	<screen name="DDNSScreen" position="fill" title="Dynamic DNS" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="s" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget name="config" position="90,200" size="980,630" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" scrollbarMode="showNever" scrollbarWidth="10" scrollbarSliderForegroundColor="background4" scrollbarSliderBorderColor="background3" transparent="1" />
-		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
+		<panel name="TemplatesPanelConfig" />
 	</screen>
 	<!-- Add Record -->
 	<screen name="AddRecord" position="fill" title="add record" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="s" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget name="config" position="90,200" size="980,630" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" scrollbarMode="showNever" scrollbarWidth="10" scrollbarSliderForegroundColor="background4" scrollbarSliderBorderColor="background3" transparent="1" />
-		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
+		<panel name="TemplatesPanelConfig" />
 	</screen>
 	<!-- CrashLog Screen -->
 	<screen name="CrashLogScreen" position="fill" title="View or Remove Crashlog files" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="s" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget source="menu" render="Listbox" position="90,200" size="980,600" backgroundColor="background1" backgroundColorSelected="background5" scrollbarMode="showNever" scrollbarWidth="10" scrollbarSliderForegroundColor="background4" scrollbarSliderBorderColor="background3" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-					MultiContentEntryText(pos = (70, 0), size = (880, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0), # index 2 is the Menu Titel
-					MultiContentEntryText(pos = (80, 35), size = (870, 25), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1), # index 3 is the Description
-					MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (50, 40), png = 2)], # index 4 is the pixmap
-					"fonts": [gFont("Global", 25), gFont("Console", 20)],
-					"itemHeight": 60}
-			</convert>
-		</widget>
-		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
+		<panel name="TemplatesPanelSetup2" />
 	</screen>
 	<!-- Log Screen -->
 	<screen name="LogScreen" position="fill" title="View Crashlog file" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="TemplatesMenu1800Layer" />
 		<eLabel text="d" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget name="text" position="90,200" size="1740,635" font="Console;25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
-		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
+		<panel name="TemplatesPanelLog" />
 	</screen>
 	<!-- Info2 Screen -->
 	<screen name="Info2Screen" position="fill" title="System Info" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="TemplatesMenu1800Layer" />
 		<eLabel text="d" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget name="text" position="90,200" size="1740,635" font="Console;25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
-		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
+		<panel name="TemplatesPanelLog" />
 	</screen>
 	<!-- Script Screen -->
 	<screen name="ScriptScreen3" position="fill" title="Script Executer" backgroundColor="transparent" flags="wfNoBorder">
@@ -6280,180 +6083,64 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 	</screen>
 	<!-- View System Settings -->
 	<screen name="ViewSet" position="fill" title="View System Settings (/etc/enigma2/settings)" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="TemplatesMenu1800Layer" />
 		<eLabel text="d" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget name="text" position="90,200" size="1740,635" font="Console;25" foregroundColor="color2" backgroundColor="background1" transparent="1" />
-		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
+		<panel name="TemplatesPanelLog" />
 	</screen>
 	<!-- Config script -->
 	<screen name="ConfigScript" position="fill" title="Config script Executer" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="&amp;" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget name="config" position="90,200" size="980,630" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" scrollbarMode="showNever" scrollbarWidth="10" scrollbarSliderForegroundColor="background4" scrollbarSliderBorderColor="background3" transparent="1" />
-		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
+		<panel name="TemplatesPanelConfig" />
 	</screen>
 	<!-- ########## Cam Settings manager ########## -->
 	<!-- Cam Settings Manager -->
 	<screen name="CamSetManScreen" position="fill" title="Cam Settings manager" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="c" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget source="menu" render="Listbox" position="90,200" size="980,600" backgroundColor="background1" backgroundColorSelected="background5" scrollbarMode="showNever" scrollbarWidth="10" scrollbarSliderForegroundColor="background4" scrollbarSliderBorderColor="background3" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-					MultiContentEntryText(pos = (120, 0), size = (830, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0), # index 2 is the Menu Titel
-					MultiContentEntryText(pos = (130, 35), size = (820, 25), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 2), # index 3 is the Description
-					MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (100, 40), png = 3)], # index 4 is the pixmap
-					"fonts": [gFont("Global", 25), gFont("Console", 20)],
-					"itemHeight": 60}
-			</convert>
-		</widget>
-		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
+		<panel name="TemplatesPanelSetup1" />
 	</screen>
 	<!-- Cam Config Screen -->
 	<screen name="SelectConfScreen" position="fill" title="Please select and press OK" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="c" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget source="menu" render="Listbox" position="90,200" size="980,600" backgroundColor="background1" backgroundColorSelected="background5" scrollbarMode="showNever" scrollbarWidth="10" scrollbarSliderForegroundColor="background4" scrollbarSliderBorderColor="background3" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-					MultiContentEntryText(pos = (70, 0), size = (880, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0), # index 2 is the Menu Titel
-					MultiContentEntryText(pos = (80, 35), size = (870, 25), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1), # index 3 is the Description
-					MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (50, 40), png = 2)], # index 4 is the pixmap
-					"fonts": [gFont("Global", 25), gFont("Console", 20)],
-					"itemHeight": 60}
-			</convert>
-		</widget>
-		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
+		<panel name="TemplatesPanelSetup2" />
 	</screen>
 	<!-- ########## IPK Tools ########## -->
 	<!-- IPKTools Screen -->
 	<screen name="IPKTools2" position="fill" title="IPK Tools" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="b" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget source="menu" render="Listbox" position="90,200" size="980,600" scrollbarMode="showOnDemand" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-					MultiContentEntryText(pos = (120, 0), size = (830, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0), # index 2 is the Menu Titel
-					MultiContentEntryText(pos = (130, 35), size = (820, 25), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 2), # index 3 is the Description
-					MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (100, 40), png = 3)], # index 4 is the pixmap
-					"fonts": [gFont("Global", 25), gFont("Console", 20)],
-					"itemHeight": 60}
-			</convert>
-		</widget>
-		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
+		<panel name="TemplatesPanelSetup1" />
 	</screen>
 	<!-- Install All -->
 	<screen name="InstallAll" position="fill" title="Select install files" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="b" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget source="menu" render="Listbox" position="90,200" size="980,600" scrollbarMode="showOnDemand" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-					MultiContentEntryText(pos = (70, 0), size = (880, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0), # index 2 is the Menu Titel
-					MultiContentEntryText(pos = (80, 35), size = (870, 25), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1), # index 3 is the Description
-					MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (50, 40), png = 2)], # index 4 is the pixmap
-					"fonts": [gFont("Global", 25), gFont("Console", 20)],
-					"itemHeight": 60}
-			</convert>
-		</widget>
-		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
+		<panel name="TemplatesPanelSetup2" />
 	</screen>
 	<!-- Remove IPK -->
 	<screen name="RemoveIPK" position="fill" title="Ipk remove" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="B" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget source="menu" render="Listbox" position="90,200" size="980,600" scrollbarMode="showOnDemand" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-					MultiContentEntryText(pos = (70, 0), size = (880, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0), # index 2 is the Menu Titel
-					MultiContentEntryText(pos = (80, 35), size = (870, 25), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1), # index 3 is the Description
-					MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (50, 40), png = 2)], # index 4 is the pixmap
-					"fonts": [gFont("Global", 25), gFont("Console", 20)],
-					"itemHeight": 60}
-			</convert>
-		</widget>
-		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
+		<panel name="TemplatesPanelSetup2" />
 	</screen>
 	<!-- Insatall Feed -->
 	<screen name="downfeed" position="fill" title="Insatall extensions from feed" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="b" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget source="menu" render="Listbox" position="90,200" size="980,600" scrollbarMode="showOnDemand" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-					MultiContentEntryText(pos = (70, 0), size = (880, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0), # index 2 is the Menu Titel
-					MultiContentEntryText(pos = (80, 35), size = (870, 25), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1), # index 3 is the Description
-					MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (50, 40), png = 2)], # index 4 is the pixmap
-					"fonts": [gFont("Global", 25), gFont("Console", 20)],
-					"itemHeight": 60}
-			</convert>
-		</widget>
-		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
+		<panel name="TemplatesPanelSetup2" />
 	</screen>
 	<!-- Download Feed -->
 	<screen name="DownloadFeed" position="fill" title="Download extensions from feed" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="b" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget source="menu" render="Listbox" position="90,200" size="980,600" scrollbarMode="showOnDemand" backgroundColor="background1" backgroundColorSelected="background5" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-					MultiContentEntryText(pos = (70, 0), size = (880, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0), # index 2 is the Menu Titel
-					MultiContentEntryText(pos = (80, 35), size = (870, 25), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1), # index 3 is the Description
-					MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (50, 40), png = 2)], # index 4 is the pixmap
-					"fonts": [gFont("Global", 25), gFont("Console", 20)],
-					"itemHeight": 60}
-			</convert>
-		</widget>
-		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
+		<panel name="TemplatesPanelSetup2" />
 	</screen>
 	<!-- ########## UniSwitchpanel ########## -->
 	<!-- Config Screen -->
 	<screen name="UniConfigScreen" position="fill" title="E-Panel Universal Switcher" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="S" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget name="config" position="90,200" size="980,630" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" scrollbarMode="showNever" scrollbarWidth="10" scrollbarSliderForegroundColor="background4" scrollbarSliderBorderColor="background3" transparent="1" />
-		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
+		<panel name="TemplatesPanelConfig" />
 	</screen>
 	<!-- UniSwitcher -->
 	<screen name="uniswitcher" position="fill" title="UniSwitcher" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="c" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<panel name="TemplatesTitle" />
-		<widget source="list" render="Listbox" position="90,200" size="980,600" backgroundColor="background1" backgroundColorSelected="background5" scrollbarMode="showNever" scrollbarWidth="10" scrollbarSliderForegroundColor="background4" scrollbarSliderBorderColor="background3" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-					MultiContentEntryText(pos = (70, 0), size = (880, 35), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0), # index 2 is the Menu Titel
-					MultiContentEntryText(pos = (80, 35), size = (870, 25), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1), # index 3 is the Description
-					MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (50, 40), png = 2)], # index 4 is the pixmap
-					"fonts": [gFont("Global", 25), gFont("Console", 20)],
-					"itemHeight": 60}
-			</convert>
-		</widget>
 		<panel name="TemplatesMenuInfoLayer" />
 		<eLabel text="ECM Info" position="1115,470" size="715,30" font="Titles; 30" foregroundColor="color1" backgroundColor="background1" halign="left" transparent="1" />
 		<widget name="text" position="1115,510" size="715,330" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="left" valign="top" transparent="1" />
-		<panel name="TemplatesButtonsKey" />
-		<panel name="TemplatesClock" />
+		<panel name="TemplatesPanelSetup2" />
 	</screen>
 	<!-- ########## Update Preview ########## -->
 	<!-- Update Preview -->
