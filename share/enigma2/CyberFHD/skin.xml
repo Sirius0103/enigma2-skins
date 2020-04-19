@@ -107,10 +107,10 @@
 	</fonts>
 	<!-- ########## Subtitle ########## -->
 	<subtitles>
-		<sub name="Subtitle_TTX" font="Regular;35" foregroundColor="white" shadowColor="#40101010" borderWidth="2" />
-		<sub name="Subtitle_Regular" font="Regular;35" foregroundColor="white" shadowColor="#40101010" borderWidth="2" />
-		<sub name="Subtitle_Bold" font="Regular;35" foregroundColor="white" shadowColor="#40101010" borderWidth="2" />
-		<sub name="Subtitle_Italic" font="Regular;35" foregroundColor="white" shadowColor="#40101010" borderWidth="2" />
+		<sub name="Subtitle_TTX" font="Regular;35" foregroundColor="white" shadowColor="black" borderWidth="2" />
+		<sub name="Subtitle_Regular" font="Regular;35" foregroundColor="white" shadowColor="black" borderWidth="2" />
+		<sub name="Subtitle_Bold" font="Regular;35" foregroundColor="white" shadowColor="black" borderWidth="2" />
+		<sub name="Subtitle_Italic" font="Regular;35" foregroundColor="white" shadowColor="black" borderWidth="2" />
 	</subtitles>
 	<!-- ########## Main screen colors (id=0) ########## -->
 	<windowstyle type="skinned" id="0">
