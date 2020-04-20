@@ -112,6 +112,11 @@
 		<sub name="Subtitle_Bold" font="Regular;35" foregroundColor="white" shadowColor="black" borderWidth="2" />
 		<sub name="Subtitle_Italic" font="Regular;35" foregroundColor="white" shadowColor="black" borderWidth="2" />
 	</subtitles>
+	<!-- ########## Icons ########## -->
+	<switchpixmap>
+		<pixmap name="menu_on" filename="icons/menu_on.png" />
+		<pixmap name="menu_off" filename="icons/menu_off.png" />
+	</switchpixmap>
 	<!-- ########## Main screen colors (id=0) ########## -->
 	<windowstyle type="skinned" id="0">
 		<title offset="10,0" font="Titles;30" />
@@ -2422,7 +2427,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="P" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
-		<widget name="list" position="90,200" size="980,600" scrollbarMode="showNever" scrollbarWidth="10" scrollbarSliderForegroundColor="background4" scrollbarSliderBorderColor="background3" itemHeight="60" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget name="list" position="90,200" size="980,600" itemHeight="60" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" scrollbarMode="showNever" scrollbarWidth="10" scrollbarSliderForegroundColor="background4" scrollbarSliderBorderColor="background3" transparent="1" />
 		<widget name="text" position="340,955" size="1000,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" transparent="1" />
 		<panel name="TemplatesClock" />
 	</screen>
@@ -2607,7 +2612,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<panel name="TemplatesMenu1000Layer" />
 		<eLabel text="P" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
-		<widget name="list" position="90,200" size="980,600" scrollbarMode="showNever" scrollbarWidth="10" scrollbarSliderForegroundColor="background4" scrollbarSliderBorderColor="background3" itemHeight="60" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget name="list" position="90,200" size="980,600" itemHeight="60" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" scrollbarMode="showNever" scrollbarWidth="10" scrollbarSliderForegroundColor="background4" scrollbarSliderBorderColor="background3" transparent="1" />
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- Backup Selection -->
@@ -2662,7 +2667,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<eLabel position="90,200" size="980,40" backgroundColor="background2" zPosition="-1" />
 		<eLabel text="&gt;" position="95,205" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
 		<widget source="Title" render="Label" position="125,205" size="940,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
-		<widget name="list" position="90,245" size="980,595" scrollbarMode="showOnDemand" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
+		<widget name="list" position="90,245" size="980,595" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" scrollbarMode="showNever" scrollbarWidth="10" scrollbarSliderForegroundColor="background4" scrollbarSliderBorderColor="background3" transparent="1" />
 		<widget text="https://github.com/openatv" position="340,925" size="1000,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" transparent="1" />
 		<widget text="https://github.com/oe-alliance" position="340,955" size="1000,30" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" transparent="1" />
 		<panel name="TemplatesButtonsKey" />
@@ -2689,7 +2694,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<eLabel text="&gt;" position="95,525" size="30,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" halign="center" transparent="1" />
 		<eLabel text="Infos" position="125,525" size="940,30" font="Global; 25" foregroundColor="color2" backgroundColor="background2" transparent="1" />
 		<widget name="config" position="90,245" size="980,275" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" scrollbarMode="showNever" scrollbarWidth="10" scrollbarSliderForegroundColor="background4" scrollbarSliderBorderColor="background3" transparent="1" />
-		<widget source="options" render="Label" position="90,565" size="980,275" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" foregroundColor="color2" />
+		<widget source="options" render="Label" position="90,565" size="980,275" font="Global; 25" foregroundColor="color2" backgroundColor="background1" backgroundColorSelected="background5" transparent="1" />
 		<widget source="description" render="Label" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
 		<panel name="TemplatesButtonsKey" />
 		<panel name="TemplatesClock" />
