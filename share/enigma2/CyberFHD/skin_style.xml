@@ -133,7 +133,7 @@
 		<color name="WindowTitleForeground" color="color1" />
 		<color name="WindowTitleBackground" color="background1" />
 	</windowstyle>
-	<!-- ########## Main screen colors (id=1 LCD) remove ########## -->
+	<!-- ########## Main screen colors (id=1 LCD) ########## -->
 	<windowstyle type="skinned" id="1">
 		<color name="Background" color="black" />
 		<color name="LabelForeground" color="white" />
