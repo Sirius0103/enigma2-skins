@@ -133,6 +133,21 @@
 		<color name="WindowTitleForeground" color="color1" />
 		<color name="WindowTitleBackground" color="background1" />
 	</windowstyle>
+	<!-- ########## Main screen colors (id=1 LCD) remove ########## -->
+	<windowstyle type="skinned" id="1">
+		<color name="Background" color="black" />
+		<color name="LabelForeground" color="white" />
+		<color name="ListboxBackground" color="black" />
+		<color name="ListboxForeground" color="white" />
+		<color name="ListboxSelectedBackground" color="black" />
+		<color name="ListboxSelectedForeground" color="white" />
+		<color name="ListboxMarkedBackground" color="black" />
+		<color name="ListboxMarkedForeground" color="white" />
+		<color name="ListboxMarkedAndSelectedBackground" color="black" />
+		<color name="ListboxMarkedAndSelectedForeground" color="white" />
+		<color name="WindowTitleForeground" color="white" />
+		<color name="WindowTitleBackground" color="black" />
+	</windowstyle>
 	<!-- ########## Templates Skins ########## -->
 	<include filename="skin_templates.xml" />
 	<include filename="skin_extra.xml" />
