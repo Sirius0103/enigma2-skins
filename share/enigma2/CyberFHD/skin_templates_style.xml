@@ -5670,10 +5670,10 @@
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<eLabel text="DMX" position="827,1002" size="70,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
-		<widget source="session.CurrentService" render="FixedLabel" text="DMX" position="827,1002" size="70,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
-			<convert type="AC3DownMixStatus" />
+<!--		<widget source="session.CurrentService" render="FixedLabel" text="DMX" position="827,1002" size="70,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+			<convert type="AC3DownMixStatus" /> 
 			<convert type="ConditionalShowHide" />
-		</widget>
+		</widget>-->
 		<widget source="session.CurrentService" render="Label" text="MPEG-VC/MPEG" position="890,1002" size="250,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
 			<convert type="ServiceInfoEX">avtype</convert>
 		</widget>
@@ -6445,10 +6445,10 @@
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<eLabel text="DMX" position="804,1002" size="70,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
-		<widget source="session.CurrentService" render="FixedLabel" text="DMX" position="804,1002" size="70,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
-			<convert type="AC3DownMixStatus" />
+<!--		<widget source="session.CurrentService" render="FixedLabel" text="DMX" position="804,1002" size="70,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+			<convert type="AC3DownMixStatus" /> 
 			<convert type="ConditionalShowHide" />
-		</widget>
+		</widget>-->
 		<widget source="session.CurrentService" render="Label" text="1920x1080p25" position="330,1002" size="230,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3" halign="right">
 			<convert type="PliExtraInfo">ResolutionString</convert>
 		</widget>
@@ -6540,10 +6540,10 @@
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<eLabel text="DMX" position="498,1002" size="70,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
-		<widget source="session.CurrentService" render="FixedLabel" text="DMX" position="498,1002" size="70,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
-			<convert type="AC3DownMixStatus" />
+<!--		<widget source="session.CurrentService" render="FixedLabel" text="DMX" position="498,1002" size="70,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+			<convert type="AC3DownMixStatus" /> 
 			<convert type="ConditionalShowHide" />
-		</widget>
+		</widget>-->
 		<widget source="session.CurrentService" render="Label" text="AC-3" position="568,1002" size="150,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
 			<convert type="ServiceInfoEX">atype</convert>
 		</widget>
