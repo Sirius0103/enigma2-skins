@@ -2733,6 +2733,14 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<panel name="TemplatesMultiBootMenu" />
 	</screen>
 	<!-- ########## Common Interface ########## -->
+	<!-- CI+ helper -->
+	<screen name="Ciplushelper" position="fill" title="CI+ helper menu" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="TemplatesMenu1000Layer" />
+		<eLabel text="C" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<panel name="TemplatesTitle" />
+		<widget name="menu" position="90,200" size="980,630" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" scrollbarMode="showNever" scrollbarWidth="10" scrollbarSliderForegroundColor="background4" scrollbarSliderBorderColor="background3" transparent="1" />
+		<panel name="TemplatesClock" />
+	</screen>
 	<!-- MMI Dialog -->
 	<screen name="MMIDialog" position="fill" title="Common Interface" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="TemplatesMenu1000Layer" />
