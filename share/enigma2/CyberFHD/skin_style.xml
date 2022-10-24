@@ -21,41 +21,6 @@
 	<output id="0">
 		<resolution bpp="32" xres="1920" yres="1080" />
 	</output>
-	<!-- ########## Parameters ########## -->
-	<parameters>
-		<parameter name="DreamexplorerName" value="40,3,900,30" />
-		<parameter name="DreamexplorerIcon" value="5,-5,30,30" />
-		<parameter name="ChoicelistName" value="40,3,900,30" />
-		<parameter name="ChoicelistDash" value="5,5,900,30" />
-		<parameter name="ChoicelistIcon" value="5,5,30,30" />
-		<parameter name="ConfigListSeperator" value="500" />
-		<parameter name="FileListName" value="40,3,900,30" />
-		<parameter name="FileListIcon" value="5,5,30,30" />
-		<parameter name="FileListMultiName" value="75,3,900,30" />
-		<parameter name="FileListMultiIcon" value="5,5,30,30" />
-		<parameter name="FileListMultiLock" value="40,5,30,30" />
-		<parameter name="PlayListName" value="40,3,900,30" />
-		<parameter name="PlayListIcon" value="5,5,30,30" />
-		<parameter name="PlayListMultiName" value="75,3,900,30" />
-		<parameter name="PlayListMultiIcon" value="5,5,30,30" />
-		<parameter name="PlayListMultiLock" value="40,5,30,30" />
-		<parameter name="PluginBrowserName" value="120,5,30" />
-		<parameter name="PluginBrowserDescr" value="130,35,25" />
-		<parameter name="PluginBrowserIcon" value="10,10,100,40" />
-		<parameter name="PluginBrowserDownloadName" value="80,5,30" />
-		<parameter name="PluginBrowserDownloadDescr" value="90,35,25" />
-		<parameter name="PluginBrowserDownloadIcon" value="10,5,60,60" />
-		<parameter name="ServiceInfo" value="0,3,400,30" />
-		<parameter name="ServiceInfoLeft" value="0,3,400,30" />
-		<parameter name="ServiceInfoRight" value="450,3,500,30" />
-		<parameter name="SelectionListDescr" value="40,3,900,30" />
-		<parameter name="SelectionListLock" value="5,5,30,30" />
-		<parameter name="VirtualKeyBoard" value="68,68" />
-		<parameter name="VirtualKeyBoardAlignment" value="0,0" />
-		<parameter name="VirtualKeyBoardPadding" value="7,7" />
-		<parameter name="VirtualKeyBoardShiftColors" value="white,white,color4,yellow" />
-		<parameter name="FrontendInfoColors" value="color4,yellow,gray" />
-	</parameters>
 	<!-- ########## Colors ########## -->
 	<colors>
 		<color name="aqua" value="#0000ffff" />
@@ -92,11 +57,14 @@
 		<font filename="/usr/share/enigma2/CyberFHD/fonts/FontAwesome.ttf" name="Icons" scale="100" />
 		<alias name="AutotimerList" font="Global" size="25" height="35" />
 		<alias name="AutotimerListExt0" font="Global" size="25" />
-		<alias name="AutotimerListExt1" font="Console" size="20" />
+		<alias name="AutotimerListExt1" font="Console" size="20" height="75" />
 		<alias name="Dreamexplorer" font="Global" size="25" height="35" />
 		<alias name="ChoiceList" font="Global" size="25" height="35" />
 		<alias name="FileList" font="Global" size="25" height="35" />
 		<alias name="FileListMulti" font="Global" size="25" height="35" />
+		<alias name="HelpMenuList" font="Global" size="25" height="35" />
+		<alias name="HelpMenuListExt0" font="Global" size="25" height="75" />
+		<alias name="HelpMenuListExt1" font="Console" size="20" />
 		<alias name="PlayList" font="Global" size="25" />
 		<alias name="PlayListMulti" font="Global" size="25" />
 		<alias name="SongList" font="Global" size="25" />
@@ -108,6 +76,41 @@
 		<alias name="TextNormal" font="Global" size="25" height="35" />
 		<alias name="VirtualKeyBoard" font="Global" size="35" height="68" />
 	</fonts>
+	<!-- ########## Parameters ########## -->
+	<parameters>
+		<parameter name="DreamexplorerName" value="40,3,900,30" />
+		<parameter name="DreamexplorerIcon" value="5,-5,30,30" />
+		<parameter name="ChoicelistName" value="40,3,900,30" />
+		<parameter name="ChoicelistDash" value="5,5,900,30" />
+		<parameter name="ChoicelistIcon" value="5,5,30,30" />
+		<parameter name="ConfigListSeperator" value="500" />
+		<parameter name="FileListName" value="40,3,900,30" />
+		<parameter name="FileListIcon" value="5,5,30,30" />
+		<parameter name="FileListMultiName" value="75,3,900,30" />
+		<parameter name="FileListMultiIcon" value="5,5,30,30" />
+		<parameter name="FileListMultiLock" value="40,5,30,30" />
+		<parameter name="PlayListName" value="40,3,900,30" />
+		<parameter name="PlayListIcon" value="5,5,30,30" />
+		<parameter name="PlayListMultiName" value="75,3,900,30" />
+		<parameter name="PlayListMultiIcon" value="5,5,30,30" />
+		<parameter name="PlayListMultiLock" value="40,5,30,30" />
+		<parameter name="PluginBrowserName" value="120,5,30" />
+		<parameter name="PluginBrowserDescr" value="130,35,25" />
+		<parameter name="PluginBrowserIcon" value="10,10,100,40" />
+		<parameter name="PluginBrowserDownloadName" value="80,5,30" />
+		<parameter name="PluginBrowserDownloadDescr" value="90,35,25" />
+		<parameter name="PluginBrowserDownloadIcon" value="10,5,60,60" />
+		<parameter name="ServiceInfo" value="0,3,900,30" />
+		<parameter name="ServiceInfoLeft" value="0,3,400,30" />
+		<parameter name="ServiceInfoRight" value="420,3,560,30" />
+		<parameter name="SelectionListDescr" value="40,3,900,30" />
+		<parameter name="SelectionListLock" value="5,5,30,30" />
+		<parameter name="VirtualKeyBoard" value="68,68" />
+		<parameter name="VirtualKeyBoardAlignment" value="0,0" />
+		<parameter name="VirtualKeyBoardPadding" value="7,7" />
+		<parameter name="VirtualKeyBoardShiftColors" value="white,white,color4,yellow" />
+		<parameter name="FrontendInfoColors" value="color4,yellow,gray" />
+	</parameters>
 	<!-- ########## Subtitle ########## -->
 	<subtitles>
 		<sub name="Subtitle_TTX" font="Regular;35" foregroundColor="white" shadowColor="black" borderWidth="2" />
