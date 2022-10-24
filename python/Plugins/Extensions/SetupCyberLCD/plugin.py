@@ -29,7 +29,7 @@ from Components.Label import Label
 from Components.Language import language
 from Components.ConfigList import ConfigListScreen
 from Components.config import config, ConfigYesNo, ConfigSubsection, getConfigListEntry, ConfigSelection
-from Tools.Directories import fileExists, resolveFilename, SCOPE_PLUGINS, SCOPE_SKIN_IMAGE, SCOPE_LANGUAGE
+from Tools.Directories import fileExists, resolveFilename, SCOPE_PLUGINS, SCOPE_LANGUAGE
 from Tools.LoadPixmap import LoadPixmap
 from urllib import urlopen, urlretrieve
 from skin import parseColor, parseFont
@@ -287,9 +287,9 @@ widgetepgselection = [
 	("TemplatesEPGSelectionDisplayPicon", _("Picon")),
 	("TemplatesEPGSelectionDisplayClock", _("Clock"))]
 
-if not fileExists("/usr/lib/enigma2/python/Components/Converter/MSNWeather2.py")\
-	or not fileExists("/usr/lib/enigma2/python/Components/Renderer/PiconUni.py")\
-	or not fileExists("/usr/lib/enigma2/python/Components/Renderer/AnimatedWeatherPixmap.py"):
+if not os.path.exists("/usr/lib/enigma2/python/Components/Converter/MSNWeather2.py")\
+	or not os.path.exists("/usr/lib/enigma2/python/Components/Renderer/PiconUni.py")\
+	or not os.path.exists("/usr/lib/enigma2/python/Components/Renderer/AnimatedWeatherPixmap.py"):
 	widgetstandby = [
 		("TemplatesStandbyDisplayClock", _("Clock"))]
 else:
@@ -567,11 +567,11 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 
 	def infocom(self):
 		version = ""
-		if fileExists("/usr/lib/enigma2/python/Plugins/Extensions/WeatherMSN/plugin.pyo")\
-			and not fileExists("/usr/lib/enigma2/python/Components/Converter/MSNWeather2.py"):
+		if os.path.exists("/usr/lib/enigma2/python/Plugins/Extensions/WeatherMSN/plugin.pyo")\
+			and not os.path.exists("/usr/lib/enigma2/python/Components/Converter/MSNWeather2.py"):
 			self["info_com"] = Label(_("No install components skin !!! \nPress blue button to install !!!"))
-		elif not fileExists("/usr/lib/enigma2/python/Components/Converter/AlwaysTrue.py")\
-			or not fileExists("/usr/lib/enigma2/python/Components/Renderer/PiconUni.py"):
+		elif not os.path.exists("/usr/lib/enigma2/python/Components/Converter/AlwaysTrue.py")\
+			or not os.path.exists("/usr/lib/enigma2/python/Components/Renderer/PiconUni.py"):
 			self["info_com"] = Label(_("No install components skin !!! \nPress blue button to install !!!"))
 		else:
 			for text in open("/tmp/version").readlines()[3]:
@@ -602,7 +602,7 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 			skin_user.append(["#_0808080", "#" + config.skin.cyberlcd.foregroundtransparent.value + config.skin.cyberlcd.colorforeground3.value])
 			skin_user.append(["#_0909090", "#" + config.skin.cyberlcd.foregroundtransparent.value + config.skin.cyberlcd.colorforeground4.value])
 	# clock
-			if not fileExists("/usr/lib/enigma2/python/Components/Converter/AlwaysTrue.py"):
+			if not os.path.exists("/usr/lib/enigma2/python/Components/Converter/AlwaysTrue.py"):
 				skin_user.append(["TemplatesDisplayClockDefault","TemplatesDisplayClock"])
 				skin_user.append(["TemplatesStandbyDisplayClockDefault","TemplatesStandbyDisplayClock"])
 			else:
@@ -635,16 +635,16 @@ class SetupCyberLCD(ConfigListScreen, Screen):
 		skinpath = "/usr/share/enigma2/"
 		pluginpath = "/usr/lib/enigma2/python/Plugins/Extensions/"
 		componentspath = "/usr/lib/enigma2/python/Components/"
-		if fileExists("/tmp/version")\
-			and fileExists("/tmp/plugin.py")\
-			and fileExists("/tmp/ruSetupCyberLCD.mo")\
-			and fileExists("/tmp/deSetupCyberLCD.mo")\
-			and fileExists("/tmp/skin_solo4k.xml")\
-			and fileExists("/tmp/skin_uno4k.xml")\
-			and fileExists("/tmp/skin_ultimo4k.xml")\
-			and fileExists("/tmp/AlwaysTrue.py")\
-			and fileExists("/tmp/AnimatedWeatherPixmap.py")\
-			and fileExists("/tmp/PiconUni.py"):
+		if os.path.exists("/tmp/version")\
+			and os.path.exists("/tmp/plugin.py")\
+			and os.path.exists("/tmp/ruSetupCyberLCD.mo")\
+			and os.path.exists("/tmp/deSetupCyberLCD.mo")\
+			and os.path.exists("/tmp/skin_solo4k.xml")\
+			and os.path.exists("/tmp/skin_uno4k.xml")\
+			and os.path.exists("/tmp/skin_ultimo4k.xml")\
+			and os.path.exists("/tmp/AlwaysTrue.py")\
+			and os.path.exists("/tmp/AnimatedWeatherPixmap.py")\
+			and os.path.exists("/tmp/PiconUni.py"):
 			os.system("cp /tmp/version %sSetupCyberLCD/version" % (pluginpath))
 	# install plugin
 			os.system("cp /tmp/plugin.py %sSetupCyberLCD/plugin.py" % (pluginpath))

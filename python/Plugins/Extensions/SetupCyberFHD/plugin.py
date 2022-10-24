@@ -29,7 +29,7 @@ from Components.Label import Label
 from Components.Language import language
 from Components.ConfigList import ConfigListScreen
 from Components.config import config, ConfigYesNo, ConfigSubsection, getConfigListEntry, ConfigSelection
-from Tools.Directories import fileExists, resolveFilename, SCOPE_PLUGINS, SCOPE_SKIN_IMAGE, SCOPE_LANGUAGE
+from Tools.Directories import fileExists, resolveFilename, SCOPE_PLUGINS, SCOPE_LANGUAGE
 from Tools.LoadPixmap import LoadPixmap
 from urllib import urlopen, urlretrieve
 from skin import parseColor, parseFont
@@ -284,15 +284,16 @@ bouquetradiochannelselection = [
 	("TemplatesChannelSelectionRadioBouquetDefault", _("No")),
 	("TemplatesChannelSelectionRadioBouquetStyle", _("Yes"))]
 
-if not fileExists("/usr/lib/enigma2/python/Components/Converter/CaidInfo2.py")\
-	or not fileExists("/usr/lib/enigma2/python/Components/Converter/CamdInfo3.py")\
-	or not fileExists("/usr/lib/enigma2/python/Components/Converter/EventName2.py")\
-	or not fileExists("/usr/lib/enigma2/python/Components/Converter/FrontendInfo2.py")\
-	or not fileExists("/usr/lib/enigma2/python/Components/Converter/ModuleControl.py")\
-	or not fileExists("/usr/lib/enigma2/python/Components/Converter/ServiceName2.py")\
-	or not fileExists("/usr/lib/enigma2/python/Components/Converter/ServiceInfoEX.py")\
-	or not fileExists("/usr/lib/enigma2/python/Components/Renderer/PiconUni.py")\
-	or not fileExists("/usr/lib/enigma2/python/Components/Renderer/Watches.py"):
+if not os.path.exists("/usr/lib/enigma2/python/Components/Converter/CaidInfo2.py")\
+	or not os.path.exists("/usr/lib/enigma2/python/Components/Converter/CamdInfo3.py")\
+	or not os.path.exists("/usr/lib/enigma2/python/Components/Converter/EventName2.py")\
+	or not os.path.exists("/usr/lib/enigma2/python/Components/Converter/FrontendInfo2.py")\
+	or not os.path.exists("/usr/lib/enigma2/python/Components/Converter/ModuleControl.py")\
+	or not os.path.exists("/usr/lib/enigma2/python/Components/Converter/ServiceName2.py")\
+	or not os.path.exists("/usr/lib/enigma2/python/Components/Converter/ServiceInfoEX.py")\
+	or not os.path.exists("/usr/lib/enigma2/python/Components/Renderer/PiconUni.py")\
+	or not os.path.exists("/usr/lib/enigma2/python/Components/Renderer/Watches.py"):
+
 	numberchannel = [
 		("TemplatesInfoBarTvNumberDefault", _("No"))]
 	tunerpanelinfobar = [
@@ -345,10 +346,10 @@ else:
 		("TemplatesChannelSelectionTvInfoEPGNowPrograms", _("Now, 5 Programs")),
 		("TemplatesChannelSelectionTvInfoEPGPrograms", _("10 Programs"))]
 
-if not fileExists("/usr/lib/enigma2/python/Components/Converter/MSNWeather2.py")\
-	or not fileExists("/usr/lib/enigma2/python/Components/Renderer/PiconUni.py")\
-	or not fileExists("/usr/lib/enigma2/python/Components/Renderer/AnimatedWeatherPixmap.py")\
-	or not fileExists("/usr/lib/enigma2/python/Components/Renderer/AnimatedMoonPixmap.py"):
+if not os.path.exists("/usr/lib/enigma2/python/Components/Converter/MSNWeather2.py")\
+	or not os.path.exists("/usr/lib/enigma2/python/Components/Renderer/PiconUni.py")\
+	or not os.path.exists("/usr/lib/enigma2/python/Components/Renderer/AnimatedWeatherPixmap.py")\
+	or not os.path.exists("/usr/lib/enigma2/python/Components/Renderer/AnimatedMoonPixmap.py"):
 	weatherpanelinfobar = [
 		("TemplatesInfoBarTvInfoWeatherDefault", _("No"))]
 	weatherpanelmovieinfobar = [
@@ -367,9 +368,9 @@ else:
 		("TemplatesInfoBarMediaInfoWeatherMSNMoon", _("MSN & Moon")),
 		("TemplatesInfoBarMediaInfoWeatherMSNAnimatedMoon", _("Animated MSN & Moon"))]
 
-if not fileExists("/usr/lib/enigma2/python/Components/Converter/MovieInfo2.py")\
-	or not fileExists("/usr/lib/enigma2/python/Components/Renderer/MovieCover.py")\
-	or not fileExists("/usr/lib/enigma2/python/Components/Renderer/MovieRating.py"):
+if not os.path.exists("/usr/lib/enigma2/python/Components/Converter/MovieInfo2.py")\
+	or not os.path.exists("/usr/lib/enigma2/python/Components/Renderer/MovieCover.py")\
+	or not os.path.exists("/usr/lib/enigma2/python/Components/Renderer/MovieRating.py"):
 	covermovieinfobar = [
 		("TemplatesInfoBarMediaCoverDefault", _("No"))]
 	infopanelmovieinfobar = [
@@ -762,28 +763,28 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 
 	def infocom(self):
 		version = ""
-		if fileExists("/usr/lib/enigma2/python/Plugins/Extensions/WeatherMSN/plugin.pyo")\
-			and not fileExists("/usr/lib/enigma2/python/Components/Converter/MSNWeather2.py"):
+		if os.path.exists("/usr/lib/enigma2/python/Plugins/Extensions/WeatherMSN/plugin.pyo")\
+			and not os.path.exists("/usr/lib/enigma2/python/Components/Converter/MSNWeather2.py"):
 			self["info_com"] = Label(_("No install components skin !!! \nPress blue button to install !!!"))
-		elif not fileExists("/usr/lib/enigma2/python/Components/Converter/AlwaysTrue.py")\
-			or not fileExists("/usr/lib/enigma2/python/Components/Converter/AC3DownMixStatus.py")\
-			or not fileExists("/usr/lib/enigma2/python/Components/Converter/CaidInfo2.py")\
-			or not fileExists("/usr/lib/enigma2/python/Components/Converter/CamdInfo3.py")\
-			or not fileExists("/usr/lib/enigma2/python/Components/Converter/EventName2.py")\
-			or not fileExists("/usr/lib/enigma2/python/Components/Converter/FrontendInfo2.py")\
-			or not fileExists("/usr/lib/enigma2/python/Components/Converter/ModuleControl.py")\
-			or not fileExists("/usr/lib/enigma2/python/Components/Converter/MovieInfo2.py")\
-			or not fileExists("/usr/lib/enigma2/python/Components/Converter/ProgressDiskSpaceInfo.py")\
-			or not fileExists("/usr/lib/enigma2/python/Components/Converter/ServiceInfoEX.py")\
-			or not fileExists("/usr/lib/enigma2/python/Components/Converter/ServiceName2.py")\
-			or not fileExists("/usr/lib/enigma2/python/Components/Converter/TunerBar.py")\
-			or not fileExists("/usr/lib/enigma2/python/Components/Renderer/AnimatedWeatherPixmap.py")\
-			or not fileExists("/usr/lib/enigma2/python/Components/Renderer/AnimatedMoonPixmap.py")\
-			or not fileExists("/usr/lib/enigma2/python/Components/Renderer/MovieCover.py")\
-			or not fileExists("/usr/lib/enigma2/python/Components/Renderer/MovieRating.py")\
-			or not fileExists("/usr/lib/enigma2/python/Components/Renderer/PiconUni.py")\
-			or not fileExists("/usr/lib/enigma2/python/Components/Renderer/RendVolumeTextP.py")\
-			or not fileExists("/usr/lib/enigma2/python/Components/Renderer/Watches.py"):
+		elif not os.path.exists("/usr/lib/enigma2/python/Components/Converter/AlwaysTrue.py")\
+			or not os.path.exists("/usr/lib/enigma2/python/Components/Converter/AC3DownMixStatus.py")\
+			or not os.path.exists("/usr/lib/enigma2/python/Components/Converter/CaidInfo2.py")\
+			or not os.path.exists("/usr/lib/enigma2/python/Components/Converter/CamdInfo3.py")\
+			or not os.path.exists("/usr/lib/enigma2/python/Components/Converter/EventName2.py")\
+			or not os.path.exists("/usr/lib/enigma2/python/Components/Converter/FrontendInfo2.py")\
+			or not os.path.exists("/usr/lib/enigma2/python/Components/Converter/ModuleControl.py")\
+			or not os.path.exists("/usr/lib/enigma2/python/Components/Converter/MovieInfo2.py")\
+			or not os.path.exists("/usr/lib/enigma2/python/Components/Converter/ProgressDiskSpaceInfo.py")\
+			or not os.path.exists("/usr/lib/enigma2/python/Components/Converter/ServiceInfoEX.py")\
+			or not os.path.exists("/usr/lib/enigma2/python/Components/Converter/ServiceName2.py")\
+			or not os.path.exists("/usr/lib/enigma2/python/Components/Converter/TunerBar.py")\
+			or not os.path.exists("/usr/lib/enigma2/python/Components/Renderer/AnimatedWeatherPixmap.py")\
+			or not os.path.exists("/usr/lib/enigma2/python/Components/Renderer/AnimatedMoonPixmap.py")\
+			or not os.path.exists("/usr/lib/enigma2/python/Components/Renderer/MovieCover.py")\
+			or not os.path.exists("/usr/lib/enigma2/python/Components/Renderer/MovieRating.py")\
+			or not os.path.exists("/usr/lib/enigma2/python/Components/Renderer/PiconUni.py")\
+			or not os.path.exists("/usr/lib/enigma2/python/Components/Renderer/RendVolumeTextP.py")\
+			or not os.path.exists("/usr/lib/enigma2/python/Components/Renderer/Watches.py"):
 			self["info_com"] = Label(_("No install components skin !!! \nPress blue button to install !!!"))
 		else:
 			for text in open("/tmp/version").readlines()[3]:
@@ -818,13 +819,13 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 			skin_user.append(["#_0909090", "#" + config.skin.cyberfhd.foregroundtransparent.value + config.skin.cyberfhd.colorforeground4.value])
 			skin_user.append(["#_0000000", "#" + config.skin.cyberfhd.backgroundtransparent.value + config.skin.cyberfhd.colorforeground5.value])
 	# clock
-			if not fileExists("/usr/lib/enigma2/python/Components/Converter/AlwaysTrue.py"):
+			if not os.path.exists("/usr/lib/enigma2/python/Components/Converter/AlwaysTrue.py"):
 				skin_templates_user.append(["TemplatesClockDefault","TemplatesClock"])
 			else:
 				skin_templates_user.append(["TemplatesClockStyle","TemplatesClock"])
 	# indication
-			if not fileExists("/usr/lib/enigma2/python/Components/Converter/AC3DownMixStatus.py")\
-				or not fileExists("/usr/lib/enigma2/python/Components/Converter/ServiceInfoEX.py"):
+			if not os.path.exists("/usr/lib/enigma2/python/Components/Converter/AC3DownMixStatus.py")\
+				or not os.path.exists("/usr/lib/enigma2/python/Components/Converter/ServiceInfoEX.py"):
 				skin_templates_user.append(["TemplatesInfoBarTvIndicationDefault","TemplatesInfoBarTvIndication"])
 				skin_templates_user.append(["TemplatesInfoBarMediaIndicationDefault","TemplatesInfoBarMediaIndication"])
 				skin_templates_user.append(["TemplatesInfoBarRadioIndicationDefault","TemplatesInfoBarRadioIndication"])
@@ -885,34 +886,34 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 		skinpath = "/usr/share/enigma2/"
 		pluginpath = "/usr/lib/enigma2/python/Plugins/Extensions/"
 		componentspath = "/usr/lib/enigma2/python/Components/"
-		if fileExists ("/tmp/version"\
-			and "/tmp/plugin.py"\
-			and "/tmp/ruSetupCyberFHD.mo"\
-			and "/tmp/deSetupCyberFHD.mo"\
-			and "/tmp/skin.xml"\
-			and "/tmp/skin_style.xml"\
-			and "/tmp/skin_templates.xml"\
-			and "/tmp/skin_templates_style.xml"\
-			and "/tmp/skin_extra.xml"\
-			and "/tmp/AlwaysTrue.py"\
-			and "/tmp/AC3DownMixStatus.py"\
-			and "/tmp/CaidInfo2.py"\
-			and "/tmp/CamdInfo3.py"\
-			and "/tmp/EventName2.py"\
-			and "/tmp/FrontendInfo2.py"\
-			and "/tmp/ModuleControl.py"\
-			and "/tmp/MovieInfo2.py"\
-			and "/tmp/ProgressDiskSpaceInfo.py"\
-			and "/tmp/ServiceInfoEX.py"\
-			and "/tmp/ServiceName2.py"\
-			and "/tmp/TunerBar.py"\
-			and "/tmp/AnimatedWeatherPixmap.py"\
-			and "/tmp/AnimatedMoonPixmap.py"\
-			and "/tmp/MovieCover.py"\
-			and "/tmp/MovieRating.py"\
-			and "/tmp/PiconUni.py"\
-			and "/tmp/RendVolumeTextP.py"\
-			and "/tmp/Watches.py"):
+		if os.path.exists ("/tmp/version")\
+			and os.path.exists ("/tmp/plugin.py")\
+			and os.path.exists ("/tmp/ruSetupCyberFHD.mo")\
+			and os.path.exists ("/tmp/deSetupCyberFHD.mo")\
+			and os.path.exists ("/tmp/skin.xml")\
+			and os.path.exists ("/tmp/skin_style.xml")\
+			and os.path.exists ("/tmp/skin_templates.xml")\
+			and os.path.exists ("/tmp/skin_templates_style.xml")\
+			and os.path.exists ("/tmp/skin_extra.xml")\
+			and os.path.exists ("/tmp/AlwaysTrue.py")\
+			and os.path.exists ("/tmp/AC3DownMixStatus.py")\
+			and os.path.exists ("/tmp/CaidInfo2.py")\
+			and os.path.exists ("/tmp/CamdInfo3.py")\
+			and os.path.exists ("/tmp/EventName2.py")\
+			and os.path.exists ("/tmp/FrontendInfo2.py")\
+			and os.path.exists ("/tmp/ModuleControl.py")\
+			and os.path.exists ("/tmp/MovieInfo2.py")\
+			and os.path.exists ("/tmp/ProgressDiskSpaceInfo.py")\
+			and os.path.exists ("/tmp/ServiceInfoEX.py")\
+			and os.path.exists ("/tmp/ServiceName2.py")\
+			and os.path.exists ("/tmp/TunerBar.py")\
+			and os.path.exists ("/tmp/AnimatedWeatherPixmap.py")\
+			and os.path.exists ("/tmp/AnimatedMoonPixmap.py")\
+			and os.path.exists ("/tmp/MovieCover.py")\
+			and os.path.exists ("/tmp/MovieRating.py")\
+			and os.path.exists ("/tmp/PiconUni.py")\
+			and os.path.exists ("/tmp/RendVolumeTextP.py")\
+			and os.path.exists ("/tmp/Watches.py"):
 			os.system("cp /tmp/version %sSetupCyberFHD/version" % (pluginpath))
 	# install plugin
 			os.system("cp /tmp/plugin.py %sSetupCyberFHD/plugin.py" % (pluginpath))
