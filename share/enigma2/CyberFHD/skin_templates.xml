@@ -1063,6 +1063,14 @@
 			<convert type="ValueRange">1981,3840</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
+		<eLabel text="PDC" position="827,1002" size="70,30" font="Indication; 30" foregroundColor="gray" backgroundColor="background" transparent="1" />
+			<widget source="session.Event_Now" render="FixedLabel" text="PDC" position="827,1002" size="70,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+			<convert type="EventName">Pdc</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Label" text="MPEG-VC" position="890,1002" size="250,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+			<convert type="PliExtraInfo">VideoCodec</convert>
+		</widget>
 		<widget source="session.CurrentService" render="Label" text="1920x1080p25" position="1055,1002" size="300,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3" halign="right">
 			<convert type="PliExtraInfo">ResolutionString</convert>
 		</widget>
@@ -1233,6 +1241,9 @@
 			<convert type="ServiceInfo">VideoWidth</convert>
 			<convert type="ValueRange">1981,3840</convert>
 			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Label" text="MPEG-VC" position="804,1002" size="250,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3">
+			<convert type="PliExtraInfo">VideoCodec</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" text="1920x1080p25" position="330,1002" size="230,30" font="Indication; 30" foregroundColor="color4" backgroundColor="background" transparent="1" zPosition="3" halign="right">
 			<convert type="PliExtraInfo">ResolutionString</convert>

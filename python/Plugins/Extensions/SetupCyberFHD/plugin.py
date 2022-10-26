@@ -767,7 +767,6 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 			and not os.path.exists("/usr/lib/enigma2/python/Components/Converter/MSNWeather2.py"):
 			self["info_com"] = Label(_("No install components skin !!! \nPress blue button to install !!!"))
 		elif not os.path.exists("/usr/lib/enigma2/python/Components/Converter/AlwaysTrue.py")\
-			or not os.path.exists("/usr/lib/enigma2/python/Components/Converter/AC3DownMixStatus.py")\
 			or not os.path.exists("/usr/lib/enigma2/python/Components/Converter/CaidInfo2.py")\
 			or not os.path.exists("/usr/lib/enigma2/python/Components/Converter/CamdInfo3.py")\
 			or not os.path.exists("/usr/lib/enigma2/python/Components/Converter/EventName2.py")\
@@ -824,8 +823,7 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 			else:
 				skin_templates_user.append(["TemplatesClockStyle","TemplatesClock"])
 	# indication
-			if not os.path.exists("/usr/lib/enigma2/python/Components/Converter/AC3DownMixStatus.py")\
-				or not os.path.exists("/usr/lib/enigma2/python/Components/Converter/ServiceInfoEX.py"):
+			if not os.path.exists("/usr/lib/enigma2/python/Components/Converter/ServiceInfoEX.py"):
 				skin_templates_user.append(["TemplatesInfoBarTvIndicationDefault","TemplatesInfoBarTvIndication"])
 				skin_templates_user.append(["TemplatesInfoBarMediaIndicationDefault","TemplatesInfoBarMediaIndication"])
 				skin_templates_user.append(["TemplatesInfoBarRadioIndicationDefault","TemplatesInfoBarRadioIndication"])
@@ -896,7 +894,6 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 			and os.path.exists ("/tmp/skin_templates_style.xml")\
 			and os.path.exists ("/tmp/skin_extra.xml")\
 			and os.path.exists ("/tmp/AlwaysTrue.py")\
-			and os.path.exists ("/tmp/AC3DownMixStatus.py")\
 			and os.path.exists ("/tmp/CaidInfo2.py")\
 			and os.path.exists ("/tmp/CamdInfo3.py")\
 			and os.path.exists ("/tmp/EventName2.py")\
@@ -927,7 +924,6 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 			os.system("cp /tmp/skin_extra.xml %sCyberFHD/skin_extra.xml" % (skinpath))
 	# install converter
 			os.system("cp /tmp/AlwaysTrue.py %sConverter/AlwaysTrue.py" % (componentspath))
-			os.system("cp /tmp/AC3DownMixStatus.py %sConverter/AC3DownMixStatus.py" % (componentspath))
 			os.system("cp /tmp/CaidInfo2.py %sConverter/CaidInfo2.py" % (componentspath))
 			os.system("cp /tmp/CamdInfo3.py %sConverter/CamdInfo3.py" % (componentspath))
 			os.system("cp /tmp/EventName2.py %sConverter/EventName2.py" % (componentspath))
@@ -965,7 +961,6 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 		urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-skins/master/share/enigma2/CyberFHD/skin_extra.xml","/tmp/skin_extra.xml")
 	# download converter
 		urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/AlwaysTrue.py","/tmp/AlwaysTrue.py")
-		urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/AC3DownMixStatus.py","/tmp/AC3DownMixStatus.py")
 		urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/CaidInfo2.py","/tmp/CaidInfo2.py")
 		urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/CamdInfo3.py","/tmp/CamdInfo3.py")
 		urllib.urlretrieve("https://raw.githubusercontent.com/Sirius0103/enigma2-components/master/python/Components/Converter/EventName2.py","/tmp/EventName2.py")
