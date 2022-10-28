@@ -17,8 +17,9 @@
 # You should have received a copy of the GNU General Public License
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 
+import os
 import urllib
-import os, gettext
+import gettext
 from Plugins.Plugin import PluginDescriptor
 from Screens.Screen import Screen
 from Screens.MessageBox import MessageBox
@@ -29,7 +30,7 @@ from Components.Label import Label
 from Components.Language import language
 from Components.ConfigList import ConfigListScreen
 from Components.config import config, ConfigYesNo, ConfigSubsection, getConfigListEntry, ConfigSelection
-from Tools.Directories import fileExists, resolveFilename, SCOPE_PLUGINS, SCOPE_LANGUAGE
+from Tools.Directories import resolveFilename, SCOPE_PLUGINS, SCOPE_LANGUAGE
 from Tools.LoadPixmap import LoadPixmap
 from urllib import urlopen, urlretrieve
 from skin import parseColor, parseFont
@@ -293,7 +294,6 @@ if not os.path.exists("/usr/lib/enigma2/python/Components/Converter/CaidInfo2.py
 	or not os.path.exists("/usr/lib/enigma2/python/Components/Converter/ServiceInfoEX.py")\
 	or not os.path.exists("/usr/lib/enigma2/python/Components/Renderer/PiconUni.py")\
 	or not os.path.exists("/usr/lib/enigma2/python/Components/Renderer/Watches.py"):
-
 	numberchannel = [
 		("TemplatesInfoBarTvNumberDefault", _("No"))]
 	tunerpanelinfobar = [
@@ -1005,7 +1005,7 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 		self.close()
 
 	def restart(self, answer):
-		if answer is True:
+		if answer == True:
 			config.skin.primary_skin.value = "CyberFHD/skin.xml"
 			config.skin.primary_skin.save()
 			self.session.open(TryQuitMainloop, 3)
