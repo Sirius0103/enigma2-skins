@@ -884,33 +884,33 @@ class SetupCyberFHD(ConfigListScreen, Screen):
 		skinpath = "/usr/share/enigma2/"
 		pluginpath = "/usr/lib/enigma2/python/Plugins/Extensions/"
 		componentspath = "/usr/lib/enigma2/python/Components/"
-		if os.path.exists ("/tmp/version")\
-			and os.path.exists ("/tmp/plugin.py")\
-			and os.path.exists ("/tmp/ruSetupCyberFHD.mo")\
-			and os.path.exists ("/tmp/deSetupCyberFHD.mo")\
-			and os.path.exists ("/tmp/skin.xml")\
-			and os.path.exists ("/tmp/skin_style.xml")\
-			and os.path.exists ("/tmp/skin_templates.xml")\
-			and os.path.exists ("/tmp/skin_templates_style.xml")\
-			and os.path.exists ("/tmp/skin_extra.xml")\
-			and os.path.exists ("/tmp/AlwaysTrue.py")\
-			and os.path.exists ("/tmp/CaidInfo2.py")\
-			and os.path.exists ("/tmp/CamdInfo3.py")\
-			and os.path.exists ("/tmp/EventName2.py")\
-			and os.path.exists ("/tmp/FrontendInfo2.py")\
-			and os.path.exists ("/tmp/ModuleControl.py")\
-			and os.path.exists ("/tmp/MovieInfo2.py")\
-			and os.path.exists ("/tmp/ProgressDiskSpaceInfo.py")\
-			and os.path.exists ("/tmp/ServiceInfoEX.py")\
-			and os.path.exists ("/tmp/ServiceName2.py")\
-			and os.path.exists ("/tmp/TunerBar.py")\
-			and os.path.exists ("/tmp/AnimatedWeatherPixmap.py")\
-			and os.path.exists ("/tmp/AnimatedMoonPixmap.py")\
-			and os.path.exists ("/tmp/MovieCover.py")\
-			and os.path.exists ("/tmp/MovieRating.py")\
-			and os.path.exists ("/tmp/PiconUni.py")\
-			and os.path.exists ("/tmp/RendVolumeTextP.py")\
-			and os.path.exists ("/tmp/Watches.py"):
+		if os.path.exists("/tmp/version")\
+			and os.path.exists("/tmp/plugin.py")\
+			and os.path.exists("/tmp/ruSetupCyberFHD.mo")\
+			and os.path.exists("/tmp/deSetupCyberFHD.mo")\
+			and os.path.exists("/tmp/skin.xml")\
+			and os.path.exists("/tmp/skin_style.xml")\
+			and os.path.exists("/tmp/skin_templates.xml")\
+			and os.path.exists("/tmp/skin_templates_style.xml")\
+			and os.path.exists("/tmp/skin_extra.xml")\
+			and os.path.exists("/tmp/AlwaysTrue.py")\
+			and os.path.exists("/tmp/CaidInfo2.py")\
+			and os.path.exists("/tmp/CamdInfo3.py")\
+			and os.path.exists("/tmp/EventName2.py")\
+			and os.path.exists("/tmp/FrontendInfo2.py")\
+			and os.path.exists("/tmp/ModuleControl.py")\
+			and os.path.exists("/tmp/MovieInfo2.py")\
+			and os.path.exists("/tmp/ProgressDiskSpaceInfo.py")\
+			and os.path.exists("/tmp/ServiceInfoEX.py")\
+			and os.path.exists("/tmp/ServiceName2.py")\
+			and os.path.exists("/tmp/TunerBar.py")\
+			and os.path.exists("/tmp/AnimatedWeatherPixmap.py")\
+			and os.path.exists("/tmp/AnimatedMoonPixmap.py")\
+			and os.path.exists("/tmp/MovieCover.py")\
+			and os.path.exists("/tmp/MovieRating.py")\
+			and os.path.exists("/tmp/PiconUni.py")\
+			and os.path.exists("/tmp/RendVolumeTextP.py")\
+			and os.path.exists("/tmp/Watches.py"):
 			os.system("cp /tmp/version %sSetupCyberFHD/version" % (pluginpath))
 	# install plugin
 			os.system("cp /tmp/plugin.py %sSetupCyberFHD/plugin.py" % (pluginpath))
