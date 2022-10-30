@@ -293,8 +293,12 @@
 		<eLabel text="¡" position="40,65" size="220,180" font="Icons; 110" foregroundColor="background3" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 	</screen>
 	<!-- Buffer Indicator -->
-	<screen name="BufferIndicator" position="40,20" size="300,50" title="Buffer" backgroundColor="transparent" flags="wfNoBorder" zPosition="98">
-		<widget name="status" position="10,5" size="250,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" borderWidth="2" />
+	<screen name="BufferIndicator" position="40,20" size="500,50" title="Buffer" backgroundColor="transparent" flags="wfNoBorder" zPosition="98">
+		<widget name="status" position="10,5" size="450,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" borderWidth="2" />
+	</screen>
+	<!-- Video Mode -->
+	<screen name="VideoMode" position="40,20" size="500,50" title="VideoMode" backgroundColor="transparent" flags="wfNoBorder" zPosition="98">
+		<widget name="videomode" position="10,5" size="450,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" borderWidth="2" />
 	</screen>
 	<!-- NumberZap -->
 	<screen name="NumberZap" position="0,0" size="1920,170" title="Channel" backgroundColor="transparent" flags="wfNoBorder" zPosition="98">
@@ -320,15 +324,9 @@
 		<widget name="state" position="0,96" size="220,44" font="Indication; 44" foregroundColor="color4" backgroundColor="background" halign="right" transparent="1" />
 		<panel name="TemplatesClock" />
 	</screen>
-	<!-- Quit State -->
-	<screen name="QuitMainloopScreen" position="fill" backgroundColor="background1" flags="wfNoBorder">
-		<eLabel text="¡" position="860,420" size="220,180" font="Icons; 110" foregroundColor="background3" backgroundColor="background2" halign="center" valign="center" transparent="1" />
-		<widget name="text" position="0,700" size="1920,200" font="Global; 50" foregroundColor="color2" backgroundColor="background1" halign="center" valign="center" transparent="1" />
-		<eLabel text="Skin Cyber FHD" position="0,150" size="1920,100" font="Titles; 100" foregroundColor="color2" backgroundColor="background1" halign="center" valign="center" transparent="1" />
-	</screen>
 	<!-- Timeshift Live -->
-	<screen name="TimeshiftLive" position="40,20" size="300,50" title="Timeshift" backgroundColor="transparent" flags="wfNoBorder" zPosition="98">
-		<eLabel text="Timeshift Live" position="10,5" size="250,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" borderWidth="2" />
+	<screen name="TimeshiftLive" position="40,20" size="500,50" title="Timeshift" backgroundColor="transparent" flags="wfNoBorder" zPosition="98">
+		<eLabel text="Timeshift Live" position="10,5" size="450,30" font="Global; 25" foregroundColor="color2" backgroundColor="background1" halign="left" transparent="1" borderWidth="2" />
 	</screen>
 	<!-- Timeshift State -->
 	<screen name="TimeshiftState" position="0,0" size="1920,170" title="PVR State" backgroundColor="transparent" flags="wfNoBorder" zPosition="98">
@@ -363,6 +361,12 @@
 		<eLabel position="0,0" size="504,199" backgroundColor="background3" zPosition="-12" />
 		<eLabel position="2,2" size="500,195" backgroundColor="background1" zPosition="-11" />
 		<widget name="list" position="12,12" size="480,175" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" scrollbarMode="showNever" scrollbarWidth="10" scrollbarSliderForegroundColor="background4" scrollbarSliderBorderColor="background3" transparent="1" />
+	</screen>
+	<!-- Quit State -->
+	<screen name="QuitMainloopScreen" position="fill" backgroundColor="background1" flags="wfNoBorder">
+		<eLabel text="¡" position="860,420" size="220,180" font="Icons; 110" foregroundColor="background3" backgroundColor="background2" halign="center" valign="center" transparent="1" />
+		<widget name="text" position="0,700" size="1920,200" font="Global; 50" foregroundColor="color2" backgroundColor="background1" halign="center" valign="center" transparent="1" />
+		<eLabel text="Skin Cyber FHD" position="0,150" size="1920,100" font="Titles; 100" foregroundColor="color2" backgroundColor="background1" halign="center" valign="center" transparent="1" />
 	</screen>
 	<!-- Standby -->
 	<screen name="Standby" position="fill" title="Standby" backgroundColor="transparent" flags="wfNoBorder">
