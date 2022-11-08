@@ -1381,7 +1381,7 @@
 	</screen>
 	<screen name="TemplatesHelpWindow">
 		<!-- Templates Help Window -->
-		<widget name="HelpWindow" position="130,530" size="1,1" />
+		<widget name="HelpWindow" position="1103,652" size="1,1" />
 	</screen>
 	<screen name="TemplatesClock">
 		<panel name="TemplatesClockLayer" />

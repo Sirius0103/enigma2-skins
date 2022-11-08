@@ -1202,11 +1202,19 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 		<eLabel text="@" position="105,850" size="220,180" font="Icons; 110" foregroundColor="color5" backgroundColor="background2" halign="center" valign="center" transparent="1" />
 		<panel name="TemplatesTitle" />
 		<widget name="list" position="90,200" size="980,630" itemHeight="35" font="Global; 25" backgroundColor="background1" backgroundColorSelected="background5" scrollbarMode="showNever" scrollbarWidth="10" scrollbarSliderForegroundColor="background4" scrollbarSliderBorderColor="background3" transparent="1" />
-		<widget name="text" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
+		<widget name="description" position="340,895" size="1000,90" font="Global; 25" foregroundColor="color3" backgroundColor="background1" halign="left" valign="bottom" transparent="1" />
 		<panel name="TemplatesClock" />
 	</screen>
 	<!-- Choice Box  -->
 	<screen name="ChoiceBox" position="fill" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="TemplatesChoiceBox" />
+	</screen>
+	<!-- Sort Choice Box  -->
+	<screen name="SortbyChoiceBox" position="fill" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="TemplatesChoiceBox" />
+	</screen>
+	<!-- Movie Choice Box  -->
+	<screen name="MovieoffChoiceBox" position="fill" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="TemplatesChoiceBox" />
 	</screen>
 	<!-- Input Box -->
@@ -1232,33 +1240,33 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 	</screen>
 	<!-- ########## KeyBoard ########## -->
 	<!-- Numerical Text Input -->
-	<screen name="NumericalTextInputHelpDialog" position="130,530" size="900,275" backgroundColor="transparent" flags="wfNoBorder" zPosition="89">
-		<eLabel position="0,0" size="900,275" backgroundColor="background3" zPosition="1" />
-		<eLabel position="2,2" size="896,271" backgroundColor="background1" zPosition="2" />
-		<eLabel position="10,10" size="290,60" backgroundColor="background2" zPosition="3" />
-		<eLabel position="305,10" size="290,60" backgroundColor="background2" zPosition="3" />
-		<eLabel position="600,10" size="290,60" backgroundColor="background2" zPosition="3" />
-		<eLabel position="10,75" size="290,60" backgroundColor="background2" zPosition="3" />
-		<eLabel position="305,75" size="290,60" backgroundColor="background2" zPosition="3" />
-		<eLabel position="600,75" size="290,60" backgroundColor="background2" zPosition="3" />
-		<eLabel position="10,140" size="290,60" backgroundColor="background2" zPosition="3" />
-		<eLabel position="305,140" size="290,60" backgroundColor="background2" zPosition="3" />
-		<eLabel position="600,140" size="290,60" backgroundColor="background2" zPosition="3" />
-		<eLabel position="10,205" size="90,60" backgroundColor="background2" zPosition="3" />
-		<eLabel position="105,205" size="690,60" backgroundColor="background2" zPosition="3" />
-		<eLabel position="800,205" size="90,60" backgroundColor="background2" zPosition="3" />
-		<widget name="key1" position="15,25" size="280,30" font="Console; 25" valign="center" halign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="4" />
-		<widget name="key2" position="310,25" size="280,30" font="Console; 25" valign="center" halign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="4" />
-		<widget name="key3" position="605,25" size="280,30" font="Console; 25" valign="center" halign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="4" />
-		<widget name="key4" position="15,90" size="280,30" font="Console; 25" valign="center" halign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="4" />
-		<widget name="key5" position="310,90" size="280,30" font="Console; 25" valign="center" halign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="4" />
-		<widget name="key6" position="605,90" size="280,30" font="Console; 25" valign="center" halign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="4" />
-		<widget name="key7" position="15,155" size="280,30" font="Console; 25" valign="center" halign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="4" />
-		<widget name="key8" position="310,155" size="280,30" font="Console; 25" valign="center" halign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="4" />
-		<widget name="key9" position="605,155" size="280,30" font="Console; 25" valign="center" halign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="4" />
-		<widget name="help1" position="15,220" size="80,30" font="Console; 30" valign="center" halign="center" foregroundColor="color1" backgroundColor="background2" transparent="1" zPosition="4" />
-		<widget name="key0" position="110,220" size="680,30" font="Console; 25" valign="center" halign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="4" />
-		<widget name="help2" position="805,220" size="80,30" font="Console; 30" valign="center" halign="center" foregroundColor="color1" backgroundColor="background2" transparent="1" zPosition="4" />
+	<screen name="NumericalTextInputHelpDialog" position="0,0" size="735,195" backgroundColor="transparent" flags="wfNoBorder" zPosition="89">
+		<eLabel position="0,0" size="735,195" backgroundColor="background3" zPosition="1" />
+		<eLabel position="2,2" size="731,191" backgroundColor="background1" zPosition="2" />
+		<eLabel position="10,10" size="235,40" backgroundColor="background2" zPosition="3" />
+		<eLabel position="250,10" size="235,40" backgroundColor="background2" zPosition="3" />
+		<eLabel position="490,10" size="235,40" backgroundColor="background2" zPosition="3" />
+		<eLabel position="10,55" size="235,40" backgroundColor="background2" zPosition="3" />
+		<eLabel position="250,55" size="235,40" backgroundColor="background2" zPosition="3" />
+		<eLabel position="490,55" size="235,40" backgroundColor="background2" zPosition="3" />
+		<eLabel position="10,100" size="235,40" backgroundColor="background2" zPosition="3" />
+		<eLabel position="250,100" size="235,40" backgroundColor="background2" zPosition="3" />
+		<eLabel position="490,100" size="235,40" backgroundColor="background2" zPosition="3" />
+		<eLabel position="10,145" size="90,40" backgroundColor="background2" zPosition="3" />
+		<eLabel position="105,145" size="525,40" backgroundColor="background2" zPosition="3" />
+		<eLabel position="635,145" size="90,40" backgroundColor="background2" zPosition="3" />
+		<widget name="key1" position="15,15" size="225,30" font="Console; 20" valign="center" halign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="4" />
+		<widget name="key2" position="255,15" size="225,30" font="Console; 20" valign="center" halign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="4" />
+		<widget name="key3" position="495,15" size="225,30" font="Console; 20" valign="center" halign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="4" />
+		<widget name="key4" position="15,60" size="225,30" font="Console; 20" valign="center" halign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="4" />
+		<widget name="key5" position="255,60" size="225,30" font="Console; 20" valign="center" halign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="4" />
+		<widget name="key6" position="495,60" size="225,30" font="Console; 20" valign="center" halign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="4" />
+		<widget name="key7" position="15,105" size="225,30" font="Console; 20" valign="center" halign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="4" />
+		<widget name="key8" position="255,105" size="225,30" font="Console; 20" valign="center" halign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="4" />
+		<widget name="key9" position="495,105" size="225,30" font="Console; 20" valign="center" halign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="4" />
+		<widget name="help1" position="15,150" size="80,30" font="Console; 25" valign="center" halign="center" foregroundColor="color1" backgroundColor="background2" transparent="1" zPosition="4" />
+		<widget name="key0" position="110,150" size="515,30" font="Console; 20" valign="center" halign="center" foregroundColor="color2" backgroundColor="background2" transparent="1" zPosition="4" />
+		<widget name="help2" position="640,150" size="80,30" font="Console; 25" valign="center" halign="center" foregroundColor="color1" backgroundColor="background2" transparent="1" zPosition="4" />
 	</screen>
 	<!-- Virtual KeyBoard  -->
 	<screen name="VirtualKeyBoard" position="fill" title="Virtual KeyBoard" backgroundColor="transparent" flags="wfNoBorder" zPosition="99">
